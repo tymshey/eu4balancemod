@@ -1,0 +1,39 @@
+music = {
+	name = "survival_of_dragons"
+	file = "survival_of_dragons.ogg"
+}
+
+music = {
+	name = "conflict_escalation"
+	file = "conflict_escalation.ogg"
+}
+
+music = {
+	name = "cherry_blossoms"
+	file = "cherry_blossoms.ogg"
+}
+
+music = {
+	name = "dayan_ta"
+	file = "dayan_ta.ogg"
+}
+
+music = {
+	name = "a_venerable_dynasty"
+	file = "a_venerable_dynasty.ogg"
+}
+
+music = {
+	name = "green_valley"
+	file = "green_valley.ogg"
+}
+
+music = {
+	name = "the_way_of_the_dragon"
+	file = "the_way_of_the_dragon.ogg"
+}
+
+music = {
+	name = "temujin"
+	file = "temujin.ogg"
+}

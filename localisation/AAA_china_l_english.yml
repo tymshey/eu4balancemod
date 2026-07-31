@@ -210,6 +210,14 @@
  # Other
 
  CHINESE_SILK:0 "Silk from China"
+
+ # Music
+ 
  conflict_escalation:0 "Conflict Escalation"
  survival_of_dragons:0 "Survival of Dragons"
  cherry_blossoms:0 "Cherry Blossoms"
+ dayan_ta:0 "Dayan Ta"
+ a_venerable_dynasty:0 "A Venerable Dynasty"
+ green_valley:0 "Green Valley"
+ the_way_of_the_dragon:0 "The Way of the Dragon"
+ temujin:0 "Temujin"

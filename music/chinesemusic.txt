@@ -1,0 +1,439 @@
+
+song = {
+	name = "path_of_the_dragon"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "ports_of_china"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "staff_of_the_emperor"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+# added by tymshey
+
+song = {
+	name = "survival_of_dragons"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "conflict_escalation"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "cherry_blossoms"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "dayan_ta"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "a_venerable_dynasty"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "green_valley"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "the_way_of_the_dragon"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
+
+song = {
+	name = "temujin"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			capital_scope = { 
+				OR = {
+					continent = europe
+					continent = africa
+					continent = north_america
+					continent = south_america
+					continent = oceania
+					continent = new_world
+					superregion = india_superregion
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_reform = celestial_empire
+				is_emperor_of_china = yes 
+				capital_scope = {
+					OR = {
+						superregion = china_superregion
+						superregion = far_east_superregion
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = { total_development = 300 }
+			NOT = { government_rank = 3 }
+		}
+	}
+}
