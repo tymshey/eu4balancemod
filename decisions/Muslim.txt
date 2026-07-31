@@ -20,18 +20,18 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 504
 				province_id = 151
 				province_id = 410
 				province_id = 385
 				province_id = 384
-				province_id = 124
-				province_id = 125
-				province_id = 425
+				province_id = 419
 				province_id = 382
-				province_id = 454
+				province_id = 1229
 				province_id = 388
-				province_id = 400				
+				province_id = 400
+				province_id = 341
+				province_id = 343
+				province_id = 361			
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -46,34 +46,52 @@ country_decisions = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 8
 					OR = {
-						province_id = 504
 						province_id = 151
 						province_id = 410
 						province_id = 385
 						province_id = 384
-						province_id = 124
-						province_id = 125
-						province_id = 425
+						province_id = 419
 						province_id = 382
-						province_id = 454
+						province_id = 1229
 						province_id = 388
 						province_id = 400
+						province_id = 341
+						province_id = 343
+						province_id = 361
 					}
 				}
 			}
 			else = {
-				owns_or_non_sovereign_subject_of = 504
 				owns_or_non_sovereign_subject_of = 151
 				owns_or_non_sovereign_subject_of = 410
 				owns_or_non_sovereign_subject_of = 385
 				owns_or_non_sovereign_subject_of = 384
-				owns_or_non_sovereign_subject_of = 124
-				owns_or_non_sovereign_subject_of = 125
-				owns_or_non_sovereign_subject_of = 425
+				owns_or_non_sovereign_subject_of = 419
 				owns_or_non_sovereign_subject_of = 382
-				owns_or_non_sovereign_subject_of = 454
+				owns_or_non_sovereign_subject_of = 1229
 				owns_or_non_sovereign_subject_of = 388
 				owns_or_non_sovereign_subject_of = 400
+				owns_or_non_sovereign_subject_of = 361
+				OR = {
+					AND = {
+						owns_or_non_sovereign_subject_of = 341
+						owns_or_non_sovereign_subject_of = 343
+					}
+					AND = {
+						341 = {
+							owner = {
+								religion_group = muslim
+								alliance_with = ROOT
+							}
+						}
+						343 = {
+							owner = {
+								religion_group = muslim
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
 			}
 		}
 		effect = {
