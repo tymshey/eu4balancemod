@@ -1228,7 +1228,7 @@ trans_jordan_area = { #3
 	380 381 2327
 }
 
-palestine_area = { #3
+palestine_area = { 6051   #3
 	364 379 1854
 }
 
@@ -1366,7 +1366,7 @@ delta_area = { #3
 
 bahari_area = { #4 #Lower Egypt
 	color = { 19 193 219 }
-	361 2316 4316 4317 
+	361 2316 4316 4317 6050
 }
 
 vostani_area = { #3 #Middle Egypt
