@@ -758,6 +758,8 @@ private_enterprise = {
 	block_settlement_growth = no
 	allow_settlement_growth = no
 	enforce_culture = yes
+	divert_trade = yes
+	support_loyalists = yes
 	
 	# Modifiers:	
 	modifier_overlord = clear

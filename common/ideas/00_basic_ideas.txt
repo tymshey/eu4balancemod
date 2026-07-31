@@ -505,7 +505,7 @@ spy_ideas = {
 	
 	blackmailing = {
 		can_recruit_rajputs = yes
-		allowed_rajput_fraction = 0.1
+		allowed_rajput_fraction = 0.2
 	}
 
 	ai_will_do = {
@@ -1704,23 +1704,22 @@ court_ideas = {
 		loyalty_change_on_revoked = 0.05
 	}
 	welcoming_ceremonies = {
-		infantry_shock = 0.1
-		monthly_persian_influence = 0.1
+		max_absolutism = 10
+		yearly_absolutism = 0.5
 	}
 	tranquil_coordination = {
 		reform_progress_growth = 0.2
+		all_estate_possible_privileges = 1
 	}
 	respected_authority = {
-		all_estate_possible_privileges = 1
 		estate_interaction_cooldown_modifier = -0.20
 	}
 	palace_of_splendor = {
+		infantry_shock = 0.1
 		monthly_splendor = 2 
-		max_absolutism = 10
-		yearly_absolutism = 0.05
 	}
 	court_embassies = {
-		possible_dip_policy = 1 
+		free_policy = 1
 		monarch_diplomatic_power = 1 
 	}
 

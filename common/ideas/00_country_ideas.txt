@@ -1532,7 +1532,6 @@ LNS_ideas = {
 	}
 	lns_a_gunpowder_republic = {
 		fire_damage = 0.15
-		land_forcelimit_modifier = 0.2
 	}
 	venetian_arsenal = {
 		#podmiana z 50 naval fl
@@ -1543,7 +1542,7 @@ LNS_ideas = {
 	}
 	maggior_consiglio = {
 		infantry_power = 0.1
-		republican_tradition = 0.2
+		republican_tradition = 0.3
 	}
 }
 
@@ -13170,7 +13169,7 @@ RUM_ideas = {
 		land_morale = 0.1
 	}
 	bonus = {
-		land_forcelimit_modifier = 0.25
+		administrative_efficiency = 0.1
 	}
 	trigger = {
 		tag = RUM
@@ -13192,12 +13191,12 @@ RUM_ideas = {
 	mediterranean_shipwrights = {
 		#podjebane z egiptu
 	}
-	rum_sultan_al_muazzam = {
-		build_cost = -0.15
-	}
 	rum_protector_of_dar_al_islam = {
-		administrative_efficiency = 0.1
+		global_heretic_missionary_strength = 0.03
+	}
+	rum_sultan_al_muazzam = {
 		development_cost = -0.1
+		trade_efficiency = 0.1
 	}
 }
 

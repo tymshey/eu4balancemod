@@ -1,5 +1,9 @@
 #281 - Podolia
 
+latent_trade_goods = {
+	coal
+}
+
 owner = POL
 controller = POL
 culture = ruthenian
