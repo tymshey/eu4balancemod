@@ -1,3 +1,43 @@
+trade_company_west_africa = {
+	color = { 50 0 200 }
+	
+	provinces = {
+		1164 1165 1166 1096 1793 2241 1466 1097 1098 1118 1119 1151 1163 2242 1168 1306 4078 4079 4080 
+		1111
+		1126 1139 1141 2257 2258 #West Africa Coast
+		1147 2289 2290 2294 #Benin
+		1112 1113 1116 2239 #Jolof
+		1114 1117 2238 #Futa Jalon
+		1167 1171 1172 #Angola
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_WEST_AFRICA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_WEST_AFRICA_Africa_Trade_Company"
+	}
+}
+
+trade_company_east_africa = {
+	color = { 200 0 0 }
+	
+	provinces = {
+		788 1100 1102 1103 1183 1186 1192 1193 1194 1195 1196 1197 1198 1199 1200 1201 1202 1203 1204 1792 2796 2774 4020 4021 4022 4023 4024 4025 4026 4027 4028 4029 4030 4031 4032 4049 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_EAST_AFRICA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_EAST_AFRICA_Africa_Trade_Company"
+	}
+}
+
 trade_company_west_india = {
 	color = { 135 104 85 }
 	
@@ -787,8 +827,6 @@ trade_company_gulf_of_aden = {
 	color = { 96 75 65 }
 	
 	provinces = {
-		 
-		2768 #Angot
 		401 2341 2342 #dhofar_area
 		402 1099 4284 #mahra_area
 		387 2346 4279 #tihama_al_yemen_area
