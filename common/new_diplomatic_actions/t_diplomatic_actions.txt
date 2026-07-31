@@ -1,0 +1,155 @@
+# triggers and effects apply to the actor, FROM is the recipient
+
+t_issue_seal_of_investiture = {
+	category = influence
+	require_acceptance = yes
+	is_visible = {
+		is_emperor_of_china = yes
+	}
+	is_allowed = {
+		FROM = {
+			is_subject_of_type_with_overlord = {
+				who = ROOT
+				type = tributary_state
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = eoc_t_issue_seal_of_investiture_cooldown
+					NOT = {
+						had_country_flag = {
+							flag = eoc_t_issue_seal_of_investiture_cooldown
+							days = 3650
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ROOT_10_YEAR_CD_TT
+				ROOT = {
+					had_country_flag = {
+						flag = eoc_t_issue_seal_of_investiture_cooldown
+						days = 3650
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		clr_country_flag = eoc_t_issue_seal_of_investiture_cooldown
+		set_country_flag = eoc_t_issue_seal_of_investiture_cooldown
+		FROM = {
+			add_legitimacy = 20
+			add_treasury = -500
+		}
+		add_treasury = 500
+	}
+	on_decline = {
+
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+t_enfeoff_king = {
+	category = influence
+	require_acceptance = yes
+	is_visible = {
+		is_emperor_of_china = yes
+	}
+	is_allowed = {
+		FROM = {
+			is_subject_of_type_with_overlord = {
+				who = ROOT
+				type = tributary_state
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					has_country_flag = eoc_t_enfeoff_king_cooldown
+					NOT = {
+						had_country_flag = {
+							flag = eoc_t_enfeoff_king_cooldown
+							days = 3650
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = ROOT_10_YEAR_CD_TT
+				ROOT = {
+					had_country_flag = {
+						flag = eoc_t_enfeoff_king_cooldown
+						days = 3650
+					}
+				}
+			}
+		}
+	}
+	on_accept = {
+		clr_country_flag = eoc_t_enfeoff_king_cooldown
+		set_country_flag = eoc_t_enfeoff_king_cooldown
+		FROM = {
+			add_prestige = 20
+			add_treasury = -500
+		}
+		add_treasury = 500
+	}
+	on_decline = {
+
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+t_mark_for_edit = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		host_access = yes
+	}
+	is_allowed = {
+		FROM = {
+			NOT = { has_country_flag = ht_marked }
+		}
+	}
+	on_accept = {
+		FROM = {
+			set_country_flag = ht_marked
+		}
+	}
+	on_decline = {
+
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+t_unmark_for_edit = {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		host_access = yes
+	}
+	is_allowed = {
+		FROM = {
+			has_country_flag = ht_marked
+		}
+	}
+	on_accept = {
+		FROM = {
+			clr_country_flag = ht_marked
+		}
+	}
+	on_decline = {
+
+	}
+	ai_will_do = {
+		always = no
+	}
+}

@@ -1,0 +1,45 @@
+﻿l_english:
+ 
+ t_eco_stats_tt:0 "Total Dev Clicks: §Y[Root.num_of_times_developed.GetValue]§!\n\n==================\n\nDue to the engine's limitations, this number may appear invisible.\nIf this happens, dev once to reload it."
+ 
+ # Decisions
+
+ t_assign_parliament_decision_title:0 "Assign Parliament to Every Applicable Province"
+ t_assign_parliament_decision_desc:0 "co, nie umiesz czytac?"
+
+ # Triggered modifiers
+
+ t_logistic_overextension_1:0 "Logistic Overextension I"
+ t_logistic_overextension_2:0 "Logistic Overextension II"
+ t_logistic_overextension_3:0 "Logistic Overextension III"
+
+ t_above_2_player_alliances:0 "Above 2 Player Alliances"
+
+ t_thirteen_colonies_buff:0 "Colony in Thirteen Colonies"
+ t_canada_buff:0 "Colony in Canada"
+ t_california_buff:0 "Colony in California"
+ t_louisiana_buff:0 "Colony in Louisiana"
+ t_cascadia_buff:0 "Colony in Cascadia"
+ t_mexico_buff:0 "Colony in Mexico"
+ t_colombia_buff:0 "Colony in Colombia"
+ t_carribean_buff:0 "Colony in Carribean"
+ t_brazil_buff:0 "Colony in Brazil"
+ t_peru_buff:0 "Colony in Peru"
+ t_la_plata_buff:0 "Colony in La Plata"
+ t_australia_buff:0 "Colony in Australia"
+
+ # Modifiers
+ internal_development:0 "Internal Development"
+ internal_development_desc:0 "NARESZCIE TEN MODIFIER MA NORMALNA NAZWE !!!"
+ t_competitive_merchants:0 "Competitive Merchants"
+ t_competitive_merchants_desc:0 "This modifier compensates the lack of Expansion Ideas."
+
+ T_SLAVE_TRADE_SURGED:0 "Slave Trade Surged"
+
+ t_prices.1.title:0 "Slave Trade Surged"
+ t_prices.1.desc:0 "Reports from our overseas merchants speak of turmoil and opportunity in equal measure. Conflict and expansion in distant lands have driven an unprecedented demand for forced labor, while rival powers struggle to secure sufficient supply. Markets from the coasts of West Africa to the plantations of the New World now bid ever higher for this commodity."
+ t_prices.1.a:0 "This will increase the demand for slaves, surely."
+
+ t_colonial.1.title:0 "Competitive Merchants"
+ t_colonial.1.desc:0 "The merchants of our realm have long been a powerful force in our economy, but they have often been overshadowed by the grandeur of our noble houses. With the recent surge in trade and commerce, however, these enterprising individuals have begun to assert their influence more boldly. They are now competing fiercely for control over lucrative trade routes and markets, challenging the traditional dominance of the aristocracy."
+ t_colonial.1.a:0 "This will increase our income from trade."

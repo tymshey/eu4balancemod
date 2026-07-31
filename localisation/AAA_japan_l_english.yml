@@ -1,0 +1,227 @@
+﻿l_english:
+
+ T_GREAT_YAMATO:0 "Yamato"
+ T_GREAT_YAMATO_ADJ:0 "Yamato"
+ t_defensive_war_against_europeans_in_eoc:0 "In Defense of the Celestial Empire"
+
+ # Ideas
+ 
+ t_JAP_ideas:0 "Japanese Ideas"
+ t_JAP_ideas_start:0 "Japanese Traditions"
+ t_JAP_ideas_bonus:0 "Japanese Ambition"
+ 
+ # Culture
+
+ japanese_unified:0 "Japanese"
+
+ # Government Mechanics
+
+ t_japanese_ritsuryo_mechanic:0 "Imperial Government"
+ ability_t_japanese_ritsuryo_mechanic:0 "Imperial Government"
+ t_designate_trade_port:0 "Designate Trade Port"
+ t_designate_trade_port_desc:0 ""
+ t_appoint_court_officials:0 "Appoint Court Officials"
+ t_appoint_court_officials_desc:0 ""
+ t_ritsuryo_mil_interaction:0 "Expand the Officer Corps"
+ t_ritsuryo_mil_interaction_desc:0 ""
+
+ # Decisions
+ 
+ t_increase_isolationism_title:0 " Increase Isolationism"
+ t_increase_isolationism_desc:0 ""
+ t_decrease_isolationism_title:0 " Decrease Isolationism"
+ t_decrease_isolationism_desc:0 ""
+ t_jap_choose_stance_towards_china_title:0 "Choose Stance Towards China"
+ t_jap_choose_stance_towards_china_desc:0 ""
+ t_designate_trade_port_title:0 "Designate Trade Port"
+ t_designate_trade_port_desc:0 ""
+ t_create_charter_decision_title:0 "Create Charter"
+ t_create_charter_decision_desc:0 ""
+ t_consult_heaven_decision_title:0 "Consult Heaven"
+ t_consult_heaven_decision_desc:0 ""
+ t_jap_reset_name_decision_title:0 "Restore Country Name"
+ t_jap_reset_name_decision_desc:0 "Restore the country name to it's default."
+ t_reset_colour_decision_title:0 "Restore Map Colour"
+ t_reset_colour_decision_desc:0 "Restore the country colour to it's default."
+ t_reload_ideas_decision_title:0 "Reload Ideas"
+ t_reload_ideas_decision_desc:0 "Reload the country's ideas."
+ t_jap_nie_desyncuj_gry_cwelu:0 "Nie desyncuj gry cwelu"
+ 
+ # Modifiers
+
+ t_player_daimyo:0 "Daimyo"
+ t_highest_isolationism_in_eoc:0 "Closed Doors in the Empire of China"
+ t_highest_isolationism_in_eoc_desc:0 "If we are the Emperor of China, the -10% development cost modifier will be negated, and grant additional debuffs to development cost, to avoid stacking dev cost modifiers."
+
+ t_jap_protectors_east_catholicism:0 "Protectors of Eastern Catholicism"
+ t_jap_protectors_east_catholicism_desc:0 ""
+ t_jap_vibrant_christian_communities:0 "Vibrant Christian Communities"
+ t_jap_vibrant_christian_communities_desc:0 ""
+ t_jap_naval_powerhouse:0 "Naval Powerhouse"
+ t_jap_new_world_colonization:0 "New World Colonization"
+ t_jap_shogoki_modifier:0 "Unleash the Shinkirou"
+ t_jap_kaitakudan:0 "Kaitakudan"
+ t_jap_thundering_firepower_modifier:0 "Thundering Firepower"
+ t_jap_high_quality_weapons_modifier:0 "High Quality Weapons"
+ t_jap_presence_global_markets:0 "Presence in the Global Markets"
+ t_jap_mixed_commercial_policy_modifier:0 "Mixed Commercial Policy"
+ t_jap_enforced_mercantilism_modifier:0 "Enforced Mercantilism"
+ jap_20_years_devving_dip_yields_twice_bonus_1_burgher_loyalt_modifier:0 "Developing Base Production Gives Additional §G1§! Base Production"
+ t_jap_eighteen_arts_modifier:0 "The Eighteen Arts of Warfare"
+ t_jap_eighteen_arts_modifier_desc:0 "Our warriors practice all Eighteen Arts of Warfare, becoming fearsome in battle."
+ t_japan_korea_trade_agreement_official:0 "Japanese-Korean Trade Agreement"
+ t_japan_korea_trade_agreement_taxed:0 "Taxed Pacific Trade"
+ t_japan_korea_trade_agreement_merchant:0 "Cooperation Between Japanese and Korean Merchants"
+ t_jap_recently_designated_trade_port:0 "Recently Designated Trade Port"
+ t_jap_recently_created_charter:0 "Recently Created Charter"
+ t_japan_stone_architecture:0 "Stone Architecture"
+ jap_shinto_warriors_modifier_eoc:0 "State Religion and The Empire"
+ t_japan_ritsuryo_mil_modifier:0 "Expanded Imperial Officer Corps"
+ t_jap_mandate_religious_tolerance:0 "Confucian Values"
+ t_jap_house_of_the_rising_sun:0 "House of the Rising Sun"
+
+ t_jap_ashikaga_modifier:0 "Legacy of Ashikaga"
+ t_jap_uesugi_modifier:0 "Legacy of Uesugi"
+ t_jap_shimazu_modifier:0 "Legacy of Shimazu"
+ t_jap_oda_modifier:0 "Legacy of Oda"
+ t_jap_yamana_modifier:0 "Legacy of Yamana"
+ t_jap_hosokawa_modifier:0 "Legacy of Hosokawa"
+ t_jap_tokugawa_modifier:0 "Legacy of Tokugawa"
+ t_jap_fallback_modifier:0 "Legacy of the Sengoku"
+
+ t_jap_et_bushido:0 "Bushido Code"
+ 
+ t_jap_imperial_capital_modifier:0 "Imperial Capital"
+ t_jap_fortified_coast:0 "Fortified Coast"
+ t_jap_major_city:0 "Major City"
+ t_jap_vibrant_christian_communities_local:0 "Vibrant Christian Communities"
+ t_jap_urban_centre:0 "Developing Urban Centre"
+ t_jap_greater_kanto:0 "Greater Kanto"
+ t_jap_trade_guilds:0 "Trade Guilds"
+ t_mng_hanlin_academy_modifier:0 "Hanlin Academy"
+ t_golden_buddha:0 "The Golden Buddha"
+ t_golden_buddha_desc:0 "The Golden Buddha is a solid gold Maravijaya attitude seated Buddharupa statue, with a weight of 5,5 tonnes."
+ 
+ # Events (vanilla timeframe)
+ 
+ t_japan_events.1.title:0 "Debug: Form Japan"
+ t_japan_events.1.desc:0 "parovozik"
+ t_japan_events.1.a:0 "dawaj to miesko"
+ t_japan_events.1.b:0 "nie dawaj tego mieska"
+ 
+ t_japan_events.2.title:0 "Our Stance Towards China"
+ t_japan_events.2.desc:0 "parovozik"
+ t_japan_events.2.a:0 "We will conquer them!"
+ t_japan_events.2.b:0 "Perhaps we shall cooperate with China."
+ t_japan_events.2.c:0 "They are our enemies!"
+ 
+ t_japan_events.3.title:0 "Textiles of Japan"
+ t_japan_events.3.desc:0 "As commerce flows more freely and markets expand, the demand for fine Japanese textiles has grown dramatically. Silk from the countryside and cotton from coastal fields now fuel thriving cottage industries. From Kyoto to Edo, weaving houses and merchant guilds multiply, turning once-quiet districts into the heartbeats of production. Dye artisans experiment with vibrant indigo and safflower hues, while loom masters innovate faster techniques passed down through generations. Merchant families grow wealthy, and textiles become not only exports, but symbols of status and culture at home."
+ t_japan_events.3.a:0 "Magnificent!"
+
+ t_japan_events.4.title:0 "Rapid Urbanisation"
+ t_japan_events.4.desc:0 "As our economy grows and new industries emerge, people from the countryside are flocking to the cities in search of work, opportunity, and a better life. This migration has led to the rapid expansion of urban centres across our realm. Streets once quiet are now bustling, new districts rise swiftly, and merchants thrive like never before."
+ t_japan_events.4.a:0 "Magnificent!"
+
+ t_japan_events.5.title:0 "Japanese-Korean Trade Partnership"
+ t_japan_events.5.desc:0 "As both our empire and the Kingdom of Joseon expand their influence across the vast Pacific, a new commercial era emerges. Japanese merchants in California report a surge in trade with Korean settlers further north, exchanging exotic American goods, silks, and metals. Korean traders sail into our ports bearing tobacco, maize, and silver — their goods flowing through Joseon's trade networks and into ours. Seeing an opportunity, our ministers propose a formal agreement to deepen this economic bond."
+ t_japan_events.5.a:0 "Officialize the agreement."
+ t_japan_events.5.b:0 "We shall put a tax on it."
+ t_japan_events.5.c:0 "Let us leave it to the merchants."
+
+ t_japan_events.6.title:0 "The Rise of a Nation"
+ t_japan_events.6.desc:0 "With the last of old daimyos bowing before the central authority, a new spirit takes root in the land of the rising sun. No longer are we a patchwork of warring lords, but a singular realm united by shared language, culture, and purpose. From Kyushu to Honshu, the people begin to think of themselves not just as retainers of their clan, but as sons and daughters of Nippon. A national identity is forming — one that will shape the destiny of our empire for centuries to come."
+ t_japan_events.6.a:0 "A new era is upon us."
+ t_japan_events_6_tt:0 "All provinces of the Japanese culture group across the world will change its culture to §YJapanese§!."
+
+ t_japan_events.7.title:0 "Stone Foundations"
+ t_japan_events.7.desc:0 "As our cities grow and prosper, the need for durable infrastructure becomes paramount. Wooden buildings, while traditional, are vulnerable to fire and decay. To ensure the longevity of our urban centers, we are turning to stone as a primary building material. Skilled masons and architects are being commissioned to construct robust foundations, walls, and public edifices that will stand the test of time."
+ t_japan_events.7.a:0 "Magnificent!"
+
+ t_japan_events.8.title:0 "Founding of a New Dynasty"
+ t_japan_events.8.desc:0 "As we conquer the mandate of heaven and unify the islands under our rule, a new identity for our empire is being considered. The name 'Japan' has long been used by outsiders, but it does not fully capture the spirit and heritage of our people. 'Great Yamato' harkens back to our ancient roots and the legendary Yamato dynasty that first unified these lands. Adopting this name would signal to the world that we are a powerful, sovereign nation with a proud history."
+ t_japan_events.8.a:0 "We shall be Great Yamato!"
+ t_japan_events.8.b:0 "Let us remain Japan."
+
+ t_japan_events.9.title:0 "The Interpretation of Heaven"
+ t_japan_events.9.desc:0 "The new Japanese Emperors of China have made their position clear: the Confucian system, as practiced for centuries on the mainland, will not be adopted in full. Yet with the Mandate of Heaven now resting upon a Japanese throne, the question of moral order cannot be ignored. Confucian scholars demand orthodoxy, while Shinto priests insist that divine legitimacy flows from the kami, not from foreign doctrine.\n\nWithin the court, a new idea takes shape - not rejection, but fusion. Confucian principles of governance, merit, and duty may serve the state, while Shinto belief anchors the empire’s spiritual legitimacy. Such a path promises stability without submission, but risks displeasing those who see the Mandate as inseparable from Confucian orthodoxy."
+ t_japan_events.9.a:0 "A magnificent idea."
+ t_japan_events.9.b:0 "We cannot upset the balance of power."
+
+ # Extended Timeline Events (ONLY ACCESSIBLE IF THE DATE IS <1440)
+
+ t_japan_et.1.title:0 "Growth of Urban Centers"
+ t_japan_et.1.desc:0 "parovozik"
+ t_japan_et.1.a:0 "Magnificent!"
+
+ t_japan_et.2.title:0 "Fertile Valleys of Kanto"
+ t_japan_et.2.desc:0 "parovozik"
+ t_japan_et.2.a:0 "Ok"
+
+ t_japan_et.3.title:0 "The Bushido Code"
+ t_japan_et.3.desc:0 "parovozik"
+ t_japan_et.3.a:0 "Ok"
+
+ t_japan_et.4.title:0 "Trade Guilds"
+ t_japan_et.4.desc:0 "parovozik"
+ t_japan_et.4.a:0 "Ok"
+ 
+ # Interface
+
+ t_designate_trade_port_btn_tt:0 "HT: Add Ducats"
+ t_create_charter_btn_tt:0 "HT: Add Mana"
+ t_consult_heaven_btn_tt:0 "HT: Variety of Effects"
+ t_officer_corps_btn_tt:0 "HT: Add Army Professionalism"
+ t_modernize_tech_btn_tt:0 "HT: Add Technology"
+ t_mark_btn_tt:0 "HT: Mark for Edit"
+ t_unmark_btn_tt:0 "HT: Unmark for Edit"
+ t_manpower_btn_tt:0 "HT: Add Manpower"
+ t_gdm_btn_tt:0 "HT: AI Iterative Monthly Tick Decisionmaking Fix"
+ t_gdm2_btn_tt:0 "HT: AI Iterative Monthly Tick Pathing Fix"
+ t_crownland_btn_tt:0 "HT: Add Crownland"
+ t_legitimacy_btn_tt:0 "HT: Add Legitimacy Equivalent"
+ t_reform_progress_btn_tt:0 "HT: Add Reform Progress"
+
+ # Tooltips
+
+ t_separator_tt:0 ""
+
+ t_jap_flagship_if_naval_ideas_tt:0 "\nIf we have §TNaval Ideas§! we will also gain the flagship §YO-Atakebune§! as a supplementary reward for the mission, as well as:\n\nJapan gets '§YNaval Powerhouse§!' until the end of the game, giving the following effects:\nMax number of Flagships §G+1§!"
+ t_jap_delegation_relations_tt:0 "If we complete this mission via improving relations with the Emperor, we will recieve:"
+ t_jap_delegation_insult_tt:0 "\nIf we complete this mission via insulting the Emperor, we will recieve:"
+ jap_discover_new_world_tt:0 "\nIf we DO NOT have §TExpansion Ideas§! we will also gain:"
+ significant_christian_presence_tt2:0 "Japan Region gets '§YVibrant Christian Communities§!' until the end of the game, giving the following effects:\nLocal Development Cost Modifier: §G-15%§!"
+ t_jap_increase_base_tax_grants_more_crown_land_tt:0 "Developing our Provincial £adm£ will yield twice the §YCrown land§! bonus."
+ jap_20_years_devving_dip_yields_twice_bonus_1_burgher_loyalt_tt:0 "Developing our provincial £dip£ will yield twice the §YBase Production§! Development as well as §G1§! Merchant Guilds loyalty bonus for 20 years."
+ t_significant_christian_presence_tt:0 "If we completed the Incident via the '§YSignificant Christian Presence§!' outcome, we will gain access to the '§YThe Balance of Power§!' mission as well as:"
+ t_jap_sakoku_tt:0 "If we complete the mission via the §GIsolationist§! outcome we will unlock the mission '§YPort of Dejima§!' as well as:"
+ t_shinto_incident_recent_tooltip:0 "At least 20 years since the last incident."
+ t_central_japan_recieves_1_production_and_manpower:0 "§YWestern Kanto§!, §YEastern Kanto§!, §YKinai§!, §YWestern Chubu§!, §YEastern Chubu§! and §YNorthern Kyushu§! Areas gain §G1§! Base Production and §G1§! Base Manpower."
+ jap_new_buddha_eoc_tt:0 "§TIf we complete this mission while§! §YNOT§! §Tbeing the§! §YEmperor of China,§! §Twe will recieve:§!"
+ christianity_defeated_tt_eoc:0 "§TIf we complete this mission while being the§! §YEmperor of China,§! §Tregardless of the incident's outcome we will recieve:§!\n"
+ t_closed_doors_isolation_tt:0 "If we are the Emperor of China, the -10% development cost modifier will be negated, to avoid stacking dev cost modifiers."
+
+ # Missions
+ 
+ jap_ally_china_title:0 "Delegation to the Emperor"
+ jap_ally_china_desc:0 "Though we rule independently, respect must still be paid to the Emperor of China. By sending a respectful delegation, we secure legitimacy and access to valuable tributary ties, or we could insult them, underlining our prestigious position."
+ jap_land_of_joseon_title:0 "Land of the Joseon"
+ jap_land_of_joseon_desc:0 "The Joseon Kingdom lies just across the sea — culturally vibrant, yet politically divided. By extending our influence there, we not only secure our position in East Asia, but assert our divine right to shape its destiny."
+ jap_fortify_coast_title:0 "Fortify the Coast"
+ jap_fortify_coast_desc:0 "Raids and invasions from the sea have haunted our shores. It is time to strengthen our coastal defenses and ensure that no foreign power may again set foot on our soil uninvited."
+ jap_fortify_coast_tt:0 "We will gain Naval Combat Bonus off owned coast: §G+1§! on the seas around Japan."
+ jap_found_the_eastern_capital_title:0 "Found the Eastern Capital"
+ jap_found_the_eastern_capital_desc:0 "With growing prosperity in the east, a second seat of power is necessary. By establishing a grand capital in the developing city of Edo, we secure our hold on the region and showcase our ambition to the world."
+ jap_establish_daijo_daijin_title:0 "Establish Daijo-Daijin"
+ jap_establish_daijo_daijin_desc:0 "As the imperial court grows, so too must our administrative capacity. The creation of the Daijō-Daijin will centralize governance and assert imperial control over domestic and foreign affairs."
+ jap_establish_daijo_daijin_tt:0 "Every §YAdministrative advisor§! will grant §G-2%§! Development Cost per level."
+ jap_settle_california_title:0 "Settle California"
+ jap_settle_california_desc:0 "Across the vast ocean lies a sun-drenched land of gold and promise. The western shores of California, unclaimed by great powers, offer fertile ground and untold riches. We must stake our claim before others do."
+ jap_colonize_cascadia_title:0 "Colonize Cascadia"
+ jap_colonize_cascadia_desc:0 "North of California lies a wild land of towering forests and abundant game. Though harsher, its strategic ports and rich timber offer vast potential. By settling here, we anchor our presence along the northern Pacific coast."
+ jap_conquer_aztec_title:0 "Aztec Conquest"
+ jap_conquer_aztec_desc:0 "Far to the southeast, a mighty empire of gold and blood rules over rich valleys and temples. If we strike swiftly, we can seize their wealth and rewrite the story of conquest in our favor — under the Rising Sun."
+ t_jap_colonize_taiwan_title:0 "Colonize Taiwan"
+ t_jap_colonize_taiwan_desc:0 "The island of Taiwan lies unclaimed and ripe for expansion. By planting our banner there, we extend our reach across the sea and gain access to foreign markets."
+ jap_conquer_philippines_title:0 "Conquer Philippines"
+ jap_conquer_philippines_desc:0 "The islands to the south teem with fragmented tribes and trading ports. By extending our power over the archipelago, we dominate vital sea lanes and new resources."

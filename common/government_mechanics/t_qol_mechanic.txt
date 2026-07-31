@@ -1,0 +1,53 @@
+#t_qol_mechanic = {
+#	alert_icon_gfx = GFX_alerticons_government_mechanics
+#	alert_icon_index = 14
+#	available = {
+#
+#	}
+#	
+#	powers = {
+#		t_qol_power = {
+#			# gui = russian_modernization_gov_mech
+#			max = 100
+#			reset_on_new_ruler = no
+#			base_monthly_growth = 0.25
+#			# monarch_power = adm
+#			scaled_modifier = {
+#				trigger = {	
+#					
+#				}
+#				modifier = {
+#						land_maintenance_modifier = 0.20
+#						technology_cost = 0.1
+#						idea_cost = 0.1
+#						discipline = -0.05
+#						land_morale = -0.10
+#				}
+#				start_value = 0
+#				end_value = 100	
+#			}
+#		}
+#	}
+#	interactions = {
+#		cwel_cwel = {
+#			gui = three_flames_interaction_button			
+#			icon = GFX_adur_farnbag_interaction
+#			cost = 100
+#			trigger = {
+#				
+#			}
+#			effect = {
+#				add_government_power = {
+#					mechanic_type = t_qol_mechanic
+#					power_type = t_qol_power
+#					value = -10
+#				}
+#				
+#			}
+#			ai_chance = {
+#				factor = 0	
+#			}
+#		}
+#		
+#	}
+#}

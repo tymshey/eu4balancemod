@@ -1,0 +1,72 @@
+﻿l_english:
+
+ ###############
+ ### PERSIA
+ ###############
+ 
+ # Ideas
+
+ t_PER_ideas:0 "Persian Ideas"
+ t_PER_ideas_start:0 "Persian Traditions"
+ t_PER_ideas_bonus:0 "Persian Ambition"
+
+ # Modifiers
+ 
+ t_adur_farnbag_mod:0 "Adur Farnbag Rekindled"
+ t_adur_burzhen_mihr_mod:0 "Adur Burzhen Mihr Rekindled"
+ t_adur_gushnasp_mod:0 "Adur Gushnasp Rekindled"
+ t_tofangchi_regiments:0 "Tofangchi Regiments"
+ t_tofangchi_regiments_desc:0 "The Tofangchi are the [Root.GetAdjective] musketeers who are enlisted from all parts of the nation. Under the supervision of the [Root.GetNobilityOrFallbackName], these soldiers are trained in proficiency with the muskets, unlike other troops of the [Root.GovernmentName]."
+ t_per_abbasid_successor:0 "Successor to the Abbasid Caliphate"
+
+ t_madinat_as_salam:0 "Madinat as-Salam"
+ t_madinat_as_salam_desc:0 "We have rebuilt Madinat as-Salam, the 'City of Peace', symbolizing the revival of Persian culture and influence in the region. It serves as a center of learning, culture, and commerce, attracting scholars, artists, and traders from across the Islamic world."
+
+ # Missions
+
+ per_islamic_learning_and_culture_title:0 "Learning and Culture"
+ per_islamic_learning_and_culture_desc:0 "Persia has a rich history of Islamic learning and culture, with renowned scholars and institutions that have contributed significantly to the Islamic world. By investing in education and cultural initiatives, we can further enhance our influence and prestige in the region."
+ 
+ ###############
+ ### MAMLUKS
+ ###############
+
+ # Decisions
+
+ t_mam_color_egypt_title:0 "Set Colour for Egypt"
+ t_mam_color_egypt_desc:0 "am i tripping or does egypt have a magical colour that cannot be changed in the files"
+
+ # Ideas
+
+ t_EGY_ideas:0 "Egyptian Ideas"
+ t_EGY_ideas_start:0 "Egyptian Traditions"
+ t_EGY_ideas_bonus:0 "Egyptian Ambition"
+
+ # Modifiers
+
+ mam_the_sultans_general_staff_modifier:0 "The Sultan's General Staff"
+ mam_trans_saharan_trade_route_modifier:0 "Trans-Saharan Centre of Trade"
+
+ # Missions
+
+ mam_restore_madinat_as_salam_title:0 "Madinat as-Salam"
+ mam_restore_madinat_as_salam_desc:0 "Modern Baghdad, Madinat as-Salam, the 'City of Peace', was once the capital of the Abbasid Caliphate, and a thriving center of culture and learning in the region. By restoring this city to its former glory, we can revive our cultural heritage and attract scholars, artists, and traders from across the Islamic world, strengthening our influence and prestige."
+ mam_artisans_of_egypt_title:0 "The Artisans of Egypt"
+ mam_artisans_of_egypt_desc:0 "By bringing silkworms from Persia to Egypt, we can establish a thriving silk industry that will boost our economy and enhance our cultural influence. The artisans of Egypt are skilled in various crafts, and by supporting them, we can create exquisite goods that are highly sought after in the region and beyond."
+ mam_the_sultans_general_staff_title:0 "The Sultan's General Staff"
+ mam_the_sultans_general_staff_desc:0 "The Sultan's General Staff is a prestigious institution that oversees the training and organization of our military forces. By investing in this institution, we can enhance our military capabilities and ensure that our forces are well-prepared to defend our interests and expand our influence in the region."
+ mam_trans_saharan_trade_route_title:0 "Trans-Saharan Trade Route"
+ mam_trans_saharan_trade_route_desc:0 "By reestablishing a trade route across the Sahara Desert, we can facilitate commerce between our territories and the markets of West Africa, boosting our economy and enhancing our influence in the region."
+
+ ###############
+ ### OTTOMANS
+ ###############
+
+ # Missions
+
+ tur_the_artisans_of_the_sultanate_title:0 "The Artisans of the Sultanate"
+ tur_the_artisans_of_the_sultanate_desc:0 "The [Root.GetAdjective] sultanate has a long history of craftsmanship, with artisans producing exquisite goods that are highly sought after. By supporting and promoting these artisans, we can boost our economy and enhance our cultural influence."
+
+ ### OTHER
+
+ t_hisn_kayfa_start_modifier:0 "Legacy of the Ayyubids"

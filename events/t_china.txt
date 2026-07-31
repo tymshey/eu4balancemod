@@ -1,0 +1,612 @@
+namespace = t_china_events
+normal_or_historical_nations = yes
+
+### EVENT PICTURES:
+# URBANISATION_INCIDENT_eventPicture
+# TRIBUTARY_FLEET_eventPicture
+# SENGOKU_eventPicture
+# NANBAN_INCIDENT_eventPicture
+# MERITOCRACT_eventPicture
+# IMPERIAL_SEAL_eventPicture
+# IMPERIAL_EXAMINATION_eventPicture
+# IKKO_IKKI_INCIDENT_eventPicture
+# GIFTS_TO_EMPEROR_eventPicture
+# FIREARMS_INCIDENT_eventPicture
+# CHINESE_GENERAL_eventPicture
+###
+
+country_event = { # Warlord selection
+	id = t_china_events.1
+	title = t_china_events.1.title
+	desc = t_china_events.1.desc
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Tang
+		name = t_china_events.1.a
+        TNG = {
+            add_country_modifier = {
+                name = t_divine_favour
+                duration = 7300
+            }
+        }
+        switch_tag = TNG
+		add_manpower = 10
+        custom_tooltip = t_china_events_1_tt
+    }
+    option = { # Shun
+		name = t_china_events.1.b
+        CSH = {
+            add_country_modifier = {
+                name = t_divine_favour
+                duration = 7300
+            }
+        }
+        switch_tag = CSH
+		add_manpower = 10
+        custom_tooltip = t_china_events_1_tt
+    }
+    option = { # Liang
+		name = t_china_events.1.c
+        LNG = {
+            add_country_modifier = {
+                name = t_divine_favour
+                duration = 7300
+            }
+        }
+        switch_tag = LNG
+		add_manpower = 10
+        custom_tooltip = t_china_events_1_tt
+    }
+    option = {
+		name = t_china_events.1.d
+        add_mandate = 10
+        add_country_modifier = {
+            name = t_divine_favour
+            duration = 7300
+        }
+		add_manpower = 10
+        custom_tooltip = t_china_events_1_tt
+    }
+}
+
+country_event = { # unify china debug
+	id = t_china_events.2
+	title = t_china_events.2.title
+	desc = t_china_events.2.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_china_events.2.a
+		inherit = CSH
+		inherit = QIN
+		inherit = JIN
+		inherit = YAN
+		inherit = TNG
+		inherit = LNG
+		inherit = QIC
+		inherit = SHU
+		inherit = CXI
+		inherit = WUU
+		inherit = CDL
+		inherit = CYI
+		inherit = CMI
+		inherit = CHC
+		inherit = NNG
+		inherit = CGS
+		inherit = HUA
+		inherit = YUE
+		inherit = MIN
+        set_emperor_of_china = ROOT
+        inherit = MNG
+	}
+	
+	option = {
+		name = t_china_events.2.b
+		
+		add_treasury = 1
+	}
+}
+
+country_event = { # become eoc debug
+	id = t_china_events.3
+	title = t_china_events.3.title
+	desc = t_china_events.3.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_china_events.3.a
+        set_emperor_of_china = ROOT
+	}
+	
+	option = {
+		name = t_china_events.3.b
+		
+		add_treasury = 1
+	}
+}
+
+country_event = { # hidden event for china breaking apart since it causes desyncs (fuck you paradox)
+	id = t_china_events.4
+	title = t_china_events.4.title
+	desc = t_china_events.4.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		release = TNG
+		release = LNG
+		release = QIN
+		release = QIC
+		release = NNG
+		country_event = { 
+			id = t_china_events.5
+			days = 2
+		}
+	}
+}
+
+country_event = { # hidden event for china breaking apart since it causes desyncs (fuck you paradox)
+	id = t_china_events.5
+	title = t_china_events.5.title
+	desc = t_china_events.5.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		release = YAN
+		release = JIN
+		release = SHU
+		release = CXI
+		release = YUE
+		country_event = { 
+			id = t_china_events.6
+			days = 30
+		}
+	}
+}
+
+country_event = { # hidden event for china breaking apart since it causes desyncs (fuck you paradox)
+	id = t_china_events.6
+	title = t_china_events.6.title
+	desc = t_china_events.6.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		release = WUU
+		release = CSH
+		release = MIN
+		release = CHC
+		release = CMI
+		country_event = { 
+			id = t_china_events.7
+			days = 30
+		}
+	}
+}
+
+country_event = { # hidden event for china breaking apart since it causes desyncs (fuck you paradox)
+	id = t_china_events.7
+	title = t_china_events.7.title
+	desc = t_china_events.7.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		release = CGS
+		release = HUA
+		1840 = {
+			cede_province = HUA
+			add_core = HUA
+		}
+		2162 = {
+			cede_province = YUE
+			add_core = YUE
+		}
+		2161 = {
+			cede_province = YUE
+			add_core = YUE
+		}
+		666 = {
+			cede_province = YUE
+			add_core = YUE
+		}
+		2160 = {
+			cede_province = YUE
+			add_core = YUE
+		}
+		2163 = {
+			cede_province = CGS
+			add_core = CGS
+		}
+		2164 = {
+			cede_province = CGS
+			add_core = CGS
+		}
+		country_event = { 
+			id = t_china_events.8
+			days = 30
+		}
+	}
+}
+
+country_event = { # hidden event for china breaking apart since it causes desyncs (fuck you paradox)
+	id = t_china_events.8
+	title = t_china_events.8.title
+	desc = t_china_events.8.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		# not in china
+
+		4223 = {
+			cede_province = KHA
+		}
+		701 = {
+			cede_province = KHA
+		}
+		702 = {
+			cede_province = KHA
+		}
+
+		set_mandate = 30
+
+		release_all_subjects = yes
+		country_event = { id = t_china_events.1 }
+	}
+}
+
+country_event = { # spawn yuan debug (preferably as oirat)
+	id = t_china_events.9
+	title = t_china_events.9.title
+	desc = t_china_events.9.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_china_events.9.a
+		change_tag = YUA
+		set_emperor_of_china = ROOT
+		every_province = {
+			limit = {
+				OR = {
+					superregion = china_superregion
+					region = manchuria_region
+					region = korea_region
+					region = mongolia_region
+					area = buryatia_area
+					area = tarim_basin_area
+					area = shanshan_area
+					area = kashgaria_area
+					area = amdo_area
+					area = kham_area
+					area = jetysuu_area
+				}
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+
+		4687 = {
+			cede_province = SHY
+		}
+		2434 = {
+			cede_province = SHY
+		}
+		480 = {
+			cede_province = SHY
+		}
+		1816 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			change_province_name = Khanbaliq
+			rename_capital = Khanbaliq
+			move_capital_effect = yes
+		}
+		723 = {
+			change_province_name = Xanadu
+			rename_capital = Xanadu 
+		}
+		2136 = {
+			change_province_name = Zhongdu
+			rename_capital = Zhongdu 
+		}
+
+		set_country_flag = formed_yuan_flag # ive got no idea what is this used for
+
+		if = { #Sinicize the Mongols // why no scripted effect pdx?
+			limit = {
+				NOT = { has_global_flag = sinicized_altaic_flag }
+			}
+			change_primary_culture = altaic_new
+			set_ruler_culture = altaic_new
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				set_heir_culture = altaic_new
+			}
+			if = {
+				limit = {
+					has_consort = yes
+					OR = {
+						consort_culture = mongol
+						consort_culture = oirats
+						consort_culture = khalkha
+						consort_culture = chahar
+					}
+				}
+				set_consort_culture = altaic_new
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							culture = mongol
+							culture = oirats
+							culture = khalkha
+							culture = chahar
+						}
+					}
+					change_culture = altaic_new
+				}
+				every_country = {
+					limit = {
+						OR = {
+							primary_culture = mongol
+							primary_culture = oirats
+							primary_culture = khalkha
+							primary_culture = chahar
+						}
+					}
+					change_primary_culture = altaic_new
+					set_ruler_culture = altaic_new
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						set_heir_culture = altaic_new
+					}
+					if = {
+						limit = {
+							has_consort = yes
+							OR = {
+								consort_culture = mongol
+								consort_culture = oirats
+								consort_culture = khalkha
+								consort_culture = chahar
+							}
+						}
+						set_consort_culture = altaic_new
+					}
+				}
+				set_global_flag = sinicized_altaic_flag
+				remove_accepted_culture = mongol
+				remove_accepted_culture = oirats
+				remove_accepted_culture = khalkha
+				remove_accepted_culture = chahar
+			}
+			custom_tooltip = sinicize_mongols_ct
+			
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+		}
+	}
+	
+	option = {
+		name = t_china_events.9.b
+		
+		add_treasury = 1
+	}
+}
+
+country_event = { # annex japan event
+	id = t_china_events.10
+	title = t_china_events.10.title
+	desc = t_china_events.10.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_china_events.10.a
+		every_province = {
+			limit = {
+				region = japan_region
+			}
+			cede_province = ROOT
+			add_core = ROOT
+		}
+	}
+
+	option = {
+		name = t_china_events.10.b
+		
+		add_treasury = 1
+	}
+}
+
+### ACTUAL EVENTS START HERE !!!
+
+country_event = { # Centre of Islamic Culture in Kashgar
+	id = t_china_events.11
+	title = t_china_events.11.title
+	desc = t_china_events.11.desc
+	picture = GIFTS_TO_EMPEROR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		is_emperor_of_china = yes
+		owns = 739 # Kashgar
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = t_china_events.11.a
+		739 = {
+			add_province_modifier = {
+				name = t_chi_centre_of_islamic_culture
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { # Legacy of the Steppe and the Faithful
+	id = t_china_events.12
+	title = t_china_events.12.title
+	desc = t_china_events.12.desc
+	picture = GIFTS_TO_EMPEROR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		is_emperor_of_china = yes
+		num_of_provinces_owned_or_owned_by_subjects_with = {
+			value = 5
+			religion = sunni
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = { # All faiths serve under Heaven
+		name = t_china_events.12.a
+		add_country_modifier = {
+			name = t_chi_religious_tolerance
+			duration = -1
+		}
+	}
+}
+
+country_event = { # Founding of Shanghai
+	id = t_china_events.13
+	title = t_china_events.13.title
+	desc = t_china_events.13.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			culture_group = east_asian
+			tag = MGE
+			tag = YUA
+			tag = KOR
+			tag = JAP
+		}
+		owns = 1822
+		1822 = {
+			development = 30
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = { # The city of dreams!
+		name = t_china_events.13.a
+		1822 = {
+			center_of_trade = 1
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1
+			add_permanent_province_modifier = {
+				name = t_chi_shanghai
+				duration = -1
+			}
+			change_province_name = "Shanghai"
+			rename_capital = "Shanghai"
+		}
+	}
+}
+
+country_event = { # Religious schools
+	id = t_china_events.14
+	title = t_china_events.14.title
+	desc = t_china_events.14.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+
+	is_triggered_only = yes
+	
+	option = { # chengzhu
+		name = t_china_events.14.a
+		set_religious_school = {
+			group = eastern
+			school = chengzhu_school
+		}
+	}
+	
+	option = { # xunzi
+		name = t_china_events.14.b
+		set_religious_school = {
+			group = eastern
+			school = xunzi_school
+		}
+	}
+	
+	option = { # mengzi
+		name = t_china_events.14.c
+		set_religious_school = {
+			group = eastern
+			school = mengzi_school
+		}
+	}
+	
+	option = { # xinxue
+		name = t_china_events.14.d
+		trigger = {
+			always = no
+		}
+		set_religious_school = {
+			group = eastern
+			school = xinxue_school
+		}
+	}
+	
+	option = { # daoxue
+		name = t_china_events.14.e
+		set_religious_school = {
+			group = eastern
+			school = daoxue_school
+		}
+	}
+	
+	option = { # jingxue
+		name = t_china_events.14.f
+		set_religious_school = {
+			group = eastern
+			school = jingxue_school
+		}
+	}
+}

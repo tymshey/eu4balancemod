@@ -1,0 +1,86 @@
+country_decisions = {
+
+   calai_sell = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+		NOT = {has_country_flag = sold_callai}
+		AND = {
+			OR = {
+				tag = ENG
+				tag = GBR
+				}
+			owns = 87
+			}		
+		}
+	allow = {
+		owns = 87
+		}
+	effect = {
+		87 = {
+			cede_province = FRA
+		}
+		hidden_effect = {
+		set_country_flag = sold_callai
+			}
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

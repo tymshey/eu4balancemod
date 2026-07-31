@@ -1,0 +1,104 @@
+country_decisions = {
+
+   heretics_decision = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+		NOT = {has_country_flag = heretics_decision}
+			tag = NPL
+		}
+	allow = {
+			tag = NPL
+		}
+	effect = {
+		add_country_modifier = {
+			name = heretics_decision_effects
+			duration = -1
+		}
+		hidden_effect = {
+		set_country_flag = heretics_decision
+			}
+		}
+	}
+	
+	Gold = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+		NOT = {has_country_flag = Gold}
+			tag = NPL
+		}
+	allow = {
+			tag = NPL
+		}
+	effect = {
+		2128 = {
+		add_province_modifier = {
+			name = Gold_mine
+			duration = -1
+		}
+		}
+		hidden_effect = {
+		set_country_flag = Gold
+			}
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

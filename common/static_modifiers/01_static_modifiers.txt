@@ -1,0 +1,6 @@
+banner_regiment = {
+	discipline = 0.05
+	land_maintenance_modifier = -0.5
+	regiment_manpower_usage = -0.33
+	reinforce_speed = -0.5
+}

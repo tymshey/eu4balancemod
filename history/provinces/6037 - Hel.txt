@@ -1,0 +1,20 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Hel
+add_core = TEU
+owner = TEU
+controller = TEU
+culture = prussian
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 2
+trade_goods = iron
+base_manpower = 3
+capital = "Hel"
+is_city = yes
+extra_cost = 26
+center_of_trade = 1
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

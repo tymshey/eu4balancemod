@@ -1,0 +1,77 @@
+
+namespace = flavor_new_sus
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_new_sus.1
+    title = flavor_new_sus.1.t
+    desc =  flavor_new_sus.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+ 
+	option = {
+		name =  flavor_new_sus.1.a
+		add_country_modifier = {
+		name = New_Era
+		duration = -1
+		}
+	}
+}
+
+
+namespace = flavor_SUS
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_new_sus.2
+    title = flavor_new_sus.2.t
+    desc =  flavor_new_sus.2.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+    is_triggered_only = yes
+    
+ 
+	option = {
+		name =  flavor_new_sus.2.a
+		226 = {cede_province = GRA}
+		4546 = {cede_province = GRA}
+		223 = {cede_province = GRA}
+		222 = {cede_province = GRA}
+		SOS = {vassalize = GRA}
+		HIS = {declare_war = SOS}
+		}
+	}
+
+
+namespace = flavor_SUS
+normal_or_historical_nations = yes
+country_event = {
+	id = flavor_new_sus.3
+	title = flavor_new_sus.3.t
+	desc = flavor_new_sus.3.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_new_sus.3.a
+		kill_ruler = yes
+		define_ruler = {
+			name = "Muhammad ibn Abdullah ibn Abd al-Muttalib ibn Hashim"
+			dynasty = "Ummayad"
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 63
+			claim = 100
+			male = yes
+		}
+		add_ruler_personality = immortal_personality
+		add_ruler_personality = inspiring_leader_personality
+		add_ruler_personality = conqueror_personality
+		country_event = { id =  gv_superevents.6 } # Superevent
+		all_country = {
+			country_event = { id = gv_superevents.6 }
+		}
+	}
+}

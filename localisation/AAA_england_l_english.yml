@@ -1,0 +1,59 @@
+﻿l_english:
+ 
+ # Keys
+
+ T_ENG_THE_EMPIRE:0 "The Empire"
+ T_ENG_THE_EMPIRE_ADJ:0 "Imperial"
+ england_group:0 "England and Wales"
+
+ # Ideas
+
+ gv_britannia_rules_the_waves:0 "Britannia Rules the Waves"
+ gv_britannia_rules_the_waves_desc:0 "this idea is broken, fuck pdx"
+
+ # Modifiers
+ 
+ t_eng_modern_realm:0 "A Modern Realm"
+ eng_the_redcoat_2:0 "The Redcoats"
+ t_eng_global_empire_act:0 "Global Empire Act"
+ t_eng_birthplace_of_liberalism:0 "Birthplace of Liberalism"
+ 
+ gbr_british_rule_2:0 "British Rule"
+ gv_angevin_rule:0 "Heartland of the Empire"
+ t_kent_fort:0 "Fort of Kent"
+ t_london_stock_exchange:0 "London Stock Exchange"
+ t_hanseatic_gold_reserves:0 "Hanseatic Gold Reserves"
+ t_yorkshire_tea_modifier:0 "Yorkshire Tea"
+
+ # Events
+ 
+ flavor_england.1.title:0 "A True Empire Ruled by A True Emperor"
+ flavor_england.1.desc:0 "In a momentous celebration that will echo through the ages, the time has come for the coronation of our esteemed monarch as the true Emperor of the British Empire. As the realm converges upon the sacred grounds, a palpable air of anticipation envelops the court, and the world watches in awe as history unfolds."
+ flavor_england.1.a:0 "Audentes Fortuna Iuvat!"
+ 
+ flavor_england.2.title:0 "Global Empire Act"
+ flavor_england.2.desc:0 "The sun never sets on the British Empire, a testament to the might and ambition of our nation. From the jungles of India to the shores of the Americas, our influence and control extend across the globe. The time has come to formalize our dominance and secure our legacy for centuries to come. By enacting the Global Empire Act, we shall officially recognize our role as the preeminent world power, cementing our rule over the farthest reaches of the Earth."
+ flavor_england.2.a:0 "Let us proceed."
+
+ # Missions
+
+ gbr_the_cloth_act_title:0 "The Cloth Act"
+ gbr_the_cloth_act_desc:0 "In pursuit of economic prosperity and the advancement of our nation, we have identified a critical opportunity to bolster our textile industry. The Cloth Act, a strategic initiative, aims to revolutionize the production and trade of cloth within our borders. By implementing comprehensive reforms and investing in key aspects of the textile sector, we seek to secure England's dominance in the global market for fine fabrics."
+ gbr_develop_isles_title:0 "Develop The Isles"
+ gbr_develop_isles_desc:0 "As stewards of the British Isles, it is our duty to foster prosperity and wield influence across our homelands. By investing in key areas and implementing targeted reforms, we will solidify our dominance and secure a prosperous future for England."
+ gbr_develop_isles_tt:0 "If we complete this mission by developing the isles while being @GBR Great Britain, we will recieve:\n"
+ gbr_develop_isles_tt2:0 "\nIf we complete this mission by developing England and Wales while being @AVE Angevin Kingdom, we will recieve:\n"
+ gbr_london_stock_exchange_title:0 "London Stock Exchange"
+ gbr_london_stock_exchange_desc:0 "As the economic heart of our mighty nation, London has the potential to become a global financial powerhouse."
+ gbr_refine_the_redcoats_title:0 "A Professional Army"
+ gbr_refine_the_redcoats_desc:0 "In the pursuit of global dominance and the expansion of the British Empire, it has become imperative to refine and strengthen the backbone of our military might – the legendary Redcoats. These distinguished soldiers have long been the symbol of British military prowess, and it is time to elevate their training and efficiency to unprecedented levels."
+ t_gbr_refine_redcoats_tt:0 "'§YThe Redcoats§!' modifier will be upgraded by\nShock Damage Received: §G-10%§!"
+ gbr_a_true_empire_title:0 "A True Empire"
+ gbr_a_true_empire_desc:0 "In pursuit of eternal glory and unchallenged dominion, our sovereign realm must ascend to the zenith of imperial authority. As the sun never sets on the British Empire, so too must our influence cast an unyielding radiance across the globe. To solidify our claim as the paramount power, we must crown a true Emperor, for a true Empire."
+ eng_modernization_mission_title:0 "A Modern Realm"
+ eng_modernization_mission_desc:0 "In the relentless march of time, our realm stands at the crossroads of tradition and progress. To secure our place among the foremost powers, we must embrace the winds of change."
+ gbr_the_yorkshire_tea_title:0 "The Tea Company"
+ gbr_the_yorkshire_tea_desc:0 "In the pursuit of economic prosperity and the advancement of our nation, we have identified a critical opportunity to bolster our tea industry. The Tea Company, a strategic initiative, aims to revolutionize the production and trade of tea within our borders. By implementing comprehensive reforms and investing in key aspects of the tea sector, we seek to secure England's dominance in the global market for fine teas."
+ gbr_birthplace_of_liberalism_title:0 "Birthplace of Liberalism"
+ gbr_birthplace_of_liberalism_desc:0 "The ideals of liberty and individual rights have long been the cornerstone of our nation's identity. As the world around us evolves, it is imperative that we reaffirm our commitment to these principles and solidify our position as the birthplace of liberalism."
+ 

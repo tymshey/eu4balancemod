@@ -1,0 +1,8 @@
+# scripted triggers
+
+host_access = {
+	#always = no
+	has_country_flag = host_country
+	#has_estate_privilege = estate_burghers_control_over_monetary_policy
+	has_wartaxes = yes
+}

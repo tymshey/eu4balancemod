@@ -1,0 +1,144 @@
+namespace = t_korea_events
+normal_or_historical_nations = yes
+
+### EVENT PICTURES:
+# URBANISATION_INCIDENT_eventPicture
+# TRIBUTARY_FLEET_eventPicture
+# SENGOKU_eventPicture
+# NANBAN_INCIDENT_eventPicture
+# MERITOCRACT_eventPicture
+# IMPERIAL_SEAL_eventPicture
+# IMPERIAL_EXAMINATION_eventPicture
+# IKKO_IKKI_INCIDENT_eventPicture
+# GIFTS_TO_EMPEROR_eventPicture
+# FIREARMS_INCIDENT_eventPicture
+# CHINESE_GENERAL_eventPicture
+###
+
+country_event = { # Across the Endless Sea
+	id = t_korea_events.1
+	title = t_korea_events.1.title
+	desc = t_korea_events.1.desc
+	picture = TRIBUTARY_FLEET_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KOR
+        exploration_ideas = 3
+	}
+	
+	option = {
+		name = t_korea_events.1.a
+        create_explorer = { tradition = 50 }
+        add_navy_tradition = 10
+	}
+	
+	option = {
+		name = t_korea_events.1.b
+        add_mercantilism = 5
+	}
+}
+
+country_event = { # Mastering the Open Sea
+	id = t_korea_events.2
+	title = t_korea_events.2.title
+	desc = t_korea_events.2.desc
+	picture = TRIBUTARY_FLEET_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KOR
+        exploration_ideas = 5
+	}
+	
+	option = {
+		name = t_korea_events.2.a
+        add_country_modifier = {
+            name = t_korea_expanded_naval_reach
+            duration = 7300
+        }
+	}
+}
+
+country_event = { # Encouraging Distant Settlements
+	id = t_korea_events.3
+	title = t_korea_events.3.title
+	desc = t_korea_events.3.desc
+	picture = TRIBUTARY_FLEET_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KOR
+        expansion_ideas = 7
+	}
+	
+	option = {
+		name = t_korea_events.3.a
+        add_country_modifier = {
+            name = t_korea_full_support_distant_settlements
+            duration = 7300
+        }
+        add_years_of_income = -0.25
+	}
+    
+	option = {
+		name = t_korea_events.3.b
+        add_country_modifier = {
+            name = t_korea_encouraged_distant_settlements
+            duration = 7300
+        }
+        add_years_of_income = -0.1
+	}
+}
+
+country_event = { # Hui Wank's Ambition
+	id = t_korea_events.4
+	title = t_korea_events.4.title
+	desc = t_korea_events.4.desc
+	picture = TRIBUTARY_FLEET_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KOR
+        exploration_ideas = 1
+	}
+	
+	option = {
+		name = t_korea_events.4.a
+        define_explorer = {
+            name = "Hui Wank"
+            fire = 1
+            shock = 5
+            manuever = 3
+            siege = 1
+        }
+	}
+}
+
+country_event = { # Great Hwan
+	id = t_korea_events.5
+	title = t_korea_events.5.title
+	desc = t_korea_events.5.desc
+	picture = CHINESE_GENERAL_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = KOR
+        is_emperor_of_china = yes
+	}
+	
+	option = {
+		name = t_korea_events.5.a
+        override_country_name = T_GREAT_HWAN
+	}
+
+	option = {
+		name = t_korea_events.5.b
+		
+	}
+}

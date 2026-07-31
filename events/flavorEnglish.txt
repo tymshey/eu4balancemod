@@ -1,0 +1,56 @@
+###########################################
+# Flavor Events for England/Great Britain/Angevin Empire
+#
+# Scripted by tymshey
+###########################################
+
+namespace = flavor_england
+normal_or_historical_nations = yes
+
+# British Empire Proclaimed
+
+country_event = {
+	id = flavor_england.1
+	title = flavor_england.1.title
+	desc = flavor_england.1.desc
+	picture = HRE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_england.1.a
+		# change_tag = GBE
+		override_country_name = T_ENG_THE_EMPIRE
+		add_prestige = 50
+	}
+}
+
+# Global Empire Act
+
+country_event = {
+	id = flavor_england.2
+	title = flavor_england.2.title
+	desc = flavor_england.2.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		exploration_ideas = 7
+		num_of_colonies = 2
+		is_year = 1520
+	}
+	
+	option = {
+		name = flavor_england.2.a
+		add_country_modifier = {
+			name = t_eng_global_empire_act
+			duration = -1
+		}
+	}
+}

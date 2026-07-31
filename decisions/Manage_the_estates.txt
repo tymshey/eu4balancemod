@@ -1,0 +1,151 @@
+country_decisions = {
+
+    Manage_estates = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+			ai = no
+		}
+	allow = {
+		stability = 1
+		government_reform_progress = 50
+		}
+	effect = {
+		add_stability = -1
+		change_government_reform_progress = -50
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_cossacks
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_brahmins
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_maratha
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_vaisyas
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nomadic_tribes
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_dhimmi
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_jains
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_janissaries
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_eunuchs
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_qizilbash
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_ghulams
+			influence = -20
+			duration = 7300
+		}
+		add_estate_influence_modifier = {
+			estate = estate_rajput
+			influence = -20
+			duration = 7300
+		}
+	}
+}
+}
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

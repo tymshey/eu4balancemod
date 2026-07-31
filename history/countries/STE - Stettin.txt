@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = pommeranian
+religion = catholic
+technology_group = western
+capital = 4746	# Stettin
+
+
+
+1435.4.13 = {
+	monarch = {
+		name = "Mockas"
+		dynasty = "Gryf"
+		birth_date = 1425.1.1
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}

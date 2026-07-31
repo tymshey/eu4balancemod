@@ -1,0 +1,33 @@
+﻿l_english:
+
+ FRE:0 "French Empire"
+ FRE_ADJ:0 "French"
+ form_fre_nation_title:0 "Form the French Empire"
+ form_fre_nation_desc:0 "Vive la France!"
+
+ #idee
+ FRE_ideas:0 "French Empire Ideas"
+ 
+ FRE_ideas_start:0 "French Imperial Traditions"
+ FRE_ideas_bonus:0 "French Imperial Ambition"
+ 
+ FRE_tax:0 "Imperial Ferme Générale"
+ FRE_tax_desc:0 "By reforming the tax farming system under direct oversight of the High Crown Council, we squeeze every drop of wealth from wealthy provinces to fund the imperial court and military."
+
+ FRE_morale:0 "Chivalric Imperial Zeal"
+ FRE_morale_desc:0 "Drawing upon centuries of martial pride and the holy mandate of our imperial dynasty, our noble officers inspire our troops to fight and die for the honor of the Fleur-de-lis."
+
+ FRE_reform:0 "Edicts of Saint-Germain"
+ FRE_reform_desc:0 "Sweeping imperial decrees systematically dismantle regional parliaments and feudal privileges, replacing local resistance with royal intendants loyal only to the throne."
+
+ FRE_art:0 "Grand Corps Royal de l'Artillerie"
+ FRE_art_desc:0 "By founding dedicated royal foundries and artillery schools, our siege guns and field batteries deliver devastating firepower, proving that true power is declared through the thunder of imperial cannons."
+
+ FRE_absolutism:0 "Divine Mandate of the Throne"
+ FRE_absolutism_desc:0 "The Emperor's authority is ordained directly by the Almighty. To question the Imperial Will is not merely treason against the state, but a sin against God Himself."
+
+ FRE_discipline:0 "Maison du Roi"
+ FRE_discipline_desc:0 "The elite regiments of the Household Cavalry and Royal Guards undergo grueling drill and discipline, serving as an unshakable wall of steel against our enemies."
+
+ FRE_fort:0 "The Iron Belt"
+ FRE_fort_desc:0 "By fortifying our key river crossings and border strongholds with cutting-edge bastion fortresses, we ensure that the heartlands of the Empire remain untouchable."

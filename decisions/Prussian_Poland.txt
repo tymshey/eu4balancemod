@@ -1,0 +1,114 @@
+country_decisions = {
+
+    Prussian_poland = {
+	major = yes
+	color = { 143 141 128 }
+		potential = {
+			tag = PRU
+			NOT = {has_country_flag = Prussian_poland}
+		}
+	allow = {
+			poland_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = {exists = POL}
+		}
+	effect = {
+			set_country_flag = Prussian_poland
+			2963 = {
+				remove_core = POL
+			}
+			4523 = {
+				remove_core = POL
+			}
+			4524 = {
+				remove_core = POL
+			}
+			4528 = {
+				remove_core = POL
+			}
+			4526 = {
+				remove_core = POL
+			}
+			255 = {
+				remove_core = POL
+			}
+			254 = {
+				remove_core = POL
+			}
+			create_vassal = POL
+			every_province = {
+				limit = {
+				OR = {
+					area = red_ruthenia_area
+					area = sandomierz_area
+					area = mazovia_area
+					area = central_poland_area
+					area = malopolska_area	
+					}
+				}
+				cede_province = POL
+			}
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

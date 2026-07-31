@@ -1,0 +1,86 @@
+country_decisions = {
+
+    biganiga_decision = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+			ai = no
+		}
+	allow = {
+		years_of_income = 0.1
+		OR = {
+		NOT = {has_country_flag = sex}
+		had_country_flag = {
+				flag = sex
+				days = 1825
+				}
+			}
+		}
+	effect = {
+		add_years_of_income = -0.1
+		country_event = { id = flavor_gbr.15}
+		hidden_effect = {
+		set_country_flag = sex
+			}
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

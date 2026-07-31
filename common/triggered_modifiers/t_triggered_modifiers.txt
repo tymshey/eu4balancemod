@@ -1,0 +1,324 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+t_highest_isolationism_in_eoc = {
+	potential = {
+		is_emperor_of_china = yes
+		religion = shinto
+	}
+
+	trigger = {
+		isolationism = 4
+	}
+
+	imperial_mandate = 0.2
+	development_cost = 0.15
+}
+
+# exceeding force limit
+
+t_logistic_overextension_1 = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		army_size_percentage = 1.25
+		OR = {
+			total_development = 1000
+			is_great_power = yes
+		}
+		is_year = 1490
+	}
+
+	reinforce_cost_modifier = 0.25
+	movement_speed = -0.15
+	war_exhaustion = 0.1
+	assault_fort_ability = -0.1
+}
+
+
+
+# rule breaks
+
+t_above_2_player_alliances = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		calc_true_if = {
+			all_ally = {
+				ai = no
+			}
+			amount = 3
+		}
+	}
+	discipline = -0.1
+	advisor_cost = 10
+	global_unrest = 5
+}
+
+# Colonial victory cards
+
+t_thirteen_colonies_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 50
+			colonial_region = colonial_eastern_america
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	infantry_power = 0.075
+}
+
+t_canada_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 30
+			colonial_region = colonial_canada
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	production_efficiency = 0.1
+}
+
+t_california_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 15
+			colonial_region = colonial_california
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	navy_tradition_decay = -0.03
+}
+
+t_louisiana_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 20
+			colonial_region = colonial_louisiana
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	army_tradition_decay = -0.01
+}
+
+t_cascadia_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 10
+			colonial_region = colonial_alaska
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	global_colonial_growth = 25
+}
+
+t_mexico_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 40
+			colonial_region = colonial_mexico
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	development_cost = -0.075
+	inflation_reduction = -0.1
+}
+
+t_colombia_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 30
+			colonial_region = colonial_colombia
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	artillery_power = 0.075
+}
+
+t_carribean_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 20
+			colonial_region = colonial_the_carribean
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	global_ship_trade_power = 0.2
+}
+
+t_brazil_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 40
+			colonial_region = colonial_brazil
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	build_cost = -0.1
+}
+
+t_peru_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 25
+			colonial_region = colonial_peru
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	global_tariffs = 0.15
+}
+
+t_la_plata_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 30
+			colonial_region = colonial_la_plata
+			is_city = yes
+		}
+		capital_scope = {
+			OR = {
+				NOT = { continent = north_america }
+				NOT = { continent = south_america }
+			}
+		}
+	}
+
+	treasure_fleet_income = 0.15
+}
+
+t_australia_buff = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 20
+			colonial_region = colonial_australia
+			is_city = yes
+		}
+		# australia can be used by everyone cuz why not its a trash buff anyways
+	}
+
+	reduced_liberty_desire_on_other_continent = 10
+}

@@ -1,0 +1,9 @@
+# Prices
+
+tank = { 
+	base_price = 10
+}
+
+honey = {
+	base_price = 5
+}

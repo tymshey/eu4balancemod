@@ -1,0 +1,67 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_gv_educate_heir"
+		texturefile = "gfx/interface/t_book_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_book_adm_btn"
+		texturefile = "gfx/interface/t_book_adm_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_book_dip_btn"
+		texturefile = "gfx/interface/t_book_dip_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_book_mil_btn"
+		texturefile = "gfx/interface/t_book_mil_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_economy_stats"
+		texturefile = "gfx/interface/t_economy_stats.dds"
+	}
+	spriteType = {
+		name = "GFX_t_manpower_btn"
+		texturefile = "gfx/interface/t_manpower_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_crownland_btn"
+		texturefile = "gfx/interface/t_crownland_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_legitimacy_btn"
+		texturefile = "gfx/interface/t_legitimacy_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_reform_progress_btn"
+		texturefile = "gfx/interface/t_reform_progress_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_golden_btn"
+		texturefile = "gfx/interface/t_golden_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_chengzhu"
+		texturefile = "gfx/interface/icon_eastern_school_chengzhu.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_xunzi"
+		texturefile = "gfx/interface/icon_eastern_school_xunzi.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_mengzi"
+		texturefile = "gfx/interface/icon_eastern_school_mengzi.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_xinxue"
+		texturefile = "gfx/interface/icon_eastern_school_xinxue.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_daoxue"
+		texturefile = "gfx/interface/icon_eastern_school_daoxue.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_jingxue"
+		texturefile = "gfx/interface/icon_eastern_school_jingxue.dds"
+	}
+}

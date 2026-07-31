@@ -1,0 +1,17 @@
+
+music = {
+	name = "cat"
+	file = "cat.ogg"
+}
+music = {
+	name = "epstein"
+	file = "epstein.ogg"
+}
+music = {
+	name = "mbbape"
+	file = "mbbape.ogg"
+}
+music = {
+	name = "hotdog"
+	file = "hotdog.ogg"
+}

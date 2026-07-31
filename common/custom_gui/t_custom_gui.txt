@@ -1,0 +1,602 @@
+# Interface
+
+custom_button = {
+    name = t_eco_stats
+    potential = {
+        always = yes
+    }
+    trigger = {
+	
+	}
+    effect = {
+	
+	}
+    tooltip = t_eco_stats_tt
+}
+
+# HOST TOOL
+# contains weird ids becasue its a reused interface from grzegorzverse
+
+# TO BE REWORKED AND EVENTUALLY MADE USABLE
+# it is usable but the interface isnt great
+
+custom_button = {
+    name = t_designate_trade_port_btn
+    potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_years_of_income = 1
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+	}
+    tooltip = t_designate_trade_port_btn_tt
+}
+
+custom_button = {
+    name = t_create_charter_1_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_adm_power = 100
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_create_charter_btn_tt
+}
+
+custom_button = {
+    name = t_create_charter_2_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_dip_power = 100
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_create_charter_btn_tt
+}
+
+custom_button = {
+    name = t_create_charter_3_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_mil_power = 100
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_create_charter_btn_tt
+}
+
+custom_button = {
+    name = t_officer_corps_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_army_professionalism = 0.05
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_officer_corps_btn_tt
+}
+
+custom_button = {
+    name = t_consult_heaven_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_mandate = 15
+			add_doom = -10
+			add_authority = 10
+			add_corruption = -2
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+			add_government_power = {
+				mechanic_type = ottoman_decadence_mechanic
+				power_type = ottoman_decadence
+				value = -10
+			}
+			add_government_power = {
+				mechanic_type = egyptian_westernization
+				power_type = egyptian_westernization
+				value = 10
+			}
+			add_estate_loyalty = {
+				estate = estate_eunuchs
+				loyalty = 10
+			}
+		}
+	}
+    tooltip = t_consult_heaven_btn_tt
+}
+
+custom_button = {
+    name = t_manpower_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_yearly_manpower = 1
+		}
+	}
+    tooltip = t_manpower_btn_tt
+}
+
+custom_button = {
+    name = t_gdm_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		# OR = {
+		#	NOT = { has_country_flag = recent_ht_flag }
+		#	had_country_flag = {
+		#		flag = recent_ht_flag
+		#		days = 1
+		#	}
+		# }
+	}
+	effect = {
+		# set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			if = {
+				limit = {
+					has_country_modifier = ai_iterative_monthly_tick_decisionmaking
+				}
+				remove_country_modifier = ai_iterative_monthly_tick_decisionmaking
+			}
+			else = {
+				add_country_modifier = {
+					name = ai_iterative_monthly_tick_decisionmaking
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+    tooltip = t_gdm_btn_tt
+}
+
+custom_button = {
+    name = t_gdm2_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		# OR = {
+		#	NOT = { has_country_flag = recent_ht_flag }
+		#	had_country_flag = {
+		#		flag = recent_ht_flag
+		#		days = 1
+		#	}
+		# }
+	}
+	effect = {
+		# set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			if = {
+				limit = {
+					has_country_modifier = ai_iterative_monthly_tick_pathing
+				}
+				remove_country_modifier = ai_iterative_monthly_tick_pathing
+			}
+			else = {
+				add_country_modifier = {
+					name = ai_iterative_monthly_tick_pathing
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+    tooltip = t_gdm2_btn_tt
+}
+
+custom_button = {
+    name = t_modernize_adm_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_adm_tech = 1
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_modernize_tech_btn_tt
+}
+
+custom_button = {
+    name = t_modernize_dip_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_dip_tech = 1
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_modernize_tech_btn_tt
+}
+
+custom_button = {
+    name = t_modernize_mil_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+		# NOT = { has_country_modifier = recent_ht }
+	}
+	effect = {
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_mil_tech = 1
+			# add_country_modifier = {
+			#	name = recent_ht
+			#	duration = 1
+			# }
+		}
+	}
+    tooltip = t_modernize_tech_btn_tt
+}
+
+custom_button = {
+    name = t_crownland_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		NOT = { has_country_flag = ht_marked }
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			change_estate_land_share = {
+				estate = estate_church
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_burghers
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_eunuchs
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_cossacks
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_qizilbash
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_ghulams
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_rajput
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_jains
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_brahmins
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_maratha
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_vaisyas
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_nomadic_tribes
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_dhimmi
+				share = -10
+			}
+			change_estate_land_share = {
+				estate = estate_janissaries
+				share = -10
+			}
+		}
+	}
+    tooltip = t_crownland_btn_tt
+}
+
+custom_button = {
+    name = t_legitimacy_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		NOT = { has_country_flag = ht_marked }
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			add_legitimacy = 10
+			add_republican_tradition = 10
+			add_devotion = 10
+			add_meritocracy = 10
+		}
+	}
+    tooltip = t_legitimacy_btn_tt
+}
+
+custom_button = {
+    name = t_reform_progress_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		NOT = { has_country_flag = ht_marked }
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			change_government_reform_progress = 100
+		}
+	}
+    tooltip = t_reform_progress_btn_tt
+}
+
+# mark
+
+custom_button = {
+    name = t_mark_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		NOT = { has_country_flag = ht_marked }
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		set_country_flag = ht_marked
+	}
+    tooltip = t_mark_btn_tt
+}
+
+custom_button = {
+    name = t_unmark_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		has_country_flag = ht_marked
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		clr_country_flag = ht_marked
+	}
+    tooltip = t_unmark_btn_tt
+}

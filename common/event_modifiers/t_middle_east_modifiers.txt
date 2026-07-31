@@ -1,0 +1,51 @@
+### Country
+
+t_adur_farnbag_mod = {
+	reform_progress_growth = 0.1
+	monthly_asha_vahishta = -0.5
+}
+
+t_adur_burzhen_mihr_mod = {
+	development_cost = -0.1
+	monthly_asha_vahishta = -0.5
+}
+
+t_adur_gushnasp_mod = {
+	manpower_recovery_speed = 0.1
+	monthly_asha_vahishta = -0.5
+}
+
+t_tofangchi_regiments = { # fuck you paradox
+	# infantry_power = 0.05
+	army_tradition_decay = -0.01
+	nobles_loyalty_modifier = 0.1
+	nobles_influence_modifier = 0.1
+}
+
+t_per_abbasid_successor = {
+	monthly_persian_influence = 0.1
+}
+
+mam_the_sultans_general_staff_modifier = {
+	leader_land_fire = 2
+	free_leader_pool = 1
+}
+
+t_hisn_kayfa_start_modifier = {
+	global_tax_income = 36
+}
+
+### Province
+
+t_madinat_as_salam = {
+	picture = "t_centre_of_islamic_culture"
+	local_development_cost = -0.1
+	trade_goods_size_modifier = 0.1
+	monthly_persian_influence = 0.05
+	local_manpower = 3
+}
+
+mam_trans_saharan_trade_route_modifier = {
+	trade_value = 20
+	trade_value_modifier = 0.2
+}

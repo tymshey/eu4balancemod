@@ -1,0 +1,10 @@
+### Country
+
+### Province
+
+BYZ_theodosian_wall_4 = {
+	fort_level = 2
+	local_defensiveness = 0.33
+	local_garrison_size = 0.33
+	local_garrison_damage = 0.33
+}

@@ -1,0 +1,26 @@
+country_decisions = {
+	zulu_formable = {
+		major = yes
+		potential = {
+			NOT = { exists = ZUL }
+			tag = ZAN
+		}
+		allow = {
+			adm_tech = 7
+			owns_core_province = 1186
+			owns_core_province = 1185
+			owns_core_province = 1184
+			owns_core_province = 4039
+			owns_core_province = 1201
+			owns_core_province = 1202
+		}
+	 	effect = {
+			add_prestige = 25
+			add_government_reform = shaka_regime
+			set_government_rank = 3
+			change_tag = ZUL
+			on_change_tag_effect = yes
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+}

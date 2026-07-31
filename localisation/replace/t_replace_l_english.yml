@@ -1,0 +1,8 @@
+﻿l_english:
+ 
+ chi_independence_title:0 "Fall of a Great Dynasty"
+ chi_independence_desc:0 "The previous dynasty rule over China is coming to an end after decades of poor administration and the loss of heavenly favour. Breakaway states and warlords take up arms, each striving to impose their rule over the rest."
+ 
+ flavor_mng.29.t:0 "Absolutism in the [Root.GetName] Empire"
+
+ AZT_MODIFY_MECHANIC_HUITZILOPOCHTLI:1 "Make §YHuitzilopochtli§! the main Patron Deity of our nation, which will make §YTonalli Gathering§! have the following effects at maximum power:\n   Morale of Armies: §G+10.0%§!\n   Infantry Combat Ability: §G+10.0%§!\n   Manpower in same Culture Group provinces: §G+10.0%§!"

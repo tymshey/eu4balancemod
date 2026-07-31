@@ -1,0 +1,25 @@
+### Country
+
+kor_discover_new_world_modifier = {
+	global_colonial_growth = 10
+}
+
+t_korea_expanded_naval_reach = {
+	range = 0.15
+}
+
+t_korea_full_support_distant_settlements = {
+	global_colonial_growth = 20
+	colony_cost_modifier = 0.1
+}
+
+t_korea_encouraged_distant_settlements = {
+	global_colonial_growth = 10
+}
+
+### Province
+
+kor_outer_wall_beijing_and_royal_granary_modifier = { # is actually hanseong, not beijing but whatever
+	fort_level = 2
+	trade_goods_size = 2
+}

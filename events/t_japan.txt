@@ -1,0 +1,380 @@
+namespace = t_japan_events
+normal_or_historical_nations = yes
+
+### EVENT PICTURES:
+# URBANISATION_INCIDENT_eventPicture
+# TRIBUTARY_FLEET_eventPicture
+# SENGOKU_eventPicture
+# NANBAN_INCIDENT_eventPicture
+# MERITOCRACT_eventPicture
+# IMPERIAL_SEAL_eventPicture
+# IMPERIAL_EXAMINATION_eventPicture
+# IKKO_IKKI_INCIDENT_eventPicture
+# GIFTS_TO_EMPEROR_eventPicture
+# FIREARMS_INCIDENT_eventPicture
+# CHINESE_GENERAL_eventPicture
+###
+
+country_event = {
+	id = t_japan_events.1
+	title = t_japan_events.1.title
+	desc = t_japan_events.1.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_japan_events.1.a
+		# every_country = {
+			# limit = {
+				# NOT = { tag = ROOT }
+				# OR = {
+					# has_government_reform = daimyo
+					# has_government_reform = shogunate
+				# }
+			# }
+			# ROOT = {
+				# inherit = PREV
+			# }
+		# }
+		inherit = ASK
+		inherit = AKT
+		inherit = RFR
+		inherit = DTE
+		inherit = SBA
+		inherit = UTN
+		inherit = STK
+		inherit = UES
+		inherit = CBA
+		inherit = TKD
+		inherit = OGS
+		inherit = HTK
+		inherit = TKI
+		inherit = TKG
+		inherit = IMG
+		inherit = ODA
+		inherit = KTB
+		inherit = TTI
+		inherit = HSK
+		inherit = ISK
+		inherit = YMN
+		inherit = AMA
+		inherit = OUC
+		inherit = KNO
+		inherit = OTM
+		inherit = SHN
+		inherit = KKC
+		inherit = ITO
+		inherit = SMZ
+		inherit = SOO
+	}
+	
+	option = {
+		name = t_japan_events.1.b
+		
+		add_treasury = 1
+	}
+}
+
+country_event = { # Deprecated
+	id = t_japan_events.2
+	title = t_japan_events.2.title
+	desc = t_japan_events.2.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_japan_events.2.a
+		set_country_flag = vanilla_japan_flag
+		ai_chance = {
+			factor = 100
+		}
+	}
+	
+	option = {
+		name = t_japan_events.2.b
+		set_country_flag = asian_cumbox_flag
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = t_japan_events.2.c
+		set_country_flag = asia_hostility_flag
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = { # Textiles of Japan
+	id = t_japan_events.3
+	title = t_japan_events.3.title
+	desc = t_japan_events.3.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1520
+		tag = JAP
+		owns = 1028
+		owns = 4190
+		owns = 4360
+		owns = 1019
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = t_japan_events.3.a
+		1028 = { # Musashi/Edo/Tokyo
+			change_trade_goods = cloth
+		}
+		4190 = { # Shimousa/Chiba
+			change_trade_goods = cloth
+		}
+		4360 = { # Mikawa
+			change_trade_goods = silk
+		}
+		1019 = { # Harima/Kobe
+			change_trade_goods = silk
+		}
+	}
+}
+
+country_event = { # Rapid Urbanisation
+	id = t_japan_events.4
+	title = t_japan_events.4.title
+	desc = t_japan_events.4.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1600
+		tag = JAP
+		owns = 1028
+		owns = 4189
+		owns = 1030
+		owns = 1021
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = t_japan_events.4.a
+		1028 = { # Musashi/Edo/Tokyo
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_major_city
+				duration = -1
+			}
+		}
+		4189 = { # Sagami/Kanagawa
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_major_city
+				duration = -1
+			}
+		}
+		1030 = { # Owari/Nagoya
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_major_city
+				duration = -1
+			}
+		}
+		1021 = { # Settsu/Osaka
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = t_jap_major_city
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = { # Japanese-Korean Trade Partnership
+	id = t_japan_events.5
+	title = t_japan_events.5.title
+	desc = t_japan_events.5.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1500
+		tag = JAP
+		KOR = {
+			calc_true_if = {
+				all_subject_country = {
+					OR = {
+						is_subject_of_type = colony
+						is_subject_of_type = crown_colony
+						is_subject_of_type = private_enterprise
+						is_subject_of_type = self_governing_colony
+						is_subject_of_type = european_colony
+					}
+				}
+				amount = 2
+			}
+			OR = {
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+				alliance_with = ROOT
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = { # Officialize the agreement
+		name = t_japan_events.5.a
+		add_country_modifier = {
+			name = t_japan_korea_trade_agreement_official
+			duration = -1
+		}
+	}
+
+	option = { # Tax it
+		name = t_japan_events.5.b
+		add_years_of_income = 1
+		add_country_modifier = {
+			name = t_japan_korea_trade_agreement_taxed
+			duration = 7300
+		}
+	}
+
+	option = { # Leave it to the merchants
+		name = t_japan_events.5.c
+		add_country_modifier = {
+			name = t_japan_korea_trade_agreement_merchant
+			duration = -1
+		}
+	}
+}
+
+country_event = { # Japanese national identity forming
+	id = t_japan_events.6
+	title = t_japan_events.6.title
+	desc = t_japan_events.6.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1620
+		tag = JAP
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = t_japan_events.6.a
+		custom_tooltip = t_japan_events_6_tt
+		hidden_effect = {
+			every_province = {
+				limit = { culture_group = japanese_g }
+				change_culture = japanese_unified
+			}
+			change_primary_culture = japanese_unified
+			set_ruler_culture = japanese_unified
+			set_heir_culture = japanese_unified
+			set_consort_culture = japanese_unified
+		}
+	}
+}
+
+country_event = { # Stone Foundations
+	id = t_japan_events.7
+	title = t_japan_events.7.title
+	desc = t_japan_events.7.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1520
+		tag = JAP
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+	
+	option = {
+		name = t_japan_events.7.a
+		add_country_modifier = {
+			name = t_japan_stone_architecture
+			duration = 7300
+		}
+	}
+}
+
+country_event = { # Great Yamato name change
+	id = t_japan_events.8
+	title = t_japan_events.8.title
+	desc = t_japan_events.8.desc
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = t_japan_events.8.a
+		override_country_name = T_GREAT_YAMATO
+	}
+	
+	option = {
+		name = t_japan_events.8.b
+
+	}
+}
+
+country_event = {
+	id = t_japan_events.9
+	title = t_japan_events.9.title
+	desc = t_japan_events.9.desc
+	picture = IMPERIAL_EXAMINATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_emperor_of_china = yes
+		tag = JAP
+		NOT = { religion = confucianism }
+		has_country_flag = reacted_to_confucianism_event
+	}
+
+	option = {
+		name = t_japan_events.9.a
+		
+		add_country_modifier = {
+			name = t_jap_mandate_religious_tolerance
+			duration = -1 
+		}
+	}
+
+	option = {
+		name = t_japan_events.9.b
+
+		add_meritocracy_effect = yes
+		add_stability_or_adm_power = yes
+	}
+}

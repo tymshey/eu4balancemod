@@ -1,0 +1,123 @@
+country_decisions = {
+Fate_of_the_balakans = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = clicked_decision }
+			tag = PAP
+		}
+		
+		allow = {
+			carinthia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			east_adriatic_coast_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			
+			albania_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			
+			
+			
+			slavonia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			croatia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			bosnia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			serbia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			rascia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			
+		}
+	 	effect = {
+			every_province = {
+				limit = {
+				OR = {
+					area = slavonia_area
+					area = croatia_area
+					area = bosnia_area
+					area = serbia_area
+					area = rascia_area	
+					}
+				}
+				add_core = SER
+				cede_province = SER
+			}
+			vassalize = SER
+			SER = {override_country_name = SERFOrmable}
+			SER = {
+				change_country_color = { 
+					color = { 0 56 147 }
+						}
+					}
+			every_province = {
+				limit = {
+					area = albania_area	
+				}
+				change_culture = Arberesh
+				add_core = PAP
+				cede_province = PAP
+			}
+			every_province = {
+				limit = {
+				OR = {
+					area = carinthia_area
+					area = east_adriatic_coast_area
+					}
+				}
+				change_culture = dalmatian
+				add_core = PAP
+				cede_province = PAP
+			}
+			hidden_effect = {
+			override_country_name = KINGDOM_OF_GOD
+			set_country_flag = clicked_decision
+			inherit = SAR
+			inherit = KNI
+			}
+		}
+	}
+	
+	Eco_buffs_for_cro = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Eco_buffs_for_cro_1 }
+			tag = CRO
+		}
+		
+		allow = {
+			stability = 1
+		}
+	 	effect = {
+			add_country_modifier = {
+				name = Eco_buffs
+				duration = -1
+			}
+			CRO = {override_country_name = SERFOrmable}
+			CRO = {
+				change_country_color = { 
+					color = { 0 56 147 }
+						}
+					}
+			hidden_effect = {
+			set_country_flag = Eco_buffs_for_cro_1
+			}
+		}
+	}
+}

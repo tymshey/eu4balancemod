@@ -1,0 +1,35 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+tymshey_ai_harsh_treatment = {
+	potential = {
+		ai = yes
+	}
+	
+	trigger = {
+		ai = yes
+	}
+	
+	global_unrest = -2
+	harsh_treatment_cost = 20
+	development_cost_in_primary_culture = -0.1
+}
+
+tymshey_ai_colonization = {
+	potential = {
+		ai = yes
+	}
+	
+	trigger = {
+		ai = yes
+		is_colonial_nation = yes
+		NOT = { has_idea_group = exploration_ideas }
+	}
+	
+	colonists = 2
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.15
+	colony_cost_modifier = -0.5
+}

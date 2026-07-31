@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_great_project_t_quanzhou_port"
+		texturefile = "gfx//interface//great_projects//great_project_t_quanzhou_port.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_t_potala_palace"
+		texturefile = "gfx//interface//great_projects//great_project_t_potala_palace.dds"
+	}
+}

@@ -1,0 +1,215 @@
+﻿l_english:
+ 
+ # Diplomatic actions
+
+ t_issue_seal_of_investiture_title:0 "Issue Seal of Investiture"
+ t_issue_seal_of_investiture_desc:0 "Issuing a Seal of Investiture to a subject will grant them the title of King, increasing their legitimacy.\n\nThe recipient will recieve:\nGain §G20§! Legitimacy.\nLose §R500.00§! Ducats.\n\nWe will recieve:\nGain §G500.00§! Ducats."
+ t_issue_seal_of_investiture_tooltip:0 "Issue Seal of Investiture"
+ eoc_t_issue_seal_of_investiture_cooldown:0 "This action can only be performed once every 10 years."
+
+ t_enfeoff_king_title:0 "Enfeoff King"
+ t_enfeoff_king_desc:0 "Enfeoffing a King will improve their standing among the nobility, increasing their prestige.\n\nThe recipient will recieve:\nGain §G20§! Prestige.\nLose §R500.00§! Ducats.\n\nWe will recieve:\nGain §G500.00§! Ducats."
+ t_enfeoff_king_tooltip:0 "Enfeoff King"
+ eoc_t_enfeoff_king_cooldown:0 "This action can only be performed once every 10 years."
+
+ # Monuments
+
+ t_quanzhou_port:0 "Port of Quanzhou"
+ t_potala_palace:0 "Potala Palace"
+
+ # Decisions
+
+ t_trigger_warlord_era_decision_title:0 "Trigger Warlord Era"
+ t_trigger_warlord_era_decision_desc:0 "You will trigger a Warlord Era, releasing all tags in China as independent states, are you sure this is what you want?\n\nThis decision disappears after 1450."
+ t_change_schools_decision_title:0 " Change Schools of Thought"
+ t_change_schools_decision_desc:0 ""
+ 
+ # Modifiers
+ 
+ t_divine_favour:0 "Divine Favour"
+ t_chi_religious_tolerance:0 "Religious Tolerance in the Celestial Empire"
+
+ t_chi_imperial_shipyards:0 "Imperial Naval Shipyards"
+ t_yua_xanadu:0 "Imperial Seat of Xanadu"
+ t_chi_centre_of_islamic_culture:0 "Centre of Islamic Culture"
+ t_chi_centre_of_islamic_culture_desc:0 "This province is a respected centre of Islamic learning and literature in the region."
+ t_chi_shanghai:0 "City of Shanghai"
+
+ # Events
+ 
+ t_china_events.1.title:0 "The Warlord Era"
+ t_china_events.1.desc:0 "The Warlord Era has begun, with various factions vying for control over the fragmented Chinese territory. The central government has lost its grip over the Middle Kingdom, and now it is time for us to choose our path forward."
+ t_china_events.1.a:0 "Play as Tang"
+ t_china_events.1.b:0 "Play as Shun"
+ t_china_events.1.c:0 "Play as Liang"
+ t_china_events.1.d:0 "Play as Ming"
+ t_china_events_1_tt:0 "Audentes Fortuna Iuvat!"
+
+ t_china_events.2.title:0 "Debug: Unify China"
+ t_china_events.2.desc:0 "jesli to czytasz, jestes cwelem"
+ t_china_events.2.a:0 "zrob to"
+ t_china_events.2.b:0 "nie rob tego"
+ 
+ t_china_events.3.title:0 "Debug: Become Emperor"
+ t_china_events.3.desc:0 "jesli to czytasz, jestes cwelem"
+ t_china_events.3.a:0 "zrob to"
+ t_china_events.3.b:0 "nie rob tego"
+
+ t_china_events.4.title:0 "Hidden Event"
+ t_china_events.5.title:0 "Hidden Event"
+ t_china_events.6.title:0 "Hidden Event"
+ t_china_events.7.title:0 "Hidden Event"
+ t_china_events.8.title:0 "Hidden Event"
+
+ t_china_events.9.title:0 "Debug: Form Yuan"
+ t_china_events.9.desc:0 "czekanie na grzegorza godzine meczy skurwysyna"
+ t_china_events.9.a:0 "zrob to"
+ t_china_events.9.b:0 "nie rob tego"
+
+ t_china_events.10.title:0 "Debug: Annex Japan"
+ t_china_events.10.desc:0 "szacunek ludzi miednicy"
+ t_china_events.10.a:0 "zrob to"
+ t_china_events.10.b:0 "nie rob tego"
+
+ t_china_events.11.title:0 "Centre of Islamic Culture in Kashgar"
+ t_china_events.11.desc:0 "At the western edge of the Celestial Empire lies Kashgar, a city where caravans converge and cultures meet. Long a hub of Islamic scholarship, trade, and administration, it stands as a bridge between China and the lands beyond the mountains. Mosques, schools, and markets thrive together, drawing scholars and merchants from across Central Asia.\n\nSome at court see Kashgar as an asset, a center of learning and diplomacy that strengthens ties with distant regions and enriches the empire. Others view its distinct traditions with suspicion, fearing that such influence may challenge imperial cohesion."
+ t_china_events.11.a:0 "Magnificent!"
+
+ t_china_events.12.title:0 "Legacy of the Steppe and the Faithful"
+ t_china_events.12.desc:0 "The Celestial Empire has long ruled over peoples of many faiths, but none embraced this reality more fully than the Yuan. Under their rule, Muslims, Buddhists, and others served the state openly, strengthening trade, administration, and ties to distant lands. Though their dynasty has fallen, this legacy endures as a reminder that unity need not require uniformity.\n\nNow, as we govern under Heaven’s Mandate, the court must decide whether to follow this path of tolerance or pursue a more rigid order."
+ t_china_events.12.a:0 "All faiths serve under Heaven."
+
+ t_china_events.13.title:0 "Founding of Shanghai"
+ t_china_events.13.desc:0 "Shanghai, a city of great importance and potential, has been established as a center of trade and commerce. Its strategic location and growing influence make it a key asset in our efforts to expand our reach and strengthen our economy. As we look to the future, Shanghai stands as a symbol of our ambition and a gateway to new opportunities."
+ t_china_events.13.a:0 "The City of Dreams!"
+
+ t_china_events.14.title:0 "The Schools of Thought"
+ t_china_events.14.desc:0 "The intellectual landscape of our empire is rich and diverse, with various schools of thought vying for influence at court. The Cheng Zhu School, with its emphasis on moral cultivation and social harmony, has gained significant traction among the scholars and officials. Meanwhile, the Xunzi School, which focuses on human nature and social order, also has its proponents. As we navigate the complexities of governance, the court must decide which philosophical path to follow, shaping the future of our empire and the legacy we leave for generations to come."
+ t_china_events.14.a:0 "Embrace the Cheng Zhu School."
+ t_china_events.14.b:0 "Embrace the Xunzi School."
+ t_china_events.14.c:0 "Embrace the Mengzi School."
+ t_china_events.14.d:0 "Embrace the Xinxue School."
+ t_china_events.14.e:0 "Embrace the Daoxue School."
+ t_china_events.14.f:0 "Embrace the Jingxue School."
+
+ # Ideas
+
+ # Yuan ideas
+
+ t_YUA_ideas:0 "Great Yuan Ideas"
+ t_YUA_ideas_start:0 "Great Yuan Traditions"
+ t_YUA_ideas_bonus:0 "Great Yuan Ambition"
+
+ # Tang ideas
+
+ t_TNG_ideas:0 "Great Tang Ideas"
+ t_TNG_ideas_start:0 "Great Tang Traditions"
+ t_TNG_ideas_bonus:0 "Great Tang Ambition"
+
+ t_golden_governance:0 "Golden Governance"
+ t_golden_governance_desc:0 "The Tang dynasty is renowned for its effective and enlightened governance, which has allowed it to flourish as one of the most powerful and culturally rich empires in history. By adopting the principles of Golden Governance, we can enhance our administrative efficiency, promote social harmony, and foster economic prosperity. This idea represents our commitment to learning from the best practices of the Tang dynasty, ensuring that our own governance is marked by wisdom, fairness, and a dedication to the well-being of our people."
+ t_revival_of_the_silk_road:0 "Revival of the Silk Road"
+ t_revival_of_the_silk_road_desc:0 "The Silk Road was a vast network of trade routes that connected the East and West, facilitating the exchange of goods, ideas, and cultures. By reviving the Silk Road, we aim to restore this vital artery of commerce and cultural exchange, enhancing our economic strength and international influence. This idea reflects our ambition to reestablish China as a central hub of global trade, fostering prosperity and cultural richness through renewed connections with distant lands."
+ t_celestial_bureaucracy:0 "Celestial Bureaucracy"
+ t_celestial_bureaucracy_desc:0 "The Celestial Bureaucracy is a system of governance that emphasizes meritocracy, efficiency, and the harmonious functioning of the state. By embracing the principles of the Celestial Bureaucracy, we can strengthen our administrative institutions, promote capable leadership, and ensure that our government operates with integrity and effectiveness. This idea represents our commitment to upholding the highest standards of governance, drawing inspiration from the historical legacy of China's imperial administration."
+ t_grand_imperial_army:0 "Grand Imperial Army"
+ t_grand_imperial_army_desc:0 "The Grand Imperial Army is a formidable military force that has historically protected the Chinese empire from external threats and maintained internal stability. By adopting the principles of the Grand Imperial Army, we can enhance our military capabilities, improve our strategic planning, and ensure the security of our nation. This idea reflects our dedication to building a strong and disciplined military, capable of defending our sovereignty and advancing our national interests."
+ t_imperial_navy:0 "Imperial Navy"
+ t_imperial_navy_desc:0 "The Imperial Navy has played a crucial role in safeguarding China's maritime interests and projecting power across the seas. By embracing the principles of the Imperial Navy, we can strengthen our naval forces, enhance our maritime capabilities, and secure our trade routes. This idea represents our commitment to building a powerful navy that can protect our coastal regions, support our economic growth, and assert our influence on the global stage."
+ t_golden_age_of_engineering:0 "Golden Age of Engineering"
+ t_golden_age_of_engineering_desc:0 "The Tang dynasty is celebrated for its remarkable achievements in engineering and technological innovation. By embracing the principles of the Golden Age of Engineering, we can foster a culture of innovation, improve our infrastructure, and advance our technological capabilities. This idea reflects our commitment to harnessing the power of engineering to drive progress, enhance our quality of life, and secure our position as a leading nation in the modern world."
+ t_all_under_heaven:0 "All Under Heaven"
+ t_all_under_heaven_desc:0 "The concept of 'All Under Heaven' embodies the ideal of a harmonious and unified world under the benevolent rule of the Chinese emperor. By embracing this ideal, we can promote peace, stability, and cooperation among nations, fostering a global community that thrives on mutual respect and shared prosperity. This idea reflects our aspiration to lead by example, demonstrating the values of harmony and unity in our interactions with the world."
+
+ # Liang ideas
+
+ t_LNG_ideas:0 "Great Liang Ideas"
+ t_LNG_ideas_start:0 "Great Liang Traditions"
+ t_LNG_ideas_bonus:0 "Great Liang Ambition"
+
+ t_lng_guarding_the_frontiers:0 "Guarding the Frontiers"
+ t_lng_guarding_the_frontiers_desc:0 "Our dynasty has been committed to safeguarding its borders and protecting its people from external threats. By adopting the principles of Guarding the Frontiers, we can enhance our defensive capabilities, strengthen our military presence along our borders, and ensure the security of the nation."
+ t_lng_inwards_perfection:0 "Inwards Perfection"
+ t_lng_inwards_perfection_desc:0 "Inwards Perfection is a philosophy that emphasizes the importance of internal development and self-improvement. By embracing this philosophy, we can focus on strengthening our internal affairs, promoting social harmony, and fostering economic prosperity."
+ t_lng_shenbigong:0 "Shenbigong Regiments"
+ t_lng_shenbigong_desc:0 "The Shenbigong is an elite unit of soldiers equipped with the repeating crossbow, a powerful weapon that can unleash a rapid barrage of bolts on the enemy. The Shenbigong regiments are exceptionally powerful against both infantry and cavalry, making them a formidable force on the battlefield."
+
+ # Missions
+
+ # General China Missions
+
+ t_china_build_shipyards_title:0 "Support the Naval Industry"
+ t_china_build_shipyards_desc:0 "The naval industry is crucial for our nation's defense and economic growth. By investing in the construction of shipyards, we can enhance our naval capabilities, create jobs, and stimulate economic development."
+ t_china_build_shipyards_tt:0 "Every owned coastal province in the §YChina§! Superregion will recieve:"
+ t_china_the_silk_of_china_title:0 "The Silk of China"
+ t_china_the_silk_of_china_desc:0 "The silk industry has been a cornerstone of our economy and culture for centuries. By supporting the silk industry, we can boost our economic growth, create jobs, and preserve an important aspect of our heritage."
+
+ # Qing Missions
+ 
+ mch_ensure_internal_stability_tt:0 "We will gain access to the Tribes estate\n"
+ qng_kashgar_pass_title:0 "Kashgar Pass"
+ qng_kashgar_pass_desc:0 "Kashgar, located at the western edge of the Celestial Empire, has long been a vital hub of trade and culture. By establishing the Kashgar fortress, we can strengthen our control over this strategic region, enhance our trade networks, and promote cultural exchange with neighboring territories."
+ 
+ # Yuan Missions
+
+ t_yua_build_shipyards_title:0 "Support the Naval Industry"
+ t_yua_build_shipyards_desc:0 "The naval industry is crucial for our nation's defense and economic growth. By investing in the construction of shipyards, we can enhance our naval capabilities, create jobs, and stimulate economic development."
+ #this one's a tooltip so we do not need it here
+ t_yua_the_silk_of_china_title:0 "The Silk of China"
+ t_yua_the_silk_of_china_desc:0 "The silk industry has been a cornerstone of our economy and culture for centuries. By supporting the silk industry, we can boost our economic growth, create jobs, and preserve an important aspect of our heritage."
+ yua_project_strength_title:0 "Era of The Great Dragon"
+ yua_project_strength_desc:0 "The Dragon is a symbol of power and strength in Chinese culture. By embarking on the mission to project our strength abroad, we can harness the spirit of the Great Dragon to enhance our military capabilities, boost our national pride, and assert our dominance on the global stage."
+ yua_weaving_gold_and_silk_title:0 "Weaving, Gold & Silk"
+ yua_weaving_gold_and_silk_desc:0 "The Silk Road was a vital trade route that connected China to the rest of the world, facilitating the exchange of goods, ideas, and culture. By revitalizing the Silk Road, we can boost our economy, strengthen our diplomatic ties, and promote cultural exchange with other nations."
+ yua_restore_xanadu_title:0 "Restore Xanadu"
+ yua_restore_xanadu_desc:0 "Xanadu, the summer capital of Kublai Khan, was a symbol of the grandeur and cultural richness of the Yuan dynasty. By restoring Xanadu, we can revive this historical site as a center of culture and learning, attracting scholars and artists from around the world."
+
+ # Tang Missions
+
+ t_tng_restore_chang_an_title:0 "Restore Chang'an"
+ t_tng_restore_chang_an_desc:0 ""
+ t_tng_inward_perfection_title:0 "Inward Perfection"
+ t_tng_inward_perfection_desc:0 "Many advisory voices in our palace advocate in favor of a movement that focuses on perfecting our internal affairs instead of chasing conquest far and wide. However, a new movement within our realm opposes the former, underlaying that we must strike while the iron is hot and smite the enemies who seek to destroy it, before they are able to amass strength to challenge us."
+ t_tng_crisis_of_dynasty_title:0 "Crisis of the Tang Dynasty"
+ t_tng_crisis_of_dynasty_desc:0 "Our dynasty has been through many terrifying crises. Perhaps this is a sign of the Heavens testing our head of state. Nevertheless, we must persevere in the face of danger and not falter. The future of our people hangs in tis balance."
+
+ # Liang Missions
+
+ t_lng_crisis_of_dynasty_title:0 "Crisis of the Liang Dynasty"
+ t_lng_crisis_of_dynasty_desc:0 "Our dynasty has been through many terrifying crises. Perhaps this is a sign of the Heavens testing our head of state. Nevertheless, we must persevere in the face of danger and not falter. The future of our people hangs in tis balance."
+ t_lng_inward_perfection_title:0 "Inward Perfection"
+ t_lng_inward_perfection_desc:0 "Many advisory voices in our palace advocate in favor of a movement that focuses on perfecting our internal affairs instead of chasing conquest far and wide. However, a new movement within our realm opposes the former, underlaying that we must strike while the iron is hot and smite the enemies who seek to destroy it, before they are able to amass strength to challenge us."
+
+ # Religion
+
+ chengzhu_school:0 "Cheng Zhu"
+ chengzhu_school_desc:0 "The Cheng Zhu School, also known as the Neo-Confucian School, is a philosophical movement that emerged during the Song dynasty. It emphasizes the importance of moral cultivation, social harmony, and the pursuit of knowledge."
+ chengzhu_scholar_modifier:0 "Cheng Zhu Scholar"
+ chengzhu_scholar_modifier_desc:0 ""
+ xunzi_school:0 "Xunzi"
+ xunzi_school_desc:0 "The Xunzi School is a philosophical movement that emerged during the Warring States period. It emphasizes the importance of human nature, social order, and the role of ritual in maintaining harmony."
+ xunzi_school_modifier:0 "Xunzi Scholar"
+ xunzi_school_modifier_desc:0 ""
+ mengzi_school:0 "Mengzi"
+ mengzi_school_desc:0 "The Mengzi School, also known as the Mencius School, is a philosophical movement that emerged during the Warring States period. It emphasizes the importance of moral cultivation, benevolence, and the role of education in shaping virtuous individuals."
+ mengzi_school_modifier:0 "Mengzi Scholar"
+ mengzi_school_modifier_desc:0 ""
+ xinxue_school:0 "Xinxue"
+ xinxue_school_desc:0 "The Xinxue School, also known as the School of Mind, is a philosophical movement that emerged during the Song dynasty. It emphasizes the importance of self-cultivation, introspection, and the pursuit of inner wisdom."
+ xinxue_school_modifier:0 "Xinxue Scholar"
+ xinxue_school_modifier_desc:0 ""
+ daoxue_school:0 "Daoxue"
+ daoxue_school_desc:0 "The Daoxue School, also known as the School of the Way, is a philosophical movement that emerged during the Warring States period. It emphasizes the importance of following the natural order, cultivating virtue, and living in harmony with the Dao."
+ daoxue_school_modifier:0 "Daoxue Scholar"
+ daoxue_school_modifier_desc:0 ""
+ jingxue_school:0 "Jingxue"
+ jingxue_school_desc:0 "The Jingxue School, also known as the School of Classics, is a philosophical movement that emerged during the Han dynasty. It emphasizes the importance of studying the Confucian classics, moral cultivation, and the pursuit of knowledge."
+ jingxue_school_modifier:0 "Jingxue Scholar"
+ jingxue_school_modifier_desc:0 ""
+
+ # Other
+
+ CHINESE_SILK:0 "Silk from China"
+ conflict_escalation:0 "Conflict Escalation"
+ survival_of_dragons:0 "Survival of Dragons"
+ cherry_blossoms:0 "Cherry Blossoms"

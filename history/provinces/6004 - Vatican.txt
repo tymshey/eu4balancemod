@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Vatican
+add_core = PAP
+owner = PAP
+controller = PAP
+culture = umbrian
+religion = catholic
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = paper
+base_manpower = 6
+capital = "Vatican"
+is_city = yes
+extra_cost = 26
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

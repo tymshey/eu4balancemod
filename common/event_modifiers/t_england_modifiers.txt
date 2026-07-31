@@ -1,0 +1,44 @@
+# Country
+
+eng_the_redcoat_2 = {
+	infantry_power = 0.1
+	shock_damage_received = -0.1
+}
+
+t_eng_global_empire_act = {
+	years_of_nationalism = -10
+}
+
+t_eng_modern_realm = {
+	state_governing_cost = -0.05
+	global_institution_spread = 0.1
+}
+
+t_eng_birthplace_of_liberalism = {
+	liberty_desire_from_subject_development = -0.15
+}
+
+# Province
+
+gbr_british_rule_2 = {
+	local_unrest = -1
+	local_development_cost = -0.1
+}
+
+gv_angevin_rule = {
+	local_governing_cost = -0.1
+	local_development_cost = -0.05
+}
+
+t_london_stock_exchange = {
+	province_trade_power_modifier = 0.1
+}
+
+t_hanseatic_gold_reserves = {
+	picture = "goodgold"
+	province_trade_power_value = 10
+}
+
+t_yorkshire_tea_modifier = {
+	trade_goods_size = 1
+}

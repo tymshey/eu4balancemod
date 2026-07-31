@@ -1,0 +1,19 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Kelme
+add_core = LIT
+owner = LIT
+controller = LIT
+culture = lithuanian
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = cow
+base_manpower = 3
+capital = "Kelme"
+is_city = yes
+extra_cost = 26
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

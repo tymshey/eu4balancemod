@@ -1,0 +1,76 @@
+country_decisions = {
+
+    Splendor_Govcap = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+			ai = no
+		}
+	allow = {
+		splendor = 400
+		}
+	effect = {
+		add_splendor = -400
+		change_government_reform_progress = 50
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+###########################################
+# Flavor Events for Western Roman Empire
+###########################################
+
+namespace = flavor_wre
+normal_or_historical_nations = yes
+
+
+country_event = {
+	id = flavor_wre.1
+	title = "flavor_wre.1.t"
+	desc = "flavor_wre.1.d"
+	
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WRE
+		NOT = { exists = BYZ }
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	immediate = {
+		set_country_flag = byzantine_rebels
+	}
+	
+	option = {
+		name = flavor_wre.A1
+		balkan_region = {
+			limit = {
+				culture_group = byzantine
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = GRE }
+			}
+		add_nationalism = 10
+		add_core = BYZ
+		}
+		anatolia_region = {
+			limit = {
+				culture_group = byzantine
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = GRE }
+			}
+		add_nationalism = 10
+		add_core = BYZ
+		}
+	}
+}
+
+country_event = {
+	id = flavor_wre.2
+	title = "flavor_wre.2.t"
+	desc = "flavor_wre.2.d"
+	
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WRE
+		is_at_war = no
+		has_country_flag = byzantine_rebels
+		exists = BYZ
+	    BYZ = {
+			defensive_war_with = TUR
+			is_in_war = {
+				defender_leader = BYZ
+				attacker_leader = TUR
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = flavor_wre.A2
+		create_march = BYZ
+		BYZ = {
+			add_opinion = {
+				who = WRE
+				modifier = opinion_good_relations
+			}
+		}
+		add_opinion = {
+			who = BYZ
+			modifier = opinion_good_relations
+		}
+	}
+	option = {
+		name = flavor_wre.B2
+		BYZ = {
+			add_opinion = {
+				who = WRE
+				modifier = opinion_irritated
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_wre.3
+	title = "flavor_wre.3.t"
+	desc = "flavor_wre.3.d"
+	
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = WRE
+		is_at_war = no
+		has_country_flag = byzantine_rebels
+		exists = BYZ
+		has_global_flag = constantinople_restored
+	    BYZ = {
+			NOT = {
+				vassal_of = WRE
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 10
+	}
+	
+	option = {
+		name = flavor_wre.A3
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 600
+			target = BYZ
+		}
+	}
+}

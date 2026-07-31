@@ -1,0 +1,18 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Yueyang
+add_core = MNG
+add_core = CHC
+owner = MNG
+controller = MNG
+culture = xiang
+religion = confucianism
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Yueyang"
+is_city = yes
+
+discovered_by = chinese
+discovered_by = nomad_group

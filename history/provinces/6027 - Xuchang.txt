@@ -1,0 +1,18 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Xuchang
+add_core = MNG
+add_core = LNG
+owner = MNG
+controller = MNG
+culture = zhongyuan
+religion = confucianism
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = chinaware
+base_manpower = 3
+capital = "Xuchang"
+is_city = yes
+
+discovered_by = chinese
+discovered_by = nomad_group

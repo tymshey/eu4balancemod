@@ -1,0 +1,7 @@
+703 = Chengde
+730 = Jilin
+1821 = Jiangning
+2111 = Xingjing
+1065 = Subei
+1055 = Suolun
+1056 = Barguxin

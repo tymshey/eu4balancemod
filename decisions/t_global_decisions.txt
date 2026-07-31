@@ -1,0 +1,73 @@
+country_decisions = {
+
+	# kolor
+
+	t_reset_colour_decision = {
+		color = { 235 64 52 }
+		potential = {
+			ai = no
+			is_colonial_nation = no
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_nie_desyncuj_gry_cwelu }
+				had_country_flag = {
+					flag = t_jap_nie_desyncuj_gry_cwelu
+					days = 1
+				}
+			}
+		}
+		effect = {
+			set_country_flag = t_jap_nie_desyncuj_gry_cwelu
+			restore_country_color = yes
+		}
+	}
+
+	t_assign_parliament_decision = {
+		color = { 235 64 52 }
+		potential = {
+			ai = no
+			has_parliament = yes
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_nie_desyncuj_gry_cwelu }
+				had_country_flag = {
+					flag = t_jap_nie_desyncuj_gry_cwelu
+					days = 1
+				}
+			}
+		}
+		effect = {
+			set_country_flag = t_jap_nie_desyncuj_gry_cwelu
+			every_owned_province = {
+				limit = {
+					is_state_core = ROOT
+				}
+				set_seat_in_parliament = yes
+			}
+		}
+	}
+
+	t_reload_ideas_decision = {
+		color = { 235 64 52 }
+		potential = {
+			ai = no
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_nie_desyncuj_gry_cwelu }
+				had_country_flag = {
+					flag = t_jap_nie_desyncuj_gry_cwelu
+					days = 1
+				}
+			}
+		}
+		effect = {
+			set_country_flag = t_jap_nie_desyncuj_gry_cwelu
+			country_event = {
+				id = ideagroups.1
+			}
+		}
+	}
+}

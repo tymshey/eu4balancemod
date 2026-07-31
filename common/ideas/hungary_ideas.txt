@@ -1,0 +1,123 @@
+Hun_greater_ideas = {
+	start = {
+		cavalry_power = 0.15
+		army_tradition_decay = -0.01
+	}
+	
+	bonus = {
+		cav_to_inf_ratio = 0.15
+	}
+	
+	trigger = {
+		tag = HUN
+		has_country_flag = greater_hungary
+	}
+	free = yes
+	
+	2_hun_renaissanse_knowledge = {
+		development_cost = -0.05
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_first_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_first_idea
+		}
+	}
+	2_bulwark_of_christianity = {
+		global_manpower_modifier = 0.2
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_second_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_second_idea
+		}
+	}
+	2_found_the_black_army = {
+		discipline = 0.05
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_third_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_third_idea
+		}
+	}
+	2_reformed_coinage = {
+		global_tax_modifier = 0.1
+		gold_depletion_chance_modifier = -0.5
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_fourth_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_fourth_idea
+		}
+	}
+	2_curtailed_peasantry = {
+		production_efficiency = 0.15
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_fifth_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_fifth_idea
+		}
+	}
+	2_strengthened_towns = {
+		global_prov_trade_power_modifier = 0.5
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_sixth_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_sixth_idea
+		}
+	}
+	2_hungarian_estates_general = {
+		land_forcelimit_modifier = 0.1
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = hun_unlocked_seventh_idea
+					}
+					has_country_flag = hun_national_idea_bonus
+				}
+				change_government_reform_progress =  25
+			}
+			set_country_flag = hun_unlocked_seventh_idea
+		}
+	}
+}

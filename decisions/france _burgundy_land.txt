@@ -1,0 +1,121 @@
+country_decisions = {
+
+    integrate_french_lands = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+			tag = FRA
+			FRA = {senior_union_with = BUR}
+			NOT = {has_country_flag = annexed_bur_land }
+			
+		}
+	allow = {
+		ROOT = {senior_union_with = BUR}
+		NOT = {current_age = age_of_discovery} 
+		}
+	effect = {
+		BUR = {
+			every_owned_province = {
+				limit = {region = france_region}
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+		hidden_effect = {
+		set_country_flag = annexed_bur_land
+			}
+		}
+	}
+	
+bur_give_land = {
+    major = yes
+    color = { 63 87 129 }
+
+    potential = {
+        tag = BUR
+        is_lesser_in_union = yes
+        NOT = { has_country_flag = bur_give_land }
+        NOT = { 
+            FRA = { senior_union_with = BUR } 
+        }
+    }
+
+    allow = {
+        always = yes
+    }
+
+    effect = {
+        every_owned_province = {
+            limit = {
+                AND = {
+                area = west_burgundy_area
+                area = bourgogne_area
+                }
+            }
+            cede = FRA
+        }
+
+        set_country_flag = bur_give_land
+        }
+    }
+
+
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

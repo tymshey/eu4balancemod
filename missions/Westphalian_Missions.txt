@@ -1,0 +1,642 @@
+Hesse_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = WES
+		tag = HES
+		}
+	}
+	has_country_shield = yes
+	
+	Mission_Secure_Estate_Loyalty = {
+		icon = appease_the_estates
+		position = 1
+		trigger = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+				crown_land_share = 40
+				stability = 3
+			}
+		effect = {
+			add_country_modifier = {
+			name = Estate_Support
+			duration = -1
+			}
+		}
+	}
+	Mission_Reform_The_Army = {
+		icon = mission_new_army
+		required_missions = {Mission_Secure_Estate_Loyalty }
+		position = 2
+		trigger = {
+			army_size_percentage = 0.9
+			army_professionalism = 0.15
+			army_tradition = 40
+			}
+		effect = {
+			add_country_modifier = {
+				name = Army_reform
+				duration = 5475
+			}
+		}
+	}
+	Mission_rhenish_industry = {
+		icon = industrialized_rhineland
+		required_missions = {Mission_Secure_the_rhine }
+		provinces_to_highlight = {
+		area = lower_rhineland_area
+		area = north_rhine_area
+		}
+		position = 3
+		trigger = {
+		85 = {province_has_center_of_trade_of_level = 3}
+		workshop = 30
+			}
+		effect = {
+			every_owned_province = {
+			limit = { area = lower_rhineland_area }
+				add_province_modifier = {
+					name = Rhenish_industry_2
+					duration = 5475
+					}
+				}
+			every_owned_province = {
+			limit = { area = north_rhine_area }
+				add_province_modifier = {
+					name = Rhenish_industry_2
+					duration = 5475
+					}
+				}
+		}
+	}
+	Mission_Develop_germany = {
+		icon = dominant_economy
+		required_missions = {Mission_Future_of_westphalia Mission_rhenish_industry}
+		provinces_to_highlight = {
+		}
+		position = 5
+		
+		trigger = {
+		workshop = 15
+		textile = 10
+		weapons = 3
+		total_development = 1000
+		production_income_percentage = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+			name = Develop_ger
+			duration = 5475
+			}
+		}
+	}
+}
+Hesse_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = WES
+		tag = HES
+		}
+	}
+	has_country_shield = yes
+	
+	Mission_Secure_the_rhine = {
+		icon = rhineland_conquest
+		required_missions = {Mission_Expand_Hesse }
+		provinces_to_highlight = {
+			OR = {
+			area = north_rhine_area
+			area = lower_rhineland_area
+			}
+		}
+		position = 2
+		trigger = {
+			north_rhine_area = {
+				type = all
+				owned_by = ROOT
+				}
+			lower_rhineland_area = {
+				type = all
+				owned_by = ROOT
+				}
+			}
+		effect = {
+			north_westphalia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+				add_permanent_claim = ROOT
+			}
+			westphalia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+					add_permanent_claim = ROOT
+				}
+				add_country_modifier = {
+				name = Rhenish_industry
+				duration = 5475
+			}
+		}
+	}
+	Mission_Unite_Wesphalia = {
+		icon = westphalian_conquest
+		required_missions = {Mission_Secure_the_rhine }
+		provinces_to_highlight = {
+			OR = {
+			area = north_westphalia_area
+			area = westphalia_area
+			area = lower_rhineland_area
+			area = hesse_area
+			area = north_rhine_area
+			}
+		}
+		position = 3
+		trigger = {
+			westphalia_area = {
+				type = all
+				owned_by = ROOT
+				}
+				north_rhine_area = {
+				type = all
+				owned_by = ROOT
+				}
+				hesse_area = {
+				type = all
+				owned_by = ROOT
+				}
+				lower_rhineland_area = {
+				type = all
+				owned_by = ROOT
+				}
+			north_westphalia_area = {
+				type = all
+				owned_by = ROOT
+				}
+			}
+		effect = {
+			add_country_modifier = {
+			name = Westphalia_united
+			duration = -1
+			}
+			custom_tooltip = hesse_tooltip
+			hidden_effect = {
+			set_country_flag = Westphalia_mission_formable
+			}
+		}
+	}
+	Mission_Establish_New_Ports = {
+		icon = mission_norwegian_ship
+		required_missions = {Mission_Future_of_westphalia }
+		provinces_to_highlight = {
+		}
+		position = 5
+		
+		trigger = {
+		46 = {has_building = marketplace}
+		45 = {has_building = marketplace}
+		44 = {has_building = marketplace}
+		
+		navy_size = 90
+		mecklenburg_area = {
+				type = all
+				owned_by = ROOT
+				}
+		45 = {is_strongest_trade_power = ROOT}
+		holstein_area = {
+				type = all
+				owned_by = ROOT
+				}
+		}
+		effect = {
+			2996 = {add_center_of_trade_level = 1}
+			add_country_modifier = {
+			name = New_Ports
+			duration = -1
+			}
+		}
+	}
+}
+
+Hesse_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = WES
+		tag = HES
+		}
+	}
+	has_country_shield = yes
+	
+	Mission_Expand_Hesse = {
+		icon = expand_the_swiss_guard
+		position = 1
+		trigger = {
+			army_size_percentage = 0.9
+			employed_advisor = {
+			category = MIL
+			}
+		}
+		effect = {
+			lower_rhineland_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			hesse_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			north_rhine_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Mission_rhenish_trade_hub = {
+		icon = fra_develop_trade
+		required_missions = {Mission_Expand_Hesse }
+		provinces_to_highlight = {
+		province_id = 1876
+		}
+		position = 3
+		trigger = {
+			owns = 1876
+			1876 = {province_has_center_of_trade_of_level = 3}
+			}
+		effect = {
+			add_years_of_income = 2
+			add_country_modifier = {
+			name = Riches_of_frankfurt
+			duration = 9125
+			}
+		}
+	}
+	Mission_Future_of_westphalia = {
+		icon = interfere_in_germany
+		required_missions = {Mission_rhenish_trade_hub
+								Mission_Unite_Wesphalia}
+		position = 4
+		trigger = {
+			army_size_percentage = 1
+			government_rank = 2
+			tag = WES
+			}
+		effect = {
+			north_german_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Mission_Push_south = {
+		icon = encroach_on_the_germans
+		required_missions = {Mission_Saxon_conquest Mission_Establish_New_Ports }
+		provinces_to_highlight = {
+		}
+		position = 6
+		
+		trigger = {
+			army_size_percentage = 1
+			is_defender_of_faith = yes
+			is_great_power = yes
+		}
+		effect = {
+			south_german_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+Hesse_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = WES
+		tag = HES
+		}
+	}
+	has_country_shield = yes
+	
+	Mission_Thuringian_Throne = {
+		icon = mission_annex_prome
+		required_missions = {Mission_Expand_Hesse }
+		position = 2
+		trigger = {
+			grown_by_states = 2
+			prestige = 75
+			army_size = 30
+			}
+		effect = {
+			add_casus_belli = {
+				target = THU
+				type = cb_restore_personal_union
+				months = 300
+			}
+			braunschweig_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	Mission_March_to_the_Sea = {
+		icon = mission_seize_north_sea_trade
+		required_missions = {Mission_Thuringian_Throne }
+		provinces_to_highlight = {
+		area = braunschweig_area
+		}
+		position = 3
+		trigger = {
+			braunschweig_area = {
+				type = all
+				owned_by = ROOT
+				}
+			}
+		effect = {
+			lower_saxony_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+				add_permanent_claim = ROOT
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT } 
+					NOT = { is_core = ROOT } 
+					}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Mission_Saxon_conquest = {
+		icon = conquer_lower_saxony
+		required_missions = {Mission_March_to_the_Sea Mission_Future_of_westphalia }
+		provinces_to_highlight = {
+		OR = {
+			area = northern_saxony_area
+			area = south_saxony_area
+			}
+		}
+		position = 5
+		trigger = {
+			northern_saxony_area = {
+				type = all
+				owned_by = ROOT
+				}
+			south_saxony_area = {
+				type = all
+				owned_by = ROOT
+				}
+			61 = {
+				owned_by = ROOT
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					OR = {
+						has_great_project = {
+							type = Meissen_Manufactory
+							tier = 2
+						}
+						has_great_project = {
+							type = Meissen_Manufactory
+							tier = 3
+						}
+					}
+				}
+			}
+			trade_goods_produced_amount = {
+				trade_goods = cloth
+				amount = 10
+			}
+			61 = {num_of_times_improved_by_owner = 5}
+			}
+		effect = {
+			custom_tooltip = pol_upgrade_wool_to_cloth_tt
+			hidden_effect = {
+				every_owned_province = { 
+				limit = { trade_goods = wool } 
+				change_trade_goods = cloth 
+				}
+			}
+		}
+	}
+	Mission_An_Imperial_capital = {
+		icon = mission_imperial_cities
+		required_missions = {Mission_Saxon_conquest }
+		provinces_to_highlight = {
+		OR = {
+			area = mittelmark_area
+			}
+		}
+		position = 6
+		trigger = {
+			50 = {	num_of_times_improved_by_owner = 5}
+			set_capital = 50
+			mittelmark_area = {
+				type = all
+				owned_by = ROOT
+				}
+			army_size = 100
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				army_professionalism = 0.3
+			}
+			else = {
+				army_tradition = 40
+			}
+			OR = {
+				monthly_mil = 10
+				ruler_has_personality = martial_educator_personality
+				full_idea_group = quality_ideas
+			}
+		} 
+
+		effect = {  
+			custom_tooltip = HAB_UPGRADE_OFFICERS_PRIVILEGE
+			set_country_flag = hab_military_reform_flag
+
+			custom_tooltip = SEPERATOR_TOOLTIP
+
+			add_country_modifier = {
+				name = hab_haugwitz_reforms
+				duration = 7300
+			}
+
+			define_advisor = {
+				type = army_reformer
+				name = "Friedrich Wilhelm von Haugwitz"
+				skill = 3
+				cost_multiplier = 0.25
+			}
+		} 
+	}
+}
+
+
+Hesse_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = WES
+		tag = HES
+		}
+	}
+	has_country_shield = yes
+	
+	Mission_Germany_Reneisaunce = {
+		icon = mission_the_renaissance_king
+		required_missions = { }
+		position = 1
+		trigger = {
+			is_institution_enabled = renaissance
+			share_of_starting_income = 2
+			NOT = { corruption = 1 }
+			is_in_deficit = no
+			}
+		effect = {
+			add_prestige = 25
+			define_advisor = {
+			type = philosopher
+			skill = 3
+			discount = yes
+			religion = catholic
+			culture = hessian
+			}
+		}
+	}
+	Mission_empire_diplo = {
+		icon = emperor_and_autocrat
+		position = 3
+		trigger = {
+			is_elector = yes
+			calc_true_if = {
+					desc = gen_hre_electors.tooltip
+					all_elector = {
+						preferred_emperor = ROOT
+					}
+					amount = 2
+				}
+			}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 10 }
+			add_country_modifier = {
+				name = "gen_hre_diplomacy_mod"
+				duration = 5475
+				}
+			}
+		}
+		
+		Mission_empire_diplo_2 = {
+		icon = mission_pol_delegate_emperor
+		required_missions = {Mission_empire_diplo }
+		position = 4
+		trigger = {
+			is_emperor = yes
+			}
+		effect = {
+			add_power_projection = { 
+				type = 25_permanent_power_projection
+				amount = 25 
+			}
+			add_country_modifier = {
+				name = "Dearhron_the_habsurgs"
+				duration = -1
+				}
+			}
+		}
+		
+		Mission_Silesian_industry = {
+		icon = take_silesia
+		required_missions = {Mission_Saxon_conquest }
+		provinces_to_highlight = {
+		}
+		position = 6
+		
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				area = silesia_area
+				development = 15
+				num_of_buildings_in_province = 3
+			}
+		}
+		effect = {
+			silesia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = hab_silesian_economy
+					duration = 7300
+				}
+			}
+	
+			custom_tooltip = HAB_RANDOM_SILESIAN_PROVINCE_GETS_FOLLOWING
+			tooltip = {
+				264 = {
+					add_base_production = 2
+					add_or_upgrade_production_building = yes
+				}
+			}
+
+			hidden_effect = {
+				random_province = {
+					limit = {
+						area = silesia_area
+						country_or_non_sovereign_subject_holds = ROOT
+						development = 15
+					}
+					add_base_production = 2
+					add_or_upgrade_production_building = yes
+				}
+			}
+		}
+	}
+}

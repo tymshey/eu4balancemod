@@ -1,0 +1,34 @@
+country_decisions = {
+
+	t_expand_theodosian_walls_decision = {
+		major = yes
+		potential = {
+			has_country_flag = BYZ_unlock_decision_to_upgrade_theodosian_wall_flag
+			151 = {
+				has_province_modifier = BYZ_theodosian_wall_3
+			}
+		}
+		allow = {
+			owns = 151
+            if = {
+                limit = { has_country_flag = BYZ_upgrading_theodosian_walls_will_be_25_cheaper }
+                treasury = 750
+            }
+            else = { treasury = 1000 }
+		}
+		effect = {
+            if = {
+                limit = { has_country_flag = BYZ_upgrading_theodosian_walls_will_be_25_cheaper }
+                add_treasury = -750
+            }
+            else = { add_treasury = -1000 }
+            151 = {
+                remove_province_modifier = BYZ_theodosian_wall_3
+                add_province_modifier = {
+                    name = BYZ_theodosian_wall_4
+                    duration = -1
+                }
+            }
+		}
+	}
+}

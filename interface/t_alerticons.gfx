@@ -1,0 +1,9 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_t_alerticons_japanese_ritsuryo"
+		texturefile = "gfx//interface//t_alerticons//t_japanese_ritsuryo.dds"
+		noOfFrames = 1
+		loadType = "INGAME"
+		alwaystransparent = yes
+	}
+}

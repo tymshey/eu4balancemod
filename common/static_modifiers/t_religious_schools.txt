@@ -1,0 +1,44 @@
+chengzhu_scholar_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	institution_spread_from_true_faith = 0.15
+}
+xunzi_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	shock_damage_received = -0.075
+}
+mengzi_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	harmonization_speed = 0.25
+	yearly_harmony = 1
+}
+xinxue_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	infantry_power = 0.05
+}
+daoxue_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	idea_cost = -0.1
+}
+jingxue_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	imperial_mandate = 0.15
+	technology_cost = 0.1
+}

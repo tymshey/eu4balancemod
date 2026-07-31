@@ -1,0 +1,26 @@
+namespace = t_colonial
+
+country_event = {
+	id = t_colonial.1
+	title = t_colonial.1.title
+	desc = t_colonial.1.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		exploration_ideas = 7
+		colony = 2
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = t_colonial.1.a
+		add_country_modifier = {
+			name = t_competitive_merchants
+			duration = -1
+		}
+	}
+}

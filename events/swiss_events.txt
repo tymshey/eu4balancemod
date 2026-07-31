@@ -1,0 +1,67 @@
+namespace = flavor_Swiss
+normal_or_historical_nations = yes
+
+country_event = {
+	id = Flavor_Swiss
+    title =  Flavor_Swiss.1.t
+    desc =  Flavor_Swiss.1.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+   fire_only_once = yes
+   
+    trigger = {
+		tag = SWI
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name =  Flavor_Swiss.1.a
+		165 = {
+		add_province_modifier = {
+			name = jews
+			duration = -1
+		}
+		}
+		hidden_effect = {
+			set_country_flag = jewish_path
+		}
+	}
+	option = {
+		name =  Flavor_Swiss.1.b
+		add_treasury = 150
+		hidden_effect = {
+		set_country_flag = catholic_path
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = Flavor_Swiss.2
+    title =  Flavor_Swiss.2.t
+    desc =  Flavor_Swiss.2.d
+    picture = WOUNDED_SOLDIERS_eventPicture
+    
+   
+   is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name =  Flavor_Swiss.2.a
+		add_country_modifier = {
+			name = swiss_banks_for_modifier
+			duration = 1825
+			}
+		ROOT = {add_years_of_income = -2}
+			SWI = {add_years_of_income = 4}
+	}
+}
+

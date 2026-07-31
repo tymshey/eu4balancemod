@@ -1,0 +1,80 @@
+t_japanese_ritsuryo_mechanic = {
+	alert_icon_gfx = GFX_t_alerticons_japanese_ritsuryo
+	alert_icon_index = 1
+	available = {
+		tag = JAP
+	}
+	
+	interactions = {
+		t_designate_trade_port = {
+			icon = GFX_outward_focus_button
+			#cost_type = table_of_ranks_adm_power
+			#cost = 100
+			trigger = {
+				adm_power_cost = 50
+				NOT = { has_country_flag = t_roman_senate_locked }
+			}
+			effect = {
+				adm_power_cost = 50
+				add_years_of_income = 0.1
+				random_owned_province = {
+					limit = {
+						region = japan_region
+					}
+					add_base_production = 2
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 10
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 100
+			}
+		}
+		t_appoint_court_officials = {
+			icon = GFX_inward_focus_button
+			#cost_type = table_of_ranks_dip_power
+			#cost = 100
+			trigger = {
+				dip_power_cost = 50
+			}
+			effect = {
+				dip_power_cost = 50
+				add_estate_loyalty = {
+					estate = estate_eunuchs
+					loyalty = 10
+				}
+				define_advisor = {
+					type = treasurer
+					skill = 3
+					cost_multiplier = 0.33
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 0
+			}
+		}
+		t_ritsuryo_mil_interaction = {
+			icon = GFX_expansion_focus_button
+			#cost_type = table_of_ranks_mil_power
+			#cost = 100
+			trigger = {
+				mil_power_cost = 75
+			}
+			effect = {
+				mil_power_cost = 75
+				add_country_modifier = {
+					name = t_japan_ritsuryo_mil_modifier
+					duration = 3650
+				}
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 100
+			}
+		}
+	}
+}

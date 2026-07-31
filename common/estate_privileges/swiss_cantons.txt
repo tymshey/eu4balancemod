@@ -1,0 +1,48 @@
+swiss_cantons = {
+	icon = estate_burghers_fugger_family
+	max_absolutism = -30
+	loyalty = 0.2
+	influence = 0.1
+	is_valid = {
+		is_or_was_tag = { tag = SWI }
+	}
+	can_select = {
+	always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		custom_tooltip = swiss_canton_tooltip
+		tooltip = {
+			add_province_modifier = {
+				name = Swiss_canton_system
+				duration = -1
+				desc = UNTIL_PRIVILEGE_REVOKED
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+		limit = {
+		culture = swiss
+			}
+			add_province_modifier = {
+				name = Swiss_canton_system
+				duration = -1
+			}
+		}
+	}
+	penalties = {
+	culture_conversion_cost = 0.15
+	}
+	benefits = {
+		global_tax_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+	

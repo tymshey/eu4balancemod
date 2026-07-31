@@ -1,0 +1,40 @@
+spriteTypes = {
+
+	spriteType = {
+        name = "GFX_great_project_Port_of_Le_Havre"    
+        texturefile = "gfx//interface//great_projects//great_project_Port_of_Le_Havre.dds"
+    }
+    	spriteType = {
+        name = "GFX_great_project_Free_City_of_Frankfurt"    
+        texturefile = "gfx//interface//great_projects//great_project_Free_City_of_Frankfurt.dds"
+    } 
+        	spriteType = {
+        name = "GFX_great_project_Floating_Harbour"    
+        texturefile = "gfx//interface//great_projects//great_project_Floating_Harbour.dds"
+    } 
+            	spriteType = {
+        name = "GFX_great_project_Hamburger_Hafen"    
+        texturefile = "gfx//interface//great_projects//great_project_Hamburger_Hafen.dds"
+    } 
+                	spriteType = {
+        name = "GFX_great_project_Meissen_Manufactory"    
+        texturefile = "gfx//interface//great_projects//great_project_Meissen_Manufactory.dds"
+    } 
+                	spriteType = {
+        name = "GFX_great_project_Fabryka_Porcelitu"    
+        texturefile = "gfx//interface//great_projects//great_project_Fabryka_Porcelitu.dds"
+    } 
+                    	spriteType = {
+        name = "GFX_great_project_Rothaus"    
+        texturefile = "gfx//interface//great_projects//great_project_Rothaus.dds"
+    } 
+                        	spriteType = {
+        name = "GFX_great_project_French_Vineyards"    
+        texturefile = "gfx//interface//great_projects//great_project_French_Vineyards.dds"
+    } 
+	spriteType = {
+		name = "GFX_great_project_amogus_statue"
+		texturefile = "gfx//interface//great_projects//great_project_amogus_statue.dds"
+	}
+}
+

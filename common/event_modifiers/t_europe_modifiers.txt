@@ -1,0 +1,7 @@
+### Country
+
+t_competitive_merchants = {
+	global_trade_power = 0.1
+}
+
+### Province

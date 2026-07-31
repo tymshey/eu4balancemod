@@ -1,0 +1,17 @@
+country_decisions = {
+
+    refresg_missions = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+			ai = no
+		}
+	allow = {
+		treasury = 1
+		}
+	effect = {
+		swap_non_generic_missions = yes
+		add_treasury = -1
+		}
+	}
+}

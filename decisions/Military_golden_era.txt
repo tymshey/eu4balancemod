@@ -1,0 +1,25 @@
+country_decisions = {
+    Military_golden_age = {
+        major = yes
+        color = { 208 39 39 }
+
+        potential = {
+            NOT = {has_country_flag = Military_golden}
+            ai = no
+        }
+
+        allow = {
+            splendor = 800
+        }
+        effect = {
+            add_splendor = -800
+            add_country_modifier = {
+                name = Military_golden_age_buff
+                duration = 10950
+            }
+            hidden_effect = {
+                set_country_flag = Military_golden
+            }
+        }
+    }
+}

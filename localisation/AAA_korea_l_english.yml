@@ -1,0 +1,49 @@
+﻿l_english:
+ 
+ # Keys
+
+ T_GREAT_HWAN:0 "Hwan"
+ T_GREAT_HWAN_ADJ:0 "Great Hwan"
+
+ # Modifiers
+
+ kor_discover_new_world_modifier:0 "Discovery of the New World"
+ kor_outer_wall_beijing_and_royal_granary_modifier:0 "Royal Outer City"
+ t_korea_expanded_naval_reach:0 "Expanded Naval Reach"
+ t_korea_full_support_distant_settlements:0 "Full State Support for Distant Settlements"
+ t_korea_encouraged_distant_settlements:0 "Encouraged Distant Settlements"
+ 
+ # Events
+ 
+ t_korea_events.1.title:0 "Across the Endless Sea"
+ t_korea_events.1.desc:0 "The seas to the east and south have long been under our control, guiding trade and protecting our coasts, but merchants, fishermen, and returning sailors speak of lands far beyond the horizon - great continents across the vast Pacific, rich in resources and opportunities. These places remain shrouded in mystery, known only through rumor and fragmentary reports from foreign traders. If Joseon is to claim a place among the great powers of this new age, we cannot wait for others to chart these waters for us. Our fleets must venture farther than ever before, pierce the fog of distance, and bring these distant lands within our reach, securing wealth, influence, and knowledge that will endure for generations."
+ t_korea_events.1.a:0 "Let us set sail!"
+ t_korea_events.1.b:0 "Let us wait and prepare further."
+ t_korea_events.2.title:0 "Mastering the Open Sea"
+ t_korea_events.2.desc:0 "Recent expeditions and careful mapping have taught our sailors how to travel farther and more safely than ever before. Knowledge of winds, currents, and resupply methods means that distant lands can now be reached with greater reliability. The kingdom is ready to project its influence across the oceans."
+ t_korea_events.2.a:0 "We are ready."
+ t_korea_events.2.b:0 "We need more time."
+ trade.13.a:0 "Excellent."
+ trade.13.b:0 "Increase attempts."
+ t_korea_events.3.title:0 "Encouraging Distant Settlements"
+ t_korea_events.3.desc:0 "Reports from our overseas outposts indicate that properly organized supply chains, local governance, and incentives for settlers greatly improve survival and productivity. By applying lessons learned from these early experiences, the court can ensure that new settlements grow faster and that colonial development proceeds more efficiently, turning distant holdings into profitable and sustainable extensions of the kingdom."
+ t_korea_events.3.a:0 "Implement full support for settlers."
+ t_korea_events.3.b:0 "We must proceed cautiously."
+ t_korea_events.4.title:0 "Hui Wank's Ambition"
+ t_korea_events.4.desc:0 "Hui Wank, one of the most prominent members of our administration, has declared his desire to fund an expedition to the seas east of Nippon. Rumors speak of lands once inhabited by giants, mysterious and untamed, lying far beyond familiar waters. Hui Wank is organized, decisive, and - most importantly - willing to finance this voyage from his own fortune. Who are we to deny such ambition? With his backing, the kingdom can send explorers further than ever before, potentially claiming new knowledge and distant lands for our realm."
+ t_korea_events.4.a:0 "Not my money, but your honey."
+ t_korea_events.5.title:0 "Great Hwan"
+ t_korea_events.5.desc:0 "As the first Korean dynasty to attain the Mandate of Heaven, it is only fitting for us to adopt Chinese naming conventions, to ensure continued legitimacy, harmony and stability."
+ t_korea_events.5.a:0 "We shall become Great Hwan."
+ t_korea_events.5.b:0 "Let us stay as Korea."
+
+ # Missions
+ 
+ kor_discover_new_world_title:0 "Discover the New World"
+ kor_discover_new_world_desc:0 "The seas to the east and south have long been our domain, but rumors whisper of great lands across the vast Pacific. If we are to stand among the great powers of this new age, we must pierce the fog of distance and find these mythic continents ourselves."
+ kor_colonize_mexico_title:0 "Aztec Conquest"
+ kor_colonize_mexico_desc:0 "In the heart of the distant eastern continent lies a rich empire ruled by strange gods and glittering in gold. The mighty Aztecs command vast wealth — wealth that should be ours. Let us show them the true power of the Korean people and bring this new world under our dominion."
+ kor_colonize_california_title:0 "Colonize California"
+ kor_colonize_california_desc:0 "Beyond the great ocean lies a fertile land of mild climate, flowing rivers, and vast opportunity. California shall be the jewel of our Pacific dominion — a new frontier for Joseon settlers and commerce alike."
+ kor_outer_city_of_hanseong_title:0 "Royal Outer City"
+ kor_outer_city_of_hanseong_desc:0 "To house our growing administration and assert the prestige of our dynasty, we must expand Hanseong into a true royal capital. The outer city shall rise with new palaces, ministries, and roads - a symbol of Joseon order and splendor."

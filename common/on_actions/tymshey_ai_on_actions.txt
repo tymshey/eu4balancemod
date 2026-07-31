@@ -1,0 +1,33 @@
+on_adm_development = {
+	if = {
+		limit = { owner = { ai = yes } }
+		random_list = {
+			25 = {
+				add_base_tax = -1
+				add_base_manpower = 1
+			}
+			75 = { }
+		}
+	}
+}
+
+on_startup = { # nuke just in case it breaks
+    every_country = {
+        limit = {
+            has_country_modifier = ai_iterative_monthly_tick_decisionmaking
+        }
+        remove_country_modifier = ai_iterative_monthly_tick_decisionmaking
+    }
+	every_country = {
+        limit = {
+            has_country_modifier = ai_iterative_monthly_tick_pathing
+        }
+        remove_country_modifier = ai_iterative_monthly_tick_pathing
+    }
+    every_country = {
+        limit = {
+            has_country_flag = ht_marked
+        }
+        clr_country_flag = ht_marked
+    }
+}

@@ -1,0 +1,166 @@
+country_decisions = {
+	t_increase_isolationism = {
+		color = { 235 64 52 }
+		potential = {
+			religion = shinto
+		}
+		allow = {
+			adm_power = 100
+			stability = 2
+			# NOT = { isolationism = 4 }
+		}
+		effect = {
+			add_adm_power = -100
+			add_stability = -2
+			add_isolationism = 1
+		}
+	}
+
+	t_decrease_isolationism = {
+		color = { 235 64 52 }
+		potential = {
+			religion = shinto
+		}
+		allow = {
+			adm_power = 100
+			stability = 2
+		}
+		effect = {
+			add_adm_power = -100
+			add_stability = -2
+			add_isolationism = -1
+		}
+	}
+
+	# na razie wylaczone
+
+	t_designate_trade_port = {
+		potential = {
+			always = no
+			tag = JAP
+			has_estate_privilege = estate_burghers_control_over_monetary_policy
+			has_estate_privilege = estate_burghers_private_trade_fleets
+			NOT = { has_estate_privilege = estate_burghers_free_enterprise }
+			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_recently_designated_trade_port_flag }
+				had_country_flag = {
+					flag = t_jap_recently_designated_trade_port_flag
+					days = 1
+				}
+			}
+			# NOT = { has_country_modifier = t_jap_recently_designated_trade_port }
+			years_of_income = 0.15
+		}
+		effect = {
+			add_years_of_income = 1
+			add_army_professionalism = 0.025
+			set_country_flag = t_jap_recently_designated_trade_port_flag
+			# add_country_modifier = {
+			#	name = t_jap_recently_designated_trade_port
+			#	duration = 1
+			# }
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+	}
+
+	t_create_charter_decision = {
+		potential = {
+			always = no
+			tag = JAP
+			has_estate_privilege = estate_burghers_control_over_monetary_policy
+			has_estate_privilege = estate_burghers_private_trade_fleets
+			NOT = { has_estate_privilege = estate_burghers_free_enterprise }
+			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_recently_created_charter_flag }
+				had_country_flag = {
+					flag = t_jap_recently_created_charter_flag
+					days = 1
+				}
+			}
+			# NOT = { has_country_modifier = t_jap_recently_created_charter }
+			adm_power = 50
+			dip_power = 50
+			mil_power = 50
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+			set_country_flag = t_jap_recently_created_charter_flag
+			# add_country_modifier = {
+			#	name = t_jap_recently_created_charter
+			#	duration = 1
+			# }
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+	}
+
+	t_consult_heaven_decision = {
+		potential = {
+			always = no
+			tag = JAP
+			has_estate_privilege = estate_burghers_control_over_monetary_policy
+			has_estate_privilege = estate_burghers_private_trade_fleets
+			NOT = { has_estate_privilege = estate_burghers_free_enterprise }
+			NOT = { has_estate_privilege = estate_burghers_land_of_commerce }
+			is_emperor_of_china = yes
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_recently_consulted_heaven_flag }
+				had_country_flag = {
+					flag = t_jap_recently_consulted_heaven_flag
+					days = 1
+				}
+			}
+			# NOT = { has_country_modifier = t_jap_recently_created_charter }
+		}
+		effect = {
+			add_mandate = 15
+			add_corruption = -2
+			set_country_flag = t_jap_recently_consulted_heaven_flag
+			# add_country_modifier = {
+			#	name = t_jap_recently_created_charter
+			#	duration = 1
+			# }
+			add_estate_loyalty = {
+				estate = estate_eunuchs
+				loyalty = 10
+			}
+		}
+	}
+
+	# nazwa
+
+	t_jap_reset_name_decision = {
+		color = { 235 64 52 }
+		potential = {
+			tag = JAP
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_flag = t_jap_nie_desyncuj_gry_cwelu }
+				had_country_flag = {
+					flag = t_jap_nie_desyncuj_gry_cwelu
+					days = 1
+				}
+			}
+		}
+		effect = {
+			set_country_flag = t_jap_nie_desyncuj_gry_cwelu
+			restore_country_name = yes
+		}
+	}
+}

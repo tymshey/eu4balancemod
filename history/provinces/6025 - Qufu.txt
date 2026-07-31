@@ -1,0 +1,17 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Qufu
+add_core = MNG
+add_core = QIC
+owner = MNG
+controller = MNG
+culture = zhongyuan
+religion = confucianism
+hre = no
+base_tax = 4
+base_production = 2
+trade_goods = grain
+base_manpower = 3
+capital = "Qufu"
+is_city = yes
+discovered_by = chinese
+discovered_by = nomad_group

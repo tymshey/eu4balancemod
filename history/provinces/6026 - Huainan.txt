@@ -1,0 +1,18 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Huainan
+add_core = MNG
+owner = MNG
+controller = MNG
+add_core = LNG
+culture = zhongyuan
+religion = confucianism
+hre = no
+base_tax = 4
+base_production = 2
+trade_goods = cloth
+base_manpower = 3
+capital = "Huainan"
+is_city = yes
+
+discovered_by = chinese
+discovered_by = nomad_group

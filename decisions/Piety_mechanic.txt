@@ -1,0 +1,25 @@
+country_decisions = {
+Myscitizm_manpower_mechanic = {
+		color = { 50 64 52 }
+		potential = {
+			OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+			}
+		}
+		allow = {
+		NOT = {has_country_modifier = slackening_modifier}
+		OR = {
+			religion = sunni
+			religion = shiite
+			religion = ibadi
+			}
+			NOT = {piety = -0.75}
+		}
+		effect = {
+			add_piety = 0.5
+			add_yearly_manpower = 0.5
+		}
+	}
+}

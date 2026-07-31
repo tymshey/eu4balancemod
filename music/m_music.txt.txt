@@ -1,0 +1,36 @@
+song = {
+	name = "cat"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}
+song = {
+	name = "epstein"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}
+song = {
+	name = "mbbape"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}
+song = {
+	name = "hotdog"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}

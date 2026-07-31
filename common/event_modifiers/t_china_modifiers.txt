@@ -1,0 +1,43 @@
+### Country
+
+t_divine_favour = {
+    land_morale = 0.1
+    manpower_recovery_speed = 0.33
+    global_tax_income = 12
+}
+
+t_chi_religious_tolerance = {
+    tolerance_heathen = 1
+}
+
+mng_divine_mandate_modifier = {
+	# development_cost = -0.1
+	reduced_liberty_desire = 10
+	max_absolutism_effect = 0.1
+}
+
+### Province
+
+t_chi_imperial_shipyards = {
+    naval_forcelimit = 1.25
+    ship_recruit_speed = -0.25
+}
+
+t_yua_xanadu = {
+    local_manpower = 3
+    local_development_cost = -0.2
+}
+
+t_chi_centre_of_islamic_culture = { # not exclusively used by china
+    picture = "t_centre_of_islamic_culture"
+    trade_goods_size_modifier = 0.05
+    local_development_cost = -0.1
+    # local_institution_spread = 0.1
+    # local_religious_unity_contribution = -1
+}
+
+t_chi_shanghai = {
+    picture = "t_major_harbour"
+    trade_goods_size_modifier = 0.1
+    local_development_cost = -0.3
+}

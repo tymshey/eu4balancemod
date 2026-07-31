@@ -1,0 +1,38 @@
+country_decisions = {
+
+	# mingplozja
+
+	t_trigger_warlord_era_decision = {
+		color = { 235 64 52 }
+		potential = {
+			ai = no
+            		tag = MNG
+            		is_emperor_of_china = yes
+            		NOT = { is_year = 1450 }
+		}
+		allow = {
+			NOT = { has_global_flag = t_post_ming_warlord_era_triggered }
+		}
+		effect = {
+			set_global_flag = t_post_ming_warlord_era_triggered
+            		country_event = { id = t_china_events.4 }
+		}
+	}
+
+	# religious schools
+
+	t_change_schools_decision = {
+		color = { 235 64 52 }
+		potential = {
+			ai = no
+			religion = confucianism
+		}
+		allow = {
+			adm_power = 50
+		}
+		effect = {
+			add_adm_power = -50
+           		country_event = { id = t_china_events.14 }
+		}
+	}
+}
