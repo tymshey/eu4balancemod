@@ -41,6 +41,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/t_golden_btn.dds"
 	}
 	spriteType = {
+		name = "GFX_reload_button"
+		texturefile = "gfx/interface/reload.dds"
+	}
+	spriteType = {
 		name = "GFX_icon_eastern_school_chengzhu"
 		texturefile = "gfx/interface/icon_eastern_school_chengzhu.dds"
 	}

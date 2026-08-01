@@ -1,5 +1,39 @@
 country_decisions = {
 
+	t_form_korea = {
+		major = yes
+		potential = {
+			NOT = { exists = KOR }
+			NOT = { tag = KOR }
+			OR = {
+				primary_culture = korean
+				primary_culture = korean_new
+			}
+		}
+		provinces_to_highlight = {
+			region = korea_region
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			korea_region = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = KOR
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			country_event = { id = ideagroups.1 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	found_hall_of_worthies = {
 		potential = { #Removed as actually set up in 1420 and later disbanded in 1456.
 			always = no

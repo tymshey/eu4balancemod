@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = korean_monarchy
+primary_culture = korean
+religion = confucianism
+add_harmonized_religion = mahayana
+add_harmonized_religion = shinto
+technology_group = chinese
+capital = 1845
+1444.11.11= {
+	monarch = {
+		name = "Kim"
+		dynasty = "Hyeokgeose"
+		adm = 4
+		dip = 5
+		mil = 4
+		birth_date = 1395.1.1
+		religion = confucianism
+		culture = korean
+	}
+	add_ruler_personality = drunkard_personality
+	add_ruler_personality = scholar_personality
+	heir = {
+		name = "Matthias"
+		dynasty = "Hyeokgeose"
+		adm = 6
+		dip = 3
+		mil = 3
+		birth_date = 1420.3.4
+		claim = 89
+		religion = confucianism
+		culture = korean
+	}
+	add_heir_personality = industrious_personality
+	add_heir_personality = intricate_web_weaver_personality
+}

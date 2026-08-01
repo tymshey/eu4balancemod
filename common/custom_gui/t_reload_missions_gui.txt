@@ -1,0 +1,16 @@
+# Reload Missions
+
+custom_button = {
+	name = reload_missions
+	potential = {
+		ai = no
+    	}
+	trigger = {
+		treasury = 1
+	}
+	effect = {
+		add_treasury = -1
+		swap_non_generic_missions = yes
+	}
+	tooltip = reload_missions_tt
+}
