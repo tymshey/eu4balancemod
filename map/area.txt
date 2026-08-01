@@ -1505,11 +1505,11 @@ uticulo_makuana_area = { #3
 }
 
 quelimane_area = { #3
-	1183 1186 1192
+	1186 1192
 }
 
 limpopo_area = { #4
-	789 1181 1182 1800
+	789 1181 1182 1800 1183
 }
 
 central_swahili_coast_area = { #5
