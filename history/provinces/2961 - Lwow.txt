@@ -1,9 +1,5 @@
 #2961 - Lwow
 
-latent_trade_goods = {
-	coal
-}
-
 owner = POL
 controller = POL
 capital= "Lwów"

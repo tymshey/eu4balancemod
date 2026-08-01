@@ -1,5 +1,10 @@
 #2959 - Tarnow
 
+latent_trade_goods = {
+	coal
+}
+
+
 owner = POL
 controller = POL
 capital = "Tarnów"
