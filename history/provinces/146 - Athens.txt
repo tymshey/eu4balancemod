@@ -1,7 +1,7 @@
 #146 - Athens
 
-owner = ATH
-controller = ATH
+owner = BYZ
+controller = BYZ
 culture = greek
 religion = orthodox
 capital = "Athens"
@@ -13,7 +13,6 @@ base_manpower = 3
 is_city = yes
 add_core = VEN
 add_core = BYZ
-add_core = ATH
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

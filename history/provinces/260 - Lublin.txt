@@ -1,5 +1,9 @@
 #260 - Lublin
 
+latent_trade_goods = {
+	coal
+}
+
 owner = POL
 controller = POL
 capital= "Lublin"

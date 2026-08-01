@@ -1,6 +1,6 @@
 #280 - Kiev
-owner = LIT
-controller = LIT
+owner = KIE
+controller = KIE
 culture = ruthenian
 religion = jewish
 base_tax = 4
@@ -10,7 +10,6 @@ base_manpower = 2
 capital = "Kiev"
 is_city = yes
 add_core = KIE
-add_core = LIT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
@@ -20,7 +19,6 @@ extra_cost = 16
 center_of_trade = 2
 1550.1.1 = { fort_15th = yes }
 1569.7.1 = { 
-	owner = PLC
 	controller = PLC
 	add_core = PLC
 }
@@ -29,10 +27,8 @@ center_of_trade = 2
 	add_core = ZAZ
 	revolt = { type = nationalist_rebels size = 0 }
 }
-1654.1.1 = { controller = PLC remove_core = ZAZ revolt = { size = 1 } }
+1654.1.1 = { controller = PLC revolt = { size = 1 } }
 1667.1.30 = { 
-	owner = RUS
 	controller = RUS
 	add_core = RUS
-	remove_core = PLC
 }
