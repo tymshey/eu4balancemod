@@ -24,7 +24,6 @@ discovered_by = MLI
 discovered_by = SFA
 discovered_by = ZIM
 extra_cost = 8
-center_of_trade = 1
 
 
 1498.1.15 = { discovered_by = POR } #Vasco Da Gama
