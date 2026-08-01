@@ -15,6 +15,7 @@ country_decisions = {
 			NOT = { owned_by = ROOT }
 		}
 		allow = {
+			adm_tech = 8
 			korea_region = {
 				type = all
 				owned_by = ROOT
