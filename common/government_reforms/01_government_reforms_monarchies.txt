@@ -3358,7 +3358,6 @@ korean_monarchy = {
 		allow = { has_dlc = "Domination" }
 		custom_attributes = {
 			has_hangeul_alphabet_decisions = yes
-			has_weaker_harem_events = yes
 		}
 	}
 	conditional = {
