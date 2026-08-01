@@ -177,3 +177,10 @@ Eco_buffs = {
 development_cost = -0.1
 global_trade_goods_size_modifier = 0.1
 }
+
+ras_gold_mine = {
+local_development_cost = -0.4
+trade_goods_size = 0.5
+inflation_reduction = 0.03
+gold_depletion_chance_modifier = -0.15
+}
