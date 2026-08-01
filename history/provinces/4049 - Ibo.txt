@@ -18,7 +18,6 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = central_african
-center_of_trade = 1
 
 1498.3.15 = { discovered_by = POR } #Vasco Da Gama
 1511.1.1 = { unrest = 8 } #unrest against presence of Portuguese by Angoche sultans
