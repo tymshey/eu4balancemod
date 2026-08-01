@@ -17,7 +17,6 @@ discovered_by = sub_saharan
 add_local_autonomy = 50
 1446.1.1 = { discovered_by = POR }
 extra_cost = 8
-center_of_trade = 1
 
 
 1497.1.1 = { unrest = 4 } #Fulani incursions begin
