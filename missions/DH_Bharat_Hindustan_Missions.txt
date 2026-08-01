@@ -132,6 +132,13 @@ hin_slot_2 = {
 			}
 		}
 		effect = {
+			hindusthan_region = {
+				add_province_modifier = {
+					name = hindustan_corridor_of_life
+					duration = -1
+				}
+			}
+
 			if = {
 				limit = {
 					religion = hinduism
@@ -239,7 +246,7 @@ hin_slot_2 = {
 		effect = {
 			add_country_modifier = {
 				name = "hin_riches_modifier"
-				duration = 7300
+				duration = -1
 			}
 		}
 		ai_weight = {
@@ -363,6 +370,10 @@ hin_slot_3 = {
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
+			add_country_modifier = {
+				name = BHA_emperor_of_india
+				duration = -1
+			}
 		}
 		ai_weight = {
 			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
@@ -567,6 +578,843 @@ hin_slot_5 = {
 		}
 		ai_weight = {
 			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
+	}
+}
+
+bha_new_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Dharma"
+	}
+	potential = {
+		OR = {
+			tag = HIN
+			tag = BHA
+		}
+		has_dlc = "Dharma"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	BHA_taj_mahal = {
+		icon = mission_taj_mahal
+		required_missions = { BHA_agra }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 524 
+		}
+		trigger = {
+			524 = {
+				owned_by = ROOT
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					religion_group = muslim
+				}
+				524 = {
+					has_great_project = {
+						type = taj_mahal
+						tier = 2
+					}
+					development = 35
+				}
+			}
+			else = {
+				524 = {
+					development = 45
+					has_tax_building_trigger = yes
+					has_courthouse_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					religion_group = muslim
+				}
+				custom_tooltip = MUG_upgrade_taj_mahal
+				
+				custom_tooltip = " "
+			}
+			else = {
+				524 = {
+					add_province_modifier = {
+						name = MUG_taj_mahal_modifier
+						duration = -1
+					}
+					
+					add_or_upgrade_courthouse_building = yes
+					add_or_upgrade_tax_building = yes
+				}
+			}
+			
+			add_prestige_or_monarch_power = { amount = 40 }
+		}
+	}
+	
+	BHA_red_fort = {
+		icon = mission_red_fort
+		required_missions = { BHA_taj_mahal }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 522
+		}
+		trigger = {
+			522 = {
+				owned_by = ROOT
+				has_fort_building_trigger = yes
+				base_manpower = 10
+				has_manpower_building_trigger = yes
+			}
+		}
+		effect = {
+			hidden_effect = {
+				remove_country_modifier = MUG_itinerant_court
+				add_country_modifier = {
+					name = BHA_indian_architecture_mod
+					duration = -1
+				}
+			}
+			custom_tooltip = BHA_itinerant_court_upgrade
+			
+			custom_tooltip = " "
+		
+			522 = {
+				add_or_upgrade_manpower_building = yes
+				
+				custom_tooltip = " "
+				
+				add_province_modifier = {
+					name = MUG_red_fort
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+bha_new_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Dharma"
+	}
+	potential = {
+		OR = {
+			tag = HIN
+			tag = BHA
+		}
+		has_dlc = "Dharma"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	BHA_agra = {
+		icon = mission_metropolis_of_the_deccan
+		required_missions = { BHA_riches  }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 524
+		}
+		trigger = {
+			524 = {
+				owned_by = ROOT
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MUG_itinerant_court
+				duration = -1
+			}
+			
+			524 = {
+				change_province_name = "Agra"
+				
+				custom_tooltip = " "
+				
+				add_province_modifier = {
+					name = MUG_agra_fort
+					duration = -1
+				}
+				
+				if = {
+					limit = {
+						NOT = { renaissance = 100 }
+					}
+					add_institution_embracement = {
+						which = renaissance
+						value = 50
+					}
+					custom_tooltip = " "
+				}
+			}
+			tooltip = {
+				country_event_with_insight = {
+					id = flavor_mug.10
+					insight_tooltip = MUG_move_capital
+				}
+			}
+			hidden_effect = {
+				524 = { save_event_target_as = mug_proposed_capital }
+				country_event = {
+					id = flavor_mug.10
+				}
+			}
+		}
+	}
+	
+	BHA_fatehpur_sikri = {
+		icon = mission_fatehpur_sikri
+		required_missions = { BHA_agra }
+		position = 1
+		provinces_to_highlight = {
+			province_id = 4500
+		}
+		trigger = {
+			4500 = {
+				owned_by = ROOT
+				num_of_buildings_in_province = 4
+				development = 30
+			}
+		}
+		effect = {
+			4500 = {
+				change_province_name = "Sikri"
+				rename_capital = "Fatehpur Sikri"
+				
+				change_culture = ROOT
+				
+				custom_tooltip = " "
+				
+				add_province_modifier = {
+					name = MUG_ideal_capital
+					duration = -1
+				}
+			}
+			
+			tooltip = {
+				country_event_with_insight = {
+					id = flavor_mug.10
+					insight_tooltip = MUG_move_capital
+				}
+			}
+			hidden_effect = {
+				4500 = { save_event_target_as = mug_proposed_capital }
+				country_event = {
+					id = flavor_mug.10
+				}
+			}
+		}
+	}
+	
+	BHA_mughal_architecture = {
+		icon = mission_viceroyalty_of_the_deccan
+		required_missions = { BHA_fatehpur_sikri BHA_red_fort }
+		position = 8
+		provinces_to_highlight = {
+			owned_by = ROOT 
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				OR = {
+					AND = {
+						has_great_project = {
+							type = any
+							tier = 1
+						}
+						NOT = {
+							has_great_project = {
+								type = any
+								tier = 3
+							}
+						}
+					}
+					AND = {
+						num_of_buildings_in_province = 2
+						NOT = { num_of_buildings_in_province = 4 }
+					}
+				}
+			}
+			else = {
+				AND = {
+					num_of_buildings_in_province = 2
+					NOT = { num_of_buildings_in_province = 4 }
+				}
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				num_of_owned_provinces_with = {
+					has_great_project = {
+						type = any
+						tier = 3
+					}
+					value = 4
+				}
+				num_of_owned_provinces_with = {
+					num_of_buildings_in_province = 4
+					value = 10
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					num_of_buildings_in_province = 4
+					value = 25
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				remove_country_modifier = BHA_indian_architecture_mod
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					add_country_modifier = {
+						name = BHA_indian_architecture_dlc
+						duration = -1
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = MUG_mughal_architecture_2
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = BHA_itinerant_court_upgrade_dlc
+			}
+			else = {
+				custom_tooltip = MUG_itinerant_court_upgrade_2
+			}
+			
+			custom_tooltip = " "
+			
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				add_splendor = 400
+			}
+			else = {
+				add_prestige_or_monarch_power = { amount = 25 }
+			}
+			
+			custom_tooltip = " "
+			
+			define_advisor = {
+				type = artist
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.33
+			}
+		}
+	}
+}
+
+bha_new_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Dharma"
+	}
+	potential = {
+		OR = {
+			tag = HIN
+			tag = BHA
+		}
+		has_dlc = "Dharma"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	BHA_riches = {
+		icon = mission_establish_mint_towns
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			share_of_starting_income = 4
+			monthly_adm = 10
+			stability = 1
+		}
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.33
+			}
+			
+			custom_tooltip = " "
+			
+			add_stability_or_adm_power = yes
+		}
+	}
+	
+	BHA_urbanize_the_subahs = {
+		icon = mission_rule_the_garjats
+		required_missions = { BHA_riches }
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			development = 30
+			NOT = { num_of_buildings_in_province = 5 }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				development = 30
+				num_of_buildings_in_province = 5
+				value = 6
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				set_country_flag = MUG_upgrade_expanding_infrastructure
+				custom_tooltip = MUG_upgrade_expanding_infrastructure_tt
+				tooltip = {
+					add_province_modifier = {
+						name = MUG_expanded_infrastructure
+						duration = 7300
+					}
+				}
+				#custom_tooltip = MUG_modifier_gets_removed
+			}
+			else = {
+				custom_tooltip = MUG_every_20_development_prov
+				tooltip = {
+					add_province_modifier = {
+						name = MUG_expanded_infrastructure
+						duration = 7300
+					}
+				}
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							development = 20
+						}
+						add_province_modifier = {
+							name = MUG_expanded_infrastructure
+							duration = 7300
+						}
+					}
+				}
+			}
+			
+			add_country_modifier = {
+				name = MUG_social_mobility
+				duration = 7300
+			}
+		}
+	}
+
+	BHA_indian_entrepot = {
+		icon = mission_entrepot_of_india
+		required_missions = { BHA_urbanize_the_subahs }
+		position = 7
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				AND = {
+					trade_goods = cotton
+					NOT = {
+						ROOT = {
+							trading_part = {
+								trade_goods = cotton
+								value = 0.15
+							}
+						}
+					}
+				}
+				AND = {
+					trade_goods = spices
+					NOT = {
+						ROOT = {
+							trading_part = {
+								trade_goods = spices
+								value = 0.15
+							}
+						}
+					}
+				}
+				AND = {
+					trade_goods = silk
+					NOT = {
+						ROOT = {
+							trading_part = {
+								trade_goods = silk
+								value = 0.15
+							}
+						}
+					}
+				}
+				AND = {
+					trade_goods = dyes
+					NOT = {
+						ROOT = {
+							trading_part = {
+								trade_goods = dyes
+								value = 0.15
+							}
+						}
+					}
+				}
+				AND = {
+					trade_goods = cloth
+					NOT = {
+						ROOT = {
+							trading_part = {
+								trade_goods = cloth
+								value = 0.15
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			trading_part = {
+				trade_goods = cotton
+				value = 0.15
+			}
+			trading_part = {
+				trade_goods = spices
+				value = 0.15
+			}
+			trading_part = {
+				trade_goods = silk
+				value = 0.15
+			}
+			trading_part = {
+				trade_goods = dyes
+				value = 0.15
+			}
+			trading_part = {
+				trade_goods = cloth
+				value = 0.15
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				set_country_flag = MUG_jain_trade_fleets
+				custom_tooltip = MUG_jain_trade_fleets_tt
+				
+				custom_tooltip = " "
+			}
+			else = {
+				add_country_modifier = {
+					name = MUG_trade_fleets
+					duration = -1 
+				}
+			}
+			
+			add_mercantilism = 3
+			
+			custom_tooltip = " "
+			
+			add_estate_loyalty = {
+				estate = estate_jains
+				loyalty = 10
+			}
+		}
+	}
+}
+
+bha_new_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Dharma"
+	}
+	potential = {
+		OR = {
+			tag = HIN
+			tag = BHA
+		}
+		has_dlc = "Dharma"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	BHA_weaving = {
+		icon = mission_gujarati_textiles
+		required_missions = { BHA_riches }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT 
+			region = bengal_region
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+			OR = {
+				NOT = { development = 16 }
+				NOT = { has_production_building_trigger = yes }
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}
+				has_production_building_trigger = yes
+				development = 16
+				region = bengal_region
+				value = 5
+			}
+		}
+		effect = {
+			custom_tooltip = MUG_upgrade_monopoly
+			set_country_flag = MUG_upgrade_monopoly_flag
+			
+			custom_tooltip = " "
+			
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					OR = {
+						trade_goods = silk
+						trade_goods = cloth
+						trade_goods = cotton
+					}
+				}
+				custom_tooltip = MUG_5_years_of_silk_cloth_cotton
+			}
+			
+			custom_tooltip = " "
+			
+			add_country_modifier = {
+				name = MUG_famous_silks
+				duration = 10950
+			}
+		}
+	}
+	
+	BHA_grand_trunk_road = {
+		icon = mission_grand_trunk_road_mug
+		required_missions = { BHA_weaving BHA_urbanize_the_subahs }
+		position = 1
+		provinces_to_highlight = {
+			is_part_of_trunk_road = yes
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					num_of_times_improved = 3
+					OR = {
+						has_trade_building_trigger = yes
+						num_of_buildings_in_province = 2
+					}
+				}
+			}
+		}
+		trigger = {
+			every_trunk_road_province_trigger = {
+				tooltip = MUG_trunk_road
+				trigger = "
+					country_or_non_sovereign_subject_holds = ROOT
+					num_of_times_improved = 3
+					OR = {
+						has_trade_building_trigger = yes
+						num_of_buildings_in_province = 2
+					}
+				"
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				every_trunk_road_province_effect = {
+					effect = "
+						add_permanent_province_modifier = {
+							name = MUG_grand_trunk_road
+							duration = -1
+						}
+					"
+				}
+			}
+			else = {
+				every_trunk_road_province_effect = {
+					effect = "
+						add_permanent_province_modifier = {
+							name = MUG_grand_trunk_road_no_dlc
+							duration = -1
+						}
+					"
+				}
+			} 
+			
+			custom_tooltip = " "
+			
+			add_mercantilism = 3
+			
+			custom_tooltip = " "
+			
+			add_stability_or_adm_power = yes
+		}
+	}
+	
+	BHA_hegemon = {
+		icon = mission_into_the_west
+		required_missions = { BHA_indian_entrepot BHA_grand_trunk_road BHA_economic_power }
+		position = 8
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_provinces_developed = { amount = 1250 }
+			monthly_income = 800
+		}
+		effect = {
+			#Mostly pat on the back, Mughals are already strong as is
+			add_country_modifier = {
+				name = BHA_warehouse_of_the_world
+				duration = -1
+			}
+			
+			add_prestige_or_monarch_power = { amount = 40 }
+		}
+	}
+}
+
+bha_new_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Dharma"
+	}
+	potential = {
+		OR = {
+			tag = HIN
+			tag = BHA
+		}
+		has_dlc = "Dharma"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	BHA_industry = {
+		icon = mission_industrialize_bengal
+		required_missions = { BHA_weaving }
+		position = 6
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { trade_goods = gold }
+			NOT = { has_manufactory_trigger = yes }
+			NOT = { has_production_building_trigger = yes }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				value = 10
+			}
+			num_of_owned_provinces_with = {
+				has_production_building_trigger = yes
+				value = 40
+			}
+		}
+		effect = {
+			add_country_modifier_for_age = {
+				name = MUG_industrial_powerhouse
+				age = age_of_reformation
+				else = "
+					custom_tooltip = MUG_distribute_10_base_prod
+					for = {
+						amount = 10
+						effect = \"
+							random_owned_province = {
+								add_base_production = 1
+							}
+						\"
+					}
+					
+					custom_tooltip = \" \"
+				"
+			}
+			
+			add_years_of_income = 0.5
+			
+			custom_tooltip = " "
+			
+			change_government_reform_progress = 50 
+		}
+	}
+	
+	BHA_economic_power = {
+		icon = mission_found_udaipur
+		required_missions = { BHA_industry  }
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					production_income_percentage = 0.01
+				}
+				custom_trigger_tooltip = {
+					tooltip = MUG_at_least_75_production_income
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = current_production_income
+							value = monthly_income
+						}
+						export_to_variable = {
+							which = production_income_share
+							value = trigger_value:production_income_percentage
+						}
+						multiply_variable = { which = current_production_income which = production_income_share }
+						check_variable = { which = current_production_income value = 75 }
+					}
+				}
+			}
+			
+			num_of_provinces_developed = { amount = 100 }
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Rights of Man"
+				}
+				custom_tooltip = MUG_increase_chance_of_industrious
+				set_country_flag = MUG_higher_industrious_chance
+				custom_tooltip = " "
+			}
+			
+			custom_tooltip = MUG_unlock_industrial_privilege
+			set_country_flag = MUG_unlock_industrial_privilege_flag 
+			
+			custom_tooltip = " "
+			
+			add_adm_power = 100
 		}
 	}
 }
