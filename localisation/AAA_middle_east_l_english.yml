@@ -70,3 +70,47 @@
  ### OTHER
 
  t_hisn_kayfa_start_modifier:0 "Legacy of the Ayyubids"
+
+ ###############
+ ### INDIA
+ ###############
+
+ # Modifiers
+
+ BHA_warehouse_of_the_world:0 "Warehouse of the World"
+ BHA_indian_architecture_mod:0 "Syncretic Architecture"
+ BHA_indian_architecture_dlc:0 "Syncretic Architecture"
+ BHA_emperor_of_india:0 "Emperor of India"
+
+ hindustan_corridor_of_life:0 "Corridor of Life"
+
+ # Missions
+
+ BHA_riches_title:0 "The Riches of India"
+ BHA_riches_desc:0 "India is a land of immense wealth and opportunity, with vast resources and a rich cultural heritage. By investing in trade, agriculture, and industry, we can unlock the riches of this diverse and vibrant region, enhancing our economy and influence in the world."
+ BHA_urbanize_the_subahs_title:0 "Urbanize the Subahs"
+ BHA_urbanize_the_subahs_desc:0 "The subahs of India are home to bustling cities and towns, each with its own unique character and potential. By investing in infrastructure, education, and public services, we can urbanize these subahs, improving the quality of life for our citizens and fostering economic growth and cultural development."
+ BHA_indian_entrepot_title:0 "Indian Entrepot"
+ BHA_indian_entrepot_desc:0 "India's strategic location and extensive trade networks make it an ideal hub for commerce and exchange. By establishing an Indian entrepot, we can facilitate trade between our territories and the wider world, boosting our economy and enhancing our influence in the region."
+ BHA_taj_mahal_title:0 "The Taj Mahal"
+ BHA_taj_mahal_desc:0 "To symbolize the grandeur and cultural richness of India, we should commission the construction of the Taj Mahal, a magnificent mausoleum that will stand as a testament to our architectural prowess and artistic vision. This iconic structure will attract visitors from across the globe, enhancing our prestige and influence in the region."
+ BHA_red_fort_title:0 "The Red Fort"
+ BHA_red_fort_desc:0 "As we further develop our territories in India, we should invest in the construction of the Red Fort, a formidable fortress that will serve as a symbol of our strength and authority. This imposing structure will not only provide security for our citizens but also showcase our architectural and engineering capabilities, enhancing our prestige and influence in the region."
+ BHA_itinerant_court_upgrade:0 "Rename '§YItinerant Court§!' to '§YSyncretic Architecture§!' and modify by:\n   Construction Cost: §G-5%§!"
+ BHA_agra_title:0 "Jewels of Agra"
+ BHA_agra_desc:0 "When Agra fell to our rule, we have spared it from destruction. As a result, the city has become a jewel of our empire, attracting merchants, scholars, and artists from across the region. By investing in the development of Agra, we can further enhance its prosperity and cultural significance, solidifying our influence in India."
+ BHA_fatehpur_sikri_title:0 "Fatehpur Sikri"
+ BHA_fatehpur_sikri_desc:0 "Fatehpur Sikri, a city of historical and architectural significance, has the potential to become a center of culture and learning in our empire. By investing in the restoration and development of Fatehpur Sikri, we can preserve its rich heritage and attract scholars, artists, and traders from across the region, enhancing our influence and prestige in India."
+ BHA_mughal_architecture_title:0 "Syncretic Architecture"
+ BHA_mughal_architecture_desc:0 "Our empire is renowned for its syncretic architecture, which blends elements from various cultures and traditions. By promoting and supporting the development of syncretic architecture in our territories, we can create iconic structures that reflect our diverse heritage and artistic vision, enhancing our prestige and influence in India."
+ BHA_itinerant_court_upgrade_dlc:0 "Modify '§YSyncretic Architecture§!' by:\n   Great Project Upgrade Cost: §G-10%§!\n   Great Project Upgrade Time: §G-10%§!"
+ BHA_weaving_title:0 "Weaving and Textiles"
+ BHA_weaving_desc:0 "India has a long and rich tradition of weaving and textile production, with skilled artisans creating exquisite fabrics that are highly sought after. By investing in the development of the weaving and textile industry in our territories, we can boost our economy, support local artisans, and enhance our cultural influence in the region."
+ BHA_grand_trunk_road_title:0 "The Grand Trunk Road"
+ BHA_grand_trunk_road_desc:0 "The Grand Trunk Road is a historic trade route that has connected the Indian subcontinent for centuries. By investing in the development and maintenance of the Grand Trunk Road, we can facilitate trade and commerce, improve transportation and communication, and enhance our influence and prestige in the region."
+ BHA_hegemon_title:0 "Warehouse of the World"
+ BHA_hegemon_desc:0 "As the hegemon of India, we have the responsibility to lead and protect the diverse peoples and cultures of this vast region. By fostering unity, promoting economic growth, and supporting cultural development, we can solidify our position as the dominant power in India."
+ BHA_industry_title:0 "Industrial Powerbase"
+ BHA_industry_desc:0 "India has the potential to become a major industrial power, with vast resources and a skilled workforce. By investing in the development of industry and manufacturing in our territories, we can boost our economy, create jobs, and enhance our influence and prestige in the region."
+ BHA_economic_power_title:0 "Economic Power"
+ BHA_economic_power_desc:0 "India's economic power is a key factor in our ability to influence the region and the world. By fostering trade, investment, and innovation, we can strengthen our economy, create wealth for our citizens, and enhance our influence and prestige in India and beyond."
