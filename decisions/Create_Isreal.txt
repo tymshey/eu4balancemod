@@ -1,0 +1,56 @@
+country_decisions = {
+	
+	Israel_Create = {
+		major = yes
+		potential = {
+				NOT = { has_country_flag = Israel_Create }
+				ai = no
+				tag = MAM
+			}
+		
+		provinces_to_highlight = {
+			OR = {
+			province_id = 379
+			province_id = 6051
+			province_id = 364
+			province_id = 1854
+			}
+		}
+		allow = {
+			tag = MAM
+		}
+		effect = {
+			ISR = {change_religion = jewish}
+			379 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			6051 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			364 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			1854 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			set_bankruptcy = MAM
+			switch_tag = ISR
+		set_country_flag = Israel_Create
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
