@@ -92,11 +92,11 @@ t_TNG_ideas = {
 t_LNG_ideas = {
 	start = {
 		advisor_cost = -0.1
-		fire_damage_received = -0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	
 	bonus = {
-		development_cost = -0.1
+		production_efficiency = 0.1
 	}
 	
 	trigger = {
@@ -109,7 +109,7 @@ t_LNG_ideas = {
 		garrison_size = 0.15
 	}
 	t_lng_inwards_perfection = {
-		global_trade_goods_size_modifier = 0.1
+		stability_cost_modifier = -0.1
 	}
 	t_celestial_bureaucracy = {
 		global_unrest = -1
@@ -292,5 +292,207 @@ t_EGY_ideas = {
 	}
 	crossroads_between_europe_and_africa = {
 		global_trade_power = 0.1
+	}
+}
+
+# Goguryeo
+
+GOG_ideas = {
+	start = {
+		build_cost = -0.1
+		land_morale = 0.1
+	}
+	
+	bonus = {
+		infantry_power = 0.1 #URBI JEST CWELEM
+	}
+	
+	trigger = {
+		OR = {
+			tag = GOG
+			AND = {
+				tag = KOR
+				has_country_flag = formed_korea_as_gog
+			}
+		}
+	}
+	free = yes
+
+	gog_heirs_to_mandate = {
+		advisor_cost = -0.2
+		imperial_mandate = 0.1
+	}
+	gog_metal_movable_type = {
+		adm_tech_cost_modifier = -0.05
+		innovativeness_gain = 0.25
+	}
+	gog_choi_mu_seon_gunpower_engines = {
+		fire_damage = 0.1
+	}
+	gog_sino_korean_artisanery = {
+		prestige = 1
+		development_cost = -0.05
+	}
+	gog_adapt_the_hyanyak_system = {
+		production_efficiency = 0.10
+	}
+	gog_geobukseon = {
+		ship_durability = 0.1
+		naval_morale = 0.05
+		has_geobukseon = yes
+	}
+	gog_academy_of_statecraft = {
+		idea_cost = -0.1
+	}
+}
+
+# Silla
+
+SLL_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		discipline = 0.05
+	}
+	
+	bonus = {
+		colonists = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = SLL
+			AND = {
+				tag = KOR
+				has_country_flag = formed_korea_as_sll
+			}
+		}
+	}
+	free = yes		
+	
+	sll_unified_korea = {
+		development_cost = -0.05
+		state_governing_cost = -0.15
+	}
+	sll_hoebu = {
+		interest = -0.5
+	}
+	sll_geobukseon = {
+		has_geobukseon = yes
+		ship_durability = 0.1
+	}
+	sll_masters_of_the_great_expanse = {
+		naval_morale = 0.1
+	}
+	sll_oceanic_expeditions = {
+		range = 0.25
+	}
+	sll_harmonious_principles = {
+		native_assimilation = 0.50
+		native_uprising_chance = -0.50
+	}
+	sll_maritime_commerce = {
+		global_prov_trade_power_modifier = 0.25
+	}
+}
+
+# Gaya
+
+GAY_ideas = {
+	start = {
+		land_morale = 0.1
+		diplomatic_reputation = 2 #URBI JEST CWELEM
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}
+	
+	trigger = {
+		OR = {
+			tag = GAY
+			AND = {
+				tag = KOR
+				has_country_flag = formed_korea_as_gay
+			}
+		}
+	}
+	free = yes		
+	
+	gay_discipline = {
+		discipline = 0.05
+	}
+	gay_citizen_militias = {
+		global_manpower_modifier = 0.2
+	}
+	gay_ironworks = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	gay_the_grand_council = {
+		global_unrest = -1
+		state_governing_cost = -0.2
+	}
+	gay_geobukseon = {
+		has_geobukseon = yes
+	}
+	gay_southern_trade_league = {
+		global_prov_trade_power_modifier = 0.25
+	}
+	gay_merchant_financiers = {
+		inflation_action_cost = -0.3
+		interest = -0.5
+	}
+}
+
+# Baekje
+
+BEK_ideas = {
+	start = {
+		development_cost = -0.1
+		global_tax_modifier = 0.15
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		OR = {
+			tag = BEK
+			AND = {
+				tag = BEK
+				has_country_flag = formed_korea_as_sll
+			}
+		}
+	}
+	
+	free = yes
+
+	bek_planned_urban_expansion = {
+		expand_infrastructure_cost_modifier = -0.25
+	}	
+
+	bek_elite_royal_guard = {
+		infantry_power = 0.1
+	}
+
+	bek_scholarly_tradition = {
+		same_culture_advisor_cost = -0.2
+	}
+
+	bek_pursuit_of_perfection = {
+		technology_cost = -0.1
+	}
+
+	bek_efficient_administration = {
+		governing_capacity_modifier = 0.1
+	}
+
+	bek_geobukseon = {
+		naval_morale = 0.1
+		has_geobukseon = yes
+	}
+
+	bek_master_artisans = {
+		production_efficiency = 0.1
 	}
 }

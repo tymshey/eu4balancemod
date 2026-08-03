@@ -22,6 +22,22 @@ country_decisions = {
 			}
 		}
 		effect = {
+			if = {
+				limit = { tag = GOG }
+				set_country_flag = formed_korea_as_gog
+			}
+			if = {
+				limit = { tag = SLL }
+				set_country_flag = formed_korea_as_sll
+			}
+			if = {
+				limit = { tag = GAY }
+				set_country_flag = formed_korea_as_gay
+			}
+			if = {
+				limit = { tag = BEK }
+				set_country_flag = formed_korea_as_bek
+			}
 			add_prestige = 25
 			change_tag = KOR
 			add_country_modifier = {
