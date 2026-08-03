@@ -2124,11 +2124,6 @@ sultanate_of_rum_reform = {
 		legitimacy = 0.5
 		max_absolutism = 5
 		governing_capacity = 150
-		yearly_innovativeness = 0.1
-		yearly_government_power = 0.5
-	}
-	government_abilities = {
-		egyptian_westernization
 	}
 
 	custom_attributes = {
@@ -2136,11 +2131,40 @@ sultanate_of_rum_reform = {
 	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
+		has_pashas = yes
+		has_janissaries = yes
+		has_harem = yes
+		custom_attributes = {
+			has_harem_events = yes
+			has_eyalets = yes
+		}
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Cradle of Civilization"
+			NOT = { has_dlc = "Domination" }
+		}
+		has_pashas = yes
+		has_janissaries = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Rights of Man" 
+			NOT = { has_dlc = "Domination" }
+		}
 		has_harem = yes
 		custom_attributes = {
 			has_harem_events = yes
 		}
 	}
+	#conditional = {
+	#	allow = {
+	#		has_dlc = "Domination"
+	#	}
+	#	government_abilities = {
+	#		devshirme_mechanic
+	#	}
+	#}
 }
 
 eyalet_government = {

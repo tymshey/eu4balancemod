@@ -1,0 +1,17 @@
+﻿l_english:
+ #ideas
+ RUM_ideas_2:0 "Rûm Ideas"
+
+ rum_egy_army:0 "Legions of the Two Sultans"
+ rum_egy_army_desc:0 "By fusing the fearsome shock tactics and equestrian mastery of the Seljuk heritage with the fiercely disciplined warrior-caste of the Mamluks, our military commands supreme authority. Whether across the rugged Anatolian heights or the sun-baked sands of the Levant, our armies remain unmatched in battle."
+
+ rum_egy_development:0 "Granary of the Twin Realms"
+ rum_egy_development_desc:0 "Our domain spans the fertile valleys of Anatolia and the timeless, life-giving waters of the Nile Delta. By directing royal patronage toward expansive irrigation projects, public works, and thriving Mediterranean trade hubs, we ensure that every province under our crescent flag flourishes into a center of wealth and population."
+ 
+ RUM_ideas_2_start:0 "Rûm Traditions"
+ 
+ RUM_ideas_2_bonus:0 "Rûm Ambition"
+ 
+ #modifiers
+ 
+ d_egy_rum_modifier:0 "Turko-Egyptian Sultanate"

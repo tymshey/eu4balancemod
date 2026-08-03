@@ -78,14 +78,40 @@ country_decisions = {
 			RUM = {
 				if = {
 					limit = {
-						NOT = { government = monarchy }
+						NOT = { 
+							OR = {
+								government = monarchy 
+								tag = EGY
+								was = EGY
+							}
+						}
 						is_revolutionary = no
 					}
 					change_government = monarchy
 				}
-				if = {
-					limit = { is_revolutionary = no }
-					add_government_reform = sultanate_of_rum_reform
+			}
+			if = {
+				limit = { 
+					is_revolutionary = no 
+					NOT = {
+						OR = {
+							tag = EGY
+							was_tag = EGY
+						}
+					}
+				}
+				add_government_reform = sultanate_of_rum_reform
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = EGY
+						was_tag = EGY
+					}
+				}
+				add_country_modifier = {
+					name =	d_egy_rum_modifier
+					duration = -1
 				}
 			}
 			if = {

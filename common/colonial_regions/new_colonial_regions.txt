@@ -70,33 +70,6 @@ colonial_west_africa = {
 	}
 }
 
-colonial_ethiopia = {
-	color = { 70 90 199 }
-	
-	provinces = {
-		1218 2756 2757 2758 2759 2760 2761 2762 2763 2772 2791 2778 2785 2766 2767 2769 2770 2771 2779 2780 2781 1224 1213 1223 1214 1227 1207 1208 1210 2776 4158 2777 4051 4052
-		2794 2775 1205 2782 2795 2783 2784 2024 1206 2788 2786 2789 2792 2790 1209 2793 1212 2773 1211 2764 1215 2768 2765 1230 2787 1232 1217 4033 1226 1232 1229 2799 1222 1225 
-		2798 2797 1228 1220 2800 1216 1221 2802 2801 1219 774 2932 2768 #African Aden
-	}
-	
-	# Specific
-	names = {
-		trigger = {
-			OR = {
-				owns = 1205
-				owns = 1209
-				owns = 2895
-				owns = 2899
-			}
-		}
-		name = "COLONIAL_ETHIOPIA_Root_GetAdjective_Somaliland"
-	}
-	# Generic
-	names = {
-		name = "COLONIAL_ETHIOPIA_Root_GetAdjective_Ethiopia"
-	}
-}
-
 colonial_congo = {
 	color = { 171 148 148 }
 	

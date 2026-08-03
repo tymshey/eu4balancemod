@@ -479,6 +479,23 @@ trade_company_english_channel = {
 	}
 }
 
+trade_company_ethiopia = {
+	color = { 40 46 64 }
+	
+	provinces = {
+		774 1217 1218 1222 1228 2756 2757 2758 2759 2760 2761 2762 2763 2772 2791 2778 2785 2797 2766 2767 2769 2770 2771 2779 2780 2781 1224 1213 1223 1214 1216 1221 2800 2801 2802 1229 1225 1226 1227 1220 1207 1208 1210 2798 2799 1219 2776 2932 4033 4158 2777 4051 4052 
+	}
+	
+	# Specific
+	# Generic
+	names = {
+		name = "TRADE_COMPANY_ETHIOPIA_Root_Culture_GetName"
+	}
+	names = {
+		name = "TRADE_COMPANY_ETHIOPIA_African_Trade_Company"
+	}
+}
+
 trade_company_bordeaux = {
 	color = { 36 132 247 }
 	
@@ -824,6 +841,8 @@ trade_company_gulf_of_aden = {
 	color = { 96 75 65 }
 	
 	provinces = {
+		2324 2775 2782 2783 2786 2788 2789 2790 2793 2794 2795 2024 1205 1206 1209 1212 1215 1230 2765 2773 2792 2784 1211 2764 2787 1232 1779 
+		2768 #Angot
 		401 2341 2342 #dhofar_area
 		402 1099 4284 #mahra_area
 		387 2346 4279 #tihama_al_yemen_area
