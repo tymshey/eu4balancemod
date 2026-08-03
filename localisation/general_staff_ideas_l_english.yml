@@ -21,12 +21,13 @@
  war_economy_act:0 "War Economy Act"
  centralized_war_administration:0 "Centralized War Administration"
  elite_command_patronage:0 "Elite Command Patronage"
-
- integrated_state_development:0 "Integrated State Development"
+ 
  fortified_logistics_network:0 "Fortified Logistics Network"
  covert_operations_doctrine:0 "Covert Operations Doctrine"
  strategic_coordination_act:0 "Strategic Coordination Act"
- professional_officer_exchange:0 "Professional Officer Exchange"
+ expeditionary_command_doctrine:0 "Expeditionary Command Doctrine"
 
  wartime_commercialization_act:0 "Wartime Commercialization Act"
  amphibious_operations_doctrine:0 "Amphibious Operations Doctrine"
+ integrated_state_development:0 "Integrated State Development"
+ professional_officer_exchange:0 "Professional Officer Exchange"

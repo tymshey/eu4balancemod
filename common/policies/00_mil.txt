@@ -1837,12 +1837,12 @@ hired_expeditions_act = {
 	
 	potential = {
 		has_idea_group = mercenary_ideas
-		has_idea_group = expansion_ideas   
+		has_idea_group = expansion_ideas
 	}
 	
 	allow = {
 		full_idea_group = mercenary_ideas
-		full_idea_group = expansion_ideas 
+		full_idea_group = expansion_ideas
 	}
 	
 	force_march_free = yes 
@@ -1860,12 +1860,12 @@ wartime_commercialization_act = {
 	
 	potential = {
 		has_idea_group = general_staff_ideas
-		has_idea_group = trade_ideas   
+		has_idea_group = trade_ideas
 	}
 	
 	allow = {
 		full_idea_group = general_staff_ideas
-		full_idea_group = trade_ideas 
+		full_idea_group = trade_ideas
 	}
 	
 	war_taxes_cost_modifier = -1
@@ -1881,19 +1881,63 @@ amphibious_operations_doctrine = {
 	monarch_power = MIL
 	
 	potential = {
-		has_idea_group = general_staff
-		has_idea_group = maritime_ideas   
+		has_idea_group = general_staff_ideas
+		has_idea_group = maritime_ideas
 	}
 	
 	allow = {
-		full_idea_group = general_staff
-		full_idea_group = maritime_ideas 
+		full_idea_group = general_staff_ideas
+		full_idea_group = maritime_ideas
 	}
 	
-	transport_attrition = -0.5
+	naval_morale = 0.1
+	max_admiral_fire = 1
+	leader_naval_fire = 1
 
 	effect = {}
 	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+integrated_state_development = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = humanist_ideas
+	}
+	
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = humanist_ideas
+	}
+	
+	global_tax_modifier = 0.1
+	morale_damage_received = -0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+professional_officer_exchange = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = general_staff_ideas
+		has_idea_group = influence_ideas
+	}
+	
+	allow = {
+		full_idea_group = general_staff_ideas
+		full_idea_group = influence_ideas
+	}
+	
+	drill_gain_modifier = 0.33
+	free_leader_pool = 1
+	
 	ai_will_do = {
 		factor = 1
 	}

@@ -1035,13 +1035,15 @@ TIM_diwan_mil = {
 	land_maintenance_modifier = -0.1
 }
 
+# balamod exclusive
+
 monsters_buff = {
 	potential = {
 		ai = no
 	}
 
 	trigger = {
-	stability = 1
+		stability = 1
 	}
 
 	culture_conversion_cost = -0.5
@@ -1049,10 +1051,8 @@ monsters_buff = {
 	warscore_from_battles_modifier = 0.30
 	global_prov_trade_power_modifier = 0.15
 	reduced_stab_impacts = yes
+	envoy_travel_time = -0.33
 }
-
-
-
 
 Minor = {
 	potential = {

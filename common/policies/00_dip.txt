@@ -2024,27 +2024,6 @@ native_emissaries_act = {
 	}
 }
 
-integrated_state_development = {
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = general_staff_ideas
-		has_idea_group = humanist_ideas
-	}
-	
-	allow = {
-		full_idea_group = general_staff_ideas
-		full_idea_group = humanist_ideas
-	}
-	
-	global_tax_modifier = 0.1
-	embracement_cost = -0.1
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
 fortified_logistics_network = {
 	monarch_power = DIP
 	
@@ -2080,7 +2059,7 @@ covert_operations_doctrine = {
 	}
 	
 	spy_offence = 0.1
-	discipline = 0.02
+	discipline = 0.05
 
 	ai_will_do = {
 		factor = 1
@@ -2107,21 +2086,24 @@ strategic_coordination_act = {
 	}
 }
 
-professional_officer_exchange = {
+expeditionary_command_doctrine = {
 	monarch_power = DIP
 	
 	potential = {
-		has_idea_group = general_staff_ideas
-		has_idea_group = influence_ideas
+		has_idea_group = general_staff
+		has_idea_group = exploration_ideas
 	}
 	
 	allow = {
-		full_idea_group = general_staff_ideas
-		full_idea_group = influence_ideas
+		full_idea_group = general_staff
+		full_idea_group = exploration_ideas
 	}
 	
-	drill_gain_modifier = 0.33
+	range = 0.15
+	colony_cost_modifier = -0.25
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}

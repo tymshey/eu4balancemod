@@ -1632,7 +1632,8 @@ general_staff_ideas = {
 	}
 
 	bonus = {
-		yearly_army_professionalism = 0.002
+		may_build_supply_depot = yes
+		may_refill_garrison = yes
 	}
 
 	general_staff_idea = {
@@ -1640,15 +1641,14 @@ general_staff_ideas = {
 		leader_land_shock = 1
 	}
 	centralized_command_idea = {
-		army_tradition_decay = -0.01
+		artillery_barrage_cost = -0.33
 	}
 	lines_of_operation_idea = {
-		leader_land_manuever = 1
+		leader_land_manuever = 2
 		leader_siege = 1
 	}
 	fog_of_war_idea = {
-		general_cost = -0.1
-		admiral_cost = -0.1
+		movement_speed = 0.1
 	}
 	admiralty_board_idea = {
 		max_admiral_maneuver = 1
@@ -1656,10 +1656,10 @@ general_staff_ideas = {
 	}
 	coordinated_structure_idea = {
 		max_general_fire = 1
-		leader_land_fire = 1
+		leader_land_fire = 2
 	}
 	the_war_office_idea = {
-		mil_tech_cost_modifier = -0.075
+		fire_damage = 0.1
 	}
 
 	ai_will_do = {

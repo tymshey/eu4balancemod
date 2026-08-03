@@ -2336,7 +2336,7 @@ doctrine_of_military_innovation = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	general_cost = -0.1
+	fire_damage = 0.1
 	leader_land_fire = 1
 
 	ai_will_do = {
@@ -2377,8 +2377,8 @@ war_economy_act = {
 		full_idea_group = economic_ideas
 	}
 	
-	land_forcelimit_modifier = 0.075
-	free_leader_pool = 1
+	land_forcelimit_modifier = 0.1
+	global_supply_limit_modifier = 0.25
 
 	ai_will_do = {
 		factor = 1
