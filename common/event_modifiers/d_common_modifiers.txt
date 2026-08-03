@@ -5,3 +5,7 @@ d_egy_rum_modifier = {
 	max_absolutism = 5
 	governing_capacity = 150
 }
+
+d_akk_earlygame_modifier = {
+	global_tax_income = 36
+}

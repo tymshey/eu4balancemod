@@ -12718,27 +12718,27 @@ AKK_ideas = {
 	}
 	free = yes
 	
-	akk_white_sheep = {
-		leader_land_shock = 1
+	akk_turko_iranian_bureaucracy = {
+		core_creation = -0.2
 	}
 	akk_unite_the_federation = {
 		yearly_government_power = 1
 		cavalry_cost = -0.2
 	}
-	akk_turko_iranian_bureaucracy = {
-		core_creation = -0.2
-	}
-	akk_apanages = {
-		global_manpower_modifier = 0.25
-	}
 	akk_expansive_diplomacy = {
 		diplomats = 1
+	}
+	akk_white_sheep = {
+		leader_land_shock = 1
 	}
 	akk_religious_pragmatism = {
 		stability_cost_modifier = -0.1
 	}
 	akk_qanun_nama_ye_hasan = {
 		global_trade_goods_size_modifier = 0.1
+	}
+	akk_apanages = {
+		global_manpower_modifier = 0.25
 	}
 }
 
