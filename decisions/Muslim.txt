@@ -82,12 +82,14 @@ country_decisions = {
 							owner = {
 								religion_group = muslim
 								alliance_with = ROOT
+								ai = no
 							}
 						}
 						343 = {
 							owner = {
 								religion_group = muslim
 								alliance_with = ROOT
+								ai = no
 							}
 						}
 					}
