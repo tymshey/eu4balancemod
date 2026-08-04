@@ -6,6 +6,9 @@ add_core = UBH
 culture = rwandan #Ha
 religion = shamanism #Fetishism
 trade_goods = salt
+latent_trade_goods = {
+	coal
+}
 capital = "Ruguru"
 hre = no
 base_tax = 2

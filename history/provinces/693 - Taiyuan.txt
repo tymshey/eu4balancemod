@@ -7,6 +7,9 @@ culture = jin
 religion = confucianism
 capital = "Taiyuan"
 trade_goods = iron
+latent_trade_goods = {
+	coal
+}
 hre = no
 base_tax = 6 
 base_production = 6

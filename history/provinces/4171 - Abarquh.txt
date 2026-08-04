@@ -6,6 +6,9 @@ culture = persian
 religion = sunni
 capital = "Abarquh"
 trade_goods = livestock #known for its pastures for Timurid armies
+latent_trade_goods = {
+	coal
+}
 hre = no
 base_tax = 1
 base_production = 1

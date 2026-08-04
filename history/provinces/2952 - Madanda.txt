@@ -9,6 +9,9 @@ capital = "Madanda"
 is_city = yes
 base_manpower = 1
 trade_goods = ivory
+latent_trade_goods = {
+	coal
+}
 hre = no
 base_tax = 1 
 base_production = 1

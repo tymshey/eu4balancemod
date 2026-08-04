@@ -5,6 +5,9 @@ culture = mbangala
 religion = shamanism #Fetishism
 capital = "Malem"
 trade_goods = slaves
+latent_trade_goods = {
+	coal
+}
 hre = no
 base_tax = 1
 base_production = 1

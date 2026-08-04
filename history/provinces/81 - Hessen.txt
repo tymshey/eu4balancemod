@@ -5,6 +5,9 @@ controller = HES
 add_core = HES
 capital = "Marburg"
 trade_goods = wool
+latent_trade_goods = {
+	coal
+}
 culture = hessian
 religion = catholic
 base_tax = 4 

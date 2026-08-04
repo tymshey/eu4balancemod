@@ -1,5 +1,9 @@
 #9002 - Swazi
 
+latent_trade_goods = {
+	coal
+}
+
 culture = nguni
 religion = shamanism #Fetishism
 capital = "Mbabane"

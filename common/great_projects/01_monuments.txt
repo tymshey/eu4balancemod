@@ -13592,6 +13592,7 @@ khajuraho = {
 		country_modifiers = {
 			monthly_heir_claim_increase = 0.3
 			heir_chance = 0.5
+			free_policy = 1
 		}
 		on_upgraded = {
 		}

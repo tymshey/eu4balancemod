@@ -6,6 +6,9 @@ culture = moroccan
 religion = sunni
 capital = "Oulad Mhedi"
 trade_goods = livestock
+latent_trade_goods = {
+	coal
+}
 hre = no
 base_tax = 1 
 base_production = 1
