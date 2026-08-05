@@ -30,6 +30,7 @@ country_decisions = {
 				has_country_flag = turkoman_can_form_persia
 			}
 			NOT = { tag = MUG }
+			NOT = { tag = HSN }
 			NOT = { tag = PER }
 			NOT = { tag = ERS }
 			NOT = { tag = HLR }

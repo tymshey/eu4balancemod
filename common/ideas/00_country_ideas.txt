@@ -18083,12 +18083,11 @@ UKR_ideas = {
 		prestige = 1
 	}
 	international_influences = {
-		num_accepted_cultures = 2
-		promote_culture_cost = -0.25
+		development_cost_in_primary_culture = -0.1
 	}
 	zaporizhian_cossacs = {
-		cavalry_power = 0.15
-		cossacks_privilege_slots = 1
+		land_morale = 0.05
+		infantry_power = 0.1
 	}
 	east_and_west = {
 		global_trade_power = 0.1
