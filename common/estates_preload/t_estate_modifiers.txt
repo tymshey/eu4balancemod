@@ -1,0 +1,18 @@
+
+
+estate_jews = {
+	modifier_definition = {
+		type = loyalty
+		key = jews_loyalty_modifier
+		trigger = {
+			has_estate = estate_jews
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = jews_influence_modifier
+		trigger = {
+			has_estate = estate_jews
+		}
+	}
+}

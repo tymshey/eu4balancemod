@@ -2,8 +2,8 @@
 #Donalvontusk
 add_core = SWI
 add_core = TTL
-owner = SWI
-controller = SWI
+owner = TTL
+controller = TTL
 culture = swiss
 religion = catholic
 hre = no
@@ -21,10 +21,3 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1444.10.1 = {	
-	add_province_modifier = {
-		name = league_revolt
-		duration = -1
-	}
-	set_local_autonomy = 50
-}

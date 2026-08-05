@@ -1,5 +1,5 @@
-owner = SWI
-controller = SWI
+owner = TTL
+controller = TTL
 culture = swiss
 religion = catholic
 capital = "Illanz"
@@ -32,10 +32,3 @@ discovered_by = ottoman
 } # Incorporation of the Three Leagues into the Helvetic Republic
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 
-1444.10.1 = {	
-	add_province_modifier = {
-		name = league_revolt
-		duration = -1
-	}
-	set_local_autonomy = 50
-}

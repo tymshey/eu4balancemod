@@ -1,7 +1,7 @@
 #1870 - St Gallen
 
-owner = SWI
-controller = SWI
+owner = TTL
+controller = TTL
 culture = swiss
 religion = catholic
 capital = "St Gallen"
@@ -27,11 +27,3 @@ discovered_by = ottoman
 1656.1.1 = { unrest = 7 } # Protestants are expelled from Schwyz which lead to the First War of Villmergen
 1657.1.1 = { unrest = 2 } # An agreement is concluded at Villmergren but tensions remain
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-
-1444.10.1 = {	
-	add_province_modifier = {
-		name = league_revolt
-		duration = -1
-	}
-	set_local_autonomy = 50
-}
