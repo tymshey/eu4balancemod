@@ -14,6 +14,10 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
+			OR = {
+				tag = NGC
+				tag = SGC
+			}
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -154,7 +158,11 @@ country_decisions = {
 						has_country_flag = remove_germany_tech_requirement_flag
 					}
 				}
-				adm_tech = 18
+				adm_tech = 20
+			}
+			OR = {
+				tag = NGC
+				tag = SGC
 			}
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -212,42 +220,6 @@ country_decisions = {
 			}
 			change_tag = GER
 			restore_country_name_effect = yes
-			if = {
-				limit = {
-					is_emperor = yes
-				}
-				dismantle_hre = yes
-			}
-			else = {
-				emperor = {
-					add_opinion = {
-						who = root
-						modifier = opinion_left_empire
-					}
-				}
-				set_in_empire = no
-				emperor = {
-					country_event = { id = hre_event.5 }
-				}
-			}
-			custom_tooltip = become_an_empire_tt
-			hidden_effect = { set_government_rank = 3 }
-			north_german_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = GER
-			}
-			south_german_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = GER
-			}			
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
 			add_prestige = 25
 			set_country_flag = formed_germany_flag
 			if = {

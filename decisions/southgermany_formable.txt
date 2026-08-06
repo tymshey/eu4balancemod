@@ -1,0 +1,148 @@
+country_decisions = {
+
+    form_sgc_nation = {
+		major = yes
+		potential = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				tag = BAV
+				tag = SWA
+				tag = FKN
+				AND = {
+					tag = SWI
+					adm_tech = 10
+				}
+			}
+			NOT = {
+				OR = {
+					tag = SGC
+					tag = NGC
+					tag = GER
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1880
+				province_id = 4710
+				province_id = 65
+				province_id = 77
+				province_id = 67
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			adm_tech = 15
+			owns_core_province = 1880
+			owns_core_province = 4710
+			owns_core_province = 65
+			owns_core_province = 77
+			owns_core_province = 67
+			num_of_owned_provinces_with = {
+                region = south_german_region
+                value = 30
+            }
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = BAV
+						was = BAV
+					}
+				}
+				add_country_modifier = {
+					name = d_bavaria_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = SWA
+						was = SWA
+					}
+				}
+				add_country_modifier = {
+					name = d_swabia_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = SWI
+						was = SWI
+					}
+				}
+				add_country_modifier = {
+					name = d_switzerland_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = FKN
+						was = FKN
+					}
+				}
+				add_country_modifier = {
+					name = d_franconia_modifier
+					duration = -1
+				}
+				country_event = { id = d_fkn_prices.1 }
+			}
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				dismantle_hre = yes
+			}
+			else = {
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
+			}
+			north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SGC
+			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SGC
+			}
+			add_prestige = 25
+			custom_tooltip = become_an_empire_tt
+			hidden_effect = { set_government_rank = 3 }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			change_tag = SGC
+		}
+	}
+}

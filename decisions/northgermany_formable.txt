@@ -1,0 +1,225 @@
+country_decisions = {
+
+    form_ngc_nation = {
+		major = yes
+		potential = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				tag = PRU
+				tag = WES
+				tag = HAN
+				AND = {
+					tag = HSA
+					adm_tech = 10
+				}
+				AND = {
+					tag = DTT
+					adm_tech = 10
+				}
+			}
+			NOT = {
+				OR = {
+					tag = NGC
+					tag = SGC
+					tag = GER
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 85
+				province_id = 57
+				province_id = 61
+				province_id = 50
+				province_id = 45
+				province_id = 43
+				province_id = 41
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			adm_tech = 15
+			owns_core_province = 85
+			owns_core_province = 57
+			owns_core_province = 61
+			owns_core_province = 50
+			owns_core_province = 45
+			owns_core_province = 43
+			owns_core_province = 41
+			num_of_owned_provinces_with = {
+                region = north_german_region
+                value = 45
+            }
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = PRU
+						was = PRU
+					}
+				}
+				add_country_modifier = {
+					name = d_prussia_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = WES
+						was = WES
+					}
+				}
+				add_country_modifier = {
+					name = d_westphalia_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = HAN
+						was = HAN
+					}
+				}
+				add_country_modifier = {
+					name = d_hannover_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = HSA
+						was = HSA
+					}
+				}
+				add_country_modifier = {
+					name = d_lubeck_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = DTT
+						was = DTT
+					}
+				}
+				add_country_modifier = {
+					name = d_ditmarchen_modifier
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				dismantle_hre = yes
+			}
+			else = {
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
+				}
+			}
+			north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NGC
+			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NGC
+			}
+			add_prestige = 25
+			custom_tooltip = become_an_empire_tt
+			hidden_effect = { set_government_rank = 3 }
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			change_tag = NGC
+		}
+	}
+}
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

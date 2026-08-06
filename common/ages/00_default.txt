@@ -721,7 +721,10 @@ age_of_absolutism = {
 				on_age_ability_taken = { age = age_of_absolutism }
 			}
 			allow = {
-				tag = FRA
+				OR = {
+					tag = FRA
+					tag = FRE
+				}
 			}
 			modifier = {
 				max_absolutism_effect = 0.3
@@ -977,6 +980,8 @@ age_of_revolutions = {
 				OR = {
 					tag = PRU
 					tag = GER
+					tag = NGC
+					tag = SGC
 				}
 			}
 			modifier = {

@@ -806,8 +806,9 @@ BAV_ideas = {
 		prestige = 1
 	}
 	geistlicher_rat = {
-		global_heretic_missionary_strength = 0.03
-		papal_influence = 1
+		monthly_fervor_increase = 0.5
+		church_power_modifier = 0.2
+		papal_influence = 2
 	}
 	brewmaster_general = {
 		global_tax_modifier = 0.1
