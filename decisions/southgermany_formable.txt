@@ -37,6 +37,8 @@ country_decisions = {
 				province_id = 65
 				province_id = 77
 				province_id = 67
+				province_id = 134
+				province_id = 73
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -47,9 +49,11 @@ country_decisions = {
 			owns_core_province = 65
 			owns_core_province = 77
 			owns_core_province = 67
+			owns_core_province = 134
+			owns_core_province = 73
 			num_of_owned_provinces_with = {
                 region = south_german_region
-                value = 30
+                value = 40
             }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -135,6 +139,7 @@ country_decisions = {
 				}
 				add_permanent_claim = SGC
 			}
+			set_capital = 134
 			add_prestige = 25
 			custom_tooltip = become_an_empire_tt
 			hidden_effect = { set_government_rank = 3 }

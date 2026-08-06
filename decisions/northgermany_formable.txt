@@ -154,6 +154,7 @@ country_decisions = {
 				}
 				add_permanent_claim = NGC
 			}
+			set_capital = 50
 			add_prestige = 25
 			custom_tooltip = become_an_empire_tt
 			hidden_effect = { set_government_rank = 3 }
