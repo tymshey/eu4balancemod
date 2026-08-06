@@ -685,7 +685,7 @@ MOS_ideas = {
 RUS_ideas = {
 	start = {
 		core_creation = -0.15
-		global_manpower_modifier = 0.33
+		global_manpower_modifier = 0.2
 	}
 
 	bonus = {
@@ -713,7 +713,7 @@ RUS_ideas = {
 		artillery_power = 0.1
 	}
 	life_long_conscription  = {
-		land_forcelimit_modifier = 0.33
+		land_forcelimit_modifier = 0.2
 	}
 	abolish_the_mestnichestvo = {
 		yearly_corruption = -0.1

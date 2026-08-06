@@ -17,7 +17,10 @@ country_decisions = {
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
 			tag = POL
-			LIT = { exists = yes }
+			OR = {
+				LIT = { exists = yes }
+				BOH = { exists = yes }
+			}
 			OR = {
 				ai = no
 				AND = {
@@ -41,10 +44,18 @@ country_decisions = {
 			}
 		}
 		allow = {
-			LIT = { was_player = no }
-			LIT = {
-				NOT = { num_of_cities = 60 } #Keep this number the same as in potential. Original 38 +10
-				NOT = { liberty_desire = 25 } 
+			OR = {
+				LIT = { was_player = no }
+				BOH = { was_player = no }
+			}
+			OR = {
+				LIT = {
+					NOT = { num_of_cities = 60 } #Keep this number the same as in potential. Original 38 +10
+					NOT = { liberty_desire = 25 } 
+				}
+				BOH = {
+					NOT = { liberty_desire = 25 } 
+				}
 			}
 			if = {
 				limit = { has_country_flag = pol_tech_8_form_plc_flag }
@@ -59,18 +70,71 @@ country_decisions = {
 			owns_core_province = 257				# Warszawa
 			owns_core_province = 43					# Danzig
 			owns_core_province = 1841				# Marienburg
-			senior_union_with = LIT
+			OR = {
+				senior_union_with = LIT
+				AND = {
+					senior_union_with = BOH
+					owns_all_provinces = {
+						area = slovakia_area
+					}
+				}
+			}
 			MAZ = { exists = no }
 		}
 		effect = {
 			change_tag = PLC
-			inherit = LIT
+			if = {
+				limit = {
+					senior_union_with = LIT
+				}
+				inherit = LIT
+				set_country_flag = PLC_inherit_LIT
+			}
+			else = {
+				inherit = BOH
+				set_country_flag = PLC_inherit_BOH
+			}
+			if = {
+				limit = {
+					has_country_flag = PLC_inherit_BOH
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							exists = SIL
+						}
+						inherit = SIL
+					}
+					else_if = {
+						limit = {
+							exists = GLG
+							exists = OPL
+						}
+						inherit = OPL
+						inherit = GLG
+					}
+				}
+			}
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
 			if = {
-				limit = { NOT = { accepted_culture = lithuanian } }
+				limit = { 
+					NOT = { accepted_culture = lithuanian } 
+					has_country_flag = PLC_inherit_LIT
+				}
 				add_accepted_culture_or_dip_power = {
 					culture = lithuanian
+					dip_reward = yes
+					free = yes
+				}
+			}
+			if = {
+				limit = { 
+					NOT = { accepted_culture = czech } 
+					has_country_flag = PLC_inherit_BOH
+				}
+				add_accepted_culture_or_dip_power = {
+					culture = czech
 					dip_reward = yes
 					free = yes
 				}
@@ -82,9 +146,74 @@ country_decisions = {
 			}
 			if = {
 				limit = {
+					has_country_flag = PLC_inherit_BOH
+				}
+				override_country_name = ZSP
+				set_country_flag = is_ZSP_flag
+				set_country_flag = has_overriden_color_flag
+				change_country_color = { color = { 173 45 62 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = is_ZSP_flag
+					bohemia_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = BOH }
+						NOT = { owned_by = PLC }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = is_ZSP_flag
+					moravia_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = BOH }
+						NOT = { owned_by = PLC }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = is_ZSP_flag
+					erzgebirge_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = BOH }
+						NOT = { owned_by = PLC }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = is_ZSP_flag
+					lusatia_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = BOH }
+						NOT = { owned_by = PLC }
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = is_ZSP_flag
+					slovakia_area = {
+						NOT = { owned_by = POL }
+						NOT = { owned_by = LIT }
+						NOT = { owned_by = BOH }
+						NOT = { owned_by = PLC }
+					}
+				}
+			}
+			if = {
+				limit = {
 					poland_region = {
 						NOT = { owned_by = POL }
 						NOT = { owned_by = LIT }
+						NOT = { owned_by = BOH }
 						NOT = { owned_by = PLC }
 					}
 				}
