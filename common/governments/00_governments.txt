@@ -130,6 +130,9 @@ monarchy = {
 				merchant_aristocracy_reform
 				gothic_monarchy_reform
 				shaka_regime
+				#Burgundy
+				burgundian_empire_reform
+				lotharingian_empire_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -983,6 +986,7 @@ republic = {
 		revolutionary_republic_reform
 		pirate_republic_reform
 		protectorate_parliament_reform
+		prussian_republic_reform
 	}
 	exclusive_reforms = {
 		lottery_reform
@@ -991,6 +995,7 @@ republic = {
 		pirate_republic_reform
 		admiralty_reform
 		military_rulership_reform
+		prussian_republic_reform
 		military_dictatorship_reform
 	}
 	exclusive_reforms = {
@@ -1012,6 +1017,7 @@ republic = {
 		dutch_republic
 		admiralty_reform
 		military_rulership_reform
+		prussian_republic_reform
 		military_dictatorship_reform
 	}
 	exclusive_reforms = { 

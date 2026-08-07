@@ -81,6 +81,9 @@ adult_baptism_aspect = {
 }
 
 holy_sacraments_aspect = {
+	potential = {
+		FROM = { NOT = { has_country_flag = bur_buff_aspect_actions } }
+	}
 	cost = 100
 	effect = {
 		hidden_effect = {
@@ -103,7 +106,36 @@ holy_sacraments_aspect = {
 	}
 }
 
+holy_sacraments_aspect_buff = {
+	potential = {
+		FROM = { has_country_flag = bur_buff_aspect_actions }
+	}
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = holy_sacraments_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		discipline = 0.05
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
 saints_accept_prayers_aspect = {
+	potential = {
+		FROM = { NOT = { has_country_flag = bur_buff_aspect_actions } }
+	}
 	cost = 100
 	effect = {
 		hidden_effect = {
@@ -117,6 +149,33 @@ saints_accept_prayers_aspect = {
 	modifier = { 
 		land_morale = 0.05
 		naval_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 12
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+}
+
+saints_accept_prayers_aspect_buff = {
+	potential = {
+		FROM = { has_country_flag = bur_buff_aspect_actions }
+	}
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = saints_accept_prayers_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = { 
+		land_morale = 0.1
+		naval_morale = 0.1
 	}
 	ai_will_do = {
 		factor = 12
@@ -308,6 +367,9 @@ translated_bibles_aspect = {
 }
 
 justified_religious_war_aspect = {
+	potential = {
+		FROM = { NOT = { has_country_flag = bur_buff_aspect_actions } }
+	}
 	cost = 100
 	effect = {
 		hidden_effect = {
@@ -330,7 +392,36 @@ justified_religious_war_aspect = {
 	}
 }
 
+justified_religious_war_aspect_buff = {
+	potential = {
+		FROM = { has_country_flag = bur_buff_aspect_actions }
+	}
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = justified_religious_war_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		ae_impact = -0.1
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
 war_preaches_aspect = {
+	potential = {
+		FROM = { NOT = { has_country_flag = bur_buff_aspect_actions } }
+	}
 	cost = 100
 	effect = {
 		hidden_effect = {
@@ -343,6 +434,32 @@ war_preaches_aspect = {
 	}
 	modifier = {
 		war_exhaustion = -0.03
+	}
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 0
+			is_at_war = no
+		}
+	}
+}
+
+war_preaches_aspect_buff = {
+	potential = {
+		FROM = { has_country_flag = bur_buff_aspect_actions }
+	}
+	cost = 100
+	effect = {
+		hidden_effect = {
+			clr_protestant_aspects_buffs = yes
+			add_country_modifier = {
+				name = war_preaches_aspect_modifier
+				duration = 3650
+			}
+		}
+	}
+	modifier = {
+		war_exhaustion = -0.06
 	}
 	ai_will_do = {
 		factor = 2

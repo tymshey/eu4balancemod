@@ -1,0 +1,203 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+bur_renaissance_arrived = {
+	innovativeness_gain = 0.25
+	advisor_cost = -0.10
+}
+
+bur_wine_in_demand = {
+	local_trade_goods_size_modifier = 0.10
+}
+
+bur_thriving_iron_production = {
+	artillery_cost = -0.2
+	global_regiment_cost = -0.05
+	build_cost = -0.10
+}
+
+bur_court_of_europe = {
+	diplomatic_reputation = 1
+}
+
+bur_preparations_against_france = {
+	ae_impact = -0.15
+}
+
+bur_staple_port_of_calais = {
+	province_trade_power_value = 10
+	local_development_cost = -0.05
+}
+
+bur_silk_hub = {
+	local_development_cost = -0.1
+}
+
+bur_burgundian_anatomy = {
+	development_cost_in_primary_culture = -0.1
+}
+
+bur_united_the_old_realm = {
+	core_creation = -0.1
+}
+
+bur_heirs_of_europe = {
+	administrative_efficiency = 0.05
+}
+
+bur_conquest_of_britanny = {
+	discipline = 0.05	
+}
+
+bur_secure_electors = {
+	reasons_to_elect = 25	
+	diplomatic_reputation = 1
+}
+
+bur_hre_under_burgundy = {
+	imperial_authority = 0.1
+}
+
+bur_diplomatic_miracle = {
+	diplomatic_upkeep = 1
+}
+bur_diplomatic_miracle2 = {
+	diplomatic_upkeep = 1
+	improve_relation_modifier = 0.1
+}
+
+bur_university_of_grey = {
+	institution_growth = 6
+	statewide_governing_cost = -0.25
+}
+
+bur_trade_enterprise = {
+	caravan_power = 0.2
+	placed_merchant_power = 5
+}
+
+bur_culture_of_chivalry = {
+	prestige_from_land = 0.5
+	prestige_decay = -0.01
+}
+
+bur_frankish_absolutism = {
+	overextension_impact_modifier = -0.1
+	max_absolutism_effect = 0.1
+}
+
+bur_reform_banking = {
+	state_maintenance_modifier = -0.1
+	interest = -0.5
+}
+
+bur_central_coalmines = {
+	state_governing_cost_increase = -30
+	local_production_efficiency = 0.05
+}
+
+bur_golden_era = {
+	all_power_cost = -0.1
+	land_morale = 0.1
+	naval_morale = 0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
+bur_centralised_bueracracy = {
+	local_autonomy = -0.1
+	local_unrest = -2
+}
+
+bur_mission_to_unknown = {
+	range = 0.25
+	naval_attrition = -0.1
+}
+
+bur_land_of_churches = {
+	tolerance_own = 2
+	global_tax_modifier = 0.1
+}
+
+bur_the_walls_of_burgundy = {
+	local_defensiveness = 0.1
+	local_garrison_size = 0.1
+}
+
+bur_burgundian_settlers = {
+	colonists = 1
+	global_colonial_growth = 20
+}
+
+bur_burgundian_ivory_coast = {
+	global_colonial_growth = 10
+	range = 0.25
+}
+
+bur_new_silk_road = {
+	global_trade_power = 0.1
+}
+
+
+bur_indian_trade = {
+	merchants = 1
+}
+
+bur_pax_lotharingica = {
+	navy_tradition = 1
+	naval_morale = 0.1
+}
+
+bur_les_huguenots_modifier = {
+	missionaries = 1
+	global_heretic_missionary_strength = 0.03
+}
+
+bur_palais_de_bourgogne_modifier = {
+	accept_vassalization_reasons = 10
+	unjustified_demands = -0.2
+}
+
+bur_soldiers_of_christ = {
+	land_morale = 0.05
+}
+
+bur_commision_of_mary_harsh = {
+	papal_influence_from_cardinals = 0.33
+	tolerance_own = 1
+	global_religious_conversion_resistance = 0.25
+}
+
+bur_commision_of_mary_concilatory = {
+	papal_influence = 0.5
+	tolerance_heretic = 2
+	tolerance_of_heretics_capacity = 1
+}
+
+bur_educated_advisors = {
+	advisor_cost = -0.10
+	monarch_admin_power = 1
+}
+
+bur_printed_culture = {
+	culture_conversion_cost = -0.1
+	relation_with_same_culture_group = 20
+	global_unrest = -1
+}
+
+bur_rollin_boof = {
+	production_efficiency = 0.1
+}
+
+bur_army_coats = {
+	land_maintenance_modifier = -0.05
+	max_attrition = -1
+}
+
+bur_enlighment = {
+	centralize_state_cost = -0.25
+}
+
+deforestisation_of_germany = {
+	local_development_cost = -0.1
+}

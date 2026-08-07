@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_great_project_palais_de_bourgogne"	
+		texturefile = "gfx//interface//great_projects//palais_de_bourgogne.dds"
+	}
+}

@@ -1099,3 +1099,42 @@ telpochcalli_academy = {
     }
     localization = holy_order
 }
+
+order_of_the_paladins = {
+    icon = GFX_holy_order_of_the_paladins
+    trigger = {
+       has_country_flag = BUR_fund_the_paladins_flag
+    }
+    color = { 55 126 220 }
+    cost = 100
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 2
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -2
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 2 } }
+                set_base_manpower = 2
+            }
+        }
+    }
+    modifier = {
+		local_manpower_modifier = 0.1
+		supply_limit_modifier = 0.25
+		local_regiment_cost = -0.25
+    }
+    ai_priority = {
+        factor = 1
+        modifier = {
+            factor = 1.5
+            unrest = 5
+        }
+        modifier = {
+            factor = 1.5
+            devastation = 50
+        }
+    }
+    localization = holy_order
+}

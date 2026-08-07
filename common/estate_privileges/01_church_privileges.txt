@@ -1773,6 +1773,7 @@ estate_church_religious_diplomats = {
 	conditional_modifier = {
 		trigger = {
 			has_country_flag = ITA_religious_diplomats_flag
+			has_country_flag = BUR_state_contactors_flag
 		}
 		modifier = {
 			max_absolutism = 10

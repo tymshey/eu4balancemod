@@ -1,0 +1,38 @@
+﻿dummy_sprites = {
+	available_for_custom_nation = no
+	# Tests against every tag in game
+	country_trigger = {
+		always = no
+	}
+}
+
+dlc120_LOR_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			primary_culture = burgundian
+			primary_culture = frankish
+		}
+	}
+
+	sprite_infantry = {
+		0 = LOR_INFANTRY_1
+		1 = LOR_INFANTRY_2
+		2 = LOR_INFANTRY_3
+		3 = LOR_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+		0 = LOR_CAVALRY_1
+		1 = LOR_CAVALRY_2
+		2 = LOR_CAVALRY_3
+		3 = LOR_CAVALRY_4
+	}
+
+	sprite_artillery = {
+		0 = LOR_ARTILLERY_1
+		1 = LOR_ARTILLERY_2
+		2 = LOR_ARTILLERY_3
+		3 = LOR_ARTILLERY_4
+	}
+}

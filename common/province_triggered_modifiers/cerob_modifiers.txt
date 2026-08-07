@@ -1,0 +1,39 @@
+bur_tighten_lowlands = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR  = {
+			tag = BUR
+			tag = LOT
+		}
+	}
+	trigger = {
+		NOT	 = {
+			has_owner_culture = yes
+			#OR = {
+			#	culture = burgundian
+			#	culture = frankish
+			#}
+		}
+	}
+	
+	local_culture_conversion_cost = -0.5
+	local_culture_conversion_time = -0.1
+}
+bur_tighten_lowlands_development = {
+	potential = {
+		normal_or_historical_nations = yes
+		OR  = {
+			tag = BUR
+			tag = LOT
+		}
+	}
+	trigger = {
+		#OR = {
+		#	culture = burgundian
+		#	culture = frankish
+		#}
+		has_owner_culture = yes
+	}
+	
+	 	local_governing_cost = -0.15
+}

@@ -1,0 +1,219 @@
+﻿l_english:
+#Events
+
+ new_flavour_bur.8.t:0 "Fate of Liege"
+ new_flavour_bur.8.d:0 "Liege is a potencial target of our expansion, but we have great relations with each other. We have to choose between a great friend or expansion."
+ new_flavour_bur.8.a:0 "Ask them to bacome a vassal!"
+ new_flavour_bur.8.b:0 "We cannot risk our alliance."
+ 
+ new_flavour_bur.9.t:0 "Burgundy ask to become a vassal"
+ new_flavour_bur.9.d:0 "Burgundian state send us an envelope where they ask to became their subject. Our great relations should be untouched or we have to change our interpretations against Burgundy."
+ new_flavour_bur.9.a:0 "I accept!"
+ new_flavour_bur.9.b:0 "Refuse."
+ 
+ new_flavour_bur.10.t:0 "Liege Accepted"
+ new_flavour_bur.10.d:0 "Liege has no became our vassal, hope they are not change mind in the future."
+ new_flavour_bur.10.a:0 "Our friendship is long lasting!"
+ 
+ new_flavour_bur.11.t:0 "Liege Refused"
+ new_flavour_bur.11.d:0 "Liege refused our offer, but we should see them as integral part of our realm."
+ new_flavour_bur.11.a:0 "Conquer them!"
+ 
+ new_flavour_bur.12.t:0 "Burgundian purchase of Calais"
+ new_flavour_bur.12.d:0 "Burgundy offered us a large ammount of ducats for our port in Calais. Every side the port is bordered by them so its pretty sure they claim."
+ new_flavour_bur.12.a:0 "Accept the offer."
+ new_flavour_bur.12.b:0 "Decline the offer."
+ 
+ new_flavour_bur.13.t:0 "Offer Accepted"
+ new_flavour_bur.13.d:0 "England accepted our offer to purchase the port of Calais."
+ new_flavour_bur.13.a:0 "Great."
+ 
+ new_flavour_bur.14.t:0 "Offer Declined"
+ new_flavour_bur.14.d:0 "England refused our offer to purchase the port of Calais."
+ new_flavour_bur.14.a:0 "Not great."
+ 
+ new_flavour_bur.15.t:0 "City of Aachen"
+ new_flavour_bur.15.d:0 "The city of Aachen was the seat of the great Frankish Empire. Charlemagne ruled the four realm from here and keeped his eye on other oppurtinities for expansion."
+ new_flavour_bur.15.a:0 "This is History"
+ 
+ new_flavour_bur.16.t:0 "Choose Mission"
+ new_flavour_bur.16.d:0 ""
+ new_flavour_bur.16.a:0 "Catholic Branch"
+ new_flavour_bur.16.b:0 "Protestant Branch"
+ new_flavour_bur.16.c:0 "Reformed Branch"
+ 
+ new_flavour_bur.17.t:0 "Burgundy offers vassalisation"
+ new_flavour_bur.17.d:0 "Burgundy is a renowned state with its loyalty to our great Lord. They asked the Pope to make a defensive step against the muslim agression and became their vassal."
+ new_flavour_bur.17.a:0 "The Pope will serve well."
+ new_flavour_bur.17.b:0 "The Papacy cannot be subjugated!"
+ 
+ new_flavour_bur.18.t:0 "Pope Accepted the offer"
+ new_flavour_bur.18.d:0 "The Pope accepted our defensive offer, but they asked us for the reconquest of Jerusalem. We should claim the Holy Land as ours!"
+ new_flavour_bur.18.a:0 "The Papacy is ours!"
+ 
+ new_flavour_bur.19.t:0 "Pope denied the offer."
+ new_flavour_bur.19.d:0 "Pope wish to be independent for an eternity. That a lot of time so its time to strike."
+ new_flavour_bur.19.a:0 "Rome will fall"
+ 
+ new_flavour_bur.20.t:0 "The Kingdom of Jerusalem"
+ new_flavour_bur.20.d:0 "The Great Holy Kingdom are a short lived nation consumed by the muslim aggressors. The Conquest of Jerusalem are a great oppurtinity to revive this realm."
+ new_flavour_bur.20.a:0 "Found the Kingdom"
+ new_flavour_bur.20.b:0 "Assume Direct Control"
+ 
+ new_flavour_bur.21.t:0 "The Rollin Boof"
+ new_flavour_bur.21.d:0 "The Increasing demand for the newly produced Tobacco is a burden for our traders. We should focus on exporting or trade to our citizens."
+ new_flavour_bur.21.a:0 "Embrace the Cigar Culture"
+ new_flavour_bur.21.b:0 "Just Export"
+ 
+ new_flavour_bur.22.t:0 "The Fancy Coats"
+ new_flavour_bur.22.d:0 "Burgundy have a long history in textile industry, the coats are expensive and warm. Great fit for our army to keep them warm but this means a large investment and drop from the market."
+ new_flavour_bur.22.a:0 "Use in the Military"
+ new_flavour_bur.22.b:0 "Just Trade it"
+ 
+ new_flavour_bur.23.t:0 "Austrian fiscal problems"
+ new_flavour_bur.23.d:0 "Austria facing a nearly empty treasury. They needing every help to keep their status and prestige, so its a great oppurtunity to increase the relations with them."
+ new_flavour_bur.23.a:0 "We should aid them."
+ new_flavour_bur.23.b:0 "Keep the money."
+ 
+ new_flavour_bur.24.t:0 "Burgundian Help"
+ new_flavour_bur.24.d:0 "Burgundy aided us in these hard times."
+ new_flavour_bur.24.a:0 "Great"
+
+ #Ideas
+
+ borbard_regiments:0 "Bombard Regiments"
+ borbard_regiments_desc:0 "Burgundy is first among the canon user countries in europe. Our knowledge in the handling of this metal beasts will increase our damage in the battles we fough."
+ professional_weaponry:0 "Professional Weaponry"
+ professional_weaponry_desc:0 "The Duchy has one of the largest and well equipped army in Europe. The efforts to make our army outstanding pays off."
+ BUR_reformed_Ideas:0 "Burgundian Ideas"
+ bur_tighten_lowlands_development:0 "Integrated Lowlands"
+ bur_tighten_lowlands:0 "Tighten Lowlands"
+ 
+ #Modifiers
+ 
+ bur_renaissance_arrived:0 "The Renaissance"
+ bur_wine_in_demand:0 "Wine in Demand"
+ bur_thriving_iron_production:0 "Thriving Metal Production"
+ bur_court_of_europe:0 "Court of Europe"
+ bur_preparations_against_france:0 "Preparations Against France"
+ bur_staple_port_of_calais:0 "Staple Port"
+ bur_silk_hub:0 "Silk Hub"
+ bur_burgundian_anatomy:0 "The Burgundian Anatomy"
+ bur_united_the_old_realm:0 "The Old Realm"
+ bur_heirs_of_europe:0 "Heirs of Europe"
+ bur_conquest_of_britanny:0 "Conquest of Britanny"
+ bur_secure_electors:0 "Secure Electors"
+ bur_hre_under_burgundy:0 "True Emperor"
+ bur_diplomatic_miracle:0 "Diplomatic Miracle"
+ bur_diplomatic_miracle2:0 "Diplomatic Miracle"
+ bur_university_of_grey:0 "University of Gray"
+ bur_decrease_autonomy:0 "Control the Countryside"
+ bur_frankish_absolutism:0 "Frankish Absolutism"
+ bur_culture_of_chivalry:0 "Culture of Chivalry"
+ bur_rule_europe:0 "Rule Europe"
+ bur_trade_enterprise:0 "Trade Enterprise"
+ bur_reform_banking:0 "Banks of Burgundy"
+ bur_central_coalmines:0 "Central Belt Coalmines"
+ bur_golden_era:0 "Golden Era"
+ bur_centralised_bueracracy:0 "Centralised Buerocracy"
+ bur_indian_trade:0 "Indian Trade"
+ bur_burgundian_settlers:0 "Burgundian Settlers"
+ bur_mission_to_unknown:0 "Mission to Unknown"
+ bur_the_walls_of_burgundy:0 "Walls of Austrasia"
+ bur_english_administration:0 "British Administration"
+ bur_pax_lotharingica:0 "Pax Lotharingica"
+ deforestisation_of_germany:0 "Deforestisation"
+ bur_les_huguenots_modifier:0 "Les Huguenots"
+ bur_new_silk_road:0 "New Silk Road"
+ bur_burgundian_ivory_coast:0 "Burgundian Ivory Coast"
+ bur_palais_de_bourgogne_modifier:0 "Diplomatic Expansion"
+ bur_commision_of_mary_harsh:0 "Comission of Mary"
+ bur_commision_of_mary_concilatory:0 "Comission of Mary"
+ bur_rollin_boof:0 "Cigars for the Wealthy"
+ bur_army_coats:0 "Army Wintercoats"
+ bur_enlighment:0 "Burgundian Enlighment"
+ bur_educated_advisors:0 "Educated Advisors"
+ bur_printed_culture:0 "Mass Printing"
+ bur_land_of_churches:0 "Land of Churches"
+ 
+ #Culture
+ 
+ frankish:0 "Frankish"
+ 
+ #Aspects
+ 
+ holy_sacraments_aspect_buff:0 "Holy Sacraments"
+ saints_accept_prayers_aspect_buff:0 "Saints Accept Prayers"
+ justified_religious_war_aspect_buff:0 "Justified Religious Wars"
+ war_preaches_aspect_buff:0 "War Preaches"
+ 
+ #Tooltip
+ 
+ BUR_reform_the_army_tt:0 "Gives a chance to replace the following ideas: \n-§YThe Compagnies dOrdonnance§! to §YBombard Regiments:§!\n Siege Ability: §G+10.0%§!\n-§YPromote the Estates General§! to §YPorfessional Weaponry:§!\n Infatry Combat Ability: §G+10.0%§!\n"
+ BUR_DOMINATE_THE_CHANNEL:0 "Rivalised §YEngland§! or later §YGreat Britain§!, or just completed the requirements:"
+ BUR_SHARE_INTEREST:0 "Allied with §YEngland§! or later §YGreat Britain§!:"
+ BUR_IF_FRANCE_VALID_PU:0 "§YFrance§! a valid target for a §YPersonal Union§!"
+ BUR_ALLY_TRUST_INCREASE:0 "Every ally with at least §G100§! opinion gains §G25§! §YTrust§! and §G10§! §YFavors§! toward us.\n"
+ BUR_state_contactors_tooltip:0 "§YReligious Diplomats§! no longer decrease §YMax Absolutism§!."
+ LOT_revise_administration_tt:0 "Our administration will adopt the §YFrankish§! as main culture."
+ BUR_VASSALISE_LIEGE:0 "Following will happen if completed through Alliance:"
+ BUR_CONQUER_LIEGE:0 "Following will happen if completed through Conquest:"
+ unlock_great_council_of_mechelen_reform_tt:0 "Unlock the §YGreat Council of Mechelen§! government reform."
+ unlock_blackmail_nobility_reform_tt:0 "Unlock the §YPuppet the Nobility§! government reform."
+ BUR_fund_the_paladins_tt:0 "§YPrimacy of the Nobility§! no longer decrease §YMax Absolutism§! and grants:\n-All Estates Loyalty Equilibrium §G+5%§!\n-Loyalty Change when Privilige Revoked §G-5%§!.\n\nGrant acces to the §YOrder of the Paladins§! holy order."
+ BUR_DOMINATE_THE_HRE:0 "If completed through HRE membership:"
+ BUR_SECURE_GERMANY:0 "If completed through dismantling the HRE:"
+ bur_alternatively_tt:0 "\n§TAlternatively§!:"
+ BUR_CENTRALISE:0 "Every owned province will gain the following:"
+ BUR_CONVERT_CULTURE:0 "If successfully completed the §YDutch Revolt§! disaster or reached 1650 without triggering it, or enacted the §YGreat Council of Mechelen§! government reform:"
+ BUR_wallonian_coal_tt:0 "§YEvery owned provinces§! which fullfilled the requirements gains the following:"
+ BUR_english_relations_tt:0 "If Allied to §YEngland§! or §YGreat Britain§! we get acces to a decision to purchase §YCalais§! for 250 ducats."
+ BUR_CONVERT_CULTURE_BONUS:0 "\nIf a province succesfully converted to the country §YPrimary Culture§! will gain:"
+ BUR_dip_1_2:0 "Modify §YDiplomatic Miracle§! with §G+10%§! Improve Relations"
+ BUR_colonise_the_cape_tt:0 "If owns §YNatal§! gain §G1§! Center of Trade there"
+ BUR_garrison_system_tt:0 "§YEvery owned provinces§! in the §YFrance§! and §YLowlands§! Region which fullfilled the requirements gains the following:"
+ BUR_ports_of_ivory_coast_tt:0 "Gain Trade Power bonus to a random province in the Guinea Region"
+ BUR_soldier_of_christ_tt:0 "Gain §G-3%§! §YWar Score Cost vs Other Religions§! per §YAdministrative Advisor§! level."
+ BUR_papal_submission_tt:0 "Disable the §YSubjugation of the Papacy§! triggered modifier."
+ bur_soldiers_of_christ:0 "Soldiers of Christ"
+ BUR_POSITION_HARSH:0 "If we Choose §RHarsh§! in the §YCouncil of Trent§! will gain the following:"
+ BUR_POSITION_CONCILATORY:0 "If we Choose §GConcillatory§! in the §YCouncil of Trent§! will gain the following:"
+ BUR_VASSALISE_POPE:0 "If completed through Alliance will gain the following:"
+ BUR_CONQUER_POPE:0 "If completed through Conquest will gain the following:"
+ bur_our_religious_direction:0 "We can Choose between the following Branches:\n-Catholic\n-Protestant\n-Reformed"
+ BUR_center_of_protestantism_tt:0 "Empowers the military focused Church Aspects:\n-Holy Sacraments: §G+5%§! §YDiscipline§!\n-Saints Accept Prayers: §G+10%§! §YMoral of Armies/Navies§!\n-Justified Religious Wars: §G-10%§! §YAE Impact§!\n-War Preaches: §G-0.06§! §YWar Exhaustion§!\n"
+ BUR_center_of_reformation_tt:0 "Empowers every §YFervor§! actions by §G150%§!.\n"
+ flavor_bur.20.a.tt:0 "Release §YJerusalem§! as a §YPersonal Union§! in the Mashriq and Egypt Regions"
+ BUR_charles_buff:0 "This Mission grant §Y+1§! Power Generation to §YCharles I.§! if he ascends to the Throne.\n"
+ flavor_bur.25.a.tt:0 "Draw new borders with §YFrance§! to be integrated to our realm and to make easier to inherit:\n-Unlock §YDecision§! to Integrate France"
+ 
+ #Reforms
+ 
+ burgundian_empire_reform:0 "Crown of Burgundy"
+ burgundian_empire_reform_desc:0 "Burgundy had problems in the past, but this great realm overcome every difficulty cause by rivals, and separation."
+ lotharingian_empire_reform:0 "Lotharingian Empire"
+ lotharingian_empire_reform_desc:0 "The true claimants of the Carolignian throne. Frankish kingdom long gone, this nation managed the revive from their ashes and flourish."
+ 
+ #Decisions
+ 
+ bur_purchase_of_calais:0 "Purchase of Calais"
+ bur_purchase_of_calais_desc:0 "Calais is an important port in the region."
+ 
+ # Orders
+ 
+ order_of_the_paladins:0 "Order of the Paladins"
+ order_of_the_paladins_desc:0 "The Order of the Paladins are the greatest soldiers of Charlemagne. This heritage worth to worship and protect, while protecting the people of the realm in the tight situations."
+ 
+ #Great Projects
+ 
+ palais_de_bourgogne:0 "Palais de Bourgogne"
+ 
+ #Privileges
+ 
+ estate_burghers_german_deforestisation:0 "German Deforestisation"
+ estate_burghers_german_deforestisation_desc:0 "Germany is a heavily forested region wich is delaying its industrial potential. We should get rid of this trees."
+ estate_burghers_german_deforestisation_tt:0 "Grants Local Development Cost: §G-10%§! to every Woods province in Germany."
+ estate_burghers_german_deforestisation_revoke:0 "Remove Local Development Cost: §G-10%§! to every Woods province in Germany."
+ has_unlocked_estate_burghers_german_deforestisation_tt:0 "Complete §YDevelop Aachen§! mission to unlock this privilege."
+ unlock_privilege_estate_burghers_german_deforestisation_tt:0 "Unlock the §YGerman Deforestisation§! privilege for Burghers."
+

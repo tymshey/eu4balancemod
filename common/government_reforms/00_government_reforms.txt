@@ -479,6 +479,7 @@ prussian_republic = {
 	valid_for_new_country = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
+	has_term_election = no
 	republican_name = yes
 	royal_marriage = no
 	
@@ -507,6 +508,10 @@ prussian_republic = {
 		government_abilities = {
 			militarization_mechanic
 		}
+	}
+	
+	custom_attributes = {
+		generals_become_rulers = yes
 	}
 }
 
