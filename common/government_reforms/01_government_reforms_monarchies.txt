@@ -1739,20 +1739,72 @@ holy_imperial_monarchy_reform = {
 
 burgundian_state_reform = {
 	icon = "burgundian_state"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		primary_culture = burgundian
+		NOT = { has_country_flag = BUR_stabilise_the_state_flag }
+	}
+	nation_designer_trigger = {
+		primary_culture = burgundian
+	}
+	fixed_rank = 1
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		global_tax_modifier = -0.1
+		rival_change_cost = -1
+		rival_border_fort_maintenance = -1
+		diplomatic_upkeep = 1
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+burgundian_empire_reform = {
+	icon = "burgundian_empire_reform_icon"
+	allow_normal_conversion = no
+	potential = {
+		primary_culture = burgundian
+		has_country_flag = BUR_stabilise_the_state_flag
 	}
 	nation_designer_trigger = {
 		primary_culture = burgundian
 	}
 	valid_for_nation_designer = yes
-	nation_designer_cost = 10
+	nation_designer_cost = 30
 	modifiers = {
 		rival_change_cost = -1
 		rival_border_fort_maintenance = -1
 		diplomatic_upkeep = 2
-		years_to_integrate_personal_union = -5
+		governing_capacity = 100
+	}
+	ai = {
+		factor = 1
+	}
+}
+lotharingian_empire_reform = {
+	icon = "holy_roman_emperor"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			primary_culture = burgundian
+			primary_culture = frankish
+		}
+		has_country_flag = BUR_lotharingia_formed
+	}
+	nation_designer_trigger = {
+		OR = {
+			primary_culture = burgundian
+			primary_culture = frankish
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	modifiers = {
+		diplomatic_upkeep = 2
+		diplomatic_reputation = 1
+		governing_capacity = 250
 	}
 	ai = {
 		factor = 1
@@ -2322,7 +2374,7 @@ al_andalusia_government = {
 
 prussian_monarchy = {
 	icon = "prussian_monarchy"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		has_dlc = "Domination"
 		NOT = { has_reform = prussian_monarchy_base }
@@ -2383,7 +2435,7 @@ prussian_monarchy = {
 
 prussian_monarchy_base = {
 	icon = "prussian_monarchy"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		NOT = { has_reform = prussian_monarchy }
 		NOT = { have_had_reform = prussian_monarchy }
@@ -4988,7 +5040,18 @@ blackmail_nobility_reform = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 	}
 	trigger = {
-		full_idea_group = spy_ideas
+		OR = {
+			full_idea_group = spy_ideas
+			if = {
+				limit = { 
+					OR = {
+						tag = BUR
+						tag = LOT
+					}	
+				}
+				mission_completed = BUR_balance_the_estates
+			}
+		}
 	}
 	modifiers = {
 		nobles_influence_modifier = -0.1
@@ -6565,8 +6628,12 @@ great_council_of_mechelen_reform = {
 		has_dlc = "Domination"
 		OR = {
 			primary_culture = burgundian
+			primary_culture = frankish
 			has_country_flag = council_of_mechelen_flag
 		}
+	}
+	trigger = {
+		mission_completed = BUR_council_of_mechelen
 	}
 	modifiers = {
 		diplomatic_annexation_cost = -0.1

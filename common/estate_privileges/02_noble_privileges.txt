@@ -233,6 +233,14 @@ estate_nobles_nobility_primacy = {
 		country_military_power = 1
 	}
 	conditional_modifier = {
+		trigger = { has_country_flag = BUR_fund_the_paladins_flag }
+		modifier = { 
+			all_estate_loyalty_equilibrium = 0.05
+			loyalty_change_on_revoked = 0.05
+			max_absolutism = 5
+		}
+	}
+	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
 		modifier = { monthly_russian_modernization = -0.05 }
 	}

@@ -1,0 +1,111 @@
+burgundian_wars = {
+	potential = {
+		tag = BUR
+		current_age = age_of_discovery
+		normal_or_historical_nations = yes
+		government = monarchy
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		NOT = { has_country_flag = had_burgundian_wars }
+		is_tutorial_active = no
+		# Until its released
+		has_country_flag = burgundian_wars_enable
+	}
+
+
+
+	can_start = {
+		current_age = age_of_discovery
+		has_any_disaster = no
+		has_regency = no
+		is_lesser_in_union = no
+		has_ruler = "Charles I"
+	}
+	
+	can_stop = { 
+		OR = {
+			has_any_disaster = yes
+			has_regency = yes
+			is_lesser_in_union = yes
+		}
+		ADM = 4
+		DIP = 4
+		MIL = 4
+	}
+	
+	ended_by_country_breaking_to_rebels = no
+	
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { ADM = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { DIP = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { MIL = 3 }
+		}	
+		modifier = {
+			factor = 0.5
+			NOT = { ADM = 4 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { DIP = 4 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { MIL = 4 }
+		}
+		
+	}
+	
+	can_end = {
+		OR = {
+			AND = {
+				ADM = 4
+				DIP = 4
+				MIL = 4
+			}
+			NOT = { has_ruler = "Charles I" }
+		}	
+		custom_trigger_tooltip = {
+			tooltip = burgundian_wars_end_tooltip
+			NOT = { has_country_modifier = bw_one_year_timer }
+		}
+	}
+	
+
+
+
+	modifier = {
+		infantry_power = -0.20
+		diplomatic_reputation = -3
+	}	
+	
+	
+	on_start = burgundian_wars.1
+	on_end = burgundian_wars.100
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			100 = burgundian_wars.2		
+		}
+	}
+}
+

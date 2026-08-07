@@ -331,6 +331,7 @@ estate_burghers = {
 		estate_burghers_fugger_family
 		estate_burghers_TIM_gulf_toll
 		swiss_cantons
+		estate_burghers_german_deforestisation
 	}
 
 	agendas = {

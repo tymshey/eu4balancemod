@@ -4831,3 +4831,72 @@ estate_burghers_TIM_gulf_toll = {
 		factor = 1
 	}
 }
+
+#Burgundy
+
+estate_burghers_german_deforestisation = {
+	icon = privilege_dev_cost_desert
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_unlocked_estate_privilege = {
+			estate_privilege = estate_burghers_german_deforestisation
+		}
+		tag = LOT
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = has_unlocked_estate_burghers_german_deforestisation_tt
+			has_unlocked_estate_privilege = {
+				estate_privilege = estate_burghers_german_deforestisation
+			}	
+		}
+		any_owned_province = {
+			has_terrain = woods
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_german_deforestisation_tt
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_terrain = woods
+				OR = {
+					region = north_german_region
+					region = south_german_region
+				}
+			}
+			add_province_modifier = {
+				name = deforestisation_of_germany
+				duration = -1
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_german_deforestisation_revoke
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = deforestisation_of_germany }
+			remove_province_modifier = deforestisation_of_germany
+		}
+	}
+	on_invalid = {
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = deforestisation_of_germany }
+			remove_province_modifier = deforestisation_of_germany
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}

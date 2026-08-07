@@ -414,7 +414,9 @@ christian = {
 			priests_may_marry_aspect
 			adult_baptism_aspect
 			holy_sacraments_aspect
+			holy_sacraments_aspect_buff
 			saints_accept_prayers_aspect
+			saints_accept_prayers_aspect_buff
 			icons_images_aspect
 			legalised_divorces_aspect
 			heretics_deported_aspect
@@ -423,7 +425,9 @@ christian = {
 			allow_usury_aspect
 			translated_bibles_aspect
 			justified_religious_war_aspect
+			justified_religious_war_aspect_buff
 			war_preaches_aspect
+			war_preaches_aspect_buff
 			head_of_the_church_aspect
 			anglican_aspect
 		}
@@ -2660,7 +2664,7 @@ jewish_group = {
 		color = { 0 156 231 }
 		country = {
 			tolerance_own = 2
-			development_cost = -0.1
+			advisor_pool = 1
 		}
 		country_as_secondary = {
 			advisor_pool = 1
@@ -2734,7 +2738,7 @@ jewish_group = {
 					limit = {
 						has_church_aspect = judaism_sukkot_aspect
 					}
-					add_years_of_income = 0.5
+					add_years_of_income = 0.3
 					add_inflation = -1
 				}
 				if = {

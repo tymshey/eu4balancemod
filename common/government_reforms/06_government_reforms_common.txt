@@ -3027,12 +3027,16 @@ musketeers_reform = {
 		OR = {
 			tag = FRA
 			tag = FRE
+			tag = BUR
 		}
 	}
 	trigger = {
 		NOT = { current_age = age_of_discovery }
 		NOT = { current_age = age_of_reformation }
-		mission_completed = fra_musketeers
+		OR = {
+			mission_completed = fra_musketeers
+			mission_completed = BUR_french_musketeers
+		}
 		if = {
 			limit = { has_modifier_locking_military_tier = yes }
 			OR = {

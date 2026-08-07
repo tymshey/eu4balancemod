@@ -1,0 +1,93 @@
+namespace = burgundian_wars
+
+# Start Event
+country_event = {
+	id = burgundian_wars.1
+	title = burgundian_wars.1.t
+	desc = burgundian_wars.1.d
+		
+	picture = WAR_OF_THE_ROSES_eventPicture
+	major = yes
+	
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+		
+	immediate = {
+		set_country_flag = had_burgundian_wars
+		hidden_effect = {
+			add_country_modifier = {
+				name = bw_one_year_timer
+				duration = 365
+				hidden = yes
+			}
+		}
+	}
+	
+	option = { # Settle the dispute
+		name = burgundian_wars.1.a
+
+		set_country_flag = br_dispute_with_swiss
+	}
+	
+	option = { # Press the claims
+		name = burgundian_wars.1.b
+		
+		set_country_flag = br_arms_against_the_swiss
+	}
+}	
+
+# Failed promisses
+country_event = {
+	id = burgundian_wars.2
+	title = burgundian_wars.2.t
+	desc = burgundian_wars.2.d
+		
+	picture = WAR_OF_THE_ROSES_eventPicture
+	
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Our survive depents on this
+		name = burgundian_wars.2.a
+		add_opinion = {
+			who = COL
+			modifier = bur_wars_modifiers
+		}
+		add_opinion = {
+			who = SWI
+			modifier = bur_wars_modifiers
+		}
+	}
+
+}
+
+# End of the wars
+country_event = {
+	id = burgundian_wars.100
+	title = burgundian_wars.100.t
+	desc = burgundian_wars.100.d
+		
+	picture = WAR_OF_THE_ROSES_eventPicture
+	major = yes
+	
+
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # Burgundians defendes their future
+		name = burgundian_wars.100.a
+
+	}
+
+}

@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "burgundian_empire_reform_icon"
+		texturefile = "gfx/interface/government_reform_icons/burgundian_empire_reform.dds"
+	}
+}
