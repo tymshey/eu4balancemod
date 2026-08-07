@@ -17595,7 +17595,7 @@ ISR_ideas = {
 		discipline = 0.05
 	}
 	return_home = {
-		production_efficiency = 0.2
+		production_efficiency = 0.1
 	}
 	jewish_trade_tradition = {
 		trade_efficiency = 0.1
@@ -17767,7 +17767,8 @@ AKS_ideas = {
 	}
 	
 	aks_legacy_of_king_kaleb = {
-		ae_impact = -0.15
+		development_cost = -0.05
+		build_cost = -0.05
 	}
 	
 	aks_persian_revenge = {
@@ -17776,6 +17777,7 @@ AKS_ideas = {
 	
 	aks_christianity_stronghold = {
 		tolerance_own = 2
+		years_of_nationalism = -5
 	}
 	
 	aks_mediterranean_contacts = {
