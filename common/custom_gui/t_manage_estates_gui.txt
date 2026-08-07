@@ -1,15 +1,14 @@
-country_decisions = {
+# Manage estates
 
-    Manage_estates = {
-	major = yes
-	color = { 63 87 129 }
-		potential = {
-			ai = no
-		}
-	allow = {
+custom_button = {
+	name = manage_estates
+	potential = {
+		ai = no
+    	}
+	trigger = {
 		stability = 1
 		government_reform_progress = 50
-		}
+	}
 	effect = {
 		add_stability = -1
 		change_government_reform_progress = -50
@@ -89,63 +88,5 @@ country_decisions = {
 			duration = 7300
 		}
 	}
+	tooltip = manage_estates_tt
 }
-}
-
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

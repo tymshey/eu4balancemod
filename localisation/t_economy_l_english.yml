@@ -2,6 +2,7 @@
  
  t_eco_stats_tt:0 "Total Dev Clicks: §Y[Root.num_of_times_developed.GetValue]§!\n\n==================\n\nDue to the engine's limitations, this number may appear invisible.\nIf this happens, dev once to reload it."
  reload_missions_tt:0 "Reload Missions"
+ manage_estates_tt:0 "Manage Estates"
  
  # Decisions
 

@@ -94,6 +94,11 @@
 
  # Ideas
 
+ # Qing ideas
+
+ qng_huoqiying:0 "Huoqiying Cavalry"
+ qng_huoqiying_desc:0 "The Huoqiying Cavalry is a specialized military unit that has been trained in the use of firearms and mounted combat. This unit is highly effective against both infantry and cavalry, making it a formidable force on the battlefield."
+
  # Yuan ideas
 
  t_YUA_ideas:0 "Great Yuan Ideas"

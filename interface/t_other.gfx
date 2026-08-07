@@ -45,6 +45,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/reload.dds"
 	}
 	spriteType = {
+		name = "GFX_manage_estates_button"
+		texturefile = "gfx/interface/manage_estates_button.dds"
+	}
+	spriteType = {
 		name = "GFX_icon_eastern_school_chengzhu"
 		texturefile = "gfx/interface/icon_eastern_school_chengzhu.dds"
 	}
