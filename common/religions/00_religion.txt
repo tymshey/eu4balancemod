@@ -827,7 +827,7 @@ christian = {
 			defensiveness = 0.1
 		}
 		province = {
-			local_missionary_strength = -0.02
+			local_manpower_modifier = 0.1
 		}
 		allowed_center_conversion = {
 			orthodox
@@ -840,7 +840,7 @@ christian = {
 		
 		misguided_heretic = yes
 		
-		holy_sites = { 358 1227 2313 1234 419 }
+		holy_sites = { 390 1227 1211 1234 419 }
 		
 		blessings = {
 			legitimize_government
