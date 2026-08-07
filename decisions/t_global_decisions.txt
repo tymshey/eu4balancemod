@@ -23,6 +23,8 @@ country_decisions = {
 		}
 	}
 
+	# parlament
+
 	t_assign_parliament_decision = {
 		color = { 235 64 52 }
 		potential = {
@@ -49,25 +51,19 @@ country_decisions = {
 		}
 	}
 
-	t_reload_ideas_decision = {
+	# koscioly
+
+	Nuke_churches = {
+		major = yes
 		color = { 235 64 52 }
 		potential = {
 			ai = no
 		}
 		allow = {
-			OR = {
-				NOT = { has_country_flag = t_jap_nie_desyncuj_gry_cwelu }
-				had_country_flag = {
-					flag = t_jap_nie_desyncuj_gry_cwelu
-					days = 1
-				}
-			}
+			always = yes
 		}
 		effect = {
-			set_country_flag = t_jap_nie_desyncuj_gry_cwelu
-			country_event = {
-				id = ideagroups.1
-			}
+			every_owned_province = { remove_building = temple }
 		}
 	}
 }

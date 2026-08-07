@@ -128,6 +128,7 @@ country_decisions = {
 			any_owned_province = {
 				religion = orthodox
 			}
+			technology_group = eastern
 		}
 		allow = {
 			any_owned_province = {
