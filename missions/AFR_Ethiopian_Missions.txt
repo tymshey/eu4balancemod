@@ -704,7 +704,6 @@ ethiopia_religion_slot = {
 		icon = mission_empire
 		required_missions = {
 			eth_westernize_the_army
-			eth_conquest_of_antioch
 			eth_restore_aksumite_empire
 		}
 		provinces_to_highlight = {

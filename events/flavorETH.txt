@@ -1458,6 +1458,9 @@ country_event = {
 			name = eth_restoration_of_ancient_borders
 			duration = 9125
 		}
+		trigger = {
+			religion = coptic
+		}
 		change_tag = AKS
 		on_change_tag_effect = yes
 		add_prestige = 25
@@ -1469,22 +1472,31 @@ country_event = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
 		set_country_flag = formed_aksumite_empire_flag
-
 		ai_chance = {
 			factor = 100
 		}
 	}
 	
 	option = {
-		name = flavor_eth.39.b
+		name = d_flavor_eth.39.b
+		trigger = {
+			religion = jewish
+		}
 		add_country_modifier = {
 			name = eth_restoration_of_ancient_borders
 			duration = 9125
 		}
-		custom_tooltip = flavor_eth.39.b.tt
-		hidden_effect = {
-			set_country_flag = eth_can_form_aksumite
+		change_tag = ISR
+		on_change_tag_effect = yes
+		add_prestige = 25
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = ISR_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
+		set_country_flag = formed_aksumite_empire_flag
 
 		ai_chance = {
 			factor = 0
