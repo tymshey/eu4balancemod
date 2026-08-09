@@ -21,11 +21,10 @@
  d_bavaria_modifier:0 "Unified by Bavaria"
  d_swabia_modifier:0 "Unified by Swabia"
  d_switzerland_modifier:0 "Unified by Switzerland"
- d_lubeck_modifier:0 "Unifed by Hansa"
- d_ditmarchen_modifier:0 "Unified by Ditmarchen"
+ d_lubeck_modifier:0 "Unified by Hansa"
+ d_ditmarchen_modifier:0 "Unified by Dithmarschen"
  
  #events
  d_fkn_prices.1.title:0 "Franconian Beer"
  d_fkn_prices.1.desc:0 "Franconia has long maintained a proud, decentralized brewing tradition, with small town malthouses, monastery breweries, and municipal brewhouses dotting the rolling hills of the region. As local brewmasters refine their techniques—using kilned malts and local hops—the demand for high-quality barley and rye has surged across our provinces. What began as a regional craft has transformed into a major economic engine: demand for local crops is at an all-time high, driving up grain values and filling the coffers of both farmers and tax collectors."
  d_fkn_prices.1.a:0 "Praise alcoholism!"
- D_GRAIN_FKN:0 "Praise alcoholism!"
