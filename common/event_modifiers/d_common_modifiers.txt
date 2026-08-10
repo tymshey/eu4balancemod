@@ -9,3 +9,9 @@ d_egy_rum_modifier = {
 d_akk_earlygame_modifier = {
 	global_tax_income = 36
 }
+
+conversion_zeal = {
+	missionaries = 1
+	global_missionary_strength = 0.10
+	missionary_maintenance_cost = -0.5
+}
