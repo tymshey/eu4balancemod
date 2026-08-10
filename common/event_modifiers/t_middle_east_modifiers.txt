@@ -58,6 +58,11 @@ BHA_emperor_of_india = {
 	governing_capacity_modifier = 0.25
 }
 
+isr_birth_of_israel = {
+	global_tax_income = 36
+	land_morale = 0.1
+}
+
 ### Province
 
 t_madinat_as_salam = {

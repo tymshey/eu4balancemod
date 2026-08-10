@@ -35,6 +35,8 @@
 
  t_mam_color_egypt_title:0 "Set Colour for Egypt"
  t_mam_color_egypt_desc:0 "am i tripping or does egypt have a magical colour that cannot be changed in the files"
+ Israel_Create_without_killing_yourself_title:0 "Create Israel Without Killing Yourself"
+ Israel_Create_without_killing_yourself_desc:0 "This decision allows you to create Israel without killing your nation.\n\nbruh"
 
  # Ideas
 
@@ -46,6 +48,8 @@
 
  mam_the_sultans_general_staff_modifier:0 "The Sultan's General Staff"
  mam_trans_saharan_trade_route_modifier:0 "Trans-Saharan Centre of Trade"
+
+ isr_birth_of_israel:0 "Birth of Israel"
 
  # Missions
 

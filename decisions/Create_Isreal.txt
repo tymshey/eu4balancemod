@@ -3,24 +3,30 @@ country_decisions = {
 	Israel_Create = {
 		major = yes
 		potential = {
-				NOT = { has_country_flag = Israel_Create }
-				ai = no
-				tag = MAM
-			}
+			NOT = { has_country_flag = Israel_Created_flag }
+			ai = no
+			tag = MAM
+		}
 		
 		provinces_to_highlight = {
 			OR = {
-			province_id = 379
-			province_id = 6051
-			province_id = 364
-			province_id = 1854
+				province_id = 379
+				province_id = 6051
+				province_id = 364
+				province_id = 1854
 			}
 		}
 		allow = {
 			tag = MAM
 		}
 		effect = {
-			ISR = {change_religion = jewish}
+			ISR = {
+				change_religion = jewish
+				add_country_modifier = {
+					name = isr_birth_of_israel
+					duration = 7300
+				}
+			}
 			379 = {
 				cede_province = ISR
 				add_core = ISR
@@ -45,9 +51,96 @@ country_decisions = {
 				change_religion = jewish
 				change_culture = hebrew
 			}
-			set_bankruptcy = MAM
+			381 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			380 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			383 = {
+				cede_province = ANZ
+				add_core = ANZ
+			}
+			4269 = {
+				cede_province = ANZ
+				add_core = ANZ
+			}
+			4268 = {
+				cede_province = ANZ
+				add_core = ANZ
+			}
+			2327 = {
+				cede_province = ANZ
+				add_core = ANZ
+			}
+			release_all_subjects = yes
+			set_country_flag = Israel_Created_flag
 			switch_tag = ISR
-		set_country_flag = Israel_Create
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	Israel_Create_without_killing_yourself = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Israel_Created_flag }
+			ai = no
+			tag = MAM
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 379
+				province_id = 6051
+				province_id = 364
+				province_id = 1854
+			}
+		}
+		allow = {
+			tag = MAM
+		}
+		effect = {
+			ISR = {
+				change_religion = jewish
+				add_country_modifier = {
+					name = isr_birth_of_israel
+					duration = 7300
+				}
+			}
+			379 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			6051 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			364 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			1854 = {
+				cede_province = ISR
+				add_core = ISR
+				change_religion = jewish
+				change_culture = hebrew
+			}
+			vassalize = ISR
+			set_country_flag = Israel_Created_flag
 		}
 		ai_will_do = {
 			factor = 0
