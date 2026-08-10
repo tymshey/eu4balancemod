@@ -545,7 +545,7 @@ burgundy_missions_1 = {
 
 		effect = {
 			90 = {
-				limit = { trade_goods = cloth } 
+				# limit = { trade_goods = cloth } 
 				add_province_modifier = {
 					name = "bur_silk_hub"
 					duration = -1
@@ -554,7 +554,7 @@ burgundy_missions_1 = {
 				add_or_upgrade_production_building = yes
 			}
 			4383 = {
-				limit = { trade_goods = cloth } 
+				#limit = { trade_goods = cloth } 
 				add_province_modifier = {
 					name = "bur_silk_hub"
 					duration = -1
@@ -884,10 +884,12 @@ burgundy_mission_protestant_slot_1 = {
 
 		effect = { 
 			custom_tooltip = BUR_center_of_protestantism_tt
-			set_country_flag = bur_buff_aspect_actions 
-			capital_scope = {
-				limit = { is_reformation_center = no }
-				add_reform_center = protestant
+			set_country_flag = bur_buff_aspect_actions
+			if = {
+				limit = { capital_scope = { is_reformation_center = no } }
+				capital_scope = {
+					add_reform_center = protestant
+				}
 			}	
 			add_prestige_or_monarch_power = { amount = 10 }
 		} 
@@ -934,9 +936,11 @@ burgundy_mission_reformed_slot_1 = {
 		effect = { 
 			custom_tooltip = BUR_center_of_reformation_tt
 			set_country_flag = ned_buff_fervor_actions
-			capital_scope = {
-				limit = { is_reformation_center = no }
-				add_reform_center = reformed
+			if = {
+				limit = { capital_scope = { is_reformation_center = no } }
+				capital_scope = {
+					add_reform_center = reformed
+				}
 			}
 			add_prestige_or_monarch_power = { amount = 10 }
 		} 
@@ -1333,10 +1337,10 @@ burgundy_missions_2 = {
 				}
 				change_trade_goods = paper
 			}
-			if = {
-				limit = { has_dlc = "Rule Britannia" } 
-				innovativeness = 5
-			}
+			#if = { # ? nwm co to jest
+			#	limit = { has_dlc = "Rule Britannia" } 
+			#	innovativeness = 5
+			#}
 		}
 	}
 
@@ -1364,10 +1368,10 @@ burgundy_missions_2 = {
 		}
 
 		effect = {
-			if = {
-				limit = { has_dlc = "Rule Britannia" } 
-				innovativeness = 15
-			}
+			#if = {
+			#	limit = { has_dlc = "Rule Britannia" } 
+			#	innovativeness = 15
+			#}
 			add_country_modifier = {
 				name = "bur_burgundian_anatomy"
 				duration = -1
@@ -2504,10 +2508,11 @@ burgundy_missions_3 = {
 		position = 19
 		required_missions = { BUR_the_new_world } 
 		provinces_to_highlight = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				trade_goods = tobacco
-				NOT = { development = 10 } 
-				value = 5
+			trade_goods = tobacco
+			NOT = { development = 10 }
+			OR = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
 			}
 		} 
 
@@ -2571,7 +2576,7 @@ burgundy_mission_catholic_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			2313 { add_permanent_claim = ROOT }
+			2313 = { add_permanent_claim = ROOT }
 		} 
 	}
 
@@ -2590,10 +2595,12 @@ burgundy_mission_catholic_slot_3 = {
 			#not_in_mission_preview_mode = { key = BUR }
 		} 
 
-		effect = { 
-			add_great_project_tier = {
-				type = holy_city_jerusalem
-				tier = 1
+		effect = {
+			379 = {
+				add_great_project_tier = {
+					type = holy_city_jerusalem
+					tier = 1
+				}
 			}
 			country_event = { id = new_flavour_bur.20 } 
 		} 
@@ -2947,7 +2954,7 @@ burgundy_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			savoy_area = {
+			savoy_dauphine_area = {
 				limit = {
 					NOT = { owned_by = ROOT } 
 					NOT = { is_permanent_claim = ROOT } 
@@ -3100,11 +3107,12 @@ burgundy_missions_4 = {
 		icon = mission_control_fur_trade
 		position = 19
 		required_missions = { BUR_the_new_world } 
-		provinces_to_highlight = { 
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				trade_goods = fur
-				NOT = { development = 10 } 
-				value = 5
+		provinces_to_highlight = {
+			trade_goods = fur
+			NOT = { development = 10 }
+			OR = {
+				owned_by = ROOT
+				owned_by_subject_of = ROOT
 			}
 		} 
 
@@ -3294,7 +3302,7 @@ lotharingia_missions_5 = {
 	LOT_crown_of_the_isles = {
 		icon = fra_great_britain
 		position = 3
-		required_missions = { LOT_empire_of_franks } 
+		required_missions = {  } # LOT_empire_of_franks
 		provinces_to_highlight = {
 			area = home_counties_area
 			NOT = { owned_by = ROOT } 
@@ -3714,7 +3722,7 @@ burgundy_middle_5 = {
 
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = fance_region
+				region = france_region
 				province_has_current_tech_fort_trigger = yes
 				holy_order = order_of_the_paladins
 				value = 6
@@ -3732,7 +3740,7 @@ burgundy_middle_5 = {
 			custom_tooltip = BUR_garrison_system_tt
 			every_owned_province = {
 				limit = {
-					region = fance_region
+					region = france_region
 					province_has_current_tech_fort_trigger = yes
 				}
 				add_province_modifier = {

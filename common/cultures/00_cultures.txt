@@ -343,6 +343,11 @@ germanic = {
 	gothic_ger = {
 		primary = FEO
 	}
+	frankish = {
+		dynasty_names = {
+			Carolingian Pippinid Merovingian Arnulfing
+		}
+	}
 	female_names = {
 		Adele Adelgunde Adelheid Adolfine Agatha Agnes Alexandra Alice Alina Aline Alma Alwina Alwine Amalia Amalie Amanda 
 		Amelie Andrea Angela Angelika Angelina Anika Anita Anja Anke Ann-Katrin Anna Anne Annegret Anneli Annelie Anneliese 
