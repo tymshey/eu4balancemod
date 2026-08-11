@@ -168,27 +168,25 @@ liberty_desire = {
 		}
 		
 	}
-	
-		liberty_desire = -250
+	liberty_desire = -250
 }
 
+tech_18_policy = {
+	potential = {
+		ai = no
+	}
+	trigger = {
+		adm_tech = 18
+	}
+	possible_policy = 1
+}
 
 tech_26_policy = {
 	potential = {
 		ai = no
-		}
-	trigger = {
-		adm_tech = 26
-		}
-		possible_policy = 1
 	}
-	
-tech_28_policy = {
-	potential = {
-		ai = no
-		}
 	trigger = {
-		adm_tech = 28
-		}
-		possible_policy = 1
+		adm_tech = 24
 	}
+	possible_policy = 1
+}
