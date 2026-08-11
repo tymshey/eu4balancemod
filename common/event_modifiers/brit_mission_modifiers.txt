@@ -1,0 +1,45 @@
+usa_legion_of_america_modifier = {
+	infantry_power = 0.1 
+}
+usa_skilled_leaders = {
+	republican_tradition = 0.1
+	candidate_random_bonus = 2
+}
+usa_skilled_leaders_alt = {
+	legitimacy = 0.5
+	stability_cost_modifier = -0.1
+}
+usa_meritocratic_administration_modifier = {
+	advisor_cost = -0.1
+	yearly_corruption = -0.05
+}
+usa_united_congress_modifier = {
+	parliament_backing_chance = 0.05
+	num_of_parliament_issues = 1
+}
+usa_staple_port_of_america = {
+	province_trade_power_modifier = 0.25
+	local_development_cost = -0.1
+}
+usa_american_trade_fleet = {
+	ship_trade_power_modifier = 0.25
+}
+usa_secretary_of_state_modifier = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.15
+}
+usa_californian_gold_rush_modifier = {
+	global_colonial_growth = 20
+}
+usa_master_of_north_america_modifier = {
+	global_manpower_modifier = 0.15
+	global_trade_goods_size_modifier = 0.15
+}
+usa_american_frontier_modifier = {
+	colonists = 1
+	colonist_placement_chance = 0.1
+}
+manifest_destiny = {
+	may_establish_frontier = yes
+	auto_explore_adjacent_to_colony = yes
+}

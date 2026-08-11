@@ -1,0 +1,813 @@
+usa_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	#usa_american_frontier = {
+	#	icon = mission_settlers_north_america
+	#	required_missions = { }
+	#	position = 1
+	#	trigger = {
+	#		is_subject = no
+	#		is_at_war = no
+	#		full_idea_group = expansion_ideas
+	#	}
+	#	effect = {
+	#		add_country_modifier = {
+	#			name = usa_american_frontier_modifier
+	#			duration = 9125 #25 years
+	#		}
+	#	}
+	#}
+	#usa_manifest_destiny = {
+	#	icon = settle_north_america
+	#	required_missions = { usa_american_frontier }
+	#	position = 1
+	#	trigger = {
+	#		full_idea_group = expansion_ideas
+	#		num_of_provinces_in_states = 30
+	#		total_development = 200
+	#	}
+	#	effect = {
+	#		add_adm_power = 150
+	#		add_country_modifier = {
+	#			name = manifest_destiny
+	#			duration = -1
+	#		}
+	#	}
+	#}
+
+	usa_unite_the_northeast = {
+		icon = mission_cannons_firing
+		required_missions = { usa_form_a_standing_army }
+		position = 3
+		provinces_to_highlight = {
+			region = northeast_america_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			northeast_america_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125 #25 years
+			}
+			northeast_america_region = {
+				add_nationalism = -10
+			}
+			if = { #For bookmark start
+				limit = {
+					southeast_america_region = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				}
+				southeast_america_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	usa_east_coast_dominance = {
+		icon = mission_colonize_florida
+		required_missions = { usa_unite_the_northeast }
+		position = 4
+		provinces_to_highlight = {
+			region = southeast_america_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			southeast_america_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "military_victory"
+				duration = 7300
+			}
+			west_florida_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			california_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+			mississippi_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+					is_empty = no
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	usa_reach_the_west = {
+		icon = mission_colonize_california
+		required_missions = { usa_east_coast_dominance }
+		position = 5
+		provinces_to_highlight = {
+			colonial_region = colonial_california
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 4637
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				colonial_region = colonial_california
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_californian_gold_rush_modifier
+				duration = 9125 # 25 years
+			}
+			increase_trade_goods_discovery = {
+				trade_goods = gold
+			}
+		}
+	}
+	usa_master_of_north_america = {
+		icon = mission_ruler_of_north_america
+		required_missions = { usa_reach_the_west reach_the_mississippi }
+		position = 6
+		provinces_to_highlight = {
+			continent = north_america
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				continent = north_america
+				value = 200
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_master_of_north_america_modifier
+				duration = -1
+			}
+		}
+	}
+	
+}
+
+usa_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	usa_form_a_standing_army = {
+		icon = mission_modern_knight_army
+		required_missions = { usa_independence }
+		position = 2
+		trigger = {
+			army_size_percentage = 0.8
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
+			}
+			if = { #For bookmark start
+				limit = {
+					northeast_america_region = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				}
+				northeast_america_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	usa_prove_our_might = {
+		icon = mission_cannons_firing
+		required_missions = { usa_form_a_standing_army }
+		position = 3
+		trigger = {
+			num_of_battles = { amount = 15 }
+		}
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = nor_fight_for_liberty
+				duration = 9125
+			}
+		}
+	}
+	usa_legion_of_america = {
+		icon = ven_standing_army_mission_2
+		required_missions = { usa_prove_our_might }
+		position = 4
+		trigger = {
+			max_manpower = 100
+			army_size = 80
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.5
+			}
+			army_tradition = 50
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_legion_of_america_modifier
+				duration = -1
+			}
+		}
+	}
+	reach_the_mississippi = {
+		icon = mission_colonize_louisiana
+		required_missions = { usa_east_coast_dominance }
+		position = 5
+		provinces_to_highlight = {
+			region = mississippi_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 893
+			num_of_owned_provinces_with = {
+				region = mississippi_region
+				value = 10
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			893 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_building = stock_exchange
+			}
+		}
+	}
+	usa_seize_hawaii = {
+		icon = mission_invade_island
+		required_missions = { usa_master_of_north_america }
+		position = 7
+		provinces_to_highlight = {
+			area = northern_polynesia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			northern_polynesia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			4935 = {
+				trigger = {
+					owns = 4935
+				}
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				add_building = grand_shipyard
+			}
+			mindanao_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_mindanao_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			visayas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palawan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_luzon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+usa_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes 
+
+	usa_independence = {
+		icon = support_american_independence
+		required_missions = { }
+		position = 1
+		trigger = {
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			if = {
+				limit = { NOT = { legitimacy_equivalent = 90 } }
+				add_legitimacy = 20
+				add_horde_unity = 20
+				add_devotion = 20
+				add_republican_tradition = 10
+			}
+			else = { add_prestige = 15 }
+			add_country_modifier = {
+				name = "military_victory"
+				duration = 7300 # 20 years
+			}
+			
+		}
+	}
+	usa_meritocratic_administration = {
+		icon = mission_among_the_great_powers
+		required_missions = { usa_founding_fathers }
+		position = 3
+		trigger = {
+			NOT = { corruption = 1 }
+			if = {
+				limit = {
+					#Promote Advisors - +2
+					has_dlc = "Cradle of Civilization"
+					#National Focus - +2
+					has_dlc = "Res Publica"
+					has_dlc = "Common Sense"
+				}
+				monthly_adm = 14
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_dlc = "Cradle of Civilization"
+						has_dlc = "Res Publica"
+						has_dlc = "Common Sense"
+					}
+				}
+				monthly_adm = 12
+			}
+			else = {
+				monthly_adm = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_meritocratic_administration_modifier
+				duration = 9125 # 25 years
+			}
+			define_advisor = {
+				type = statesman
+				skill = 3
+				culture = ROOT
+				religion = ROOT
+				cost_multiplier = 0.5
+			}
+		}
+	}
+	usa_acts_of_congress = {
+		icon = a_strong_government
+		required_missions = { usa_meritocratic_administration }
+		position = 4
+		trigger = {
+			num_of_issues_passed = {
+				amount = 6
+				alternative_trigger = "stability = 2"
+			}
+			if = {
+				limit = { has_estate = estate_burghers }
+				num_of_estate_agendas_completed = {
+					estate = estate_burghers
+					value = 3
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_united_congress_modifier
+				duration = 18250 # 50 years
+			}
+		}
+	}
+	usa_influence_the_caribbean = {
+		icon = mission_colonize_the_caribbean
+		required_missions = { reach_the_mississippi usa_port_of_new_york }
+		position = 6
+		provinces_to_highlight = {
+			colonial_region = colonial_the_carribean
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 926
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					colonial_region = colonial_the_carribean 
+					value = 10
+				}
+				1516 = {
+					trade_share = {
+						country = ROOT
+						share = 50
+					}
+				}
+			}
+		}
+		effect = {
+			926 = {
+				center_of_trade = 1
+			}
+			add_country_modifier = {
+				name = "eng_rb_established_shipping"
+				duration = 9125
+			}
+		}
+	}
+	usa_freedmens_colony = { 
+		icon = mission_west_african_ports
+		required_missions = { usa_influence_the_caribbean }
+		position = 7
+		provinces_to_highlight = {
+			region = guinea_region
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_west_africa
+				guinea_region = {
+					owned_by = ROOT
+					is_city = yes
+				}
+			}
+		}
+		effect = {
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = dan_gold_coast_control
+				duration = 9125 # 25 years
+			}
+		}
+	}
+}
+
+usa_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes 
+	
+	usa_founding_fathers = {
+		icon = mission_the_sudebnik
+		required_missions = { usa_independence }
+		position = 2
+		trigger = {
+			if = {
+				limit = { government = republic }
+				republican_tradition = 90
+			}
+			ruler_total_stats = {
+				amount = 10
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					government = republic
+				}
+				add_country_modifier = {
+					name = usa_skilled_leaders
+					duration = 18250 # 50 years
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = usa_skilled_leaders_alt
+					duration = 18250 # 50 years
+				}
+			}
+		}
+	}
+	usa_the_white_house = {
+		icon = mission_the_governing_senate
+		required_missions = { usa_founding_fathers }
+		position = 3
+		provinces_to_highlight = {
+			province_id = 953
+		}
+		trigger = {
+			owns = 953
+			has_great_project = {
+				type = white_house
+				tier = 1
+			}
+		}
+		effect = {
+			953 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+						NOT = {
+							has_great_project = {
+								type = white_house
+								tier = 2
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = white_house
+						tier = 1
+					}
+				}
+				else = {
+					add_prestige = 20
+				}
+			}
+		}
+	}
+	usa_harvard_university = {
+		icon = mission_rb_renovate_oxbridge
+		required_missions = { usa_the_white_house }
+		position = 4
+		provinces_to_highlight = {
+			province_id = 968
+		}
+		trigger = {
+			owns = 968
+			OR = {
+				968 = { development = 25 }
+				if = {
+					limit = { has_dlc = "Rule Britannia" }
+					innovativeness = 50
+				}
+				else = {
+					full_idea_group = innovativeness_ideas
+				}
+			}
+		}
+		effect = {
+			968 = {
+				add_building = university
+				add_province_modifier = {
+					name = eng_most_esteemed_university
+					duration = -1
+				}
+			}
+			change_innovativeness = 3
+		}
+	}
+}
+
+usa_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	usa_american_industralization = {
+		icon = mission_have_manufactories
+		required_missions = { }
+		position = 1
+		trigger = {
+			share_of_starting_income = 2
+			NOT = { num_of_loans = 1 }
+			is_bankrupt = no
+			is_in_deficit = no
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				value = 15
+			}
+		}
+		effect = {
+			custom_tooltip = fra_every_fur_canadian_province_with_manufactory_tt
+			tooltip = {
+				add_province_modifier = {
+					name = boh_early_industrialization
+					duration = -1 
+				}
+			}
+			hidden_effect = {
+				canada_region = {
+					limit = { 
+						country_or_non_sovereign_subject_holds = ROOT 
+						trade_goods = fur 
+						has_manufactory_trigger = yes
+					}
+					type = random
+					amount = 6 
+					add_province_modifier = { name = boh_early_industrialization duration = -1 }
+				}
+			}
+		}
+	}
+	usa_fur_trade = {
+		icon = mission_rb_settle_the_north
+		required_missions = { usa_american_industralization }
+		position = 2
+		trigger = {
+			num_of_owned_provinces_with = {
+				base_production = 6
+				trade_goods = fur
+				value = 10
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			change_price = {
+				trade_goods = fur
+				key = ENGLISH_FUR_TRADE
+				value = 0.25
+				duration = 36500 # 100 years
+			}
+		}
+	}
+	usa_secretary_of_state = {
+		icon = mission_alliances
+		required_missions = { usa_founding_fathers }
+		position = 3
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = usa_secretary_of_state_modifier
+				duration = 9125 # 25 years
+			}
+		}
+	}
+
+	usa_port_of_new_york = {
+		icon = mission_trade_with_cathay
+		required_missions = { }
+		position = 5
+		provinces_to_highlight = {
+			province_id = 965
+		}
+		trigger = {
+			owns = 965
+			965 = { 
+				num_of_times_improved = 10
+				has_shipyard_building_trigger = yes
+			}
+		}
+		effect = {
+			add_meritocracy = 5
+			965 = {
+				center_of_trade = 2
+				add_province_modifier = {
+					name = usa_staple_port_of_america
+					duration = -1
+				}
+			}
+			if = { 
+				limit = { has_estate = estate_burghers } 
+				add_estate_loyalty = { 
+					estate = estate_burghers 
+					loyalty = 10
+				}
+			}
+		}
+	}
+	usa_establish_a_trade_fleet = {
+		icon = mission_establish_high_seas_navy
+		required_missions = { usa_port_of_new_york }
+		position = 6
+		trigger = {
+			num_of_light_ship = 20
+			navy_size_percentage = 1
+		}
+		effect = {
+			add_navy_tradition = 15
+			add_country_modifier = {
+				name = usa_american_trade_fleet
+				duration = 9125 # 25 years
+			}
+		}
+	}
+	usa_an_american_armada = {
+		icon = imperial_navy
+		required_missions = { usa_establish_a_trade_fleet }
+		position = 7
+		trigger = {
+			navy_size_percentage = 1
+			if = { 
+				limit = { has_dlc = "Golden Century" }
+				has_flagship = yes
+			}
+			navy_size = 75
+			num_of_heavy_ship = 20
+		}
+		effect = {
+			add_navy_tradition = 15
+			add_country_modifier = {
+				name = naval_enthusiasm_mission
+				duration = 18250 # 50 years
+			}
+		}
+	}
+	
+}
