@@ -2209,8 +2209,8 @@ moluccan_ideas = {
 
 greek_ideas = {
 	start = {
-		galley_cost = -0.2
-		sailor_maintenance_modifer = -0.1
+		galley_power = 0.2
+		navy_tradition = 1
 	}
 	
 	bonus = {
@@ -2224,9 +2224,10 @@ greek_ideas = {
 	
 	greek_orthodox_faith = {
 		tolerance_own = 2
+		yearly_patriarch_authority = 0.005
 	}
 	greek_maritime_heritage = {
-		navy_tradition = 1
+		allowed_marine_fraction = 0.2
 	}
 	greek_klephtic_irregulars = {
 		infantry_power = 0.1
@@ -2242,7 +2243,7 @@ greek_ideas = {
 		diplomatic_upkeep = 1
 	}
 	greek_enlightenment = {
-		idea_cost = -0.1
+		development_cost_in_primary_culture = -0.1
 	}
 }
 
