@@ -5,6 +5,11 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { tag = JAP }
+			NOT = { tag = KOR }
+			NOT = { tag = GOG }
+			NOT = { tag = BEK }
+			NOT = { tag = GAY }
+			NOT = { tag = SLL }
 			NOT = { has_country_flag = formed_japan_flag }
 			was_never_end_game_tag_trigger = yes
 			has_reform = shogunate
@@ -140,6 +145,11 @@ country_decisions = {
 			NOT = { has_country_flag = formed_japan_flag }
 			was_never_end_game_tag_trigger = yes
 			NOT = { exists = JAP }
+			NOT = { tag = KOR }
+			NOT = { tag = GOG }
+			NOT = { tag = BEK }
+			NOT = { tag = GAY }
+			NOT = { tag = SLL }
 		}
 		allow = {
 			NOT = { exists = JAP }
