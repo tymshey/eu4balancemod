@@ -24,7 +24,6 @@ country_decisions = {
 	t_change_schools_decision = {
 		color = { 235 64 52 }
 		potential = {
-			ai = no
 			religion = confucianism
 		}
 		allow = {
@@ -33,6 +32,14 @@ country_decisions = {
 		effect = {
 			add_adm_power = -50
            		country_event = { id = t_china_events.14 }
+			set_country_flag = confucian_school_selected
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_country_flag = confucian_school_selected
+			}
 		}
 	}
 }
