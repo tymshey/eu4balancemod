@@ -15,3 +15,6 @@
  
  #ethiopia
  d_flavor_eth.39.b:0 "Maybe Aksum isn't the right way?"
+ 
+ #venetia
+ d_venetia_council_modifier:0 "Manage Council Authority"

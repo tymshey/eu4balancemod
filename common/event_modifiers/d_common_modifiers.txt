@@ -15,3 +15,7 @@ conversion_zeal = {
 	global_missionary_strength = 0.10
 	missionary_maintenance_cost = -0.5
 }
+
+d_venetia_council_modifier = {
+	monthly_authority_power = -1
+}
