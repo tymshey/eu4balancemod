@@ -1,5 +1,9 @@
 #4785 - Yorkshire - South Riding
 
+latent_trade_goods = {
+	coal
+}
+
 owner = ENG
 controller = ENG
 culture = english

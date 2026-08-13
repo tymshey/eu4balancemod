@@ -1,0 +1,18 @@
+#Written with Eu4 Easy Province Creator by emiroercn
+#Motilla
+add_core = CAS
+owner = CAS
+controller = CAS
+culture = castillian
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = grain
+base_manpower = 1
+capital = "Motilla"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

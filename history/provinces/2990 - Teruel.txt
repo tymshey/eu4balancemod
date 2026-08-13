@@ -1,5 +1,9 @@
 #214 - Teruel
 
+latent_trade_goods = {
+	coal
+}
+
 owner = ARA		# Alfons V of Aragon
 controller = ARA
 add_core = ARA

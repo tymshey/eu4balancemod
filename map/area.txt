@@ -338,7 +338,7 @@ picardy_area = { #4
 	87 88 89 1743
 }
 
-ile_de_france_area = { #4
+ile_de_france_area = { 6058  #4
 	182 183 185 4388
 }
 
@@ -346,12 +346,12 @@ champagne_area = { 6011  #3
 	181 186 4390
 }
 
-loire_area = { #5
+loire_area = { 6056  #5
 	color = { 231 143 5 }
 	177 178 4389
 }
 
-orleans_area = { 6015 
+orleans_area = { 6057  6015 
 	184 179 4776
 }
 
@@ -413,7 +413,7 @@ castille_area = { 6013  #5
 	217 2755 4551 4789
 }
 
-toledo_area = { #5
+toledo_area = { 6053  #5
 	219 221 2751 2754 4547
 }
 
@@ -433,12 +433,12 @@ basque_country = { #3
 	209 210 2989
 }
 
-leon_area = { #3
+leon_area = { 6052  #3
 	color = { 243 235 28 }
 	208 216 4553 207 
 }
 
-extremadura_area = {
+extremadura_area = { 6055 
 	4788 218 1747
 }
 
@@ -446,7 +446,7 @@ beieras_area = { #4
 	231 232 228 1851 4556
 }
 
-alentejo_area = { #5
+alentejo_area = { 6054  #5
 	227 229 230 4150 4787
 }
 
@@ -556,7 +556,7 @@ wales_area = { #4
 	241 242 4366 4369
 }
 
-scottish_marches_area = { #4
+scottish_marches_area = { 6060  #4
 	246 247 244 4375
 }
 
@@ -564,7 +564,7 @@ yorkshire_area = { #4
 	245 4367 4368 4785
 }
 
-west_midlands_area = { #3
+west_midlands_area = { 6059  #3
 	239 240 4372
 }
 

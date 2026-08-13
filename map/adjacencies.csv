@@ -114,4 +114,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2745;4651;sea;1376;-1;-1;-1;-1;Gyeongju-Tsushima
 4651;1818;sea;1376;-1;-1;-1;-1;Tsushima-Chikuzen
 496;497;sea;1523;-1;-1;-1;-1;Guadelupe-Dominica
+115;6006;sea;1298;-1;-1;-1;-1;Pisa-Elba
+6010;143;sea;1310;-1;-1;-1;-1;Lecce-Vlore
+4354;651;sea;1398;-1;-1;-1;-1;Zamboanga-Sulu
+637;655;sea;1368;-1;-1;-1;-1;Apiapi-Palawan
+320;319;sea;1319;-1;-1;-1;-1;Rhodes-Mentesha
 -1;-1;;-1;-1;-1;-1;-1;-1
