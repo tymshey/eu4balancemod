@@ -6198,11 +6198,11 @@ MON_ideas = {
 RMN_ideas = {
 	start = {
 		discipline = 0.05
-		tolerance_own = 2
+		defensiveness = 0.25
 	}
 
 	bonus = {
-		improve_relation_modifier = 0.25
+		morale_damage_received = -0.1
 	}
 
 	trigger = {
@@ -6214,11 +6214,11 @@ RMN_ideas = {
 	flexible_recruiting = {
 		manpower_recovery_speed = 0.2
 	}
-	skilled_commanders = {
-		leader_land_manuever = 1
+	legacy_of_the_impaler = {
+		leader_land_shock = 1
 	}
-	scorch_the_land_and_poison_the_wells = {
-		hostile_attrition = 1
+	w_foreign_advisors = {
+		advisor_cost = -0.1
 	}
 	latin_island = {
 		legitimacy = 1
@@ -6229,13 +6229,13 @@ RMN_ideas = {
 	}
 	rom_peasant_soldiers = {
 		infantry_cost = -0.1
-		global_manpower_modifier = 0.1
+		global_manpower_modifier = 0.25
 	}
 	phanariote_traders = {
 		global_trade_power = 0.15
 	}
 	phanariote_taxes = {
-		global_tax_modifier = 0.1
+		development_cost = -0.1
 	}
 }
 
