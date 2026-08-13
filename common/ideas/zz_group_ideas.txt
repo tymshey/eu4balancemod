@@ -2214,7 +2214,7 @@ greek_ideas = {
 	}
 	
 	bonus = {
-		core_creation = -0.1 #Megali Idea
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -2239,8 +2239,7 @@ greek_ideas = {
 		trade_efficiency = 0.1
 	}
 	greek_philhellenism = {
-		diplomatic_reputation = 1
-		diplomatic_upkeep = 1
+		core_creation = -0.1
 	}
 	greek_enlightenment = {
 		development_cost_in_primary_culture = -0.1

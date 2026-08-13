@@ -385,6 +385,11 @@ t_westafrica_buff = {
 			colonial_region = colonial_west_africa
 			is_city = yes
 		}
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
+		}
 	}
 
 	inflation_reduction = 0.1
@@ -400,6 +405,11 @@ t_cape_buff = {
 			value = 15
 			colonial_region = colonial_south_africa
 			is_city = yes
+		}
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
 		}
 	}
 
@@ -418,6 +428,11 @@ t_congo_buff = {
 			colonial_region = colonial_congo
 			is_city = yes
 		}
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
+		}
 	}
 
 	global_trade_goods_size_modifier = 0.1
@@ -433,6 +448,11 @@ t_rhodesia_buff = {
 			value = 20
 			colonial_region = colonial_zambezi
 			is_city = yes
+		}
+		capital_scope = {
+			NOT = {
+				continent = africa
+			}
 		}
 	}
 
