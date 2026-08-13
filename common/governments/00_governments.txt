@@ -163,7 +163,6 @@ monarchy = {
 				tysyatsky_reform
 				oprichnina_reform
 				house_of_lords_reform
-				ministerialis_promotion_reform
 				separation_of_boyars_from_court_reform
 				#1.36
 				nakharar_title
@@ -223,6 +222,7 @@ monarchy = {
 				#1.37 Hungary
 				continue_the_renaissance_reform
 				timurid_diwan_reform
+				ministerialis_promotion_reform
 			}
 		}
 		state_and_religion = {

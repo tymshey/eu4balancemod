@@ -633,7 +633,7 @@ SCA_ideas = {
 		cavalry_cost = -0.15
 	}
 	sca_swedish_carolean = {
-		infantry_power = 0.1
+		infantry_power = 0.2
 	}
 	sca_empire_of_the_north = {
 		max_absolutism = 10
@@ -1591,11 +1591,11 @@ DAL_ideas = {
 PRU_ideas = {
 	start = {
 		army_tradition = 0.5
-		free_mil_policy = 1
+		ae_impact = -0.10
 	}
 	
 	bonus = {
-		centralize_state_cost = -0.20
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -1608,19 +1608,19 @@ PRU_ideas = {
 		stability_cost_modifier = -0.1
 	}
 	soldier_king = {
-		production_efficiency = 0.1
+		army_tradition_decay = -0.01
 	}
 	army_professionalism = {
-		land_morale = 0.15
+		land_morale = 0.20
 	}	
 	noble_cadets = {
-		nobles_loyalty_modifier = 0.10
+		centralize_state_cost = -0.20
 	}
 	goose_step = {
-		infantry_power = 0.1
+		infantry_power = 0.20
 	}
 	regimental_cantons = {
-		discipline = 0.05
+		global_manpower_modifier = 0.25
 		global_regiment_recruit_speed = -0.10
 	}
 	religious_toleration = {
