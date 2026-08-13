@@ -163,7 +163,7 @@ slot_missions_1 = {
 		}
 	}
 	
-	spa_sevilla_port = {
+	spa_sevilla_port2 = {
 		icon = adriatic_access
 		required_missions = { }
 		position = 15
@@ -192,9 +192,9 @@ slot_missions_1 = {
 		}
 	}
 	
-	spa_merchant_fleet = {
+	spa_merchant_fleet2 = {
 		icon = mission_coromandel_trade
-		required_missions = { spa_sevilla_port }
+		required_missions = { spa_sevilla_port2 }
 		position = 16
 		provinces_to_highlight = {
 			owned_by = ROOT 
@@ -517,9 +517,9 @@ slot_missions_2 = {
 			factor = 500
 		}
 	}
-	spa_dominate_sevilla = {
+	spa_dominate_sevilla2 = {
 		icon = spa_dominate_sevilla
-		required_missions = { spa_sevilla_port gc_cas_spa_plus_ultra2 }
+		required_missions = { spa_sevilla_port2 gc_cas_spa_plus_ultra2 }
 		position = 16
 		provinces_to_highlight = {
 			province_id = 1293
@@ -897,7 +897,7 @@ slot_missions_2 = {
 		}
 	}
 	
-	spa_new_world_silver = {
+	spa_new_world_silver2 = {
 		icon = mission_african_gold
 		required_missions = { gc_cas_spa_new_spain2 gc_cas_spa_potosi2 }
 		position = 21
@@ -1557,16 +1557,17 @@ slot_missions_4 = {
 		}
 	}
 	
-	dom_castile_exploration_ideas = {
+	dom_castile_exploration_ideas2 = {
 		icon = imperial_navy
 		required_missions = { gc_cas_spa_plus_ultra2 }
 		position = 16
 		
-		trigger = { 
-			OR = { 
-				full_idea_group = exploration_ideas
-				full_idea_group = expansion_ideas
-			}
+		trigger = {
+			full_idea_group = exploration_ideas
+			# OR = {
+				# full_idea_group = exploration_ideas
+				# full_idea_group = expansion_ideas
+			# }
 		}
 	
 		effect = {
@@ -1599,9 +1600,9 @@ slot_missions_4 = {
 		}
 	}
 	
-	dom_castile_circumnavigation = {
+	dom_castile_circumnavigation2 = {
 		icon = mission_explore_the_world
-		required_missions = { dom_castile_exploration_ideas }
+		required_missions = { dom_castile_exploration_ideas2 }
 		position = 17
 		
 		trigger = { 
@@ -2198,7 +2199,7 @@ slot_missions_5 = {
 			if = {
 				limit = {
 					NOT = { has_country_flag = spa_house_of_trade_flag }
-					NOT = { mission_completed = spa_dominate_sevilla }
+					NOT = { mission_completed = spa_dominate_sevilla2 }
 				}
 				set_country_flag = spa_house_of_trade_flag
 				country_event = { id = flavor_spa.1003 }
