@@ -565,6 +565,9 @@ country_event = { # Religious schools
 			group = eastern
 			school = chengzhu_school
 		}
+		ai_chance = { 
+			factor = 1
+		}
 	}
 	
 	option = { # xunzi
@@ -573,6 +576,9 @@ country_event = { # Religious schools
 			group = eastern
 			school = xunzi_school
 		}
+		ai_chance = { 
+			factor = 1
+		}
 	}
 	
 	option = { # mengzi
@@ -580,6 +586,9 @@ country_event = { # Religious schools
 		set_religious_school = {
 			group = eastern
 			school = mengzi_school
+		}
+		ai_chance = { 
+			factor = 1
 		}
 	}
 	
@@ -592,6 +601,9 @@ country_event = { # Religious schools
 			group = eastern
 			school = xinxue_school
 		}
+		ai_chance = { 
+			factor = 0
+		}
 	}
 	
 	option = { # daoxue
@@ -600,6 +612,9 @@ country_event = { # Religious schools
 			group = eastern
 			school = daoxue_school
 		}
+		ai_chance = { 
+			factor = 1
+		}
 	}
 	
 	option = { # jingxue
@@ -607,6 +622,9 @@ country_event = { # Religious schools
 		set_religious_school = {
 			group = eastern
 			school = jingxue_school
+		}
+		ai_chance = { 
+			factor = 1
 		}
 	}
 }
