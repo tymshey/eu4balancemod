@@ -61,6 +61,35 @@ t_above_2_player_alliances = {
 	global_unrest = 5
 }
 
+# lategame expansion
+
+t_age_of_absolutism_expansion = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		ai = no
+		current_age = age_of_absolutism
+		NOT = { current_age = age_of_revolutions }
+	}
+
+	province_warscore_cost = 0.2
+}
+
+t_age_of_revolutions_expansion = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		ai = no
+		current_age = age_of_revolutions
+	}
+
+	province_warscore_cost = 0.3
+}
+
 # Colonial victory cards
 
 t_thirteen_colonies_buff = {
@@ -75,9 +104,11 @@ t_thirteen_colonies_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -97,9 +128,11 @@ t_canada_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -119,9 +152,11 @@ t_california_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -141,9 +176,11 @@ t_louisiana_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -163,9 +200,11 @@ t_cascadia_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -185,9 +224,11 @@ t_mexico_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -208,9 +249,11 @@ t_colombia_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -230,9 +273,11 @@ t_carribean_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -252,9 +297,11 @@ t_brazil_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -274,9 +321,11 @@ t_peru_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}
@@ -296,9 +345,11 @@ t_la_plata_buff = {
 			is_city = yes
 		}
 		capital_scope = {
-			OR = {
-				NOT = { continent = north_america }
-				NOT = { continent = south_america }
+			NOT = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
 			}
 		}
 	}

@@ -3573,7 +3573,8 @@ citizenry_reform = {
 		}
 	}
 	modifiers = {
-		land_morale = 0.1
+		republican_tradition = 0.5
+		justify_trade_conflict_cost = -0.2
 	}
 	ai = {
 		factor = 1.5
