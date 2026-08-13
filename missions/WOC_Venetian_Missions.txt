@@ -1265,7 +1265,7 @@ venice_missions_slot_2 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			religious_unity = 1
+			religious_unity = 0.7
 			OR = {
 				is_papal_controller = yes
 				PAP = { is_subject_of = ROOT }
@@ -1574,40 +1574,22 @@ venice_missions_slot_3 = {
 		icon = standardize_relazioni
 		position = 4
 		required_missions = { wof_ven_nuova_promissione_ducale }
-		provinces_to_highlight = {
-			is_capital = yes 
-			owner = {
-				NOT = { tag = ROOT }
-				has_spy_network_in = {
-					who = ROOT
-					value = 25
-				}
-				NOT = {
+		trigger = {
+			calc_true_if = {
+				all_ally = {
 					has_opinion = {
 						who = ROOT
-						value = 100
+						value = 150
 					}
-				}
-				NOT = {
-					truce_with = ROOT
-				}
-			}
-		}
-		trigger = {
-			all_neighbor_country = {
-				OR = {
-					NOT = {
-						has_spy_network_in = {
-							who = ROOT
-							value = 25
+					if = {
+						limit = { has_dlc = "Leviathan" }
+						trust = {
+							who = ROOT 
+							value = 50
 						}
 					}
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					truce_with = ROOT	
 				}
+				amount = 2
 			}
 			OR = {
 				diplomat = 3
@@ -1654,6 +1636,10 @@ venice_missions_slot_3 = {
 			monthly_income = 250
 		}
 		effect = {
+			add_country_modifier = {
+				name = d_venetia_council_modifier
+				duration = -1
+			}
 			add_power_projection = {
 				type = ven_cradle_of_opulence
 				amount = 20

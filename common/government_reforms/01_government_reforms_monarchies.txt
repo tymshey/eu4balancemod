@@ -5427,26 +5427,6 @@ house_of_lords_reform = {
 	}
 }
 
-ministerialis_promotion_reform = {
-	icon = "commander_king_reform"
-	allow_normal_conversion = yes
-	potential = {
-		has_dlc = "Domination"
-		OR = {
-			tag = HLR
-			is_part_of_hre = yes
-		}
-	}
-	modifiers = {
-		nobles_privilege_slots = 1
-		advisor_cost = -0.1
-		monthly_favor_modifier = 0.1
-	}
-	ai = {
-		factor = 1
-	}
-}
-
 TIM_plunder_economy = {
 	icon = "horde_riding"
 	allow_normal_conversion = yes
@@ -5979,6 +5959,26 @@ timurid_diwan_reform = {
         }
     }
 } 
+
+ministerialis_promotion_reform = {
+	icon = "commander_king_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = HLR
+			is_part_of_hre = yes
+		}
+	}
+	modifiers = {
+		nobles_privilege_slots = 1
+		advisor_cost = -0.1
+		monthly_favor_modifier = 0.1
+	}
+	ai = {
+		factor = 1
+	}
+}
 
 #State and Religion
 #in Common

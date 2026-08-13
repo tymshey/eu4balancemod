@@ -19,17 +19,3 @@ d_novgorod_early_game_modifier = {
 	global_manpower = 5
 
 }
-
-d_venetia_formable_council_modifier = {
-	potential = {
-		tag = VEN
-	}
-
-	trigger = {
-		tag = VEN
-		mission_completed = ven_of_wealth_and_power
-	}
-	
-	monthly_authority_power = -2
-	
-}
