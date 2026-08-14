@@ -974,7 +974,7 @@ tirol_area = { #5
 	73 110 1768 4758
 }
 
-austria_proper_area = { #5
+austria_proper_area = { 6061  #5
 	color = { 213 40 40 }
 	133 134 1770 4761 4762
 }
@@ -1125,11 +1125,11 @@ east_adriatic_coast_area = { #3
 	136 137 4753
 }
 
-alfold_area = { #4
+alfold_area = { 6062  #4
 	155 1953 1954 4125
 }
 
-transdanubia_area = { #5
+transdanubia_area = { 6063  #5
 	color = { 171 92 22 }
 	135 153 1864 4126 4240
 }

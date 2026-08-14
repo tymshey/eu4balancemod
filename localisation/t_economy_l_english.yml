@@ -17,6 +17,9 @@
 
  t_above_2_player_alliances:0 "Above 2 Player Alliances"
 
+ t_age_of_absolutism_expansion:0 "Age of Absolutism Expansion Buff"
+ t_age_of_revolutions_expansion:0 "Age of Revolutions Expansion Buff"
+
  t_thirteen_colonies_buff:0 "Colony in Thirteen Colonies"
  t_canada_buff:0 "Colony in Canada"
  t_california_buff:0 "Colony in California"
