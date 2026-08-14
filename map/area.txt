@@ -1052,11 +1052,11 @@ mecklenburg_area = { #5
 # South Eastern Europe 				   #
 ########################################
 
-macedonia_area = { #5 (Macedonia)
+macedonia_area = { 6065  #5 (Macedonia)
 	148 1853 3001 4702 4780
 }
 
-morea_area = { #4 Central Greece & Crete
+morea_area = { 6066  #4 Central Greece & Crete
 	145 146 163 1773 4701
 }
 
@@ -1064,7 +1064,7 @@ northern_greece_area = { #3 #Northern Greece
 	142 144 147 4699 4698
 }
 
-thrace_area = { #5
+thrace_area = { 6064  #5
 	149 151 1764 4779 4705
 }
 
@@ -1189,7 +1189,7 @@ germiyan_area = { #4
 	322 1848 4308 4311
 }
 
-aydin_area = { #5
+aydin_area = { 6067  #5
 	color = { 239 70 86 }
 	318 319 2297 2298 4309
 }

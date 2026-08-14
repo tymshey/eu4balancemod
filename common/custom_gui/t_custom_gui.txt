@@ -325,6 +325,43 @@ custom_button = {
 }
 
 custom_button = {
+    name = t_punish_rulebreak_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		# OR = {
+		#	NOT = { has_country_flag = recent_ht_flag }
+		#	had_country_flag = {
+		#		flag = recent_ht_flag
+		#		days = 1
+		#	}
+		# }
+	}
+	effect = {
+		# set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			if = {
+				limit = {
+					has_country_modifier = t_rulebreak_punishment
+				}
+				remove_country_modifier = t_rulebreak_punishment
+			}
+			else = {
+				add_country_modifier = {
+					name = t_rulebreak_punishment
+					duration = -1
+				}
+			}
+		}
+	}
+    tooltip = t_punish_rulebreak_btn_tt
+}
+
+custom_button = {
     name = t_modernize_adm_btn
 	potential = {
 		host_access = yes

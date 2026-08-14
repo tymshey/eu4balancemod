@@ -189,6 +189,17 @@ ai_iterative_monthly_tick_pathing = { # makes ai reload pathing choices
     development_cost_modifier = -0.1
 }
 
+# rulebreak modifier
+
+t_rulebreak_punishment = {
+	land_morale = -0.25
+	discipline = -0.1
+	land_maintenance_modifier = 2
+	country_admin_power = -2
+	country_diplomatic_power = -2
+	country_military_power = -2
+}
+
 ### Province
 
 t_jap_imperial_capital_modifier = {
