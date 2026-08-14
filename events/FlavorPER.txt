@@ -3749,6 +3749,7 @@ country_event = {
 				add_heir_personality = architectural_visionary_personality
 			}
 			set_heir_flag = per_abbas_lives_flag 
+			set_heir_flag = heir_cannot_die_of_events
 		}
 	}
 	

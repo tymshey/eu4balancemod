@@ -3324,6 +3324,7 @@ country_event = {
 		hidden_effect = {
 			add_heir_personality = reformist_personality
 			set_heir_flag = peter_the_great
+			set_heir_flag = heir_cannot_die_of_events
 		}
 		ai_chance = {
 			factor = 1
