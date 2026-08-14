@@ -171,22 +171,22 @@ liberty_desire = {
 	liberty_desire = -250
 }
 
-tech_18_policy = {
+tech_17_policy = {
 	potential = {
 		ai = no
 	}
 	trigger = {
-		adm_tech = 18
+		adm_tech = 17
 	}
 	possible_policy = 1
 }
 
-tech_26_policy = {
+tech_21_policy = {
 	potential = {
 		ai = no
 	}
 	trigger = {
-		adm_tech = 24
+		adm_tech = 21
 	}
 	possible_policy = 1
 }
