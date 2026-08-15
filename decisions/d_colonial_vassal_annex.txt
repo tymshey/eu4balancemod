@@ -1,0 +1,102 @@
+country_decisions = {
+
+	d_colonial_vassal_annex = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = no
+				is_vassal = yes
+				capital_scope = {
+					OR = {
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+						colonial_region = colonial_west_africa
+						colonial_region = colonial_congo
+						colonial_region = colonial_zambezi
+					}
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				is_colonial_nation = no
+				is_vassal = yes
+				capital_scope = {
+					OR = {
+						colonial_region = colonial_mexico
+						colonial_region = colonial_peru
+						colonial_region = colonial_west_africa
+						colonial_region = colonial_congo
+						colonial_region = colonial_zambezi
+					}
+				}
+			}
+			OR = {
+				NOT = {
+					has_country_flag = d_annexed_colonial_vassals
+				}
+				had_country_flag = {
+					flag = d_annexed_colonial_vassals
+					days = 365
+				}
+			}
+		}
+		effect = {
+			colonial_mexico = {
+				if = {
+					limit = {
+						owner = {
+							is_subject_of = ROOT
+							is_colonial_nation = no
+						}
+					}
+					cede_province = ROOT
+				}
+			}
+			colonial_peru = {
+				if = {
+					limit = {
+						owner = {
+							is_subject_of = ROOT
+							is_colonial_nation = no
+						}
+					}
+					cede_province = ROOT
+				}
+			}
+			colonial_zambezi = {
+				if = {
+					limit = {
+						owner = {
+							is_subject_of = ROOT
+							is_colonial_nation = no
+						}
+					}
+					cede_province = ROOT
+				}
+			}
+			colonial_west_africa = {
+				if = {
+					limit = {
+						owner = {
+							is_subject_of = ROOT
+							is_colonial_nation = no
+						}
+					}
+					cede_province = ROOT
+				}
+			}
+			colonial_congo = {
+				if = {
+					limit = {
+						owner = {
+							is_subject_of = ROOT
+							is_colonial_nation = no
+						}
+					}
+					cede_province = ROOT
+				}
+			}
+			set_country_flag = d_annexed_colonial_vassals
+		}
+	}
+}
