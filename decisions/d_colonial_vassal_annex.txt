@@ -45,8 +45,11 @@ country_decisions = {
 				if = {
 					limit = {
 						owner = {
-							is_subject_of = ROOT
-							is_colonial_nation = no
+							AND = {
+								is_subject_of = ROOT
+								is_colonial_nation = no
+								is_vassal = yes
+							}
 						}
 					}
 					cede_province = ROOT
@@ -56,8 +59,11 @@ country_decisions = {
 				if = {
 					limit = {
 						owner = {
-							is_subject_of = ROOT
-							is_colonial_nation = no
+							AND = {
+								is_subject_of = ROOT
+								is_colonial_nation = no
+								is_vassal = yes
+							}
 						}
 					}
 					cede_province = ROOT
@@ -67,8 +73,11 @@ country_decisions = {
 				if = {
 					limit = {
 						owner = {
-							is_subject_of = ROOT
-							is_colonial_nation = no
+							AND = {
+								is_subject_of = ROOT
+								is_colonial_nation = no
+								is_vassal = yes
+							}
 						}
 					}
 					cede_province = ROOT
@@ -78,8 +87,11 @@ country_decisions = {
 				if = {
 					limit = {
 						owner = {
-							is_subject_of = ROOT
-							is_colonial_nation = no
+							AND = {
+								is_subject_of = ROOT
+								is_colonial_nation = no
+								is_vassal = yes
+							}
 						}
 					}
 					cede_province = ROOT
@@ -89,8 +101,11 @@ country_decisions = {
 				if = {
 					limit = {
 						owner = {
-							is_subject_of = ROOT
-							is_colonial_nation = no
+							AND = {
+								is_subject_of = ROOT
+								is_colonial_nation = no
+								is_vassal = yes
+							}
 						}
 					}
 					cede_province = ROOT
