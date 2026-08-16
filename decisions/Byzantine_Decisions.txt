@@ -580,6 +580,7 @@ country_decisions = {
 	BYZ_Integrate_Bulgaria = {
 		major = yes
 		potential = {
+			tag = BYZ
 			NOT = {has_country_flag = BYZ_Integrate_Bulgaria}
 		}
 		allow = {
