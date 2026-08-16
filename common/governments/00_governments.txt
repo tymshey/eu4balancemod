@@ -266,6 +266,8 @@ monarchy = {
 				#1.36
 				legacy_of_the_safavid_reform
 				state_madrasas_reform
+				#balamod exclusive
+				t_celestial_perfectionism_reform
 			}
 		}
 		military_doctrines = {

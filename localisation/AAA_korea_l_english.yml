@@ -5,6 +5,11 @@
  T_GREAT_HWAN:0 "Hwan"
  T_GREAT_HWAN_ADJ:0 "Great Hwan"
 
+ # Reforms
+ 
+ t_celestial_perfectionism_reform:0 "Celestial Perfectionism"
+ t_celestial_perfectionism_reform_desc:0 "When embracing mandate of heaven and the celestial order, we must ensure that our governance reflects the highest ideals of Confucianism."
+
  # Ideas
 
  GOG_ideas:0 "Goguryeo Ideas"
