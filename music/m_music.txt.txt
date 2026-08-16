@@ -34,3 +34,21 @@ song = {
 		}		
 	}
 }
+song = {
+	name = "car"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}
+song = {
+	name = "67"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}

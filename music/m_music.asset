@@ -15,3 +15,11 @@ music = {
 	name = "hotdog"
 	file = "hotdog.ogg"
 }
+music = {
+	name = "car"
+	file = "car.ogg"
+}
+music = {
+	name = "67"
+	file = "67.ogg"
+}

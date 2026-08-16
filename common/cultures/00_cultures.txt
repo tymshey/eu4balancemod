@@ -3095,6 +3095,7 @@ byzantine = {
 			"Apsimaros" "Artemios"
 		}
 	}
+	Boulgaroi = {}
 	albanian = {
 		primary = ALB
 		male_names = {

@@ -577,4 +577,25 @@ country_decisions = {
 			factor = 100
 		}
 	}
+	BYZ_Integrate_Bulgaria = {
+		major = yes
+		potential = {
+			NOT = {has_country_flag = BYZ_Integrate_Bulgaria}
+		}
+		allow = {
+			num_of_owned_provinces_with = {
+				value = 5
+				culture = bulgarian
+			}
+		}
+		effect = {
+			every_owned_province = {
+			limit = {culture = bulgarian}
+			change_culture = Boulgaroi
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }
