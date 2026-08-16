@@ -1,5 +1,9 @@
 # Country
 
+fra_proper_legal_systems_modifier_mod = {
+	state_governing_cost = -0.1
+}
+
 # Province
 
 t_fra_ile_de_france_modifier = {

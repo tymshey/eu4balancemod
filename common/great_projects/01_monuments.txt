@@ -7549,13 +7549,8 @@ prambanan_temple = {
 
 	#can we build it?
 	build_trigger = {
-		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
-			}
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
 		}
 	}
 
@@ -7571,25 +7566,15 @@ prambanan_temple = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
-			}
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			province_is_or_accepts_religion_group = {
-				religion_group = dharmic
-			}
-			province_is_or_accepts_religion_group = {
-				religion_group = muslim
-			}
+		province_is_or_accepts_religion_group = {
+			religion_group = dharmic
 		}
 	}
 

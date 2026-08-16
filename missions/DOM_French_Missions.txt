@@ -660,11 +660,9 @@ french_missions_1_Continuation_a = {
 				201 = { add_base_production = 1 } 
 				4696 = { add_base_production = 1 } 
 			}
-			country_event = { id = flavor_fra.202 }
-			custom_tooltip = fra_event_insight_202_tt
-			add_country_modifier = { 
+			add_country_modifier = {
 				name = fra_replenished_slave_crews_modifier
-				duration = 7300
+				duration = -1
 			}
 			sicily_area = { 
 				limit = { 
@@ -680,6 +678,8 @@ french_missions_1_Continuation_a = {
 				}
 				add_permanent_claim = ROOT 
 			}
+			country_event = { id = flavor_fra.202 }
+			custom_tooltip = fra_event_insight_202_tt
 		}
 	}	
 
@@ -1668,6 +1668,13 @@ french_missions_2_kill_hre_path = {
 		icon = boh_humiliate_austria
 		required_missions = { fra_border_empire }
 		position = 5
+		provinces_to_highlight = {
+			OR = { 
+				region = south_german_region
+				region = north_german_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
 		trigger = { 
 			not_in_mission_preview_mode = { key = FRA_HRE }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1675,7 +1682,7 @@ french_missions_2_kill_hre_path = {
 					region = north_german_region 
 					region = south_german_region 
 				}
-				value = 30 
+				value = 20
 			}
 		}
 		effect = {
@@ -2239,11 +2246,15 @@ french_missions_2_Continuation_b = {
 			has_final_tier_reforms_trigger = yes 
 			
 		}
-		effect = { 
+		effect = {
 			add_country_modifier = {
-				name = fra_proper_legal_systems_modifier
-				duration = 9125 
+				name = fra_proper_legal_systems_modifier_mod
+				duration = -1
 			}
+			# add_country_modifier = {
+			#	name = fra_proper_legal_systems_modifier
+			#	duration = 9125
+			# }
 			custom_tooltip = fra_every_court_house_tt
 			hidden_effect = {
 				set_country_flag = fra_courthouse_bonus_flag
@@ -2763,7 +2774,7 @@ french_missions_3_kill_hre_path = {
 					OR = {
 						province_id = 1878
 						province_id = 85
-						province_id = 1876
+						# province_id = 1876
 					}
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
@@ -2791,7 +2802,7 @@ french_missions_3_kill_hre_path = {
 			}
 			1878 = { country_or_non_sovereign_subject_holds = ROOT }
 			85 = { country_or_non_sovereign_subject_holds = ROOT }
-			1876 = { country_or_non_sovereign_subject_holds = ROOT }
+			# 1876 = { country_or_non_sovereign_subject_holds = ROOT }
 			custom_trigger_tooltip = {
 				tooltip = fra_no_nation_in_germany_stronger_than_us_tt
 				any_country = {
@@ -3391,19 +3402,19 @@ french_missions_3_normal_continued = {
 					limit = { religion = catholic }
 					has_country_modifier = edict_de_nantes
 				}
-				else = { religious_unity = 0.95 }
+				else = { religious_unity = 0.7 }
 				is_papal_controller = yes 
 				if = {
-					limit = { has_estate = estate_church } 
-					AND = { 
-						estate_loyalty = { 
-							estate = estate_church 
-							loyalty = 60 
+					limit = { has_estate = estate_church }
+					AND = {
+						estate_loyalty = {
+							estate = estate_church
+							loyalty = 60
 						}
-						estate_influence = { 
-							estate = estate_church 
-							influence = 80 
-						}
+						# estate_influence = {
+						#	estate = estate_church
+						#	influence = 80
+						# }
 						num_of_estate_agendas_completed = {
 							estate = estate_church 
 							value = 4 
@@ -4799,6 +4810,51 @@ french_missions_4_normal_contiuation = {
 		effect = { 
 			country_event = { id = flavor_fra.204 } 
 			custom_tooltip = fra_event_insight_204_tt
+		}
+	}
+
+
+	fra_develop_provence = {
+		icon = develop_provence
+		required_missions = { fra_nine_universities }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 201
+					OR = {
+						NOT = { owned_by = ROOT }
+						development = 30
+					}
+				}
+				AND = {
+					area = provence_area
+					OR = {
+						NOT = { owned_by = ROOT }
+						development = 15
+					}
+				}
+			}
+		}
+		trigger = {
+			201 = {
+				development = 30
+				owned_by = ROOT
+			}
+			num_of_owned_provinces_with = {
+				area = provence_area
+				value = 3
+				development = 15
+			}
+		}
+		effect = {
+			201 = {
+				change_province_name = "Marseille"
+				rename_capital = "Marseille"
+				add_province_modifier = {
+					name = "pro_marseille"
+					duration = -1
+				}
+			}
 		}
 	}
 	
@@ -6306,11 +6362,12 @@ fra_missions_5_continuation = {
 			}
 			hidden_effect = {
 				if = { 
-					limit = { 
-						OR = { 
-							full_idea_group = naval_ideas 
-							full_idea_group = maritime_ideas 
-						}
+					limit = {
+						# OR = {
+						#	full_idea_group = naval_ideas
+						#	full_idea_group = maritime_ideas
+						# }
+						full_idea_group = maritime_ideas
 					}
 					every_owned_province = {
 						limit = { 
@@ -6475,16 +6532,16 @@ french_rev_missions_5 = {
 						culture = ROOT 
 					}
 				}
-				is_hegemon_of_type = naval_hegemon 
-				full_idea_group = naval_ideas 
-				full_idea_group = maritime_ideas 
+				is_hegemon_of_type = naval_hegemon
+				# full_idea_group = naval_ideas
+				full_idea_group = maritime_ideas
 			}
-			navy_size = 500 
+			navy_size = 300
 		}
 		effect = {
 			add_country_modifier = {
 				name = fra_french_naval_dominance_modifier
-				duration = -1 
+				duration = -1
 			}
 		}
 	}
@@ -6508,8 +6565,3 @@ french_rev_missions_5 = {
 		}
 	}
 }
-	
-	
-	
-	
-	

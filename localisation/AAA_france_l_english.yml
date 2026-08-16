@@ -3,8 +3,11 @@
  # Modifiers
 
  t_fra_ile_de_france_modifier:0 "Ile de France"
+ fra_proper_legal_systems_modifier_mod:0 "Proper Legal System"
 
  # Missions
 
  t_fra_ile_de_france_title:0 "Develop Ile de France"
  t_fra_ile_de_france_desc:0 "The Ile de France region, with its fertile lands and strategic location, has long been a cornerstone of our realm. To ensure its continued prosperity and secure our dominance in the region, we must invest in its development. By improving infrastructure, fostering economic growth, and strengthening our military presence, we can solidify our control over this vital area and reap the benefits for generations to come."
+ fra_develop_provence_title:0 "Develop Provence"
+ fra_develop_provence_desc:0 "The Provence region, with its rich history and cultural heritage, is a jewel of our kingdom. To fully realize its potential, we must focus on its development. By enhancing trade networks, promoting local industries, and investing in education and the arts, we can transform Provence into a thriving hub of commerce and culture. This will not only benefit the region itself but also strengthen our nation's overall prosperity and influence."
