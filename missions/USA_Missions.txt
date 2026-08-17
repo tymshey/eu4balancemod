@@ -582,9 +582,11 @@ usa_missions_4 = {
 		}
 		trigger = {
 			owns = 953
-			has_great_project = {
-				type = white_house
-				tier = 1
+			953 = {
+				has_great_project = {
+					type = white_house
+					tier = 1
+				}
 			}
 		}
 		effect = {

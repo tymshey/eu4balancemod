@@ -3506,7 +3506,7 @@ french_missions_3_normal_continued = {
 			tooltip = {
 				add_country_modifier = {
 					name = fra_absolutism_modifier
-					duration = 7300 
+					duration = -1 
 				}
 			}
 			
