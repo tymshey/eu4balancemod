@@ -23,3 +23,12 @@ music = {
 	name = "67"
 	file = "67.ogg"
 }
+music = {
+	name = "Drink"
+	file = "Drink.ogg"
+}
+}
+music = {
+	name = "Papajak"
+	file = "Papajak.ogg"
+}

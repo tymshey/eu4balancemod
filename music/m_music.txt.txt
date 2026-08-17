@@ -52,3 +52,21 @@ song = {
 		}		
 	}
 }
+song = {
+	name = "Drink"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}
+song = {
+	name = "Papajak"
+	
+	chance = {
+		modifier = {
+			factor = 1000
+		}		
+	}
+}
