@@ -1,3 +1,7 @@
 debug = {
 	build_time = -4
 }
+
+debug_polish_crown = {
+	global_trade_goods_size_modifier = 0.33
+}
