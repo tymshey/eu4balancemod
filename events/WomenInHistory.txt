@@ -244,7 +244,7 @@ country_event = {
 				NOT = { has_dlc = "Rights of Man" }
 			}
 			define_ruler = {
-				name = "Kösem Sultan"
+				name = "Kï¿½sem Sultan"
 				dynasty = "Osmanoglu"
 				culture = ruthenian
 				adm = 5
@@ -266,7 +266,7 @@ country_event = {
 				has_government_attribute = queen
 			}
 			define_consort = {
-				name = "Kösem Sultan"
+				name = "Kï¿½sem Sultan"
 				culture = ruthenian
 				adm = 5
 				dip = 4
@@ -279,7 +279,7 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				name = "Kösem Sultan"
+				name = "Kï¿½sem Sultan"
 				dynasty = "Osmanoglu"
 				culture = ruthenian
 				adm = 5
@@ -307,7 +307,7 @@ country_event = {
 			culture = ruthenian
 			discount = yes
 			skill = 2
-			name = "Kösem Sultan"
+			name = "Kï¿½sem Sultan"
 		}
 	}
 }
@@ -532,7 +532,10 @@ country_event = {
 
 	trigger = {
 		tag = SWE
-		exists = FRA
+		OR = {
+			exists = FRA
+			exists = FRE
+		}
 		is_year = 1766
 		NOT = {
 			has_global_flag = wih_germainedestael_flag
@@ -557,7 +560,7 @@ country_event = {
 			culture = swiss
 			discount = yes
 			skill = 2
-			name = "Germaine de Staël"
+			name = "Germaine de Sta l"
 		}
 
 	}
@@ -570,7 +573,7 @@ country_event = {
 			culture = swiss
 			discount = yes
 			skill = 2
-			name = "Germaine de Staël"
+			name = "Germaine de Staï¿½l"
 		}
 	}
 }
@@ -794,7 +797,7 @@ country_event = {
 		add_meritocracy_effect = yes
 		define_heir = {
 			name = "Isabel"
-			dynasty = "de Trastámara"
+			dynasty = "de Trastï¿½mara"
 			culture = castillian
 			claim = 95
 			adm = 5
@@ -824,7 +827,7 @@ country_event = {
 			discount = yes
 			skill = 2
 			culture = castillian
-			name = "Isabel de Trastámara"
+			name = "Isabel de Trastï¿½mara"
 		}
 	}
 }
@@ -837,7 +840,10 @@ country_event = {
 	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
 
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = FRE
+		}
 		is_year = 1770
 		NOT = {
 			has_global_flag = wih_sophiegermain_flag
@@ -946,7 +952,10 @@ country_event = {
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = FRE
+		}
 		is_year = 1519
 		NOT = {
 			is_year = 1589
@@ -1657,7 +1666,10 @@ country_event = {
 	trigger = {
 		OR = {
 			owns = 183
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = FRE
+			}
 		}
 		is_year = 1670
 		NOT = {
@@ -3204,7 +3216,10 @@ country_event = {
 	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
 
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = FRE
+		}
 		is_year = 1600
 		NOT = {
 			is_year = 1700
@@ -3877,7 +3892,10 @@ country_event = {
 	picture = wihgfx_FEMALE_SCHOLAR_eventPicture
 
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = FRE
+		}
 		is_year = 1748
 		NOT = {
 			has_global_flag = wih_olympedegouges_flag
@@ -4791,7 +4809,10 @@ country_event = {
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = FRE
+		}
 		is_year = 1755
 		NOT = {
 			is_year = 1793
@@ -5329,6 +5350,7 @@ country_event = {
 			tag = ENG
 			tag = GBR
 			tag = FRA
+			tag = FRE
 		}
 		is_year = 1761
 		NOT = {

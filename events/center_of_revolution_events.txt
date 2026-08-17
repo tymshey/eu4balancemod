@@ -20,7 +20,7 @@ province_event = {
 	trigger = {
 		has_dlc = "Emperor"
 		current_age = age_of_revolutions
-		development = 30
+		development = 40
 		manufactories = 100
 		owner = {
 			is_great_power = yes
@@ -38,7 +38,7 @@ province_event = {
 			NOT = { continent = europe }
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.25
 			is_capital = yes
 		}
 		modifier = {
@@ -50,7 +50,7 @@ province_event = {
 			}
 		}
 		modifier = {
-			factor = 0.8
+			factor = 0.75
 			NOT = {
 				europe = {
 					NOT = { province_id = root }

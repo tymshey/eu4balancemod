@@ -3529,7 +3529,7 @@ french_missions_3_normal_continued = {
 						duration = 7300 
 					}
 				}
-			}	
+			}
 		}
 	}
 	
