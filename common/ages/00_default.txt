@@ -562,6 +562,7 @@ age_of_absolutism = {
 	
 	can_start = {
 		is_institution_enabled = printing_press
+		is_year = 1580
 	}
 	
 	papacy = 1.5
@@ -798,10 +799,11 @@ age_of_absolutism = {
 }
 
 age_of_revolutions = {
-	start = 1650
+	start = 1660
 	
 	can_start = {
 		is_institution_enabled = manufactories
+		is_year = 1660
 	}
 	
 	papacy = 2.0
