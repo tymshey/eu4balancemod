@@ -47,15 +47,35 @@ t_above_2_player_alliances = {
 	potential = {
 		ai = no
 	}
-
-	trigger = {
-		calc_true_if = {
-			all_ally = {
-				ai = no
+	
+trigger = {
+calc_true_if = {
+    amount = 3
+    all_country = {
+       ai = no
+        OR = {
+			OR = {
+			alliance_with = ROOT
+			is_subject_of  = ROOT
 			}
-			amount = 3
+            
+            AND = {
+				OR = {
+				 is_subject_of_type = vassal
+				  is_subject_of_type = march
+				}
+                overlord = {
+					ai = no
+					OR = {
+					is_subject_of = ROOT
+					 alliance_with = ROOT
+						}
+					}
+				}
+			}
 		}
 	}
+}
 	discipline = -0.1
 	advisor_cost = 10
 	global_unrest = 5

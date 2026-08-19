@@ -1131,7 +1131,31 @@ byzantine_autocracy_reform = {
 		}
 	}
 }
-
+macedonian_monarchy = {
+	icon = "king"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			has_reform = macedonian_monarchy
+			have_had_reform = macedonian_monarchy
+		}
+	}
+	nation_designer_cost = 30
+	valid_for_nation_designer = yes
+	modifiers = {
+		manpower_in_own_culture_provinces = 0.10
+		governing_capacity_modifier = 0.1
+		global_autonomy = -0.05
+		culture_conversion_cost = -0.2
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes 
+		}
+	}
+}
 reformed_byzantine_monarchy_reform = {
 	icon = "byzantine_rule"
 	allow_normal_conversion = yes

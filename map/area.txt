@@ -1225,7 +1225,7 @@ syria_area = { #4
 }
 
 trans_jordan_area = { #3
-	380 381 2327
+	380 381 2327 4270
 }
 
 palestine_area = { 6051   #3
@@ -1344,7 +1344,7 @@ mascat_area = { #3 (Batinah and Muscat coast
 
 syrian_desert_area = { #3
 	color = { 219 30 57 }
-	405 4270 4271
+	405 4271
 }
 
 ########################################

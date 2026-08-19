@@ -600,3 +600,41 @@ country_decisions = {
 		}
 	}
 }
+country_decisions = {
+
+	Macedonian_empire = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = Macedonian_empire }
+			owns = 428
+			tag = BYZ
+		}
+		provinces_to_highlight = {
+			OR = {
+			region = persia_region
+			}
+		}
+		allow = {
+		num_of_owned_provinces_with = {
+				value = 25
+				culture = ROOT
+				region = persia_region
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_government_reform = macedonian_monarchy
+			override_country_name = Macedonian_empire
+			change_country_color = { 
+				color = { 0 51 102  }
+			}
+			set_country_flag = Macedonian_empire
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+}

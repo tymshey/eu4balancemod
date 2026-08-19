@@ -94,30 +94,5 @@ Fate_of_the_balakans = {
 		}
 	}
 	
-	Eco_buffs_for_cro = {
-		major = yes
-		potential = {
-			NOT = { has_country_flag = Eco_buffs_for_cro_1 }
-			tag = CRO
-		}
-		
-		allow = {
-			stability = 1
-		}
-	 	effect = {
-			add_country_modifier = {
-				name = Eco_buffs
-				duration = -1
-			}
-			CRO = {override_country_name = SERFOrmable}
-			CRO = {
-				change_country_color = { 
-					color = { 0 56 147 }
-						}
-					}
-			hidden_effect = {
-			set_country_flag = Eco_buffs_for_cro_1
-			}
-		}
-	}
+	
 }

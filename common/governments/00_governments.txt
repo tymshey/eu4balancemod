@@ -86,6 +86,7 @@ monarchy = {
 				absolute_british_monarchy
 				byzantine_autocracy_reform
 				reformed_byzantine_monarchy_reform
+				macedonian_monarchy
 				margraviate_reform
 				serbian_despotate_reform
 				bulgarian_tsardom_reform

@@ -117,6 +117,7 @@ country_decisions = {
 			1768 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			hre_reform_passed = emperor_reichstag_collegia
 		} 
 		effect = {
 			if = {

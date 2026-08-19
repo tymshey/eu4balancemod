@@ -2931,7 +2931,22 @@ MEE_BYZ_economy_5 = {
 					country = ROOT
 					share = 80
 				}
-			}	
+			}
+			OR = {
+			358 = { #Alexandria
+				trade_share = {
+					country = ROOT
+					share = 80
+				}
+			}
+			4341 = { #Persja
+				trade_share = {
+					country = ROOT
+					share = 80
+					}
+				}
+			}
+				
 			num_of_centers_of_trade = 20
 		}
 		effect = {
@@ -4064,6 +4079,10 @@ MEE_BYZ_military_centralized_5 = {
 						is_subject_of_type = hereditary_pronoia_subject_type
 						is_subject_of_type = pronoia_subject_type
 					}
+				}
+				has_opinion = {
+					who = ROOT
+					value = 200
 				}
 				amount = 2
 			}

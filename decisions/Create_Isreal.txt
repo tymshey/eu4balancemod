@@ -3,9 +3,10 @@ country_decisions = {
 	Israel_Create = {
 		major = yes
 		potential = {
-			NOT = { has_country_flag = Israel_Created_flag }
-			ai = no
-			tag = MAM
+			#NOT = { has_country_flag = Israel_Created_flag }
+			#ai = no
+			#tag = MAM
+			always = no
 		}
 		
 		provinces_to_highlight = {
@@ -92,8 +93,9 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = Israel_Created_flag }
-			ai = no
-			tag = MAM
+			#ai = no
+			#tag = MAM
+			always = no
 		}
 		
 		provinces_to_highlight = {

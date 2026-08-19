@@ -205,10 +205,10 @@ ethiopia_european_slot = {
 		trigger = {
 			OR = {
 				AND = {
-					army_tradition = 75
-					army_professionalism = 0.8
+					army_tradition = 50
+					army_professionalism = 0.4
 				}
-				mil_tech = 20
+				mil_tech = 15
 			}
 			mil_power = 200
 		}

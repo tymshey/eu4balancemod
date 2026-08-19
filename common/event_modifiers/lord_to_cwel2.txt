@@ -184,3 +184,16 @@ trade_goods_size = 0.5
 inflation_reduction = 0.03
 gold_depletion_chance_modifier = -0.15
 }
+
+Inward_perfection_rework = {
+	core_creation = 0.33
+	province_warscore_cost = 1
+	stability_cost_to_declare_war = 1
+	ae_impact = 0.33
+	development_cost = -0.05
+	defensiveness = 0.15
+	fort_maintenance_modifier = -0.2
+	build_cost = -0.05
+	global_unrest = -2
+	all_estate_loyalty_equilibrium = 0.05
+}
