@@ -832,7 +832,7 @@ production_efficiency = {
 }
 
 trade_refusal = {
-	trade_efficiency = -0.05
+	yearly_corruption = 0.1
 }
 
 mercantilism = {
