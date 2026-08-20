@@ -80,21 +80,19 @@ italy_region = {
 		lazio_area
 		po_valley_area
 		western_sicily_area
+		carinthia_area
 	}
 }
 
 
 north_german_region = {
 	areas = { 
-		erzgebirge_area
 		south_saxony_area
 		northern_saxony_area
 		thuringia_area
 		neumark_area
 		mittelmark_area
 		vorpommern_area
-		bohemia_area
-		moravia_area
 		hinter_pommern_area
 		north_rhine_area
 		lower_rhineland_area
@@ -118,7 +116,6 @@ south_german_region = {
 		tirol_area
 		austria_proper_area
 		inner_austria_area
-		carinthia_area
 		switzerland_area
 		lower_bavaria_area
 		upper_bavaria_area
@@ -131,6 +128,9 @@ south_german_region = {
 		romandie_area
 		palatinate_area
 		alsace_area
+		bohemia_area
+		moravia_area
+		erzgebirge_area
 	}
 }
 

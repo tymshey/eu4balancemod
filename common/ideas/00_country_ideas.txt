@@ -3855,6 +3855,44 @@ PAP_ideas = {
 	}
 }
 
+ILR_ideas = {
+	start = {
+		manpower_recovery_speed = 0.2
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	bonus = {
+		global_tax_modifier = 0.1
+	}
+	
+	trigger = {
+		tag = ILR
+	}
+	free = yes
+	
+	code_of_laws_1 = {
+		technology_cost = -0.1
+	}
+	bastion_of_orthodoxy_1 = {
+		idea_cost = -0.1
+	}
+	home_of_hussars_1 = {
+		infantry_power = 0.1
+	}	
+	alemannic_guard_1 = {
+		diplomats = 1
+		diplomatic_reputation = 1
+	}
+	gold_mines_1 = {
+		build_cost = -0.1
+	}
+	mercenary_armies_1 = {
+		land_morale = 0.1
+	}	
+	balkan_hajduks_1 = {
+		development_cost = -0.1
+	}
+}
 
 SER_ideas = {
 	start = {
