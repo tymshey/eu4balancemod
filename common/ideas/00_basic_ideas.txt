@@ -1190,13 +1190,12 @@ maritime_ideas = {
 		max_flagships = 1
 	}
 	sea_hawks = {
-		merchants = 1
 		trade_steering = 0.15
+		merchants = 2
 	}
 	naval_fighting_instruction = {
 		blockade_efficiency = 0.5
 		privateer_efficiency = 0.25
-		merchants = 1
 	}
 
 	ai_will_do = {
