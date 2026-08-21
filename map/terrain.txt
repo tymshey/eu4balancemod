@@ -566,6 +566,7 @@ categories =  {
 		supply_limit = 4
 
 		terrain_override = {
+			6051
 			792 793 796 805 806 2821 2822 2840 2841
 			2324
 			1212 1215 1230 1232 2315 2320 2321 2765 2786 2788 2789
@@ -632,7 +633,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 
 		terrain_override = {
-			4548
+			4548 360 4319
 			1749 224
 			221 1750 220 214 
 			1748 2754

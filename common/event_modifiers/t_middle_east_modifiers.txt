@@ -31,6 +31,10 @@ mam_the_sultans_general_staff_modifier = {
 	free_leader_pool = 1
 }
 
+mam_naval_industry_mod = {
+	naval_forcelimit_modifier = 0.1
+}
+
 t_hisn_kayfa_start_modifier = {
 	global_tax_income = 36
 }

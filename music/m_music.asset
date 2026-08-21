@@ -27,7 +27,6 @@ music = {
 	name = "Drink"
 	file = "Drink.ogg"
 }
-}
 music = {
 	name = "Papajak"
 	file = "Papajak.ogg"

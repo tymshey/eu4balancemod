@@ -43,7 +43,7 @@ country_decisions = {
 		}
 		allow = {
 			capital = 361 # Cairo
-			adm_tech = 15
+			adm_tech = 14
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -108,9 +108,6 @@ country_decisions = {
 			}
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
-			change_country_color = { # ?????? no idea why doesnt changing the color of egypt work, for some reason this is necessary
-    			color = { 76  141  59 }
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -219,10 +216,10 @@ country_decisions = {
 		}
 	}
 	
-	t_mam_color_egypt = {
+	t_mam_color_egypt = { # If someone wanted to stay with egypt's colour
 		color = { 235 64 52 }
 		potential = {
-			tag = EGY
+			tag = RUM
 		}
 		allow = {
 			OR = {
