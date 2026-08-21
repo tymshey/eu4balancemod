@@ -1379,9 +1379,9 @@ quantity_ideas = {
 	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
-		may_build_supply_depot = yes
 	}
 	reinforcement_drafts = {
+		reserves_organisation = 0.1
 		reinforce_cost_modifier = -0.33
 	}
 	the_old_and_infirm = {
@@ -1391,7 +1391,7 @@ quantity_ideas = {
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.25
-		force_march_free = yes
+		may_build_supply_depot = yes
 	}
 
 	ai_will_do = {
