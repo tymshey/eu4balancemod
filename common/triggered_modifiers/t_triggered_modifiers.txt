@@ -82,7 +82,32 @@ calc_true_if = {
 }
 
 # lategame expansion
+m_age_of_absolutism_expansion = {
+	potential = {
+		ai = no
+	}
 
+	trigger = {
+		ai = no
+		current_age = age_of_discovery
+		NOT = { current_age = age_of_discovery }
+	}
+
+	province_warscore_cost = 0.3
+}
+m_age_of_absolutism_expansion = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		ai = no
+		current_age = age_of_reformation
+		NOT = { current_age = age_of_reformation }
+	}
+
+	province_warscore_cost = 0.15
+}
 t_age_of_absolutism_expansion = {
 	potential = {
 		ai = no
