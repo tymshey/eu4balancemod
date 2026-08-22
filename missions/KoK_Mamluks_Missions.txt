@@ -9,6 +9,7 @@ mam_missions_1 = {
 		OR = {
 			tag = EGY
 			tag = MAM
+			tag = RUM
 		}
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
@@ -242,6 +243,28 @@ mam_missions_1 = {
 			}
 			else = { add_dip_power = 100 }
 			create_admiral = { tradition = 70 }
+		}
+	}
+
+	mam_a_naval_industry = {
+		icon = mission_combat_barbary_piracy
+		required_missions = { mam_establish_merchant_escorts }
+		position = 2
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_shipyard_building_trigger = yes }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				has_shipyard_building_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mam_naval_industry_mod
+				duration = -1
+			}
 		}
 	}
 
@@ -509,6 +532,7 @@ mam_missions_2 = {
 		OR = {
 			tag = EGY
 			tag = MAM
+			tag = RUM
 		}
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
@@ -772,63 +796,6 @@ mam_missions_2 = {
 		}
 	}
 
-	mam_artisans_of_egypt = {
-		icon = purely_for_commerce
-		required_missions = {
-			mam_hormuz_straits
-		}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 359
-				province_id = 2315
-				province_id = 4319
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { has_production_building_trigger = yes }
-				NOT = { development = 20 }
-			}
-		}
-		trigger = {
-			359 = {
-				owned_by = ROOT
-				has_production_building_trigger = yes 
-				development = 20
-			}
-			2315 = {
-				owned_by = ROOT
-				has_production_building_trigger = yes 
-				development = 20
-			}
-			4319 = {
-				owned_by = ROOT
-				has_production_building_trigger = yes 
-				development = 20
-			}
-		}
-		effect = {
-			359 = {
-				add_or_upgrade_production_building = yes
-				change_trade_goods = silk
-			}
-			
-			2315 = {
-				add_or_upgrade_production_building = yes
-				change_trade_goods = silk
-			}
-			
-			4319 = {
-				add_or_upgrade_production_building = yes
-				change_trade_goods = silk
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
-
 	mam_highway_empire = {
 		icon = mam_highway_empire
 		required_missions = { mam_alexandrian_trade }
@@ -1007,6 +974,7 @@ mam_missions_3 = {
 		OR = {
 			tag = EGY
 			tag = MAM
+			tag = RUM
 		}
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
@@ -1463,6 +1431,63 @@ mam_missions_3 = {
 		}
 	}
 
+	mam_artisans_of_egypt = {
+		icon = purely_for_commerce
+		required_missions = {
+			mam_father_african_rivers
+		}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 359
+				province_id = 2315
+				province_id = 4319
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { has_production_building_trigger = yes }
+				NOT = { development = 20 }
+			}
+		}
+		trigger = {
+			359 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes 
+				development = 20
+			}
+			2315 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes 
+				development = 20
+			}
+			4319 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes 
+				development = 20
+			}
+		}
+		effect = {
+			359 = {
+				add_or_upgrade_production_building = yes
+				change_trade_goods = silk
+			}
+			
+			2315 = {
+				add_or_upgrade_production_building = yes
+				change_trade_goods = silk
+			}
+			
+			4319 = {
+				add_or_upgrade_production_building = yes
+				change_trade_goods = silk
+			}
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
+
 	mam_dar_al_hadith_turba = {
 		icon = reform_the_nomocanon
 		required_missions = {  }
@@ -1536,6 +1561,7 @@ mam_missions_4 = {
 		OR = {
 			tag = EGY
 			tag = MAM
+			tag = RUM
 		}
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }
@@ -2190,6 +2216,7 @@ mam_missions_5 = {
 		OR = {
 			tag = EGY
 			tag = MAM
+			tag = RUM
 		}
 		has_dlc = "King of Kings"
 		NOT = { map_setup = map_setup_random }

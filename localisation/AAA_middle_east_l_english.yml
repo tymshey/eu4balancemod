@@ -1,5 +1,10 @@
 ﻿l_english:
 
+ # Monuments
+
+ gv_alexandria:0 "City of Alexandria"
+ gv_mosque_of_cordoba:0 "Mosque of Qurtubah"
+
  ###############
  ### PERSIA
  ###############
@@ -20,7 +25,7 @@
  t_per_abbasid_successor:0 "Successor to the Abbasid Caliphate"
 
  t_madinat_as_salam:0 "Madinat as-Salam"
- t_madinat_as_salam_desc:0 "We have rebuilt Madinat as-Salam, the 'City of Peace', symbolizing the revival of Persian culture and influence in the region. It serves as a center of learning, culture, and commerce, attracting scholars, artists, and traders from across the Islamic world."
+ t_madinat_as_salam_desc:0 "We have rebuilt Madinat as-Salam, the 'City of Peace', symbolizing the revival of our culture and influence in the region. It serves as a center of learning, culture, and commerce, attracting scholars, artists, and traders from across the Islamic world."
 
  # Missions
 
@@ -48,6 +53,7 @@
 
  mam_the_sultans_general_staff_modifier:0 "The Sultan's General Staff"
  mam_trans_saharan_trade_route_modifier:0 "Trans-Saharan Centre of Trade"
+ mam_naval_industry_mod:0 "Naval Industry"
 
  isr_birth_of_israel:0 "Birth of Israel"
 
@@ -61,6 +67,8 @@
  mam_the_sultans_general_staff_desc:0 "The Sultan's General Staff is a prestigious institution that oversees the training and organization of our military forces. By investing in this institution, we can enhance our military capabilities and ensure that our forces are well-prepared to defend our interests and expand our influence in the region."
  mam_trans_saharan_trade_route_title:0 "Trans-Saharan Trade Route"
  mam_trans_saharan_trade_route_desc:0 "By reestablishing a trade route across the Sahara Desert, we can facilitate commerce between our territories and the markets of West Africa, boosting our economy and enhancing our influence in the region."
+ mam_a_naval_industry_title:0 "A Naval Industry"
+ mam_a_naval_industry_desc:0 "By investing in the development of a naval industry, we can strengthen our maritime capabilities and enhance our influence in the region. A robust naval industry will allow us to build and maintain a powerful fleet, enabling us to protect our trade routes, project power, and expand our reach across the seas."
 
  ###############
  ### OTTOMANS

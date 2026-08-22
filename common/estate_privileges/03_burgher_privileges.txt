@@ -1489,7 +1489,11 @@ estate_burghers_control_over_monetary_policy = {
 	}
 	conditional_modifier = {
 		trigger = {
-			has_country_flag = fra_enable_italian_bookkeeping_privilege_flag
+			OR = {
+				has_country_flag = fra_enable_italian_bookkeeping_privilege_flag
+				has_country_flag = Ser_enable_efficient_monetary_policy
+			}
+		
 		}
 		modifier = {
 			all_power_cost = -0.05

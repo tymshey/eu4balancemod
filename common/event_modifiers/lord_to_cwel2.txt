@@ -197,3 +197,13 @@ Inward_perfection_rework = {
 	global_unrest = -2
 	all_estate_loyalty_equilibrium = 0.05
 }
+Kosovian_Mines = {
+	local_development_cost = -0.1
+	trade_goods_size = 1
+	inflation_reduction = 0.06
+}
+
+Rising_Power = {
+development_cost = -0.05
+global_trade_goods_size_modifier = 0.05
+}
