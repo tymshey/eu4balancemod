@@ -207,3 +207,9 @@ Rising_Power = {
 development_cost = -0.05
 global_trade_goods_size_modifier = 0.05
 }
+
+Influx_of_greek = {
+idea_cost = -0.05
+technology_cost = -0.05
+global_institution_spread = 0.1
+}

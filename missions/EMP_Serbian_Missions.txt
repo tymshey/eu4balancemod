@@ -110,102 +110,16 @@ emp_ser_economy_internal = {
 			}
 		}
 	}
-		Ser_church = {
-		icon = guardians_of_saint_sava
-		required_missions = { }
-		position = 4
-		provinces_to_highlight = {
-		}
-		trigger = {
-			if = {
-				limit = {
-					has_estate = estate_church
-				}
-				OR = {
-					estate_loyalty = {
-						estate = estate_church
-						loyalty = 70
-					}
-					num_of_estate_privileges = {
-						estate = estate_church
-						value = 4
-					}
-				}
-			}
-		}
+	Rising_Power = {
+		icon = encroach_on_the_germans
+		position = 3
+		trigger = {tag = ILR}
+		
 		effect = {
-			add_country_modifier = { 
-				name = BYZ_restoring_faith_in_the_monarchs
-				duration = 7300
-			}
-			
-			if = {
-				limit = {
-					has_dlc = "Third Rome"
-				}
-				custom_tooltip = BYZ_double_current_icon
-				hidden_effect = {
-					if = {
-						limit = {
-							current_icon = icon_eleusa
-						}
-						add_country_modifier = {
-							name = BYZ_icon_eleusa
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_pancreator
-						}
-						add_country_modifier = {
-							name = BYZ_icon_pancreator
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_nicholas
-						}
-						add_country_modifier = {
-							name = BYZ_icon_nicholas
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_climacus
-						}
-						add_country_modifier = {
-							name = BYZ_icon_climacus
-							duration = 5475
-						}
-					}
-					else_if = {
-						limit = {
-							current_icon = icon_michael
-						}
-						add_country_modifier = {
-							name = BYZ_icon_michael
-							duration = 5475
-						}
-					}
-				}
-			}
-			
-			custom_tooltip = " "
-			
-			complex_dynamic_effect = {
-				first_custom_tooltip = BYZ_if_we_have_religious_culture_privilege
-				first_limit = "
-					has_estate_privilege = estate_church_one_faith_one_culture
-				"
-				first_effect = "
-					change_estate_land_share = {
-						estate = estate_church
-						share = -5
-					}
-				"
+			balkan_region = {add_permanent_claim = ROOT}
+			add_country_modifier = {
+			name = Rising_Power
+			duration = -1
 			}
 		}
 	}
@@ -225,40 +139,27 @@ emp_ser_danube = {
 	}
 	has_country_shield = yes
 	
-	emp_ser_moravian_arms = {
-		icon = moravian_arms
+	mines_of_kosovo = {
+		icon = the_great_school
 		required_missions = { }
 		position = 1
 		
+		provinces_to_highlight = {
+		province_id = 1766
+		}
+	
 		trigger = {
-			army_size_percentage = 1
+			1766 = {num_of_times_improved = 7}
+			1766 = {num_of_times_expanded_infrastructure = 1}
+			gold_income = 5
 		}
 		effect = {
-			macedonia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
+			set_country_flag = Ser_enable_efficient_monetary_policy
+			1766 = {
+				add_province_modifier = {
+					name = Kosovian_Mines
+					duration = -1
 				}
-				add_permanent_claim = ROOT
-			}
-			albania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			bosnia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			1828 = {add_permanent_claim = ROOT}
-			add_country_modifier = {
-				name = "ser_moravian_valor"
-				duration = 3650
 			}
 		}
 	}
@@ -415,32 +316,9 @@ emp_ser_danube = {
 			137 = {		# Ragusa
 				is_strongest_trade_power = ROOT
 			}
-			153 = {		# Ragusa
-				is_strongest_trade_power = ROOT
-			}
 		}
 		effect = {
 			add_mercantilism = 2
-		}
-	}
-	
-	emp_ser_northern_trade = {
-		icon = mission_control_venice
-		required_missions = { emp_ser_danubian_power }
-		position = 5
-		
-		provinces_to_highlight = {
-			province_id = 1308
-		}
-		trigger = {
-			1308 = {
-				trade_share = {
-					country = ROOT
-					share = 33 # a third
-				}
-			}
-		}
-		effect = {
 			add_country_modifier = {
 				name = "ser_expanding_trade_networks"
 				duration = 5475
@@ -512,11 +390,11 @@ emp_ser_west_balkan_branch = {
 		}
 		trigger = {
 			east_adriatic_coast_area = {
+				country_or_non_sovereign_subject_holds = ROOT
 				type = all
-				owned_by = ROOT
 			}
 			4754 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -575,94 +453,6 @@ emp_ser_west_balkan_branch = {
 			}
 		}
 	}
-	
-	emp_ser_secure_the_sava = {
-		icon = secure_the_sava
-		required_missions = { emp_ser_suppress_bosnian_heresy }
-		position = 5
-		
-		provinces_to_highlight = {
-			OR = {
-				area = croatia_area
-				area = slavonia_area
-			}
-			NOT = { 
-				OR = {
-					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-		trigger = {
-			croatia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
-				}
-			}
-			slavonia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-		effect = {
-			carinthia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	emp_ser_encroach_on_the_germans = {
-		icon = encroach_on_the_germans
-		required_missions = { emp_ser_northern_trade emp_ser_secure_the_sava }
-		position = 6
-		
-		provinces_to_highlight = {
-			area = carinthia_area
-			NOT = { 
-				OR = {
-					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-		trigger = {
-			carinthia_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
-					owner = { is_subject_of = ROOT }
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "ser_united_balkans"
-				duration = -1
-			}
-		}
-	}
-	Rising_Power = {
-		icon = encroach_on_the_germans
-		position = 7
-		trigger = {tag = ILR}
-		
-		effect = {
-			balkan_region = {add_permanent_claim = ROOT}
-			add_country_modifier = {
-			name = Rising_Power
-			duration = -1
-			}
-		}
-	}
 }
 
 emp_ser_east_branch = {
@@ -679,27 +469,40 @@ emp_ser_east_branch = {
 	}
 	has_country_shield = yes
 	
-	mines_of_kosovo = {
-		icon = the_great_school
+	emp_ser_moravian_arms = {
+		icon = moravian_arms
 		required_missions = { }
 		position = 1
 		
-		provinces_to_highlight = {
-		province_id = 1766
-		}
-	
 		trigger = {
-			1766 = {num_of_times_improved = 7}
-			1766 = {num_of_times_expanded_infrastructure = 1}
-			gold_income = 5
+			army_size_percentage = 1
 		}
 		effect = {
-			set_country_flag = Ser_enable_efficient_monetary_policy
-			1766 = {
-				add_province_modifier = {
-					name = Kosovian_Mines
-					duration = -1
+			macedonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bosnia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1828 = {add_permanent_claim = ROOT}
+			add_country_modifier = {
+				name = "ser_moravian_valor"
+				duration = 3650
 			}
 		}
 	}
@@ -707,7 +510,7 @@ emp_ser_east_branch = {
 	emp_ser_retake_macedonia = {
 		icon = retake_thessaly
 		required_missions = { emp_ser_moravian_arms }
-		position = 2
+		position = 3
 		
 		provinces_to_highlight = {
 			area = macedonia_area
@@ -717,8 +520,8 @@ emp_ser_east_branch = {
 		}
 		trigger = {
 			macedonia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
 				type = all
-				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -730,6 +533,27 @@ emp_ser_east_branch = {
 				add_permanent_claim = ROOT
 			}
 			northern_greece_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+				bulgaria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			silistria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thrace_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
@@ -742,7 +566,7 @@ emp_ser_east_branch = {
 	emp_ser_legacy_of_the_sclavinias = {
 		icon = legacy_of_the_sclavinias
 		required_missions = { emp_ser_retake_macedonia }
-		position = 3
+		position = 4
 		
 		provinces_to_highlight = {
 			OR = {
@@ -755,120 +579,20 @@ emp_ser_east_branch = {
 		}
 		trigger = {
 			morea_area = {
+				country_or_non_sovereign_subject_holds = ROOT
 				type = all
-				owned_by = ROOT
 			}
 			northern_greece_area = {
+				country_or_non_sovereign_subject_holds = ROOT
 				type = all
-				owned_by = ROOT
 			}
 		}
 		effect = {
-			bulgaria_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
+		add_accepted_culture_or_dip_power = { culture = greek value = 100 }
+		add_country_modifier = {
+		name = Influx_of_greek
+		duration = 5475
 			}
-			silistria_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	emp_ser_protectors_of_christendom = {
-		icon = protectors_of_christendom
-		required_missions = { emp_ser_legacy_of_the_sclavinias }
-		position = 4
-		
-		provinces_to_highlight = {
-			OR = {
-				area = bulgaria_area
-				area = silistria_area
-			}
-			owner = { NOT = { religion = ROOT } }
-		}
-		trigger = {
-			bulgaria_area = {
-				type = ALL
-				owner = { religion = ROOT }
-			}
-			silistria_area = {
-				type = ALL
-				owner = { religion = ROOT }
-			}
-		}
-		effect = {
-			thrace_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	emp_ser_take_constantinople = {
-		icon = take_constantinople
-		required_missions = { emp_ser_protectors_of_christendom }
-		position = 5
-		
-		provinces_to_highlight = {
-			area = thrace_area
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			thrace_area = {
-				type = ALL
-				owned_by = ROOT
-			}
-			owns = 151
-		}
-		effect = {
-			add_prestige = 50
-			if = {
-				limit = {
-					NOT = { stability = 3 }
-				}
-				add_stability = 1
-			}
-			else_if = {
-				limit = {
-					war_exhaustion = 5
-				}
-				add_war_exhaustion = -5
-			}
-			else = {
-				add_adm_power = 100
-			}
-			country_event = { id = flavor_ser.4 }
-		}
-	}
-	
-	emp_ser_emperor_and_autocrat = {
-		icon = emperor_and_autocrat
-		required_missions = { emp_ser_take_constantinople emp_ser_secure_the_sava }
-		position = 6
-		
-		trigger = {
-			if = {
-				limit = {
-					is_revolutionary = no
-				}
-				absolutism = 65
-			}
-			else = {
-				revolutionary_zeal = 65
-			}
-		}
-		effect = {
-			set_government_rank = 3
 		}
 	}
 }
@@ -931,47 +655,10 @@ emp_ser_religious = {
 		}
 	}
 	
-	emp_ser_promote_the_patriarchate = {
-		icon = promote_the_patriarchate
-		required_missions = { emp_ser_reform_the_nomocanon }
-		position = 3
-		
-		provinces_to_highlight = {
-			ROOT = { NOT = { religion = orthodox } }
-			owner = { tag = ROOT }
-			NOT = { religion = ROOT }
-		}
-		trigger = {
-			if = {
-				limit = { religion = orthodox }
-				patriarch_authority = 0.75
-			}
-			else = {
-				religious_unity = 1
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					has_estate = estate_church
-				}
-				add_estate_loyalty_modifier  = {
-					estate = estate_church
-					desc = SER_PATRIARCHATE_SUPPORTED_BY_STATE
-					loyalty = 10
-					duration = 7300
-				}
-			}
-			else = {
-				add_adm_power = 100
-			}
-		}
-	}
-	
 	emp_ser_guardians_of_st_sava = {
 		icon = guardians_of_saint_sava
-		required_missions = { emp_ser_promote_the_patriarchate }
-		position = 4
+		required_missions = { emp_ser_reform_the_nomocanon }
+		position = 2
 		
 		trigger = {
 			is_defender_of_faith = yes
@@ -991,6 +678,160 @@ emp_ser_religious = {
 			else = {
 				add_mil_power = 200
 			}
+		}
+	}
+	Ser_church = {
+		icon = guardians_of_saint_sava
+		required_missions = {emp_ser_guardians_of_st_sava }
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				OR = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 70
+					}
+					num_of_estate_privileges = {
+						estate = estate_church
+						value = 4
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = BYZ_restoring_faith_in_the_monarchs
+				duration = 7300
+			}
+			
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+				}
+				custom_tooltip = BYZ_double_current_icon
+				hidden_effect = {
+					if = {
+						limit = {
+							current_icon = icon_eleusa
+						}
+						add_country_modifier = {
+							name = BYZ_icon_eleusa
+							duration = 5475
+						}
+					}
+					else_if = {
+						limit = {
+							current_icon = icon_pancreator
+						}
+						add_country_modifier = {
+							name = BYZ_icon_pancreator
+							duration = 5475
+						}
+					}
+					else_if = {
+						limit = {
+							current_icon = icon_nicholas
+						}
+						add_country_modifier = {
+							name = BYZ_icon_nicholas
+							duration = 5475
+						}
+					}
+					else_if = {
+						limit = {
+							current_icon = icon_climacus
+						}
+						add_country_modifier = {
+							name = BYZ_icon_climacus
+							duration = 5475
+						}
+					}
+					else_if = {
+						limit = {
+							current_icon = icon_michael
+						}
+						add_country_modifier = {
+							name = BYZ_icon_michael
+							duration = 5475
+						}
+					}
+				}
+			}
+			
+			custom_tooltip = " "
+			
+			complex_dynamic_effect = {
+				first_custom_tooltip = BYZ_if_we_have_religious_culture_privilege
+				first_limit = "
+					has_estate_privilege = estate_church_one_faith_one_culture
+				"
+				first_effect = "
+					change_estate_land_share = {
+						estate = estate_church
+						share = -5
+					}
+				"
+			}
+		}
+	}
+	emp_ser_protectors_of_christendom = {
+		icon = protectors_of_christendom
+		required_missions = { emp_ser_retake_macedonia }
+		position = 4
+		
+		provinces_to_highlight = {
+			OR = {
+				area = bulgaria_area
+				area = silistria_area
+			}
+			owner = { NOT = { religion = ROOT } }
+		}
+		trigger = {
+			bulgaria_area = {
+				type = ALL
+				owner = { religion = ROOT }
+			}
+			silistria_area = {
+				type = ALL
+				owner = { religion = ROOT }
+			}
+		}
+		effect = {
+		add_accepted_culture_or_dip_power = { culture = bulgarian value = 100 }
+		add_country_modifier = {
+		4706 = {add_center_of_trade_level = 1}
+		1765 = {add_center_of_trade_level = 1}
+			}
+		}
+	}
+	emp_ser_take_constantinople = {
+		icon = take_constantinople
+		required_missions = { emp_ser_protectors_of_christendom }
+		position = 5
+		
+		provinces_to_highlight = {
+			area = thrace_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			thrace_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			owns = 151
+		}
+		effect = {
+			add_prestige = 50
+			add_stability = 1
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			country_event = { id = flavor_ser.4 }
 		}
 	}
 }
