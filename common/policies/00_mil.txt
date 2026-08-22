@@ -1891,8 +1891,6 @@ amphibious_operations_doctrine = {
 	}
 	
 	naval_morale = 0.1
-	max_admiral_fire = 1
-	leader_naval_fire = 1
 
 	effect = {}
 	removed_effect = {}

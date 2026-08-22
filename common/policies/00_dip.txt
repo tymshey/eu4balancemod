@@ -2059,7 +2059,7 @@ covert_operations_doctrine = {
 	}
 	
 	spy_offence = 0.1
-	discipline = 0.05
+	reserves_organisation = 0.15
 
 	ai_will_do = {
 		factor = 1

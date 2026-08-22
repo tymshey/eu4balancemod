@@ -586,7 +586,7 @@ offensive_ideas = {
 	}
 
 	bayonet_leaders = {
-		leader_land_fire = 1
+		leader_siege = 1
 		prestige_from_land = 1
 	}
 	national_conscripts = {
@@ -1374,8 +1374,8 @@ quantity_ideas = {
 		sailors_recovery_speed = 0.20
 	}
 	enforced_service = {
-		morale_damage_received = -0.1
-		naval_morale_damage_received = -0.1
+		morale_damage_received = -0.075
+		naval_morale_damage_received = -0.075
 	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
@@ -1385,7 +1385,6 @@ quantity_ideas = {
 		reinforce_cost_modifier = -0.33
 	}
 	the_old_and_infirm = {
-		global_regiment_cost = -0.1
 		regiment_manpower_usage = -0.1
 		land_maintenance_modifier = -0.1
 	}
@@ -1658,8 +1657,9 @@ general_staff_ideas = {
 	}
 
 	bonus = {
-		may_build_supply_depot = yes
-		may_refill_garrison = yes
+		free_leader_pool = 1
+		leader_cost = -0.15
+		yearly_army_professionalism = 0.005
 	}
 
 	general_staff_idea = {
@@ -1667,11 +1667,11 @@ general_staff_ideas = {
 		leader_land_shock = 1
 	}
 	centralized_command_idea = {
-		artillery_barrage_cost = -0.33
+		army_tradition = 0.5
+		navy_tradition = 0.5
 	}
 	lines_of_operation_idea = {
-		leader_land_manuever = 2
-		leader_siege = 1
+		leader_land_manuever = 1
 	}
 	fog_of_war_idea = {
 		movement_speed = 0.1
@@ -1679,10 +1679,12 @@ general_staff_ideas = {
 	admiralty_board_idea = {
 		max_admiral_maneuver = 1
 		leader_naval_manuever = 1
+		max_admiral_fire = 1
+		leader_naval_fire = 1
 	}
 	coordinated_structure_idea = {
 		max_general_fire = 1
-		leader_land_fire = 2
+		leader_land_fire = 1
 	}
 	the_war_office_idea = {
 		fire_damage = 0.1
