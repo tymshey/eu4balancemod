@@ -803,10 +803,8 @@ emp_ser_religious = {
 		}
 		effect = {
 		add_accepted_culture_or_dip_power = { culture = bulgarian value = 100 }
-		add_country_modifier = {
 		4706 = {center_of_trade = 1}
-		1765 = {center_of_trade = 1}}
-			}
+		1765 = {center_of_trade = 1}
 		}
 	}
 	emp_ser_take_constantinople = {
