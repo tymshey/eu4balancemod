@@ -1,0 +1,7 @@
+﻿l_english:
+ 
+ REGCAT_rajput:0 "Elite Guard"
+ RAJPUT_REGIMENT_TYPE:0 "Elite Guard"
+ RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Elite Guards"
+ MODIFIER_ALLOWED_RAJPUT_FRACTION:1 "Elite Guard Force Limit Fraction"
+ MODIFIER_AMOUNT_OF_RAJPUT:0 "Elite Guard Force Limit"

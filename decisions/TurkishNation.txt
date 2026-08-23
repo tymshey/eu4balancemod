@@ -46,8 +46,6 @@ country_decisions = {
 				province_id = 331		# Erzurum
 				province_id = 2301		# Kayseri
 				province_id = 4312		# Eskeshehir
-				province_id = 148	#macedonia
-				province_id = 146	#ateny
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -61,9 +59,6 @@ country_decisions = {
 			religion_group = muslim
 			NOT = { exists = RUM }
 			NOT = { exists = TUR }
-			NOT = { exists = BYZ }
-			owns_core_province = 148	#macedonia
-			owns_core_province = 146	#ateny
 			owns_core_province = 151		# Constantinople
 			owns_core_province = 316		# Iznik
 			owns_core_province = 323		# Konya

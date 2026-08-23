@@ -4444,6 +4444,35 @@ modernized_furusiyya_reform = {
 	}
 }
 
+mamluk_mansure_army_reform = {
+	icon = "giga_chad"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "King of Kings"
+		OR = {
+			have_had_reform = mamluk_mansure_army_reform
+			has_unlocked_government_reform = { government_reform = mamluk_mansure_army_reform }
+		}
+		
+	}
+	modifiers = {
+		discipline = 0.05
+		allowed_mamluks_fraction = -1
+	}
+
+	custom_attributes = {
+		recruiting_generals_increases_nobles_loyalty = yes
+	}
+
+	custom_attributes = {
+		advisors_generate_innovativeness = yes
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
 karimi_stations_reform = {
 	icon = "karimi_stations_reform"
 	allow_normal_conversion = yes

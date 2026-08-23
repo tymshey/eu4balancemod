@@ -342,6 +342,8 @@ monarchy = {
 				#1.37 Bohemia
 				vozove_hradby_reform
 				russian_mercenary_guard_reform 
+				#balamod exclusive
+				mamluk_mansure_army_reform
 			}
 		}
 		deliberative_assembly = {
