@@ -36,10 +36,30 @@
  ### MAMLUKS
  ###############
 
+ # Reforms
+
+ mamluk_mansure_army_reform:0 "Al-Asakir al-Khattatiyah"
+
+ # Disasters
+
+ diwan_al_khilafah_disaster:0 "Diwan al-Khilafah"
+ diwan_al_khilafah_disaster_desc:0 ""
+ t_disaster_active_for_20_years_tooltip:0 "Has had the disaster for at least 20 years."
+
+ flavor_mam_disaster.1.title:0 "Diwan al-Khilafah - The Silk Cage of Qahirah"
+ flavor_mam_disaster.1.desc:0 "Our palaces in [Root.Capital.GetName] boast libraries that rival ancient Alexandria, and our administrators debate theological minutiae and classical philosophy in rhyming prose. Yet, while the elite indulges in unparalleled luxury and intellectual hubris, they have grown profoundly detached from the realities of the realm. Governance has dissolved into endless, overly sophisticated court rituals. Practical military logistics are ignored in favor of poetic accounting, and the provincial governors refuse to fund a capital they view as decadent, corrupt, and dangerously soft. The pen has not just replaced the sword; it has rusted it."
+ flavor_mam_disaster.1.a:0 "So be it."
+ flavor_mam_disaster.2.title:0 "Triumph of the Red Ink"
+ flavor_mam_disaster.2.desc:0 "The not-so-dark age of administrative paralysis and silken lethargy is finally over. For years, the Diwan al-Khilafah drowned the empire in endless poetic debates, theological hair-splitting, and decadent opulence while our borders withered. Realizing that an empire of scholars cannot defend itself against an empire of iron, we took drastic action. The grand scriptoriums of Cairo have been cleared of parasites. Court poets who failed to demonstrate practical utility were stripped of their stipends and sent to manage logistical lines in the Syrian marches. Our army academies have been reformed: commanders are still expected to be literate, but their tactical examinations are now written in the blood of real training drills, not rhyming prose. The Diwan has been reshaped into a weapon of absolute efficiency. The pen and the scimitar are finally one."
+ flavor_mam_disaster.2.a:0 "Finally we can rest."
+ flavor_mam_disaster.3.title:0 "The Ink-Stained Scimitar"
+ flavor_mam_disaster.3.desc:0 "A decree from the Diwan al-Khilafah has sent shockwaves through the military hierarchy. In its pursuit of total cultural and intellectual supremacy, the court has mandated that promotion to the rank of Emir or General will no longer be determined by battlefield merit or tactical genius. Instead, candidates must pass a rigorous, week-long examination in classical Arabic grammar, theological jurisprudence, and the composition of elegiac verse. Our most battle-hardened Mamluk commanders—men who have spent their lives in the saddle rather than the library—are failing the tests spectacularly. In their place, the Diwan is promoting effeminate court poets and soft-handed scholars who can write beautifully about war but have never seen a drop of blood spilled in anger."
+ flavor_mam_disaster.3.a:0 "But do they spill blood as well as they spill ink?"
+
  # Decisions
 
- t_mam_color_egypt_title:0 "Set Colour for Egypt"
- t_mam_color_egypt_desc:0 "am i tripping or does egypt have a magical colour that cannot be changed in the files"
+ t_mam_color_egypt_title:0 "Set Colour of Egypt"
+ t_mam_color_egypt_desc:0 "In case you wanted to have Egypt's colour."
  Israel_Create_without_killing_yourself_title:0 "Create Israel Without Killing Yourself"
  Israel_Create_without_killing_yourself_desc:0 "This decision allows you to create Israel without killing your nation.\n\nbruh"
 
@@ -54,6 +74,10 @@
  mam_the_sultans_general_staff_modifier:0 "The Sultan's General Staff"
  mam_trans_saharan_trade_route_modifier:0 "Trans-Saharan Centre of Trade"
  mam_naval_industry_mod:0 "Naval Industry"
+ mam_diwan_al_khilafah_mod:0 "Diwan al-Khilafah"
+ mam_the_ink_stained_scimitar_mod:0 "The Ink-Stained Scimitar"
+ mam_inclusive_empire:0 "An Inclusive Empire"
+ mam_the_golden_synthesis:0 "The Golden Synthesis"
 
  isr_birth_of_israel:0 "Birth of Israel"
 
@@ -69,6 +93,22 @@
  mam_trans_saharan_trade_route_desc:0 "By reestablishing a trade route across the Sahara Desert, we can facilitate commerce between our territories and the markets of West Africa, boosting our economy and enhancing our influence in the region."
  mam_a_naval_industry_title:0 "A Naval Industry"
  mam_a_naval_industry_desc:0 "By investing in the development of a naval industry, we can strengthen our maritime capabilities and enhance our influence in the region. A robust naval industry will allow us to build and maintain a powerful fleet, enabling us to protect our trade routes, project power, and expand our reach across the seas."
+
+ mam_disaster_mechanics_of_statecraft_title:0 "Mechanics of Statecraft"
+ mam_disaster_mechanics_of_statecraft_desc:0 ""
+ mam_disaster_the_scriptorium_title:0 "The Scriptorium"
+ mam_disaster_the_scriptorium_desc:0 ""
+ mam_disaster_the_scriptorium_tt:0 "§YHydraulic Rights§! Estate Privilege will no longer incur Max Absolutism penalty."
+ mam_disaster_theological_reform_title:0 "Theological Reform"
+ mam_disaster_theological_reform_desc:0 ""
+ mam_disaster_theological_reform_tt:0 "§YState Madrasas§! Estate Privilege will no longer incur Max Absolutism penalty."
+ mam_disaster_the_eloquent_peace_title:0 "Eloquent Peace"
+ mam_disaster_the_eloquent_peace_desc:0 ""
+ mam_disaster_al_asakir_al_khattatiyah_title:0 "Al-Asakir Al-Khattatiyah"
+ mam_disaster_al_asakir_al_khattatiyah_desc:0 ""
+ mam_the_golden_synthesis_title:0 "The Golden Synthesis"
+ mam_the_golden_synthesis_desc:0 ""
+ unlock_mamluk_mansure_army_reform_tt:0 "Unlock the Al-Asakir Al-Khattatiyah government reform.\n"
 
  ###############
  ### OTTOMANS

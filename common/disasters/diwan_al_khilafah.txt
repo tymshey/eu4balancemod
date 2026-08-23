@@ -1,0 +1,113 @@
+diwan_al_khilafah_disaster = {
+	potential = {
+		OR = {
+			tag = MAM
+			tag = EGY
+			tag = RUM
+		}
+		normal_or_historical_nations = yes
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_flag = had_diwan_al_khilafah }
+	}
+
+	can_start = {
+		has_any_disaster = no
+		NOT = { stability = 3 }
+		OR = {
+			current_age = age_of_reformation
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		if = {
+			limit = { current_age = age_of_reformation }
+			total_development = 1500
+			monthly_income = 300
+		}
+		else_if = {
+			limit = { current_age = age_of_absolutism }
+			total_development = 2000
+			monthly_income = 600
+		}
+		else = {
+			total_development = 3000
+			monthly_income = 1200
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			stability = 3
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { stability = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 4
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 8
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 2
+			corruption = 1
+		}
+		modifier = {
+			factor = 4
+			corruption = 2
+		}
+		modifier = {
+			factor = 4
+			inflation = 2
+		}
+		modifier = {
+			factor = 2
+			NOT = { innovativeness = 5 }
+		}
+	}
+	
+	can_end = {
+		stability = 2
+		NOT = { corruption = 1 }
+		mission_completed = mam_the_golden_synthesis
+		custom_trigger_tooltip = {
+			tooltip = t_disaster_active_for_20_years_tooltip
+			had_country_flag = { flag = had_diwan_al_khilafah days = 7300 }
+		}
+	}
+
+	modifier = {
+		yearly_corruption = 0.1
+		technology_cost = 0.2
+		global_tax_modifier = -0.2
+		advisor_cost = 0.25
+		promote_culture_cost = 0.5
+		culture_conversion_cost = 0.25
+		development_cost_in_primary_culture = -0.1
+		same_culture_advisor_cost = -0.25
+	}	
+	
+	on_start = flavor_mam_disaster.1
+	on_end = flavor_mam_disaster.2
+	
+	on_monthly = {
+		random_events = { 
+			36 = 0 # roughly one event per 9 months
+			1 = siamese_rev.3 # foreign missionaries attacked. Lose tolerance own (+1 openness score) or gain church influence (+1 reactionary score)
+			1 = siamese_rev.4 # reactionary nobles caught plotting. Fight some noble rebels (+1 openness score) or gain 2 reactionary score and noble influence
+			1 = siamese_rev.5 # european military activity. A European gets a subjugation CB against you (+1 openness score) or harm relations with Europeans and lose MIL power (+1 reactionary score)
+			1 = siamese_rev.6 # foreign embassy. Improve relations with Europeans and lose mercantilism (+2 openness score) or gain trade power in own provinces and harm relations with Europeans (+1 reactionary score)
+		}
+	}
+}
+

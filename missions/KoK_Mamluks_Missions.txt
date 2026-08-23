@@ -2550,3 +2550,258 @@ mam_missions_5 = {
 		}
 	}
 }
+
+mam_missions_disaster_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "King of Kings"
+	}
+	potential = {
+		OR = {
+			tag = EGY
+			tag = MAM
+			tag = RUM
+		}
+		has_country_flag = had_diwan_al_khilafah
+		has_dlc = "King of Kings"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mam_disaster_mechanics_of_statecraft = {
+		icon = reform_the_nomocanon
+		required_missions = { }
+		position = 13
+		trigger = {
+			owns = 358
+			stability = 2
+			is_ahead_of_time_in_technology = { tech = adm }
+			statesman = 5
+			NOT = { governing_capacity_percentage = 1 }
+		}
+		effect = {
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			if = {
+				limit = {
+					NOT = {
+						358 = {
+							has_great_project = {
+								type = gv_alexandria
+								tier = 3
+							}
+						}
+					}
+				}
+				358 = {
+					add_great_project_tier = {
+						type = gv_alexandria
+						tier = 1
+					}
+				}
+			}
+			else = {
+				358 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			set_country_flag = mam_diwan_governance_reformed
+		}
+	}
+}
+
+mam_missions_disaster_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "King of Kings"
+	}
+	potential = {
+		OR = {
+			tag = EGY
+			tag = MAM
+			tag = RUM
+		}
+		has_country_flag = had_diwan_al_khilafah
+		has_dlc = "King of Kings"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mam_disaster_the_scriptorium = {
+		icon = mission_court_education
+		required_missions = { }
+		position = 13
+		trigger = {
+			crown_land_share = 50
+			NOT = { corruption = 1 }
+			stability = 2
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 80
+			}
+			NOT = { num_of_powerful_estates = 1 }
+			NOT = {
+				any_subject_country = {
+					liberty_desire = 20
+				}
+			}
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			add_dip_power = 200
+			custom_tooltip = mam_disaster_the_scriptorium_tt
+			set_country_flag = hydraulic_rights_free_flag
+			set_country_flag = mam_diwan_tech_reformed
+		}
+	}
+}
+
+mam_missions_disaster_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "King of Kings"
+	}
+	potential = {
+		OR = {
+			tag = EGY
+			tag = MAM
+			tag = RUM
+		}
+		has_country_flag = had_diwan_al_khilafah
+		has_dlc = "King of Kings"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mam_disaster_theological_reform = {
+		icon = mission_hands_praying
+		required_missions = { }
+		position = 13
+		trigger = {
+			legitimacy_equivalent = 80
+			religious_unity = 0.8
+			has_estate_privilege = estate_church_sponsor_waqf_payments
+			if = {
+				limit = { uses_piety = yes }
+				piety = 0.8
+			}
+		}
+		effect = {
+			add_adm_power = 200
+			custom_tooltip = mam_disaster_theological_reform_tt
+			set_country_flag = state_madrasas_free_flag
+			set_country_flag = mam_diwan_religion_reformed
+		}
+	}
+
+	mam_the_golden_synthesis = {
+		icon = per_unify_islam
+		required_missions = { mam_disaster_mechanics_of_statecraft mam_disaster_the_scriptorium mam_disaster_theological_reform mam_disaster_the_eloquent_peace mam_disaster_al_asakir_al_khattatiyah }
+		position = 1
+		trigger = {
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = mam_the_golden_synthesis
+				duration = -1
+			}
+		}
+	}
+}
+
+mam_missions_disaster_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "King of Kings"
+	}
+	potential = {
+		OR = {
+			tag = EGY
+			tag = MAM
+			tag = RUM
+		}
+		has_country_flag = had_diwan_al_khilafah
+		has_dlc = "King of Kings"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mam_disaster_the_eloquent_peace = {
+		icon = mission_gawans_madrasar
+		required_missions = { }
+		position = 13
+		trigger = {
+			prestige = 80
+			OR = {
+				AND = {
+					is_ahead_of_time_in_technology = { tech = adm }
+					is_ahead_of_time_in_technology = { tech = dip }
+					is_ahead_of_time_in_technology = { tech = mil }
+				}
+				innovativeness = 70
+			}
+		}
+		effect = {
+			change_innovativeness = 5
+			add_country_modifier = {
+				name = mam_inclusive_empire
+				duration = -1
+			}
+			set_country_flag = mam_diwan_culture_reformed
+		}
+	}
+}
+
+mam_missions_disaster_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "King of Kings"
+	}
+	potential = {
+		OR = {
+			tag = EGY
+			tag = MAM
+			tag = RUM
+		}
+		has_country_flag = had_diwan_al_khilafah
+		has_dlc = "King of Kings"
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	mam_disaster_al_asakir_al_khattatiyah = { #mission_subdue_the_afghans
+		icon = mission_mansure_army
+		required_missions = { }
+		position = 13
+		trigger = {
+			army_tradition = 60
+			army_professionalism = 0.5
+			army_size_percentage = 0.9
+			has_mil_advisor_3 = yes
+		}
+		effect = {
+			unlock_government_reform = {
+				government_reform = mamluk_mansure_army_reform
+			}
+			add_government_reform = mamluk_mansure_army_reform
+			set_country_flag = mam_diwan_military_reformed
+		}
+	}
+}
