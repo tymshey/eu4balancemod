@@ -1,0 +1,147 @@
+namespace = d_events_fkn
+
+#zboze franconia
+country_event = {
+	id = d_events_fkn.1
+	title = d_events_fkn.1.title
+	desc = d_events_fkn.1.desc
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = d_events_fkn.1.a
+		change_price = {
+			trade_goods = grain
+			key = D_GRAIN_FKN
+			value = 0.1
+			duration = 18250
+		}
+	}
+}
+
+namespace = d_events_brapru
+
+#kupienie prus
+country_event = { #polska dostaje po decyzji
+	id = d_events_brapru.1
+	title = d_events_brapru.1.title
+	desc = d_events_brapru.1.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = d_events_brapru.1.a
+		add_treasury = 1000
+		add_country_modifier = {
+			name = d_prussia_concessions_modifier
+			duration = -1
+		}
+		43 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = -1
+				power = 100
+				key = d_poland_danzigtrade
+			}
+		}
+		if = {
+			limit = {
+				42 = {
+					owned_by_subject_of = ROOT
+				}
+			}
+			42 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+		BRA = {
+			country_event = {
+				id = d_events_brapru.2
+				days = 7
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = POL
+				}
+				POL = {
+					set_country_flag = d_prussia_concessions_flag
+				}
+			}
+			else = {
+				PLC = {
+					set_country_flag = d_prussia_concessions_flag
+				}
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option = {
+		name = d_events_brapru.1.b
+		BRA = {
+			country_event = {
+				id = d_events_brapru.3
+				days = 7
+			}
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = { #kupno zaakceptowane
+	id = d_events_brapru.2
+	title = d_events_brapru.2.title
+	desc = d_events_brapru.2.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = d_events_brapru.2.a
+		BRA = {
+			add_treasury = -1000
+			inherit = PRU
+			add_prestige = 25
+		}
+		43 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = -1
+				power = -100
+				key = d_prussia_danzigtrade
+			}
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+}
+
+country_event = { #kupno odmowione
+	id = d_events_brapru.3
+	title = d_events_brapru.3.title
+	desc = d_events_brapru.3.desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = d_events_brapru.3.a
+		ai_chance = {
+			factor = 20
+		}
+	}
+}

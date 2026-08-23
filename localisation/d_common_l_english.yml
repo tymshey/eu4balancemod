@@ -1,0 +1,38 @@
+﻿l_english:
+ 
+ #novgorod
+ d_novgorod_early_game_modifier:0 "Rival the Principality of Moscow"
+ 
+ #rassid
+ ras_gold_mine:0 "Sana'a Gold Mine"
+ 
+ #akk
+ d_akk_earlygame_modifier:0 "The Seljuk Dream"
+ 
+ #zapadoslavia
+ ZSP:0 "Zapadoslavia"
+ ZSP_ADJ:0 "Zapadoslavian"
+ 
+ #ethiopia
+ d_flavor_eth.39.b:0 "Maybe Aksum isn't the right way?"
+ 
+ #venetia
+ d_venetia_council_modifier:0 "Manage Council Authority"
+ 
+ #prussia/brandenburg
+ d_prussia_concessions_modifier:0 "Prussian concessions"
+ d_prussia_concessions_modifier.desc:0 "Our deal with the Prussians turned out to be better than expected."
+ d_poland_danzigtrade:0 "Polish ownership of Prussian ports"
+ d_prussia_danzigtrade:0 "Polish ownership of Prussian ports"
+ d_events_brapru.1.title:0 "Purchase of Prussia?""
+ d_events_brapru.1.desc:0 "A diplomat from Branderburg arrived today in Warsaw with an offer. We will transfer the ownership of our Prussian vassal to the people of Branderburg, in exchange for some concessions."
+ d_events_brapru.1.a:0 "We will accept the deal..."
+ d_events_brapru.1.b:0 "...when the time comes."
+ d_events_brapru.2.title:0 "The Polish Response"
+ d_events_brapru.2.desc:0 "They have accepted the deal!"
+ d_events_brapru.2.a:0 "Long live Prussia!"
+ d_events_brapru.3.title:0 "The Polish Response"
+ d_events_brapru.3.desc:0 "They have declined the offer..."
+ d_events_brapru.3.a:0 "Curses! Maybe another time..."
+ d_purchaseprussia_cooldown:0 "Recently sent offer"
+ d_purchaseprussia_decision_title:0 "The purchase of Prussia"

@@ -19,3 +19,9 @@ conversion_zeal = {
 d_venetia_council_modifier = {
 	monthly_authority_power = -1
 }
+
+d_prussia_concessions_modifier = {
+	development_cost = -0.025
+	trade_efficiency = 0.05
+	merchants = 1
+}

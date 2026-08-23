@@ -1,0 +1,40 @@
+on_monthly_pulse = {
+	if = {
+		limit = {
+			has_country_flag = d_prussia_concessions_flag
+			has_country_modifier = d_prussia_concessions_modifier
+			NOT = {
+				west_prussia_area = {
+					country_or_non_sovereign_subject_holds = ROOT
+					type = all
+				}
+			}
+		}
+		remove_country_modifier = d_prussia_concessions_modifier
+		43 = {
+			remove_trade_modifier = {
+				who = ROOT
+				key = d_poland_danzigtrade
+			}
+		}
+		if = {
+			limit = {
+				exists = BRA
+			}
+			43 = {
+				remove_trade_modifier = {
+					who = BRA
+					key = d_prussia_danzigtrade
+				}
+			}
+		}
+		else = {
+			43 = {
+				remove_trade_modifier = {
+					who = PRU
+					key = d_prussia_danzigtrade
+				}
+			}
+		}
+	}
+}

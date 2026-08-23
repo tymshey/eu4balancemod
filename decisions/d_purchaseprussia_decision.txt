@@ -1,0 +1,61 @@
+country_decisions = {
+
+	d_purchaseprussia_decision = {
+		potential = {
+			tag = BRA
+			exists = PRU
+			PRU = {
+				is_subject_of = POL
+			}
+		}
+		allow = {
+			treasury = 1000
+			is_at_war = no
+			if = {
+				limit = {
+					exists = POL
+				}
+				POL = {
+					is_at_war = no
+				}
+			}
+			else = {
+				PLC = {
+					is_at_war = no
+				}
+			}
+			OR = {
+				NOT = {
+					has_country_flag = d_purchaseprussia_cooldown
+				}
+				had_country_flag = {
+					flag = d_purchaseprussia_cooldown
+					days = 730
+				}
+			}
+		}
+		effect = {
+			set_country_flag = d_purchaseprussia_cooldown
+			if = {
+				limit = {
+					exists = POL
+				}
+				POL = {
+					country_event = {
+						id = d_events_brapru.1
+						days = 7
+					}
+				}
+			}
+			else = {
+				PLC = {
+					country_event = {
+						id = d_events_brapru.1
+						days = 7
+					}
+				}
+			}
+		}
+	}
+
+}

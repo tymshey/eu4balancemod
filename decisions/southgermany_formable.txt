@@ -107,7 +107,7 @@ country_decisions = {
 					name = d_franconia_modifier
 					duration = -1
 				}
-				country_event = { id = d_fkn_prices.1 }
+				country_event = { id = d_events_fkn.1 }
 			}
 			if = {
 				limit = {
