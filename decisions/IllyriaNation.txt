@@ -39,5 +39,31 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+	HreTempDecision = {
+		major = yes
+		potential = {
+			OR = {
+			tag = SER
+			tag = ILR
+			}
+			NOT = { has_country_flag = HreTempDecision }
+		}
+		allow = {
+			alliance_with = HAB
+			HAB = {is_emperor = yes}
+		}
+		effect = {
+			set_ruler_religion = catholic
+			set_country_flag = HreTempDecision
+			if = {
+			limit = {151 = {owned_by = ROOT}}
+			151 = {add_province_modifier = {name = Imperial_city duration = -1}}
+			SER = {	set_in_empire = yes}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }
