@@ -1788,3 +1788,63 @@ country_event = {
 		}
 	}
 }
+
+#Rebellion Rises!
+country_event = {
+	id = flavor_mam_disaster.4
+	title = flavor_mam_disaster.4.title
+	desc = flavor_mam_disaster.4.desc
+	picture = muslimgfx_MILITARY_CAMP_eventPicture
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = near_east_superregion
+			}
+		save_event_target_as = t_mamluk_rebel_prov
+		}
+	}
+	
+	option = {
+		name = flavor_mam_disaster.4.a
+		event_target:t_mamluk_rebel_prov = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 20
+			}
+		}
+	}
+}
+
+#Rebellion Rises!
+country_event = {
+	id = flavor_mam_disaster.5
+	title = flavor_mam_disaster.5.title
+	desc = flavor_mam_disaster.5.desc
+	picture = muslimgfx_MILITARY_CAMP_eventPicture
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				superregion = near_east_superregion
+			}
+		save_event_target_as = t_mamluk_rebel_prov
+		}
+	}
+	
+	option = {
+		name = flavor_mam_disaster.4.a
+		event_target:t_mamluk_rebel_prov = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 10
+			}
+		}
+	}
+}

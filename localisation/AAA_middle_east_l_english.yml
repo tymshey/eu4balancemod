@@ -39,6 +39,7 @@
  # Reforms
 
  mamluk_mansure_army_reform:0 "Al-Asakir al-Khattatiyah"
+ mamluk_mansure_army_desc:0 "For too long, the sublime intellect of Egypt was a silken cage, drowning our state in abstract philosophy and decadent verse while the frontiers crumbled. That hubris has been violently broken. The hyper-literate elite of the Diwan have been dragged from their plush libraries and forced into the saddle, weaponizing the very erudition that once paralyzed them. These are the Scribe-Tacticians, an army that views the battlefield not with savage fury, but with the cold, geometric detachment of a master scholar. They map enemy positions with cartographic absolute certainty, calculate artillery trajectories with unyielding mathematical precision, and execute mass maneuvers with the rhythmic, unbreakable meter of classical Arabic grammar. To them, war is a grand composition: the mud is their parchment, the cannon fire their syntax, and the blood of the sultanate's enemies the ink with which they write history. The pen has not been laid down—it has been cast in iron."
 
  # Disasters
 
@@ -55,6 +56,12 @@
  flavor_mam_disaster.3.title:0 "The Ink-Stained Scimitar"
  flavor_mam_disaster.3.desc:0 "A decree from the Diwan al-Khilafah has sent shockwaves through the military hierarchy. In its pursuit of total cultural and intellectual supremacy, the court has mandated that promotion to the rank of Emir or General will no longer be determined by battlefield merit or tactical genius. Instead, candidates must pass a rigorous, week-long examination in classical Arabic grammar, theological jurisprudence, and the composition of elegiac verse. Our most battle-hardened Mamluk commanders—men who have spent their lives in the saddle rather than the library—are failing the tests spectacularly. In their place, the Diwan is promoting effeminate court poets and soft-handed scholars who can write beautifully about war but have never seen a drop of blood spilled in anger."
  flavor_mam_disaster.3.a:0 "But do they spill blood as well as they spill ink?"
+ flavor_mam_disaster.4.title:0 "Rebellion Rises!"
+ flavor_mam_disaster.4.desc:0 "The Fellahin of the Nile Delta have reached their breaking point. The Diwan’s latest tax decree, delivered in a beautifully cryptic, rhyming administrative prose, was completely unintelligible to the illiterate farmers. When the elite tax collectors explained that the new grain assessments were 'deduced from the will of God for the state budget,' the peasants responded with pitchforks and scythes. They have butchered the polished scribes, dumped their inkwells into the irrigation ditches, and declared that they will no longer starve to feed a capital that speaks in riddles. Thousands of desperate men are burning the state granaries."
+ flavor_mam_disaster.4.a:0 "Crush them!"
+ flavor_mam_disaster.5.title:0 "Rebellion Rises over Unethical Construction!"
+ flavor_mam_disaster.5.desc:0 "Our ambitious project to redirect the Nile's flow into new irrigation networks has turned into a slaughterhouse. The Diwan's newly appointed scribe-engineers are treating human lives like raw variables in an equation. Driven by rigid timelines, they have forced tens of thousands of peasants into backbreaking corvée labor under the scorching sun. Hundreds are dying daily of exhaustion and disease in the mud of the new canals. Unable to endure the cruelty of our 'enlightened architecture,' the laborers have risen in a furious mutiny, using their digging tools to beat the overseers and sabotage the very floodgates they were forced to build."
+ flavor_mam_disaster.5.a:0 "Force the engineers to stop using such methods."
 
  # Decisions
 

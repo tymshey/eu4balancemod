@@ -101,13 +101,11 @@ diwan_al_khilafah_disaster = {
 	on_end = flavor_mam_disaster.2
 	
 	on_monthly = {
-		random_events = { 
-			36 = 0 # roughly one event per 9 months
-			1 = siamese_rev.3 # foreign missionaries attacked. Lose tolerance own (+1 openness score) or gain church influence (+1 reactionary score)
-			1 = siamese_rev.4 # reactionary nobles caught plotting. Fight some noble rebels (+1 openness score) or gain 2 reactionary score and noble influence
-			1 = siamese_rev.5 # european military activity. A European gets a subjugation CB against you (+1 openness score) or harm relations with Europeans and lose MIL power (+1 reactionary score)
-			1 = siamese_rev.6 # foreign embassy. Improve relations with Europeans and lose mercantilism (+2 openness score) or gain trade power in own provinces and harm relations with Europeans (+1 reactionary score)
-		}
+		random_events = {
+			1000 = 0
+			50 = flavor_mam_disaster.4
+			50 = flavor_mam_disaster.5
+        }
 	}
 }
 

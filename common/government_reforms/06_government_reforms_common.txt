@@ -4456,7 +4456,8 @@ mamluk_mansure_army_reform = {
 		
 	}
 	modifiers = {
-		discipline = 0.05
+		# discipline = 0.05
+		infantry_power = 0.1
 		allowed_mamluks_fraction = -1
 	}
 
