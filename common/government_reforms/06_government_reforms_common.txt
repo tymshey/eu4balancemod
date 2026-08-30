@@ -4032,7 +4032,10 @@ laesio_enormis_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "King of Kings"
-		is_or_was_tag = { tag = BYZ }
+		OR = {
+			is_or_was_tag = { tag = BYZ }
+			mission_completed = Enact_fiscal_reforms
+		}
 	}
 	modifiers = {
 		global_prosperity_growth = 0.5
@@ -4456,8 +4459,7 @@ mamluk_mansure_army_reform = {
 		
 	}
 	modifiers = {
-		# discipline = 0.05
-		infantry_power = 0.1
+		discipline = 0.05
 		allowed_mamluks_fraction = -1
 	}
 
