@@ -283,8 +283,8 @@ t_EGY_ideas = {
 		production_efficiency = 0.10
 	}
 	westernize_the_military = {
-		# max_general_fire = 1
-		fire_damage = 0.1
+		max_general_fire = 1
+		# fire_damage = 0.1
 	}
 	mediterranean_shipwrights = {
 		ship_durability = 0.05
