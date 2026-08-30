@@ -4657,21 +4657,43 @@ mam_export_grain = {
 	is_allowed = {
 		if = {
 			limit = {
-				NOT = {
-					OR = {
-						alliance_with = FROM 
-						FROM = { is_subject_of = ROOT }
-					}
-				}
+				FROM = { trade_embargoing = ROOT }
 			}
 			custom_trigger_tooltip = {
-				tooltip = REQUIRES_ALLIANCE_OR_SUBJECT_TT
-				OR = {
-					alliance_with = FROM 
-					FROM = { is_subject_of = ROOT }
+				tooltip = mam_export_grain_cannot_have_embargo_tt
+				NOT = {
+					FROM = { trade_embargoing = ROOT }
 				}
 			}
 		}
+		if = {
+			limit = {
+				ROOT = { trade_embargoing = FROM }
+			}
+			custom_trigger_tooltip = {
+				tooltip = mam_export_grain_cannot_embargo_target_tt
+				NOT = {
+					ROOT = { trade_embargoing = FROM }
+				}
+			}
+		}
+		#if = {
+		#	limit = {
+		#		NOT = {
+		#			OR = {
+		#				alliance_with = FROM 
+		#				FROM = { is_subject_of = ROOT }
+		#			}
+		#		}
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = REQUIRES_ALLIANCE_OR_SUBJECT_TT
+		#		OR = {
+		#			alliance_with = FROM 
+		#			FROM = { is_subject_of = ROOT }
+		#		}
+		#	}
+		#}
 		if = {
 			limit = {
 				FROM = { has_ruler_flag = trading_grain_exports_flag }
@@ -4752,9 +4774,9 @@ mam_export_grain = {
 	on_accept = {
 		FROM = {
 			set_ruler_flag = trading_grain_exports_flag
-			add_ruler_modifier = {
+			add_country_modifier = {
 				name = grain_trade_imports_modifier
-				duration = -1
+				duration = 3650
 			}
 			add_opinion = {
 				who = ROOT

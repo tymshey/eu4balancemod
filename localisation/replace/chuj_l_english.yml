@@ -5,3 +5,18 @@
  RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Elite Guards"
  MODIFIER_ALLOWED_RAJPUT_FRACTION:1 "Elite Guard Force Limit Fraction"
  MODIFIER_AMOUNT_OF_RAJPUT:0 "Elite Guard Force Limit"
+
+ #Diplomatic Actions for the Mamluks
+ mam_export_grain_title:0 "Export Grain"
+ mam_export_grain_desc:2 "Do you wish to export grain to §Y[From.GetName]§!? This will cost us 50 £adm£ and we will gain §G+2§! Mercantilism. \n\n[From.GetName] gains '§YGrain Trade Imports§!' for a duration of §Y10§! years, giving the following effects:\nSupply Limit Modifier: §G+10%§!\nDevelopment Cost: §G-5%§!\nNational Unrest: §G-1§!"
+ REQUIRES_ALLIANCE_OR_SUBJECT_TT:1 "§R[From.GetName] must either be an ally or a subject§!"
+ is_already_trading_grain_tt:0 "We are already trading grain with [From.GetName]"
+ must_be_within_distance_tt:0 "[From.GetName]'s markets are too far from our provinces"
+ mam_no_more_than_4_trades_tt:0 "We can only maintain 4 Grain export contracts at a time"
+ mam_no_more_than_6_trades_tt:0 "We can only maintain 6 Grain export contracts at a time"
+ grain_trade_imports_modifier:0 "Grain Trade Imports"
+ desc_grain_trade_imports_modifier:0 "Grain trade imports from Egypt support our logistics and assist in increasing our people's prosperity."
+ engaged_in_grain_trade_modifier:0 "Grain Imports from Egypt"
+ mam_export_grain_tooltip:0 "We will export grain to them, benefiting both our nations"
+ mam_export_grain_cannot_have_embargo_tt:0 "We cannot be embargoed by §Y[From.GetName]§!"
+ mam_export_grain_cannot_embargo_target_tt:0 "We cannot embargo §Y[From.GetName]§!"
