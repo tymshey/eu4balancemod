@@ -1813,7 +1813,7 @@ country_event = {
 		event_target:t_mamluk_rebel_prov = {
 			spawn_rebels = {
 				type = anti_tax_rebels
-				size = 20
+				size = 16
 			}
 		}
 	}
@@ -1843,7 +1843,7 @@ country_event = {
 		event_target:t_mamluk_rebel_prov = {
 			spawn_rebels = {
 				type = anti_tax_rebels
-				size = 10
+				size = 8
 			}
 		}
 	}

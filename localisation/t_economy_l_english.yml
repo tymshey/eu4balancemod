@@ -32,6 +32,15 @@
  t_peru_buff:0 "Colony in Peru"
  t_la_plata_buff:0 "Colony in La Plata"
  t_australia_buff:0 "Colony in Australia"
+ t_westafrica_buff:0 "Colony in West Africa"
+ t_cape_buff:0 "Colony in Cape"
+ t_congo_buff:0 "Colony in Congo"
+ t_rhodesia_buff:0 "Colony in Rhodesia"
+
+ m_giga_small_nation_buff:0 "Very Small Nation Buff"
+ m_colonial_nation_debuffs:0 "Colonial Nation Debuff"
+ tech_17_policy:0 "Additional Policy Slot"
+ tech_21_policy:0 "Additional Policy Slot"
 
  # Modifiers
  internal_development:0 "Internal Development"
