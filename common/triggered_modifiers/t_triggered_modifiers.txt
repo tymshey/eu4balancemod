@@ -39,7 +39,45 @@ t_logistic_overextension_1 = {
 	assault_fort_ability = -0.1
 }
 
+t_logistic_overextension_2 = {
+	potential = {
+		ai = no
+	}
 
+	trigger = {
+		army_size_percentage = 1.5
+		OR = {
+			total_development = 1000
+			is_great_power = yes
+		}
+		is_year = 1490
+	}
+
+	reinforce_cost_modifier = 0.25
+	movement_speed = -0.15
+	war_exhaustion = 0.1
+	assault_fort_ability = -0.2
+}
+
+t_logistic_overextension_3 = {
+	potential = {
+		ai = no
+	}
+
+	trigger = {
+		army_size_percentage = 1.75
+		OR = {
+			total_development = 1000
+			is_great_power = yes
+		}
+		is_year = 1490
+	}
+
+	reinforce_cost_modifier = 0.3
+	movement_speed = -0.15
+	war_exhaustion = 0.25
+	assault_fort_ability = -0.3
+}
 
 # rule breaks
 
@@ -47,35 +85,35 @@ t_above_2_player_alliances = {
 	potential = {
 		ai = no
 	}
-	
-trigger = {
-calc_true_if = {
-    amount = 3
-    all_country = {
-       ai = no
-        OR = {
-			OR = {
-			alliance_with = ROOT
-			is_subject_of  = ROOT
-			}
-            
-            AND = {
+	trigger = {
+		always = no # TEMPORARY, REMOVE AFTER ROLEPLAY CAMPAIGN !
+		calc_true_if = {
+			amount = 3
+			all_country = {
+				ai = no
 				OR = {
-				 is_subject_of_type = vassal
-				  is_subject_of_type = march
-				}
-                overlord = {
-					ai = no
 					OR = {
-					is_subject_of = ROOT
-					 alliance_with = ROOT
+						alliance_with = ROOT
+						is_subject_of  = ROOT
+					}
+					
+					AND = {
+						OR = {
+							is_subject_of_type = vassal
+							is_subject_of_type = march
+						}
+						overlord = {
+							ai = no
+							OR = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
 						}
 					}
 				}
 			}
 		}
 	}
-}
 	discipline = -0.1
 	advisor_cost = 10
 	global_unrest = 5

@@ -258,7 +258,7 @@ t_PER_ideas = {
 t_EGY_ideas = {
 	start = {
 		infantry_power = 0.1
-		administrative_efficiency = 0.1
+		administrative_efficiency = 0.05
 	}
 
 	bonus = {
