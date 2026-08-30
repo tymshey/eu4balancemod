@@ -26,6 +26,7 @@ monarchy = {
 				austrian_dual_monarchy
 				principality
 				tsardom
+				Illyrian_Kingdom
 				mamluk_government
 				feudal_theocracy
 				celestial_empire

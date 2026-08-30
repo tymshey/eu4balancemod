@@ -1216,7 +1216,35 @@ margraviate_reform = {
 		factor = 1
 	}
 }
-
+Illyrian_Kingdom = {
+	icon = "king"
+	allow_normal_conversion = yes
+	potential = {
+		tag = ILR
+	}
+	trigger = {
+	}
+	conditional = {
+		allow = { 
+			has_dlc = "Winds of Change" 
+			has_dlc = "Golden Century"
+		}
+		custom_attributes = {
+			order_of_the_dragon_unlocked = yes
+		}
+	}
+	government_abilities = {
+			russian_mechanic
+		}
+	modifiers = {
+		establish_order_cost = -0.25
+		yearly_patriarch_authority = 0.01
+		max_absolutism = 20
+	}
+	ai = {
+		factor = 1
+	}
+}
 serbian_despotate_reform = {
 	icon = "king"
 	allow_normal_conversion = yes

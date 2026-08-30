@@ -112,7 +112,7 @@ emp_ser_economy_internal = {
 	}
 	Rising_Power = {
 		icon = encroach_on_the_germans
-		position = 3
+		position = 5
 		trigger = {tag = ILR}
 		
 		effect = {
@@ -121,6 +121,34 @@ emp_ser_economy_internal = {
 			name = Rising_Power
 			duration = -1
 			}
+		}
+	}
+	Dev_Alb_mission = {
+		icon = encroach_on_the_germans
+		required_missions = { Rising_Power }
+		position = 6
+		trigger = {
+		4780 = {
+				type = all 
+				NOT = { unrest = 1 } 
+				num_of_times_improved = 4
+				has_building = workshop
+				NOT = { local_autonomy_above_min = 5 }
+			} 
+		albania_area = {
+				type = all 
+				NOT = { unrest = 1 } 
+				num_of_times_improved = 4
+				has_building = workshop
+				NOT = { local_autonomy_above_min = 5 }
+			}
+		}
+		effect = {
+			4780 = {change_trade_goods = cloth}
+			4175 = {change_trade_goods = cloth} 
+			4750 = {change_trade_goods = cloth} 
+			143 = {change_trade_goods = cloth}
+			
 		}
 	}
 }
@@ -325,6 +353,45 @@ emp_ser_danube = {
 			}
 		}
 	}
+	Port_of_ragusa = {
+		icon = encroach_on_the_germans
+		required_missions = { Rising_Power }
+		position = 6
+		trigger = {
+			137 = {
+					has_building = workshop
+					has_building = marketplace
+					num_of_times_expanded_infrastructure = 1
+				}
+			137 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+					}
+				}
+		}
+		effect = {
+			137 = {
+			add_province_modifier = {
+				name = Port_of_ragusa
+				duration = -1
+				}
+			}
+		}
+	}
+	Enact_fiscal_reforms = {
+		icon = encroach_on_the_germans
+		required_missions = { Port_of_ragusa }
+		position = 7
+		trigger = {
+			monthly_income = 100
+			NOT = {	inflation = 1}
+			4239 = {global_trade = 100}
+		}
+		effect = {
+			add_years_of_income = 2
+		}
+	}
 }
 
 emp_ser_west_balkan_branch = {
@@ -450,6 +517,77 @@ emp_ser_west_balkan_branch = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+		}
+	}
+	The_four_cities = {
+		icon = encroach_on_the_germans
+		required_missions = { Rising_Power }
+		position = 6
+		trigger = {
+			131 = {
+				AND = {
+				num_of_times_improved_by_owner = 5
+				development = 30
+				num_of_times_expanded_infrastructure = 1
+				has_building = university
+				}
+				
+			}
+			4239 = {
+				AND = {
+				num_of_times_improved_by_owner = 5
+				development = 30
+				num_of_times_expanded_infrastructure = 1
+				has_building = university
+				}
+			}
+			1765 = {
+				AND = {
+				num_of_times_improved_by_owner = 5
+				development = 30
+				num_of_times_expanded_infrastructure = 1
+				has_building = university
+				}
+			}
+			146 = {
+				AND = {
+				num_of_times_improved_by_owner = 5
+				development = 30
+				num_of_times_expanded_infrastructure = 1
+				has_building = university
+				}
+			}
+		}
+		effect = {
+		change_government_reform_progress = 200
+		146 = {
+			add_building = town_hall
+			add_province_modifier = {
+			name = Center_of_science
+			duration = -1
+				}
+			}
+		4239 = {
+			add_building = town_hall
+			add_province_modifier = {
+			name = Center_of_science
+			duration = -1
+				}
+			}
+		1765 = {
+			add_building = town_hall
+			add_province_modifier = {
+			name = Center_of_science
+			duration = -1
+				}
+			}
+		131 = {
+			add_building = town_hall
+			add_province_modifier = {
+			name = Center_of_science
+			duration = -1
+				}
 			}
 		}
 	}
@@ -592,6 +730,32 @@ emp_ser_east_branch = {
 		add_country_modifier = {
 		name = Influx_of_greek
 		duration = 5475
+			}
+		}
+	}
+	Expand_fortifications = {
+		icon = encroach_on_the_germans
+		required_missions = { Rising_Power }
+		position = 6
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				AND = {
+					has_building = ramparts
+					fort_level = 1
+				}
+			}
+		}
+		effect = {
+		every_owned_province = {
+		limit = {
+			has_building = ramparts
+			fort_level = 1
+			}
+		add_province_modifier = {
+		name = Expand_fortifications
+		duration = -1
+		}
 			}
 		}
 	}
