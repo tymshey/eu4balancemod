@@ -1510,11 +1510,6 @@ ITA_non_conquest_1 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			italy_region = {
-				type = all
-				owned_by = ROOT
-			}
-			
 			development_in_provinces = {
 				region = italy_region
 				value = 1000
