@@ -4892,6 +4892,10 @@ estate_nobles_hungarian_nobility_privileges = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		num_of_owned_provinces_with = {
 			value = 5

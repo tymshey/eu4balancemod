@@ -786,6 +786,10 @@ nov_rus_conquer_west = {
 		}
 		effect = {
 			add_country_modifier = {
+				name = d_nov_rus_development_modifier
+				duration = 9125
+			}
+			add_country_modifier = {
 				name = "baltic_ambition_new"
 				duration = 9125
 			}
@@ -870,6 +874,24 @@ nov_rus_conquer_west = {
 				}
 				add_russian_claim = yes
 			}
+			if = {
+				limit = {
+					SWE = { 
+						NOT = { 
+							OR = {
+								alliance_with = ROOT 
+								is_subject_of = ROOT
+							}
+						}
+						valid_for_personal_unions_trigger = yes 
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = SWE
+				}
+			}
 		}
 
 		ai_weight = {
@@ -929,7 +951,7 @@ nov_rus_conquer_west = {
 		provinces_to_highlight = {
 			province_id = 45
 			OR = {
-				NOT = { owned_by = ROOT }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = {
 					trade_share = {
 						country = ROOT
@@ -940,7 +962,7 @@ nov_rus_conquer_west = {
 		}
 		trigger = {
 			45 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 				trade_share = {
 					country = ROOT
 					share = 30
@@ -994,7 +1016,7 @@ nov_rus_conquer_west = {
 				european_trade_node_scope = {
 					trigger = "trade_share = { country = ROOT share = 40 }"
 				}
-				amount = 5
+				amount = 3
 			}
 		}
 		effect = {
@@ -1363,68 +1385,141 @@ nov_rus_eastern_europe = {
 		required_missions = { nov_rus_involve_in_asian_trade }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				province_id = 524
-				province_id = 1343
-				province_id = 677
-				province_id = 700
-				province_id = 4233
-				province_id = 730
-			}
-			NOT = {
-				trade_share = {
-					country = ROOT
-					share = 25
-				}
-			}
+
 		}
 		trigger = {
 			OR = {
 				AND = {
-					524 = {
-						trade_share = {
-							country = ROOT
-							share = 25
+					OR = {
+						1816 = {
+							owner = { 
+								has_opinion = {
+									who = ROOT 
+									value = 170 
+								}
+								if = {
+									limit = { has_dlc = "Leviathan" }
+									trust = {
+										who = ROOT 
+										value = 75 
+									}
+								}
+							}
 						}
-					}
-					1343 = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
-					}
-					677 = {
-						trade_share = {
-							country = ROOT
-							share = 25
+						AND = {
+							is_subject_of_type = tributary_state
+							1816 = {
+								owner = { 
+									has_opinion = {
+										who = ROOT 
+										value = 100 
+									}
+								}
+							}
 						}
 					}
 				}
 				AND = {
-					700 = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
+					has_won_war_against = {
+						who = event_target:EmperorOfChina
+						max_years_since = 20
 					}
-					4233 = {
-						trade_share = {
-							country = ROOT
-							share = 25
-						}
-					}
-					730 = {
-						trade_share = {
-							country = ROOT
-							share = 25
+					any_country = { 
+						is_emperor_of_china = yes
+						OR = {
+							has_opinion_modifier = {
+								who = ROOT  
+								modifier = insulted
+							}
+							has_opinion_modifier = {
+								who = ROOT  
+								modifier = scornfully_insulted
+							}
 						}
 					}
 				}
 			}
 		}
 		effect = {
-			add_mercantilism = 10
-			add_treasury = 3000
+			custom_tooltip = t_jap_delegation_relations_tt
+			tooltip = {
+				every_country = {
+					limit = { is_emperor_of_china = yes } 
+					add_mandate = 5
+				}
+				
+				add_country_modifier = {
+					name = jap_wealth_of_china_modifier 
+					duration = 7300
+				}
+			}
+			
+			custom_tooltip = t_jap_delegation_insult_tt
+			custom_tooltip = jap_conquest_of_china_cb_tt
+			tooltip = {
+				add_prestige_or_monarch_power = { amount = 35 }
+			
+				add_country_modifier = {
+					name = jap_wealth_of_china_modifier 
+					duration = 7300
+				}
+			}
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							OR = {
+								1816 = {
+									owner = { 
+										has_opinion = {
+											who = ROOT 
+											value = 170 
+										}
+										if = {
+											limit = { has_dlc = "Leviathan" }
+											trust = {
+												who = ROOT 
+												value = 75 
+											}
+										}
+									}
+								}
+								AND = {
+									is_subject_of_type = tributary_state
+									1816 = {
+										owner = { 
+											has_opinion = {
+												who = ROOT 
+												value = 100 
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+
+					every_country = {
+						limit = { is_emperor_of_china = yes } 
+						add_mandate = 5
+					}
+					
+					add_country_modifier = {
+						name = jap_wealth_of_china_modifier 
+						duration = 7300
+					}
+				}
+				else = {
+					add_prestige_or_monarch_power = { amount = 35 }
+					set_country_flag = access_conquest_of_china_cb_flag 
+				
+					add_country_modifier = {
+						name = jap_wealth_of_china_modifier 
+						duration = 7300
+					}
+				}
+			}
 		}
 
 		ai_weight = {
@@ -1437,123 +1532,36 @@ nov_rus_eastern_europe = {
 		required_missions = { nov_rus_dominate_asian_market }
 		position = 8
 		provinces_to_highlight = {
-			OR = {
-				province_id = 454
-				province_id = 469
-				province_id = 1082
-				province_id = 33
-				province_id = 1064
-				province_id = 707
-				province_id = 507
-				province_id = 4341
-			}
-			OR = {
-				NOT = {
-					trade_share = {
-						country = ROOT
-						share = 20
-					}
-				}
-				NOT = {
-					is_strongest_trade_power = ROOT
-				}
-			}
+			region = south_china_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
-			454 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = south_china_region 
+				value = 25 
 			}
-			469 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			1082 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			33 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			1064 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			707 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			507 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			4341 = {
-				trade_share = {
-					country = ROOT
-					share = 20
-				}
-				is_strongest_trade_power = ROOT
-			}
-			custom_trigger_tooltip = {
-				tooltip = nov_rus_compete_in_the_channel_at
-				OR = {
-					trading_bonus = {
-						trade_goods = chinaware
-						value = yes
-					}
-					trading_bonus = {
-						trade_goods = cloth
-						value = yes
-					}
-					trading_bonus = {
-						trade_goods = paper
-						value = yes
-					}
-					trading_bonus = {
-						trade_goods = silk
-						value = yes
-					}
-					trading_bonus = {
-						trade_goods = tea
-						value = yes
-					}
-					trading_bonus = {
-						trade_goods = dyes
-						value = yes
-					}
-					trading_bonus = {
-						trade_goods = spices
-						value = yes
-					}
-				}
-			}
+			2174 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_permanent_power_projection = {
 				type = 25_permanent_power_projection
 				amount = 25
+			}
+			add_country_modifier = {
+				name = jap_wealth_of_china_modifier 
+				duration = -1 
+			}
+			
+			2174 = {
+				add_province_modifier = {	
+					name = jap_expanded_mining_operations_modifier
+					duration = 9125 
+				}
+			}
+			
+			if = {
+				limit = { is_emperor_of_china = yes } 
+				add_mandate = 20 
 			}
 		}
 
@@ -2777,7 +2785,7 @@ nov_rus_russian_navy = {
 		effect = {
 			add_country_modifier = {
 				name = nov_rus_great_novgorodian_navy
-				duration = 36500
+				duration = -1
 			}
 		}
 

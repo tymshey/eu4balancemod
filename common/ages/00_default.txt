@@ -1036,6 +1036,7 @@ age_of_revolutions = {
 					tag = HAB
 					tag = HLR
 					tag = AUH
+					tag = AUE
 				}
 			}
 			modifier = {

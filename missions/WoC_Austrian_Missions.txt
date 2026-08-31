@@ -14,6 +14,10 @@ WoC_austria_1 = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		NOT = { has_country_flag = hab_hre_branch }
 		NOT = { has_country_flag = hab_germany_branch }
@@ -63,6 +67,10 @@ WoC_austria_1_holy_roman_empire = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 		has_country_flag = hab_hre_branch
@@ -331,6 +339,10 @@ WoC_austria_1_germany = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		has_country_flag = hab_germany_branch
 	} 
@@ -464,6 +476,10 @@ WoC_austria_1_1 = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 	 } 
@@ -829,6 +845,10 @@ WoC_austria_2 = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 	} 
 
@@ -972,6 +992,10 @@ WoC_austria_2_branching = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		NOT = { has_country_flag = hab_hre_branch }
 		NOT = { has_country_flag = hab_germany_branch }
@@ -1023,6 +1047,10 @@ WoC_austria_2_holy_roman_empire = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 		has_country_flag = hab_hre_branch
@@ -1319,6 +1347,10 @@ WoC_austria_2_germany = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		has_country_flag = hab_germany_branch
 	} 
@@ -1552,6 +1584,10 @@ WoC_austria_2_1 = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 	} 
@@ -2141,6 +2177,10 @@ WoC_austria_3 = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		NOT = { has_country_flag = hab_hre_branch }
 		NOT = { has_country_flag = hab_germany_branch }
@@ -2188,6 +2228,10 @@ WoC_austria_3_holy_roman_empire = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 		has_country_flag = hab_hre_branch
@@ -2332,6 +2376,10 @@ WoC_austria_3_germany = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 		has_country_flag = hab_germany_branch
 	} 
@@ -2453,6 +2501,10 @@ WoC_austria_3_1 = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 	} 
@@ -2662,6 +2714,7 @@ WoC_austria_3_1 = {
 			}
 		}
 		trigger = {
+			always = no
 			adm_tech = 10
 			num_of_owned_provinces_with = {
 				value = 30
@@ -2815,6 +2868,10 @@ WoC_austria_4 = {
 			AND = {
 				was_tag = HAB
 				tag = AUH
+			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
 			}
 		}
 	} 
@@ -3616,6 +3673,10 @@ WoC_austria_5 = {
 				was_tag = HAB
 				tag = AUH
 			}
+			AND = {
+				was_tag = HAB
+				tag = AUE
+			}
 		}
 	} 
 
@@ -4092,6 +4153,10 @@ WoC_austria_5 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			OR = {
+				tag = AUE
+				tag = AUH
+			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
 				OR = {
@@ -4105,8 +4170,7 @@ WoC_austria_5 = {
 			country_event_with_option_insight = {
 				id = flavor_hab.30
 				option_1 = "
-					custom_tooltip = HAB_LOCK_AUSTRIA_HUNGARY
-					override_country_name = AUSTRIAN_EMPIRE
+					custom_tooltip = d_is_aue
 					add_country_modifier = {
 						name = hab_austrian_empire
 						duration = -1
@@ -4114,6 +4178,7 @@ WoC_austria_5 = {
 				"
 
 				option_2 = "
+					custom_tooltip = d_is_auh
 					custom_tooltip = HAB_UNLOCK_NOBLES_PRIVILEGE_FOR_CULTURAL_MINORITIES
 				"
 			}

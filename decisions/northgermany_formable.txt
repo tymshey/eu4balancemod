@@ -28,8 +28,8 @@ country_decisions = {
 			}
 			NOT = {
 				OR = {
-					tag = NGC
-					tag = SGC
+					has_country_flag = is_NGC_flag
+					has_country_flag = is_SGC_flag
 					tag = GER
 				}
 			}
@@ -162,7 +162,12 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			change_tag = NGC
+			add_country_modifier = {
+				name = d_german_federation_modifier
+				duration = -1
+			}
+			override_country_name = NGC
+			set_country_flag = is_NGC_flag
 		}
 	}
 }

@@ -1450,7 +1450,7 @@ VEN_ideas = {
 		yearly_corruption = -0.05
 	}
 	conscription = {
-		global_sailors_modifier = 0.33
+		global_sailors_modifier = 0.23
 		allowed_marine_fraction = 0.1
 	}
 	defend_the_law = {
@@ -1522,7 +1522,6 @@ LNS_ideas = {
 	free = yes		#will be added at load.
 	
 	lns_renaissance_art = {
-		technology_cost = -0.1
 		development_cost = -0.1
 	}
 	stato_da_mar = {
@@ -1538,7 +1537,8 @@ LNS_ideas = {
 		#podmiana z 50 naval fl
 	}
 	reform_the_uscocchi = {
-		global_sailors_modifier = 0.33
+		global_sailors_modifier = 0.23
+		allowed_marine_fraction = 0.1
 		global_trade_goods_size_modifier = 0.1
 	}
 	maggior_consiglio = {
@@ -1961,7 +1961,7 @@ HAB_ideas = {
 		diplomatic_upkeep = 1
 	}
 	hofkriegsrat = {
-		reinforce_speed = 0.3
+		reinforce_speed = 0.15
 		discipline = 0.05
 	}
 }
@@ -18393,45 +18393,6 @@ UCN_ideas = {
 	}
 	city_upon_a_hill = {
 		
-	}
-}
-
-AUH_ideas = {
-	start = {
-		land_morale = 0.1
-		diplomatic_reputation = 2
-	}
-	
-	bonus = {
-		development_cost = -0.1
-	}
-	
-	trigger = {
-		tag = AUH
-	}
-	free = yes		
-	
-	auh_first = {
-		discipline = 0.05
-	}
-	auh_second = {
-		global_manpower_modifier = 0.22
-	}
-	auh_third = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	auh_fourth = {
-		global_unrest = -1
-	}
-	auh_fifth = {
-		state_governing_cost = -0.2
-	}
-	auh_sixth = {
-		global_prov_trade_power_modifier = 0.25
-	}
-	auh_seventh = {
-		inflation_action_cost = -0.3
-		interest = -0.5
 	}
 }
 

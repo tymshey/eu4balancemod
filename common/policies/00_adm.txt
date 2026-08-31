@@ -2337,7 +2337,6 @@ doctrine_of_military_innovation = {
 	}
 	
 	fire_damage = 0.1
-	leader_land_fire = 1
 
 	ai_will_do = {
 		factor = 1
@@ -2418,7 +2417,8 @@ elite_command_patronage = {
 		full_idea_group = court_ideas
 	}
 	
-	discipline = 0.05
+	yearly_absolutism = 1
+	max_absolutism_effect = 0.2
 
 	ai_will_do = {
 		factor = 1

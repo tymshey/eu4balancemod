@@ -1,43 +1,34 @@
 country_decisions = {
 
-	form_austria_hungary = {
+	form_austrian_empire = {
 		major = yes
 		potential = {
 			OR = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_austria_hungary_flag }
 			NOT = {
 				has_country_flag = hab_blocked_austria_hungary
 			}
 			NOT = { exists = AUH }
+			NOT = { exists = AUE }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
-			NOT = { exists = AUE }
-			OR = {
-				tag = HUN
-				tag = HAB
-			}
-			OR = {
-				primary_culture = hungarian
-				primary_culture = austrian
-			}
+			tag = HAB
+			primary_culture = austrian
 			NOT = { has_country_flag = badboy_not_allowed_flag }
 		}
 		provinces_to_highlight = {
 			OR = {
+				province_id = 2967
 				province_id = 134
-				province_id = 153
-				province_id = 1772
-				province_id = 1953
-				province_id = 4128
-				province_id = 131
-				province_id = 1863
-				province_id = 133
-				province_id = 129
-				province_id = 1768
+				province_id = 73
+				province_id = 110
+				province_id = 266
+				province_id = 264
+				province_id = 130
+				province_id = 4751
 				
 			}
 			OR = {
@@ -49,26 +40,6 @@ country_decisions = {
 			NOT = {
 				has_disaster = german_revolt
 				has_disaster = hungarian_revolt
-			}
-			if = {
-				limit = {
-					tag = HUN
-					exists = HAB
-				}
-				HAB = {
-					NOT = { num_of_cities = 35 }
-					junior_union_with = ROOT
-				}
-			}
-			if = {
-				limit = {
-					tag = HAB
-					exists = HUN
-				}
-				HUN = {
-					NOT = { num_of_cities = 40 }
-					junior_union_with = ROOT
-				}
 			}
 			if = {
 				limit = {
@@ -88,34 +59,28 @@ country_decisions = {
 			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			2967 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			134 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			153 = {
+			73 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1772 = {
+			110 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1953 = {
+			266 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			4128 = {
+			264 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			131 = {
+			130 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1863 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			133 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			129 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1768 = {
+			4751 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		} 
@@ -138,8 +103,8 @@ country_decisions = {
 				}
 			}
 			add_prestige = 25
-			change_tag = AUH
-			add_government_reform = austrian_dual_monarchy
+			change_tag = AUE
+			add_government_reform = austrian_absolute_monarchy
 			if = {
 				limit = {
 					NOT = { government_rank = 3 }
@@ -148,50 +113,6 @@ country_decisions = {
 				set_government_rank = 3
 			}
 			on_change_tag_effect = yes
-			if = {
-				limit = {
-					primary_culture = hungarian
-					NOT = { accepted_culture = austrian }
-				}
-				add_accepted_culture_or_dip_power = {
-					culture = austrian
-					dip_reward = yes
-				}
-			}
-			if = {
-				limit = {
-					primary_culture = austrian
-					NOT = { accepted_culture = hungarian }
-				}
-				add_accepted_culture_or_dip_power = {
-					culture = hungarian
-					dip_reward = yes
-				}
-			}
-			if = {
-				limit = {
-					HUN = { junior_union_with = ROOT }
-				}
-				inherit = HUN
-			}
-			if = {
-				limit = {
-					HAB = { junior_union_with = ROOT }
-				}
-				inherit = HAB
-			}
-			if = {
-				limit = {
-					was_tag = HUN
-				}
-				override_country_name = HUNGARY_AUSTRIA
-				set_country_flag = is_HUNGARY_AUSTRIA_flag
-				change_country_color = { 
-					color =  { 239 211 175 }
-				}
-				set_country_flag = has_overriden_name_flag
-				set_country_flag = has_overriden_color_flag
-			}
 			set_country_flag = formed_austria_hungary_flag
 			if = {
 				limit = { has_custom_ideas = no }
@@ -200,20 +121,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			hidden_effect = {
-				every_province = {
-					limit = {
-						is_core = HAB
-					}
-					remove_core = HAB
-				}
-				every_province = {
-					limit = {
-						is_core = HUN
-					}
-					remove_core = HUN
-				}
 			}
 		}
 		ai_will_do = {

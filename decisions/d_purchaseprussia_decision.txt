@@ -1,6 +1,7 @@
 country_decisions = {
 
 	d_purchaseprussia_decision = {
+		color = { 50 150 50 }
 		potential = {
 			tag = BRA
 			exists = PRU

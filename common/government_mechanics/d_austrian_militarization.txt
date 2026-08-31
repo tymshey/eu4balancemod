@@ -1,0 +1,154 @@
+d_austrian_militarization_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+		OR = {
+			tag = AUE
+			tag = GER
+			tag = HRE
+			has_reform = austrian_absolute_monarchy
+		}
+	}
+
+	powers = {
+		d_austrian_militarized_society = {
+			gui = prussian_militarization_gov_mech_3_power
+			show_before_interactions = yes
+			max = 100
+			base_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					discipline = 0.05
+					fire_damage_received = -0.05
+					shock_damage_received = -0.05
+					manpower_recovery_speed = 0.2
+					land_maintenance_modifier = -0.1
+					monthly_d_austrian_militarized_society = -0.3
+				}
+			}
+		}
+	}
+	
+	interactions = {
+		d_austrian_ability_1 = {
+			gui = prussian_militarization_gov_mech_3_interaction
+			icon = GFX_prussian_militarization_march_divided_fight_united
+			trigger = {
+				has_government_power = {
+					mechanic_type = d_austrian_militarization_mechanic
+					power_type = d_austrian_militarized_society
+					value = 20
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = d_austrian_militarization_mechanic
+					power_type = d_austrian_militarized_society
+					value = -20
+				}
+				add_country_modifier = {
+					name = pru_thunderous_advance_modifier
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_government_power = {
+						mechanic_type = d_austrian_militarization_mechanic
+						power_type = d_austrian_militarized_society
+						value = 90
+					}
+				}
+				modifier = {
+					factor = 0
+					not = { mil_power = 500 }
+				}
+			}
+		}
+		
+		d_austrian_ability_2 = {
+			gui = prussian_militarization_gov_mech_3_interaction
+			icon = GFX_prussian_militarization_rewrite_military_manual
+			trigger = {
+				has_government_power = {
+					mechanic_type = d_austrian_militarization_mechanic
+					power_type = d_austrian_militarized_society
+					value = 20
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = d_austrian_militarization_mechanic
+					power_type = d_austrian_militarized_society
+					value = -20
+				}
+				add_country_modifier = {
+					name = pru_rewrite_military_manual_modifier
+					duration = 1825
+				}
+			}
+			cooldown_years = 5
+			# ai_chance = {
+				# factor = 0
+				# modifier = {
+					# factor = 10
+					# not = {
+						# has_government_power = {
+							# mechanic_type = militarization_mechanic
+							# power_type = militarized_society
+							# value = 90
+						# }
+					# }
+					# mil_power = 500
+				# }
+			# }
+		}
+		
+		d_austrian_ability_3 = {
+			gui = prussian_militarization_gov_mech_3_interaction
+			icon = GFX_prussian_militarization_upgrade	
+			trigger = {
+				mil_power = 50
+				not = {
+					has_government_power = {
+						mechanic_type = d_austrian_militarization_mechanic
+						power_type = d_austrian_militarized_society
+						value = 100
+					}
+				}
+			}
+			effect = { 
+				add_government_power = {
+					mechanic_type = d_austrian_militarization_mechanic
+					power_type = d_austrian_militarized_society
+					value = 10
+				}
+				add_mil_power = -50
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 0
+					has_government_power = {
+						mechanic_type = d_austrian_militarization_mechanic
+						power_type = d_austrian_militarized_society
+						value = 90
+					}
+				}
+				modifier = {
+					factor = 0
+					not = { mil_power = 600 }
+				}
+				modifier = {
+					factor = 0
+					not = { mil = 4 }
+				}
+			}
+		}
+	}
+}

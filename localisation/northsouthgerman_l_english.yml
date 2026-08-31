@@ -23,6 +23,7 @@
  d_switzerland_modifier:0 "Unified by Switzerland"
  d_lubeck_modifier:0 "Unified by Hansa"
  d_ditmarchen_modifier:0 "Unified by Dithmarschen"
+ d_german_federation_modifier:0 "Expanded German Administration"
  
  #events
  d_fkn_prices.1.title:0 "Franconian Beer"
