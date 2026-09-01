@@ -58,12 +58,12 @@ AUE_ideas = {
 	}
 	free = yes		
 	
-	aue_received = {
-		fire_damage_received = -0.05
-		shock_damage_received = -0.05
-	}
 	aue_tradition = {
 		army_tradition_decay = -0.01
+	}
+	military_border = {
+		global_garrison_growth = 0.15
+		fort_maintenance_modifier = -0.10
 	}
 	fugger_banks = {
 		inflation_reduction = 0.05
