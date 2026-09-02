@@ -48,6 +48,7 @@ aristocracy_ideas = {
 	rightful_conquest = {
 		cavalry_fire = 0.2
 		special_unit_forcelimit = 0.10
+		special_unit_cost_modifier = -0.1
 	}
 	local_nobility = {
 		max_absolutism = 10
@@ -609,8 +610,8 @@ offensive_ideas = {
 	}
 	grand_army = {
 		land_forcelimit_modifier = 0.15
-		special_unit_forcelimit = 0.15
-		special_unit_cost_modifier = -0.2
+		special_unit_forcelimit = 0.1
+		special_unit_cost_modifier = -0.1
 	}
 	napoleonic_warfare = {
 		discipline = 0.05
@@ -1168,7 +1169,7 @@ maritime_ideas = {
 
 	bonus = {
 		sea_repair = yes
-		global_trade_power = 0.15
+		global_trade_power = 0.10
 	}
 
 	merchant_traditions = {
@@ -1176,7 +1177,7 @@ maritime_ideas = {
 		trade_range_modifier = 0.25
 	}
 	merchant_marine = {
-		allowed_marine_fraction = 0.33
+		allowed_marine_fraction = 0.20
 	}
 	sheltered_ports = {
 		global_ship_repair = 0.1
@@ -1184,7 +1185,7 @@ maritime_ideas = {
 		trade_efficiency = 0.1
 	}
 	grand_navy = {
-		naval_forcelimit_modifier = 0.25
+		naval_forcelimit_modifier = 0.20
 		ship_power_propagation = 0.2
 	}
 	ships_penny = {
@@ -1193,7 +1194,7 @@ maritime_ideas = {
 		max_flagships = 1
 	}
 	sea_hawks = {
-		trade_steering = 0.15
+		trade_steering = 0.10
 		merchants = 2
 	}
 	naval_fighting_instruction = {

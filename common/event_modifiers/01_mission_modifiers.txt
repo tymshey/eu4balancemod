@@ -12779,7 +12779,8 @@ ned_baltic_grain_supply = {
 }
 
 ned_connection_to_the_baltic = {
-	trade_efficiency = 0.1
+	trade_range_modifier = 0.1
+	merchants = 1
 }
 
 ned_found_dutch_states_army = {
