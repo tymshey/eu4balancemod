@@ -840,9 +840,11 @@ trade_ideas = {
   	}
   	free_trade = {
   		merchants = 1
+		trade_company_investment_cost = -0.1
   	}
 	merchant_adventures = {
 		trade_range_modifier = 0.25
+		center_of_trade_upgrade_cost = -0.1
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
@@ -850,12 +852,13 @@ trade_ideas = {
 	}
 	overseas_merchants = {
 		placed_merchant_power = 15
+		embargo_efficiency = 0.25
 	}
 	trade_manipulation = {
 		global_prov_trade_power_modifier = 0.25
 	}
 	fast_negotiations = {
-			great_project_upgrade_cost = -0.15
+		global_trade_goods_size_modifier = 0.075
 	}
 
 	ai_will_do = {
