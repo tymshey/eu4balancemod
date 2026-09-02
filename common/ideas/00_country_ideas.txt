@@ -854,7 +854,7 @@ NED_ideas = {
 		tolerance_heathen = 2
 	}
 	platoon_fire = {
-		fire_damage = 0.1
+		discipline = 0.05
 	}
 	army_sappers = {
 		artillery_fire = 1
@@ -1860,10 +1860,9 @@ PLC_ideas = {
 		drill_gain_modifier = 0.25
 		army_tradition = 1
 	}
-	PLC_winged_hussars = { 
+	winged_hussars = {
 		cavalry_power = 0.2
 		can_recruit_hussars = yes
-		special_unit_forcelimit = 0.3
 	}
 	plc_refine_our_golden_liberty = { #Same for all of them
 		country_admin_power = 1 
