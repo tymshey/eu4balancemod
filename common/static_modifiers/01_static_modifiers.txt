@@ -4,3 +4,12 @@ banner_regiment = {
 	regiment_manpower_usage = -0.33
 	reinforce_speed = -0.5
 }
+
+supply_depot_area = {
+	supply_limit_modifier = 0.75
+}
+
+scorched_earth = {
+	local_hostile_movement_speed = -0.33
+	local_monthly_devastation = 0.5
+}
