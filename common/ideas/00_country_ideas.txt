@@ -847,7 +847,7 @@ NED_ideas = {
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 1
-		allowed_marine_fraction = 0.33
+		allowed_marine_fraction = 0.2
 	}
 	embrace_humanism = {
 		tolerance_heretic = 2
