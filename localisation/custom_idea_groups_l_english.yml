@@ -1,0 +1,75 @@
+﻿l_english:
+
+ # GENERAL STAFF IDEAS
+
+ general_staff_ideas:0 "General Staff Ideas"
+
+ general_staff_idea:0 "General Staff"
+ general_staff_idea_desc:0 "The General Staff is a group of senior military officers who assist the head of state in planning and executing military operations. They provide strategic advice, coordinate logistics, and ensure effective communication between different branches of the armed forces."
+ centralized_command_idea:0 "Centralized Command"
+ centralized_command_idea_desc:0 "Centralized Command is a military doctrine that emphasizes the concentration of decision-making authority at the highest levels of command. This allows for more efficient coordination and execution of military operations, as well as faster response times to changing battlefield conditions."
+ lines_of_operation_idea:0 "Lines of Operation"
+ lines_of_operation_idea_desc:0 "Lines of Operation is a military strategy that focuses on the coordination and synchronization of different military units along specific lines of operation. This allows for more effective use of resources and better coordination between different branches of the armed forces."
+ fog_of_war_idea:0 "Fog of War"
+ fog_of_war_idea_desc:0 "The Fog of War is a concept that describes the uncertainty and confusion that can arise during military operations. It refers to the lack of information and clarity that commanders and soldiers may experience on the battlefield, which can lead to mistakes and misjudgments."
+ admiralty_board_idea:0 "Admiralty Board"
+ admiralty_board_idea_desc:0 "The Admiralty Board is a group of senior naval officers who assist the head of state in planning and executing naval operations. They provide strategic advice, coordinate logistics, and ensure effective communication between different branches of the navy."
+ coordinated_structure_idea:0 "Coordinated Structure"
+ coordinated_structure_idea_desc:0 "Coordinated Structure is a military organizational principle that emphasizes the integration and coordination of different branches of the armed forces. This allows for more effective communication, resource allocation, and overall military effectiveness."
+ the_war_office_idea:0 "The War Office"
+ the_war_office_idea_desc:0 "The War Office is a government department responsible for the administration and coordination of military affairs. It oversees the planning and execution of military operations, as well as the management of resources and personnel."
+
+ doctrine_of_military_innovation:0 "Doctrine of Military Innovation"
+ sacred_duty_doctrine:0 "Sacred Duty Doctrine"
+ war_economy_act:0 "War Economy Act"
+ centralized_war_administration:0 "Centralized War Administration"
+ elite_command_patronage:0 "Elite Command Patronage"
+ 
+ fortified_logistics_network:0 "Fortified Logistics Network"
+ covert_operations_doctrine:0 "Covert Operations Doctrine"
+ strategic_coordination_act:0 "Strategic Coordination Act"
+ expeditionary_command_doctrine:0 "Expeditionary Command Doctrine"
+
+ wartime_commercialization_act:0 "Wartime Commercialization Act"
+ amphibious_operations_doctrine:0 "Amphibious Operations Doctrine"
+ integrated_state_development:0 "Integrated State Development"
+ professional_officer_exchange:0 "Professional Officer Exchange"
+
+ # INDUSTRIALISATION IDEAS
+
+ industrialisation_ideas:0 "§TIndustrialisation Ideas§!"
+
+ industrial_enterprises_idea:0 "Industrial Enterprises"
+ industrial_enterprises_idea_desc:0 "Industrial Enterprises are large-scale manufacturing and production facilities that drive economic growth and technological advancement. They play a crucial role in the industrialization process by providing employment, fostering innovation, and contributing to the overall development of the nation."
+ factory_efficiency_idea:0 "Factory Efficiency"
+ factory_efficiency_idea_desc:0 "Factory Efficiency refers to the optimization of production processes within manufacturing facilities. It involves implementing best practices, streamlining workflows, and utilizing advanced technologies to maximize output while minimizing waste and costs."
+ industrial_investment_idea:0 "Industrial Investment"
+ industrial_investment_idea_desc:0 "Industrial Investment is the allocation of financial resources towards the development and expansion of industrial infrastructure. This includes funding for new factories, machinery, research and development, and workforce training to enhance productivity and competitiveness in the industrial sector."
+ urban_development_idea:0 "Urban Development"
+ urban_development_idea_desc:0 "Urban Development refers to the planned growth and modernization of cities and towns. It involves improving infrastructure, housing, and public services to create more livable and economically vibrant urban areas."
+ industrial_expansion_idea:0 "Industrial Expansion"
+ industrial_expansion_idea_desc:0 "Industrial Expansion is the process of increasing the scale and scope of industrial activities within a nation. This includes the establishment of new manufacturing facilities, the adoption of advanced technologies, and the exploration of new markets to drive economic growth and enhance national competitiveness."
+ age_of_invention_idea:0 "Age of Invention"
+ age_of_invention_idea_desc:0 "The Age of Invention is a period characterized by rapid technological advancements and groundbreaking discoveries that revolutionize industries and societies. It is marked by the development of new machinery, processes, and innovations that drive industrialization and economic progress."
+ mass_production_idea:0 "Mass Production"
+ mass_production_idea_desc:0 "Mass Production is a manufacturing process that involves the large-scale production of standardized goods using assembly line techniques. It allows for increased efficiency, reduced costs, and the ability to meet growing consumer demand."
+ 
+ manufactured_exports:0 "Manufactured Exports Act"
+ industrial_expansion_act:0 "Industrial Expansion Act"
+ court_patronage:0 "Court Patronage"
+ war_industry_act:0 "War Industry Act"
+ industrial_hubs_act:0 "The Industrial Hubs Act"
+
+ commercial_diplomacy_act:0 "Commercial Diplomacy Act"
+ commercial_lobbying:0 "Commercial Lobbying Act"
+ precision_act:0 "The Precision Act"
+ arms_industry_act:0 "The Arms Industry Act"
+
+ commercial_espionage:0 "Commercial Espionage Act"
+ industrial_shipyards_act:0 "Industrial Shipyards Act"
+ noble_burgeoisie:0 "Noble Bourgeoisie"
+ plutocratic_capital_act:0 "Plutocratic Capital Act"
+ divine_industrial_sanction:0 "Divine Industrial Sanction"
+ sedentary_settlement_act:0 "Sedentary Settlement Act"
+ military_industrial_cooperation_act:0 "Military-Industrial Cooperation Act"
+ universal_contracting_act:0 "Universal Contracting Act"

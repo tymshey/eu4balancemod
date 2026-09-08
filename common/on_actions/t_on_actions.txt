@@ -1,0 +1,11 @@
+on_monthly_pulse = {
+	if = {
+		limit = {
+			has_idea_group = industrialisation_ideas
+			NOT = {
+				has_institution = manufactories
+			}
+		}
+		remove_idea_group = industrialisation_ideas
+	}
+}

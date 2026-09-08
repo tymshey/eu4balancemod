@@ -42,6 +42,7 @@
  gbr_develop_isles_title:0 "Develop The Isles"
  gbr_develop_isles_desc:0 "As stewards of the British Isles, it is our duty to foster prosperity and wield influence across our homelands. By investing in key areas and implementing targeted reforms, we will solidify our dominance and secure a prosperous future for England."
  gbr_develop_isles_tt:0 "If we complete this mission by developing the isles while being @GBR Great Britain, we will recieve:\n"
+ t_gbr_develop_isles_tt:0 "'§YBritish Rule§!' modifier will be upgraded by\nLocal Development Cost: §G-5%§!"
  gbr_develop_isles_tt2:0 "\nIf we complete this mission by developing England and Wales while being @AVE Angevin Kingdom, we will recieve:\n"
  gbr_london_stock_exchange_title:0 "London Stock Exchange"
  gbr_london_stock_exchange_desc:0 "As the economic heart of our mighty nation, London has the potential to become a global financial powerhouse."

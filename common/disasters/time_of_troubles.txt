@@ -23,17 +23,17 @@ time_of_troubles = {
 		current_age = age_of_reformation
 		government = monarchy
 		has_any_disaster = no
-		OR = {
-			has_new_dynasty = yes
-			custom_trigger_tooltip = {
-				tooltip = less_than_9_total_stats
-				NOT = {
-					ruler_total_stats = {
-						amount = 9
-					}
-				}
-			}
-		}
+		#OR = {
+		#	has_new_dynasty = yes
+		#	custom_trigger_tooltip = {
+		#		tooltip = less_than_9_total_stats
+		#		NOT = {
+		#			ruler_total_stats = {
+		#				amount = 9
+		#			}
+		#		}
+		#	}
+		#}
 		NOT = { stability = 0 }
 	}
 	
@@ -47,6 +47,7 @@ time_of_troubles = {
 	
 	modifier = {
 		global_unrest = 10
+		global_trade_goods_size = -0.3
 		stability_cost_modifier = 0.20
 		monthly_russian_modernization = -2
 	}

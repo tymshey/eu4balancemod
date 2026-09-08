@@ -5214,10 +5214,10 @@ gbr_ave_row_5 = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				army_professionalism = 0.8
 			}
-			OR = {
-				quality_ideas = 7
-				offensive_ideas = 7
-			}
+			#OR = {
+			#	quality_ideas = 7
+			#	offensive_ideas = 7
+			#}
 		}	
 		effect = {
 			hidden_effect = {

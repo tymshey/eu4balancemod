@@ -10,6 +10,6 @@ supply_depot_area = {
 }
 
 scorched_earth = {
-	local_hostile_movement_speed = -0.33
+	local_hostile_movement_speed = -0.4
 	local_monthly_devastation = 0.5
 }

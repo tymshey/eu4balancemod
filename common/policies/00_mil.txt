@@ -1868,7 +1868,7 @@ wartime_commercialization_act = {
 		full_idea_group = trade_ideas
 	}
 	
-	war_taxes_cost_modifier = -1
+	land_maintenance_modifier = -0.15
 
 	effect = {}
 	removed_effect = {}
@@ -1935,6 +1935,169 @@ professional_officer_exchange = {
 	
 	drill_gain_modifier = 0.33
 	free_leader_pool = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+commercial_espionage = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = spy_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = spy_ideas
+	}
+	
+	infantry_power = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+industrial_shipyards_act = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = maritime_ideas
+	}
+	
+	global_ship_recruit_speed = -0.25
+	sailors_recovery_speed = 0.1
+	global_sailors_modifier = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+noble_burgeoisie = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	manpower_in_culture_group_provinces = 0.15
+	cavalry_cost = -0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+plutocratic_capital_act = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	
+	development_cost = -0.075
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+divine_industrial_sanction = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = theocracy_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = theocracy_gov_ideas
+	}
+	
+	manpower_in_true_faith_provinces = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+sedentary_settlement_act = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = horde_gov_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = horde_gov_ideas
+	}
+	
+	global_tax_modifier = 0.2
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+military_industrial_cooperation_act = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = general_staff_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = general_staff_ideas
+	}
+	
+	movement_speed = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+universal_contracting_act = {
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = mercenary_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = mercenary_ideas
+	}
+	
+	free_leader_pool = 2
 	
 	ai_will_do = {
 		factor = 1

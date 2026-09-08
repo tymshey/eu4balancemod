@@ -2108,3 +2108,85 @@ expeditionary_command_doctrine = {
 		factor = 1
 	}
 }
+
+commercial_diplomacy_act = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = diplomatic_ideas
+	}
+
+	spy_action_cost_modifier = -0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+commercial_lobbying = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = influence_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = influence_ideas
+	}
+
+	liberty_desire_from_subject_development = -0.25
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+precision_act = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = quality_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = quality_ideas
+	}
+
+	land_morale = 0.05
+	infantry_power = 0.05
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+arms_industry_act = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = industrialisation_ideas
+		has_idea_group = quantity_ideas
+	}
+	
+	allow = {
+		full_idea_group = industrialisation_ideas
+		full_idea_group = quantity_ideas
+	}
+
+	land_maintenance_modifier = -0.1
+	global_supply_limit_modifier = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
