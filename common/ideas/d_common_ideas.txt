@@ -21,7 +21,7 @@ FRE_ideas = {
 	}
 	FRE_morale = {
 		army_tradition = 0.5
-		land_morale = 0.15
+		land_morale = 0.2
 	}
 	FRE_reform = {
 		governing_capacity_modifier = 0.1
