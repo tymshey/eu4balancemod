@@ -24,7 +24,7 @@ d_austrian_militarization_mechanic = {
 					shock_damage_received = -0.05
 					manpower_recovery_speed = 0.2
 					land_maintenance_modifier = -0.1
-					monthly_d_austrian_militarized_society = -0.3
+					monthly_d_austrian_militarized_society = -0.35
 				}
 			}
 		}

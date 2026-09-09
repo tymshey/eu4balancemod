@@ -72,4 +72,16 @@ spriteTypes = {
 		name = "GFX_icon_eastern_school_jingxue"
 		texturefile = "gfx/interface/icon_eastern_school_jingxue.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_eastern_school_jingxue"
+		texturefile = "gfx/interface/icon_eastern_school_jingxue.dds"
+	}
+	spriteType = {
+		name = "GFX_ase_spend_additional_splendor_entry_7_button"
+		texturefile = "gfx/interface/ase_spend_additional_splendor_entry_7_button.dds"
+	}
+	spriteType = {
+		name = "GFX_ase_spend_additional_splendor_entry_8_button"
+		texturefile = "gfx/interface/ase_spend_additional_splendor_entry_8_button.dds"
+	}
 }

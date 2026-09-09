@@ -14,7 +14,7 @@ militarization_mechanic = {
 					discipline = 0.05
 					manpower_recovery_speed = 0.20
 					land_maintenance_modifier = -0.20
-					monthly_militarized_society = -0.5
+					monthly_militarized_society = -0.35
 				}
 			}
 			scaled_modifier = {

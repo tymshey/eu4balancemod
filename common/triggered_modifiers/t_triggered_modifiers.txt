@@ -86,7 +86,7 @@ t_above_2_player_alliances = {
 		ai = no
 	}
 	trigger = {
-		always = no # TEMPORARY, REMOVE AFTER ROLEPLAY CAMPAIGN !
+		# always = no # TEMPORARY, REMOVE AFTER ROLEPLAY CAMPAIGN !
 		calc_true_if = {
 			amount = 3
 			all_country = {
@@ -119,10 +119,12 @@ t_above_2_player_alliances = {
 	global_unrest = 5
 }
 
-# lategame expansion
+# expansion buffs/debuffs
+
 m_age_of_discovery_expansion = {
 	potential = {
 		ai = no
+		always = no
 	}
 
 	trigger = {
@@ -135,6 +137,7 @@ m_age_of_discovery_expansion = {
 m_age_of_reformation_expansion = {
 	potential = {
 		ai = no
+		always = no
 	}
 
 	trigger = {
@@ -144,6 +147,7 @@ m_age_of_reformation_expansion = {
 
 	province_warscore_cost = 0.15
 }
+
 t_age_of_absolutism_expansion = {
 	potential = {
 		ai = no

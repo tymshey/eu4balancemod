@@ -13127,9 +13127,6 @@ holy_city_kairouan = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
 	}
 
 	on_built = {
@@ -13139,15 +13136,9 @@ holy_city_kairouan = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
-		}
 	}
 
 	keep_trigger = {
@@ -13667,6 +13658,7 @@ kilwa_city = {
 		country_modifiers = {
 			prestige = 0.25
 			global_ship_trade_power = 0.1
+			monthly_militarized_society = 0.15
 		}
 		on_upgraded = {
 		}
@@ -13687,6 +13679,7 @@ kilwa_city = {
 			prestige = 0.5
 			global_ship_trade_power = 0.2
 			placed_merchant_power = 2
+			monthly_militarized_society = 0.2
 		}
 		on_upgraded = {
 		}
@@ -13707,6 +13700,7 @@ kilwa_city = {
 			prestige = 1
 			global_ship_trade_power = 0.3
 			placed_merchant_power = 4
+			monthly_militarized_society = 0.25
 		}
 		on_upgraded = {
 		}

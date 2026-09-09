@@ -1903,7 +1903,8 @@ industrialisation_ideas = {
 	}
 
 	urban_development_idea = {
-		development_cost_modifier = -0.05
+		development_cost_modifier = -0.075
+		state_governing_cost = 0.05
 	}
 
 	industrial_expansion_idea = {
