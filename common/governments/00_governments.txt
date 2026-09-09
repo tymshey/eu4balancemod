@@ -626,6 +626,7 @@ republic = {
 		prussian_republic
 		united_cantons_legacy
 		turkoman_ottoman_institutions
+		korean_peasant_republic
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -674,6 +675,7 @@ republic = {
 				egyptian_government_reform
 				city_alliance_reform
 				turkoman_ottoman_institutions
+				korean_peasant_republic
 			}
 		}
 		republican_virtues = {
@@ -1272,6 +1274,7 @@ theocracy = {
 				egyptian_government_reform
 				blood_theocracy_reform
 				turkoman_ottoman_institutions
+				korean_theocracy
 			}
 		}
 		internal_vs_external_mission = {
