@@ -2090,12 +2090,12 @@ expeditionary_command_doctrine = {
 	monarch_power = DIP
 	
 	potential = {
-		has_idea_group = general_staff
+		has_idea_group = general_staff_ideas
 		has_idea_group = exploration_ideas
 	}
 	
 	allow = {
-		full_idea_group = general_staff
+		full_idea_group = general_staff_ideas
 		full_idea_group = exploration_ideas
 	}
 	

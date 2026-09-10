@@ -21,7 +21,7 @@ time_of_troubles = {
 	
 	can_start = {
 		current_age = age_of_reformation
-		government = monarchy
+		#government = monarchy
 		has_any_disaster = no
 		#OR = {
 		#	has_new_dynasty = yes
