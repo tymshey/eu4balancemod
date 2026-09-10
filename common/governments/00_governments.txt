@@ -982,8 +982,6 @@ republic = {
 		}
 	}
 	exclusive_reforms = {
-		parliamentary_reform
-		merchants_reform
 		veche_republic
 		great_veche_republic
 		great_russian_republic_reform
