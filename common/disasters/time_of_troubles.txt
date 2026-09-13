@@ -41,13 +41,13 @@ time_of_troubles = {
 	can_stop = {
 		OR = {
 			has_any_disaster = yes
-			NOT = { government = monarchy }
+			# NOT = { government = monarchy }
 		}
 	}
 	
 	modifier = {
 		global_unrest = 10
-		global_trade_goods_size = -0.3
+		global_trade_goods_size_modifier = -0.3
 		stability_cost_modifier = 0.20
 		monthly_russian_modernization = -2
 	}

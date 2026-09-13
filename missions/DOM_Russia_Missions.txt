@@ -4841,7 +4841,10 @@ rus_russian_military = {
 			}
 		}
 		effect = {
-			change_technology_group = western
+			add_country_modifier = {
+				name = rus_reformed_military
+				duration = -1
+			}
 		}
 
 		ai_weight = {
