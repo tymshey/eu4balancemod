@@ -3919,15 +3919,16 @@ tur_dummy_missions_path = {
 						philosopher = 3
 						theologian = 3
 					}
-					calc_true_if = {
-						all_subject_country = {
-							OR = {
-								is_subject_of_type = eyalet
-								is_subject_of_type = core_eyalet
-							}
-							NOT = { religion_group = ROOT }
-						}
-						amount = 6
+					151 = {
+						development = 55
+					}
+					development_in_provinces = {
+						value = 500
+						region = anatolia_region
+					}
+					development_in_provinces = {
+						value = 300
+						region = balkan_region
 					}
 				}
 			}
@@ -4262,30 +4263,16 @@ tur_mysticism_path = {
 				philosopher = 3
 				theologian = 3
 			}
-			if = {
-				limit = { has_government_attribute = has_eyalets }
-				OR = {
-					calc_true_if = {
-						all_subject_country = {
-							is_eyalet_trigger = yes
-							NOT = { religion_group = ROOT }
-						}
-						amount = 6
-					}
-					AND = {
-						151 = {
-							development = 55
-						}
-						development_in_provinces = {
-							value = 400
-							region = anatolia_region
-						}
-						development_in_provinces = {
-							value = 200
-							region = balkan_region
-						}
-					}
-				}
+			151 = {
+				development = 55
+			}
+			development_in_provinces = {
+				value = 500
+				region = anatolia_region
+			}
+			development_in_provinces = {
+				value = 300
+				region = balkan_region
 			}
 		}
 		effect = {
@@ -4669,9 +4656,22 @@ tur_persian_conquest = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = persia_region
-				value = 20
+			OR = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = persia_region
+					value = 20
+				}
+				AND = {
+					410 = { # Baghdad
+						owned_by = ROOT
+					}
+					OR = {
+						PER = { humiliated_by = ROOT }
+						ERS = { humiliated_by = ROOT }
+						TIM = { humiliated_by = ROOT }
+						MUG = { humiliated_by = ROOT }
+					}
+				}
 			}
 		}
 		effect = {
