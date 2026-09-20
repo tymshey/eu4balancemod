@@ -236,7 +236,3 @@ Center_of_science = {
 	local_development_cost_modifier = -0.05
 }
 
-Goon = {
-trade_goods_size = 0.01
-local_colonial_growth = -60
-}
