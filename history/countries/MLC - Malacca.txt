@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = plutocratic_reform
+add_government_reform = Malaysia_plutocracy
 primary_culture = malayan
 religion = sunni
 technology_group = chinese
