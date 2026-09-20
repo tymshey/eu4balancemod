@@ -3,6 +3,7 @@ monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
+				Malaysia_plutocracy
 				feudalism_reform
 				autocracy_reform
 				elective_monarchy_reform
