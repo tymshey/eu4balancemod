@@ -3,3 +3,19 @@
  # Modifiers
 
  rus_reformed_military:0 "Westernized Military"
+ t_kiev_start_modifier:0 "Legacy of the Kievan Rus"
+
+ # Reforms
+
+ ruthenian_republic:0 "Ruthenian Republic"
+ ruthenian_republic_desc:0 ""
+ ruthenian_peasant_republic:0 "Ruthenian Peasant Republic"
+ ruthenian_peasant_republic_desc:0 ""
+
+ # Events
+
+ flavor_ukraine.1.title:0 "The Euromaidan"
+ flavor_ukraine.1.desc:0 "The centuries of fragmentation, foreign yoke, and internal strife have finally come to an end. From the fertile steps of Ukraine to the deep forests of Belarus, the land of the Rus' has been reunified under the banner of Ruthenia. As our new capital celebrates this historic triumph, the boyars, Cossacks, and common folk gather in the center of Kiev to witness the birth of our state. However, the fundamental question remains: how shall the newly reborn Ruthenia be governed? The choices we make today will echo through the ages and define the soul of our people."
+ flavor_ukraine.1.a:0 "Proclaim a Tsardom"
+ flavor_ukraine.1.b:0 "Proclaim a Republic"
+ flavor_ukraine.1.c:0 "Proclaim a Peasant Republic"

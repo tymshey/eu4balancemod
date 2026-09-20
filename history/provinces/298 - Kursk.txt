@@ -1,6 +1,6 @@
 #298 - Kursk
-owner = CHR
-controller = CHR
+owner = KIE
+controller = KIE
 culture = ryazanian
 religion = orthodox
 base_tax = 2
@@ -9,6 +9,7 @@ trade_goods = grain
 base_manpower = 1
 capital = "Kursk"
 is_city = yes
+add_core = KIE
 add_core = CHR
 add_local_autonomy = 25
 discovered_by = western

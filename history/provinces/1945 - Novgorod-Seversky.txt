@@ -1,6 +1,6 @@
 #Severia
-owner = CHR
-controller = CHR
+owner = KIE
+controller = KIE
 culture = ryazanian
 religion = orthodox
 base_tax = 1
@@ -9,6 +9,7 @@ trade_goods = iron
 base_manpower = 1
 capital = "Novgorod-Seversky"
 is_city = yes
+add_core = KIE
 add_core = CHR
 discovered_by = western
 discovered_by = eastern

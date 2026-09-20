@@ -9,4 +9,8 @@ rus_reformed_military = {
 	shock_damage_received = -0.05
 }
 
+t_kiev_start_modifier = {
+	global_tax_income = 36
+}
+
 ### Province

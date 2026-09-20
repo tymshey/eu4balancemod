@@ -832,6 +832,84 @@ peasants_republic = {
 	duration = 4
 }
 
+ruthenian_republic = {
+	allow_normal_conversion = yes
+	icon = "ruthenia_tsardom"
+	potential = {
+		OR = {
+			have_had_reform = ruthenian_republic
+			has_reform = ruthenian_republic
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = oligarchic_republic
+	modifiers = {
+		max_absolutism = -20
+		manpower_in_true_faith_provinces = 0.2
+		reform_progress_growth = 0.2
+		governing_capacity = 350
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.2
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
+
+ruthenian_peasant_republic = {
+	allow_normal_conversion = yes
+	icon = "peasant_republic"
+	potential = {
+		OR = {
+			have_had_reform = ruthenian_peasant_republic
+			has_reform = ruthenian_peasant_republic
+		}
+	}
+	trigger = {
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 20
+	legacy_equivalent = peasants_republic_legacy
+	modifiers = {
+		max_absolutism = -30
+		land_morale = 0.05
+		manpower_in_true_faith_provinces = 0.2
+		reform_progress_growth = 0.2
+		governing_capacity = 300
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.2
+	}
+
+	conditional = {
+		allow = { has_dlc = "Third Rome" }
+		government_abilities = {
+			russian_mechanic
+		}
+		claim_states = yes
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		disables_estate_nobles = yes
+		is_peasants_republic = yes
+	}
+	duration = 4
+}
+
 ikko_ikki_republic_reform = {
 	icon = "peasants"
 	allow_normal_conversion = yes

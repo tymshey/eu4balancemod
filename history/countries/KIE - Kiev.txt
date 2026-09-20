@@ -6,3 +6,8 @@ religion = orthodox
 primary_culture = ruthenian
 capital = 280	# Kiev
 fixed_capital = 280 # Cannot move capital away from this province & no power cost to move to it
+
+add_country_modifier = {
+	name = t_kiev_start_modifier
+	duration = 7300
+}
