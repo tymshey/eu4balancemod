@@ -37,25 +37,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 13
 			NOT = {
 				has_disaster = german_revolt
 				has_disaster = hungarian_revolt
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_country_flag = hab_remove_austria_hungary_tech_requirement
-					}
-				}
-				if = {
-					limit = {
-						mission_completed = hun_a_multicultural_empire
-					}
-					adm_tech = 15
-				}
-				else = {
-					adm_tech = 15
-				}
 			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no

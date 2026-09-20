@@ -158,7 +158,7 @@ country_decisions = {
 						has_country_flag = remove_germany_tech_requirement_flag
 					}
 				}
-				adm_tech = 20
+				adm_tech = 18
 			}
 			OR = {
 				has_country_flag = is_NGC_flag
