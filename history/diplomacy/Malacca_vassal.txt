@@ -1,0 +1,12 @@
+vassal = {
+	first = MLC
+	second = KED
+	start_date = 1444.01.01
+	end_date = 1553.12.31
+}
+vassal = {
+	first = MLC
+	second = PAT
+	start_date = 1444.01.01
+	end_date = 1553.12.31
+}

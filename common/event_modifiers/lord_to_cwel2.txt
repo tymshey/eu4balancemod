@@ -235,3 +235,4 @@ Center_of_science = {
 	advisor_cost = -0.025
 	local_development_cost_modifier = -0.05
 }
+

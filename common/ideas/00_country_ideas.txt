@@ -17234,14 +17234,15 @@ MLC_ideas = {
 	}
 	free = yes
 	mlc_vassal_princes = {
-		reduced_liberty_desire = 10
+		reduced_liberty_desire = 20
 		vassal_income = 0.25
 	}
 	mlc_maritime_laws = {
 		global_ship_trade_power = 0.2
 	}
 	mlc_new_hegemony = {
-		diplomatic_reputation = 1
+		colonists = 1
+		global_colonial_growth = 20
 	}
 	mlc_islamic_sultanate = {
 		tolerance_own = 1
