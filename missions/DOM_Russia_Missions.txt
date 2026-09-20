@@ -4224,21 +4224,24 @@ rus_russian_navy = {
 						country = ROOT
 						share = 50
 					}
-					highest_value_trade_node = yes
+					trade_node_value = 400
+					# highest_value_trade_node = yes
 				}
 				33 = {
 					trade_share = {
 						country = ROOT
 						share = 50
 					}
-					highest_value_trade_node = yes
+					trade_node_value = 400
+					# highest_value_trade_node = yes
 				}
 				1926 = {
 					trade_share = {
 						country = ROOT
 						share = 50
 					}
-					highest_value_trade_node = yes
+					trade_node_value = 400
+					# highest_value_trade_node = yes
 				}
 			}
 		}

@@ -3002,7 +3002,7 @@ DOM_japanse_missions_4_d = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = jap_tekkosen_modifier
+				name = t_jap_tekkosen # jap_tekkosen_modifier
 				duration = -1
 			}
 			add_country_modifier = {
@@ -3148,7 +3148,7 @@ DOM_japanse_missions_4_colonization = {
 			create_explorer = { tradition = 60 }
 			custom_tooltip = jap_discover_new_world_tt
 			if = {
-				limit = { NOT = { expansion_ideas = 1 } }
+				limit = { NOT = { exploration_ideas = 1 } }
 				add_country_modifier = {
 					name = t_jap_kaitakudan
 					duration = -1
@@ -3780,11 +3780,11 @@ DOM_japanse_missions_5 = {
 				else = { has_manpower_building_trigger = yes owned_by = ROOT }
 			}
 		}
-		effect = {
+		effect = { # either jap_thundering_firepower_modifier (stronger) or t_jap_thundering_firepower_modifier (weaker)
 			custom_tooltip = jap_perfecting_musket_tt
 			tooltip = {
 				add_country_modifier = {
-					name = jap_thundering_firepower_modifier # CHANGE TO t_jap_thundering_firepower_modifier IF JAPAN IS TOO STRONG
+					name = t_jap_thundering_firepower_modifier # change here
 					duration = -1 
 				}
 			}
@@ -3811,7 +3811,7 @@ DOM_japanse_missions_5 = {
 				if = { 
 					limit = { has_country_flag = perfecting_the_musket_flag }
 					add_country_modifier = {
-						name = jap_thundering_firepower_modifier
+						name = t_jap_thundering_firepower_modifier # and here
 						duration = -1
 					}
 				}

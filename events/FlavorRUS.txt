@@ -2096,6 +2096,9 @@ country_event = {
 		unlock_government_reform = {
 			government_reform = governing_senate_reform
 		}
+		unlock_government_reform = {
+			government_reform = enforced_autocracy_reform
+		}
 		add_government_reform = governing_senate_reform
 		ai_chance = {
 			factor = 1
@@ -2107,6 +2110,9 @@ country_event = {
 		name = flavor_rus.37.b
 		unlock_government_reform = {
 			government_reform = enforced_autocracy_reform
+		}
+		unlock_government_reform = {
+			government_reform = governing_senate_reform
 		}
 		add_government_reform = enforced_autocracy_reform
 		ai_chance = {

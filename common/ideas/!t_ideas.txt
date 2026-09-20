@@ -337,7 +337,7 @@ GOG_ideas = {
 		production_efficiency = 0.10
 	}
 	gog_geobukseon = {
-		ship_durability = 0.1
+		ship_durability = 0.05
 		naval_morale = 0.05
 		has_geobukseon = yes
 	}
@@ -378,7 +378,7 @@ SLL_ideas = {
 	}
 	sll_geobukseon = {
 		has_geobukseon = yes
-		ship_durability = 0.1
+		ship_durability = 0.05
 	}
 	sll_masters_of_the_great_expanse = {
 		naval_morale = 0.1

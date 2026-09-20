@@ -3587,13 +3587,13 @@ gbr_row_5 = {
 						}
 						num_of_owned_provinces_with = {
 							region = low_countries_region
-							value = 15
+							value = 10
 						}
 					}
 				}
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					region = low_countries_region
-					value = 15
+					value = 4
 				}
 			}
 		}	
@@ -5202,7 +5202,7 @@ gbr_ave_row_5 = {
 	# ADDED BY TYMSHEY
 	
 	gbr_refine_the_redcoats = {
-		icon = mission_plc_lifetime_of_war
+		icon = professional_army
 		required_missions = { gbr_ave_the_redcoats }
 		position = 1
 		provinces_to_highlight = {
@@ -5228,6 +5228,37 @@ gbr_ave_row_5 = {
 				}
 			}
 			custom_tooltip = t_gbr_refine_redcoats_tt
+		}
+		ai_weight = {
+			factor = 250
+		}
+	}
+	
+	gbr_refine_the_marines = {
+		icon = army_reforms
+		required_missions = { gbr_refine_the_redcoats }
+		position = 1
+		provinces_to_highlight = {
+		}		
+		trigger = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.2
+				extra_shortcut = yes
+			}
+			num_of_marines = 100
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.99
+			}
+			#OR = {
+			#	quality_ideas = 7
+			#	offensive_ideas = 7
+			#}
+		}	
+		effect = {
+			custom_tooltip = gbr_refine_the_marines_tt
+			country_event = { id = flavor_england.3 }
 		}
 		ai_weight = {
 			factor = 250

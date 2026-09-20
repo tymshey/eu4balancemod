@@ -24,6 +24,10 @@ t_jap_shogoki_modifier = {
 	heavy_ship_hull_size_modifier = 0.1
 }
 
+t_jap_tekkosen = {
+	ship_durability = 0.05
+}
+
 t_jap_kaitakudan = {
 	colonists = 1
 	global_colonial_growth = 25
@@ -59,7 +63,7 @@ jap_20_years_devving_dip_yields_twice_bonus_1_burgher_loyalt_modifier = { # pdx 
 }
 
 t_jap_eighteen_arts_modifier = {
-	reinforce_speed = 0.33
+	reinforce_speed = 0.1
 	yearly_army_professionalism = 0.002
 	# military_tactics = 0.2
 }
@@ -78,6 +82,8 @@ t_japan_korea_trade_agreement_merchant = {
 	burghers_influence_modifier = 0.05
 }
 
+# i *think* this might be deprecated
+
 t_jap_recently_designated_trade_port = {
 	burghers_loyalty_modifier = 0.05
 	burghers_influence_modifier = 0.05
@@ -87,6 +93,8 @@ t_jap_recently_created_charter = {
 	burghers_loyalty_modifier = 0.05
 	burghers_influence_modifier = 0.05
 }
+
+# ends here, rest is normal
 
 t_japan_stone_architecture = {
 	development_cost = -0.05
@@ -156,12 +164,12 @@ t_jap_hosokawa_modifier = {
 }
 
 t_jap_tokugawa_modifier = {
-	global_own_trade_power = 0.05
-	leader_siege = 1
+	max_general_fire = 1
+	max_admiral_maneuver = 1
 }
 
 t_jap_fallback_modifier = {
-	max_general_fire = 1
+	leader_land_fire = 1
 }
 
 ### AI

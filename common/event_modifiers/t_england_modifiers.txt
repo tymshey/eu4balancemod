@@ -18,6 +18,20 @@ t_eng_birthplace_of_liberalism = {
 	liberty_desire_from_subject_development = -0.15
 }
 
+eng_refine_the_marines_quality = {
+	fire_damage_received = -0.1
+	is_marine_modifier = yes
+}
+
+eng_refine_the_marines_quality_debuff = {
+	allowed_marine_fraction = -0.3
+	global_sailors_modifier = 0.2
+}
+
+eng_refine_the_marines_quantity = {
+	allowed_marine_fraction = 0.15
+}
+
 # Province
 
 gbr_british_rule_2 = {

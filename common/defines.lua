@@ -1309,7 +1309,7 @@ NMilitary = {
 	HEAVY_SHIP_SAILORS_COST = 200,					-- 1 = 1 men in cost.
 	LIGHT_SHIP_SAILORS_COST = 50,					-- 1 = 1 men in cost.
 	GALLEY_SHIP_SAILORS_COST = 50,					-- 1 = 1 men in cost.
-	TRANSPORT_SHIP_SAILORS_COST = 50,				-- 1 = 1 men in cost.
+	TRANSPORT_SHIP_SAILORS_COST = 25,				-- 1 = 1 men in cost.
 	MAX_MANPOWER = 10, 								-- years in mp pool
 	MIN_MONTHLY_MANPOWER = 0.1,						-- 100 men/month is minimum
 	MAX_SAILORS = 10, 								-- years in mp pool
@@ -1340,7 +1340,7 @@ NMilitary = {
 	HEAVY_SHIP_TIME = 730, 							-- _MDEF_HEAVY_SHIP_TIME = 10,
 	LIGHT_SHIP_TIME = 365, 							-- _MDEF_LIGHT_SHIP_TIME = 10,
 	GALLEY_TIME = 365, 								-- _MDEF_GALLEY_TIME = 10,
-	TRANSPORT_TIME = 365, 							-- _MDEF_TRANSPORT_TIME = 10,
+	TRANSPORT_TIME = 100, 							-- _MDEF_TRANSPORT_TIME = 10,
 	MONTHLY_REINFORCE = 0.1,						-- Amount of regiment strength reinforced each month.
 	MONTHLY_REPAIR = 0.1,							-- Ship repair speed.
 	EXTRA_LAND_REINFORCE_COST = 2.00,				-- extra cost for reinforcing land units (as a multiplier of maintenance).

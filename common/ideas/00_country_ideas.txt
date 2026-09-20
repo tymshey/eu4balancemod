@@ -759,7 +759,7 @@ SPA_ideas = {
 		reform_progress_growth = 0.1
 	}
 	spanish_armada = {
-		heavy_ship_power = 0.1
+		heavy_ship_power = 0.15
 		naval_forcelimit_modifier = 0.25
 	}
 	spa_casa_de_contracion = {
@@ -18266,13 +18266,13 @@ ARB_ideas = {
 		trade_steering = 0.2	
 	}
 	ARB_conversion = {
-		global_missionary_strength = 0.03
+		global_trade_goods_size_modifier = 0.1
 	}
 	ARB_jihad = {
-		warscore_cost_vs_other_religion = -0.1
+		land_morale = 0.1
 	}
 	ARB_new_caliphate_rising = {
-		missionaries = 2
+		global_manpower = 0.15
 	}
 	ARB_mubarizun = {
 		army_tradition_decay = -0.01

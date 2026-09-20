@@ -54,3 +54,36 @@ country_event = {
 		}
 	}
 }
+
+# Refining the Marines
+
+country_event = {
+	id = flavor_england.3
+	title = flavor_england.3.title
+	desc = flavor_england.3.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_england.3.a
+		add_country_modifier = {
+			name = eng_refine_the_marines_quality
+			duration = -1
+		}
+		add_country_modifier = {
+			name = eng_refine_the_marines_quality_debuff
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = flavor_england.3.b
+		add_country_modifier = {
+			name = eng_refine_the_marines_quantity
+			duration = -1
+		}
+	}
+}

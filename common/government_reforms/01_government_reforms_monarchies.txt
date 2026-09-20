@@ -7143,10 +7143,11 @@ nizam_i_cedid_reform = {
 		}
 	}
 	modifiers = {
+		land_morale = 0.05
 		drill_gain_modifier = 0.25
 		movement_speed = 0.05
 		reinforce_speed = 0.15
-		recover_army_morale_speed = 0.1
+		free_policy = 1
 	}
 	ai = {
 		factor = 10

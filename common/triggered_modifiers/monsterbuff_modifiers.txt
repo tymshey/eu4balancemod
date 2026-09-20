@@ -173,7 +173,7 @@ liberty_desire = {
 
 tech_17_policy = {
 	potential = {
-		ai = no
+		always = yes
 	}
 	trigger = {
 		adm_tech = 17
@@ -183,7 +183,7 @@ tech_17_policy = {
 
 tech_21_policy = {
 	potential = {
-		ai = no
+		always = yes
 	}
 	trigger = {
 		adm_tech = 21

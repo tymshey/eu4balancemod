@@ -1,0 +1,301 @@
+## adds the culture as an accepted culture or 100 dip power
+### add_accepted_culture_or_dip_power = { culture = <culture> }
+### the custom effect is only able to check for up to 10 culture slots
+add_accepted_culture_or_dip_power = {
+	tooltip = {
+		add_accepted_culture = $culture$
+	}
+	custom_tooltip = ADD_ACCEPTED_CULTURE_TT_EE
+	hidden_effect = {
+		if = {
+			limit = {
+				accepted_culture = $culture$
+			}
+			add_dip_power = 100
+		}
+		else_if = {
+			limit = {
+				primary_culture = $culture$
+			}
+			add_dip_power = 100
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 10
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 11
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 9
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 10
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 8
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 9
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 7
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 8
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 6
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 7
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 5
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 6
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 4
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 5
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 3
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 4
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 2
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 3
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				num_accepted_cultures = 1
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 2
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { num_accepted_cultures = 1 }
+			}
+			if = {
+				limit = {
+					has_global_modifier_value = {
+						which = num_accepted_cultures
+						value = 1
+					}
+				}
+				add_accepted_culture = $culture$
+			}
+			else = {
+				add_dip_power = 100
+			}
+		}
+		else = {
+			add_dip_power = 100
+		}
+	}
+}
+
+## create or add a CoT
+### create_or_add_center_of_trade_level = { level = <number> }
+create_or_add_center_of_trade_level = {
+	if = {
+		limit = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = var
+					value = $level$
+				}
+				check_variable = { which = var value = 1 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 1 }
+			}
+			center_of_trade = $level$
+		}
+		else_if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 2 }
+			}
+			if = {
+				limit = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = var
+							value = $level$
+						}
+						check_variable = { which = var value = 2 }
+					}
+				}
+				add_center_of_trade_level = 2
+			}
+			else = {
+				add_center_of_trade_level = 1
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = { province_has_center_of_trade_of_level = 3 }
+			}
+			add_center_of_trade_level = 1
+		}
+		else = {
+			add_base_production = 2
+		}
+	}
+	else_if = {
+		limit = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = var
+					value = $level$
+				}
+				NOT = { check_variable = { which = var value = 0 } }
+			}
+		}
+		if = {
+			limit = {
+				province_has_center_of_trade_of_level = 3
+			}
+			if = {
+				limit = {
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = var
+							value = $level$
+						}
+						check_variable = { which = var value = -1 }
+					}
+				}
+				add_center_of_trade_level = -1
+			}
+			else = {
+				add_center_of_trade_level = -2
+			}
+		}
+		else_if = {
+			limit = {
+				province_has_center_of_trade_of_level = 2
+			}
+			add_center_of_trade_level = -1
+		}
+	}
+}

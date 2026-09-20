@@ -5,7 +5,7 @@ Port_of_Le_Havre = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 0
+	starting_tier = 1
 	type = monument
 
 	build_trigger = {
@@ -52,15 +52,15 @@ Port_of_Le_Havre = {
 			factor = 1000
 		}
 		province_modifiers = {
-
+			trade_value_modifier = 0.05
 		}
 		area_modifier = {
 
 		}
 		country_modifiers = {
       range = 0.1
-      global_sailors_modifier = 0.05
-      naval_forcelimit_modifier = 0.05
+      global_sailors_modifier = 0.075
+      naval_forcelimit_modifier = 0.075
 		}
 		on_upgraded = {
 		}
@@ -74,16 +74,15 @@ Port_of_Le_Havre = {
 			factor = 2500
 		}
 		province_modifiers = {
-      trade_value_modifier = 0.05
-
+			trade_value_modifier = 0.1
 		}
 		area_modifier = {
 
 		}
 		country_modifiers = {
       range = 0.15
-      global_sailors_modifier = 0.1
-      naval_forcelimit_modifier = 0.1
+      global_sailors_modifier = 0.15
+      naval_forcelimit_modifier = 0.15
 		}
 		on_upgraded = {
 		}
@@ -97,15 +96,15 @@ Port_of_Le_Havre = {
 			factor = 5000
 		}
 		province_modifiers = {
-      trade_value_modifier = 0.1
+			trade_value_modifier = 0.15
 		}
 		area_modifier = {
 
 		}
 		country_modifiers = {
-      range = 0.25
-      global_sailors_modifier = 0.15
-      naval_forcelimit_modifier = 0.15
+      range = 0.3
+      global_sailors_modifier = 0.25
+      naval_forcelimit_modifier = 0.25
 		}
 		on_upgraded = {
 		}

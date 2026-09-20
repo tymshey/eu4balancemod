@@ -1933,7 +1933,8 @@ eng_empire_of_the_island = {	#Permanent
 	horde_unity = 1
 	devotion = 1
 	meritocracy = 1
-	warscore_from_battles_modifier = 0.1
+	state_governing_cost = -0.05
+	# warscore_from_battles_modifier = 0.1
 }
 
 eng_most_esteemed_university = {	#Permanent
@@ -1950,7 +1951,8 @@ eng_the_man_of_war = {	#Permanent
 
 eng_strict_marines = {	#Permanent
 	discipline = 0.05
-	shock_damage_received = -0.1
+	fire_damage = 0.1
+	# shock_damage_received = -0.1
 	is_marine_modifier = yes
 }
 
@@ -8472,6 +8474,7 @@ tur_spiritual_focus_level_2 = {	#Permanent, gets upgraded
 }
 
 tur_spiritual_focus_level_3 = {	#Permanent
+	land_morale = 0.05
 	dhimmi_privilege_slots = 1
 	tolerance_heathen = 1
 	tolerance_of_heathens_capacity = 2
@@ -9999,15 +10002,15 @@ por_struggle_for_iberia_modifier = {
 }
 
 spa_employ_galleon_modifier = {
-	allowed_galleon_fraction = 0.1
-	allowed_caravel_fraction = 0.1
+	allowed_galleon_fraction = 0.2
+	allowed_caravel_fraction = 0.2
 	has_caravel = yes 
 	has_galleon = yes
 }
 
 por_reform_navy_1_modifier = {
-	allowed_caravel_fraction = 0.1
-	allowed_galleon_fraction = 0.1
+	allowed_caravel_fraction = 0.2
+	allowed_galleon_fraction = 0.2
 	has_caravel = yes 
 	has_galleon = yes
 	navy_tradition = 0.5
@@ -12198,7 +12201,7 @@ oma_omani_marines = {
 }
 
 oma_strengthen_omani_marines = {
-    shock_damage_received = -0.1
+    # shock_damage_received = -0.1
     fire_damage = 0.1
     is_marine_modifier = yes
 }
@@ -12845,7 +12848,7 @@ ned_elite_naval_infantry = {
 }
 
 ned_black_devils_modifier = {
-	shock_damage_received = -0.1
+	# shock_damage_received = -0.1
 	fire_damage = 0.1
 	is_marine_modifier = yes
 }

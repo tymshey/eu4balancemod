@@ -44,6 +44,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
+			set_capital = 735
 			country_event = { id = ideagroups.1 }
 		}
 		ai_will_do = {

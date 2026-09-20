@@ -404,11 +404,11 @@ the_draft = {
 	}
 	
 	chance = {
-		factor = 1
-		modifier = {
-			factor = 2
-			NOT = { manpower_percentage = 0.5 }
-		}
+		factor = 0
+		#modifier = {
+		#	factor = 2
+		#	NOT = { manpower_percentage = 0.5 }
+		#}
 	}
 
 	ai_will_do = {

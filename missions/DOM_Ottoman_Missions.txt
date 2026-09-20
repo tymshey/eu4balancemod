@@ -3810,11 +3810,13 @@ tur_dummy_missions_path = {
 						has_tax_building_trigger = yes
 						value = 45
 					}
-					calc_true_if = {
-						all_subject_country = {
-							NOT = { religion_group = ROOT }
-						}
-						amount = 3
+					development_in_provinces = {
+						value = 500
+						region = anatolia_region
+					}
+					development_in_provinces = {
+						value = 300
+						region = balkan_region
 					}
 					if = {
 						limit = { has_estate = estate_dhimmi }
@@ -3923,11 +3925,11 @@ tur_dummy_missions_path = {
 						development = 55
 					}
 					development_in_provinces = {
-						value = 500
+						value = 700
 						region = anatolia_region
 					}
 					development_in_provinces = {
-						value = 300
+						value = 400
 						region = balkan_region
 					}
 				}
@@ -4204,16 +4206,13 @@ tur_mysticism_path = {
 				has_tax_building_trigger = yes
 				value = 30
 			}
-			OR = {
-				calc_true_if = {
-					all_subject_country = {
-						NOT = { religion_group = ROOT }
-					}
-					amount = 3
-				}
-				NOT = {
-					num_of_provinces_in_states = 200
-				}
+			development_in_provinces = {
+				value = 500
+				region = anatolia_region
+			}
+			development_in_provinces = {
+				value = 300
+				region = balkan_region
 			}
 			if = {
 				limit = { has_estate = estate_dhimmi }
@@ -4267,11 +4266,11 @@ tur_mysticism_path = {
 				development = 55
 			}
 			development_in_provinces = {
-				value = 500
+				value = 700
 				region = anatolia_region
 			}
 			development_in_provinces = {
-				value = 300
+				value = 400
 				region = balkan_region
 			}
 		}
