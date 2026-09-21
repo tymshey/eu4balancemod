@@ -697,10 +697,6 @@ indonesians_4 = {
 			}
 		}
 		trigger = {
-			OR = {
-				current_age = age_of_revolutions
-				current_age = age_of_absolutism
-			}
 			custom_trigger_tooltip = {
 				tooltip = no_europeans_in_indonesia_tt
 				NOT = {
@@ -856,56 +852,92 @@ indonesians_5 = {
 			}
 		}
 	}
-	indonesia_sea_cucumbers = {
-		icon = mission_junk_boat
-		required_missions = { }
+	expand_the_cloves_trade = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = {indonesia_moluccan_cloves}
 		provinces_to_highlight = {
 			has_discovered = ROOT
-			province_id = 2728
 			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { has_building = wharf }
-				NOT = { has_building = trade_depot }
+				province_id = 648
+				province_id = 2717
+				province_id = 645
+				province_id = 647
+				province_id = 646
+				province_id = 649
+				province_id = 650
 			}
 		}
 		trigger = {
-			2728 = {
-				if = {
-					limit = {
-						trade_goods = gold
-					}
-					OR = {
-						country_or_non_sovereign_subject_holds = ROOT
-						owner = {
-							alliance_with = ROOT
-						}
-					}
-					2728 = {
-						development = 15
-					}
-				}
-				else = {
-					OR = {
-						country_or_non_sovereign_subject_holds = ROOT
-						owner = {
-							alliance_with = ROOT
-						}
-					}
-					OR = {
-						has_building = wharf
-						has_building = trade_depot
-						has_manufactory_trigger = yes
-					}
-				}
+			648 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
 			}
+			2717 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
+			}
+			645 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
+			}
+			647 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
+			}
+			646 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
+			}
+			649 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
+			}
+			650 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_building = workshop
+			}
+			owns = 644
+			owns = 2713
 		}
 		effect = {
-			2728 = {
+			646 = {
 				add_permanent_province_modifier = {
-					name = tiwi_sea_cucumbers
+					name = clove_boom
 					duration = -1
 				}
 			}
+			647 = {
+				add_permanent_province_modifier = {
+					name = clove_boom
+					duration = -1
+				}
+			}
+			645 = {
+				add_permanent_province_modifier = {
+					name = clove_boom
+					duration = -1
+				}
+			}
+			2717 = {
+				add_permanent_province_modifier = {
+					name = clove_boom
+					duration = -1
+				}
+			}
+			644 = {
+				add_permanent_province_modifier = {
+					name = clove_boom
+					duration = -1
+				}
+			}
+			2713 = {
+				add_permanent_province_modifier = {
+					name = clove_boom
+					duration = -1
+				}
+			}
+			644 = {change_trade_goods = cloves}
+			2713 = {change_trade_goods = cloves}
 		}
 	}
 }
