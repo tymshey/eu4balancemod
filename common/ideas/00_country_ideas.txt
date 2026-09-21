@@ -17288,7 +17288,7 @@ MSA_ideas = {
 		naval_morale = 0.15
 	}
 	msa_in_every_port = {
-		merchants = 1
+		diplomatic_annexation_cost = -0.2
 		ship_power_propagation = 0.2
 	}
 	msa_sea_nomads_steering = {
