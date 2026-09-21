@@ -457,6 +457,36 @@ germanic = {
 		#Hannoveran
 		"von Schack" "von Fabrice" "von Hardenberg" "von Welf" "von Schauenburg" "von Holstein-Gottorp" "Askanier" "von Oldenburg"
 	}
+	czech_ger = {
+		primary = BOH
+		dynasty_names = {
+			"Jankovsk� z Vla�imi" Chotek Lichnowsky Lobkowicz Nostitz Kutscha 
+			"Kounic" "V�tkovec" "Zerot�n" "Czern�n" "von Harrach" Kinsky Rosenberg
+			Waldstein Jeszenszky
+		}
+		male_names = {
+			V�clav Jir� Karel Premysl Premysl Zikmund Frantisek Jindrich Josef Frantisek Josef Bocek Jir� 
+			Vladislav Vladim�r Petr Petr Viktor�n Jan V�clav Josef V�clav Karel Josef Maty� Ferdinand 
+			Vratislav Boleslav Vil�m Viktor Jarom�r Jaroslav Ludv�k Otakar
+		}
+		female_names = {
+			Anezka Eliska Katerina Marie Ludmila Alzbeta Agnieszka Agnes Alzbeta Andela Anna Anna Berta Bohuslava Bozena 
+			Branislava Dagmar Danuta Dobravy
+		}
+	}
+	schlesian_ger = {
+		primary = SIL
+		male_names = {
+			Fryderyk Jan Henryk Ludwik Jan Krystian Jerzy Jerzy Rudolf Jerzy Wilhelm Joachim Fryderyk Krystian 
+			Jan Jerzy Jerzy Ernest August Ernest Krystian Ludwik Rudolf Wladislaw Albert Aleksander Andel 
+			Cezar Dietrich Eugeniusz Filip Hermann Joachim Krzysztof Lech Libor Markus Maurycy Radomir 
+			V�clav Wilhelm Ruprecht Branko Bruno Siegfried Tom�s 
+		}
+		female_names = {
+			Heinrike Ilona Andrea Helgi Heli Helina Helju Helle Helmi Helve Hiie Hilda Hilja Hille Iiris Ille Ilme Ilona Imbi 
+			Ines Inga Inge 
+		}
+	}
 }
 
 scandinavian = { #Nordic

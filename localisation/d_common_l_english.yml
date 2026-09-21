@@ -47,7 +47,7 @@
  d_spy_guards:0 "Elite Guards"
  d_spy_guards_desc:0 "Stationing hand-picked, veteran guard detachments at vital fortresses and royal courts maintains iron discipline and protects strategic holds against sudden assaults."
  
- #austrianempire
+ #austria
  AUE:0 "Austrian Empire"
  AUE_ADJ:0 "Austrian"
  form_austrian_empire_title:0 "Form the Austrian Empire"
@@ -75,3 +75,19 @@
  d_austrian_militarized_society:0 "Austrian Militarization"
  ability_d_austrian_militarization_mechanic:0 "Austrian Militarization"
  monthly_d_austrian_militarized_society:0 "Monthly Austrian Militarized Society"
+ hab_multicultural_empire_title:0 "Founding a New Empire"
+ czech_ger:0 "Bohemian"
+ schlesian_ger:0 "Schlesian"
+ d_aue_bohemia_modifier:0 "Habsburg lands of Bohemia"
+ d_hab_bohemia_modifier:0 "Czech Industry"
+ d_hab_silesia_modifier:0 "Silesian Industralization"
+ d_hab_bohemia_title:0 "Royal Bohemia"
+ d_hab_bohemia_desc:0 "Bohemia's fertile valleys and rich mines have long been an economic engine of Central Europe. Whether we embrace the Czech people as equal citizens of the realm or gradually incorporate them into the imperial cultural sphere, directing their industrial labor toward the crown will ensure unprecedented prosperity."
+ d_bohemia_aue_tooltip:0 "By completing this mission as the §OAustrian Empire§!, the following will happen:\n"
+ d_assimilate_czech_tooltip:0 "We will assimilate the §YCzechs§! into the §YGerman§! culture group."
+ d_assimilate_silesia_tooltip:0 "We will assimilate the §YSilesians§! into the §YGerman§! culture group."
+ d_bohemia_auh_tooltip:0 "However, by completing this mission as §OAustria-Hungary§!, the following will happen instead:\n"
+ d_control_silesia_tooltip:0 "If we are in control of §YSilesia§!, an additional bonus will be granted:"
+ d_aue_bohemia_tooltip:0 "Bohemia gets §Y'Habsburg lands of Bohemia'§! until the end of the game, giving the following effects:\nLocal Development Cost: §G-10.0%§!\nLocal Production Efficiency: §G+10.0%§!\n"
+ d_hab_bohemia_tooltip:0 "Bohemia gets §Y'Czech Industry'§! until the end of the game, giving the following effects:\nLocal Production Efficiency: §G+20.0%§!\n"
+ d_hab_lwow_modifier:0 "Polish Cochineal"

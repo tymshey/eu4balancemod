@@ -61,3 +61,23 @@ d_france_algiersculture = {
 	culture_conversion_cost = -0.2
 	culture_conversion_time = -0.1
 }
+
+d_aue_bohemia_modifier = {
+	local_development_cost = -0.1
+	local_production_efficiency = 0.1
+}
+
+d_hab_bohemia_modifier = {
+	local_production_efficiency = 0.2
+}
+
+d_hab_silesia_modifier = {
+	local_development_cost_modifier = -0.05
+	trade_goods_size_modifier = 0.1
+}
+
+d_hab_lwow_modifier = {
+	trade_goods_size_modifier = 0.15
+	local_production_efficiency = 0.15
+	allowed_num_of_buildings = 1
+}
