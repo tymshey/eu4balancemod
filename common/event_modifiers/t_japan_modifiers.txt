@@ -29,7 +29,7 @@ t_jap_tekkosen = {
 }
 
 t_jap_kaitakudan = {
-	colonists = 1
+	# colonists = 1
 	global_colonial_growth = 25
 }
 

@@ -13,4 +13,14 @@ t_kiev_start_modifier = {
 	global_tax_income = 36
 }
 
+spa_rb_overseas_trade_mod = {
+	global_trade_power = 0.05
+	global_tariffs = 0.1
+}
+
+spa_the_royal_galleon_modifier = {
+	number_of_cannons_modifier = 0.1
+	is_galleon_modifier = yes
+}
+
 ### Province

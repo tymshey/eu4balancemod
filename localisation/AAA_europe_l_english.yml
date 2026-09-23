@@ -4,6 +4,8 @@
 
  rus_reformed_military:0 "Westernized Military"
  t_kiev_start_modifier:0 "Legacy of the Kievan Rus"
+ spa_rb_overseas_trade_mod:0 "Intendant System"
+ spa_the_royal_galleon_modifier:0 "Galleon Modifications"
 
  # Reforms
 
@@ -11,6 +13,13 @@
  ruthenian_republic_desc:0 ""
  ruthenian_peasant_republic:0 "Ruthenian Peasant Republic"
  ruthenian_peasant_republic_desc:0 ""
+
+ # Missions
+
+ spa_the_royal_galleon_title:0 "The Royal Galleon"
+ spa_the_royal_galleon_desc:0 "As our maritime might grows, so do our needs. We need to make modifications to the royal galleon design, so it becomes even more fearsome than it is today."
+ gc_cas_spa_royal_indian_company_title:0 "The Royal Indian Company"
+ gc_cas_spa_royal_indian_company_desc:0 ""
 
  # Events
 

@@ -38,8 +38,8 @@ military_hegemon = {
 	# At max 100% tickup.
 	scale = {
 		movement_speed = 0.1
-		discipline = 0.05
-		land_morale = 0.05
+		land_attrition = -0.2
+		reinforce_speed = 0.15
 	}
 	
 	max = {
