@@ -236,3 +236,19 @@ Center_of_science = {
 	local_development_cost_modifier = -0.05
 }
 
+Big_asian_city = {
+local_development_cost_modifier = -0.25
+trade_goods_size = 1
+global_trade_power = 0.1
+local_institution_spread = 0.3
+}
+
+grand_fleet = {
+navy_tradition = 0.5
+naval_forcelimit_modifier = 0.1
+}
+
+Economic_Revival = {
+development_cost = -0.1
+trade_efficiency = 0.1
+}

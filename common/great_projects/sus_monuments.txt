@@ -60,7 +60,6 @@ amogus_statue  = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		land_morale = 0.025
 		}
 		on_upgraded = {
 		add_prestige = 10
@@ -80,7 +79,6 @@ amogus_statue  = {
 		area_modifier = {
 		}
 		country_modifiers = {
-		land_morale = 0.05
 		}
 		on_upgraded = {
 		add_prestige = 10
@@ -101,7 +99,7 @@ amogus_statue  = {
 		}
 		country_modifiers = {
 		prestige = 1
-		land_morale = 0.05
+		land_morale = 0.01
 		}
 		on_upgraded = {
 		add_prestige = 10

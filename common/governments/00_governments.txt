@@ -628,12 +628,14 @@ republic = {
 		united_cantons_legacy
 		turkoman_ottoman_institutions
 		korean_peasant_republic
+		Malaysia_plutocracy_1
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
 			reforms = {
 				oligarchy_reform
 				signoria_reform
+				Malaysia_plutocracy_1
 				merchants_reform
 				venice_merchants_reform
 				civic_republicanism_government

@@ -24,3 +24,31 @@ Malaysia_plutocracy = {
 		factor = 0
 	}
 }
+
+Malaysia_plutocracy_1 = {
+	icon = arabian_plutocracy_reform
+	duration = 4
+	allow_normal_conversion = no
+	potential = {
+	OR = {
+	tag = MLC
+	tag = MSA
+		}
+	}
+	trigger = {}
+	modifiers = {
+	has_marines = yes
+	has_geobukseon = yes
+	allowed_geobukseon_fraction = 0.15
+	allowed_marine_fraction = 0.3
+	}
+
+	conditional = {
+        government_abilities = {
+            arabic_trade_influence
+        }
+    }
+	ai = {
+		factor = 0
+	}
+}

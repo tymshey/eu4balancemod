@@ -13127,6 +13127,9 @@ holy_city_kairouan = {
 	type = monument
 
 	build_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
 	}
 
 	on_built = {
@@ -13136,9 +13139,15 @@ holy_city_kairouan = {
 	}
 
 	can_use_modifiers_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
 	}
 
 	can_upgrade_trigger = {
+		province_is_or_accepts_religion_group = {
+			religion_group = muslim
+		}
 	}
 
 	keep_trigger = {
