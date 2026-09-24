@@ -20555,7 +20555,7 @@ schonbrunn_palace = {
 			monthly_splendor = 1
 			chance_to_inherit = 0.05
 			diplomats = 1
-			monthly_d_austrian_militarized_society = 0.2
+			monthly_d_austrian_militarized_society = 0.15
 		}
 		on_upgraded = {}
 	}
@@ -20569,7 +20569,7 @@ schonbrunn_palace = {
 			chance_to_inherit = 0.1 
 			diplomats = 1
 			years_to_integrate_personal_union = -5
-			monthly_d_austrian_militarized_society = 0.3
+			monthly_d_austrian_militarized_society = 0.2
 		}
 		on_upgraded = {}
 	}
