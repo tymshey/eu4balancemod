@@ -4712,6 +4712,7 @@ austrian_absolute_monarchy = {
 		culture_conversion_cost = -0.25
 		culture_conversion_time = -0.2
 		monarch_diplomatic_power = 2
+		governing_capacity_modifier = -0.20
 	}
 
 	custom_attributes = {

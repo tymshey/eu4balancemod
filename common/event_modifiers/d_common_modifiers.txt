@@ -81,3 +81,7 @@ d_hab_lwow_modifier = {
 	local_production_efficiency = 0.15
 	allowed_num_of_buildings = 1
 }
+
+d_aue_manpower_rec_modifier = {
+	manpower_recovery_speed = 0.2
+}

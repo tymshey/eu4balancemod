@@ -20,11 +20,9 @@ d_austrian_militarization_mechanic = {
 			scaled_modifier = {
 				modifier = {
 					discipline = 0.05
-					fire_damage_received = -0.05
-					shock_damage_received = -0.05
-					manpower_recovery_speed = 0.2
-					land_maintenance_modifier = -0.1
-					monthly_d_austrian_militarized_society = -0.35
+					yearly_absolutism = 2
+					land_maintenance_modifier = -0.2
+					monthly_d_austrian_militarized_society = -0.6
 				}
 			}
 		}
@@ -38,17 +36,17 @@ d_austrian_militarization_mechanic = {
 				has_government_power = {
 					mechanic_type = d_austrian_militarization_mechanic
 					power_type = d_austrian_militarized_society
-					value = 20
+					value = 25
 				}
 			}
 			effect = { 
 				add_government_power = {
 					mechanic_type = d_austrian_militarization_mechanic
 					power_type = d_austrian_militarized_society
-					value = -20
+					value = -25
 				}
 				add_country_modifier = {
-					name = pru_thunderous_advance_modifier
+					name = d_aue_manpower_rec_modifier
 					duration = 1825
 				}
 			}
@@ -77,14 +75,14 @@ d_austrian_militarization_mechanic = {
 				has_government_power = {
 					mechanic_type = d_austrian_militarization_mechanic
 					power_type = d_austrian_militarized_society
-					value = 20
+					value = 25
 				}
 			}
 			effect = { 
 				add_government_power = {
 					mechanic_type = d_austrian_militarization_mechanic
 					power_type = d_austrian_militarized_society
-					value = -20
+					value = -25
 				}
 				add_country_modifier = {
 					name = pru_rewrite_military_manual_modifier
@@ -92,26 +90,13 @@ d_austrian_militarization_mechanic = {
 				}
 			}
 			cooldown_years = 5
-			# ai_chance = {
-				# factor = 0
-				# modifier = {
-					# factor = 10
-					# not = {
-						# has_government_power = {
-							# mechanic_type = militarization_mechanic
-							# power_type = militarized_society
-							# value = 90
-						# }
-					# }
-					# mil_power = 500
-				# }
-			# }
 		}
 		
 		d_austrian_ability_3 = {
 			gui = prussian_militarization_gov_mech_3_interaction
 			icon = GFX_prussian_militarization_upgrade	
 			trigger = {
+				treasury = 500
 				mil_power = 50
 				not = {
 					has_government_power = {
@@ -127,6 +112,7 @@ d_austrian_militarization_mechanic = {
 					power_type = d_austrian_militarized_society
 					value = 10
 				}
+				add_treasury = -500
 				add_mil_power = -50
 			}
 			cooldown_years = 0
