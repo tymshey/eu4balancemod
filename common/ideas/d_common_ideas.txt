@@ -58,8 +58,8 @@ AUE_ideas = {
 	}
 	free = yes		
 	
-	aue_tradition = {
-		army_tradition_decay = -0.01
+	aue_absolutism = {
+		max_absolutism = 15
 	}
 	military_border = {
 		global_garrison_growth = 0.15
