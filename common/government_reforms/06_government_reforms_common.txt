@@ -4180,11 +4180,13 @@ consulate_of_the_sea = {
 			has_reform = consulate_of_the_sea 
 		}
 	}
+	government_abilities = {
+		system_of_councils_mechanic
+	}
 	modifiers = {
 		trade_efficiency = 0.1
 		global_trade_power = 0.1
 		burghers_loyalty_modifier = 0.05
-		
 	}
 	
 	conditional = {

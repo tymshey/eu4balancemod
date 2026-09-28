@@ -18273,7 +18273,7 @@ ARB_ideas = {
 		land_morale = 0.1
 	}
 	ARB_new_caliphate_rising = {
-		global_manpower = 0.15
+		global_manpower_modifier = 0.15
 	}
 	ARB_mubarizun = {
 		army_tradition_decay = -0.01

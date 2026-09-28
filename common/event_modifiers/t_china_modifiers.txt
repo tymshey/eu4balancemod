@@ -16,6 +16,11 @@ mng_divine_mandate_modifier = {
 	max_absolutism_effect = 0.1
 }
 
+chi_inefficient_taxation = {
+    global_tax_modifier = -0.25
+    global_manpower_modifier = -0.25
+}
+
 ### Province
 
 t_chi_imperial_shipyards = {

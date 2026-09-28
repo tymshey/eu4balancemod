@@ -1858,6 +1858,14 @@ on_mandate_of_heaven_gained = {
 		id = celestial_empire_events.2
 		days = 1825
 	}
+	
+	# added by tymshey
+	
+	add_country_modifier = {
+		name = chi_inefficient_taxation
+		duration = -1
+	}
+	set_country_flag = t_mandate_taken_flag
 }
 
 # When a nation loses the Mandate of Heaven

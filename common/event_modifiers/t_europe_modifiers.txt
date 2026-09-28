@@ -23,4 +23,14 @@ spa_the_royal_galleon_modifier = {
 	is_galleon_modifier = yes
 }
 
+industria_sedera_mod = {
+	development_cost_modifier = -0.05
+	production_efficiency = 0.05
+}
+
+ara_dominion_over_italy = {
+	infantry_power = 0.05
+	technology_cost = -0.05
+}
+
 ### Province

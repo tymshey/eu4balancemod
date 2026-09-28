@@ -23,11 +23,15 @@
  t_trigger_warlord_era_decision_desc:0 "You will trigger a Warlord Era, releasing all tags in China as independent states, are you sure this is what you want?\n\nThis decision disappears after 1450."
  t_change_schools_decision_title:0 " Change Schools of Thought"
  t_change_schools_decision_desc:0 ""
+ t_reform_taxation_decision_title:0 "Reform Taxation"
+ t_reform_taxation_decision_desc:0 ""
+ t_reform_taxation_decision_tt:0 "Has had '§YInefficient Taxation§!' modifier for at least 20 years"
  
  # Modifiers
  
  t_divine_favour:0 "Divine Favour"
  t_chi_religious_tolerance:0 "Religious Tolerance in the Celestial Empire"
+ chi_inefficient_taxation:0 "Inefficient Taxation"
 
  t_chi_imperial_shipyards:0 "Imperial Naval Shipyards"
  t_yua_xanadu:0 "Imperial Seat of Xanadu"

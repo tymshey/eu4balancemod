@@ -261,7 +261,6 @@ technology = { #University
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1
 }
 
 technology = { #National Sovereignty
@@ -275,6 +274,7 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 	
+	development_cost_modifier = -0.1
 }
 
 technology = { #Cathedral
@@ -408,7 +408,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	
+	administrative_efficiency = 0.1
 }
 
 technology = { #Modern Bureaucracy
@@ -424,7 +424,6 @@ technology = { #Modern Bureaucracy
 		enlightenment = 0.5
 	}
 
-	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1	
 	governing_capacity = 250
 }

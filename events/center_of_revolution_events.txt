@@ -38,8 +38,8 @@ province_event = {
 			NOT = { continent = europe }
 		}
 		modifier = {
-			factor = 0.25
-			is_capital = yes
+			factor = 3
+			is_capital = no
 		}
 		modifier = {
 			factor = 1.5
@@ -123,19 +123,7 @@ province_event = {
 		}
 		#cities are breeding grounds for revolution
 		modifier = {
-			factor = 0.95
-			development = 35
-		}
-		modifier = {
-			factor = 0.95
-			development = 40
-		}
-		modifier = {
-			factor = 0.9
-			development = 45
-		}
-		modifier = {
-			factor = 0.9
+			factor = 0.8
 			development = 50
 		}
 		#Production-based checks

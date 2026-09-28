@@ -42,4 +42,34 @@ country_decisions = {
 			}
 		}
 	}
+
+	# reform taxation
+
+	t_reform_taxation_decision = {
+		major = yes
+		potential = {
+			has_country_modifier = chi_inefficient_taxation
+		}
+		allow = {
+			adm_tech = 8
+			imperial_mandate = 80
+			adm_power = 200
+			government_reform_progress = 200
+			custom_trigger_tooltip = {
+				tooltip = t_reform_taxation_decision_tt
+				had_country_flag = {
+					flag = t_mandate_taken_flag
+					days = 7300
+				}
+			}
+		}
+		effect = {
+			add_adm_power = -200
+           		change_government_reform_progress = -200
+			remove_country_modifier = chi_inefficient_taxation
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
 }

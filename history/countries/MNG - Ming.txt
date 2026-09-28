@@ -7,6 +7,11 @@ add_harmonized_religion = mahayana
 primary_culture = jianghuai
 capital = 1821	# Nanjing
 
+add_country_modifier = {
+	name = chi_inefficient_taxation
+	duration = -1
+}
+
 if = {
 	limit = {
 		OR = {
