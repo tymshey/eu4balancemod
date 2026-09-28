@@ -1135,8 +1135,8 @@ commercial_enterprise = {
 	}
 	forcelimit_to_overlord = 0.1						# Percent of subject FL to use as base for modifiers
 	naval_forcelimit_to_overlord = 0.1					# Percent of subject FL to use as base for modifiers
-	manpower_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers
-	sailors_to_overlord = 0.1							# Percent of subject FL to use as base for modifiers
+	manpower_to_overlord = 0.3							# Percent of subject FL to use as base for modifiers
+	sailors_to_overlord = 0.3							# Percent of subject FL to use as base for modifiers
 
 	# Subject Interactions:
 	# (continuous)

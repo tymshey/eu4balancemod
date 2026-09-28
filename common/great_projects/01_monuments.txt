@@ -1468,7 +1468,10 @@ angkor_wat = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
+			mission_completed = d_fra_indochina
+		}
 	}
 
 	#what to do when it's built
@@ -1483,12 +1486,18 @@ angkor_wat = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
+			mission_completed = d_fra_indochina
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism_or_is_dharmic = yes
+			mission_completed = d_fra_indochina
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -10481,7 +10490,10 @@ imperial_city_hue = {
 
 	#can we build it?
 	build_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism = yes
+			mission_completed = d_fra_indochina
+		}
 	}
 
 	#what to do when it's built
@@ -10496,12 +10508,18 @@ imperial_city_hue = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism = yes
+			mission_completed = d_fra_indochina
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		province_is_buddhist_or_accepts_buddhism = yes
+		OR = {
+			province_is_buddhist_or_accepts_buddhism = yes
+			mission_completed = d_fra_indochina
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -13139,14 +13157,20 @@ holy_city_kairouan = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
+			mission_completed = d_fra_tunis
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion_group = {
-			religion_group = muslim
+		OR = {
+			province_is_or_accepts_religion_group = {
+				religion_group = muslim
+			}
+			mission_completed = d_fra_tunis
 		}
 	}
 

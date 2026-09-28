@@ -824,7 +824,7 @@ french_missions_1_Continuation_a = {
 	
 	fra_colonial_approach = { 
 		icon = mission_rb_the_thirteen_colonies
-		required_missions = { fra_french_canada fra_found_french_haiti }
+		required_missions = { fra_found_french_haiti }
 		position = 11
 		provinces_to_highlight = {
 			OR = {
@@ -870,14 +870,6 @@ french_missions_1_Continuation_a = {
 				}
 				amount = 4
 			}
-			if = { 
-				limit = { is_random_new_world = no }
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					region = guinea_region 
-					value = 5 
-				}
-			}
-			else = { mercantilism = 25 }
 		}
 		effect = {
 			add_country_modifier = {
@@ -885,6 +877,48 @@ french_missions_1_Continuation_a = {
 				duration = -1 
 			}
 			add_mercantilism = 5 
+		}
+	}
+	
+	d_fra_indochina = { 
+		icon = imperial_navy
+		required_missions = { d_fra_discover_india }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = indochina_region
+				value = 40
+			}
+			owns_core_province = 4831
+			owns_core_province = 609
+			owns_core_province = 2373
+		}
+		effect = {
+			add_adm_power = 200
+			custom_tooltip = d_fra_unlock_indochina_monuments_tooltip
+			4831 = { 
+				add_great_project_tier = {
+					type = the_grand_palace
+					tier = 1 
+				}
+				add_base_tax = 3
+			}
+			609 = { 
+				add_great_project_tier = {
+					type = angkor_wat
+					tier = 1 
+				}
+				add_base_production = 3
+			}
+			2373 = { 
+				add_great_project_tier = {
+					type = imperial_city_hue
+					tier = 1 
+				}
+				add_base_manpower = 3
+			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -1945,7 +1979,7 @@ french_missions_2_Continuation_b = {
 	}
 	
 	d_fra_discover_india = { 
-		icon = mission_establish_high_seas_navy
+		icon = mission_explore_the_world
 		required_missions = {  }
 		trigger = {
 			num_of_explorers = 1 
@@ -1999,6 +2033,122 @@ french_missions_2_Continuation_b = {
 		}
 		ai_weight = {
 			factor = 500
+		}
+	}
+	
+	d_fra_fic = { 
+		icon = mission_indian_trade_company
+		required_missions = { d_fra_discover_india }
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = coromandel_region
+				value = 15
+			}
+		}
+		effect = {
+			add_adm_power = 200
+			custom_tooltip = d_can_estabilish_fic
+			bengal_region = { 
+				limit = { 
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			indo_china_region = { 
+				limit = { 
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+
+	dom_fra_indian_dominance = {
+		icon = indian_dominance
+		required_missions = { d_fra_fic }
+		position = 13
+		provinces_to_highlight = {
+			superregion = india_superregion 
+			if = { 
+				limit = { 
+					ROOT = { 
+						NOT = { 
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								superregion = india_superregion
+								value = 50
+							}
+						}
+					}
+				}
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+			else = { 
+				AND = {
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					province_has_center_of_trade_of_level = 1 
+				}
+			}
+			# OR = {
+				# NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				# AND = {
+					# NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					# province_has_center_of_trade_of_level = 1 
+				# }
+			# }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				superregion = india_superregion
+				value = 50
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				superregion = india_superregion
+				value = 10
+				province_has_center_of_trade_of_level = 1 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fra_masters_of_india_modifier
+				duration = -1 
+			}
+			india_superregion = { 
+				limit = { 
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			if = { 
+				limit = { has_dlc = "Dharma" }
+				custom_tooltip = fra_coastal_cot_level_3_marketplace_estuary_tt
+				tooltip = {
+					add_province_modifier = {
+						name = fra_compagnie_francaise_modifier
+						duration = -1 
+					}
+				}
+				hidden_effect = {
+					random_owned_province = {
+						limit = {
+							superregion = india_superregion
+							has_trade_building_trigger = yes 
+							province_has_center_of_trade_of_level = 3 
+							base_production = 15 
+							has_river_estuary_trigger = yes 
+						}
+						add_province_modifier = {
+							name = fra_compagnie_francaise_modifier
+							duration = -1 
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -3211,7 +3361,7 @@ french_missions_3_continuation_after_hre_missions = {
 	}
 
 	d_fra_algiers = { 
-		icon = mission_combat_barbary_piracy
+		icon = mission_unite_home_region
 		required_missions = { fra_raise_slave_ships } 
 		provinces_to_highlight = {
 			OR = {
@@ -3236,89 +3386,30 @@ french_missions_3_continuation_after_hre_missions = {
 			337 = {
 				change_culture = ROOT
 			}
-			add_country_modifier = {
-				name = d_france_algiersculture
-				duration = 9125
+			hautes_plaines_area = {
+				add_permanent_province_modifier = {
+					name = d_france_algiersculture
+					duration = 9125
+				}
 			}
-			custom_tooltip = d_fra_northafrica_claims
-			hidden_effect = {
-				kabylia_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
+			barbary_coast_area = {
+				add_permanent_province_modifier = {
+					name = d_france_algiersculture
+					duration = 9125
 				}
-				tunisia_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
+			}
+			algiers_area = {
+				add_permanent_province_modifier = {
+					name = d_france_algiersculture
+					duration = 9125
 				}
-				djerba_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
+			}
+			maghreb_region = { 
+				limit = { 
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				ouled_nail_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				north_saharan_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				northern_morocco_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				western_morocco_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				southern_morocco_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				marrekesh_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				tafilalt_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				sus_area = { 
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
+				add_permanent_claim = ROOT 
 			}
 			if = {
 				limit = {
@@ -3339,7 +3430,7 @@ french_missions_3_continuation_after_hre_missions = {
 	}
 	
 	d_fra_morocco = { 
-		icon = mission_combat_barbary_piracy
+		icon = renaissance_city
 		required_missions = { d_fra_algiers } 
 		provinces_to_highlight = {
 			OR = {
@@ -3383,12 +3474,45 @@ french_missions_3_continuation_after_hre_missions = {
 				}
 				add_permanent_claim = ROOT 
 			}
+			custom_tooltip = d_fra_morocco_yes_tooltip
+			tooltip = {
+				MOR = {
+					add_liberty_desire = -30
+					change_religion = ROOT
+				}
+			}
+			custom_tooltip = d_fra_morocco_no_tooltip
+			tooltip = {
+				add_accepted_culture_or_dip_power = {
+					culture = moroccan
+					dip_reward = yes
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						MOR = {
+							is_subject_of = ROOT
+						}
+					}
+					MOR = {
+						add_liberty_desire = -30
+						change_religion = ROOT
+					}
+				}
+				else = {
+					add_accepted_culture_or_dip_power = {
+						culture = moroccan
+						dip_reward = yes
+					}
+				}
+			}
 		}
 	}
 	
 	d_fra_westafrica = { 
-		icon = mission_combat_barbary_piracy
-		required_missions = { d_fra_morocco } 
+		icon = mission_west_african_ports
+		required_missions = {  } 
 		provinces_to_highlight = {
 			OR = {
 				region = sahel_region
@@ -3441,83 +3565,6 @@ french_missions_3_continuation_after_hre_missions = {
 					add_province_modifier = {
 						name = d_france_subjectgold
 						duration = -1 
-					}
-				}
-			}
-		}
-	}
-
-	dom_fra_indian_dominance = {
-		icon = indian_dominance
-		required_missions = {  }
-		position = 13
-		provinces_to_highlight = {
-			superregion = india_superregion 
-			if = { 
-				limit = { 
-					ROOT = { 
-						NOT = { 
-							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								superregion = india_superregion
-								value = 20
-							}
-						}
-					}
-				}
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			}
-			else = { 
-				AND = {
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					province_has_center_of_trade_of_level = 1 
-				}
-			}
-			# OR = {
-				# NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				# AND = {
-					# NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					# province_has_center_of_trade_of_level = 1 
-				# }
-			# }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				superregion = india_superregion
-				value = 20
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				superregion = india_superregion
-				value = 4
-				province_has_center_of_trade_of_level = 1 
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = fra_masters_of_india_modifier
-				duration = -1 
-			}
-			if = { 
-				limit = { has_dlc = "Dharma" }
-				custom_tooltip = fra_coastal_cot_level_3_marketplace_estuary_tt
-				tooltip = {
-					add_province_modifier = {
-						name = fra_compagnie_francaise_modifier
-						duration = -1 
-					}
-				}
-				hidden_effect = {
-					random_owned_province = {
-						limit = {
-							superregion = india_superregion
-							has_trade_building_trigger = yes 
-							province_has_center_of_trade_of_level = 3 
-							base_production = 15 
-							has_river_estuary_trigger = yes 
-						}
-						add_province_modifier = {
-							name = fra_compagnie_francaise_modifier
-							duration = -1 
-						}
 					}
 				}
 			}
@@ -4872,7 +4919,7 @@ french_missions_4_normal_continuation = {
 	}
 	
 	d_fra_tunis = { 
-		icon = mission_combat_barbary_piracy
+		icon = mission_rb_mediterranean_authority
 		required_missions = { d_fra_algiers } 
 		provinces_to_highlight = {
 			OR = {
@@ -4905,6 +4952,7 @@ french_missions_4_normal_continuation = {
 					duration = -1
 				}
 			}
+			custom_tooltip = d_fra_unlock_holy_city_kairouan_tooltip
 			4566 = { 
 				add_great_project_tier = {
 					type = holy_city_kairouan
@@ -4912,6 +4960,48 @@ french_missions_4_normal_continuation = {
 				}
 				add_base_manpower = 3
 				add_local_autonomy = -25
+			}
+			custom_tooltip = d_fra_tunis_bonus_tooltip
+			tooltip = {
+				create_colony_mission_reward = {
+					province = 2474
+				}
+				create_colony_mission_reward = {
+					province = 2475
+				}
+				create_conquistador = {
+					tradition = 67
+				}
+				sahel_region = { 
+					limit = { 
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						owns_or_non_sovereign_subject_of = 2448
+					}
+					create_colony_mission_reward = {
+						province = 2474
+					}
+					create_colony_mission_reward = {
+						province = 2475
+					}
+					create_conquistador = {
+						tradition = 67
+					}
+					sahel_region = { 
+						limit = { 
+							NOT = { owned_by = ROOT }
+							NOT = { is_core = ROOT }
+						}
+						add_permanent_claim = ROOT 
+					}
+				}
 			}
 		}
 	}
@@ -4947,6 +5037,52 @@ french_missions_4_normal_continuation = {
 			add_country_modifier = {
 				name = fra_france_rules_the_waves_modifier
 				duration = -1 
+			}
+		}
+	}
+	
+	fra_english_channel_mission = {
+		icon = mission_rb_monopolize_the_channel 
+		required_missions = { fra_british_isles fra_rule_britannia } 
+		provinces_to_highlight = {
+			province_id = 1269 
+		}
+		trigger = {
+			1269 = { 
+				trade_share = {
+					country = ROOT 
+					share = 75
+				}
+			}
+			if = { 
+				limit = { has_dlc = "Mare Nostrum" }
+				OR = {
+					full_idea_group = trade_ideas 
+					mercantilism = 50 
+				}
+			}
+		}
+		effect = {
+			1272 = { change_province_name = "La Manche" }
+			1269 = { change_province_name = "Basse-C te" }
+			add_country_modifier = {
+				name = fra_channel_dominance_modifier
+				duration = -1 
+			}
+			custom_tooltip = fra_merc_per_province_tt
+			if = { 
+				limit = { 
+					1269 = { highest_value_trade_node = yes }
+				}
+				hidden_effect = { 
+					every_owned_province = {
+						limit = { 
+							same_trade_node_as = 1269
+							province_has_center_of_trade_of_level = 1 
+						}
+						owner = { add_mercantilism = 1 }
+					}
+				}
 			}
 		}
 	}
@@ -6440,52 +6576,6 @@ fra_missions_5_continuation = {
 			country_event = { id = flavor_fra.203 }
 			custom_tooltip = fra_event_insight_203_tt
 		}	
-	}
-	
-	fra_english_channel_mission = {
-		icon = mission_rb_monopolize_the_channel 
-		required_missions = { fra_british_isles fra_rule_britannia } 
-		provinces_to_highlight = {
-			province_id = 1269 
-		}
-		trigger = {
-			1269 = { 
-				trade_share = {
-					country = ROOT 
-					share = 75
-				}
-			}
-			if = { 
-				limit = { has_dlc = "Mare Nostrum" }
-				OR = {
-					full_idea_group = trade_ideas 
-					mercantilism = 50 
-				}
-			}
-		}
-		effect = {
-			1272 = { change_province_name = "La Manche" }
-			1269 = { change_province_name = "Basse-C te" }
-			add_country_modifier = {
-				name = fra_channel_dominance_modifier
-				duration = -1 
-			}
-			custom_tooltip = fra_merc_per_province_tt
-			if = { 
-				limit = { 
-					1269 = { highest_value_trade_node = yes }
-				}
-				hidden_effect = { 
-					every_owned_province = {
-						limit = { 
-							same_trade_node_as = 1269
-							province_has_center_of_trade_of_level = 1 
-						}
-						owner = { add_mercantilism = 1 }
-					}
-				}
-			}
-		}
 	}
 	
 	fra_connect_provinces = {
