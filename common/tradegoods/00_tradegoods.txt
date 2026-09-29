@@ -2283,3 +2283,115 @@ cloves = {
 unknown = {
 	color = { 0.5 0.5 0.5 }
 }
+
+tank = {
+	color = { 69 420 69 }
+	modifier = {
+		movement_speed = 0.05
+	}
+	province = {
+		production_efficiency = 0.15
+	}
+	chance = {
+		factor = 0	
+	}
+}
+
+honey = {
+	color = { 245 138 24 }
+	modifier = {
+		trade_efficiency = 0.1
+	}
+	province = {
+		local_governing_cost = -0.25
+	}
+	chance = {
+		factor = 0	
+	}
+}
+
+beer = {
+    	color = { 0.8 0.52 0.16 }
+	modifier = {
+		land_morale = 0.025
+	}
+	province = {
+		local_years_of_nationalism = -2
+	}
+	chance = {
+		factor = 0	
+	}
+}
+
+parrots = {
+    color = { 0.64 0.0 0.43 }
+    modifier = {
+	prestige = 1
+    }
+    province = {
+        province_trade_power_modifier = 0.1
+    }
+    chance = {
+        factor = 10000
+        modifier = {
+            factor = 0
+            NOT = {
+                area = timor_area
+            }
+        }
+    }
+}
+
+equines = {
+    	color = { 0.43 0.35 0.2 }
+    	modifier = {
+		cavalry_power = 0.1
+	}
+	province = {
+		local_friendly_movement_speed = 0.2
+	}
+	chance = {
+		factor = 0	
+	}
+}
+
+camelry = {
+    	color = { 237 203 149 }
+    	modifier = {
+		movement_speed = 0.05
+	}
+	province = {
+		local_production_efficiency = 0.1
+	}
+	chance = {
+		factor = 0	
+	}
+}
+
+amber = {
+    	is_valuable = yes
+	color = { 0.84 0.40 0.01 }
+	modifier = {
+		development_cost = -0.05
+	}
+	province = {
+		local_development_cost = -0.05
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+cheese = {
+    	is_valuable = yes
+	color = { 0.88 0.66 0.37 }
+	modifier = {
+		garrison_size = 0.1
+	}
+	province = {
+		local_development_cost = -0.05
+	}
+	chance = {
+		factor = 0	
+	}
+}

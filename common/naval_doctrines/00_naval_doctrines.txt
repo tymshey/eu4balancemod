@@ -396,7 +396,7 @@ ottoman_great_navy = {
 
 	cost = 0.1
 	country_modifier = {
-		global_ship_cost = -0.1
+		global_naval_engagement_modifier = 0.2
 		naval_forcelimit_modifier = 0.2
 	}
 	effect = {}

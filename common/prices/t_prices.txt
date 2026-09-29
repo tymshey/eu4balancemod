@@ -1,9 +1,19 @@
 # Prices
 
-tank = { 
-	base_price = 10
-}
+tank = { base_price = 10 }
 
-honey = {
-	base_price = 5
-}
+honey = { base_price = 5 }
+
+# new goods !
+
+beer = { base_price = 3 }
+
+parrots = { base_price = 6.7 }
+
+equines = { base_price = 3 }
+
+camelry = { base_price = 2 }
+
+amber = { base_price = 5 }
+
+cheese = { base_price = 3 }

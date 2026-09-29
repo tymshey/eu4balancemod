@@ -1,13 +1,12 @@
-#2195 - Agyghe
-
+# 2195 - Agyghe
 owner = CIR
 controller = CIR
 culture = circassian
 religion = orthodox
 capital = "Sochi"
-trade_goods = livestock
+trade_goods = equines
 hre = no
-base_tax = 2 
+base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
@@ -17,5 +16,3 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
-
-

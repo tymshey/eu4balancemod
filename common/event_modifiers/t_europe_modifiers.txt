@@ -20,6 +20,7 @@ spa_rb_overseas_trade_mod = {
 
 spa_the_royal_galleon_modifier = {
 	number_of_cannons_modifier = 0.1
+	# hull_size_modifier = 0.1
 	is_galleon_modifier = yes
 }
 

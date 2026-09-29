@@ -1,13 +1,12 @@
 # - Kasdir
-
 owner = TLC
 controller = TLC
 culture = berber
 religion = sunni
 capital = "Kasdir"
-trade_goods = livestock
+trade_goods = camelry
 hre = no
-base_tax = 1 
+base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
@@ -16,14 +15,5 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
 add_permanent_claim = MOR
-
-1549.1.1 = {
-	owner = MOR
-	controller = MOR
-	add_core = MOR
-} #Conquered by the Saadians
-1554.1.1 = {
-	owner = ALG
-	controller = ALG
-	add_core = ALG
-}
+1549.1.1 = { owner = MOR controller = MOR add_core = MOR } # Conquered by the Saadians
+1554.1.1 = { owner = ALG controller = ALG add_core = ALG } 

@@ -1508,7 +1508,7 @@ crown_colony_subject = {
 
 private_enterprise_subject = {
 	global_ship_trade_power = 0.2
-	global_trade_goods_size_modifier = 0.5
+	global_trade_goods_size_modifier = 0.2
 	naval_tradition_from_trade = 0.1
 	ship_power_propagation = 0.1
 }
@@ -2130,7 +2130,6 @@ man_of_war_ship = {
 }
 
 galleon_ship = {
-	hull_size_modifier = 0.1
 	heavy_ship_power = 0.1
 }
 

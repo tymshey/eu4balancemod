@@ -2588,6 +2588,7 @@ textile = {
 		cloth
 		silk
 		dyes
+		amber
 	}
 	onmap = yes
 	on_built = {
@@ -2630,6 +2631,7 @@ plantations = {
 		tobacco
 		tea
 		cocoa
+		parrots
 	}
 	onmap = yes
 	on_built = {
@@ -2711,6 +2713,10 @@ farm_estate = {
 		grain
 		livestock
 		wine
+		beer
+		cheese
+		equines
+		camelry
 	}
 	onmap = yes
 	on_built = {
@@ -2966,6 +2972,8 @@ soldier_households = {
 		fish
 		livestock
 		wine
+		equines
+		camelry
 	}
 
 	modifier = {

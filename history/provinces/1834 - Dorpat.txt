@@ -1,5 +1,4 @@
-#Dorpat
-
+# Dorpat
 owner = LIV
 controller = LIV
 add_core = LIV
@@ -8,9 +7,9 @@ add_core = EST
 culture = estonian
 religion = catholic
 hre = no
-base_tax = 3 
+base_tax = 3
 base_production = 3
-trade_goods = naval_supplies
+trade_goods = beer
 base_manpower = 2
 capital = "Dorpat"
 is_city = yes
@@ -21,19 +20,10 @@ discovered_by = AST
 discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
-
-
-1542.1.1 = { religion = protestant} # Unknown date
+1542.1.1 = { religion = protestant } # Unknown date
 1558.7.18 = { controller = RUS } # Russian conquest
-1561.1.1 = {
-	owner = LIT
-	add_core = LIT
-	remove_core = LIV
-} # Livonia ceases to exist
-1569.7.1 = {
-	owner = PLC
-	add_core = PLC
-} # Union of Lublin
+1561.1.1 = { owner = LIT add_core = LIT remove_core = LIV } # Livonia ceases to exist
+1569.7.1 = { owner = PLC add_core = PLC } # Union of Lublin
 1582.1.15 = { controller = PLC } # Peace of Jam-Zapolski
 1600.12.31 = { controller = SWE } # 2nd Polish War-Captured by Duke Karl
 1603.4.5 = { controller = PLC } # 2nd Polish War-Captured by Chodkiewicz

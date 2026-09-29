@@ -5,6 +5,21 @@
  manage_estates_tt:0 "Manage Estates"
  T_RETAIN_AGE_ABILITY_ENTRY_INACCESSIBLE:0 "This Age Ability cannot be retained."
  
+ # Tradegoods
+
+ beer:0 "Beer"
+ beerDESC:0 "Once a localized domestic chore, the commercialization of hopped beer transformed brewing into a massive, tax-yielding urban industry. Fed by regional barley surpluses, major trade networks like the Hanseatic League built fortunes exporting preserved regional ales across global maritime routes."
+ parrots:0 "Parrots"
+ parrotsDESC:0 "Hailing from the dense canopies of the Indies, these exotic birds became highly lucrative commodities in the global luxury market. Handled by colonial merchants and shipped along transoceanic trade routes, they were sold in major European ports as ultimate symbols of wealth."
+ equines:0 "Equines"
+ equinesDESC:0 "The cultivation of specific horse breeds required vast pastoral networks, dedicated stud farms, and massive cross-border markets. From the Arabian trade networks to the Eurasian steppes, managing these supply lines was essential for sustaining global transport and military logistics."
+ camelry:0 "Camelry"
+ camelryDESC:0 "Crucial for navigating arid frontiers, the breeding and trading of camels sustained the vital Silk Road and Trans-Saharan caravan networks. Cultivated by nomadic tribes for their unmatched endurance, these pack and mount animals were commercialized at desert fringe ports, linking isolated economies to global trade."
+ amber:0 "Amber"
+ amberDESC:0 "Gathered primarily along the stormy shores of the Baltic Sea, this fossilized resin has been prized since antiquity. Coveted for its warm, golden glow, amber was carved into intricate jewelry and luxury religious artifacts. It formed the basis of historic overland trade routes connecting northern tribes to southern empires, serving as a highly valuable currency of prestige."
+ cheese:0 "Cheese"
+ cheeseDESC:0 "What began as a vital method for preserving perishable milk quickly grew into a sophisticated art of cultivation and aging. From the hard, durable wheels of the Alps—perfect for long-distance transport—to the specialized regional varieties of the Low Countries, cheese evolved into a staple culinary commodity that fueled urban markets and sustained sailors on long voyages."
+ 
  # Decisions
 
  t_assign_parliament_decision_title:0 "Assign Parliament to Every Applicable Province"
@@ -49,12 +64,28 @@
  t_competitive_merchants:0 "Competitive Merchants"
  t_competitive_merchants_desc:0 "This modifier compensates the lack of Expansion Ideas."
 
- T_SLAVE_TRADE_SURGED:0 "Slave Trade Surged"
+ t_colonial.1.title:0 "Competitive Merchants"
+ t_colonial.1.desc:0 "The merchants of our realm have long been a powerful force in our economy, but they have often been overshadowed by the grandeur of our noble houses. With the recent surge in trade and commerce, however, these enterprising individuals have begun to assert their influence more boldly. They are now competing fiercely for control over lucrative trade routes and markets, challenging the traditional dominance of the aristocracy."
+ t_colonial.1.a:0 "This will increase our income from trade."
+
+ # Events
 
  t_prices.1.title:0 "Slave Trade Surged"
  t_prices.1.desc:0 "Reports from our overseas merchants speak of turmoil and opportunity in equal measure. Conflict and expansion in distant lands have driven an unprecedented demand for forced labor, while rival powers struggle to secure sufficient supply. Markets from the coasts of West Africa to the plantations of the New World now bid ever higher for this commodity."
  t_prices.1.a:0 "This will increase the demand for slaves, surely."
+ T_SLAVE_TRADE_SURGED:0 "Slave Trade Surged"
 
- t_colonial.1.title:0 "Competitive Merchants"
- t_colonial.1.desc:0 "The merchants of our realm have long been a powerful force in our economy, but they have often been overshadowed by the grandeur of our noble houses. With the recent surge in trade and commerce, however, these enterprising individuals have begun to assert their influence more boldly. They are now competing fiercely for control over lucrative trade routes and markets, challenging the traditional dominance of the aristocracy."
- t_colonial.1.a:0 "This will increase our income from trade."
+ t_prices.2.title:0 "Reinheitsgebot"
+ t_prices.2.desc:0 "As brewing grows from a local craft into a major commercial industry, concerns over quality, taxation, and food security have come to a head. In response, a new decree has been proposed to regulate the ingredients of beer, mandating that only barley, hops, and water may be used. While this stabilizes grain prices for bread and ensures a high standard of purity for our exports, traditional brewers who rely on cheap substitutes like rye, wheat, or questionable herbs protest the sudden restriction."
+ t_prices.2.a:0 "Yes, Please"
+ REIN:0 "Reinheitsgebot"
+
+ t_prices.3.title:0 "The Decline of the Steppe Horse Trade"
+ t_prices.3.desc:0 "For centuries, the vast pastoral networks of the steppes held an absolute monopoly on the breeding and supply of warhorses, commanding immense wealth from sedentary empires desperate for cavalry mounts. However, the steady rise of gunpowder, structured infantry drill, and professional standing armies has drastically altered the nature of warfare. With cavalry forces shrinking and battlefield tactics shifting away from mass horse-archery, the once-lucrative steppe markets are emptying. The nomadic clans face a painful economic collapse as their primary strategic commodity loses its global value."
+ t_prices.3.a:0 "We must adapt."
+ DECLINE_OF_CAVALRY:0 "Decline of Cavalry"
+
+ t_prices.4.title:0 "The Advent of Hard Cheeses"
+ t_prices.4.desc:0 "For generations, cheese was a highly perishable local commodity, prone to spoiling before it could reach distant markets. However, the widespread adoption of advanced mechanical cheese presses across the North Sea region has revolutionized dairy production. By applying immense, uniform pressure, curds are drained of moisture to create dense, hard cheeses. These durable wheels can withstand months of travel without spoiling, making them an indispensable, high-demand ration for merchant fleets and imperial navies alike. The global demand for cheese has skyrocketed."
+ t_prices.4.a:0 "A triumph of preservation!"
+ CHEESE_PRESS:0 "Cheese Press"

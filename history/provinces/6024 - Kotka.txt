@@ -1,5 +1,5 @@
-#Written with Eu4 Easy Province Creator by emiroercn
-#Kotka
+# Written with Eu4 Easy Province Creator by emiroercn
+# Kotka
 add_core = SWE
 add_core = FIN
 owner = SWE
@@ -9,11 +9,10 @@ religion = catholic
 hre = no
 base_tax = 1
 base_production = 1
-trade_goods = naval_supplies
+trade_goods = beer
 base_manpower = 1
 capital = "Kotka"
 is_city = yes
 center_of_trade = 1
-
 discovered_by = eastern
 discovered_by = western

@@ -760,7 +760,6 @@ SPA_ideas = {
 	}
 	spanish_armada = {
 		heavy_ship_power = 0.15
-		naval_forcelimit_modifier = 0.25
 	}
 	spa_casa_de_contracion = {
 		envoy_travel_time = -0.33
