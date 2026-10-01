@@ -6,6 +6,7 @@ country_decisions = {
 				capital_scope = {
 					continent = africa
 				}
+			}
 			any_subject_country = {
 				is_colonial_nation = no
 				is_vassal = yes

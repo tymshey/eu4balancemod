@@ -126,7 +126,9 @@ m_colonial_nation_debbufs = {
 	trigger = {
 		is_colonial_nation = yes
 		NOT = {
-			capital_scope = india_superregion
+			capital_scope = {
+				superregion = india_superregion
+			}
 		}
 	}
 	
