@@ -704,7 +704,8 @@ estate_burghers_free_enterprise = {
 	conditional_modifier = {
 		trigger = { has_country_flag = ned_buffed_free_enterprises }
 		modifier = {
-			light_ship_power = 0.1
+			trade_efficiency = 0.1
+			burghers_privilege_slots = 1
 			burghers_loyalty_modifier = 0.05
 		}
 	}
