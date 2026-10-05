@@ -103,7 +103,7 @@ GER_ideas = {
 	}
 	
 	bonus = {
-		diplomatic_upkeep = 1
+		leader_land_fire = 1
 	}	
 
 	trigger = {
@@ -112,7 +112,7 @@ GER_ideas = {
 	free = yes
 	
 	ger_german_confederation = {
-		land_morale = 0.10
+		land_morale = 0.15
 	}
 	ger_german_universities = {
 		technology_cost = -0.1
@@ -124,10 +124,10 @@ GER_ideas = {
 		trade_efficiency = 0.10
 	}
 	ger_junkers = {
-		army_tradition = 0.5
+		fire_damage = 0.1
 	}
 	ger_reichstag = {
-		administrative_efficiency = 0.05
+		development_cost = -0.1
 	}
 	ger_eisen_und_kohle = {
 		global_trade_goods_size_modifier = 0.2

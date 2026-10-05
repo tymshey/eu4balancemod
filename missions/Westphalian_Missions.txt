@@ -173,35 +173,79 @@ Hesse_missions_2 = {
 			westphalia_area = {
 				type = all
 				owned_by = ROOT
-				}
-				north_rhine_area = {
+			}
+			north_rhine_area = {
 				type = all
 				owned_by = ROOT
-				}
-				hesse_area = {
+			}
+			hesse_area = {
 				type = all
 				owned_by = ROOT
-				}
-				lower_rhineland_area = {
+			}
+			lower_rhineland_area = {
 				type = all
 				owned_by = ROOT
-				}
+			}
 			north_westphalia_area = {
 				type = all
 				owned_by = ROOT
-				}
+			}
 			}
 		effect = {
 			add_country_modifier = {
-			name = Westphalia_united
-			duration = -1
+				name = Westphalia_united
+				duration = -1
 			}
 			custom_tooltip = hesse_tooltip
 			hidden_effect = {
-			set_country_flag = Westphalia_mission_formable
+				set_country_flag = Westphalia_mission_formable
 			}
 		}
 	}
+
+	wes_new_system_trade = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { Mission_Unite_Wesphalia }
+		position = 1
+		trigger = {
+			mercantilism = 20
+			trader = 3
+			44 = {
+				OR = {
+					province_has_center_of_trade_of_level = 3
+					OR = {
+						has_building = trade_depot 
+						has_building = stock_exchange 
+					}
+				}
+			}
+			45 = {
+				OR = {
+					province_has_center_of_trade_of_level = 3
+					OR = {
+						has_building = trade_depot 
+						has_building = stock_exchange 
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = { id = flavor_hsa.12 } #flavor_hsa.12
+			44 = {
+				add_province_modifier = {
+					name = wes_naval_infrastructure
+					duration = -1
+				}
+			}
+			45 = {
+				add_province_modifier = {
+					name = wes_naval_infrastructure
+					duration = -1
+				}
+			}
+		}
+	}
+
 	Mission_Establish_New_Ports = {
 		icon = mission_norwegian_ship
 		required_missions = {Mission_Future_of_westphalia }
@@ -210,26 +254,27 @@ Hesse_missions_2 = {
 		position = 5
 		
 		trigger = {
-		46 = {has_building = marketplace}
-		45 = {has_building = marketplace}
-		44 = {has_building = marketplace}
-		
-		navy_size = 90
-		mecklenburg_area = {
+			1874 = { has_building = marketplace }
+			45 = { has_building = marketplace }
+			44 = { has_building = marketplace }
+			
+			naval_reformer = 2
+
+			mecklenburg_area = {
 				type = all
 				owned_by = ROOT
-				}
-		45 = {is_strongest_trade_power = ROOT}
-		holstein_area = {
+			}
+			45 = { is_strongest_trade_power = ROOT }
+			holstein_area = {
 				type = all
 				owned_by = ROOT
-				}
+			}
 		}
 		effect = {
-			2996 = {add_center_of_trade_level = 1}
+			# 2996 = {add_center_of_trade_level = 1}
 			add_country_modifier = {
-			name = New_Ports
-			duration = -1
+				name = New_Ports
+				duration = -1
 			}
 		}
 	}

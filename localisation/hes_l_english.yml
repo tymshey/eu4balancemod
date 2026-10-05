@@ -1,4 +1,26 @@
 ﻿l_english:
+
+ # Modifiers
+ 
+ ger_a_great_navy:0 "A Great Navy"
+
+ wes_naval_infrastructure:0 "Naval Infrastructure"
+ wes_naval_infrastructure_desc:0 "This province contains extensive naval infrastructure, allowing for the construction and maintenance of a larger fleet."
+ ger_imperial_naval_shipyard:0 "Imperial Naval Shipyard"
+ ger_imperial_naval_shipyard_desc:0 "This province is home to a major naval shipyard, enabling the construction of advanced warships and providing a significant boost to our naval capabilities."
+
+ # Missions
+
+ wes_new_system_trade_title:0 "New System of Trade"
+ wes_new_system_trade_desc:0 "The Rhine is the lifeblood of our economy, and we must ensure that our merchants have the freedom to trade without interference from foreign powers. By establishing a new system of trade, we can create a more efficient and profitable market for our goods, while also strengthening our position as a leading economic power in Europe."
+
+ GER_develop_imperial_shipyards_title:0 "Develop Imperial Shipyards"
+ GER_develop_imperial_shipyards_desc:0 "The Imperial shipyards are a vital component of our naval power, and we must invest in their development to ensure that they remain at the forefront of shipbuilding technology. By modernizing our facilities and training skilled shipwrights, we can produce faster, more durable vessels that will give us a decisive advantage in naval warfare."
+ GER_a_navy_to_rival_the_british_title:0 "A Navy to Rival the British"
+ GER_a_navy_to_rival_the_british_desc:0 "The British Empire has long been the dominant naval power in Europe, and we must rise to the challenge if we are to secure our place among the great powers of the world. By building a navy that can rival the British fleet, we can protect our trade routes, project our influence overseas, and ensure that our nation remains a force to be reckoned with on the high seas."
+
+ # cokolwiek to jest
+
  Mission_Expand_Hesse_title:0 "Expand Hesse"
  Mission_Expand_Hesse_desc:0 " "
  Mission_rhenish_trade_hub_title:0 "Rhenish Trade Hub"

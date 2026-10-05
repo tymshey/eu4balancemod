@@ -3374,19 +3374,19 @@ kok_persia_culture_mission_slot_2 = {
 					change_price = {
 						trade_goods = silk
 						key = PERSIAN_SILK
-						value = 0.25
+						value = 0.1
 						duration = -1
 					}
 					change_price = {
 						trade_goods = dyes
 						key = PERSIAN_DYES
-						value = 0.5
+						value = 0.25
 						duration = -1
 					}
 					change_price = {
 						trade_goods = cloth
 						key = PERSIAN_CLOTH
-						value = 0.35
+						value = 0.1
 						duration = -1
 					}
 				"
