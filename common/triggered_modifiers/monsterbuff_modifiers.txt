@@ -124,7 +124,12 @@ m_colonial_nation_debbufs = {
 	}
 
 	trigger = {
-	is_colonial_nation = yes
+		is_colonial_nation = yes
+		NOT = {
+			capital_scope = {
+				superregion = india_superregion
+			}
+		}
 	}
 	
 	development_cost = 0.25

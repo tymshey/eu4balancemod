@@ -2,6 +2,11 @@ country_decisions = {
 
 	d_colonial_vassal_annex = {
 		potential = {
+			NOT = {
+				capital_scope = {
+					continent = africa
+				}
+			}
 			any_subject_country = {
 				is_colonial_nation = no
 				is_vassal = yes
