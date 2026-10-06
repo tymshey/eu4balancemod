@@ -4886,8 +4886,7 @@ german_rhenish_reform = {
 		}
 	}
 	modifiers = {
-		ae_impact = -0.15 
-		diplomats = 1
+		max_absolutism_effect = 0.2
 	}
 	
 	custom_attributes = {
