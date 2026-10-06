@@ -75,9 +75,6 @@ country_decisions = {
 			}
 		}
 		effect = {
-			522 = {
-				move_capital_effect = yes
-			}
 			change_tag = MUG
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
