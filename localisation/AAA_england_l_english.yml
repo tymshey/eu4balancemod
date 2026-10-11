@@ -20,6 +20,7 @@
  eng_refine_the_marines_quality:0 "Refine the Royal Marine Corps: Quality"
  eng_refine_the_marines_quality_debuff:0 "Logistic Stain of Better Marine Corps"
  eng_refine_the_marines_quantity:0 "Refine the Royal Marine Corps: Quantity"
+ bank_of_england:0 "Bank of England"
  
  gbr_british_rule_2:0 "British Rule"
  gv_angevin_rule:0 "Heartland of the Empire"
@@ -42,6 +43,16 @@
  flavor_england.3.desc:0 "As our global commitments multiply, Parliament and the Admiralty are locked in a fierce debate regarding the trajectory of our elite naval infantry. One faction, led by veteran sea captains, argues that the Royal Marines must remain a peerless, heavily trained spearhead—even if it means restricting recruitment to only the finest volunteers. Conversely, the Lords of the Admiralty insist that the sheer scale of our empire requires a massive expansion of our amphibious force, arguing that quantity has a quality of its own when securing distant coastlines. How shall we instruct the recruiting sergeants?"
  flavor_england.3.a:0 "Invest in quality of the Marine Corps."
  flavor_england.3.b:0 "Invest in quantity of the Marine Corps."
+
+ flavor_england.4.title:0 "The Grand Survey of Saxton"
+ flavor_england.4.desc:0 "In a bold and visionary endeavor, the Crown has been offered a comprehensive survey of the British Isles by the esteemed cartographer Christopher Saxton. This ambitious project aims to meticulously chart every corner of our realm, from the rolling hills of the countryside to the bustling streets of our cities. The resulting maps will not only serve as invaluable tools for governance and defense but will also stand as a testament to the ingenuity and ambition of our nation."
+ flavor_england.4.a:0 "Let us proceed with the Grand Survey."
+ flavor_england.4.b:0 "Employ him in the court instead."
+
+ flavor_england.5.title:0 "The Enclosure Debate"
+ flavor_england.5.desc:0 "Landowners across the country are increasingly enclosing common lands, replacing traditional peasant crops with profitable sheep pastures to fuel the booming cloth trade. The displaced peasantry is flocking to the cities, starving and furious. Parliament is fiercely divided between the landowners profiting from the wool and reformers warning of open rebellion."
+ flavor_england.5.a:0 "Favour the landowners and their enclosures."
+ flavor_england.5.b:0 "Favour the commons and their right to farm the land."
 
  # Missions
 

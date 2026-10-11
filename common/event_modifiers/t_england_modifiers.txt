@@ -32,6 +32,10 @@ eng_refine_the_marines_quantity = {
 	allowed_marine_fraction = 0.15
 }
 
+bank_of_england = {
+	inflation_reduction = 0.1
+}
+
 # Province
 
 gbr_british_rule_2 = {

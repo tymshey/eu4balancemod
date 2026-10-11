@@ -87,3 +87,93 @@ country_event = {
 		}
 	}
 }
+
+# The Grand Survey of Saxton
+
+country_event = {
+	id = flavor_england.4
+	title = flavor_england.4.title
+	desc = flavor_england.4.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		is_year = 1500
+		OR = {
+			tag = GBR
+			tag = ENG
+			tag = AVE
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = { # sure
+		name = flavor_england.4.a
+		add_adm_power = 100
+		add_treasury = -200
+	}
+	
+	option = { # we cant afford that
+		name = flavor_england.4.b
+		add_innovativeness_small_effect = yes
+	}
+}
+
+# The Enclosure Debate
+
+country_event = {
+	id = flavor_england.5
+	title = flavor_england.5.title
+	desc = flavor_england.5.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	
+	trigger = {
+		is_year = 1490
+		OR = {
+			tag = GBR
+			tag = ENG
+			tag = AVE
+		}
+		owns = 240
+		owns = 4373
+		owns = 244
+		owns = 4368
+	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = { # favour the landlords
+		name = flavor_england.5.a
+		240 = {
+			add_base_production = 1
+		}
+		4373 = {
+			add_base_production = 1
+		}
+		244 = {
+			add_base_production = 1
+		}
+		4368 = {
+			add_base_production = 1
+		}
+	}
+	
+	option = { # favour the commons
+		name = flavor_england.5.b
+		add_stability_or_adm_power = 1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}
