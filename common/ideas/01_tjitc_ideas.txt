@@ -1,0 +1,83 @@
+#EIC_ideas = {		# British East India Company
+#	start = {
+#		trade_efficiency = 0.15
+#		no_religion_penalty = yes
+#	}
+#	
+#	bonus = {
+#		global_ship_trade_power = 0.2
+#	}
+#	
+#	trigger = {
+#		tag = EIC
+#	}
+#	free = yes
+#	
+#	eic_monopoly_on_the_indies = {
+#		merchants = 1
+#		mercantilism_cost = -0.1
+#	}
+#	eic_company_administration = {
+#		administrative_efficiency = 0.05
+#	}
+#	eic_sepoys = {
+#		global_manpower_modifier = 0.30
+#		infantry_power = 0.05
+#	}
+#	eic_factories = {
+#		global_trade_goods_size_modifier = 0.1
+#	}
+#	eic_opium = {
+#		spy_offence = 0.1
+#		trade_range_modifier = 0.2
+#	}
+#	eic_independent_wars = {
+#		land_forcelimit_modifier = 0.2
+#	}
+#	eic_conquest_of_india = {
+#		core_creation = -0.1
+#		province_warscore_cost = -0.1
+#	}
+#}
+
+CNT_ideas = {			# Carnatic Sultanate
+	start = {
+		merchants = 1
+		diplomatic_reputation = 1
+	}
+	
+	bonus = {
+		tolerance_own = 2
+	}
+	
+	trigger = {
+		tag = KRK
+	}
+	free = yes
+	
+	cnt_maratha_forts = {
+		defensiveness = 0.15
+		fort_maintenance_modifier = -0.1
+	}
+	cnt_coromandel_trade = {
+		trade_efficiency = 0.1
+	}
+	cnt_resist_succession = {
+		heir_chance = 0.5
+		diplomatic_upkeep = 1
+	}
+	cnt_defend_against_europe = {
+		discipline = 0.05
+	}
+	cnt_princely_state = {
+		improve_relation_modifier = 0.2
+	}
+	cnt_merchant_trades = {
+		global_ship_trade_power = 0.15
+		light_ship_cost = -0.20
+	}
+	cnt_diverse_rule = {
+		num_accepted_cultures = 1
+		global_unrest = -1
+	}
+}

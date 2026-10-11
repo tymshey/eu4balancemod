@@ -136,6 +136,8 @@ monarchy = {
 				#Burgundy
 				burgundian_empire_reform
 				lotharingian_empire_reform
+				# added
+				sisterhood_of_jeanne_darc_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -191,6 +193,8 @@ monarchy = {
 				#1.37 Trebizond
 				crusader_nobility_reform
 				TIM_plunder_economy
+				# added
+				ministerialis_promotion_reform
 			}
 		}
 		bureaucracy = {
@@ -547,6 +551,7 @@ monarchy = {
 		lottery_reform
 		dutch_republic
 		force_reelection_reform
+		prussian_republic_reform
 	}
 
 	#States General works with few others
@@ -588,6 +593,8 @@ monarchy = {
 	exclusive_reforms = {
 		states_general_reform
 		land_christian_sun_reform
+		mughal_government
+		decentralize_reform
 	}
 
 	color = { 179 25 25 }
@@ -682,6 +689,8 @@ republic = {
 				korean_peasant_republic
 				ruthenian_republic
 				ruthenian_peasant_republic
+				# ACWAS
+				new_eic_reform
 			}
 		}
 		republican_virtues = {
@@ -722,6 +731,9 @@ republic = {
 				german_other_reform
 				#1.37
 				support_state_reform
+				#EIC
+				power_of_the_board_reform
+				indian_board_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -855,7 +867,8 @@ republic = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
+				russian_mercenary_guard_reform
+				sepoy_troops_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -891,6 +904,8 @@ republic = {
 				#1.36
 				superiority_of_the_state_reform
 				divided_aristocracy_reform
+				# ACWAS
+				cornwallis_code_reform
 			}
 		}
 		economical_matters_republic = {
@@ -988,6 +1003,8 @@ republic = {
 		}
 	}
 	exclusive_reforms = {
+		parliamentary_reform
+		merchants_reform
 		veche_republic
 		great_veche_republic
 		great_russian_republic_reform
