@@ -1840,7 +1840,7 @@ PLC_ideas = {
 	}
 	
 	bonus = {
-		tolerance_heretic = 3
+		land_morale = 0.15
 	}
 	
 	trigger = {
@@ -1854,6 +1854,7 @@ PLC_ideas = {
 	}
 	pol_jagiellonian_university = {
 		idea_cost = -0.10
+		tolerance_heretic = 3
 	}
 	plc_the_obrona_potoczna = { #Same for all of them
 		drill_gain_modifier = 0.25
