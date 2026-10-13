@@ -807,7 +807,7 @@ usa_missions_5 = {
 			add_navy_tradition = 15
 			add_country_modifier = {
 				name = naval_enthusiasm_mission
-				duration = 18250 # 50 years
+				duration = -1
 			}
 		}
 	}
