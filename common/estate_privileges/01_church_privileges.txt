@@ -3193,7 +3193,10 @@ estate_church_sponsor_waqf_payments = {
 	loyalty = 0.1
 	influence = 0.15
 	is_valid = {
-		is_or_was_tag = { tag = MAM }
+		OR = {
+			is_or_was_tag = { tag = TUR }
+			is_or_was_tag = { tag = MAM }
+		}
 		religion_group = muslim
 	}
 	on_granted = {

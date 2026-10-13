@@ -20,3 +20,6 @@
  mam_export_grain_tooltip:0 "We will export grain to them, benefiting both our nations"
  mam_export_grain_cannot_have_embargo_tt:0 "We cannot be embargoed by §Y[From.GetName]§!"
  mam_export_grain_cannot_embargo_target_tt:0 "We cannot embargo §Y[From.GetName]§!"
+ 
+ #Missions
+ tur_conquer_italy_title:0 "Invade Southern Italy"

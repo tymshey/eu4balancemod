@@ -555,20 +555,30 @@ tur_conquest_of_europe = {
 		}
 		trigger = {
 			OR = {
-				custom_trigger_tooltip = {
-					tooltip = tur_conquer_vienna_tt
-					has_country_flag = tur_gateway_to_europe
+				AND = {
+					OR = {
+						custom_trigger_tooltip = {
+							tooltip = tur_conquer_vienna_tt
+							has_country_flag = tur_gateway_to_europe
+						}
+						owns_or_non_sovereign_subject_of = 134
+					}
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						OR = {
+							area = austria_proper_area
+							area = inner_austria_area
+							area = carinthia_area
+							area = tirol_area
+						}
+						value = 10
+					}
 				}
-				owns_or_non_sovereign_subject_of = 134
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = austria_proper_area
-					area = inner_austria_area
-					area = carinthia_area
-					area = tirol_area
+				134 = {
+					owner = {
+						ai = no
+						humiliated_by = ROOT
+					}
 				}
-				value = 10
 			}
 		}
 		effect = {
@@ -600,42 +610,21 @@ tur_conquest_of_europe = {
 				type = mission_rewards_power_projection
 				amount = 25
 			}
-			venetia_area = {
+			apulia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			po_valley_area = {
+			calabria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			emilia_romagna_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lombardy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			piedmont_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			liguria_area = {
+			naples_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -655,24 +644,18 @@ tur_conquest_of_europe = {
 		position = 8
 		provinces_to_highlight = {
 			OR = {
-				area = venetia_area
-				area = po_valley_area
-				area = emilia_romagna_area
-				area = lombardy_area
-				area = piedmont_area
-				area = liguria_area
+				area = apulia_area
+				area = calabria_area
+				area = naples_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
-					area = venetia_area
-					area = po_valley_area
-					area = emilia_romagna_area
-					area = lombardy_area
-					area = piedmont_area
-					area = liguria_area
+					area = apulia_area
+					area = calabria_area
+					area = naples_area
 				}
 				value = 10
 			}
@@ -682,7 +665,7 @@ tur_conquest_of_europe = {
 				amount = 50
 			}
 			add_country_modifier = {
-				name = tur_march_for_rome
+				name = tur_march_for_rome_mod
 				duration = 9125
 			}
 			tuscany_area = {
@@ -735,15 +718,6 @@ tur_conquest_of_europe = {
 						NOT = { religion = ROOT }
 					}
 				}
-				AND = {
-					NOT = { province_id = 118 }
-					OR = {
-						area = tuscany_area
-						area = central_italy_area
-						area = lazio_area
-					}
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
 			}
 		}
 		trigger = {
@@ -756,14 +730,6 @@ tur_conquest_of_europe = {
 				owned_by = ROOT
 				is_core = ROOT
 				religion = ROOT
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = tuscany_area
-					area = central_italy_area
-					area = lazio_area
-				}
-				value = 10
 			}
 		}
 		effect = {
@@ -791,7 +757,6 @@ tur_conquest_of_europe = {
 	}
 	
 	tur_address_firman = {
-		
 		icon = mission_the_firman
 		required_missions = {  }
 		position = 10
@@ -1038,7 +1003,7 @@ tur_conquest_of_europe = {
 				}
 				151 = {
 					add_province_modifier = {
-						name = tur_imperial_school_of_military_engineering
+						name = tur_imperial_school_of_military_engineering_mod
 						duration = -1
 					}
 				}"
@@ -1901,86 +1866,20 @@ tur_african_conquest = {
 		position = 12
 		provinces_to_highlight = {
 			OR = {
-				AND = {
-					province_id = 4346
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 50
-						}
-					}
-				}
-				AND = {
-					province_id = 1334
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 50
-						}
-					}
-				}
-				AND = {
-					province_id = 1335
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 50
-						}
-					}
-				}
-				AND = {
-					province_id = 504
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 20
-						}
-					}
-				}
-				AND = {
-					province_id = 1340
-					NOT = {
-						trade_share = {
-							country = ROOT
-							share = 20
-						}
+				province_id = 1340
+				NOT = {
+					trade_share = {
+						country = ROOT
+						share = 20
 					}
 				}
 			}
 		}
 		trigger = {
-			OR = {
-				4346 = {
-					trade_share = {
-						country = ROOT
-						share = 50
-					}
-				}
-				1334 = {
-					trade_share = {
-						country = ROOT
-						share = 50
-					}
-				}
-				1335 = {
-					trade_share = {
-						country = ROOT
-						share = 50
-					}
-				}
-			}
-			OR = {
-				504 = {
-					trade_share = {
-						country = ROOT
-						share = 50
-					}
-				}
-				1340 = {
-					trade_share = {
-						country = ROOT
-						share = 50
-					}
+			1340 = {
+				trade_share = {
+					country = ROOT
+					share = 50
 				}
 			}
 			OR = {
@@ -2030,7 +1929,7 @@ tur_african_conquest = {
 				limit = { has_estate = estate_nobles }
 				num_of_estate_agendas_completed = {
 					estate = estate_nobles
-					value = 4
+					value = 2
 				}
 			}
 			else = {
@@ -2853,6 +2752,10 @@ tur_egyptian_conquest = {
 			}
 			else = {
 				add_army_tradition = 20
+				country_event_with_insight = {
+					id = flavor_tur.400
+					insight_tooltip = IS_EYALET_EVENT_TT
+				}
 			}
 			horn_of_africa_region = {
 				limit = {
@@ -2878,9 +2781,8 @@ tur_egyptian_conquest = {
 		position = 12
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1343
+				province_id = 1361
 				province_id = 1357
-				province_id = 1397
 			}
 			NOT = {
 				trade_share = {
@@ -2890,12 +2792,6 @@ tur_egyptian_conquest = {
 			}
 		}
 		trigger = {
-			1343 = {
-				trade_share = {
-					country = ROOT
-					share = 35
-				}
-			}
 			1361 = {
 				trade_share = {
 					country = ROOT
@@ -2903,12 +2799,6 @@ tur_egyptian_conquest = {
 				}
 			}
 			1357 = {
-				trade_share = {
-					country = ROOT
-					share = 35
-				}
-			}
-			1397 = {
 				trade_share = {
 					country = ROOT
 					share = 35
@@ -2931,6 +2821,10 @@ tur_egyptian_conquest = {
 			add_country_modifier = {
 				name = tur_indonesian_trade
 				duration = 7300
+			}
+			add_country_modifier = {
+				name = tur_vast_trade_network
+				duration = -1
 			}
 		}
 
@@ -3599,7 +3493,6 @@ tur_arabian_conquest = {
 		icon = mission_the_caliph
 		required_missions = {
 			tur_conquer_egypt
-			tur_conquer_arabia
 		}
 		position = 9
 		provinces_to_highlight = {
@@ -5554,7 +5447,7 @@ tur_stagnation_slot_3 = {
 				}
 			}
 			else = {
-				num_of_subjects = 12
+				num_of_subjects = 6
 				NOT = {
 					any_subject_country = {
 						OR = {

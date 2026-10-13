@@ -196,11 +196,11 @@ country_event = {
 	
 	option = {		# Found the Enderun
 		name = "flavor_tur.EVTOPTA3357"
-		add_years_of_income = -0.10
+		add_years_of_income = -0.2
 		add_army_professionalism = 0.02
 		add_country_modifier = {
-			name = enderun_academy
-			duration = 3650
+			name = enderun_academy_mod
+			duration = -1
 		}
 		
 	}
@@ -209,7 +209,7 @@ country_event = {
 		add_army_professionalism = 0.02
 		add_country_modifier = {
 			name = expanded_timariot_system
-			duration = 3650
+			duration = -1
 		}		
 	}
 }
@@ -5992,7 +5992,7 @@ country_event = {
 		name = flavor_tur.239.a
 		
 		define_heir = {
-			name = "S leyman Kanuni" 
+			name = "Suleyman Kanuni"
 			adm = 6 
 			dip = 5
 			mil = 6
@@ -6333,7 +6333,7 @@ country_event = {
 		}
 		capital_scope = {
 			add_province_modifier = {
-				name = tur_imperial_school_of_military_engineering
+				name = tur_imperial_school_of_military_engineering_mod
 				duration = -1
 			}
 		}
@@ -9132,6 +9132,123 @@ country_event = {
 		
 		ai_chance = {
 			factor = 1
+		}
+	}
+}
+
+#######################
+# Additional events
+#######################
+
+# Eyalet of Adal
+
+country_event = { 
+	id = flavor_tur.400
+	title = flavor_tur.400.title
+	desc = flavor_tur.400.desc
+	picture = EYALET_eventPicture
+	is_triggered_only = yes
+	
+	option = {	# Turn the Adal into a proper Core Eyalet
+		name = flavor_tur.400.a
+		horn_of_africa_region = {
+			limit = { owned_by = ROOT }
+			add_core = ADA
+		}
+		release = ADA
+		ADA = {
+			hidden_effect = {
+				grant_independence = yes
+			}
+			eyalet_effect = {
+				tag = E13
+			}
+		}
+		create_subject = {
+			who = ADA
+			subject_type = core_eyalet
+		}
+		ADA = {
+			if = {
+				limit = { NOT = { government = monarchy } }
+				change_government = monarchy
+			}
+			if = {
+				limit = { NOT = { has_reform = eyalet_government } }
+				add_government_reform = eyalet_government
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = tur_granted_subject_autonomy
+			}
+			add_liberty_desire = -50
+		}
+		custom_tooltip = CORE_EYALET_TT
+
+		add_country_modifier = {
+			name = TUR_eyalet_of_adal
+			duration = -1
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {	# do not create the eyalet
+		name = flavor_tur.400.b
+
+		add_mil_power = 100
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# The Sublime Porte and the Janissaries
+
+country_event = { 
+	id = flavor_tur.401
+	title = flavor_tur.401.title
+	desc = flavor_tur.401.desc
+	picture = JANISSARIES_IN_FORMATION_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		is_year = 1520
+		has_estate = estate_janissaries
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = {	# restore order
+		name = flavor_tur.401.a
+
+		add_mil_power = 100
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = -10
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	# not risk the ire of the janissaries
+		name = flavor_tur.401.b
+
+		add_estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = 10
+		}
+		
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

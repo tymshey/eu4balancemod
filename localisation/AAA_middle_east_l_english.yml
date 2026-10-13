@@ -122,9 +122,31 @@
  ###############
 
  # Missions
-
+ 
  tur_the_artisans_of_the_sultanate_title:0 "The Artisans of the Sultanate"
  tur_the_artisans_of_the_sultanate_desc:0 "The [Root.GetAdjective] sultanate has a long history of craftsmanship, with artisans producing exquisite goods that are highly sought after. By supporting and promoting these artisans, we can boost our economy and enhance our cultural influence."
+
+ # Modifiers
+
+ TUR_eyalet_of_adal:0 "Eyalet of Adal"
+ tur_vast_trade_network:0 "Vast Trade Network"
+ tur_march_for_rome_mod:0 "March for Rome"
+ enderun_academy_mod:0 "Enderun Academy"
+ 
+ tur_imperial_school_of_military_engineering_mod:0 "Imperial School of Military Engineering"
+ tur_imperial_school_of_military_engineering_mod_desc:0 "This province is home to the Imperial School of Military Engineering. Many great siege experts are trained in this very school, so their genius can be used on the battlefield against the enemy defences."
+
+ # Events
+
+ flavor_tur.400.title:0 "Eyalet of Adal"
+ flavor_tur.400.desc:0 "The Sublime Porte has presented us with a unique opportunity to expand our influence in the Horn of Africa. By establishing the Eyalet of Adal, we can secure our interests in the region, strengthen our trade networks, and enhance our strategic position. This move will not only bolster our economy but also solidify our presence in a region of growing importance."
+ flavor_tur.400.a:0 "We shall establish the Eyalet of Adal."
+ flavor_tur.400.b:0 "Administrate the region directly."
+
+ flavor_tur.401.title:0 "The Sublime Porte and the Janissaries"
+ flavor_tur.401.desc:0 "Recently, the Sublime Porte has been facing challenges in maintaining the loyalty and discipline of the Janissary corps. The Janissaries, once the elite military force of the Ottoman Empire, have become increasingly unruly and resistant to reforms. As a result, the Sultan has called for a series of measures to restore order and ensure the continued effectiveness of this vital institution."
+ flavor_tur.401.a:0 "We shall support the Sublime Porte measures to restore order."
+ flavor_tur.401.b:0 "Better not risk the ire of the Janissaries..."
 
  ### OTHER
 

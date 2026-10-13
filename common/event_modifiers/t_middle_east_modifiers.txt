@@ -1,5 +1,21 @@
 ### Country
 
+TUR_eyalet_of_adal = {
+	development_cost = -0.05
+}
+
+enderun_academy_mod = {
+	infantry_power = 0.05
+}
+
+tur_vast_trade_network = {
+	merchants = 1
+}
+
+tur_march_for_rome_mod = {
+	siege_ability = 0.25
+}
+
 t_adur_farnbag_mod = {
 	reform_progress_growth = 0.1
 	monthly_asha_vahishta = -0.5
@@ -103,4 +119,10 @@ mam_trans_saharan_trade_route_modifier = {
 
 hindustan_corridor_of_life = {
 	local_development_cost = -0.1
+}
+
+tur_imperial_school_of_military_engineering_mod = {
+	leader_siege = 1
+	siege_ability = 0.1
+	ship_recruit_speed = -0.3
 }

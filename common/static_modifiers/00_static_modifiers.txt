@@ -1393,6 +1393,7 @@ high_army_professionalism = {
 	siege_ability = 0.2
 	drill_decay_modifier = -0.5
 	allowed_samurai_fraction = 0.1
+	yearly_army_professionalism = -0.005
 }
 
 streltsy_modifier = {
@@ -2352,8 +2353,8 @@ negative_imperial_authority_member = {
 }
 
 slackening_modifier = {
-    yearly_army_professionalism = -0.05
-    manpower_recovery_speed = 2
+    # yearly_army_professionalism = -0.05
+    # manpower_recovery_speed = 2
 }
 
 royal_council_meeting_mod = {

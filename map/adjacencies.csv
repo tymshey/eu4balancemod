@@ -29,7 +29,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4186;1825;sea;1390;4881;1219;4880;1214;Aki-Iyo
 2159;666;sea;1370;-1;-1;-1;-1;Jiangmen-Hainan
 36;35;sea;1926;3171;1709;3165;1709;Estland-Ösel
-35;39;sea;1256;3157;1684;3158;1694;Ösel-Kurland
+35;6047;sea;1256;3157;1684;3158;1694;Ösel-Kurland
 597;620;sea;1361;4403;657;4415;672;Johor-Siak
 659;2677;sea;1361;4435;636;4433;631;Riau-Palembang
 972;874;sea;1558;-1;-1;-1;-1;Nootka-Salish
@@ -119,4 +119,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4354;651;sea;1398;-1;-1;-1;-1;Zamboanga-Sulu
 637;655;sea;1368;-1;-1;-1;-1;Apiapi-Palawan
 320;319;sea;1319;-1;-1;-1;-1;Rhodes-Mentesha
+1031;1033;sea;4225;-1;-1;-1;-1;Kamikawa-Minami Karafuto
+1032;1034;sea;1441;-1;-1;-1;-1;Chishima Retto-Kamchatka
 -1;-1;;-1;-1;-1;-1;-1;-1
