@@ -1840,7 +1840,7 @@ PLC_ideas = {
 	}
 	
 	bonus = {
-		land_morale = 0.15
+		land_morale = 0.10
 	}
 	
 	trigger = {
