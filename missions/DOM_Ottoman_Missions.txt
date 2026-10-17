@@ -2787,7 +2787,7 @@ tur_egyptian_conquest = {
 			NOT = {
 				trade_share = {
 					country = ROOT
-					share = 35
+					share = 20
 				}
 			}
 		}
@@ -2795,13 +2795,13 @@ tur_egyptian_conquest = {
 			1361 = {
 				trade_share = {
 					country = ROOT
-					share = 35
+					share = 20
 				}
 			}
 			1357 = {
 				trade_share = {
 					country = ROOT
-					share = 35
+					share = 20
 				}
 			}
 			OR = {
@@ -2844,7 +2844,7 @@ tur_egyptian_conquest = {
 		}
 		trigger = {
 			home_trade_node = {
-				highest_value_trade_node = yes
+				# highest_value_trade_node = yes
 				trade_share = {
 					country = ROOT
 					share = 90

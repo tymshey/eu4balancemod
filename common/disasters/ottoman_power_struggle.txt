@@ -194,6 +194,10 @@ tur_disaster_janissary_coup = {
 		}
 		modifier = {
 			factor = 2
+			janissary_percentage = 0.2
+		}
+		modifier = {
+			factor = 2
 			NOT = { estate_loyalty = { estate = estate_janissaries loyalty = 60 } }
 		}
 		modifier = {
