@@ -547,7 +547,7 @@ lubeck_missions_2 = {
 			add_accepted_culture = prussian 
 		}
 	}
-
+	
 	hsa_expand_market_square = {
 		icon = mission_develop_nevas_port 
 		required_missions = { } 
@@ -1605,7 +1605,126 @@ lubeck_missions_4 = {
 			}
 		}
 	}
-	
+	hsa_appoint_war_minister = {
+		icon = military_self_reliance
+		required_missions = { hsa_royal_prussia hsa_flow_trade hsa_bypass_sound_toll }
+		position = 5 
+		trigger = {
+			has_mil_advisor_3 = yes
+			OR = {
+				army_professionalism = 0.6
+				army_tradition = 80
+			}
+			total_development = 350 
+			OR = {
+				full_idea_group = quality_ideas 
+				full_idea_group = offensive_ideas 
+				full_idea_group = quantity_ideas 
+			}
+		}
+		effect = {
+			custom_tooltip = hsa_army_reformer_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_general_army_reform_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = hsa_army_organiser_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_general_army_organization_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = hsa_commandant_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_military_excellence_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = hsa_quartermaster_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_modernized_supply_lines_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = hsa_recruitmaster_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_zealous_recruitment_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = hsa_grandcaptain_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_improved_military_administration_modifier
+					duration = -1 
+				}
+			}
+			custom_tooltip = hsa_fortification_expert_tt
+			tooltip = {
+				add_country_modifier = {
+					name = hsa_fortification_efforts_modifier
+					duration = -1 
+				}
+			}
+			hidden_effect = {#
+				if = {
+					limit = { army_reformer = 3 }
+					add_country_modifier = {
+						name = hsa_general_army_reform_modifier
+						duration = -1 
+					}
+				}
+				else_if = {#
+					limit = { army_organiser = 3 }
+					add_country_modifier = {
+						name = hsa_general_army_organization_modifier
+						duration = -1 
+					}
+				}
+				else_if = {#
+					limit = { commandant = 3 }
+					add_country_modifier = {
+						name = hsa_military_excellence_modifier
+						duration = -1 
+					}
+				}
+				else_if = {#
+					limit = { quartermaster = 3 }
+					add_country_modifier = {
+						name = hsa_modernized_supply_lines_modifier
+						duration = -1 
+					}
+				}
+				else_if = {#
+					limit = { recruitmaster = 3 }
+					add_country_modifier = {
+						name = hsa_zealous_recruitment_modifier
+						duration = -1 
+					}
+				}
+				else_if = {#
+					limit = { grand_captain = 3 }
+					add_country_modifier = {
+						name = hsa_improved_military_administration_modifier
+						duration = -1 
+					}
+				}
+				else_if = {
+					limit = { fortification_expert = 3 }
+					add_country_modifier = {
+						name = hsa_fortification_efforts_modifier
+						duration = -1 
+					}
+				}
+			}
+		}
+	}
 	
 	hsa_finance_guilds = {
 		icon = mission_state_manufactories 

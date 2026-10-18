@@ -10775,6 +10775,7 @@ DTT_ideas = {
 	}
 	dtt_trade_missions = {
 		merchants = 1
+		trade_efficiency = 0.1
 	}
 	dtt_expert_wreckers = {
 		capture_ship_chance = 0.1
