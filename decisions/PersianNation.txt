@@ -147,6 +147,18 @@ country_decisions = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					OR = {
+						tag = AKK
+						was_tag = AKK
+					}
+				}
+				add_country_modifier = {
+					name =	t_akk_persia_modifier
+					duration = -1
+				}
+			}
 			change_tag = PER
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes
