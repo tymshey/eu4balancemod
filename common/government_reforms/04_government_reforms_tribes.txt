@@ -379,7 +379,6 @@ tribal_confederacy = {
 		}
 		custom_attributes = {
 			has_internal_tribes = yes
-			locked_government_type = yes
 		}
 	}
 

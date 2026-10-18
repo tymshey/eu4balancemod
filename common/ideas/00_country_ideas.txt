@@ -18073,7 +18073,8 @@ JOL_ideas = {
 	free = yes
 
 	jol_legacy_of_ndiadiane_ndiaye = {
-		diplomatic_reputation = 1
+		diplomats = 2
+		global_colonial_growth = 20
 	}
 
 	jol_adherents_of_islam = {
@@ -18087,8 +18088,7 @@ JOL_ideas = {
 	}
 
 	jol_ambassadors_abroad = {
-		diplomats = 2
-		global_colonial_growth = 0.2
+		diplomatic_reputation = 1
 	}
 
 	jol_qadi_tribunals = {

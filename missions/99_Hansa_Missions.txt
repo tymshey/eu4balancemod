@@ -1607,7 +1607,7 @@ lubeck_missions_4 = {
 	}
 	hsa_appoint_war_minister = {
 		icon = military_self_reliance
-		required_missions = { hsa_royal_prussia hsa_flow_trade hsa_bypass_sound_toll }
+		required_missions = { hsa_flow_trade hsa_bypass_sound_toll }
 		position = 5 
 		trigger = {
 			has_mil_advisor_3 = yes
