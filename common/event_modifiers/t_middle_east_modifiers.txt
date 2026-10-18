@@ -102,6 +102,10 @@ isr_birth_of_israel = {
 	land_morale = 0.1
 }
 
+t_akk_persia_modifier = {
+	cavalry_power = 0.1
+}
+
 ### Province
 
 t_madinat_as_salam = {
