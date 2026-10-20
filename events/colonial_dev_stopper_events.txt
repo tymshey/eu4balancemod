@@ -1,0 +1,49 @@
+namespace = colonial_dev_stopper
+
+# EVENT FOR THE COLONIAL SUBJECT
+# Only for AI since an AI overlord will never block a player's development
+country_event = {
+	id = colonial_dev_stopper.1
+	title = colonial_dev_stopper.1.t
+	desc = colonial_dev_stopper.1.d
+	picture = PARLIAMENT_eventPicture
+		
+	trigger = {
+        ai = yes
+		is_colonial_nation = yes
+		has_country_modifier = colonial_dev_stop
+        liberty_desire = 50
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	        
+	option = {
+		name = colonial_dev_stopper.1.a
+        ai_chance = { factor = 100 }
+        remove_country_modifier = colonial_dev_stop
+        hidden_effect = {
+            colonial_parent = {
+                country_event = {
+                    id = colonial_dev_stopper.2
+                }
+            }
+        }
+	}
+}
+
+# EVENT FOR THE COLONIAL OVERLORD
+country_event = {
+	id = colonial_dev_stopper.2
+	title = colonial_dev_stopper.2.t
+	desc = colonial_dev_stopper.2.d
+	picture = USA_TEA_PARTY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = colonial_dev_stopper.2.a
+        ai_chance = { factor = 100 }
+	}
+}

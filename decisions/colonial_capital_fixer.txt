@@ -1,0 +1,477 @@
+# DECISION 2: CHANGE CAPITAL
+# Changes capital of colonial nation to defined province if they own that provice
+#
+# Colonial Cascadia:		873 Tsinuk (Fort Astoria in Oregon, added)
+# Colonial Canada: 			993 Osheaga (Montreal)
+# Colonial Eastern America:	965 Manahahttan (New York)
+# Colonial Louisiana:		893 Chitimacha (New Orleans)
+# Colonial California:		4637 Ohlone (San Francisco, changed from 2021 Miwok)
+# Colonial Mexico: 			852 Mexico
+# Colonial Caribbean: 		488 Zui (Port-Au-Prince)
+# Colonial Colombia: 		825 Bogota (changed from 828 Cartagena)
+# Colonial Peru:			809 Lima
+# Colonial La Plata:		778 Rio de la Plata 
+# Colonial Brazil:			763 Rio de Janeiro 
+# Colonial Australia:		1090 Eora (Sydney, added)
+#
+# Logic:
+# 	Potential: if an AI colonial nation owns a particular province (which is not its capital) in the same colonial region as its current capital (see list above)
+# 	Then change capital of the colonial region to the specified province
+country_decisions = {
+	change_capital_alaska = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_alaska }
+				owns_core_province = 873
+				NOT = { capital = 873 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_alaska }
+				owns_core_province = 873
+				NOT = { capital = 873 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_alaska }
+				}
+				set_capital = 873
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_canada = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_canada }
+				owns_core_province = 993
+				NOT = { capital = 993 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_canada }
+				owns_core_province = 993
+				NOT = { capital = 993 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_canada }
+				}
+				set_capital = 993
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_eastern_america = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_eastern_america }
+				owns_core_province = 965
+				NOT = { capital = 965 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_eastern_america }
+				owns_core_province = 965
+				NOT = { capital = 965 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_eastern_america }
+				}
+				set_capital = 965
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_louisiana = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_louisiana }
+				owns_core_province = 893
+				NOT = { capital = 893 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_louisiana }
+				owns_core_province = 893
+				NOT = { capital = 893 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_louisiana }
+				}
+				set_capital = 893
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_california = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_california }
+				owns_core_province = 4637
+				NOT = { capital = 4637 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_california }
+				owns_core_province = 4637
+				NOT = { capital = 4637 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_california }
+				}
+				set_capital = 4637
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_mexico = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_mexico }
+				owns_core_province = 852
+				NOT = { capital = 852 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_mexico }
+				owns_core_province = 852
+				NOT = { capital = 852 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_mexico }
+				}
+				set_capital = 852
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_the_carribean = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_the_carribean }
+				owns_core_province = 488
+				NOT = { capital = 488 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_the_carribean }
+				owns_core_province = 488
+				NOT = { capital = 488 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_the_carribean }
+				}
+				set_capital = 488
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_colombia = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_colombia }
+				owns_core_province = 825
+				NOT = { capital = 825 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_colombia }
+				owns_core_province = 825
+				NOT = { capital = 825 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_colombia }
+				}
+				set_capital = 825
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_peru = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_peru }
+				owns_core_province = 809
+				NOT = { capital = 809 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_peru }
+				owns_core_province = 809
+				NOT = { capital = 809 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_peru }
+				}
+				set_capital = 809
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_la_plata = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_la_plata }
+				owns_core_province = 778
+				NOT = { capital = 778 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_la_plata }
+				owns_core_province = 778
+				NOT = { capital = 778 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_la_plata }
+				}
+				set_capital = 778
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_brazil = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_brazil }
+				owns_core_province = 763
+				NOT = { capital = 763 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_brazil }
+				owns_core_province = 763
+				NOT = { capital = 763 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_brazil }
+				}
+				set_capital = 763
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	change_capital_australia = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_australia }
+				owns_core_province = 1090
+				NOT = { capital = 1090 }
+			}
+		}
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_australia }
+				owns_core_province = 1090
+				NOT = { capital = 1090 }
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_australia }
+				}
+				set_capital = 1090
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+}

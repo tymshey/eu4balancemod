@@ -1,0 +1,6 @@
+colonial_dev_stop = {
+	can_not_build_colonies = yes
+	colonists = -100
+	development_cost = 10000
+    picture = "colonists"
+}

@@ -1,0 +1,652 @@
+# Decision 1: CEDE "UNLAWFUL" PROVINCES TO OVERLORD
+# Returns provinces to overlord which are not in same colonial region as colonial nation capital
+#
+# Logic:
+# 	Potential: in a loyal AI colonial nation has any full province (not in-construction colony) outside of the colonial region its capital is located
+# 	Allow: potential + colonial subject is loyal
+#	Effect: cede all full provinces (not in-construction colonies) outside of the colonial region its capital is located to its colonial overlord and remove colonial nation cores from these provinces
+country_decisions = {
+	return_land_alaska = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_alaska }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_alaska }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_alaska }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_alaska }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_alaska }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_alaska }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_canada = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_canada }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_canada }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_canada }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_canada }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_canada }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_canada }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_eastern_america = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_eastern_america }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_eastern_america }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_eastern_america }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_eastern_america }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_eastern_america }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_eastern_america }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_louisiana = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_louisiana }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_louisiana }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_louisiana }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_louisiana }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_louisiana }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_louisiana }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+				#add_liberty_desire  = 10
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+			#modifier = { # Don't make your own colony rebelious
+			#	factor = 0
+			#	liberty_desire = 40
+			#}
+		}
+	}
+	return_land_california = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_california }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_california }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_california }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_california }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_california }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_california }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_mexico = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_mexico }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_mexico }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_mexico }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_mexico }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_mexico }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_mexico }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_the_carribean = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_the_carribean }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_the_carribean }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_the_carribean }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_the_carribean }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_the_carribean }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_the_carribean }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_colombia = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_colombia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_colombia }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_colombia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_colombia }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_colombia }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_colombia }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_peru = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_peru }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_peru }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_peru }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_peru }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_peru }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_peru }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+				#add_liberty_desire  = 10
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_la_plata = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_la_plata }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_la_plata }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_la_plata }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_la_plata }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_la_plata }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_la_plata }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_brazil = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_brazil }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_brazil }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_brazil }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_brazil }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_brazil }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_brazil }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+				#add_liberty_desire  = 10
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+	return_land_australia = {
+		potential = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_australia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_australia }
+					is_colony = no
+				}
+			}
+		}
+		allow = {
+			any_subject_country = {
+				ai = yes
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_australia }
+				any_owned_province = {
+					NOT = { colonial_region = colonial_australia }
+					is_colony = no
+				}
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			every_subject_country = {
+				limit = {
+					ai = yes
+					capital_scope = { colonial_region = colonial_australia }
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { colonial_region = colonial_australia }
+						is_colony = no
+					}
+					remove_core = PREV
+					cede_province = ROOT
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 2
+				ruler_has_personality = expansionist_personality
+				NOT = { ruler_has_personality = obsessive_perfectionist_personality }
+			}
+			modifier = {
+				factor = 4
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
+		}
+	}
+}

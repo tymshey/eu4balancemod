@@ -1,0 +1,790 @@
+# DECISION 3: STOP DEVELOPMENT
+# Prevents (loyal) colonial nation from obtaining further development by either
+# 	- Using monarch points to develop provinces
+# 	- Colonizing new provices
+# 	- Promote settlement growth using colonists
+# Not included: gaining development by conquering provinces
+#
+# Logic: a colonial overlord can stop or restart their colonial subjects development at will as long as subject is loyal. If a subject becomes disloyal, any restriction is automatically deactivated (via event)
+country_decisions = {
+    stop_development_alaska = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_alaska }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_alaska }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_alaska }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    stop_development_canada = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_canada }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_canada }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_canada }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    stop_development_eastern_america = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_eastern_america }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_eastern_america }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_eastern_america }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    stop_development_louisiana = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_louisiana }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_louisiana }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_louisiana }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+    stop_development_california = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_california }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_california }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_california }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}
+    }
+    
+	stop_development_mexico = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_mexico }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_mexico }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_mexico }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+	}
+    
+    stop_development_the_carribean = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_the_carribean }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_the_carribean }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_the_carribean }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+    }
+    
+    stop_development_colombia = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_colombia }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_colombia }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_colombia }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+    }
+    
+    stop_development_peru = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_peru }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_peru }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_peru }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+    }
+    
+    stop_development_la_plata = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_la_plata }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_la_plata }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_la_plata }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+    }
+    
+    stop_development_brazil = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_brazil }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_brazil }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_brazil }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+    }
+    
+    stop_development_australia = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_australia }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_australia }
+				NOT = { liberty_desire = 50 }
+                NOT = { has_country_modifier = colonial_dev_stop }
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_australia }
+				}
+				add_country_modifier = { 
+					name = colonial_dev_stop
+					duration = -1  
+					hidden = no
+				}
+			}
+		}
+        
+		ai_will_do = {
+			factor = 0
+		}    
+    }
+    
+    allow_development_alaska = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_alaska }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_alaska }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_alaska }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_canada = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_canada }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_canada }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_canada }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_eastern_america = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_eastern_america }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_eastern_america }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_eastern_america }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_louisiana = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_louisiana }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_louisiana }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_louisiana }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_california = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_california }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_california }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_california }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_mexico = {
+		potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_mexico }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_mexico }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_mexico }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+        
+	}
+    
+    allow_development_the_carribean = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_the_carribean }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_the_carribean }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_the_carribean }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_colombia = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_colombia }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_colombia }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_colombia }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_peru = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_peru }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_peru }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_peru }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_la_plata = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_la_plata }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_la_plata }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_la_plata }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_brazil = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_brazil }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_brazil }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_brazil }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+    
+    allow_development_australia = {
+        potential = {
+			any_subject_country = {
+				is_colonial_nation = yes
+				capital_scope = { colonial_region = colonial_australia }
+                has_country_modifier = colonial_dev_stop
+			} 
+		}
+        
+		allow = {
+			any_subject_country = {
+				capital_scope = { colonial_region = colonial_australia }
+                has_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		effect = {
+			every_subject_country = {
+				limit = {
+					capital_scope = { colonial_region = colonial_australia }
+				}
+				remove_country_modifier = colonial_dev_stop
+			}
+		}
+        
+		ai_will_do = {
+			factor = 1
+		}
+    }
+}

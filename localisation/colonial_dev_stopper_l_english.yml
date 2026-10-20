@@ -1,0 +1,87 @@
+﻿l_english:
+# Colonial Subject Event
+ colonial_dev_stopper.1.t:0 "Expansion Restrictions Lifted"
+ colonial_dev_stopper.1.d:0 "Our overlord, [Root.Overlord.GetName], has long forbidden us from expanding further, but the will of our people in [Root.Overlord.GetName] cannot be contained. Our growing resentment toward our overlord's meddling has reached its peak, and we no longer care for their restrictions. Expansion shall continue regardless of their wishes."
+ colonial_dev_stopper.1.a:0 "[Root.Overlord.GetName]'s grip weakens!"
+ 
+ # Colonial Overlord Event
+ colonial_dev_stopper.2.t:0 "[From.GetName] Defies Us"
+ colonial_dev_stopper.2.d:0 "Our colonial subject, [From.GetName], has blatantly disregarded the restrictions we placed upon them, expanding their territory against our will. Their rising liberty desire has made our authority meaningless in this matter."
+ colonial_dev_stopper.2.a:0 "We can no longer control them..."
+
+# Colonial Overlord Decisions
+ stop_development_alaska_title: "Restrict Expansion in Colonial Alaska"
+ stop_development_alaska_desc: "The expansion of Colonial Alaska has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_canada_title: "Restrict Expansion in Colonial Canada"
+ stop_development_canada_desc: "The expansion of Colonial Canada has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_eastern_america_title: "Restrict Expansion in Colonial Eastern America"
+ stop_development_eastern_america_desc: "The expansion of Colonial Eastern America has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_louisiana_title: "Restrict Expansion in Colonial Louisiana"
+ stop_development_louisiana_desc: "The expansion of Colonial Louisiana has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_california_title: "Restrict Expansion in Colonial California"
+ stop_development_california_desc: "The expansion of Colonial California has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_mexico_title: "Restrict Expansion in Colonial Mexico"
+ stop_development_mexico_desc: "The expansion of Colonial Mexico has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_the_carribean_title: "Restrict Expansion in Colonial Caribbean"
+ stop_development_the_carribean_desc: "The expansion of Colonial Caribbean has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_colombia_title: "Restrict Expansion in Colonial Colombia"
+ stop_development_colombia_desc: "The expansion of Colonial Colombia has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_peru_title: "Restrict Expansion in Colonial Peru"
+ stop_development_peru_desc: "The expansion of Colonial Peru has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_la_plata_title: "Restrict Expansion in Colonial La Plata"
+ stop_development_la_plata_desc: "The expansion of Colonial La Plata has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_brazil_title: "Restrict Expansion in Colonial Brazil"
+ stop_development_brazil_desc: "The expansion of Colonial Brazil has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ stop_development_australia_title: "Restrict Expansion in Colonial Australia"
+ stop_development_australia_desc: "The expansion of Colonial Australia has become a concern. Allowing further growth may lead to increased autonomy and ambitions that threaten our control. By imposing strict measures, we can halt their colonization efforts and ensure they remain dependent on us."
+ 
+ allow_development_alaska_title: "Allow Expansion in Colonial Alaska"  
+ allow_development_alaska_desc: "We have decided to lift the restrictions placed on Colonial Alaska. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation." 
+ 
+ allow_development_canada_title: "Allow Expansion in Colonial Canada"  
+ allow_development_canada_desc: "We have decided to lift the restrictions placed on Colonial Canada. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation." 
+
+ allow_development_eastern_america_title: "Allow Expansion in Colonial Eastern America"  
+ allow_development_eastern_america_desc: "We have decided to lift the restrictions placed on Colonial Eastern America. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation." 
+ 
+ allow_development_louisiana_title: "Allow Expansion in Colonial Louisiana"  
+ allow_development_louisiana_desc: "We have decided to lift the restrictions placed on Colonial Louisiana. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation." 
+ 
+ allow_development_california_title: "Allow Expansion in Colonial California"  
+ allow_development_california_desc: "We have decided to lift the restrictions placed on Colonial California. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+  
+ allow_development_mexico_title: "Allow Expansion in Colonial Mexico"  
+ allow_development_mexico_desc: "We have decided to lift the restrictions placed on Colonial Mexico. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."  
+
+ allow_development_the_carribean_title: "Allow Expansion in Colonial Caribbean"  
+ allow_development_the_carribean_desc: "We have decided to lift the restrictions placed on Colonial Caribbean. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+ 
+ allow_development_colombia_title: "Allow Expansion in Colonial Colombia"  
+ allow_development_colombia_desc: "We have decided to lift the restrictions placed on Colonial Colombia. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+ 
+ allow_development_peru_title: "Allow Expansion in Colonial Peru"  
+ allow_development_peru_desc: "We have decided to lift the restrictions placed on Colonial Peru. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+ 
+ allow_development_la_plata_title: "Allow Expansion in Colonial La Plata"  
+ allow_development_la_plata_desc: "We have decided to lift the restrictions placed on Colonial La Plata. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+
+ allow_development_brazil_title: "Allow Expansion in Colonial Brazil"  
+ allow_development_brazil_desc: "We have decided to lift the restrictions placed on Colonial Brazil. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+ 
+ allow_development_australia_title: "Allow Expansion in Colonial Australia"  
+ allow_development_australia_desc: "We have decided to lift the restrictions placed on Colonial Australia. Halting their growth served its purpose, but continued suppression may push them toward rebellion. By allowing their expansion once more, we can foster stability and cooperation."
+ 
+# Colonial Subject Modifiers
+ colonial_dev_stop: "Colonial Expansion Restricted"
+# colonial_dev_stop_desc_tooltip: "Our overlord [Root.Overlord.GetName] has imposed strict limits on our ability to expand. Colonization efforts have been halted, and any attempts to develop our lands are met with overwhelming costs."
