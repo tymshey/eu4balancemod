@@ -17795,7 +17795,7 @@ ZAN_ideas = {
 
 GZI_ideas = {
 	start = {
-		fort_maintenance_modifier = -0.1
+		discipline = 0.05
 		land_morale = 0.1
 	}
 
@@ -17810,7 +17810,7 @@ GZI_ideas = {
 	
 	gzi_stone_masonry = {
 		build_cost = -0.15
-		great_project_upgrade_cost = -0.1
+		development_cost = -0.1
 	}
 	gzi_ivory_trade = {
 		global_trade_goods_size_modifier = 0.1
@@ -17826,7 +17826,7 @@ GZI_ideas = {
 		hostile_attrition = 1
 	}
 	gzi_tributary_system = {
-		vassal_income = 0.2
+		may_establish_frontier = yes
 	}
 	gzi_zimbabwe_birds = {
 		production_efficiency = 0.1
