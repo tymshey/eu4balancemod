@@ -125,6 +125,8 @@
  
  tur_the_artisans_of_the_sultanate_title:0 "The Artisans of the Sultanate"
  tur_the_artisans_of_the_sultanate_desc:0 "The [Root.GetAdjective] sultanate has a long history of craftsmanship, with artisans producing exquisite goods that are highly sought after. By supporting and promoting these artisans, we can boost our economy and enhance our cultural influence."
+ tur_highway_of_an_empire_title:0 "Highway of an Empire"
+ tur_highway_of_an_empire_desc:0 "The land strip that separates the Red and Mediterranean seas has brought forth the idea of an engineering endeavor, suggested by our advisors. By connecting the two seas we would surely improve the flow of our navies across them."
 
  # Modifiers
 
@@ -135,6 +137,9 @@
  
  tur_imperial_school_of_military_engineering_mod:0 "Imperial School of Military Engineering"
  tur_imperial_school_of_military_engineering_mod_desc:0 "This province is home to the Imperial School of Military Engineering. Many great siege experts are trained in this very school, so their genius can be used on the battlefield against the enemy defences."
+
+ t_eyalet_of_egypt:0 "Eyalet of Egypt"
+ t_eyalet_of_egypt_monuments_effect:0 "Egyptian Great Projects - Effect"
 
  # Events
 

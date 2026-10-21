@@ -755,11 +755,75 @@ tur_conquest_of_europe = {
 			factor = 250
 		}
 	}
+
+	tur_highway_of_an_empire = {
+		icon = mam_highway_empire
+		required_missions = { tur_conquer_egypt }
+		position = 9
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4316 
+				province_id = 2315
+			}
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Leviathan" }
+				4316 = {
+					owned_by = ROOT
+					OR = {
+						num_of_times_improved = 10
+						has_great_project = { 
+							type = suez_canal 
+							tier = 3 
+						}
+					}
+				}
+				4316 = { has_any_ongoing_construction = no }
+			}
+			else = {
+				4316 = { 
+					num_of_times_improved = 10 
+					owned_by = ROOT
+				}
+			}
+			4316 = { num_of_buildings_in_province = 5 }
+			2315 = { owned_by = ROOT }
+			4316 = { 
+				owned_by = ROOT 
+				controlled_by = ROOT
+				has_siege = no
+			}
+			is_at_war = no			
+		}
+		effect = {
+			if = {
+				limit = { 
+					has_dlc = "Leviathan" 
+					4316 = {
+						NOT = {
+							has_great_project = { 
+								type = suez_canal 
+								tier = 3 
+							}
+						}
+					}
+					NOT = { adm_tech = 22 }
+				}
+				country_event = { id = flavor_mam.115 }
+				custom_tooltip = flavor_mam.115_tt
+			}
+			else = {
+				4316 = { add_base_production = 3 }
+			}
+			add_mercantilism = 3
+		}
+	}
 	
 	tur_address_firman = {
 		icon = mission_the_firman
 		required_missions = {  }
-		position = 10
+		position = 11
 		provinces_to_highlight = {
 			OR = {
 				owned_by = GRA
@@ -872,7 +936,7 @@ tur_conquest_of_europe = {
 			tur_address_firman
 			tur_the_algerian_corsairs
 		}
-		position = 11
+		position = 12
 		provinces_to_highlight = {
 			region = iberia_region
 			NOT = { owned_by = ROOT }
@@ -954,7 +1018,7 @@ tur_conquest_of_europe = {
 	tur_embrace_the_military_doctrines = {
 		icon = mission_early_janissaries
 		required_missions = {  }
-		position = 13
+		position = 14
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -1609,7 +1673,7 @@ tur_african_conquest = {
 	tur_conquer_tunis = {
 		icon = mission_conquer_tunisia
 		required_missions = { tur_conquer_egypt }
-		position = 9
+		position = 10
 		provinces_to_highlight = {
 			OR = {
 				area = tunisia_area
@@ -1691,7 +1755,7 @@ tur_african_conquest = {
 	tur_the_algerian_corsairs = {
 		icon = mission_construct_a_corsair_fleet
 		required_missions = { tur_conquer_tunis }
-		position = 10
+		position = 11
 		provinces_to_highlight = {
 			OR = {
 				area = barbary_coast_area
@@ -1789,7 +1853,7 @@ tur_african_conquest = {
 	tur_conquer_morocco = {
 		icon = mission_the_sultan_of_morocco
 		required_missions = { tur_the_algerian_corsairs }
-		position = 11
+		position = 12
 		provinces_to_highlight = {
 			OR = {
 				area = western_morocco_area
@@ -1863,7 +1927,7 @@ tur_african_conquest = {
 	tur_trade_with_india = {
 		icon = mission_steer_trade_to_bengal
 		required_missions = { tur_establish_the_eyalet_of_adal }
-		position = 12
+		position = 13
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1340
@@ -1919,7 +1983,7 @@ tur_african_conquest = {
 	tur_collect_the_siyasah = {
 		icon = mission_suleiman
 		required_missions = {  }
-		position = 13
+		position = 14
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -2252,7 +2316,7 @@ tur_egyptian_conquest = {
 	tur_defeat_the_mamluks = {
 		icon = mission_egyptian_mamluk_soldier
 		required_missions = {  }
-		position = 7
+		position = 8
 		provinces_to_highlight = {
 			OR = {
 				area = aleppo_area
@@ -2362,7 +2426,7 @@ tur_egyptian_conquest = {
 	tur_conquer_egypt = {
 		icon = mission_break_the_mamluks
 		required_missions = { tur_defeat_the_mamluks }
-		position = 8
+		position = 1
 		provinces_to_highlight = {
 			region = egypt_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -2423,7 +2487,7 @@ tur_egyptian_conquest = {
 	tur_handle_the_egyptian_eyalet = {
 		icon = mission_eyalet_egypt
 		required_missions = { tur_conquer_egypt }
-		position = 9
+		position = 1
 		provinces_to_highlight = {
 			if = {
 				limit = { exists = EGY ROOT = { has_country_flag = tur_decided_to_go_eyalet } }
@@ -2585,7 +2649,7 @@ tur_egyptian_conquest = {
 	tur_control_the_red_sea = {
 		icon = mission_control_the_red_sea
 		required_missions = { tur_seize_the_caliphate }
-		position = 10
+		position = 1
 		provinces_to_highlight = {
 			OR = {
 				area = yemen_area
@@ -2701,7 +2765,7 @@ tur_egyptian_conquest = {
 	tur_establish_the_eyalet_of_adal = {
 		icon = mission_eyalet_adal
 		required_missions = { tur_control_the_red_sea }
-		position = 11
+		position = 1
 		provinces_to_highlight = {
 			OR = {
 				area = red_sea_coast_area
@@ -2778,7 +2842,7 @@ tur_egyptian_conquest = {
 	tur_trade_with_indonesia = {
 		icon = mission_dominate_persian_gulf
 		required_missions = { tur_establish_the_eyalet_of_adal }
-		position = 12
+		position = 1
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1361
@@ -2839,7 +2903,7 @@ tur_egyptian_conquest = {
 			tur_trade_with_india
 			tur_trade_with_indonesia
 		}
-		position = 13
+		position = 1
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -2879,7 +2943,7 @@ tur_egyptian_conquest = {
 			tur_issue_the_kannuname
 			tur_second_islamic_golden_age
 		}
-		position = 13
+		position = 1
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -3438,7 +3502,7 @@ tur_arabian_conquest = {
 	tur_conquer_arabia = {
 		icon = mission_bedouins
 		required_missions = { tur_defeat_the_mamluks }
-		position = 8
+		position = 9
 		provinces_to_highlight = {
 			OR = {
 				area = bahrain_area
@@ -3494,7 +3558,7 @@ tur_arabian_conquest = {
 		required_missions = {
 			tur_conquer_egypt
 		}
-		position = 9
+		position = 10
 		provinces_to_highlight = {
 			OR = {
 				province_id = 361
@@ -4309,7 +4373,7 @@ tur_issue_the_kannuname_slot = {
 	tur_issue_the_kannuname = {
 		icon = mission_ottoman_law
 		required_missions = {  }
-		position = 13
+		position = 14
 		provinces_to_highlight = {
 			owned_by = ROOT
 			NOT = { has_courthouse_building_trigger = yes }
@@ -4828,7 +4892,7 @@ tur_persian_conquest = {
 	tur_second_islamic_golden_age = {
 		icon = mission_islamic_golden_age
 		required_missions = {  }
-		position = 13
+		position = 14
 		provinces_to_highlight = {
 			OR = {
 				province_id = 504
