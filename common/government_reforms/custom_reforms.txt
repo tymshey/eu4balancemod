@@ -24,7 +24,6 @@ Malaysia_plutocracy = {
 		factor = 0
 	}
 }
-
 Malaysia_plutocracy_1 = {
 	icon = arabian_plutocracy_reform
 	duration = 4
@@ -51,4 +50,32 @@ Malaysia_plutocracy_1 = {
 	ai = {
 		factor = 0
 	}
+}
+
+TibetanKingdom = {
+    icon = "chieftain"
+    potential = {
+       tag = NPL
+    }
+    trigger = {      
+		tag = NPL  
+    }
+    modifiers = {
+        monarch_military_power = 2
+        global_unrest = -2
+        war_exhaustion = -0.02
+    }
+
+    conditional = {
+        allow = {
+            has_dlc = "Rights of Man"
+        }
+        government_abilities = {
+            militarization_mechanic
+        }
+    }
+
+    ai = {
+        factor = 1
+    }
 }

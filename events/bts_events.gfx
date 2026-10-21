@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_evt_burning_village_bats"
+        texturefile = "gfx/event_pictures/bts_bats_event.dds"
+    }
+}
