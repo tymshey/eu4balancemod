@@ -35,6 +35,9 @@
  ###############
  ### MAMLUKS
  ###############
+ 
+ T_ABBASID_CALIPHATE:0 "Abbasid Caliphate"
+ T_ABBASID_CALIPHATE_ADJ:0 "Abbasid"
 
  # Reforms
 
@@ -85,6 +88,9 @@
  mam_the_ink_stained_scimitar_mod:0 "The Ink-Stained Scimitar"
  mam_inclusive_empire:0 "An Inclusive Empire"
  mam_the_golden_synthesis:0 "The Golden Synthesis"
+ centre_of_the_islamic_world_mod:0 "Centre of the Islamic World"
+ mam_local_seat_of_government:0 "Seat of Local Government"
+ mam_incense_production_hub:0 "Incense Production Hub"
 
  isr_birth_of_israel:0 "Birth of Israel"
 
@@ -100,7 +106,16 @@
  mam_trans_saharan_trade_route_desc:0 "By reestablishing a trade route across the Sahara Desert, we can facilitate commerce between our territories and the markets of West Africa, boosting our economy and enhancing our influence in the region."
  mam_a_naval_industry_title:0 "A Naval Industry"
  mam_a_naval_industry_desc:0 "By investing in the development of a naval industry, we can strengthen our maritime capabilities and enhance our influence in the region. A robust naval industry will allow us to build and maintain a powerful fleet, enabling us to protect our trade routes, project power, and expand our reach across the seas."
-
+ mam_horn_of_africa_title:0 "Up the Blue Nile"
+ mam_horn_of_africa_desc:0 "The isolated Christian mountain kings and coastal Somali sultans long held the lifelines of our empire. Their historic insubordination has been surgically crushed. Our armies have scaled the Abyssinian heights to secure the sacred fountains of the Nile, imposing peace upon the highlands. The entire eastern horn is now chained to Cairo, its rustic isolation replaced by the rigid administrative order of the Caliph's court."
+ mam_ink_and_incense_title:0 "Ink and Incense"
+ mam_ink_and_incense_desc:0 "The aromatic ports of the Horn of Africa long languished under unrefined merchant clans, leaving the rare incense of Punt underutilized. By decree of the Diwan, we have brought advanced production methods to the south, investing in state-backed scriptoriums, grand marketplaces, and grand production networks. The harvest of exotic spices is no longer left to chance, but systematically maximized by the literate elite to enrich the empire's treasury."
+ mam_conquer_niger_title:0 "Subdue the Golden Basin"
+ mam_conquer_niger_desc:0 "The proud Sahelian dynasties foolishly believed the Sahara would shield them from Cairo’s judgment. Our Scribe-Tacticians shattered the Mande hosts with mathematical violence, placing their kings in iron chains. The wealth of the Niger loop is no longer a sovereign treasure, but an audited asset bound to the Caliph’s throne. What the scimitar conquered, the pen now contains."
+ mam_restore_the_abbasids_title:0 "Return of the Abbasids"
+ mam_restore_the_abbasids_desc:0 "For two centuries, the descendants of the Prophet’s uncle survived as powerless puppets in Cairo, reduced to signing administrative charters for our sultans while the true center of the faith fractured. By surgically eliminating internal dissent and recovering ancient Baghdad, we have proven our supreme fitness to govern the Ummah. The era of the hidden puppet is dead. The black banners of the Abbasids shall be raised in absolute sovereignty over the throne of Cairo, merging the unmatched intellectual erudition of our chancellery with the supreme divine mandate of the righteous caliphs."
+ mam_restore_the_abbasids_tt:0 "\nThe Abbasid Caliphate will be restored."
+ 
  mam_disaster_mechanics_of_statecraft_title:0 "Mechanics of Statecraft"
  mam_disaster_mechanics_of_statecraft_desc:0 ""
  mam_disaster_the_scriptorium_title:0 "The Scriptorium"
@@ -116,6 +131,13 @@
  mam_the_golden_synthesis_title:0 "The Golden Synthesis"
  mam_the_golden_synthesis_desc:0 ""
  unlock_mamluk_mansure_army_reform_tt:0 "Unlock the Al-Asakir Al-Khattatiyah government reform.\n"
+
+ # Events
+
+ flavor_mam.117.t:0 "The Black Banner Flies Once More"
+ flavor_mam.117.d:0 "For two centuries, the descendants of the Prophet’s uncle survived as powerless puppets in Cairo, reduced to signing administrative charters for our sultans while the true center of the faith fractured. By surgically eliminating internal dissent and recovering ancient Baghdad, we have proven our supreme fitness to govern the Ummah. The era of the hidden puppet is dead. The black banners of the Abbasids shall be raised in absolute sovereignty over the throne of Cairo, merging the unmatched intellectual erudition of our chancellery with the supreme divine mandate of the righteous caliphs."
+ flavor_mam.117.a:0 "§JLa Ilaha Illallah!§!"
+ flavor_mam_117_tt:0 "§JThe Abbasid Caliphate will be restored.§! The era of the hidden puppet is dead, and the black banners of the Prophet's house shall be raised in absolute sovereignty.\n\n§JLa Ilaha Illallah!§!\n"
 
  ###############
  ### OTTOMANS

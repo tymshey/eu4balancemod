@@ -267,15 +267,15 @@ custom_window = {
 			name = additional_alerts_slot_1_icon
 			tooltip = [AAGetAlertSlot1Tooltip]
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = aa_settings_menu_open }
-					}
-					set_country_flag = aa_settings_menu_open
-				}
-				else = {
-					clr_country_flag = aa_settings_menu_open
-				}
+				# if = {
+				#	limit = {
+				#		NOT = { has_country_flag = aa_settings_menu_open }
+				#	}
+				#	set_country_flag = aa_settings_menu_open
+				# }
+				# else = {
+				#	clr_country_flag = aa_settings_menu_open
+				# }
 			}
 			frame = {
 				number = 2
@@ -326,15 +326,15 @@ custom_window = {
 			name = additional_alerts_slot_2_icon
 			tooltip = [AAGetAlertSlot2Tooltip]
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = aa_settings_menu_open }
-					}
-					set_country_flag = aa_settings_menu_open
-				}
-				else = {
-					clr_country_flag = aa_settings_menu_open
-				}
+				# if = {
+				#	limit = {
+				#		NOT = { has_country_flag = aa_settings_menu_open }
+				#	}
+				#	set_country_flag = aa_settings_menu_open
+				# }
+				# else = {
+				#	clr_country_flag = aa_settings_menu_open
+				# }
 			}
 			frame = {
 				number = 4
@@ -388,15 +388,15 @@ custom_window = {
 			name = additional_alerts_slot_3_icon
 			tooltip = [AAGetAlertSlot3Tooltip]
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = aa_settings_menu_open }
-					}
-					set_country_flag = aa_settings_menu_open
-				}
-				else = {
-					clr_country_flag = aa_settings_menu_open
-				}
+				# if = {
+				#	limit = {
+				#		NOT = { has_country_flag = aa_settings_menu_open }
+				#	}
+				#	set_country_flag = aa_settings_menu_open
+				# }
+				# else = {
+				#	clr_country_flag = aa_settings_menu_open
+				# }
 			}
 			frame = {
 				number = 6
@@ -432,15 +432,15 @@ custom_window = {
 			name = additional_alerts_slot_4_icon
 			tooltip = [AAGetAlertSlot4Tooltip]
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = aa_settings_menu_open }
-					}
-					set_country_flag = aa_settings_menu_open
-				}
-				else = {
-					clr_country_flag = aa_settings_menu_open
-				}
+				# if = {
+				#	limit = {
+				#		NOT = { has_country_flag = aa_settings_menu_open }
+				#	}
+				#	set_country_flag = aa_settings_menu_open
+				# }
+				# else = {
+				#	clr_country_flag = aa_settings_menu_open
+				# }
 			}
 			frame = {
 				number = 8
@@ -468,15 +468,15 @@ custom_window = {
 			name = additional_alerts_slot_5_icon
 			tooltip = [AAGetAlertSlot5Tooltip]
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = aa_settings_menu_open }
-					}
-					set_country_flag = aa_settings_menu_open
-				}
-				else = {
-					clr_country_flag = aa_settings_menu_open
-				}
+				# if = {
+				#	limit = {
+				#		NOT = { has_country_flag = aa_settings_menu_open }
+				#	}
+				#	set_country_flag = aa_settings_menu_open
+				# }
+				# else = {
+				#	clr_country_flag = aa_settings_menu_open
+				# }
 			}
 			frame = {
 				number = 10
@@ -500,15 +500,15 @@ custom_window = {
 			name = additional_alerts_slot_6_icon
 			tooltip = aa_alert_6_tt
 			effect = {
-				if = {
-					limit = {
-						NOT = { has_country_flag = aa_settings_menu_open }
-					}
-					set_country_flag = aa_settings_menu_open
-				}
-				else = {
-					clr_country_flag = aa_settings_menu_open
-				}
+				# if = {
+				#	limit = {
+				#		NOT = { has_country_flag = aa_settings_menu_open }
+				#	}
+				#	set_country_flag = aa_settings_menu_open
+				# }
+				# else = {
+				#	clr_country_flag = aa_settings_menu_open
+				# }
 			}
 			frame = { number = 12 }
 		}

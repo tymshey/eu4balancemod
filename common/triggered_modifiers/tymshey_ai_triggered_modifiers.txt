@@ -71,6 +71,7 @@ tymshey_east_african_primitives = {
 
 tymshey_indian_primitives = {
 	potential = {
+		ai = yes
 		technology_group = indian
 	}
 

@@ -1714,6 +1714,36 @@ country_event = {
 	}
 }
 
+# Return of the Abbasids
+country_event = {
+	id = flavor_mam.117
+	title = flavor_mam.117.t
+	desc = flavor_mam.117.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_mam.117.a
+		custom_tooltip = flavor_mam_117_tt
+		define_ruler = {
+			name = "'Abd al-Rahman al-Mansur"
+			dynasty = "Abbasid"
+			adm = 5
+			dip = 5
+			mil = 5
+			age = 20
+			claim = 100
+		}
+		add_ruler_personality = righteous_personality
+		override_country_name = T_ABBASID_CALIPHATE
+		hidden_effect = {
+			remove_heir = { }
+		}
+	}
+}
+
 namespace = flavor_mam_disaster
 normal_or_historical_nations = yes
 

@@ -796,6 +796,34 @@ mam_missions_2 = {
 		}
 	}
 
+	mam_horn_of_africa = { # up the blue nile
+		icon = mission_envoy_to_ethiopia
+		required_missions = { mam_ethiopia }
+		position = 8
+		provinces_to_highlight = {
+			region = horn_of_africa_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			horn_of_africa_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1224 = { # Gonder
+				development = 20
+				num_of_times_improved = 5
+			}
+		} 
+		effect = {
+			1224 = {
+				add_province_modifier = {
+					name = mam_local_seat_of_government
+					duration = -1
+				}
+			}
+		}
+	}
+
 	mam_highway_empire = {
 		icon = mam_highway_empire
 		required_missions = { mam_alexandrian_trade }
@@ -961,6 +989,81 @@ mam_missions_2 = {
 			}
 		}
 	}
+
+	mam_ink_and_incense = {
+		icon = mission_turkish_merchants
+		required_missions = { mam_harness_spice_trade mam_dar_al_hadith_turba }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2331
+				province_id = 385
+				province_id = 4278
+				province_id = 388
+				province_id = 389
+				province_id = 4283
+				province_id = 402
+			}
+		}
+		trigger = {
+			mercantilism = 60
+			2331 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+			385 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+			4278 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+			388 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+			389 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+			4283 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+			402 = {
+				owned_by = ROOT
+				base_production = 12
+				num_of_times_expanded_infrastructure = 1
+			}
+		}
+		effect = {
+			2331 = {
+				add_province_modifier = {
+					name = mam_incense_production_hub
+					duration = -1
+				}
+			}
+			388 = {
+				add_province_modifier = {
+					name = mam_incense_production_hub
+					duration = -1
+				}
+			}
+			4283 = {
+				add_province_modifier = {
+					name = mam_incense_production_hub
+					duration = -1
+				}
+			}
+		}
+	}
 }
 
 mam_missions_3 = {
@@ -1081,8 +1184,11 @@ mam_missions_3 = {
 				}
 			}
 			if = {
-				limit = { 
-					tag = EGY 
+				limit = {
+					OR = {
+						tag = EGY
+						tag = RUM
+					}
 					has_government_mechanic = egyptian_westernization
 				}
 				if = {
@@ -1548,6 +1654,80 @@ mam_missions_3 = {
 			custom_tooltip = flavor_mam.101_tt
 		}
 	}
+
+	mam_restore_the_abbasids = {
+		icon = per_unify_the_shia_realms
+		required_missions = { mam_dar_al_hadith_turba mam_center_arab_islamic_world }
+		position = 13
+		trigger = {
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
+				}
+				OR = {
+					has_estate_privilege = estate_church_fund_dar_al_hadith
+					has_estate_privilege = estate_church_fund_madrasas
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 70
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 70
+				}
+			}
+			if = {
+				limit = {
+					NOT = { 
+						has_dlc = "Star and Crescent"
+					}
+				}
+				religion_group = muslim
+				owns_or_non_sovereign_subject_of = 504
+				owns_or_non_sovereign_subject_of = 225
+				owns_or_non_sovereign_subject_of = 151
+				owns_or_non_sovereign_subject_of = 410
+				owns_or_non_sovereign_subject_of = 385
+				owns_or_non_sovereign_subject_of = 384
+				owns_or_non_sovereign_subject_of = 124
+				owns_or_non_sovereign_subject_of = 125
+				owns_or_non_sovereign_subject_of = 425
+				owns_or_non_sovereign_subject_of = 382
+				owns_or_non_sovereign_subject_of = 454
+				owns_or_non_sovereign_subject_of = 347
+				owns_or_non_sovereign_subject_of = 388
+				owns_or_non_sovereign_subject_of = 400
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = unified_islam_tt
+					has_country_modifier = unified_islam
+				}
+			}
+		}
+		effect = {
+			country_event = { id = flavor_mam.117 }
+			custom_tooltip = mam_restore_the_abbasids_tt
+		}
+	}
 }
 
 mam_missions_4 = {
@@ -1942,6 +2122,41 @@ mam_missions_4 = {
 		}
 	}
 
+	mam_conquer_niger = { # subdue the golden basin
+		icon = per_convert_persia
+		position = 1
+		required_missions = { mam_restore_madinat_as_salam mam_trans_saharan_trade_route }
+		provinces_to_highlight = {
+			region = niger_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			niger_region = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1134 = { # Jenne
+				development = 20
+				num_of_times_improved = 5
+			}
+		} 
+		effect = {
+			1134 = {
+				add_province_modifier = {
+					name = mam_local_seat_of_government
+					duration = -1
+				}
+			}
+			guinea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
 	mam_cultivate_the_delta = {
 		icon = mission_clear_the_delta
 		required_missions = { mam_alexandrian_trade }
@@ -2222,6 +2437,12 @@ mam_missions_4 = {
 			}
 		}
 		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = centre_of_the_islamic_world_mod
+					duration = -1
+				}
+			}
 			if = {
 				limit = { 
 					tag = EGY 
@@ -2510,6 +2731,13 @@ mam_missions_5 = {
 			2284 = {
 				change_trade_goods = paper
 			}
+			niger_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -2638,7 +2866,7 @@ mam_missions_disaster_1 = {
 	mam_disaster_mechanics_of_statecraft = {
 		icon = reform_the_nomocanon
 		required_missions = { }
-		position = 13
+		position = 14
 		trigger = {
 			owns = 358
 			stability = 2
@@ -2704,7 +2932,7 @@ mam_missions_disaster_2 = {
 	mam_disaster_the_scriptorium = {
 		icon = mission_court_education
 		required_missions = { }
-		position = 13
+		position = 14
 		trigger = {
 			crown_land_share = 50
 			NOT = { corruption = 1 }
@@ -2753,7 +2981,7 @@ mam_missions_disaster_3 = {
 	mam_disaster_theological_reform = {
 		icon = mission_hands_praying
 		required_missions = { }
-		position = 13
+		position = 14
 		trigger = {
 			legitimacy_equivalent = 80
 			religious_unity = 0.8
@@ -2809,7 +3037,7 @@ mam_missions_disaster_4 = {
 	mam_disaster_the_eloquent_peace = {
 		icon = mission_gawans_madrasar
 		required_missions = { }
-		position = 13
+		position = 14
 		trigger = {
 			prestige = 80
 			OR = {
@@ -2854,7 +3082,7 @@ mam_missions_disaster_5 = {
 	mam_disaster_al_asakir_al_khattatiyah = { #mission_subdue_the_afghans
 		icon = mission_mansure_army
 		required_missions = { }
-		position = 13
+		position = 14
 		trigger = {
 			army_tradition = 60
 			army_professionalism = 0.5

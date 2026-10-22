@@ -121,6 +121,22 @@ mam_trans_saharan_trade_route_modifier = {
 	trade_value_modifier = 0.2
 }
 
+centre_of_the_islamic_world_mod = {
+	picture = "t_centre_of_islamic_culture"
+	trade_goods_size_modifier = 0.15
+	local_manpower = 3
+}
+
+mam_local_seat_of_government = {
+	picture = "t_centre_of_islamic_culture"
+	trade_goods_size_modifier = 0.1
+	governing_capacity = 150
+}
+
+mam_incense_production_hub = {
+	trade_goods_size_modifier = 0.1
+}
+
 hindustan_corridor_of_life = {
 	local_development_cost = -0.1
 }

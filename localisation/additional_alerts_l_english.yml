@@ -1,15 +1,16 @@
 ﻿l_english:
  #Alert tooltips
-  aa_alert_1_settings_tt: "Click to open §YAdditional Alerts§! settings."
-  aa_alert_1_tt: "§RLosing Imperial Election!§!\n------------------------------------------------------------------\nYour heir will lose the next imperial election, because:[AAGetAlert1Reason1][AAGetAlert1Reason2][AAGetAlert1Reason3]\n\nClick to open §YAdditional Alerts§! settings."
+ #Originally it contains "Click to open §YAdditional Alerts§! settings." instead of the famous quote
+  aa_alert_1_settings_tt: "§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
+  aa_alert_1_tt: "§RLosing Imperial Election!§!\n------------------------------------------------------------------\nYour heir will lose the next imperial election, because:[AAGetAlert1Reason1][AAGetAlert1Reason2][AAGetAlert1Reason3]\n\n§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
   aa_alert_1_tt_r1: "\n§RAnother candidate is receiving more votes than you!§!"
   aa_alert_1_tt_r2: "\n§YYour heir is female.§!"
   aa_alert_1_tt_r3: "\n§YYou have no heir.§!"
-  aa_alert_2_tt: "§YNot Voting for Self§!\n------------------------------------------------------------------\nYou can vote for yourself to be the next Holy Roman Emperor.\n\nClick to open §YAdditional Alerts§! settings."
-  aa_alert_3_tt: "§YPaying for War Taxes§!\n------------------------------------------------------------------\nYou are currently spending £mil  Military Power to raise War Taxes. You can disable War Taxes in the economy menu.\n\nClick to open §YAdditional Alerts§! settings."
-  aa_alert_4_tt: "§YOver Governing Capacity§!\n------------------------------------------------------------------\nYou are over your Governing Capacity. You can reduce your Governing Capacity usage by building Court Houses, Town Halls, and State Houses, upgrading your government rank, or avoiding conquering new land and creating new states.\n\nClick to open §YAdditional Alerts§! settings."
-  aa_alert_5_tt: "§GFree War Taxes Available§!\n------------------------------------------------------------------\nYou are currently able to enact War Taxes for free. You can do so in the economy menu.\n\nClick to open §YAdditional Alerts§! settings."
-  aa_alert_6_tt: "§GNear Governing Capacity§!\n------------------------------------------------------------------\nYou are near your Governing Capacity. You may want to build Court Houses or avoid creating new states to make sure you remain under your Governing Capacity.\n\nClick to open §YAdditional Alerts§! settings."
+  aa_alert_2_tt: "§YNot Voting for Self§!\n------------------------------------------------------------------\nYou can vote for yourself to be the next Holy Roman Emperor.\n\n§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
+  aa_alert_3_tt: "§YPaying for War Taxes§!\n------------------------------------------------------------------\nYou are currently spending £mil  Military Power to raise War Taxes. You can disable War Taxes in the economy menu.\n\n§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
+  aa_alert_4_tt: "§YOver Governing Capacity§!\n------------------------------------------------------------------\nYou are over your Governing Capacity. You can reduce your Governing Capacity usage by building Court Houses, Town Halls, and State Houses, upgrading your government rank, or avoiding conquering new land and creating new states.\n\n§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
+  aa_alert_5_tt: "§GFree War Taxes Available§!\n------------------------------------------------------------------\nYou are currently able to enact War Taxes for free. You can do so in the economy menu.\n\n§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
+  aa_alert_6_tt: "§GNear Governing Capacity§!\n------------------------------------------------------------------\nYou are near your Governing Capacity. You may want to build Court Houses or avoid creating new states to make sure you remain under your Governing Capacity.\n\n§Y"Nie dla psa kurwa, nie dla smiecia, dla pana to."§!"
  #Settings menu
   #Alert enable/disable settings
     additional_alerts_settings_text: "Additional Alerts Settings"
