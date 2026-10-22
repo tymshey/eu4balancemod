@@ -1,4 +1,4 @@
-bts_nepalese_missions_religion = {
+bts_nepalese_missions_1 = {
     slot = 1
     generic = no
     ai = yes
@@ -16,278 +16,59 @@ bts_nepalese_missions_religion = {
             tag = KGR
         }
         NOT = { map_setup = map_setup_random }
-    }
-    has_country_shield = yes
-
-    bts_npl_religious_direction = {
-        icon = mission_hands_praying
-        required_missions = { }
+		}
+		has_country_shield = yes
+		
+		npl_develop_capital = {
+        icon = mission_deccanis
+        required_missions = {}
         position = 1
 
-        provinces_to_highlight = {
-            province_id = 557
-            NOT = { owned_by = ROOT }
-        }
-
         trigger = {
-            557 = {
-                owned_by = ROOT
-                has_tax_building_trigger = yes
-            }
-            if = {
-                limit = {
-                    has_estate = estate_brahmins
-                }
-                estate_loyalty = {
-                    estate = estate_brahmins
-                    loyalty = 60
-                }
-            }
-            if = {
-                limit = {
-                    has_estate = estate_church
-                }
-                estate_loyalty = {
-                    estate = estate_church
-                    loyalty = 60
-                }
-            }
-            stability = 1
-            OR = {
-                religious_unity = 0.9
-                theologian = 1
-            }
+			nepal_area = {
+				type = all 
+				NOT = { unrest = 1 } 
+				num_of_times_improved = 4
+				NOT = { local_autonomy_above_min = 5 }
+			}
         }
 
         effect = {
-            country_event_with_effect_insight = {
-                id = bts_flavor_npl.1
-                effect = "custom_tooltip = bts_npl_religious_direction_reward_tt"
-            }
-        }
-    }
-}
-
-bts_nepalese_missions_religion_preview = {
-    slot = 1
-    generic = no
-    ai = yes
-    potential = {
-        OR = {
-            tag = NPL
-            tag = GRK
-            tag = KTU
-            tag = LWA
-            tag = JML
-            tag = DTI
-            tag = KMN
-            tag = GHR
-            tag = SRM
-            tag = KGR
-        }
-        NOT = { has_country_flag = bts_npl_unlock_hindu_missions }
-        NOT = { has_country_flag = bts_npl_unlock_buddhist_missions }
-        NOT = { map_setup = map_setup_random }
-    }
-    has_country_shield = yes
-
-    bts_npl_branching_mission = {
-        icon = mission_unknown_mission
-        position = 3
-        required_missions = { bts_npl_religious_direction }
-        provinces_to_highlight = { }
-        trigger = {
-            custom_trigger_tooltip = {
-                tooltip = selectable_mission_trigger_tt
-                always = no
-            }
-            OR = {
-                # Hindu path
-                AND = {
-                    custom_trigger_tooltip = {
-                        tooltip = bts_npl_branching_mission_hindu_triggers_tt
-                        always = no
-                    }
-                    religion = hinduism
-                    development_in_provinces = {
-                        value = 500
-                        superregion = india_superregion
-                        religion = ROOT
-                    }
-                    religious_unity = 0.95
-                }
-                # Buddhist path
-                AND = {
-                    custom_trigger_tooltip = {
-                        tooltip = bts_npl_branching_mission_buddhist_triggers_tt
-                        always = no
-                    }
-                    bts_is_buddhist = yes
-                    development_in_provinces = {
-                        value = 400
-                        superregion = india_superregion
-                        religion = ROOT
-                    }
-                    religious_unity = 0.9
-                    # Ensure karma is between -40 and 40
-                    AND = {
-                        karma = -40
-                        NOT = { karma = 41 }
-                    }
-                }
-            }
-        }
-        effect = {
-            # Condensed distillation of the Hindu path
-            custom_tooltip = bts_npl_branching_mission_hindu_effects_tt
-            custom_tooltip = bts_newline
-            add_country_modifier = {
-                duration = -1
-                name = bts_npl_asal_hindustan
-            }
-            custom_tooltip = bts_npl_asal_hindustan_reward_tt
-
-            # Buddhist path
-            custom_tooltip = bts_npl_branching_mission_buddhist_effects_tt
-            custom_tooltip = bts_newline
-            add_country_modifier = {
-                duration = -1
-                name = bts_npl_custodian_of_dharma
-            }
-        }
-    }
-}
-
-bts_nepalese_missions_hinduism = {
-    slot = 1
-    generic = no
-    ai = yes
-    potential = {
-        OR = {
-            tag = NPL
-            tag = GRK
-            tag = KTU
-            tag = LWA
-            tag = JML
-            tag = DTI
-            tag = KMN
-            tag = GHR
-            tag = SRM
-            tag = KGR
-        }
-        has_country_flag = bts_npl_unlock_hindu_missions
-        NOT = { map_setup = map_setup_random }
-    }
-    has_country_shield = yes
-
-    bts_npl_asal_hindustan = {
-        icon = mission_dharma_mission_religious_harmony
-        required_missions = {
-            bts_npl_religious_direction
-        }
-        position = 3
-
-        provinces_to_highlight = {
-            superregion = india_superregion
-            OR = {
-                NOT = { owned_by = ROOT }
-                NOT = { religion = hinduism }
-            }
-        }
-
-        trigger = {
-            religion = hinduism
-            development_in_provinces = {
-                value = 500
-                superregion = india_superregion
-                religion = ROOT
-            }
-            religious_unity = 0.95
-        }
-
-        effect = {
-            add_country_modifier = {
-                duration = -1
-                name = bts_npl_asal_hindustan
-            }
-
-            custom_tooltip = bts_npl_asal_hindustan_reward_tt
-            every_neighbor_country = {
-                limit = {
-                    NOT = { is_subject_of = ROOT }
-                    NOT = { total_development = ROOT }
-                    capital_scope = {
-                        superregion = india_superregion
-                    }
-                    religion = hinduism
-                }
-                reverse_add_casus_belli = {
-                    type = cb_vassalize_mission
-                    months = 300 # 25 years
-                    target = ROOT
-                }
-            }
-        }
-    }
-}
-
-bts_nepalese_missions_buddhism = {
-    slot = 1
-    generic = no
-    ai = yes
-    potential = {
-        OR = {
-            tag = NPL
-            tag = GRK
-            tag = KTU
-            tag = LWA
-            tag = JML
-            tag = DTI
-            tag = KMN
-            tag = GHR
-            tag = SRM
-            tag = KGR
-        }
-        has_country_flag = bts_npl_unlock_buddhist_missions
-        NOT = { map_setup = map_setup_random }
-    }
-    has_country_shield = yes
-
-    bts_npl_buddhas_homeland = {
-        icon = mission_buddhist_monk_praying
-        required_missions = {
-            bts_npl_religious_direction
-        }
-        position = 3
-
-        provinces_to_highlight = {
-            superregion = india_superregion
-            OR = {
-                NOT = { owned_by = ROOT }
-                NOT = { religion = ROOT }
-            }
-        }
-
-        trigger = {
-            bts_is_buddhist = yes
-            development_in_provinces = {
-                value = 400
-                superregion = india_superregion
-                religion = ROOT
-            }
-            # Ensure karma is between -40 and 40
-            AND = {
-                karma = -40
-                NOT = { karma = 41 }
-            }
-            religious_unity = 0.9
-        }
-
-        effect = {
-            add_country_modifier = {
-                duration = -1
-                name = bts_npl_custodian_of_dharma
-            }
+			2071 = {
+			change_trade_goods = iron
+			add_province_modifier = {
+			name = Heart_of_the_mountain
+			duration = -1
+				}
+			}
+			4483 = {
+			change_trade_goods = cloth
+			add_province_modifier = {
+			name = Heart_of_the_mountain
+			duration = -1
+				}
+			}
+			557 = {
+			change_trade_goods = silk
+			add_province_modifier = {
+			name = Heart_of_the_mountain
+			duration = -1
+				}
+			}
+			2070 = {
+			change_trade_goods = copper
+			add_province_modifier = {
+			name = Heart_of_the_mountain
+			duration = -1
+				}
+			}
+			4485 = {
+			change_trade_goods = cloth
+			add_province_modifier = {
+			name = Heart_of_the_mountain
+			duration = -1
+				}
+			}
         }
     }
 }

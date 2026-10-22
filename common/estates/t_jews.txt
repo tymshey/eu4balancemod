@@ -3,7 +3,7 @@ estate_jews = {
 	color = { 41 151 207 }
 	
 	trigger = {
-		has_country_flag = enable_jewish_estate
+		tag = USA
 	}
 	
 	# These scale with loyalty & power

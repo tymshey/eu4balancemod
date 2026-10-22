@@ -28,6 +28,7 @@ brit_USA_ideas = {
 		may_establish_frontier = yes
 		auto_explore_adjacent_to_colony = yes
 		country_diplomatic_power = 1
+		colonists = 1
 	}
 	#usa_land_grants = {
 	#	build_cost = -0.1
