@@ -1900,6 +1900,7 @@ dharmic = {
 				}
 				modifier = {
 					country_admin_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					share_and_consume = {
@@ -1924,7 +1925,7 @@ dharmic = {
 			}
 			guru_angad = {
 				trigger = {
-					is_year = 1539
+					is_year = 1516
 					is_month = 9
 					NOT = { has_global_flag = guru_event_happening }
 				}
@@ -1953,19 +1954,20 @@ dharmic = {
 				}
 				modifier = {
 					country_military_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					gurmukhi_script_teaching = {
 						type = ADM
 						cost = 50
 
-						technology_cost = -0.025
+						technology_cost = -0.05
 					}
 					temple_langar = {
 						type = DIP
 						cost = 50
 
-						church_loyalty_modifier = 0.05
+						idea_cost = -0.05
 					}
 					wrestling_akhara = {
 						type = MIL
@@ -2006,13 +2008,14 @@ dharmic = {
 				}
 				modifier = {
 					country_diplomatic_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					dasvandh_collection = {
 						type = ADM
 						cost = 50
 
-						global_tax_modifier = 0.05
+						global_tax_modifier = 0.1
 					}
 					anand_karaj = {
 						type = DIP
@@ -2061,6 +2064,7 @@ dharmic = {
 				}
 				modifier = {
 					country_admin_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					legitimize_inheritance = {
@@ -2118,6 +2122,7 @@ dharmic = {
 				}
 				modifier = {
 					country_diplomatic_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					adi_granth = {
@@ -2171,6 +2176,7 @@ dharmic = {
 				}
 				modifier = {
 					country_military_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					throne_of_the_timeless_one = {
@@ -2228,6 +2234,7 @@ dharmic = {
 				}
 				modifier = {
 					country_diplomatic_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					impartial_manjis = {
@@ -2283,6 +2290,7 @@ dharmic = {
 				}
 				modifier = {
 					country_diplomatic_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					treat_the_sick = {
@@ -2336,6 +2344,7 @@ dharmic = {
 				}
 				modifier = {
 					country_admin_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					the_word_of_sikh = {
@@ -2389,6 +2398,7 @@ dharmic = {
 				}
 				modifier = {
 					country_admin_power = 1
+					advisor_cost = -0.1
 				}
 				teachings = {
 					pluralism = {
@@ -2441,6 +2451,8 @@ dharmic = {
 					}
 				}
 				modifier = {
+					country_military_power = 1
+					advisor_cost = -0.1
 					state_maintenance_modifier = -0.5
 					drill_decay_modifier = -0.25
 				}

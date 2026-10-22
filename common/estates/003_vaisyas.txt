@@ -3,14 +3,11 @@ estate_vaisyas = {
 
 	# If true, country will get estate
 	#Replaces Burghers
-	trigger = {	
-		OR = {
-			has_dlc = "Dharma"
-			has_dlc = "Winds of Change"
-		}
+	trigger = {
 		NOT = { has_government_attribute = disables_estate_vaisyas }
 		NOT = { has_disabled_estate = { estate = estate_vaisyas } }
 		OR = {
+			mission_completed = npl_develop_capital
 			has_government_attribute = enables_estate_vaisyas
 			has_enabled_estate = { estate = estate_vaisyas }
 			has_unlocked_estate = { estate = estate_vaisyas }
@@ -18,16 +15,9 @@ estate_vaisyas = {
 				technology_group = indian
 				religion = hinduism
 				NOT = { has_government_attribute = is_pirate_republic_reform }
-				#NOT = { has_government_attribute = is_merchant_republic }
-				#NOT = { has_reform = veche_republic }
-				#NOT = { has_reform = trading_city }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				NOT = { government = native }
 				NOT = { has_reform = siberian_tribe }
-				#OR = {
-				#	NOT = { has_reform = celestial_empire }
-				#	has_dlc = "Mandate of Heaven"
-				#}
 				is_nomad = no
 				is_colonial_nation = no
 				NOT = { has_reform = revolutionary_empire_reform }
