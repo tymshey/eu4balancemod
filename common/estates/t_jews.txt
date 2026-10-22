@@ -3,7 +3,10 @@ estate_jews = {
 	color = { 41 151 207 }
 	
 	trigger = {
+		OR = {
 		tag = USA
+		tag = UKR
+		}
 	}
 	
 	# These scale with loyalty & power
