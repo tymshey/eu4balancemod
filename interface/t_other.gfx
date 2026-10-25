@@ -84,4 +84,8 @@ spriteTypes = {
 		name = "GFX_ase_spend_additional_splendor_entry_8_button"
 		texturefile = "gfx/interface/ase_spend_additional_splendor_entry_8_button.dds"
 	}
+	spriteType = {
+		name = "GFX_button_t_change_deity"
+		texturefile = "gfx/interface/t_change_deity.dds"
+	}
 }

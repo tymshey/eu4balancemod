@@ -633,3 +633,45 @@ country_event = {
 		}
 	}
 }
+
+# change deities (by tymshey)
+country_event = {
+	id = norse_events.10
+	
+	title = "norse_events.10.title"
+	desc = "norse_events.10.desc"
+	
+	picture = NORSE_TEMPLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "norse_events.10.a"
+		change_personal_deity = odin
+	}
+	
+	option = {
+		name = "norse_events.10.b"
+		change_personal_deity = freya
+	}
+	
+	option = {
+		name = "norse_events.10.c"
+		change_personal_deity = tor
+	}
+	
+	option = {
+		name = "norse_events.10.d"
+		change_personal_deity = tyr
+	}
+	
+	option = {
+		name = "norse_events.10.e"
+		change_personal_deity = njord
+	}
+	
+	option = {
+		name = "norse_events.10.f"
+		change_personal_deity = snotra
+	}
+}

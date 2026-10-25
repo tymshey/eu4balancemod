@@ -1,0 +1,27 @@
+# Norse Interface
+
+custom_button = { # Change Deity
+    name = t_norse_change_deity
+    potential = {
+        religion = norse_pagan_reformed
+    }
+    trigger = {
+		adm_power = 50
+		hidden_trigger = {
+			OR = {
+				has_personal_deity = odin
+				has_personal_deity = freya
+				has_personal_deity = tor
+				has_personal_deity = tyr
+				has_personal_deity = njord
+				has_personal_deity = snotra
+			}
+			ai = no
+		}
+	}
+    effect = {
+		add_adm_power = -50
+		country_event = { id = norse_events.1 }
+	}
+    tooltip = t_norse_change_deity_tt
+}
