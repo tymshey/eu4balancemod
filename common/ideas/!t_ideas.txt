@@ -355,7 +355,7 @@ SLL_ideas = {
 	}
 	
 	bonus = {
-		colonists = 1
+		global_colonial_growth = 0.2
 	}
 	
 	trigger = {

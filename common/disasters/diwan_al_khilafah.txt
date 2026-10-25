@@ -103,8 +103,10 @@ diwan_al_khilafah_disaster = {
 	on_monthly = {
 		random_events = {
 			1000 = 0
-			50 = flavor_mam_disaster.4
-			50 = flavor_mam_disaster.5
+			30 = flavor_mam_disaster.4
+			30 = flavor_mam_disaster.5
+			30 = flavor_mam_disaster.6
+			30 = flavor_mam_disaster.7
         }
 	}
 }

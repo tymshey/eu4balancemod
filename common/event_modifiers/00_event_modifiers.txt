@@ -11688,7 +11688,7 @@ estate_janissary_professional_soldiers_mod = {
 }
 
 estate_janissary_rough_discipline_mod = {
-	discipline = 0.025
+	discipline = 0.05
 	is_janissary_modifier = yes
 }
 

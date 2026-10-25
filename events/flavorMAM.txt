@@ -1747,7 +1747,7 @@ country_event = {
 namespace = flavor_mam_disaster
 normal_or_historical_nations = yes
 
-#Starting event
+# Starting event
 country_event = {
 	id = flavor_mam_disaster.1
 	title = flavor_mam_disaster.1.title
@@ -1778,7 +1778,7 @@ country_event = {
 	}
 }
 
-#Ending event
+# Ending event
 country_event = {
 	id = flavor_mam_disaster.2
 	title = flavor_mam_disaster.2.title
@@ -1797,7 +1797,7 @@ country_event = {
 	}
 }
 
-#The Ink-Stained Scimitar
+# The Ink-Stained Scimitar
 country_event = {
 	id = flavor_mam_disaster.3
 	title = flavor_mam_disaster.3.title
@@ -1819,7 +1819,7 @@ country_event = {
 	}
 }
 
-#Rebellion Rises!
+# Rebellion Rises!
 country_event = {
 	id = flavor_mam_disaster.4
 	title = flavor_mam_disaster.4.title
@@ -1849,7 +1849,7 @@ country_event = {
 	}
 }
 
-#Rebellion Rises!
+# Rebellion Rises!
 country_event = {
 	id = flavor_mam_disaster.5
 	title = flavor_mam_disaster.5.title
@@ -1864,7 +1864,7 @@ country_event = {
 			limit = {
 				superregion = near_east_superregion
 			}
-		save_event_target_as = t_mamluk_rebel_prov
+			save_event_target_as = t_mamluk_rebel_prov
 		}
 	}
 	
@@ -1875,6 +1875,81 @@ country_event = {
 				type = anti_tax_rebels
 				size = 8
 			}
+		}
+	}
+}
+
+# The Feast of Gold Leaf
+country_event = {
+	id = flavor_mam_disaster.6
+	title = flavor_mam_disaster.6.title
+	desc = flavor_mam_disaster.6.desc
+	picture = muslimgfx_MILITARY_CAMP_eventPicture
+	major = yes
+	
+	is_triggered_only = yes
+	
+	# Option A: The majesty of the Sultanate must be displayed.
+	option = {
+		name = flavor_mam_disaster.6.a
+		ai_chance = { factor = 80 }
+		add_prestige = 15
+		add_inflation = 1.0
+		add_years_of_income = -0.5
+		
+		# Outrages the non-Egyptian provinces
+		random_owned_province = {
+			limit = { NOT = { culture = al_misr_arabic } }
+			add_unrest = 5
+		}
+	}
+	
+	# Option B: Cancel the display. Distribute grain instead.
+	option = {
+		name = flavor_mam_disaster.6.b
+		ai_chance = { factor = 20 }
+		add_prestige = -20
+		add_stability = 1
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+}
+
+# Financial Mismanagement
+country_event = {
+	id = flavor_mam_disaster.7
+	title = flavor_mam_disaster.7.a
+	desc = flavor_mam_disaster.7.b
+	picture = muslimgfx_MILITARY_CAMP_eventPicture
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_mam_disaster.7.a
+		ai_chance = { factor = 60 }
+		
+		add_years_of_income = -1
+		add_inflation = 1.0
+		
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 15
+		}
+	}
+	
+	option = {
+		name = flavor_mam_disaster.7.b
+		ai_chance = { factor = 40 }
+		
+		add_adm_power = -50
+		add_corruption = 1.0
+		
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
 		}
 	}
 }

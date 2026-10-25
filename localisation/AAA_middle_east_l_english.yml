@@ -65,6 +65,14 @@
  flavor_mam_disaster.5.title:0 "Rebellion Rises over Unethical Construction!"
  flavor_mam_disaster.5.desc:0 "Our ambitious project to redirect the Nile's flow into new irrigation networks has turned into a slaughterhouse. The Diwan's newly appointed scribe-engineers are treating human lives like raw variables in an equation. Driven by rigid timelines, they have forced tens of thousands of peasants into backbreaking corvée labor under the scorching sun. Hundreds are dying daily of exhaustion and disease in the mud of the new canals. Unable to endure the cruelty of our 'enlightened architecture,' the laborers have risen in a furious mutiny, using their digging tools to beat the overseers and sabotage the very floodgates they were forced to build."
  flavor_mam_disaster.5.a:0 "Force the engineers to stop using such methods."
+ flavor_mam_disaster.6.title:0 "The Feast of Gold Leaf"
+ flavor_mam_disaster.6.desc:0 "While poor harvest yields and rising taxes squeeze the provinces, the Diwan has hosted a magnificent literary symposium inside the marble halls of Qahirah. The ruling elite spent fortunes gilding the scriptorium pillars, consuming rare delicacies dusted in actual gold leaf, and gifting massive stipends to poets who composed flattering verses about the empire's internal prosperity. Word of this unbothered decadence has leaked to the commoners. Beyond the capital's walls, the regional governors are whispering of treason, and the peasantry is openly questioning why they starve to fund a court that literally eats wealth."
+ flavor_mam_disaster.6.a:0 "The majesty of the sultanate must be displayed."
+ flavor_mam_disaster.6.b:0 "Cancel the display and redistribute grain instead."
+ flavor_mam_disaster.7.title:0 "Financial Mismanagement"
+ flavor_mam_disaster.7.desc:0 "As the ongoing disaster ravages our lands, an audit of the royal granaries and Cairo's central treasury has revealed an appalling truth. High-ranking tax collectors and regional governors have used the chaotic fog of the current crisis to line their own pockets. Funds meant to supply the army and stabilize the price of bread along the Nile have simply vanished. We can either sweep this under the rug to maintain administrative continuity, or make an example of them at the cost of immediate domestic stability."
+ flavor_mam_disaster.7.a:0 "Favour the elite."
+ flavor_mam_disaster.7.b:0 "Favour the commoners."
 
  # Decisions
 
