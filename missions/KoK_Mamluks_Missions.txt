@@ -1222,6 +1222,27 @@ mam_missions_3 = {
 					amount = 1
 				}
 			}
+			custom_tooltip = mam_great_power_tt
+			custom_tooltip = mam_enable_kashifs_local_organizations_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							which = egyptian_adm_westernization_var
+							value = 5
+						}
+						check_variable = {
+							which = egyptian_dip_westernization_var
+							value = 5
+						}
+						check_variable = {
+							which = egyptian_mil_westernization_var
+							value = 5
+						}
+					}
+					set_country_flag = mam_enable_kashifs_local_organizations_flag
+				}
+			}
 		}
 	}
 
