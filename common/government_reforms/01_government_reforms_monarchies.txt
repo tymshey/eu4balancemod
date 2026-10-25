@@ -3355,6 +3355,8 @@ misl_confederacy_reform = {
 	allow_normal_conversion = yes
 	icon = "misl_confederacy"
 	potential = {
+		NOT = {tag = NPL}
+		NOT = {tag = SIK}
 		has_dlc = "Dharma"
 		religion = sikhism
 	}

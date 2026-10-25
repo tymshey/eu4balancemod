@@ -43,6 +43,88 @@ country_decisions = {
 			}
 		}
 	}
+	
+	sikh_nation = {
+		major = yes
+		was_never_end_game_tag_trigger = yes
+		potential = {
+			NOT = { exists = SIK }
+			religion = sikhism
+			NOT = { has_country_flag = formed_sikh_flag }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = HIN }
+			NOT = { tag = BHA }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		allow = {	
+			is_free_or_tributary_trigger = yes
+			is_at_war = no		
+			owns_core_province = 506
+			owns_core_province = 507
+			owns_core_province = 510			
+			is_at_war = no
+		}
+	 	effect = {
+			set_country_flag = formed_sikh_flag
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_accepted_culture_or_dip_power = {
+					culture = vindhyan
+					dip_reward = yes
+					free = yes
+				}
+			add_accepted_culture_or_dip_power = {
+					culture = avadhi
+					dip_reward = yes
+					free = yes
+				}
+			add_accepted_culture_or_dip_power = {
+					culture = kanauji
+					dip_reward = yes
+					free = yes
+				}
+			add_accepted_culture_or_dip_power = {
+					culture = panjabi
+					dip_reward = yes
+					free = yes
+				}
+			add_accepted_culture_or_dip_power = {
+					culture = kashmiri
+					dip_reward = yes
+					free = yes
+				}
+			add_prestige = 25
+			change_tag = SIK
+			  coromandel_region = {
+                limit = {
+                    NOT = { is_permanent_claim = ROOT }
+                    NOT = { is_core = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+			  deccan_region = {
+                limit = {
+                    NOT = { is_permanent_claim = ROOT }
+                    NOT = { is_core = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
 }
 
 

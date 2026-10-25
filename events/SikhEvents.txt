@@ -80,7 +80,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1516
 		current_guru_is = guru_nanak
 		NOT = { has_global_flag = guru_event_happening }
@@ -112,7 +113,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1520
 		current_guru_is = guru_angad
 		NOT = { has_global_flag = guru_event_happening }
@@ -145,7 +147,7 @@ country_event = {
 
 	trigger = {
 		religion = sikhism
-		tag = NPL
+		ai = no
 		is_year = 1526
 		current_guru_is = guru_amar_das
 		NOT = { has_global_flag = guru_event_happening }
@@ -177,7 +179,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1536
 		current_guru_is = guru_ram_das
 		NOT = { has_global_flag = guru_event_happening }
@@ -239,8 +242,9 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
-		is_year = 1546}
+		religion = sikhism
+		ai = no
+		is_year = 1546
 		current_guru_is = guru_arjan
 		NOT = { has_global_flag = guru_event_happening }
 	}
@@ -271,7 +275,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1556
 		current_guru_is = guru_hargobind
 		NOT = { has_global_flag = guru_event_happening }
@@ -303,7 +308,8 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1566
 		current_guru_is = guru_har_rai
 		NOT = { has_global_flag = guru_event_happening }
@@ -335,7 +341,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1576
 		current_guru_is = guru_har_krishan
 		NOT = { has_global_flag = guru_event_happening }
@@ -377,7 +384,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1586
 		current_guru_is = guru_tegh_bahadur
 		NOT = { has_global_flag = guru_event_happening }
@@ -409,7 +417,8 @@ country_event = {
 	picture = BIG_BOOK_eventPicture
 
 	trigger = {
-		tag = NPL
+		religion = sikhism
+		ai = no
 		is_year = 1596
 		current_guru_is = guru_gobind_singh
 		NOT = { has_global_flag = guru_event_happening }
