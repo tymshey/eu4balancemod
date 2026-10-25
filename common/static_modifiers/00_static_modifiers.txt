@@ -2267,7 +2267,7 @@ centralize_state = {
 
 # Applied once for each guru teaching
 guru_teaching = {
-	global_missionary_strength = -0.01
+
 }
 
 diplomatic_reputation = {

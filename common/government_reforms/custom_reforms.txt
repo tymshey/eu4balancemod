@@ -53,17 +53,23 @@ Malaysia_plutocracy_1 = {
 }
 
 TibetanKingdom = {
-    icon = "chieftain"
+    icon = "misl_confederacy"
     potential = {
-       tag = NPL
+		OR = {
+			tag = NPL
+			tag = SIK
+		}   
     }
-    trigger = {      
-		tag = NPL  
+    trigger = {
+		OR = {
+			tag = NPL 
+			tag = SIK
+		}
     }
     modifiers = {
-        monarch_military_power = 2
         global_unrest = -2
-        war_exhaustion = -0.02
+		global_manpower_modifier = 0.1
+		land_maintenance_modifier = -0.1
     }
 
     conditional = {
