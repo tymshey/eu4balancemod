@@ -1262,7 +1262,7 @@ maintain_clergy_balance_of_power_reform = {
 		}
 	}
 	modifiers = {
-		all_estate_loyalty_equilibrium = 0.05
+		all_estate_loyalty_equilibrium = 0.075
 		diplomats = 1
 	}
 	
@@ -3943,7 +3943,7 @@ war_economy_reform = {
 	}
 	modifiers = {
 		war_taxes_cost_modifier = -0.5
-		global_regiment_cost = -0.1
+		land_maintenance_modifier = -0.1
 		global_ship_cost = -0.1
 	}
 	ai = {

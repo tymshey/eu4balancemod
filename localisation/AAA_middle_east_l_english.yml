@@ -8,6 +8,11 @@
  ###############
  ### PERSIA
  ###############
+
+ # Decisions
+
+ enthrone_the_sassanids_title:0 "Enthrone a Sassanid Ruler"
+ enthrone_the_sassanids_desc:0 "To improve the legitimacy of a revived zoroastrian empire, we should enthrone a survivor from the Sassanid dynasty."
  
  # Ideas
 
@@ -27,11 +32,51 @@
  t_madinat_as_salam:0 "Madinat as-Salam"
  t_madinat_as_salam_desc:0 "We have rebuilt Madinat as-Salam, the 'City of Peace', symbolizing the revival of our culture and influence in the region. It serves as a center of learning, culture, and commerce, attracting scholars, artists, and traders from across the Islamic world."
 
+ # Privileges
+
+ estate_qizilbash_elite_cataphracts:0 "Aswaran Heavy Cataphracts"
+ estate_qizilbash_elite_cataphracts_desc:0 "The Aswaran supply the Shahanshah's army with elite heavy cataphract units, just like the days of Sassanid Empire."
+ estate_burghers_IND_debase_the_ruppee:0 "Debase the Drachm"
+ estate_burghers_IND_debase_the_ruppee_desc:0 "In our goal to free more funds for economic expansion, we could have our currency rapidly debased, but that would hurt our standing with the Merchants."
+
  # Missions
 
  per_islamic_learning_and_culture_title:0 "Learning and Culture"
  per_islamic_learning_and_culture_desc:0 "Persia has a rich history of Islamic learning and culture, with renowned scholars and institutions that have contributed significantly to the Islamic world. By investing in education and cultural initiatives, we can further enhance our influence and prestige in the region."
- 
+ per_highway_of_an_empire_title:0 "Highway of an Empire"
+ per_highway_of_an_empire_desc:0 "The land strip that separates the Red and Mediterranean seas has brought forth the idea of an engineering endeavor, suggested by our advisors. By connecting the two seas we would surely improve the flow of our navies across them."
+ per_master_of_india_tt:0 "§GNew missions regarding conquest and growth in§! §YIndia§! §Gwill become available.§!"
+
+ per_ind_riches_title:0 "The Riches of India"
+ per_ind_riches_desc:0 "India is a land of immense wealth and opportunity, with vast resources and a rich cultural heritage. By investing in trade, agriculture, and industry, we can unlock the riches of this diverse and vibrant region, enhancing our economy and influence in the world."
+ per_ind_urbanize_the_subahs_title:0 "Urbanize the Subahs"
+ per_ind_urbanize_the_subahs_desc:0 "The subahs of India are home to bustling cities and towns, each with its own unique character and potential. By investing in infrastructure, education, and public services, we can urbanize these subahs, improving the quality of life for our citizens and fostering economic growth and cultural development."
+ per_ind_indian_entrepot_title:0 "Indian Entrepot"
+ per_ind_indian_entrepot_desc:0 "India's strategic location and extensive trade networks make it an ideal hub for commerce and exchange. By establishing an Indian entrepot, we can facilitate trade between our territories and the wider world, boosting our economy and enhancing our influence in the region."
+ per_ind_taj_mahal_title:0 "The Taj Mahal"
+ per_ind_taj_mahal_desc:0 "To symbolize the grandeur and cultural richness of India, we should commission the construction of the Taj Mahal, a magnificent mausoleum that will stand as a testament to our architectural prowess and artistic vision. This iconic structure will attract visitors from across the globe, enhancing our prestige and influence in the region."
+ per_ind_red_fort_title:0 "The Red Fort"
+ per_ind_red_fort_desc:0 "As we further develop our territories in India, we should invest in the construction of the Red Fort, a formidable fortress that will serve as a symbol of our strength and authority. This imposing structure will not only provide security for our citizens but also showcase our architectural and engineering capabilities, enhancing our prestige and influence in the region."
+ per_ind_itinerant_court_upgrade:0 "Rename '§YItinerant Court§!' to '§YSyncretic Architecture§!' and modify by:\n   Construction Cost: §G-5%§!"
+ per_ind_agra_title:0 "Jewels of Agra"
+ per_ind_agra_desc:0 "When Agra fell to our rule, we have spared it from destruction. As a result, the city has become a jewel of our empire, attracting merchants, scholars, and artists from across the region. By investing in the development of Agra, we can further enhance its prosperity and cultural significance, solidifying our influence in India."
+ per_ind_fatehpur_sikri_title:0 "Fatehpur Sikri"
+ per_ind_fatehpur_sikri_desc:0 "Fatehpur Sikri, a city of historical and architectural significance, has the potential to become a center of culture and learning in our empire. By investing in the restoration and development of Fatehpur Sikri, we can preserve its rich heritage and attract scholars, artists, and traders from across the region, enhancing our influence and prestige in India."
+ per_ind_mughal_architecture_title:0 "Syncretic Architecture"
+ per_ind_mughal_architecture_desc:0 "Our empire is renowned for its syncretic architecture, which blends elements from various cultures and traditions. By promoting and supporting the development of syncretic architecture in our territories, we can create iconic structures that reflect our diverse heritage and artistic vision, enhancing our prestige and influence in India."
+ per_ind_itinerant_court_upgrade_dlc:0 "Modify '§YSyncretic Architecture§!' by:\n   Great Project Upgrade Cost: §G-10%§!\n   Great Project Upgrade Time: §G-10%§!"
+ per_ind_weaving_title:0 "Weaving and Textiles"
+ per_ind_weaving_desc:0 "India has a long and rich tradition of weaving and textile production, with skilled artisans creating exquisite fabrics that are highly sought after. By investing in the development of the weaving and textile industry in our territories, we can boost our economy, support local artisans, and enhance our cultural influence in the region."
+ per_ind_grand_trunk_road_title:0 "The Grand Trunk Road"
+ per_ind_grand_trunk_road_desc:0 "The Grand Trunk Road is a historic trade route that has connected the Indian subcontinent for centuries. By investing in the development and maintenance of the Grand Trunk Road, we can facilitate trade and commerce, improve transportation and communication, and enhance our influence and prestige in the region."
+ per_ind_hegemon_title:0 "Warehouse of the World"
+ per_ind_hegemon_desc:0 "As the hegemon of India, we have the responsibility to lead and protect the diverse peoples and cultures of this vast region. By fostering unity, promoting economic growth, and supporting cultural development, we can solidify our position as the dominant power in India."
+ per_ind_industry_title:0 "Industrial Powerbase"
+ per_ind_industry_desc:0 "India has the potential to become a major industrial power, with vast resources and a skilled workforce. By investing in the development of industry and manufacturing in our territories, we can boost our economy, create jobs, and enhance our influence and prestige in the region."
+ per_ind_economic_power_title:0 "Economic Power"
+ per_ind_economic_power_desc:0 "India's economic power is a key factor in our ability to influence the region and the world. By fostering trade, investment, and innovation, we can strengthen our economy, create wealth for our citizens, and enhance our influence and prestige in India and beyond."
+ IND_unlock_industrial_privilege:0 "Unlock the '§YDebase the Drachm!' Estate Privilege for the §Y[Root.GetBurghersName]§!, allowing us to gain §G+25.0%§! National Tax Modifier and §G+20.0%§! Production Efficiency and §G-5.0%§! Construction Cost, but we will not be able to reduce our §YInflation§! and we will begin to have a passive growth of §R+0.30%§! Yearly."
+
  ###############
  ### MAMLUKS
  ###############

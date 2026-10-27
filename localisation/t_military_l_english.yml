@@ -1,0 +1,14 @@
+﻿l_english:
+ 
+ t_open_military_stats_tt:0 "Additional Military Statistics"
+ t_close_interface_tt:0 "Close" 
+
+ t_military_stats_morale_damage_text:0 "Morale Damage: §G+[t_morale_damage_var.GetValue]%§!"
+ t_military_stats_morale_damage_received_text:0 "Morale Damage Rec.: §G[t_morale_damage_received_var.GetValue]%§!"
+ t_military_stats_fire_damage_text:0 "Fire Damage: §G+[t_fire_damage_var.GetValue]%§!"
+ t_military_stats_fire_damage_received_text:0 "Fire Damage Rec.: §G[t_fire_damage_received_var.GetValue]%§!"
+ t_military_stats_shock_damage_text:0 "Shock Damage: §G+[t_shock_damage_var.GetValue]%§!"
+ t_military_stats_shock_damage_received_text:0 "Shock Damage Rec.: §G[t_shock_damage_received_var.GetValue]%§!"
+ t_military_stats_movement_speed_text:0 "Movement Speed: §G+[t_movement_speed_var.GetValue]%§!"
+ t_military_stats_backrow_artillery_damage_text:0 "Art. Dmg. from Backr.: §G+[t_backrow_artillery_damage_var.GetValue]%§!"
+ t_military_stats_assault_fort_ability_text:0 "Assault Fort Ability: §G+[t_assault_fort_ability_var.GetValue]%§!"

@@ -234,7 +234,7 @@ tr_novgorod_2 = {
 	}
 	has_country_shield = yes
 
-	mos_integrate_subjects = {
+	nov_integrate_subjects = {
 		icon = mission_integrate_perm
 		required_missions = {  }
 		position = 1

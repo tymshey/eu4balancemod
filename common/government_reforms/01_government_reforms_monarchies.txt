@@ -4960,6 +4960,8 @@ grant_noble_castle_rights_reform = {
 		is_revolutionary = no
 	}
 	modifiers = {
+		defensiveness = 0.1
+		max_hostile_attrition = 1
 		fort_maintenance_modifier = -0.2
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
@@ -5016,7 +5018,7 @@ grant_military_command_reform = {
 	}
 	modifiers = {
 		army_tradition = 0.25
-		cavalry_cost = -0.1
+		cavalry_cost = -0.15
 		nobles_influence_modifier = 0.05
 		maratha_exclusive_influence_modifier = 0.05
 		rajput_exclusive_influence_modifier = 0.05
@@ -5103,18 +5105,7 @@ blackmail_nobility_reform = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 	}
 	trigger = {
-		OR = {
-			full_idea_group = spy_ideas
-			if = {
-				limit = { 
-					OR = {
-						tag = BUR
-						tag = LOT
-					}	
-				}
-				mission_completed = BUR_balance_the_estates
-			}
-		}
+		full_idea_group = spy_ideas
 	}
 	modifiers = {
 		nobles_influence_modifier = -0.1
@@ -6873,9 +6864,9 @@ letat_cest_moi_reform = {
 		governing_capacity = 250
 	}
 	ai = {
-		factor = 1.5
+		factor = 2
 		modifier = {
-			factor = 2
+			factor = 5
 			OR = {
 				tag = FRA
 				tag = FRE
@@ -6897,7 +6888,8 @@ peoples_kingdom_reform = {
 	icon = "peasant_republic"
 	allow_normal_conversion = yes
 	modifiers = {
-		possible_policy = 1
+		governing_cost = 0.1
+		development_cost = -0.05
 	}
 	ai = {
 		factor = 1
@@ -7143,6 +7135,7 @@ nizam_i_cedid_reform = {
 			tag = TUR
 			tag = RUM
 			has_reform = nizam_i_cedid_reform
+			has_country_flag = unlock_nizam_i_cedid_reform_flag
 		}
 	}
 	modifiers = {

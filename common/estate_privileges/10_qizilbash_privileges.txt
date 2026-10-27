@@ -797,3 +797,47 @@ estate_qizilbash_mamlukian_administration = {
 		factor = 100
 	}
 }
+
+estate_qizilbash_elite_cataphracts = {
+	icon = qizlbash_cavalry
+	land_share = 5
+	max_absolutism = 0
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.05
+	is_valid = {
+		tag = ERS # Eranshahr-only
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	on_invalid = {
+	}
+	on_revoked = {
+	}
+	modifier_by_land_ownership = {
+		shock_damage = 0.25
+		land_forcelimit_modifier = -0.25
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_qizilbash
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_qizilbash_establish_the_qizilbash_regiments }
+		}
+	}
+}

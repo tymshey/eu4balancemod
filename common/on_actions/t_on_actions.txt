@@ -1,3 +1,7 @@
+on_startup = {
+	t_export_military_stats = yes
+}
+
 on_monthly_pulse = {
 	if = {
 		limit = {

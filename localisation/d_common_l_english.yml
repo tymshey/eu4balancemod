@@ -1,6 +1,8 @@
 ﻿l_english:
  
  #novgorod
+ nov_integrate_subjects_title:0 "The Subjects of Novgorod"
+ nov_integrate_subjects_desc:0 ""Divide and Rule." This has been the practice of our previous Grand Kniaz in order to maximize the tribute we could collect for our Tatar overlords. However, this form of decentralization is counterproductive if we want to ascent to the dominant power in our home region. The subjects of Novgorod must become part of the Grand Principality."
  d_novgorod_early_game_modifier:0 "Rival the Principality of Moscow"
  d_nov_rus_development_modifier:0 "Development of Russia"
  

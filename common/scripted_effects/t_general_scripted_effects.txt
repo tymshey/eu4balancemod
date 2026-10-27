@@ -299,3 +299,90 @@ create_or_add_center_of_trade_level = {
 		}
 	}
 }
+
+t_export_military_stats = {
+	# reset zmiennych
+	set_variable = { t_morale_damage_var = 0 }
+	set_variable = { t_morale_damage_received_var = 0 }
+	set_variable = { t_fire_damage_var = 0 }
+	set_variable = { t_fire_damage_received_var = 0 }
+	set_variable = { t_shock_damage_var = 0 }
+	set_variable = { t_shock_damage_received_var = 0 }
+	set_variable = { t_movement_speed_var = 0 }
+	set_variable = { t_backrow_artillery_damage_var = 0 }
+	set_variable = { t_assault_fort_ability_var = 0 }
+	# export modifierow do zmiennych
+	export_to_variable = {
+		which = t_morale_damage_var
+		value = modifier:morale_damage
+	}
+	export_to_variable = {
+		which = t_morale_damage_received_var
+		value = modifier:morale_damage_received
+	}
+	export_to_variable = {
+		which = t_fire_damage_var
+		value = modifier:fire_damage
+	}
+	export_to_variable = {
+		which = t_fire_damage_received_var
+		value = modifier:fire_damage_received
+	}
+	export_to_variable = {
+		which = t_shock_damage_var
+		value = modifier:shock_damage
+	}
+	export_to_variable = {
+		which = t_shock_damage_received_var
+		value = modifier:shock_damage_received
+	}
+	export_to_variable = {
+		which = t_movement_speed_var
+		value = modifier:movement_speed
+	}
+	export_to_variable = {
+		which = t_backrow_artillery_damage_var
+		value = modifier:backrow_artillery_damage
+	}
+	export_to_variable = {
+		which = t_assault_fort_ability_var
+		value = modifier:assault_fort_ability
+	}
+	# x100%
+	multiply_variable = {
+		which = t_morale_damage_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_morale_damage_received_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_fire_damage_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_fire_damage_received_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_shock_damage_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_shock_damage_received_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_movement_speed_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_backrow_artillery_damage_var
+		value = 100
+	}
+	multiply_variable = {
+		which = t_assault_fort_ability_var
+		value = 100
+	}
+}

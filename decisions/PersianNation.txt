@@ -159,6 +159,12 @@ country_decisions = {
 					duration = -1
 				}
 			}
+			if = {
+				limit = {
+					tag = TAB
+				}
+				set_country_flag = formed_persia_as_mazandaran
+			}
 			change_tag = PER
 			swap_non_generic_missions = yes
 			on_change_tag_effect = yes

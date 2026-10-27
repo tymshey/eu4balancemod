@@ -88,4 +88,48 @@ spriteTypes = {
 		name = "GFX_button_t_change_deity"
 		texturefile = "gfx/interface/t_change_deity.dds"
 	}
+	spriteType = {
+		name = "GFX_t_button_military_stats"
+		texturefile = "gfx/interface/t_button_military_stats.dds"
+	}
+	spriteType = {
+		name = "GFX_t_military_stats_bg"
+		texturefile = "gfx/interface/t_military_stats_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_t_morale_damage"
+		texturefile = "gfx/interface/ideas_EU4/t_morale_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_t_morale_damage_received"
+		texturefile = "gfx/interface/ideas_EU4/t_morale_damage_received.dds"
+	}
+	spriteType = {
+		name = "GFX_t_fire_damage"
+		texturefile = "gfx/interface/ideas_EU4/t_fire_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_t_fire_damage_received"
+		texturefile = "gfx/interface/ideas_EU4/t_fire_damage_received.dds"
+	}
+	spriteType = {
+		name = "GFX_t_shock_damage"
+		texturefile = "gfx/interface/ideas_EU4/t_shock_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_t_shock_damage_received"
+		texturefile = "gfx/interface/ideas_EU4/t_shock_damage_received.dds"
+	}
+	spriteType = {
+		name = "GFX_t_movement_speed"
+		texturefile = "gfx/interface/ideas_EU4/t_movement_speed.dds"
+	}
+	spriteType = {
+		name = "GFX_t_backrow_artillery_damage"
+		texturefile = "gfx/interface/ideas_EU4/t_backrow_artillery_damage.dds"
+	}
+	spriteType = {
+		name = "GFX_t_assault_fort_ability"
+		texturefile = "gfx/interface/ideas_EU4/t_assault_fort_ability.dds"
+	}
 }

@@ -1,0 +1,232 @@
+## Military Stats GUI - Made by tymshey
+
+custom_button = { # open
+    name = t_open_military_stats
+    potential = {
+		ai = no
+		NOT = {
+			has_country_flag = t_military_stats_open_flag
+		}
+    }
+    trigger = {
+		ai = no
+	}
+    effect = {
+		hidden_effect = {
+			t_export_military_stats = yes
+			clr_country_flag = t_military_stats_open_flag
+			set_country_flag = t_military_stats_open_flag
+		}
+	}
+    tooltip = t_open_military_stats_tt
+}
+
+custom_button = { # close
+    name = t_close_military_stats
+    potential = {
+		ai = no
+		has_country_flag = t_military_stats_open_flag
+    }
+    trigger = {
+		
+	}
+    effect = {
+		hidden_effect = {
+			clr_country_flag = t_military_stats_open_flag
+		}
+	}
+    tooltip = t_close_interface_tt
+}
+
+custom_icon = { # bg
+    name = t_military_stats_bg
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+	# tooltip = "dont even look at this"
+}
+
+# modifiers
+
+custom_icon = {
+    name = t_military_stats_morale_damage_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_morale_damage_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_morale_damage_received_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_morale_damage_received_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_fire_damage_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_fire_damage_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_fire_damage_received_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_fire_damage_received_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_shock_damage_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_shock_damage_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_shock_damage_received_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_shock_damage_received_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_movement_speed_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_movement_speed_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_backrow_artillery_damage_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_backrow_artillery_damage_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_icon = {
+    name = t_military_stats_assault_fort_ability_icon
+    potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}
+
+custom_text_box = {
+	name = t_military_stats_assault_fort_ability_text
+	potential = {
+		AND = {
+			ai = no
+			has_country_flag = t_military_stats_open_flag
+		}
+	}
+}

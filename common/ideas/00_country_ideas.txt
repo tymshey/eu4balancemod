@@ -2050,11 +2050,11 @@ PER_ideas = {
 ERANSHAHR_ideas = {
 	start = {
 		land_morale = 0.15
-		diplomatic_reputation = 2
+		leader_land_shock = 1
 	}
 	
 	bonus = {
-		leader_land_shock = 1
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -2069,7 +2069,7 @@ ERANSHAHR_ideas = {
 		technology_cost = -0.05
 	}
 	ers_wuzurg_framadar = {
-		same_religion_advisor_cost = -0.2
+		governing_cost = -0.1
 	}
 	ers_reform_the_savaran_cavalry = {
 		cavalry_power = 0.2

@@ -2106,10 +2106,10 @@ mam_missions_4 = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = protector_of_the_islamic_realm_modifier
-				duration = -1
-			}
+			#add_country_modifier = {
+			#	name = protector_of_the_islamic_realm_modifier
+			#	duration = -1
+			#}
 			if = {
 				limit = {
 					religion_group = muslim

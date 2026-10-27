@@ -4911,3 +4911,24 @@ estate_burghers_german_deforestisation = {
 		factor = 0
 	}
 }
+estate_burghers_IND_debase_the_ruppee = {
+	icon = privilege_gold_mint
+	loyalty = -0.05
+	is_valid = {
+		has_country_flag = IND_unlock_industrial_privilege
+	}
+	
+	benefits = {
+		production_efficiency = 0.2
+		global_tax_modifier = 0.25
+		build_cost = -0.05
+	}
+	penalties = {
+		may_not_reduce_inflation = yes
+		inflation_reduction = -0.3 
+	}
+	
+	ai_will_do = {
+		factor = 0 #AI will not be able to handle this
+	}
+}

@@ -373,6 +373,7 @@ estate_qizilbash = {
 		estate_qizilbash_tupchi_artillery_corps
 		estate_qizilbash_qurchi_service
 		estate_qizilbash_mamlukian_administration
+		estate_qizilbash_elite_cataphracts
 	}
 	
 	agendas = {
