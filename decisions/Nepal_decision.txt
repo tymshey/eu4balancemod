@@ -20,7 +20,36 @@ country_decisions = {
 			}
 		}
 	}
-	
+	temp = {
+	major = yes
+	color = { 63 87 129 }
+		potential = {
+		NOT = {has_country_flag = temp}
+			tag = HAB
+		}
+	allow = {
+			tag = HAB
+		}
+	effect = {
+		 switzerland_area = {
+                limit = {
+                    NOT = { is_permanent_claim = ROOT }
+                    NOT = { is_core = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+		 romandie_area = {
+                limit = {
+                    NOT = { is_permanent_claim = ROOT }
+                    NOT = { is_core = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
+		hidden_effect = {
+		set_country_flag = temp
+			}
+		}
+	}
 	Gold = {
 	major = yes
 	color = { 63 87 129 }
