@@ -17,6 +17,7 @@ country_decisions = {
 			OR = {
 				has_country_flag = is_NGC_flag
 				has_country_flag = is_SGC_flag
+				tag = AUE
 			}
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
