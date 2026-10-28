@@ -28,6 +28,7 @@
  t_tofangchi_regiments:0 "Tofangchi Regiments"
  t_tofangchi_regiments_desc:0 "The Tofangchi are the [Root.GetAdjective] musketeers who are enlisted from all parts of the nation. Under the supervision of the [Root.GetNobilityOrFallbackName], these soldiers are trained in proficiency with the muskets, unlike other troops of the [Root.GovernmentName]."
  t_per_abbasid_successor:0 "Successor to the Abbasid Caliphate"
+ imperial_enlightenment_mod:0 "Imperial Enlightenment"
 
  t_madinat_as_salam:0 "Madinat as-Salam"
  t_madinat_as_salam_desc:0 "We have rebuilt Madinat as-Salam, the 'City of Peace', symbolizing the revival of our culture and influence in the region. It serves as a center of learning, culture, and commerce, attracting scholars, artists, and traders from across the Islamic world."
@@ -38,6 +39,11 @@
  estate_qizilbash_elite_cataphracts_desc:0 "The Aswaran supply the Shahanshah's army with elite heavy cataphract units, just like the days of Sassanid Empire."
  estate_burghers_IND_debase_the_ruppee:0 "Debase the Drachm"
  estate_burghers_IND_debase_the_ruppee_desc:0 "In our goal to free more funds for economic expansion, we could have our currency rapidly debased, but that would hurt our standing with the Merchants."
+ estate_qizilbash_TIM_chagatai_warriors:0 "Chagatai Warriors"
+ estate_qizilbash_TIM_chagatai_warriors_desc:0 "Furthering the power of the Turkic warriors in our military would certainly do nothing but reinforce the current status quo, though certainly benefitting us in the terms of our military power."
+ estate_ghulams_TIM_chagatai_warriors:0 "Chagatai Warriors"
+ estate_ghulams_TIM_chagatai_warriors_desc:0 "Furthering the power of the Turkic warriors in our military would certainly do nothing but reinforce the current status quo, though certainly benefitting us in the terms of our military power."
+ PER_TIM_unlock_privilege_about_chagatai:0 "Unlock the '§YChagatai Warriors§!' Estate Privilege for the §Y[Root.GetNobilityName]§!, §Y[Root.GetQizilbashName]§! and §Y[Root.GetGhulamsName]§!, allowing us to gain §G+25.0%§! Cavalry to Infantry Ratio and §G+5.0%§! Cavalry Combat Ability, with an additional §G+0.50§! Yearly Army Tradition scaling with §YInfluence§!."
 
  # Missions
 

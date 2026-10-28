@@ -1,7 +1,8 @@
 #4339 - Rasht
 
-owner = BPI
-controller = BPI
+owner = TAB
+controller = TAB
+add_core = TAB
 culture = mazandarani
 religion = sunni
 capital = "Rasht"

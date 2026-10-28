@@ -374,6 +374,7 @@ estate_qizilbash = {
 		estate_qizilbash_qurchi_service
 		estate_qizilbash_mamlukian_administration
 		estate_qizilbash_elite_cataphracts
+		estate_qizilbash_TIM_chagatai_warriors
 	}
 	
 	agendas = {

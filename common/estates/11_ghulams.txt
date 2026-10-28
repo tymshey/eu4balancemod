@@ -251,6 +251,7 @@ estate_ghulams = {
 		estate_ghulams_tupchi_artillery_corps
 		estate_ghulams_qurchi_service
 		estate_ghulams_mamlukian_administration
+		estate_ghulams_TIM_chagatai_warriors
 	}
 	
 	agendas = {

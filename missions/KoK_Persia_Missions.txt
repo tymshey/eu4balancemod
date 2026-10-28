@@ -1025,7 +1025,7 @@ kok_persia_mission_origins_slot_mazandarani = {
 					region = mashriq_region
 					region = anatolia_region
 				}
-				value = 140
+				value = 120
 			}
 		}
 		effect = {
@@ -1770,7 +1770,7 @@ kok_persia_military_mission_slot_2 = {
 		}
 		effect = {
 			add_army_professionalism = 0.05
-			custom_tooltip = TIM_unlock_privilege_about_chagatai
+			custom_tooltip = PER_TIM_unlock_privilege_about_chagatai
 			set_country_flag = TIM_unlock_privilege_about_chagatai_flag
 			if = {
 				limit = {
@@ -2947,7 +2947,7 @@ kok_persia_mission_zoroastrian_slot_5 = {
 			is_defender_of_faith = yes
 			calc_true_if = {
 				desc = per_zoroastrian_community_tt
-				amount = 15
+				amount = 5
 				all_known_country = {
 					religion_group = root
 				}
@@ -3939,6 +3939,10 @@ kok_persia_culture_mission_slot_4 = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = imperial_enlightenment_mod
+				duration = -1
+			}
 			unlock_diplomatic_action = {
 				type = send_royal_ambassador
 				custom_tooltip = send_royal_ambassador_tt

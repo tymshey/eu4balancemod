@@ -1,7 +1,8 @@
 #4340 - Astara
 
-owner = BPI
-controller = BPI
+owner = TAB
+controller = TAB
+add_core = TAB
 culture = azerbaijani
 religion = shiite
 capital = "Astara"

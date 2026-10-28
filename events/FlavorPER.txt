@@ -3732,23 +3732,38 @@ country_event = {
 	}
 	
 	option = {
-		name = flavor_per.67.a 
-		define_heir = {
-			name = "Abbas" 
-			dynasty = ROOT 
-			claim = 95 
-			male = yes 
-			adm = 6
-			dip = 5
-			mil = 6
-			age = 15 
+		name = flavor_per.67.a
+		if = {
+			limit = { religion = zoroastrian }
+			define_heir = {
+				name = "Ardashir"
+				dynasty = ROOT
+				claim = 95
+				male = yes
+				adm = 6
+				dip = 5
+				mil = 6
+				age = 15
+			}
+		}
+		else = {
+			define_heir = {
+				name = "Abbas"
+				dynasty = ROOT
+				claim = 95
+				male = yes
+				adm = 6
+				dip = 5
+				mil = 6
+				age = 15
+			}
 		}
 		hidden_effect = {
 			if = {
 				limit = { has_dlc = "Rights of Man" }
 				add_heir_personality = architectural_visionary_personality
 			}
-			set_heir_flag = per_abbas_lives_flag 
+			set_heir_flag = per_abbas_lives_flag
 			set_heir_flag = heir_cannot_die_of_events
 		}
 	}

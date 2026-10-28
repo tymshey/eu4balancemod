@@ -4,8 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = KRY
-controller = KRY
+owner = TAB
+controller = TAB
+add_core = TAB
 culture = mazandarani
 religion = shiite
 capital = "Lahijan"

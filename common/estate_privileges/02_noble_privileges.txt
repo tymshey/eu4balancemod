@@ -4703,6 +4703,10 @@ estate_nobles_TIM_chagatai_warriors = {
 	is_valid = {
 		has_country_flag = TIM_unlock_privilege_about_chagatai_flag
 	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_qizilbash_TIM_chagatai_warriors }
+		NOT = { has_estate_privilege = estate_ghulams_TIM_chagatai_warriors }
+	}
 	benefits = {
 		cavalry_power = 0.05
 		cav_to_inf_ratio = 0.25
