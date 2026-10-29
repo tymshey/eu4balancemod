@@ -1,0 +1,9 @@
+#国家
+on_startup = {
+	if = {
+		limit = {
+			ai = no
+		}
+		country_event = { id = mmtcc_event.99 }
+	}
+}

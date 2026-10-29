@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "Picture_mmtcc_kongbai"
+		texturefile = "gfx/event_pictures/mmtcc_kongbai.png"
+	}
+	spriteType = {
+		name = "GFX_Picture_mmtcc_drink"
+		texturefile = "gfx/event_pictures/mmtcc_drink.png"
+	}
+}

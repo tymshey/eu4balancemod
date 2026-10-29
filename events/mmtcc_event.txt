@@ -1,0 +1,111 @@
+namespace = mmtcc_event
+
+country_event = {
+	id = mmtcc_event.99
+	title = mmtcc.99.t
+	desc = mmtcc.99.d
+	picture = Picture_mmtcc_kongbai
+	
+	is_triggered_only = yes
+
+	immediate = {
+    	clr_global_flag = mmtcc_40y_flag
+		clr_global_flag = mmtcc_60y_flag
+		clr_global_flag = mmtcc_80y_flag
+    }
+		
+	option = {
+		name = mmtcc.99.a
+		set_global_flag = mmtcc_40y_flag
+	}
+	option = {
+		name = mmtcc.99.b
+		set_global_flag = mmtcc_60y_flag
+	}
+	option = {
+		name = mmtcc.99.c
+		set_global_flag = mmtcc_80y_flag
+	}
+	option = {
+		name = mmtcc.99.e
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+#计时器
+country_event = {
+	id = mmtcc_event.1
+	title = mmtcc.99.t
+	desc = mmtcc.99.d
+	picture = Picture_mmtcc_kongbai
+
+	hidden = yes
+	mean_time_to_happen = {
+        days = 1
+    }
+
+	trigger = {
+		OR = {
+            had_global_flag = {
+                flag = mmtcc_40y_flag
+				days = 14600
+            }
+			had_global_flag = {
+                flag = mmtcc_60y_flag
+				days = 21900
+            }
+			had_global_flag = {
+                flag = mmtcc_80y_flag
+				days = 29200
+            }
+		}
+	}
+
+	immediate = {
+    	clr_global_flag = mmtcc_40y_flag
+		clr_global_flag = mmtcc_60y_flag
+		clr_global_flag = mmtcc_80y_flag
+    }
+
+	option = {
+		name = mmtcc.99.f
+		ai_chance = {
+			factor = 100
+		}
+		every_country = {
+			limit = {
+				ai = no
+			}
+			country_event = { id = mmtcc_event.2 }
+		}
+	}
+}
+
+country_event = {
+	id = mmtcc_event.2
+	title = mmtcc.99.t
+	desc = mmtcc.99.d
+	picture = Picture_mmtcc_kongbai
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = mmtcc.99.a
+		set_global_flag = mmtcc_40y_flag
+	}
+	option = {
+		name = mmtcc.99.b
+		set_global_flag = mmtcc_60y_flag
+	}
+	option = {
+		name = mmtcc.99.c
+		set_global_flag = mmtcc_80y_flag
+	}
+	option = {
+		name = mmtcc.99.e
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
