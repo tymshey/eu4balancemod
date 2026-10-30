@@ -40,6 +40,11 @@ ger_a_great_navy = {
 	global_sailors_modifier = 0.2
 }
 
+imperial_joint_stock_companies = {
+	development_cost = -0.05
+	governing_cost = -0.05
+}
+
 ### Province
 
 wes_naval_infrastructure = {
@@ -51,4 +56,15 @@ ger_imperial_naval_shipyard = {
 	naval_forcelimit = 10
 	ship_recruit_speed = -0.5
 	local_ship_repair = 0.5
+}
+
+treaty_port_modifier = {
+	picture = "t_major_harbour"
+	local_development_cost = 0.3
+	province_trade_power_modifier = 0.5
+}
+
+hab_city_of_the_worlds_desire = {
+	local_defensiveness = 0.33
+	local_development_cost = -0.2
 }

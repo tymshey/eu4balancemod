@@ -164,6 +164,7 @@ country_decisions = {
 			OR = {
 				has_country_flag = is_NGC_flag
 				has_country_flag = is_SGC_flag
+				tag = AUE
 			}
 			is_free_or_tributary_trigger = yes
 			is_nomad = no

@@ -11,6 +11,12 @@
  gv_britannia_rules_the_waves:0 "Britannia Rules the Waves"
  gv_britannia_rules_the_waves_desc:0 "this idea is broken, fuck pdx"
 
+ # Privileges
+ 
+ estate_burghers_hudson_bays_company:0 "Charter the Hudson Bay's Company"
+ estate_burghers_hudson_bays_company_desc:0 "By granting an exclusive royal monopoly over the vast watersheds of North America to a joint-stock enterprise, the crown secures a steady influx of high-value fur. While surrendering local administrative control reduces direct tax revenues, the company's aggressive network of trading posts rapidly secures the wilderness for the empire."
+ estate_burghers_hudson_bays_company_tt:0 "Unlock the '§YHudson Bay's Company§!' estate privilege for the §YBurghers§!."
+
  # Modifiers
  
  t_eng_modern_realm:0 "A Modern Realm"

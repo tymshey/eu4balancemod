@@ -10,6 +10,7 @@ historical_rival = TUR
 historical_rival = FRA
 national_focus = ADM
 set_estate_privilege = estate_nobles_habsburg_disunity
+set_estate_privilege = estate_jews_suppress
 
 add_accepted_culture = slovene
 
@@ -927,7 +928,7 @@ add_government_reform = autocracy_reform }
 
 1685.1.1 = { leader = {	name = "von Starhemberg"       	type = general	fire = 3	shock = 4	manuever = 4	siege = 3	death_date = 1705.1.1 } }
 
-#1690.1.1 = { leader = {	name = "von Mercy"             	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1734.1.1 } } # Removed /SWÖ
+#1690.1.1 = { leader = {	name = "von Mercy"             	type = general	fire = 3	shock = 4	manuever = 3	siege = 0	death_date = 1734.1.1 } } # Removed /SW 
 
 1690.1.1 = { leader = {	name = "Ludwig"                	type = general	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1710.1.1 } }
 
@@ -1073,7 +1074,7 @@ add_government_reform = autocracy_reform }
 
 1735.1.1 = { leader = {	name = "Sachsen"               	type = general	fire = 4	shock = 5	manuever = 4	siege = 1	death_date = 1750.1.1 } }
 
-#1737.1.1 = { leader = {	name = "Charles de Lorraine"   	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.7.4 } } # Removed /SWÖ
+#1737.1.1 = { leader = {	name = "Charles de Lorraine"   	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1780.7.4 } } # Removed /SW 
 
 1738.1.1 = { leader = {	name = "Browne"                	type = general	fire = 3	shock = 3	manuever = 3	siege = 1	death_date = 1757.1.1 } }
 
@@ -1090,7 +1091,7 @@ add_government_reform = autocracy_reform }
 	queen = {
 		country_of_origin = LOR
 		name = "Francis"
-		dynasty = "de Vaudémont"
+		dynasty = "de Vaud mont"
 		birth_date = 1708.12.8
 		death_date = 1765.8.12
 		female = no

@@ -10,6 +10,8 @@ historical_friend = POR
 capital = 219 # Toledo
 national_focus = MIL
 
+set_estate_privilege = estate_jews_suppress
+
 add_army_professionalism = 0.1
 
 change_estate_land_share = {

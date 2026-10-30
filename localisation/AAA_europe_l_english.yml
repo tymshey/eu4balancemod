@@ -1,13 +1,20 @@
 ﻿l_english:
  
  # Modifiers
-
+ 
+ treaty_port_modifier:0 "Treaty Port"
  rus_reformed_military:0 "Westernized Military"
  t_kiev_start_modifier:0 "Legacy of the Kievan Rus"
+ 
+ # Spain
  spa_rb_overseas_trade_mod:0 "Intendant System"
  spa_the_royal_galleon_modifier:0 "Galleon Modifications"
  industria_sedera_mod:0 "Industria Sedera"
  ara_dominion_over_italy:0 "Dominion over Italy"
+ 
+ # Austria
+ imperial_joint_stock_companies:0 "Imperial Joint-Stock Charters & Companies"
+ hab_city_of_the_worlds_desire:0 "City of the Worlds Desire"
 
  # Reforms
 
@@ -18,10 +25,15 @@
 
  # Missions
 
+ # Spain
  spa_the_royal_galleon_title:0 "The Royal Galleon"
  spa_the_royal_galleon_desc:0 "As our maritime might grows, so do our needs. We need to make modifications to the royal galleon design, so it becomes even more fearsome than it is today."
  gc_cas_spa_royal_indian_company_title:0 "The Royal Indian Company"
  gc_cas_spa_royal_indian_company_desc:0 "Our reach has encompassed India. It is paramount that we establish a Royal trading company, like other European powers. This can only bring benefits to us."
+
+ # Austria
+ hab_imperial_trade_interests_title:0 "Imperial Trade Interests"
+ hab_imperial_trade_interests_desc:0 "The monetization of our rural lands has flooded our cities with liquid wealth and an eager, newly mobile labor pool. To harness this unprecedented surge of private wealth, we must look beyond traditional guilds and establish the legal foundations for urban industrial capitalism. By chartering a centralized stock exchange and legalizing joint-stock corporations, we enable private investors, wealthy burghers, and even reform-minded nobles to freely pool their capital. This creates an unstoppable investment engine capable of financing massive commercial ventures, private manufacturing plants, and sprawling infrastructural projects across the empire without draining the imperial treasury."
 
  # Events
 

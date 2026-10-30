@@ -10,6 +10,8 @@ technology_group = western
 capital = 101	# Genova
 fixed_capital = 101 # Cannot move capital away from this province & no power cost to move to it
 
+set_estate_privilege = estate_jews_suppress
+
 1394.1.1 = {
 	monarch = {
 		name = "Antonio Adorno"

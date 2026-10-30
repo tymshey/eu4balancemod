@@ -1,5 +1,20 @@
 on_startup = {
 	t_export_military_stats = yes
+	if = {
+		limit = {
+			has_estate = estate_jews
+			NOT = { has_country_flag = jewish_init_flag }
+		}
+		change_estate_land_share = {
+			estate = estate_jews
+			share = -100
+		}
+		change_estate_land_share = {
+			estate = estate_jews
+			share = 2
+		}
+		set_country_flag = jewish_init_flag
+	}
 }
 
 on_monthly_pulse = {

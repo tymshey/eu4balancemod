@@ -828,6 +828,89 @@ WoC_austria_1_1 = {
 			}
 		}
 	}
+
+	hab_imperial_trade_interests = {
+		icon = mission_ned_amsterdam_bourse
+		position = 1
+		required_missions = { hab_vienna_waltz hab_von_raab }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 153
+				province_id = 266
+				province_id = 4752
+				province_id = 1863
+				province_id = 1772
+				province_id = 6081
+			}
+			OR = {
+				NOT = { owned_by = root }
+				NOT = { development = 30 }
+				NOT = { num_of_buildings_in_province = 3 }
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					region = south_german_region
+					region = carpathia_region
+					region = balkan_region
+				}
+				has_production_building_trigger = yes
+				has_manufactory_trigger = yes
+				development = 20
+				value = 20
+			}
+			153 = {
+				owned_by = root
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+			266 = {
+				owned_by = root
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+			4752 = {
+				owned_by = root
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+			1863 = {
+				owned_by = root
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+			1772 = {
+				owned_by = root
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+			6081 = {
+				owned_by = root
+				development = 30
+				num_of_buildings_in_province = 4
+			}
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+			is_in_deficit = no
+		}
+		effect = {
+			add_country_modifier = {
+				name = imperial_joint_stock_companies
+				duration = -1
+			}
+			4752 = {
+				change_trade_goods = silk
+			}
+			1863 = {
+				change_trade_goods = silk
+			}
+			6081 = {
+				change_trade_goods = cloth
+			}
+		}
+	}
 }
 WoC_austria_2 = {
 	slot = 2
@@ -1707,7 +1790,7 @@ WoC_austria_2_1 = {
 				}
 				add_province_modifier = {
 					name = "protected_italian_interests"
-					duration = 3650
+					duration = -1
 				}
 
 				add_or_upgrade_shipyard_building = yes
@@ -1974,6 +2057,13 @@ WoC_austria_2_1 = {
 			}
 
 			custom_tooltip = SEPERATOR_TOOLTIP
+
+			151 = {
+				add_province_modifier = {
+					name = hab_city_of_the_worlds_desire
+					duration = -1
+				}
+			}
 
 			complex_dynamic_effect = {
 				first_custom_tooltip = HAB_IF_BYZANTIUM_IS_OUR_SUBJECT
