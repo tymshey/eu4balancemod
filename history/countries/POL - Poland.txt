@@ -9,6 +9,8 @@ capital = 262 # Krakow
 add_accepted_culture = ruthenian
 add_truce_with = HUN
 
+set_estate_privilege = estate_jews_protection
+
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_golden_liberty
 }
@@ -189,7 +191,7 @@ add_truce_with = HUN
 	queen = {
 		country_of_origin = TRA
 		name = "Barbara"
-		dynasty = "Zápolya"
+		dynasty = "Z polya"
 		birth_date = 1490.1.1
 		death_date = 1515.10.2
 		female = yes

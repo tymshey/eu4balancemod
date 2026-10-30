@@ -4,8 +4,25 @@ estate_jews = {
 	
 	trigger = {
 		OR = {
-		tag = USA
-		tag = UKR
+			technology_group = western
+			capital_scope = {
+				OR = {
+					superregion = europe_superregion
+					superregion = near_east_superregion
+					superregion = persia_superregion
+					superregion = eastern_europe_superregion
+					region = maghreb_region
+					region = arabia_region
+				}
+			}
+			tag = ETH
+			tag = AKS
+		}
+		NOT = {
+			religion = jewish
+		}
+		NOT = {
+			is_colonial_nation = yes
 		}
 	}
 	

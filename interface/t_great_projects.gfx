@@ -15,4 +15,8 @@ spriteTypes = {
 		name = "GFX_great_project_gv_mosque_of_cordoba"
 		texturefile = "gfx//interface//great_projects//great_project_gv_mosque_of_cordoba.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_topkapi_palace"
+		texturefile = "gfx//interface//great_projects//great_project_topkapi_palace.dds"
+	}
 }

@@ -4,6 +4,11 @@
  reload_missions_tt:0 "Reload Missions"
  manage_estates_tt:0 "Manage Estates"
  T_RETAIN_AGE_ABILITY_ENTRY_INACCESSIBLE:0 "This Age Ability cannot be retained."
+
+ # States
+
+ kyrgyzstan_area:0 "Kyrgyzstan"
+ kaunas_area:0 "Kaunas"
  
  # Tradegoods
 

@@ -1,0 +1,61 @@
+﻿l_english:
+
+ # Modifiers
+
+ jews_loyalty_modifier:0 "Jews Loyalty"
+ jews_influence_modifier:0 "Jews Influence"
+
+ # Jews
+ 
+ estate_jews:0 "Jews"
+ estate_jews_desc:0 ""
+ 
+ estate_jews_advisor:0 "Recruit Jewish Advisors"
+ estate_jews_advisor_desc:0 ""
+ estate_jews_dev:0 "Support Jewish Communities"
+ estate_jews_dev_desc:0 ""
+ estate_jews_banking:0 "Encourage Jewish Banking"
+ estate_jews_banking_desc:0 ""
+ estate_jews_trading:0 "Support Jewish Merchants"
+ estate_jews_trading_desc:0 ""
+ estate_jews_shabbat:0 "Work-free Shabbat"
+ estate_jews_shabbat_desc:0 ""
+ estate_jews_protection:0 "Protection of Jewish Minorities"
+ estate_jews_protection_desc:0 ""
+ estate_jews_suppress:0 "Non Tolerandis Iudaeis"
+ estate_jews_suppress_desc:0 ""
+ 
+ # Jewish Flavour Events
+
+jewish_events.1.title:0 "Jewish Influence"
+jewish_events.1.desc:0 "In recent years, a subtle shift has been occurring within the court, as a group of influential Jewish intellectuals and advisors has gained prominence. Known for their wisdom and financial acumen, these individuals have captured the attention of the ruling elite, sparking a debate within the government about the extent of their influence. In a surprising turn of events, the ruling elite considers embracing Judaism, opening the possibility for conversion. This move could foster stronger ties with the influential Jewish advisors."
+jewish_events.1.a:0 "Hava Nagila Venismeha...!"
+jewish_events.1.b:0 "We cannot allow that."
+
+jewish_events.2.title:0 "Learned Rabbis"
+jewish_events.2.desc:0 "The scholars of the Jewish communities throughout our realm have produced many distinguished rabbis and physicians. Their knowledge in matters both spiritual and worldly has earned them respect far beyond their own congregations. Some among the court suggest that their expertise should be put to greater use."
+jewish_events.2.a:0 "Wisdom knows no boundaries."
+jewish_events.2.b:0 "Their affairs are their own concern."
+
+jewish_events.3.title:0 "Merchant Networks"
+jewish_events.3.desc:0 "Jewish merchants have established connections stretching from distant ports to neighboring realms. Their ability to maintain ties across borders has greatly aided the flow of goods and information. Influential members of the estate request greater privileges in return for expanding these networks."
+jewish_events.3.a:0 "Grant them additional freedoms."
+jewish_events.3.b:0 "Regulate their activities."
+
+jewish_events.4.title:0 "Rumors and Accusations"
+jewish_events.4.desc:0 "Rumors concerning the Jewish communities have spread throughout several towns, inflaming tensions and provoking unrest. Though many at court doubt the validity of such claims, local authorities demand that the Crown take action."
+jewish_events.4.a:0 "Defend the communities."
+jewish_events.4.b:0 "Ignore the rumors."
+jewish_events.4.c:0 "Provoke the mobs and escalate the situation."
+
+jewish_events.5.title:0 "Flight of Capital"
+jewish_events.5.desc:0 "Several prominent Jewish merchant families have departed our realm, taking with them considerable wealth and valuable trade connections. Their reasons are many, ranging from foreign opportunities to dissatisfaction with local conditions. The loss of these influential families has raised concerns about the economic and social impact on our realm."
+jewish_events.5.a:0 "Offer financial incentives to stay."
+jewish_events.5.b:0 "Find replacements among local merchants."
+jewish_events.5.c:0 "Accept their departure."
+
+jewish_events.6.title:0 "Tax Collection Dispute"
+jewish_events.6.desc:0 "Officials accuse several Jewish tax farmers and moneylenders of withholding revenues owed to the Crown. Representatives of the estate insist that the allegations are exaggerated and politically motivated. They argue that the Jewish communities have long been loyal subjects, and that their contributions to the realm's prosperity should be recognized. The Crown must decide how to address this dispute, balancing the need for revenue with the desire to maintain harmony within the realm."
+jewish_events.6.a:0 "Launch a royal investigation."
+jewish_events.6.b:0 "Confiscate their assets."
+jewish_events.6.c:0 "Trust their assurances."

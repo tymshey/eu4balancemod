@@ -21,6 +21,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/t_economy_stats.dds"
 	}
 	spriteType = {
+		name = "GFX_t_ae_btn"
+		texturefile = "gfx/interface/t_ae_btn.dds"
+	}
+	spriteType = {
 		name = "GFX_t_manpower_btn"
 		texturefile = "gfx/interface/t_manpower_btn.dds"
 	}
@@ -39,6 +43,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_t_golden_btn"
 		texturefile = "gfx/interface/t_golden_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_x1_btn"
+		texturefile = "gfx/interface/t_x1_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_t_x10_btn"
+		texturefile = "gfx/interface/t_x10_btn.dds"
 	}
 	spriteType = {
 		name = "GFX_reload_button"

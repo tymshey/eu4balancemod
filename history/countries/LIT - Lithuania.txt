@@ -9,6 +9,8 @@ technology_group = eastern
 historical_friend = POL
 capital = 272 # Vilnius
 
+set_estate_privilege = estate_jews_protection
+
 1392.1.1 = {
 	monarch = {
 		name = "Vytautas"

@@ -8,6 +8,8 @@ technology_group = western
 capital = 213 # Tinto HQ
 add_army_professionalism = 0.05
 
+set_estate_privilege = estate_jews_suppress
+
 1396.5.19 = {
 	monarch = {
 		name = "Martí I"

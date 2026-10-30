@@ -1,0 +1,364 @@
+###########################################
+# Jewish Estate events
+#
+# Scripted by tymshey
+###########################################
+
+namespace = jewish_events
+normal_or_historical_nations = yes
+
+# Jewish Influence
+
+country_event = {
+	id = jewish_events.1
+	title = jewish_events.1.title
+	desc = jewish_events.1.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate_privilege = estate_jews_advisor
+		has_estate_privilege = estate_jews_dev
+		has_estate_privilege = estate_jews_banking
+		has_estate_privilege = estate_jews_trading
+		NOT = {
+			OR = {
+				has_country_flag = t_jewish_refused_flag
+				religion = jewish
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = jewish_events.1.a
+		trigger = {
+			NOT = { 
+				religion_group = muslim
+			}
+		}
+		change_religion = jewish
+		add_stability = -3
+		custom_tooltip = t_hava_nagila_tooltip
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = jewish_events.1.b
+		add_prestige = 10
+		set_country_flag = t_jewish_refused_flag
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# Learned Rabbis
+
+country_event = {
+	id = jewish_events.2
+	title = jewish_events.2.title
+	desc = jewish_events.2.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate = estate_jews
+		NOT = {
+			has_estate_privilege = estate_jews_suppress
+		}
+		OR = {
+			NOT = { has_country_flag = recent_jewish_event }
+			had_country_flag = { flag = recent_jewish_event days = 360 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	immediate = { set_country_flag = recent_jewish_event }
+	
+	option = {
+		name = jewish_events.2.a
+		add_adm_power = 50
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = 5
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = jewish_events.2.b
+		add_prestige = 10
+		add_stability = 1
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Merchant Networks
+
+country_event = {
+	id = jewish_events.3
+	title = jewish_events.3.title
+	desc = jewish_events.3.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate = estate_jews
+		NOT = {
+			has_estate_privilege = estate_jews_suppress
+		}
+		OR = {
+			NOT = { has_country_flag = recent_jewish_event }
+			had_country_flag = { flag = recent_jewish_event days = 360 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	immediate = { set_country_flag = recent_jewish_event }
+	
+	option = {
+		name = jewish_events.3.a
+		add_years_of_income = 0.1
+		add_inflation = 1
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = 5
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = jewish_events.3.b
+		add_dip_power = 50
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = -10
+		}
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# Rumors and Accusations
+
+country_event = {
+	id = jewish_events.4
+	title = jewish_events.4.title
+	desc = jewish_events.4.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate = estate_jews
+		NOT = {
+			has_estate_privilege = estate_jews_suppress
+		}
+		OR = {
+			NOT = { has_country_flag = recent_jewish_event }
+			had_country_flag = { flag = recent_jewish_event days = 360 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	immediate = { set_country_flag = recent_jewish_event }
+	
+	option = {
+		name = jewish_events.4.a
+		add_prestige = -20
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = 10
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	
+	option = {
+		name = jewish_events.4.b
+		add_prestige = 20
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = -15
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+
+	option = {
+		name = jewish_events.4.c
+		add_years_of_income = 0.2
+		add_inflation = 1
+		add_prestige = 20
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = -25
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+# Flight of Capital
+
+country_event = {
+	id = jewish_events.5
+	title = jewish_events.5.title
+	desc = jewish_events.5.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate = estate_jews
+		NOT = {
+			has_estate_privilege = estate_jews_suppress
+		}
+		OR = {
+			NOT = { has_country_flag = recent_jewish_event }
+			had_country_flag = { flag = recent_jewish_event days = 360 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	immediate = { set_country_flag = recent_jewish_event }
+	
+	option = {
+		name = jewish_events.5.a
+		add_treasury = -100
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = 10
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = jewish_events.5.b
+		add_dip_power = -50
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = -5
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = jewish_events.5.c
+		add_mercantilism = -2
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+# Tax Collection Dispute
+
+country_event = {
+	id = jewish_events.6
+	title = jewish_events.6.title
+	desc = jewish_events.6.desc
+	picture = PLATIJEWISH
+	
+	fire_only_once = no
+	is_triggered_only = no
+	major = no
+	
+	trigger = {
+		has_estate = estate_jews
+		NOT = {
+			has_estate_privilege = estate_jews_suppress
+		}
+		OR = {
+			NOT = { has_country_flag = recent_jewish_event }
+			had_country_flag = { flag = recent_jewish_event days = 360 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	immediate = { set_country_flag = recent_jewish_event }
+	
+	option = {
+		name = jewish_events.6.a
+		add_adm_power = -50
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = -10
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	
+	option = {
+		name = jewish_events.6.b
+		add_years_of_income = 0.1
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = -10
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+
+	option = {
+		name = jewish_events.6.c
+		add_years_of_income = -0.05
+		add_estate_loyalty = {
+			estate = estate_jews
+			loyalty = 20
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}

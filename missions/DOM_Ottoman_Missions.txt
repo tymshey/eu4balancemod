@@ -4426,6 +4426,40 @@ tur_issue_the_kannuname_slot = {
 			factor = 250
 		}
 	}
+
+	tur_kannuname_i_sehira = {
+		icon = mission_trade_with_cathay
+		required_missions = { tur_issue_the_kannuname }
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { has_courthouse_building_trigger = yes }
+			has_owner_religion = no
+		}
+		trigger = {
+			has_estate_privilege = estate_burghers_grant_domestic_ahidname
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 80
+			}
+			estate_influence = {
+				estate = estate_burghers
+				influence = 60
+			}
+			trader = 5
+			mercantilism = 50
+		}
+		effect = {
+			custom_tooltip = estate_burghers_kannuname_i_sehirha_tt
+			set_country_flag = unlock_estate_burghers_kannuname_i_sehirha
+			remove_estate_privilege = estate_burghers_grant_domestic_ahidname
+			set_estate_privilege = estate_burghers_kannuname_i_sehirha
+		}
+
+		ai_weight = {
+			factor = 250
+		}
+	}
 }
 
 tur_persian_conquest = {

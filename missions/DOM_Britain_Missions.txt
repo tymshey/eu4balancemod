@@ -950,6 +950,8 @@ gbr_row_slot_2 = {
 			}
 		}
 		effect = {
+			custom_tooltip = estate_burghers_hudson_bays_company_tt
+			set_country_flag = unlock_estate_burghers_hudson_bays_company
 			add_country_modifier = {
 				name = "eng_rb_established_shipping"
 				duration = 9125

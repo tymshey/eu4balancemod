@@ -359,6 +359,45 @@ guiTypes = {
 		}
 		
 		guiButtonType = {
+			name = "t_ae_btn"
+			position = { x= 600 y = 245 }
+			quadTextureSprite ="GFX_t_ae_btn"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "vic_18"
+			scripted = yes
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "t_x1_btn"
+			position = { x= 650 y = 65 }
+			quadTextureSprite ="GFX_t_x1_btn"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "vic_18"
+			scripted = yes
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
+			name = "t_x10_btn"
+			position = { x= 650 y = 125 }
+			quadTextureSprite ="GFX_t_x10_btn"
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+			buttonText = ""
+			buttonFont = "vic_18"
+			scripted = yes
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = {
 			name = "t_mark_btn"
 			position = { x= 555 y = 225 }
 			quadTextureSprite ="GFX_gv_educate_heir"

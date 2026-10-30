@@ -69,7 +69,7 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
-			6035 6036 217 219 227 4787
+			6035 6036 217 219 227 4787 6091
 			
 			104 109 108 1744 1865
 			
@@ -178,6 +178,7 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
+			6006
 			508 509 511 515 525 527 530 545 550 554 557 1947 2036 
 			2037 2040 2043 2056 2058 2069 2070 2071 2080 2090 2092 2097
 			
@@ -250,7 +251,7 @@ categories =  {
 		supply_limit = 6
 		
 		terrain_override = {
-			208 209 4554 4556 4789 6057 6056
+			208 209 4554 4556 4789 6057 6056 6079 6002 6049 6045 6044 6043 6041 6048 6089 6090
 			206 1851 # Spain
 			374 375 376 4118 4119 4120 4121 #Ireland
 			129 4755 4757 4703 # Balkans
@@ -321,6 +322,7 @@ categories =  {
 		supply_limit = 4
 		
 		terrain_override = {
+			6080
 			210	226 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
@@ -401,10 +403,11 @@ categories =  {
 		nation_designer_cost_multiplier = 1
 		
 		terrain_override = {
+			6068 6088
 			2666 # North America
 			213 218 219 #Spain
 			526 #India
-			417 4341 #Iran
+			426 417 4341 #Iran
 			593 2376 2391 2394  #Sout East Asia
 			
 			136 4174  # Balkans	
@@ -537,14 +540,15 @@ categories =  {
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = {
+			6084
 			503 2078 2088 #India
 			
 			4204 4207 4208 4221 4223 #Greater China
 			
 			512 513 514 2064 2066 2086
 			867 2844
-			2490
-			350 355 1115 2244 2271 2272 2767 2773
+			2490 6075
+			350 1115 2244 2271 2272 2767 2773
 			1176
 			1231
 			715 2119 2120 710 711 712 2121 2123 2191 2192 706 707 708 698 701 709 720 2193 2747 
@@ -566,7 +570,7 @@ categories =  {
 		supply_limit = 4
 
 		terrain_override = {
-			6051
+			6051 355
 			792 793 796 805 806 2821 2822 2840 2841
 			2324
 			1212 1215 1230 1232 2315 2320 2321 2765 2786 2788 2789
@@ -595,6 +599,7 @@ categories =  {
 		supply_limit = 6 
 		
 		terrain_override = {
+			6069 6068 668
 			957 962 2554 2561 2578 #n am
 			
 			112
@@ -633,7 +638,7 @@ categories =  {
 		allowed_num_of_buildings = 1
 
 		terrain_override = {
-			4548 360 4319
+			4548 360 4319 6074 356
 			1749 224
 			221 1750 220 214 
 			1748 2754

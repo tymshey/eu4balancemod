@@ -4,6 +4,7 @@
 
  gv_alexandria:0 "City of Alexandria"
  gv_mosque_of_cordoba:0 "Mosque of Qurtubah"
+ topkapi_palace:0 "Topkapi Palace"
 
  ###############
  ### PERSIA
@@ -209,6 +210,8 @@
  tur_the_artisans_of_the_sultanate_desc:0 "The [Root.GetAdjective] sultanate has a long history of craftsmanship, with artisans producing exquisite goods that are highly sought after. By supporting and promoting these artisans, we can boost our economy and enhance our cultural influence."
  tur_highway_of_an_empire_title:0 "Highway of an Empire"
  tur_highway_of_an_empire_desc:0 "The land strip that separates the Red and Mediterranean seas has brought forth the idea of an engineering endeavor, suggested by our advisors. By connecting the two seas we would surely improve the flow of our navies across them."
+ tur_kannuname_i_sehira_title:0 "Kannuname-i Sehirha"
+ tur_kannuname_i_sehira_desc:0 "Our domestic Ahidnames have successfully nurtured home-grown joint-stock companies, but these syndicates still rely on ad-hoc royal favors. To truly match the structural financial power of Western empires, we must enshrine these commercial protections into the permanent fabric of imperial law. By promulgating the Kanunname-i Sehirha, we will establish a sweeping legal code for our urban centers—safeguarding corporate property rights, standardizing private investments, and permanently securing our burghers' global economic dominance."
 
  # Modifiers
 
@@ -222,6 +225,14 @@
 
  t_eyalet_of_egypt:0 "Eyalet of Egypt"
  t_eyalet_of_egypt_monuments_effect:0 "Egyptian Great Projects - Effect"
+
+ # Privileges
+
+ estate_burghers_grant_domestic_ahidname:0 "Grant Domestic Ahidname"
+ estate_burghers_grant_domestic_ahidname_desc:0 "By repurposing the traditional framework of foreign trade capitulations, the Sublime Porte issues grand corporate charters directly to domestic merchant syndicates. Granting these internal monopolies protects local capital from external powers, transforming the empire's major ports into powerful, state-backed joint-stock ventures that aggressively project Ottoman commerce abroad."
+ estate_burghers_kannuname_i_sehirha:0 "Kannuname-i Sehirha"
+ estate_burghers_kannuname_i_sehirha_desc:0 "By decreeing a revolutionary imperial code for the cities, the Sublime Porte establishes a secular legal framework to protect urban commercial property and corporate shares. Bypassing traditional agrarian tax-farming, this law system empowers domestic burghers to freely pool private capital into joint-stock syndicates, shifting the imperial economic engine toward a Western-style mercantile economy."
+ estate_burghers_kannuname_i_sehirha_tt:0 "Unlock the '§YKannuname-i Sehirha§!' estate privilege for the §YBurghers§!.\n"
 
  # Events
 

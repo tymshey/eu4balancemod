@@ -74,7 +74,13 @@ custom_button = {
 			limit = {
 				has_country_flag = ht_marked
 			}
-			add_adm_power = 100
+			if = {
+				limit = { has_country_flag = ht_x10_mode }
+				add_adm_power = 1000
+			}
+			else = {
+				add_adm_power = 100
+			}
 			# add_country_modifier = {
 			#	name = recent_ht
 			#	duration = 1
@@ -104,7 +110,13 @@ custom_button = {
 			limit = {
 				has_country_flag = ht_marked
 			}
-			add_dip_power = 100
+			if = {
+				limit = { has_country_flag = ht_x10_mode }
+				add_dip_power = 1000
+			}
+			else = {
+				add_dip_power = 100
+			}
 			# add_country_modifier = {
 			#	name = recent_ht
 			#	duration = 1
@@ -134,7 +146,13 @@ custom_button = {
 			limit = {
 				has_country_flag = ht_marked
 			}
-			add_mil_power = 100
+			if = {
+				limit = { has_country_flag = ht_x10_mode }
+				add_mil_power = 1000
+			}
+			else = {
+				add_mil_power = 100
+			}
 			# add_country_modifier = {
 			#	name = recent_ht
 			#	duration = 1
@@ -594,6 +612,38 @@ custom_button = {
     tooltip = t_reform_progress_btn_tt
 }
 
+custom_button = {
+    name = t_ae_btn
+	potential = {
+		host_access = yes
+	}
+	allow = {
+		NOT = { has_country_flag = ht_marked }
+		OR = {
+			NOT = { has_country_flag = recent_ht_flag }
+			had_country_flag = {
+				flag = recent_ht_flag
+				days = 1
+			}
+		}
+	}
+	effect = {
+		#set_country_flag = recent_ht_flag
+		every_country = {
+			limit = {
+				has_country_flag = ht_marked
+			}
+			every_known_country = {
+				add_aggressive_expansion = {
+					who = ROOT
+					value = -25
+				}
+			}
+		}
+	}
+    tooltip = t_ae_btn_tt
+}
+
 # mark
 
 custom_button = {
@@ -636,4 +686,34 @@ custom_button = {
 		clr_country_flag = ht_marked
 	}
     tooltip = t_unmark_btn_tt
+}
+
+custom_button = {
+    name = t_x1_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		NOT = { has_country_flag = ht_x1_mode }
+	}
+	effect = {
+		set_country_flag = ht_x1_mode
+		clr_country_flag = ht_x10_mode
+	}
+    tooltip = t_x1_btn
+}
+
+custom_button = {
+    name = t_x10_btn
+	potential = {
+		host_access = yes
+	}
+	trigger = {
+		NOT = { has_country_flag = ht_x10_mode }
+	}
+	effect = {
+		set_country_flag = ht_x10_mode
+		clr_country_flag = ht_x1_mode
+	}
+    tooltip = t_x10_btn
 }

@@ -359,7 +359,7 @@ orleans_area = { 6057  6015
 # Low Countries				 		   #
 ########################################
 
-wallonia_area = { #4
+wallonia_area = { 6091 6090  #4
 	91 93 94 1866
 }
 
@@ -367,11 +367,11 @@ holland_area = { #4
 	96 97 98 4383
 }
 
-flanders_area = { #3
+flanders_area = { 6091 #3
 	90 1865 4769
 }
 
-frisia_area = { #5
+frisia_area = { 6089  #5
 	99 100 1931 4381 4382
 }
 
@@ -483,7 +483,7 @@ liguria_area = { #3
 	101 102 2992
 }
 
-corsica_sardinia_area = { 6006  #4
+corsica_sardinia_area = {  #4
 	127 1247 2986 4735
 }
 
@@ -504,7 +504,7 @@ lazio_area = { 6005  6004  #4 Lazio-Umbria
 }
 
 calabria_area = { #3 (+Lucania)
-	123 1934 2984
+	123 1934 2984 6006
 }
 
 apulia_area = { 6010  #4
@@ -564,7 +564,7 @@ yorkshire_area = { #4
 	245 4367 4368 4785
 }
 
-west_midlands_area = { 6059  #3
+west_midlands_area = { 6088  6059  #3
 	239 240 4372
 }
 
@@ -708,7 +708,7 @@ pripyat_area = { #4
 	 278 1941 4537 4545
 }
 
-podlasie_area = { 6049 
+podlasie_area = { 
 	269 277 1937
 }
 
@@ -728,8 +728,12 @@ kuyavia_area = {
 	4523 1859 4524 4528
 }
 
-samogitia_area = { 6045  6044  6043  #4
-	270 271 1936 4534 
+samogitia_area = { 6045 6044 6043  #4
+	271 4534 
+}
+
+kaunas_area = {
+	1936 6049 270
 }
 
 lithuania_area = { 6048  #5
@@ -1060,7 +1064,7 @@ morea_area = { 6066  #4 Central Greece & Crete
 	145 146 163 1773 4701
 }
 
-northern_greece_area = { #3 #Northern Greece
+northern_greece_area = { 6080  #3 #Northern Greece
 	142 144 147 4699 4698
 }
 
@@ -1068,7 +1072,7 @@ thrace_area = { 6064  #5
 	149 151 1764 4779 4705
 }
 
-bulgaria_area = { #5
+bulgaria_area = { 6079  #5
 	150 1765 2746 2750 4703
 }
 
@@ -1092,7 +1096,7 @@ southern_transylvania_area = { #3
 	156 1951 4128
 }
 
-slovakia_area = { #5
+slovakia_area = {  6081  #5
 	154 162 1318 1772 4236
 }
 
@@ -1211,7 +1215,7 @@ karaman_area = { #4
 	323 324 2301 4307
 }
 
-cukurova_area = { #3
+cukurova_area = { 6078  #3
 	color = { 50 177 200 }
 	321 327 2302
 }
@@ -1377,15 +1381,15 @@ said_area = { #5 #Upper Egypt
 	360 1231 2319 4319 4320
 }
 
-tripolitania_area = { #4
+tripolitania_area = { 6071  #4
 	354 2451 2452 355
 }
 
-cyrenaica_area = { #5
+cyrenaica_area = { 6076  6075  6074  6073  #5
 	356 357 2325 2326 
 }
 
-fezzan_area = { #4
+fezzan_area = { 6077  6072  #4
 	2448 2449 2474 4567
 }
 
@@ -2730,7 +2734,7 @@ jilin_area = { #4 (South Jilin Area)
 	730 2110 2188 4201 2111
 }
  
-liaoning_area = { #5
+liaoning_area = { 6068  #5
 	704 726 2112 2113 4652
 }
 
@@ -2775,9 +2779,13 @@ uliastai_area = {#3
 	719 2189 2190 4668 4678
 }
 
-jetysuu_area = { #5
+jetysuu_area = { 6084 6083  #5
 	color = { 56 37 169 }
-	459 461 2125 2126 2368
+	459 461 2368
+}
+
+kyrgyzstan_area = {
+	2125 6087 6085 2126
 }
 
 kashgaria_area = { #5 #Just Kashgar & Yarkand
@@ -2833,7 +2841,7 @@ south_hebei_area = { #4
 	695 696 2137 4195
 }
 
-shandong_area = { #5
+shandong_area = { 6069  #5
 	690 691 2138 2139 2140
 }
 
@@ -2869,7 +2877,7 @@ taiwan_area = { #3
 	738 2154 2155
 }
 
-guangdong_area = { #5
+guangdong_area = { 6070  #5
 	667 668 2156 2157 2158
 }
 

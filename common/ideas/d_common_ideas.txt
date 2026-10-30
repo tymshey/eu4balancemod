@@ -62,7 +62,7 @@ AUE_ideas = {
 		max_absolutism = 15
 	}
 	military_border = {
-		global_garrison_growth = 0.15
+		land_morale = 0.1
 		fort_maintenance_modifier = -0.10
 	}
 	fugger_banks = {

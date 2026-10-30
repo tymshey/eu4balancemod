@@ -186,6 +186,9 @@
  t_crownland_btn_tt:0 "HT: Add Crownland"
  t_legitimacy_btn_tt:0 "HT: Add Legitimacy Equivalent"
  t_reform_progress_btn_tt:0 "HT: Add Reform Progress"
+ t_ae_btn_tt:0 "HT: Decrease AE"
+ t_x1_btn_tt:0 "HT x1 mode"
+ t_x10_btn_tt:0 "HT x10 mode"
 
  # Tooltips
 

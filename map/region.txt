@@ -221,6 +221,7 @@ baltic_region = {
 		west_prussia_area
 		east_prussia_area
 		samogitia_area
+		kaunas_area
 	}
 }
 
@@ -595,6 +596,7 @@ central_asia_region = {
 		shanshan_area
 		kyzylkum_area
 		termez_area
+		kyrgyzstan_area
 	}
 }
 
