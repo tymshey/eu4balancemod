@@ -2025,7 +2025,7 @@ jafari_scholar_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	shock_damage = 0.15
+	shock_damage = 0.075
 }
 
 zaidi_scholar_modifier = {

@@ -18,22 +18,11 @@ perfectionism_mechanic = {
 					remove_country_modifier = expansion_focus_modifier
 					remove_country_modifier = Inward_perfection_rework
 				}
-				if = {
-					limit = {NOT = {is_emperor_of_china = yes}}	
-					add_country_modifier = {
-						name = inward_focus_modifier
-						duration = -1
-						desc = until_different_focus_tt
-					}	
-				}
-				if = {
-					limit = {is_emperor_of_china = yes}	
 					add_country_modifier = {
 						name = Inward_perfection_rework
 						duration = -1
 						desc = until_different_focus_tt
-					}	
-				}
+					}		
 			}
 			cooldown_years = 20
 			cooldown_token = perfectionism_mechanic

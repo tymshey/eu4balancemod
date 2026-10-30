@@ -313,7 +313,6 @@ gyeongbok_palace = {
 		}
 		country_modifiers = {
 			advisor_cost = -0.05
-			global_autonomy = -0.025
 		}
 		on_upgraded = {
 		}
@@ -333,8 +332,6 @@ gyeongbok_palace = {
 			local_development_cost = -0.05
 		}
 		country_modifiers = {
-			advisor_cost = -0.1
-			monarch_admin_power = 1
 			global_autonomy = -0.05
 		}
 		on_upgraded = {
@@ -355,8 +352,6 @@ gyeongbok_palace = {
 			local_development_cost = -0.05
 		}
 		country_modifiers = {
-			advisor_cost = -0.1
-			monarch_admin_power = 2
 			global_autonomy = -0.1	
 		}
 		on_upgraded = {

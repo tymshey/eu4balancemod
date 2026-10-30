@@ -403,29 +403,6 @@ kor_military_missions_2 = {
 			}
 		}
 	}
-	kor_expand_hwacha = {
-		icon = mission_asian_cannon
-		position = 3
-		required_missions = { kor_harness_seokleon }
-		trigger = {
-			num_of_artillery = 3
-			artillery_fraction = 0.3
-			num_of_owned_provinces_with = {
-				value = 2
-				OR = {
-					has_building = regimental_camp
-					has_building = conscription_center
-				}
-			}
-		}
-		effect = {
-			add_mil_power = 50
-			add_country_modifier = {
-				name = hwacha_firepower_bonus
-				duration = 7300
-			}
-		}
-	}
 }
 
 korea_conquer_china_group = {
@@ -1364,10 +1341,7 @@ korea_economic_social_political_path_0 = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "kor_growing_economy"
-				duration = 9125 #25 years
-			}
+			add_adm_power = 50
 		}
 	}
 }
