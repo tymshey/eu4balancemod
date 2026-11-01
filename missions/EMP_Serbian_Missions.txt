@@ -7,7 +7,10 @@ emp_ser_economy_internal = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = SER
+		OR = {
+			tag = SER
+			tag = ILR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -134,8 +137,22 @@ emp_ser_economy_internal = {
 				num_of_times_improved = 4
 				has_building = workshop
 				NOT = { local_autonomy_above_min = 5 }
-			} 
-		albania_area = {
+			}
+		4750 = {
+				type = all 
+				NOT = { unrest = 1 } 
+				num_of_times_improved = 4
+				has_building = workshop
+				NOT = { local_autonomy_above_min = 5 }
+			}
+		4174 = {
+				type = all 
+				NOT = { unrest = 1 } 
+				num_of_times_improved = 4
+				has_building = workshop
+				NOT = { local_autonomy_above_min = 5 }
+			}
+		143 = {
 				type = all 
 				NOT = { unrest = 1 } 
 				num_of_times_improved = 4
@@ -162,7 +179,10 @@ emp_ser_danube = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = SER
+		OR = {
+			tag = SER
+			tag = ILR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -332,27 +352,6 @@ emp_ser_danube = {
 		}
 	}
 	
-	emp_ser_danubian_power = {
-		icon = danubian_power
-		required_missions = { emp_ser_fortress_of_belgrade }
-		position = 4
-		
-		provinces_to_highlight = {
-			province_id = 137
-		}
-		trigger = {
-			137 = {		# Ragusa
-				is_strongest_trade_power = ROOT
-			}
-		}
-		effect = {
-			add_mercantilism = 2
-			add_country_modifier = {
-				name = "ser_expanding_trade_networks"
-				duration = 5475
-			}
-		}
-	}
 	Port_of_ragusa = {
 		icon = encroach_on_the_germans
 		required_missions = { Rising_Power }
@@ -403,92 +402,18 @@ emp_ser_west_balkan_branch = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = SER
+		OR = {
+			tag = SER
+			tag = ILR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
-	emp_ser_pacify_albanian_lands = {
-		icon = pacify_the_albanian_lands
-		required_missions = { emp_ser_moravian_arms }
-		position = 2
-		
-		provinces_to_highlight = {
-			area = albania_area
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 3
-				area = albania_area
-			}
-		}
-		effect = {
-			east_adriatic_coast_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			4754 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-	}
-	
-	emp_ser_expand_adriatic_presence = {
-		icon = capture_adriatic_ports
-		required_missions = { emp_ser_pacify_albanian_lands }
-		position = 3
-		
-		provinces_to_highlight = {
-			OR = {
-				area = east_adriatic_coast_area
-				province_id = 4754
-			}
-			NOT = { owned_by = ROOT }
-		}
-		trigger = {
-			east_adriatic_coast_area = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
-			}
-			4754 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			if = {
-				limit = { BOS = { NOT = { religion = ROOT } } }
-				bosnia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			else = {
-				add_casus_belli = {
-					type = cb_vassalize_mission
-					months = 300
-					target = BOS
-				}
-			}
-		}
-	}
-	
 	emp_ser_suppress_bosnian_heresy = {
 		icon = fight_bosnian_heresies
-		required_missions = { emp_ser_expand_adriatic_presence }
-		position = 4
+		required_missions = { emp_ser_moravian_arms }
+		position = 2
 		
 		provinces_to_highlight = {
 			area = bosnia_area
@@ -511,12 +436,40 @@ emp_ser_west_balkan_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			slavonia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+		}
+	}
+	emp_ser_danubian_power = {
+		icon = danubian_power
+		required_missions = { emp_ser_suppress_bosnian_heresy }
+		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 137
+		}
+		trigger = {
+			137 = {		# Ragusa
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = "ser_expanding_trade_networks"
+				duration = 5475
 			}
 		}
 	}
@@ -602,7 +555,10 @@ emp_ser_east_branch = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = SER
+		OR = {
+			tag = SER
+			tag = ILR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -616,13 +572,6 @@ emp_ser_east_branch = {
 			army_size_percentage = 1
 		}
 		effect = {
-			macedonia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			albania_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -644,10 +593,34 @@ emp_ser_east_branch = {
 			}
 		}
 	}
-	
+	emp_ser_pacify_albanian_lands = {
+		icon = pacify_the_albanian_lands
+		required_missions = { emp_ser_moravian_arms }
+		position = 2
+		
+		provinces_to_highlight = {
+			area = albania_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				area = albania_area
+			}
+		}
+		effect = {
+		macedonia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	emp_ser_retake_macedonia = {
 		icon = retake_thessaly
-		required_missions = { emp_ser_moravian_arms }
+		required_missions = { emp_ser_pacify_albanian_lands }
 		position = 3
 		
 		provinces_to_highlight = {
@@ -770,7 +743,10 @@ emp_ser_religious = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = SER
+		OR = {
+			tag = SER
+			tag = ILR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

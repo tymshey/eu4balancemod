@@ -3861,7 +3861,8 @@ ILR_ideas = {
 	}
 	
 	bonus = {
-		global_tax_modifier = 0.1
+		has_streltsy = yes
+		allowed_streltsy_fraction = 0.3
 	}
 	
 	trigger = {
@@ -3870,26 +3871,27 @@ ILR_ideas = {
 	free = yes
 	
 	code_of_laws_1 = {
-		technology_cost = -0.1
+		technology_cost = -0.05
+		idea_cost = -0.1
 	}
 	bastion_of_orthodoxy_1 = {
-		idea_cost = -0.1
+		global_tax_modifier = 0.1
 	}
 	home_of_hussars_1 = {
 		infantry_power = 0.1
+		land_morale = 0.15
 	}	
 	alemannic_guard_1 = {
-		diplomats = 1
-		diplomatic_reputation = 1
+		culture_conversion_cost = -0.2
 	}
 	gold_mines_1 = {
-		build_cost = -0.1
+		development_cost = -0.1
 	}
 	mercenary_armies_1 = {
-		land_morale = 0.1
+		stability_cost_modifier = -0.2
 	}	
 	balkan_hajduks_1 = {
-		development_cost = -0.1
+		discipline = 0.05
 	}
 }
 
