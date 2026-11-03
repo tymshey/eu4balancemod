@@ -6,6 +6,7 @@ add_harmonized_religion = mahayana
 add_harmonized_religion = shinto
 technology_group = chinese
 capital = 1845
+historical_rival = ASK
 1444.11.11= {
 	monarch = {
 		name = "Kim"

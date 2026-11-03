@@ -1510,7 +1510,7 @@ kok_persia_conquest_mission_slot_5 = {
 					region = west_india_region
 					region = hindusthan_region
 				}
-				value = 100
+				value = 80
 			}
 		}
 		effect = {

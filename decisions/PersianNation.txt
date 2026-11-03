@@ -152,6 +152,8 @@ country_decisions = {
 					OR = {
 						tag = AKK
 						was_tag = AKK
+						tag = QAR
+						was_tag = QAR
 					}
 				}
 				add_country_modifier = {
