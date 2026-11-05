@@ -868,7 +868,7 @@ french_missions_1_Continuation_a = {
 					}
 					NOT = { liberty_desire = 50 } 
 				}
-				amount = 4
+				amount = 3
 			}
 		}
 		effect = {

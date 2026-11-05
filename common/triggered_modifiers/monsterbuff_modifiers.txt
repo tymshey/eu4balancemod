@@ -89,6 +89,26 @@ War_chest = {
 	reinforce_speed = 0.1
 }
 
+corecreationcost = {
+    potential = {
+        capital_scope = {
+            continent = europe
+        }
+    }
+
+    trigger = {
+        NOT = {
+            OR = {
+                tag = RUS
+                tag = SPA
+                tag = POR
+                tag = GBR
+            }
+        }
+    }
+
+    core_creation = -0.15
+}
 m_colonists = {
 	potential = {
 		ai = no
@@ -101,7 +121,6 @@ m_colonists = {
 	
 	colonists = 1
 	may_explore = yes
-	global_colonial_growth = -10
 }
 
 

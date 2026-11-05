@@ -6243,7 +6243,11 @@ change_subject_color = {
 	}
 	on_accept = {
 		FROM = {change_country_color = { country = ROOT }}
-	}
+		if = {
+			limit = {tag = FRA}
+			FROM = {change_country_color = { color = {70  70  255 }}}
+			}
+		}
 	ai_will_do = {
 		always = no
 	}
