@@ -1523,6 +1523,7 @@ kok_persia_conquest_mission_slot_5 = {
 			}
 			custom_tooltip = per_master_of_india_tt
 			set_country_flag = per_master_of_india_flag
+			swap_non_generic_missions = yes
 		}
 	}
 }

@@ -696,7 +696,6 @@ feo_3 = {
 		position = 4
 		required_missions = {
 			feo_gothia
-			feo_beyond_crimea
 		}
 		provinces_to_highlight = {  
 			region = ruthenia_region

@@ -168,9 +168,9 @@ country_decisions = {
 			237 = { country_or_non_sovereign_subject_holds = ROOT }
 			245 = { country_or_non_sovereign_subject_holds = ROOT }
 			1860 = { country_or_non_sovereign_subject_holds = ROOT }
-			adm_tech = 18 
-			legitimacy_equivalent = 90 
-			stability = 3 
+			adm_tech = 15
+			legitimacy_equivalent = 90
+			stability = 3
 		}
 		effect = { 
 			custom_tooltip = ned_unite_two_crowns_tt 

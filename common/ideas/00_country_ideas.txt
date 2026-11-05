@@ -17239,8 +17239,7 @@ MLC_ideas = {
 		global_ship_trade_power = 0.2
 	}
 	mlc_new_hegemony = {
-		colonists = 1
-		global_colonial_growth = 20
+		global_colonial_growth = 25
 	}
 	mlc_islamic_sultanate = {
 		tolerance_own = 1

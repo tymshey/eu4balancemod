@@ -2631,7 +2631,7 @@ qollar_aghasi_regiments_reform = {
 	modifiers = {
 		reinforce_cost_modifier = -0.25
 		leader_land_shock = 2
-		mil_tech_cost_modifier = -0.1
+		# mil_tech_cost_modifier = -0.1
 		global_autonomy = -0.03
 	}
 
