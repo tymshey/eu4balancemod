@@ -215,11 +215,7 @@ country_event = {	# Local Leader Rises
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		any_owned_province = {
 			OR = {
 				religion = hinduism
@@ -257,11 +253,7 @@ country_event = {	# Weapon Cartridges
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		any_owned_province = {
 			OR = {
 				religion = hinduism
@@ -299,21 +291,15 @@ country_event = {	# EIC in Debt
 	picture = ECONOMY_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		num_of_loans = 3
 		OR = {
 			exists = ENG
 			exists = GBR
-			exists = NED
 		}
 		OR = {
 			is_subject_of = ENG
 			is_subject_of = GBR
-			is_subject_of = NED
 		}
 		NOT = { has_country_modifier = eic_less_interest }
 	}
@@ -441,11 +427,7 @@ country_event = {	# Corrupt Practices in the Administration
 	picture = ECONOMY_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		NOT = { adm = 5 }
 		NOT = { republican_tradition = 90 }
 	}
@@ -480,11 +462,7 @@ country_event = {	# The Black Hole of Calcutta
 	picture = FAMINE_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		owns = 4477
 		4477 = {
 			NOT = { controlled_by = ROOT }
@@ -542,11 +520,7 @@ country_event = {	# Fort William
 	picture = FORT_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		owns = 4477
 		4477 = { NOT = { fort_level = 8 } }
 		is_year = 1730
@@ -582,11 +556,7 @@ country_event = {	# The Merchant State
 	picture = PEASANTS_BARTERING_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		total_development = 200
 	}
 
@@ -620,11 +590,7 @@ country_event = {	# Bankruptcy
 	picture = BANKRUPTCY_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		is_bankrupt = yes
 	}
 
@@ -697,11 +663,7 @@ country_event = {	# The Bengal Famine of $YEAR$
 	picture = FAMINE_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		has_country_modifier = eic_the_diwani
 		num_of_owned_provinces_with = {
 			region = bengal_region
@@ -736,39 +698,15 @@ country_event = {	# The Regulating Act of $YEAR$
 	picture = muslimgfx_BANKRUPTCY_eventPicture
 
 	trigger = {
-		OR = {
-			EIC = { is_subject_of = ROOT }
-			FIC = { is_subject_of = ROOT }
-			VOC = { is_subject_of = ROOT }
-		}
-		OR = {
-			EIC = {
-				OR = {
-					liberty_desire = 30
-					corruption = 2
-					is_in_deficit = yes
-					mercantilism = 60
-				}
-				NOT = { has_country_modifier = eic_regulating_act }
+		EIC = { is_subject_of = ROOT }
+		EIC = {
+			OR = {
+				liberty_desire = 30
+				corruption = 2
+				is_in_deficit = yes
+				mercantilism = 60
 			}
-			FIC = {
-				OR = {
-					liberty_desire = 30
-					corruption = 2
-					is_in_deficit = yes
-					mercantilism = 60
-				}
-				NOT = { has_country_modifier = eic_regulating_act }
-			}
-			VOC = {
-				OR = {
-					liberty_desire = 30
-					corruption = 2
-					is_in_deficit = yes
-					mercantilism = 60
-				}
-				NOT = { has_country_modifier = eic_regulating_act }
-			}
+			NOT = { has_country_modifier = eic_regulating_act }
 		}
 	}
 
@@ -817,11 +755,7 @@ country_event = {	# Rise in Value of Stocks
 	picture = ECONOMY_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		NOT = { corruption = 1 }
 		is_in_deficit = no
 	}
@@ -890,11 +824,7 @@ country_event = {	# Sepoys Demand Extra Pay
 	picture = LAND_MILITARY_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		manpower = 2.5	
 		years_of_income = 0.1
 	}
@@ -922,11 +852,7 @@ country_event = {	# Maratha Raids
 	picture = FAMINE_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		is_neighbor_of = MAR
 		NOT = { truce_with = MAR }	
 		MAR = {
@@ -959,11 +885,7 @@ country_event = {	# Shake Up of Company Admin
 	picture = FAMINE_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		NOT = { adm = 3 }
 		stability = -2
 	}
@@ -985,11 +907,7 @@ country_event = {	# Growing Company Port
 	picture = MERCHANTS_TALKING_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		any_owned_province = {
 			has_port = yes
 		}
@@ -1030,11 +948,7 @@ country_event = {	# Debate over Mercantilism
 	picture = MERCHANTS_TALKING_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		mercantilism = 10
 		NOT = { mercantilism = 99 }
 	}
@@ -1068,11 +982,7 @@ country_event = {	# Judicial Bias in [judge_province.GetName]
 	picture = USA_CONSTITUTION_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		any_owned_province = {
 			religion = hinduism
 		}
@@ -1146,11 +1056,7 @@ country_event = {	# A Factory in [factory_province.GetName]
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		any_owned_province = {
 			NOT = { has_building = workshop }
 			NOT = { has_building = counting_house }
@@ -1328,8 +1234,8 @@ country_event = {	# EIC creation event
 			change_unit_type = western
 		}
 		create_subject = {
-   			subject_type = autonomous_trade_company
-   			subject = EIC
+    			subject_type = autonomous_trade_company
+    			subject = EIC
 		}
 		custom_tooltip = eic_benefits_tooltip
 		switch_tag = EIC
@@ -1406,46 +1312,10 @@ country_event = {		# Strangers in a Strange Land
 		add_manpower = 5
 		add_adm_power = 50
 		add_government_reform = new_eic_reform
-		if = {
-			limit = {
-				is_subject_of_type_with_overlord = {
-					who = NED
-					type = commercial_enterprise
-				}
-			}
-			overlord = {
-				create_subject = {
-					subject_type = autonomous_trade_company
-					subject = VOC
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				is_subject_of_type_with_overlord = {
-					who = GBR
-					type = commercial_enterprise
-				}
-			}
-			overlord = {
-				create_subject = {
-					subject_type = autonomous_trade_company
-					subject = EIC
-				}
-			}
-		}
-		else = {
-			limit = {
-				is_subject_of_type_with_overlord = {
-					who = FRA
-					type = commercial_enterprise
-				}
-			}
-			overlord = {
-				create_subject = {
-					subject_type = autonomous_trade_company
-					subject = FIC
-				}
+		overlord = {
+			create_subject = {
+    				subject_type = autonomous_trade_company
+    				subject = EIC
 			}
 		}
 		custom_tooltip = eic_grants_access_to_princely_states_tt
@@ -1525,11 +1395,7 @@ country_event = {		# Lobbying Parliament
 	picture = CORRUPTION_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		NOT = { corruption = 10 }
 		has_reform = new_eic_reform
 	}
@@ -1582,11 +1448,7 @@ country_event = {		# Nabob Seeks Seat in Parliament
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
-		OR = {
-			EIC = { is_subject_of = ROOT }
-			FIC = { is_subject_of = ROOT }
-			VOC = { is_subject_of = ROOT }
-		}
+		EIC = { is_subject_of = ROOT }
 		has_parliament = yes
 	}
 
@@ -1625,11 +1487,7 @@ country_event = {		# Vellore Mutiny
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		2027 = { country_or_non_sovereign_subject_holds = ROOT }
 		# Arcot, approximately where Vellore is
 		check_variable = {
@@ -1671,11 +1529,7 @@ country_event = {		# Santal rebellion
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		jharkhand_area = {	# Santals are natives to Jharkhand
 			country_or_non_sovereign_subject_holds = ROOT
 		}
@@ -1716,11 +1570,7 @@ country_event = {		# Favourable Company Policy
 	picture = indiangfx_GOOD_WITH_MONARCH_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		prestige = 1
 		stability = 1
 	}
@@ -1742,11 +1592,7 @@ country_event = {		# You can always get what you want...
 	picture = indiangfx_CORRUPTION_eventPicture
 	
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		has_reform = new_eic_reform
 		NOT = { corruption = 5 }
 		is_in_deficit = no

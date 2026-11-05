@@ -1,37 +1,19 @@
 country_decisions = {	
 	dissolve_eic_decision = {
 		potential = {
-			OR = {
-				EIC = { is_subject_of = ROOT }
-				FIC = { is_subject_of = ROOT }
-				VOC = { is_subject_of = ROOT }
-			}
+			EIC = { is_subject_of = ROOT }
 		}
 		provinces_to_highlight = {
 			owned_by = EIC
-			owned_by = FIC
-			owned_by = VOC
 		}
 		major = yes
 		allow = {
-			OR = {
-				EIC = { is_subject_of = ROOT }
-				FIC = { is_subject_of = ROOT }
-				VOC = { is_subject_of = ROOT }
-			}
+			EIC = { is_subject_of = ROOT }
 			stability = 2
 			is_in_deficit = no
+			EIC = { NOT = { liberty_desire = 50 } }
 			OR = {
-				EIC = { NOT = { liberty_desire = 50 } }
-				FIC = { NOT = { liberty_desire = 50 } }
-				VOC = { NOT = { liberty_desire = 50 } }
-			}
-			OR = {
-				OR = {
-					FIC = { has_country_flag = started_indian_rebellion_flag }
-					VOC = { has_country_flag = started_indian_rebellion_flag }
-					EIC = { has_country_flag = started_indian_rebellion_flag }
-				}
+				EIC = { has_country_flag = started_indian_rebellion_flag }
 				absolutism = 80
 				NOT = { mercantilism = 2 }
 			}
@@ -44,12 +26,6 @@ country_decisions = {
 				loyalty = -40
 			}
 			EIC = {
-				ROOT = { inherit = PREV }
-			}
-			FIC = {
-				ROOT = { inherit = PREV }
-			}
-			VOC = {
 				ROOT = { inherit = PREV }
 			}
 		}
@@ -96,10 +72,6 @@ country_decisions = {
 				tag = GBR
 				primary_culture = english
 				tag = EIC
-				tag = VOC
-				tag = NED
-				tag = FIC
-				tag = FRE
 			}
 			india_superregion = {
 				owned_by = ROOT
@@ -208,11 +180,7 @@ country_decisions = {
 	}
 	institute_indian_imperial_police = {
 		potential = {
-			OR = {
-				tag = EIC
-				tag = VOC
-				tag = FIC
-			}
+			tag = EIC
 			NOT = { has_country_modifier = eic_indian_imperial_police }
 		}
 		allow = {

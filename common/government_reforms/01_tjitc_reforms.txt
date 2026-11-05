@@ -3,11 +3,7 @@ new_eic_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			OR = {
-				tag = EIC
-				tag = VOC
-				tag = FIC
-			}
+			tag = EIC
 			has_reform = new_eic_reform
 		}
 	}
@@ -15,11 +11,7 @@ new_eic_reform = {
 	duration = 4
 	trigger = {
 		OR = {
-			OR = {
-				tag = EIC
-				tag = VOC
-				tag = FIC
-			}
+			tag = EIC
 			has_reform = new_eic_reform
 		}
 	}
@@ -45,11 +37,7 @@ cornwallis_code_reform = {
 	icon = "cornwallis_reform"
 	allow_normal_conversion = yes
 	potential = { 
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 	}
 	modifiers = {
 		liberty_desire = -10
@@ -61,11 +49,7 @@ power_of_the_board_reform = {
 	icon = "eic_board_reform"
 	allow_normal_conversion = yes
 	potential = { 
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 	}
 	modifiers = {
 		max_absolutism = 10
@@ -76,11 +60,7 @@ indian_board_reform = {
 	icon = "eic_indian_board_reform"
 	allow_normal_conversion = yes
 	potential = { 
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 	}
 	modifiers = {
 		global_unrest = -1
@@ -92,11 +72,7 @@ sepoy_troops_reform = {
 	icon = "eic_sepoys_reform"
 	allow_normal_conversion = yes
 	potential = { 
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 	}
 	modifiers = {
 		manpower_in_accepted_culture_provinces = 0.33

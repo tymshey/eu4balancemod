@@ -38,11 +38,7 @@ princely_state_po = {
 	is_visible = { # Defaults to equivalent of "always = yes"
 		FROM = { NOT = { OR = { technology_group = western technology_group = eastern } } }
 		OR = {
-			OR = {
-				tag = EIC
-				tag = FIC
-				tag = VOC
-			}
+			tag = EIC
 			has_country_flag = is_allowed_princely_states
 		}
 	}

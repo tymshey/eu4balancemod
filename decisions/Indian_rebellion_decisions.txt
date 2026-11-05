@@ -3,11 +3,7 @@ country_decisions = {
 		color = { 200 0 0 }
 		potential = {
 			has_country_flag = started_indian_rebellion_flag
-			OR = {
-				tag = EIC
-				tag = FIC
-				tag = VOC
-			}
+			tag = EIC
 			NOT = { has_country_modifier = disarming_sepoys }
 			NOT = { has_country_flag = had_indian_rebellion }
 		}
@@ -31,11 +27,7 @@ country_decisions = {
 		color = { 200 0 0 }
 		potential = {
 			has_country_flag = started_indian_rebellion_flag
-			OR = {
-				tag = EIC
-				tag = FIC
-				tag = VOC
-			}
+			tag = EIC
 			has_country_modifier = disarming_sepoys
 		}
 		major = yes

@@ -5,10 +5,6 @@ autonomous_trade_company_overlord = {
 autonomous_trade_company_subject = {
 	global_tax_modifier = -0.1
 	trade_efficiency = 0.05
-	global_ship_trade_power = 0.2
-	global_trade_goods_size_modifier = 0.5
-	naval_tradition_from_trade = 0.1
-	ship_power_propagation = 0.1
 }
 princely_state_overlord = {
 	tolerance_heathen = 0.1

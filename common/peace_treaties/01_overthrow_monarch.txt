@@ -50,13 +50,7 @@ overthrow_po = {
 			kill_ruler = yes
 		}
 		if = {
-			limit = { 
-				OR = {
-					tag = EIC
-					tag = FOC
-					tag = VOC
-				}
-			}
+			limit = { tag = EIC }
 			FROM = { set_ruler_flag = eic_overthrew_our_ruler }
 		}
 	}

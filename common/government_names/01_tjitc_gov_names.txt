@@ -18,11 +18,7 @@ trade_company_reform = {
 	}
 
 	trigger = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		government = republic
 	}
 }

@@ -304,11 +304,7 @@ make_princely_state_action = {
 		}
 		ROOT = {
 			OR = {
-				OR = {
-					tag = EIC
-					tag = FIC
-					tag = VOC
-				}
+				tag = EIC
 				has_country_flag = is_allowed_princely_states
 			}
 		}

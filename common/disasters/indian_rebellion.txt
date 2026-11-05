@@ -1,10 +1,6 @@
 indian_rebellion_disaster = {
 	potential = {
-		OR = {
-			tag = EIC
-			tag = VOC
-			tag = FIC
-		}
+		tag = EIC
 		NOT = { has_country_flag = had_indian_rebellion }
 	}
 	can_start = {
