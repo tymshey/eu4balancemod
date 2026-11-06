@@ -3861,8 +3861,7 @@ ILR_ideas = {
 	}
 	
 	bonus = {
-		has_streltsy = yes
-		allowed_streltsy_fraction = 0.3
+		global_unrest = -2
 	}
 	
 	trigger = {
@@ -3878,7 +3877,6 @@ ILR_ideas = {
 		global_tax_modifier = 0.1
 	}
 	home_of_hussars_1 = {
-		infantry_power = 0.1
 		land_morale = 0.15
 	}	
 	alemannic_guard_1 = {
