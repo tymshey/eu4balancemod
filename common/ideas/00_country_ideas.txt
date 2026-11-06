@@ -3861,7 +3861,7 @@ ILR_ideas = {
 	}
 	
 	bonus = {
-		global_unrest = -2
+		infantry_power = 0.10
 	}
 	
 	trigger = {
@@ -3877,7 +3877,7 @@ ILR_ideas = {
 		global_tax_modifier = 0.1
 	}
 	home_of_hussars_1 = {
-		land_morale = 0.15
+		land_morale = 0.1
 	}	
 	alemannic_guard_1 = {
 		culture_conversion_cost = -0.2
