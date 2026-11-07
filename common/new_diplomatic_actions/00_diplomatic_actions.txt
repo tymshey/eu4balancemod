@@ -6228,8 +6228,6 @@ release_nahuatl_tributary = {
 	}
 }
 
-
-
 change_subject_color = {
 	category = influence
 	require_acceptance = no
@@ -6242,12 +6240,52 @@ change_subject_color = {
 		always = yes
 	}
 	on_accept = {
-		FROM = {change_country_color = { country = ROOT }}
+		FROM = { change_country_color = { country = ROOT } }
 		if = {
-			limit = {tag = FRA}
-			FROM = {change_country_color = { color = {70  70  255 }}}
-			}
+			limit = { tag = FRA }
+			FROM = { change_country_color = { color = { 66 89 212 } } }
 		}
+		else_if = {
+			limit = { tag = FRE }
+			FROM = { change_country_color = { color = { 58 78 194 } } }
+		}
+		else_if = {
+			limit = { tag = GBR }
+			FROM = { change_country_color = { color = { 194 66 66 } } }
+		}
+		else_if = {
+			limit = { tag = AVE }
+			FROM = { change_country_color = { color = { 148 76 168 } } }
+		}
+		else_if = {
+			limit = { tag = ERS }
+			FROM = { change_country_color = { color = { 152 103 184 } } }
+		}
+		else_if = {
+			limit = { tag = PER }
+			FROM = { change_country_color = { color = { 126 189 87 } } }
+		}
+		else_if = {
+			limit = { tag = TUR }
+			FROM = { change_country_color = { color = { 196 65 98 } } }
+		}
+		else_if = {
+			limit = { tag = PRU }
+			FROM = { change_country_color = { color = { 33 86 122 } } }
+		}
+		else_if = {
+			limit = { tag = SCA }
+			FROM = { change_country_color = { color = { 99 152 212 } } }
+		}
+		else_if = {
+			limit = { tag = RUS }
+			FROM = { change_country_color = { color = { 140 166 128 } } }
+		}
+		else_if = {
+			limit = { tag = MNG }
+			FROM = { change_country_color = { color = { 212 174 157 } } }
+		}
+	}
 	ai_will_do = {
 		always = no
 	}

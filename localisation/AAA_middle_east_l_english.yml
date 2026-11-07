@@ -30,6 +30,7 @@
  t_tofangchi_regiments_desc:0 "The Tofangchi are the [Root.GetAdjective] musketeers who are enlisted from all parts of the nation. Under the supervision of the [Root.GetNobilityOrFallbackName], these soldiers are trained in proficiency with the muskets, unlike other troops of the [Root.GovernmentName]."
  t_per_abbasid_successor:0 "Successor to the Abbasid Caliphate"
  imperial_enlightenment_mod:0 "Imperial Enlightenment"
+ MUG_famous_silks_mod:0 "Famous Silks"
 
  t_madinat_as_salam:0 "Madinat as-Salam"
  t_madinat_as_salam_desc:0 "We have rebuilt Madinat as-Salam, the 'City of Peace', symbolizing the revival of our culture and influence in the region. It serves as a center of learning, culture, and commerce, attracting scholars, artists, and traders from across the Islamic world."
@@ -78,12 +79,13 @@
  per_ind_grand_trunk_road_desc:0 "The Grand Trunk Road is a historic trade route that has connected the Indian subcontinent for centuries. By investing in the development and maintenance of the Grand Trunk Road, we can facilitate trade and commerce, improve transportation and communication, and enhance our influence and prestige in the region."
  per_ind_hegemon_title:0 "Warehouse of the World"
  per_ind_hegemon_desc:0 "As the hegemon of India, we have the responsibility to lead and protect the diverse peoples and cultures of this vast region. By fostering unity, promoting economic growth, and supporting cultural development, we can solidify our position as the dominant power in India."
- has_developed_at_least_1250_provinces:0 "Has improved development at least §Y1250§! times."
+ has_developed_at_least_1500_provinces:0 "Has §YDeveloped§! provinces at least §G1500§! times."
  per_ind_industry_title:0 "Industrial Powerbase"
  per_ind_industry_desc:0 "India has the potential to become a major industrial power, with vast resources and a skilled workforce. By investing in the development of industry and manufacturing in our territories, we can boost our economy, create jobs, and enhance our influence and prestige in the region."
  per_ind_economic_power_title:0 "Economic Power"
  per_ind_economic_power_desc:0 "India's economic power is a key factor in our ability to influence the region and the world. By fostering trade, investment, and innovation, we can strengthen our economy, create wealth for our citizens, and enhance our influence and prestige in India and beyond."
  IND_unlock_industrial_privilege:0 "Unlock the '§YDebase the Drachm§!' Estate Privilege for the §Y[Root.GetBurghersName]§!, allowing us to gain §G+25.0%§! National Tax Modifier and §G+20.0%§! Production Efficiency and §G-5.0%§! Construction Cost, but we will not be able to reduce our §YInflation§! and we will begin to have a passive growth of §R+0.30%§! Yearly."
+ has_developed_at_least_1250_provinces:0 "Has §YDeveloped§! provinces at least §G1250§! times."
 
  ###############
  ### MAMLUKS

@@ -1353,13 +1353,16 @@ New_EIC_column_four = {
 		}
 		
 		trigger = {
-			calc_true_if = {
-				all_subject_country = {
-					is_subject_of_type = princely_state
-					is_subject_of = ROOT
-					NOT = { liberty_desire = 20 }
+			OR = {
+				num_of_provinces_in_states = 100
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = princely_state
+						is_subject_of = ROOT
+						NOT = { liberty_desire = 20 }
+					}
+					amount = 10
 				}
-				amount = 10
 			}
 		}
 		

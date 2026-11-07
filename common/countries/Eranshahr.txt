@@ -32,6 +32,7 @@ historical_units = {
 }
 
 monarch_names = {
+	"Ardashir #0" = 50
 	"Joneid #0" = 30
 	"Haidar #0" = 30
 	"Ismâ'îl #0" = 30

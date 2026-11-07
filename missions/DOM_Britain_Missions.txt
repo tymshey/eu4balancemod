@@ -1376,6 +1376,10 @@ ave_row_slot_2_continuation = {
 			}
 		}	
 		effect = {
+			add_country_modifier = {
+				name = ave_affluent_culture
+				duration = -1
+			}
 			custom_tooltip = ave_promote_angevin_culture_bt
 			hidden_effect = {
 				change_primary_culture = anglois
@@ -2481,7 +2485,7 @@ ave_row_3 = {
 		}	
 		effect = {
 			add_country_modifier = {
-				name = ave_anglo_french_imperium
+				name = ave_anglo_french_imperium_mod
 				duration = -1
 			}
 			custom_tooltip = ave_claim_the_empire_title_bt
@@ -3328,6 +3332,34 @@ ave_row_4 = {
 				development = 20
 				value = 10
 			}
+			236 = {
+				owned_by = ROOT
+				development = 20
+			}
+			245 = {
+				owned_by = ROOT
+				development = 20
+			}
+			4375 = {
+				owned_by = ROOT
+				development = 20
+			}
+			235 = {
+				owned_by = ROOT
+				development = 20
+			}
+			183 = {
+				owned_by = ROOT
+				development = 20
+			}
+			87 = {
+				owned_by = ROOT
+				development = 20
+			}
+			167 = {
+				owned_by = ROOT
+				development = 20
+			}
 		}	
 		effect = {
 			custom_tooltip = ave_kingdom_of_metropolises_at
@@ -3357,6 +3389,48 @@ ave_row_4 = {
 						name = ave_prosperous_metropolis
 						duration = 9125
 					}
+				}
+			}
+			236 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
+				}
+			}
+			245 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
+				}
+			}
+			4375 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
+				}
+			}
+			235 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
+				}
+			}
+			183 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
+				}
+			}
+			87 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
+				}
+			}
+			167 = {
+				add_province_modifier = {
+					name = AVE_imperial_metropolis
+					duration = -1
 				}
 			}
 		}
@@ -3398,6 +3472,10 @@ ave_row_4 = {
 			is_in_deficit = no
 		}	
 		effect = {
+			add_country_modifier = {
+				name = ave_angevin_golden_age
+				duration = -1
+			}
 			add_prestige_or_monarch_power = {
 				amount = 20
 			}
@@ -4296,6 +4374,8 @@ ave_row_5 = {
 				culture = ROOT
 				cost_multiplier = 0.1
 			}
+			custom_tooltip = ave_combine_land_and_navy_tt
+			set_country_flag = ave_military_advisor_siege_ability_scaled_modifier_flag
 		}
 		ai_weight = {
 			factor = 250

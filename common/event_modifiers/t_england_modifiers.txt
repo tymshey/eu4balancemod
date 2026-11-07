@@ -36,6 +36,19 @@ bank_of_england = {
 	inflation_reduction = 0.1
 }
 
+ave_anglo_french_imperium_mod = {
+	land_morale = 0.1
+}
+
+ave_affluent_culture = {
+	monthly_splendor = 1
+	idea_cost = -0.05
+}
+
+ave_angevin_golden_age ={
+	development_cost_in_primary_culture = -0.1
+}
+
 # Province
 
 gbr_british_rule_2 = {
@@ -59,4 +72,10 @@ t_hanseatic_gold_reserves = {
 
 t_yorkshire_tea_modifier = {
 	trade_goods_size = 1
+}
+
+AVE_imperial_metropolis = {
+	trade_goods_size_modifier = 0.25
+	local_manpower_modifier = 0.25
+	local_defensiveness = 0.25
 }
