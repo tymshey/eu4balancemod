@@ -78,6 +78,7 @@
  per_ind_grand_trunk_road_desc:0 "The Grand Trunk Road is a historic trade route that has connected the Indian subcontinent for centuries. By investing in the development and maintenance of the Grand Trunk Road, we can facilitate trade and commerce, improve transportation and communication, and enhance our influence and prestige in the region."
  per_ind_hegemon_title:0 "Warehouse of the World"
  per_ind_hegemon_desc:0 "As the hegemon of India, we have the responsibility to lead and protect the diverse peoples and cultures of this vast region. By fostering unity, promoting economic growth, and supporting cultural development, we can solidify our position as the dominant power in India."
+ has_developed_at_least_1250_provinces:0 "Has improved development at least §Y1250§! times."
  per_ind_industry_title:0 "Industrial Powerbase"
  per_ind_industry_desc:0 "India has the potential to become a major industrial power, with vast resources and a skilled workforce. By investing in the development of industry and manufacturing in our territories, we can boost our economy, create jobs, and enhance our influence and prestige in the region."
  per_ind_economic_power_title:0 "Economic Power"

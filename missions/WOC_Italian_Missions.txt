@@ -2107,12 +2107,9 @@ ITA_non_conquest_2 = {
 				limit = {
 					religion_group = christian
 				}
-				custom_trigger_tooltip = {
-					tooltip = YEM_win_10_wars_against_heretics
-					check_variable = {
-						which = num_of_wars_won_against_heretics
-						value = 10
-					}
+				num_of_estate_agendas_completed = {
+    					estate = estate_church
+   					value = 3
 				}
 				118 = {
 					num_of_times_improved = 5

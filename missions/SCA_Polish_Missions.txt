@@ -460,7 +460,7 @@ poland_sca_slot_1_plc_1 = {
 		position = 7
 		trigger = {
 			has_final_tier_reforms_trigger = yes
-			has_institution = enlightenment
+			has_institution = manufactories
 			OR = {
 				absolutism = 100
 				republican_tradition = 90 
@@ -2737,15 +2737,16 @@ poland_sca_slot_3_plc_1 = {
 		required_missions = { plc_invest_eastern_poland plc_governance_act plc_seats_power plc_edict_education }
 		position = 8
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = pol_highest_eu_income_tt
-				NOT = {
-					any_country = { 
-						capital_scope = { continent = europe } 
-						monthly_income = ROOT
-					}
-				}
-			}
+			#custom_trigger_tooltip = {
+			#	tooltip = pol_highest_eu_income_tt
+			#	NOT = {
+			#		any_country = { 
+			#			capital_scope = { continent = europe } 
+			#			monthly_income = ROOT
+			#		}
+			#	}
+			#}
+			total_development = 3000
 			if = { 
 				limit = { has_dlc = "Emperor" } 
 				is_hegemon = yes  
