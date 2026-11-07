@@ -53,7 +53,7 @@ country_event = { #polska dostaje po decyzji
 		if = {
 			limit = {
 				42 = {
-					owned_by_subject_of = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 			42 = {
@@ -83,7 +83,7 @@ country_event = { #polska dostaje po decyzji
 			}
 		}
 		ai_chance = {
-			factor = 80
+			factor = 0.8
 		}
 	}
 	
@@ -96,7 +96,7 @@ country_event = { #polska dostaje po decyzji
 			}
 		}
 		ai_chance = {
-			factor = 20
+			factor = 0.2
 		}
 	}
 }
@@ -113,8 +113,20 @@ country_event = { #kupno zaakceptowane
 		name = d_events_brapru.2.a
 		BRA = {
 			add_treasury = -1000
-			inherit = PRU
 			add_prestige = 25
+			if = {
+				limit = {
+					PRU = {
+						exists = yes
+					}
+				}
+				inherit = PRU
+			}
+			else = {
+				east_prussia_area = {
+					cede_province = BRA
+				}
+			}
 		}
 		43 = {
 			add_trade_modifier = {
@@ -125,7 +137,7 @@ country_event = { #kupno zaakceptowane
 			}
 		}
 		ai_chance = {
-			factor = 80
+			factor = 0.8
 		}
 	}
 }
@@ -141,7 +153,7 @@ country_event = { #kupno odmowione
 	option = {
 		name = d_events_brapru.3.a
 		ai_chance = {
-			factor = 20
+			factor = 0.2
 		}
 	}
 }
