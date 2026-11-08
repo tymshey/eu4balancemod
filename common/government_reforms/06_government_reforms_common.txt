@@ -4222,9 +4222,8 @@ restore_the_master_of_offices_reform = {
 	
 	custom_attributes = {
 		enables_statesman_autonomy_reduction = yes
-		#perhaps adm or dip advisor recruitment here
-	}
-	
+		enables_pronoias = yes 
+	}	
 	ai = {
 		factor = 10
 	}
