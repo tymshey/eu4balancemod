@@ -6289,6 +6289,14 @@ change_subject_color = {
 			limit = { tag = PLC }
 			FROM = { change_country_color = { color = { 196 116 141 } } }
 		}
+		else_if = {
+			limit = { tag = SPA }
+			FROM = { change_country_color = { color = { 245 211 95 } } }
+		}
+		else_if = {
+			limit = { tag = POR }
+			FROM = { change_country_color = { color = { 40 110 140 } } }
+		}
 	}
 	ai_will_do = {
 		always = no

@@ -2259,8 +2259,8 @@ french_missions_2_Continuation_b = {
 					government_reform = absolutist_france_reform
 				}
 			}
-			#custom_tooltip = fra_5_gov_cap_adm_adv_tt 
-			#set_country_flag = 5_gov_cap_bonus_flag 
+			custom_tooltip = fra_5_gov_cap_adm_adv_tt
+			set_country_flag = 5_gov_cap_bonus_flag
 		}
 	}
 	

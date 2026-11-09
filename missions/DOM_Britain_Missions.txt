@@ -3479,8 +3479,8 @@ ave_row_4 = {
 			add_prestige_or_monarch_power = {
 				amount = 20
 			}
-			custom_tooltip = fra_5_gov_cap_adm_adv_tt 
-			set_country_flag = 5_gov_cap_bonus_flag 
+			custom_tooltip = fra_5_gov_cap_adm_adv_tt
+			set_country_flag = 5_gov_cap_bonus_flag
 		}
 		ai_weight = {
 			factor = 250
