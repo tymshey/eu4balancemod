@@ -210,15 +210,16 @@ estate_burghers_hydraulic_rights = {
 	loyalty = 0.05
 	conditional_modifier = {
 		trigger = {
-			OR = {
-				has_country_flag = hydraulic_rights_free_flag
-				tag = ARB
-			}
+			has_country_flag = hydraulic_rights_free_flag
 		} 
 		modifier = { max_absolutism = 10 } 
 	}
 	is_valid = {
-		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
+		OR = {
+			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
+			tag = ARB
+		}
+		
 	}
 	can_select = {
 		any_owned_province = {

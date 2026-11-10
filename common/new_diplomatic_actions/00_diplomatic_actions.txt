@@ -6299,7 +6299,7 @@ change_subject_color = {
 		}
 		else_if = {
 			limit = { tag = ARB }
-			FROM = { change_country_color = { color = { 90 168 68 } } }
+			FROM = { change_country_color = { color = { 92 190 65 } } }
 		}
 	}
 	ai_will_do = {
