@@ -6297,6 +6297,10 @@ change_subject_color = {
 			limit = { tag = POR }
 			FROM = { change_country_color = { color = { 40 110 140 } } }
 		}
+		else_if = {
+			limit = { tag = ARB }
+			FROM = { change_country_color = { color = { 90 168 68 } } }
+		}
 	}
 	ai_will_do = {
 		always = no
