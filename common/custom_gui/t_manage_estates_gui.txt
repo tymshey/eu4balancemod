@@ -87,6 +87,11 @@ custom_button = {
 			influence = -20
 			duration = 7300
 		}
+		add_estate_influence_modifier = {
+			estate = estate_jews
+			influence = -20
+			duration = 7300
+		}
 	}
 	tooltip = manage_estates_tt
 }

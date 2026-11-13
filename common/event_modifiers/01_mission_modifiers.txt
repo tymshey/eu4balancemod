@@ -1915,6 +1915,7 @@ ave_national_bank = {
 ave_new_world_dominance = {	#Permanent
 	global_tariffs = 0.15
 	trade_efficiency = 0.05
+	liberty_desire_from_subject_development = -0.25
 }
 
 ave_local_expanded_barracks = {	#Permanent

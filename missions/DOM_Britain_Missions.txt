@@ -4106,6 +4106,8 @@ ave_row_5 = {
 			}
 		}
 		effect = {
+			custom_tooltip = estate_burghers_hudson_bays_company_tt
+			set_country_flag = unlock_estate_burghers_hudson_bays_company
 			add_country_modifier = {
 				name = "eng_rb_established_shipping"
 				duration = 7300
@@ -4787,7 +4789,7 @@ gbr_ave_row_2 = {
 		trigger = {
 			trade_goods_produced_amount = {
 				trade_goods = tea
-				amount = 40
+				amount = 10
 			}
 			245 = {
 				development = 30
