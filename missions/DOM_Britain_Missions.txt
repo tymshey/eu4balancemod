@@ -2402,7 +2402,7 @@ ave_row_3 = {
 			not_in_mission_preview_mode = { key = GBR }
 			num_of_owned_provinces_with = {
 				continent = europe
-				value = 250
+				value = 200
 			}
 		}	
 		effect = {
@@ -2428,9 +2428,12 @@ ave_row_3 = {
 			prestige = 80
 			if = {
 				limit = { has_estate = estate_nobles }
-				num_of_estate_agendas_completed = {
-					estate = estate_nobles
-					value = 5
+				OR = {
+					num_of_estate_agendas_completed = {
+						estate = estate_nobles
+						value = 5
+					}
+					crown_land_share = 75
 				}
 			}
 			else = {

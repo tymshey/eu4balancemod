@@ -259,6 +259,9 @@ country_decisions = {
 					duration = -1 
 				}
 			}
+			japan_region = {
+				add_local_autonomy = -100
+			}
 			change_japan_formable_color = yes 
 		}
 		ai_will_do = {
