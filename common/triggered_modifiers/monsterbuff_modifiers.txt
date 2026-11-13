@@ -178,14 +178,20 @@ m_giga_small_nation_buff = {
 }
 liberty_desire = {
 	potential = {
-		ai = no
+		AND = {
+		OR = {
+		was_player = yes
+		ai = no	
+			}
 		OR = {
 			is_march = yes
 			is_vassal = yes
 		}
+		}
 	}
 
 	trigger = {
+		
 		OR = {
 			is_vassal = yes
 			is_march = yes
@@ -203,6 +209,7 @@ tech_17_policy = {
 		adm_tech = 17
 	}
 	possible_policy = 1
+	free_policy = 1
 }
 
 tech_21_policy = {
@@ -213,4 +220,5 @@ tech_21_policy = {
 		adm_tech = 21
 	}
 	possible_policy = 1
+	free_policy = 1
 }

@@ -215,7 +215,11 @@ estate_burghers_hydraulic_rights = {
 		modifier = { max_absolutism = 10 } 
 	}
 	is_valid = {
-		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
+		OR = {
+			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
+			tag = ARB
+		}
+		
 	}
 	can_select = {
 		any_owned_province = {

@@ -1825,7 +1825,6 @@ country_event = {
 	title = flavor_mam_disaster.4.title
 	desc = flavor_mam_disaster.4.desc
 	picture = muslimgfx_MILITARY_CAMP_eventPicture
-	major = yes
 	
 	is_triggered_only = yes
 
@@ -1855,7 +1854,6 @@ country_event = {
 	title = flavor_mam_disaster.5.title
 	desc = flavor_mam_disaster.5.desc
 	picture = muslimgfx_MILITARY_CAMP_eventPicture
-	major = yes
 	
 	is_triggered_only = yes
 
@@ -1885,7 +1883,6 @@ country_event = {
 	title = flavor_mam_disaster.6.title
 	desc = flavor_mam_disaster.6.desc
 	picture = muslimgfx_MILITARY_CAMP_eventPicture
-	major = yes
 	
 	is_triggered_only = yes
 	
@@ -1923,7 +1920,6 @@ country_event = {
 	title = flavor_mam_disaster.7.a
 	desc = flavor_mam_disaster.7.b
 	picture = muslimgfx_MILITARY_CAMP_eventPicture
-	major = yes
 	
 	is_triggered_only = yes
 	

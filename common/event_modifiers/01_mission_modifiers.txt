@@ -1840,8 +1840,9 @@ ave_iberian_conquest = {
 	manpower_recovery_speed = 0.2
 }
 
-ave_west_european_empire = {	#Permanet
-	administrative_efficiency = 0.05
+ave_west_european_empire = {	#Permanent
+	development_cost = -0.1
+	governing_cost = -0.15
 }
 
 ave_anglo_french_imperium = {	#Permanent
@@ -1914,6 +1915,7 @@ ave_national_bank = {
 ave_new_world_dominance = {	#Permanent
 	global_tariffs = 0.15
 	trade_efficiency = 0.05
+	liberty_desire_from_subject_development = -0.25
 }
 
 ave_local_expanded_barracks = {	#Permanent
@@ -9691,7 +9693,8 @@ jap_reformed_samurai_modifier = {
 jap_marine_samurai_modifier = {
 	fire_damage = 0.1
 	fire_damage_received = -0.05
-	is_marine_modifier = yes 
+	is_samurai_modifier = yes
+	# is_marine_modifier = yes
 }
 
 jap_marine_samurai_modifier2 = {

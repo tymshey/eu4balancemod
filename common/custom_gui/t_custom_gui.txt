@@ -550,6 +550,10 @@ custom_button = {
 				estate = estate_janissaries
 				share = -10
 			}
+			change_estate_land_share = {
+				estate = estate_jews
+				share = -10
+			}
 		}
 	}
     tooltip = t_crownland_btn_tt

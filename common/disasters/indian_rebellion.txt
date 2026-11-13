@@ -4,11 +4,14 @@ indian_rebellion_disaster = {
 		NOT = { has_country_flag = had_indian_rebellion }
 	}
 	can_start = {
-		custom_trigger_tooltip = {
-			tooltip = eic_ind_reb_has_100_resentment_tt
-			check_variable = {
-				which = Resentment
-				value = 100
+		OR = {
+			is_year = 1650
+			custom_trigger_tooltip = {
+				tooltip = eic_ind_reb_has_100_resentment_tt
+				check_variable = {
+					which = Resentment
+					value = 100
+				}
 			}
 		}
 		NOT = { stability = 3 }

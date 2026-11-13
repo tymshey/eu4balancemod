@@ -3043,7 +3043,7 @@ dom_cas_missions_4 = {
 		required_missions = { spa_new_capital }
 		position = 6
 		trigger = {
-			total_development = 2000 
+			total_development = 2200
 			if = { 
 				limit = { 
 					OR = { 
@@ -3051,7 +3051,7 @@ dom_cas_missions_4 = {
 						has_dlc = "Emperor" 
 					}
 				}
-				NOT = { great_power_rank = 2 }
+				NOT = { great_power_rank = 5 }
 			}
 			if = { 
 				limit = { has_dlc = "Mandate of Heaven" }

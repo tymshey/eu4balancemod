@@ -6,6 +6,10 @@
  T_ENG_THE_EMPIRE_ADJ:0 "Imperial"
  england_group:0 "England and Wales"
 
+ # Tooltips
+
+ ave_combine_land_and_navy_tt:0 "\nFrom now on every military advisor level will grant §G+5.00%§! Siege Ability."
+
  # Ideas
 
  gv_britannia_rules_the_waves:0 "Britannia Rules the Waves"
@@ -27,6 +31,9 @@
  eng_refine_the_marines_quality_debuff:0 "Logistic Stain of Better Marine Corps"
  eng_refine_the_marines_quantity:0 "Refine the Royal Marine Corps: Quantity"
  bank_of_england:0 "Bank of England"
+ ave_anglo_french_imperium_mod:0 "Anglo-French Imperium"
+ ave_affluent_culture:0 "Affluent Culture"
+ ave_angevin_golden_age:0 "Angevin Golden Age"
  
  gbr_british_rule_2:0 "British Rule"
  gv_angevin_rule:0 "Heartland of the Empire"
@@ -34,6 +41,7 @@
  t_london_stock_exchange:0 "London Stock Exchange"
  t_hanseatic_gold_reserves:0 "Hanseatic Gold Reserves"
  t_yorkshire_tea_modifier:0 "Yorkshire Tea"
+ AVE_imperial_metropolis:0 "Imperial Metropolis"
 
  # Events
  
