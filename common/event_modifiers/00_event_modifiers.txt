@@ -2365,7 +2365,7 @@ new_model_army = {
 	land_morale = 0.10
 	naval_morale = 0.10
 	global_manpower_modifier = -0.1
-	global_unrest = 1
+	land_forcelimit_modifier = -0.1
 }
 
 # Sweden flavor modifiers
@@ -11281,19 +11281,19 @@ eng_english_rule_over_ireland = {
 eng_the_crown_of_ireland = {	#Permanent
 	prestige = 0.5
 	diplomatic_upkeep = 1
-	unjustified_demands = -0.1
+	development_cost = -0.025
 }
 
 eng_the_crown_of_iberia = {	#Permanent
 	prestige = 0.5
 	diplomatic_upkeep = 1
-	unjustified_demands = -0.1
+	development_cost = -0.05
 }
 
 eng_the_crown_of_italy = {	#Permanent
 	prestige = 0.5
 	diplomatic_upkeep = 1
-	unjustified_demands = -0.1
+	infantry_power = 0.05
 }
 
 eng_taxation_of_the_clergy = {

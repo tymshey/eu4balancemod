@@ -339,7 +339,7 @@ crown_of_iberia_act = {
 		}
 		num_of_owned_provinces_with = {
 			region = iberia_region
-			value = 15
+			value = 8
 		}
 		OR = {
 			NOT = { exists = SPA }

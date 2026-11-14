@@ -1614,6 +1614,14 @@ country_event = {
 				duration = 9125
 			}
 		}
+		if = {
+			limit = { exists = SPA }
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 300
+				target = SPA
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -1727,6 +1735,64 @@ country_event = {
 				subject_type = personal_union
 				who = ITA
 			}
+		}
+		add_country_modifier = {
+			name = eng_the_crown_of_italy
+			duration = -1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	#Rule over Italy in a Personal Union but keep lombardy and piedmont
+	option = {
+		name = flavor_gbr.24.c
+		add_adm_power = 50
+		add_dip_power = 50
+		custom_tooltip = flavor_gbr.24.b.tt
+		hidden_effect = {
+			italy_region = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				if = {
+					limit = { NOT = { owned_by = ROOT } }
+					cede_province = ROOT
+				}
+				add_core = ITA
+				if = {
+					limit = { is_core = ROOT }
+					remove_core = ROOT
+				}
+			}
+			release = ITA
+			ITA = {
+				change_religion = ROOT
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 10
+			}
+			create_subject = {
+				subject_type = personal_union
+				who = ITA
+			}
+		}
+		liguria_area = {
+			limit = { owned_by = ITA }
+			cede_province = ROOT
+		}
+		lombardy_area = {
+			limit = { owned_by = ITA }
+			cede_province = ROOT
+		}
+		piedmont_area = {
+			limit = { owned_by = ITA }
+			cede_province = ROOT
 		}
 		add_country_modifier = {
 			name = eng_the_crown_of_italy

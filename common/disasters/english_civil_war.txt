@@ -81,10 +81,26 @@ english_civil_war = {
 		modifier = {
 			factor = 1
 			NOT = { legitimacy = 50 }
-		} 
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
 		modifier = {
 			factor = 1
 			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1
+			absolutism = 20
+		}
+		modifier = {
+			factor = 1
+			absolutism = 25
 		}
 		modifier = {
 			factor = 1

@@ -8,7 +8,7 @@
 
  # Tooltips
 
- ave_combine_land_and_navy_tt:0 "\nFrom now on every military advisor level will grant §G+5.00%§! Siege Ability."
+ ave_combine_land_and_navy_tt:0 "From now on every military advisor level will grant §+5.00%§! Siege Ability."
 
  # Ideas
 
@@ -67,6 +67,8 @@
  flavor_england.5.desc:0 "Landowners across the country are increasingly enclosing common lands, replacing traditional peasant crops with profitable sheep pastures to fuel the booming cloth trade. The displaced peasantry is flocking to the cities, starving and furious. Parliament is fiercely divided between the landowners profiting from the wool and reformers warning of open rebellion."
  flavor_england.5.a:0 "Favour the landowners and their enclosures."
  flavor_england.5.b:0 "Favour the commons and their right to farm the land."
+
+ flavor_gbr.24.c:0 "Keep Lombardy and Piedmont under direct rule."
 
  # Missions
 
