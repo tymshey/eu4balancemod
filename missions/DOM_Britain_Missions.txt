@@ -4524,9 +4524,9 @@ gbr_ave_row_1 = {
 			}
 			is_hegemon = yes
 			monthly_income = 3000
-			monthly_adm = 14
-			monthly_dip = 14
-			monthly_mil = 14
+			# monthly_adm = 14
+			# monthly_dip = 14
+			# monthly_mil = 14
 			total_own_and_non_tributary_subject_development = 4000
 		}	
 		effect = {
@@ -4642,11 +4642,11 @@ gbr_ave_row_2 = {
 			owns = 246
 		}		
 		effect = {
-			if = {
-				limit = { has_dlc = "Rule Britannia" }
-				custom_tooltip = earlier_coal_available_tt
-			}
-			set_country_flag = earlier_coal_available
+			# if = {
+			#	limit = { has_dlc = "Rule Britannia" }
+			#	custom_tooltip = earlier_coal_available_tt
+			# }
+			# set_country_flag = earlier_coal_available
 			1861 = {
 				add_base_production = 3
 				add_base_manpower = 3

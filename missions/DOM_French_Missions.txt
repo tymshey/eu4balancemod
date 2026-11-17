@@ -885,8 +885,8 @@ french_missions_1_Continuation_a = {
 		required_missions = { d_fra_discover_india }
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = indochina_region
-				value = 40
+				region = indo_china_region
+				value = 20
 			}
 			owns_core_province = 4831
 			owns_core_province = 609
@@ -2023,11 +2023,7 @@ french_missions_2_Continuation_b = {
 				}
 				add_permanent_claim = ROOT 
 			}
-			1248 = { 
-				limit = { 
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
+			1248 = {
 				add_permanent_claim = ROOT 
 			}
 		}
@@ -2250,7 +2246,7 @@ french_missions_2_Continuation_b = {
 		effect = { 
 			if = {
 				limit = { has_reform = feudal_france_reform }
-				#remove_government_reform = feudal_france_reform 
+				#remove_government_reform = feudal_france_reform
 				add_government_reform = absolutist_france_reform
 			}
 			else = { change_government_reform_progress = 100 }
@@ -2274,11 +2270,10 @@ french_missions_2_Continuation_b = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_courthouse_building_trigger = yes 
+				has_courthouse_building_trigger = yes
 				value = 25 
 			}
-			has_final_tier_reforms_trigger = yes 
-			
+			has_final_tier_reforms_trigger = yes
 		}
 		effect = {
 			add_country_modifier = {

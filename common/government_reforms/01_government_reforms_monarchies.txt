@@ -2428,6 +2428,45 @@ al_andalusia_government = {
 	}
 }
 
+westernized_diwan = {
+	icon = "support_state_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_country_flag = westernized_diwan_unlocked
+			has_reform = westernized_diwan
+			have_had_reform = westernized_diwan
+			AND = {
+				has_reform = westernized_diwan
+				is_playing_custom_nation = yes
+			}
+		}
+	}
+	trigger = {
+		religion_group = muslim
+		primary_culture = andalucian
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 5
+	nation_designer_trigger = {
+		religion_group = muslim
+		primary_culture = andalucian
+	}
+	modifiers = {
+		discipline = 0.05
+		land_forcelimit_modifier = -0.1
+		idea_cost = -0.1
+		tolerance_of_heathens_capacity = 2
+		tolerance_heathen = 1
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		custom_attributes = {
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180 
+		}
+	}
+}
+
 prussian_monarchy = {
 	icon = "prussian_monarchy"
 	allow_normal_conversion = no

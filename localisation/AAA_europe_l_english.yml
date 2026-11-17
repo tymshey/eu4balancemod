@@ -22,6 +22,8 @@
  ruthenian_republic_desc:0 ""
  ruthenian_peasant_republic:0 "Ruthenian Peasant Republic"
  ruthenian_peasant_republic_desc:0 ""
+ westernized_diwan:0 "Westernized Diwan"
+ westernized_diwan_desc:0 "The traditional Islamic Diwan has been reformed in accordance with western governing practices. This has allowed for a more efficient and effective administration of the state, as well as improved relations with western powers."
 
  # Missions
 
@@ -34,6 +36,10 @@
  # Austria
  hab_imperial_trade_interests_title:0 "Imperial Trade Interests"
  hab_imperial_trade_interests_desc:0 "The monetization of our rural lands has flooded our cities with liquid wealth and an eager, newly mobile labor pool. To harness this unprecedented surge of private wealth, we must look beyond traditional guilds and establish the legal foundations for urban industrial capitalism. By chartering a centralized stock exchange and legalizing joint-stock corporations, we enable private investors, wealthy burghers, and even reform-minded nobles to freely pool their capital. This creates an unstoppable investment engine capable of financing massive commercial ventures, private manufacturing plants, and sprawling infrastructural projects across the empire without draining the imperial treasury."
+
+ # Andalusia
+ adu_westernize_diwan_title:0 "Westernize the Diwan"
+ adu_westernize_diwan_desc:0 "The traditional Islamic Diwan has to be reformed in accordance with western governing practices. This will allow for a more efficient and effective administration of the state, as well as improved relations with western powers."
 
  # Events
 

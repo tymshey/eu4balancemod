@@ -15997,7 +15997,7 @@ ASU_ideas = {
 ADU_ideas = {
 	start = {
 		land_morale = 0.15 
-		global_ship_trade_power = 0.25 
+		heavy_ship_power = 0.15
 	}
 
 	bonus = {
@@ -16014,10 +16014,10 @@ ADU_ideas = {
 	}
 	adu_taifa_adminstration = {
 		vassal_forcelimit_bonus = 1
-    }
+	}
 	adu_ahl_uhl_dhimma = {
 		tolerance_heathen = 3
-    }
+	}
 	adu_legacy_of_ibn_arabi = {
 		idea_cost = -0.1
 		monthly_piety = -0.001
@@ -16031,8 +16031,8 @@ ADU_ideas = {
 		effect = { remove_temporary_colonist = yes }
 	}
 	adu_al_awasim = {
-		defensiveness = 0.1
-		rival_border_fort_maintenance = -0.25
+		defensiveness = 0.2
+		garrison_size = 0.25
 	}
 }
 

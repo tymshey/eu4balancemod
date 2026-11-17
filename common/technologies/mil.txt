@@ -419,7 +419,7 @@ technology = {
 	#Maurician Infantry
 	land_morale 		=	1.0
 	military_tactics	=	0.25
-	
+	cavalry_shock		=	0.25
 
 	
 	enable = irish_charge 
@@ -470,7 +470,7 @@ technology = {
 		global_trade = 0.15
 	}
 	
-	cavalry_shock		=	1.0
+	cavalry_shock		=	0.25
 	supply_limit		= 	0.5	
 	
 	enable = maharathan_cavalry		
@@ -492,7 +492,7 @@ technology = {
 	#Carbine
 	maneuver_value 		= 	0.25
 	supply_limit 		= 	0.5
-
+	cavalry_shock		=	0.25
 		
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
@@ -524,6 +524,7 @@ technology = {
 	#Gustavian Infantry
 	military_tactics 	= 	0.25
 	supply_limit		=	0.25
+	cavalry_shock		=	0.25
 
 	fort_17th = yes
 
