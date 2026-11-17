@@ -6298,8 +6298,8 @@ change_subject_color = {
 			FROM = { change_country_color = { color = { 40 110 140 } } }
 		}
 		else_if = {
-			limit = { tag = ARB }
-			FROM = { change_country_color = { color = { 92 190 65 } } }
+			limit = { tag = YUA }
+			FROM = { change_country_color = { color = { 212 76 76 } } }
 		}
 	}
 	ai_will_do = {

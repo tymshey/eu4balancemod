@@ -2421,7 +2421,7 @@ ming_missions_2_b = {
 					limit = { has_reform = examination_system_reform }
 					country_event = { id = flavor_mng.30 }
 
-					# nigger paradox event wont add this properly
+					# paradox event wont add this properly
 					700 = {
 						add_province_modifier = {
 							name = t_mng_hanlin_academy_modifier

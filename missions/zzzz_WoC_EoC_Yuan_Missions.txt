@@ -411,6 +411,12 @@ WoC_eoc_yuan_flavor_2 = {
 		}
 		
 		effect = {
+			700 = { # for some reason, the vanilla event does not add this
+				add_province_modifier = {
+					name = t_mng_hanlin_academy_modifier
+					duration = -1
+				}
+			}
 			complex_dynamic_effect = {
 				first_custom_tooltip = YUA_IF_EXAMINATION_SYSTEM
 				first_limit = "

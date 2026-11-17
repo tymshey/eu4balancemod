@@ -213,7 +213,15 @@ WoC_yuan_flavor_2 = {
 			}
 		}   
 
-		effect = {  
+		effect = {
+			custom_tooltip = mch_ensure_internal_stability_tt
+			hidden_effect = {
+				add_country_modifier = {
+					name = enable_estate_nomadic_tribes_modifier
+					duration = -1
+					hidden = yes
+				}
+			}
 			add_country_modifier = {
 				name = yua_overlapping_civil_and_military_affairs
 				duration = 5475
@@ -457,8 +465,7 @@ WoC_yuan_flavor_4 = {
 		}
 		trigger = {
 			monthly_income = 400
-			trade_income_percentage = 0.5
-			454 = { # Samarkhand
+			1967 = { # Khujand
 				OR = {
 					owned_by = ROOT
 					owned_by_subject_of = ROOT
@@ -475,8 +482,8 @@ WoC_yuan_flavor_4 = {
 		}
 		effect = {
 			add_mercantilism = 5
-			454 = {
-				set_center_level_3_center_of_trade = yes
+			1967 = {
+				center_of_trade = 2
 				add_province_modifier = {
 					name = tur_silk_road_main_trade_post
 					duration = -1
@@ -682,7 +689,7 @@ WoC_yuan_flavor_5 = {
 			change_innovativeness = 5
 			add_country_modifier = {
 				name = yua_simplify_printing_press
-				duration = 7300
+				duration = -1
 			}
 			
 			complex_dynamic_effect = {
