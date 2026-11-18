@@ -563,7 +563,7 @@ WoC_timurids_1_2_persia = {
 				}
 				OR = {
 					army_professionalism = 0.4
-					army_tradition = 75
+					army_tradition = 50
 				}
 			}
 			else = { 
