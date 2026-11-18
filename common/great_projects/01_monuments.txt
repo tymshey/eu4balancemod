@@ -1400,6 +1400,7 @@ forbidden_city = {
 			yearly_absolutism = 0.5
 			imperial_mandate = 0.03
 			prestige_decay = -0.01
+			max_absolutism_effect = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -1428,9 +1429,10 @@ forbidden_city = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_absolutism = 0.5
+			yearly_absolutism = 1
 			imperial_mandate = 0.05
 			prestige_decay = -0.02
+			max_absolutism_effect = 0.2
 		}
 
 		#what effects happen when this tier is achieved

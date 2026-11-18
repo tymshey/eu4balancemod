@@ -7,7 +7,7 @@ t_JAP_ideas = {
 	}
 	
 	bonus = {
-		infantry_power = 0.1
+		infantry_power = 0.15
 	}
 	
 	trigger = {
@@ -16,7 +16,6 @@ t_JAP_ideas = {
 	free = yes
 	
 	reformed_land_holding = {
-		global_manpower_modifier = 0.2
 		allowed_samurai_fraction = 0.15
 		has_samurai = yes 
 	}
@@ -28,15 +27,13 @@ t_JAP_ideas = {
 		global_institution_spread = 0.1
 	}
 	jap_maritime_legacy = {
-		heavy_ship_power = 0.1
+		ship_durability = 0.1
 		global_sailors_modifier = 0.25
-		naval_forcelimit_modifier = 0.25
 	}
 	jap_land_of_the_rising_sun = {
-		land_morale = 0.05
+		land_morale = 0.1
 	}
 	jap_kaitakudan = {
-		build_cost = -0.05
 		global_colonial_growth = 25
 	}
 	jap_great_power_diplomacy = {
