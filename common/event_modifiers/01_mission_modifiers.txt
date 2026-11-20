@@ -8842,16 +8842,16 @@ mch_studied_korea_alphabet_modifier = {
 	technology_cost = -0.05
 }
 mch_hyang_yak_system_modifier = {
-	global_trade_goods_size_modifier = 0.1
+	global_trade_goods_size_modifier = 0.05
 }
 mch_hopae_system_modifier = {
-	global_manpower_modifier = 0.1 
+	global_manpower_modifier = 0.05
 }
 mch_kyujanggak_modifier = { 
-	idea_cost = -0.1 
+	idea_cost = -0.05
 }
 mch_forced_integration_modifier = {
-	culture_conversion_cost = -0.25
+	culture_conversion_cost = -0.15
 }
 mch_5_trusted_companions_modifier = { 
 	all_estate_loyalty_equilibrium = 0.1 
@@ -8939,8 +8939,9 @@ qng_presence_global_market_modifier = {
 	global_trade_power = 0.2
 	naval_forcelimit_modifier = 0.25
 }
-qng_industrial_revolution_modifier = { 
-	global_trade_goods_size_modifier = 0.1
+qng_industrial_revolution_modifier = {
+	production_efficiency = 0.2
+	global_trade_goods_size_modifier = 0.2
 }
 qng_center_of_industrialization_modifier = {
 	trade_goods_size = 1 

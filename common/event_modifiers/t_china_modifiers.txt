@@ -21,6 +21,19 @@ chi_inefficient_taxation = {
     global_manpower_modifier = -0.25
 }
 
+qng_self_strengthening_movement_quality = {
+    fire_damage = 0.1
+    fire_damage_received = -0.1
+    global_manpower_modifier = -0.2
+    land_forcelimit_modifier = -0.2
+}
+
+qng_self_strengthening_movement_quantity = {
+    fire_damage = -0.1
+    global_manpower_modifier = 0.15
+    land_forcelimit_modifier = 0.15
+}
+
 ### Province
 
 t_chi_imperial_shipyards = {

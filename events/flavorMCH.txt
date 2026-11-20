@@ -588,7 +588,7 @@ country_event = { #The Conquest of Korea
 		
 		add_country_modifier = { 
 			name = mch_studied_korea_alphabet_modifier
-			duration = 9125 
+			duration = -1 
 		}
 	}
 	
@@ -597,7 +597,7 @@ country_event = { #The Conquest of Korea
 		
 		add_country_modifier = { 
 			name = mch_hyang_yak_system_modifier
-			duration = 9125 
+			duration = -1 
 		}
 	}
 	
@@ -606,7 +606,7 @@ country_event = { #The Conquest of Korea
 		
 		add_country_modifier = { 
 			name = mch_hopae_system_modifier
-			duration = 9125 
+			duration = -1
 		}
 	}
 	
@@ -615,7 +615,7 @@ country_event = { #The Conquest of Korea
 		
 		add_country_modifier = { 
 			name = mch_kyujanggak_modifier
-			duration = 9125 
+			duration = -1
 		}
 		custom_tooltip = warriors_can_read_some_books_tt
 		set_country_flag = warriors_can_read_some_books_flag
@@ -626,7 +626,7 @@ country_event = { #The Conquest of Korea
 		
 		add_country_modifier = {
 			name = mch_forced_integration_modifier
-			duration = 9125 
+			duration = -1
 		}
 	}
 }

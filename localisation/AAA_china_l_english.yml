@@ -1,4 +1,11 @@
 ﻿l_english:
+
+ # Reforms
+
+ professionalize_the_banners_reform:0 "Professionalize the Banners"
+ professionalize_the_banners_reform_desc:0 ""
+ qng_enlightened_assembly_reform:0 "Enlightened Celestial Assembly"
+ qng_enlightened_assembly_reform_desc:0 ""
  
  # Diplomatic actions
 
@@ -32,6 +39,8 @@
  t_divine_favour:0 "Divine Favour"
  t_chi_religious_tolerance:0 "Religious Tolerance in the Celestial Empire"
  chi_inefficient_taxation:0 "Inefficient Taxation"
+ qng_self_strengthening_movement_quality:0 "Self-Strengthening Movement - Quality"
+ qng_self_strengthening_movement_quantity:0 "Self-Strengthening Movement - Quantity"
 
  t_chi_imperial_shipyards:0 "Imperial Naval Shipyards"
  t_yua_xanadu:0 "Imperial Seat of Xanadu"
@@ -96,6 +105,11 @@
  t_china_events.14.e:0 "Embrace the Daoxue School."
  t_china_events.14.f:0 "Embrace the Jingxue School."
 
+ t_china_events.15.title:0 "The Self-Strengthening Movement and the Imperial Army"
+ t_china_events.15.desc:0 "As our empire expands and grows, the reformists and the advisory bodies are locked in a fierce debate regarding the trajectory of our military. One faction, led by reformist movements, argues that the Imperial Army must remain a peerless, heavily trained spearhead—even if it means restricting recruitment to only the finest volunteers. Conversely, the veteran army commanders insist that the sheer scale of our empire requires a massive expansion of our amphibious force, arguing that quantity has a quality of its own when securing distant coastlines. How shall we instruct the recruiting sergeants?"
+ t_china_events.15.a:0 "Invest in quality of the Imperial Army."
+ t_china_events.15.b:0 "Invest in quantity of the Imperial Army."
+
  # Ideas
 
  # Qing ideas
@@ -158,6 +172,11 @@
  mch_ensure_internal_stability_tt:0 "We will gain access to the Tribes estate\n"
  qng_kashgar_pass_title:0 "Kashgar Pass"
  qng_kashgar_pass_desc:0 "Kashgar, located at the western edge of the Celestial Empire, has long been a vital hub of trade and culture. By establishing the Kashgar fortress, we can strengthen our control over this strategic region, enhance our trade networks, and promote cultural exchange with neighboring territories."
+ qng_enlightened_assembly_title:0 "Enlightened Assembly"
+ qng_enlightened_assembly_desc:0 ""
+ qng_self_strengthening_movement_title:0 "Self Strengthening Movement"
+ qng_self_strengthening_movement_desc:0 ""
+ qng_self_strengthening_movement_tt:0 "We will be presented with a choice to either §Tstrengthen our existing military§! by providing them additional training and supplies at the cost of their numbers, or to §Gincrease the amount of soldiers§! our army can support.\n"
  
  # Yuan Missions
 

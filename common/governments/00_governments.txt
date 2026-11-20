@@ -351,6 +351,7 @@ monarchy = {
 				russian_mercenary_guard_reform 
 				#balamod exclusive
 				mamluk_mansure_army_reform
+				professionalize_the_banners_reform
 			}
 		}
 		deliberative_assembly = {
@@ -377,6 +378,9 @@ monarchy = {
 				great_council_of_mechelen_reform
 				parliament_vs_monarchy_reform
 				restoration_of_the_senate_reform
+				qng_grand_council_reform
+				#balamod exclusive
+				qng_enlightened_assembly_reform
 			}
 		}
 		growth_of_administration = {
@@ -394,7 +398,6 @@ monarchy = {
 				imperial_principle_reform
 				sakdina_system_reform
 				#1.35
-				qng_grand_council_reform
 				standardized_millets_reform
 				direct_royal_administration_reform
 				administration_of_the_parliament_reform

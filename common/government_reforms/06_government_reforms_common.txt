@@ -2365,6 +2365,40 @@ green_standard_army_reform = {
 	}
 }
 
+professionalize_the_banners_reform = {
+	icon = "boyar"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			primary_culture = manchu_new
+			primary_culture = manchu
+		}
+	}
+	trigger = {
+		if = {
+			limit = { has_modifier_locking_military_tier = yes }
+			OR = {
+				has_reform = green_standard_army_reform
+				has_not_modifier_locking_military_tier = yes
+			}
+		}
+	}
+	modifiers = {
+		amount_of_banners = -0.75
+		army_tradition_decay = -0.005
+		movement_speed = 0.1
+		fire_damage = 0.1
+	}
+	custom_attributes = {
+		
+	}
+	
+	ai = {
+		factor = 1
+	}
+}
+
 #Japanese
 ashigaru_reform = {
 	icon = "ashigaru"

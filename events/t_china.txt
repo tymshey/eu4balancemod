@@ -628,3 +628,30 @@ country_event = { # Religious schools
 		}
 	}
 }
+
+country_event = {
+	id = t_china_events.15
+	title = t_china_events.15.title
+	desc = t_china_events.15.desc
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	major = no
+	is_triggered_only = yes
+	
+	option = {
+		name = t_china_events.15.a
+		add_country_modifier = {
+			name = qng_self_strengthening_movement_quality
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = t_china_events.15.b
+		add_country_modifier = {
+			name = qng_self_strengthening_movement_quantity
+			duration = -1
+		}
+	}
+}

@@ -100,27 +100,28 @@ mnd_siam_1 = {
 		icon = mission_mnd_khm_restored_empire
 		required_missions = { mnd_siam_great_monument }
 		provinces_to_highlight = {
-			has_discovered = ROOT
-			OR = {
-				AND = {
-					is_capital = yes
-					owned_by = ROOT
-					NOT = { development = 50 }
-				}
-				any_province = {
-					is_capital_of = root
-					NOT = { higher_development_than = prev }
-				}
-			}
+			province_id = 600
+		#	has_discovered = ROOT
+		#	OR = {
+		#		AND = {
+		#			is_capital = yes
+		#			owned_by = ROOT
+		#			NOT = { development = 50 }
+		#		}
+		#		any_province = { # DID YOU KNOW this code causes the game to drop framerate by 97.22 % when hovering? - tymshey
+		#			is_capital_of = root
+		#			NOT = { higher_development_than = prev }
+		#		}
+		#	}
 		}
 		trigger = {
 			capital_scope = {
 				development = 50
-				NOT = {
-					any_province = {
-						higher_development_than = PREV
-					}
-				}
+				# NOT = {
+				#	any_province = {
+				#		higher_development_than = PREV
+				#	}
+				# }
 			}
 		}
 		effect = {

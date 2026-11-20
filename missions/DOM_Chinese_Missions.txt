@@ -1370,7 +1370,7 @@ DOM_Qing_Missions_1_b_formable = {
 			region = tibet_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		position = 14
+		position = 15
 		trigger = {
 			tibet_region = {
 				type = all
@@ -2709,7 +2709,7 @@ DOM_Qing_Missions_2_b = {
 	qng_ten_grand_campaigns = {
 		icon = qng_ten_grand_campaigns
 		required_missions = { qng_extinguish_ming }
-		position = 13
+		position = 14
 		trigger = {
 			army_size_percentage = 0.9
 			manpower_percentage = 0.8
@@ -2794,7 +2794,7 @@ DOM_Qing_Missions_2_b = {
 	qng_campaign_in_burma = {
 		icon = mission_indian_soldier_elephant
 		required_missions = { qng_ten_grand_campaigns }
-		position = 14
+		position = 15
 		provinces_to_highlight = { 
 			region = burma_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -4808,9 +4808,31 @@ DOM_Qing_Missions_3_b = {
 		}
 	}
 
+	qng_enlightened_assembly = {
+		icon = mission_alliances
+		required_missions = { qng_junji_chu qng_library_four_treasuries }
+		position = 1
+		trigger = {
+			empire_of_china_num_reforms_passed = 10
+			has_final_tier_reforms_trigger = yes
+			if = { 
+				limit = { is_emperor_of_china = yes }
+				imperial_mandate = 90
+			}
+			else = { legitimacy = 90 }
+			absolutism = 80
+		}
+		
+		effect = { 
+			add_government_reform = qng_enlightened_assembly_reform
+			add_adm_power = 100 
+		}
+	}
+
 	qng_integrate_taiwan = {
 		icon = mission_junk_boat
 		required_missions = { qng_ten_grand_campaigns }
+		position = 15
 		provinces_to_highlight = {
 			area = taiwan_area
 			NOT = { owned_by = ROOT }
@@ -6024,11 +6046,35 @@ DOM_Qing_Missions_4_b = {
 			}
 		}
 	}
+
+	qng_self_strengthening_movement = {
+		icon = qng_modernize_the_banners
+		required_missions = { qng_library_four_treasuries }
+		position = 1
+		trigger = {
+			if = {
+				limit = { is_emperor_of_china = yes }
+				empire_of_china_reform_passed = new_keju_formats_decision
+				empire_of_china_reform_passed = reform_the_military_branch_decision
+				empire_of_china_has_active_decree = boost_officer_corps_decree
+			}
+			army_reformer = 3
+			reform_level = 9
+			mission_completed = qng_modernize_the_banners
+		}
+		effect = {
+			custom_tooltip = qng_self_strengthening_movement_tt
+			country_event = { id = t_china_events.15 }
+		}
+	}
 	
 	qng_kashgar_pass = {
 		icon = mng_thirteen_provinces
 		required_missions = { qng_ten_grand_campaigns }
-		position = 1
+		position = 15
+		provinces_to_highlight = {
+			province_id = 739
+		}
 		trigger = {
 			739 = {
 				development = 25

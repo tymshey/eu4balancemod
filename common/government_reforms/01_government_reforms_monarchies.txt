@@ -7234,6 +7234,33 @@ qng_grand_council_reform = {
 	}
 }
 
+qng_enlightened_assembly_reform = {
+	icon = "royal_court"
+	allow_normal_conversion = no
+	potential = {
+		OR = { 
+			mission_completed = qng_enlightened_assembly
+			has_reform = qng_enlightened_assembly_reform
+		}
+	}
+	
+	modifiers = {
+		max_absolutism = 10
+		max_absolutism_effect = 0.2
+		all_estate_influence_modifier = -0.1
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Common Sense"
+				has_dlc = "Domination"
+			}
+		}
+		has_parliament = yes
+	}
+}
+
 absolute_shogunate_reform = {
 	icon = "absolute_shogunate_reform"
 	allow_normal_conversion = no
